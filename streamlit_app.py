@@ -204,17 +204,57 @@ def load_store() -> tuple[dict, str | None]:
     return _normalise(json.loads(base64.b64decode(body["content"]).decode() or "{}")), body["sha"]
 
 
+def diagnose_store(status: int, cfg: dict) -> str:
+    """Turn a GitHub error into a plain-English reason."""
+    repo, branch = cfg["repo"], cfg.get("branch", "main")
+    if status == 401:
+        return ("GitHub rejected the token (it's wrong, expired or deleted). "
+                "Create a new token and update [password_store] token in Secrets.")
+    try:
+        r = requests.get(f"https://api.github.com/repos/{repo}",
+                         headers={"Authorization": f"Bearer {cfg['token']}",
+                                  "Accept": "application/vnd.github+json"}, timeout=15)
+    except requests.RequestException:
+        return "Couldn't reach GitHub. Please try again in a minute."
+    if r.status_code == 401:
+        return ("GitHub rejected the token (it's wrong, expired or deleted). "
+                "Create a new token and update [password_store] token in Secrets.")
+    if r.status_code == 404:
+        return (f"The token can't see the repo '{repo}'. Check the repo name and owner are exactly "
+                "right in Secrets, and that the token's 'Repository access' includes it "
+                "(and, for an organization repo, that the token isn't still pending approval).")
+    if r.status_code == 200:
+        info = r.json()
+        if not info.get("permissions", {}).get("push", True) or status == 403:
+            return (f"The token can read '{repo}' but can't write to it. Give the token "
+                    "'Contents: Read and write' (or approve it in the organization's settings).")
+        if info.get("size", 1) == 0 or status in (404, 409):
+            return (f"The repo '{repo}' looks empty or has no '{branch}' branch. Add a README on "
+                    f"GitHub (Add file -> Create new file) so the '{branch}' branch exists.")
+    return f"GitHub returned an error ({status}). Check the [password_store] settings in Secrets."
+
+
 def update_store(change, message: str) -> bool:
-    """Apply change(doc) and save. Retries if someone else saved at the same moment."""
+    """Apply change(doc) and save. Retries if someone else saved at the same moment.
+    On failure, puts a plain-English reason in st.session_state.store_error."""
+    st.session_state.pop("store_error", None)
+
+    def fail(reason: str) -> bool:
+        st.session_state.store_error = reason
+        print(f"[store] FAILED: {reason}", flush=True)  # visible in Manage app -> logs
+        return False
+
     cfg = store_cfg()
     if not cfg:
-        return False
+        return fail("The [password_store] section is missing from Secrets (or has no repo/token).")
     for _ in range(3):
         load_store.clear()
         try:
             doc, sha = load_store()
+        except requests.HTTPError as e:
+            return fail(diagnose_store(e.response.status_code if e.response is not None else 0, cfg))
         except requests.RequestException:
-            return False
+            return fail("Couldn't reach GitHub. Please try again in a minute.")
         doc = json.loads(json.dumps(doc))  # don't mutate the cached copy
         change(doc)
         payload = {"message": message,
@@ -222,14 +262,21 @@ def update_store(change, message: str) -> bool:
                    "branch": cfg.get("branch", "main")}
         if sha:
             payload["sha"] = sha
-        r = _store_request("PUT", cfg, json=payload)
+        try:
+            r = _store_request("PUT", cfg, json=payload)
+        except requests.RequestException:
+            return fail("Couldn't reach GitHub. Please try again in a minute.")
         if r.status_code in (200, 201):
             load_store.clear()
             return True
-        if r.status_code not in (409, 422):
-            print(f"[store] save failed {r.status_code}: {r.text[:200]}", flush=True)
-            return False
-    return False
+        if r.status_code == 409 and sha:
+            continue  # someone else saved first; reload and retry
+        return fail(diagnose_store(r.status_code, cfg))
+    return fail("The file kept changing while saving. Please try again.")
+
+
+def store_error_text(prefix: str) -> str:
+    return f"{prefix} Reason: {st.session_state.get('store_error', 'unknown')}"
 
 
 def now_iso() -> str:
@@ -506,7 +553,7 @@ def view_verify(users: dict):
         elif problem := password_problem(pw, pw2, username or ""):
             st.error(problem)
         elif not save_override(username, make_hash(pw)):
-            st.error("Couldn't save your new password. Please try again or contact the admin.")
+            st.error(store_error_text("Couldn't save your new password."))
         else:
             send_email(reset["email"], "Your password was changed", email_shell(
                 "Password changed",
@@ -578,7 +625,7 @@ def view_request(users: dict):
                     req["password_hash"] = make_hash(pw)
                 if not update_store(lambda d: d["requests"].__setitem__(rid, req),
                                     f"Access request from {email}"):
-                    st.error("Couldn't save your request. Please try again in a minute.")
+                    st.error(store_error_text("Couldn't save your request."))
                     st.stop()
                 link = f"{app_url()}/?review={rid}"
                 ok = send_email(admins, f"Portal access request: {name}", email_shell(
@@ -689,7 +736,7 @@ def view_review(users: dict):
                       "granted": regs if approve else []})
 
         if not update_store(change, f"{status.title()} access request for {req['email']}"):
-            st.error("Couldn't save the decision. Please try again.")
+            st.error(store_error_text("Couldn't save the decision."))
         else:
             if approve:
                 body = (f"<p>Hi {safe(req['name'])},</p><p>Your access to the Finance Listening "
