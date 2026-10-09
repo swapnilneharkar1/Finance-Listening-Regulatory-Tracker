@@ -68,6 +68,7 @@ def company_logo() -> str:
 ALLOWED_EMAIL_DOMAINS = ("bajajfinserv.in", "bizsupportc.com", "bizsupporta.com")
 OTP_TTL_SECONDS = 10 * 60
 DEFAULT_ADMIN_EMAILS = ["swapnil.neharkar1@bajajfinserv.in"]  # used if ADMIN_EMAILS isn't in Secrets
+DEFAULT_APP_URL = "https://finance-listening-regulatory-tracker.streamlit.app"
 OTP_MAX_ATTEMPTS = 5
 RESEND_COOLDOWN_SECONDS = 60
 HASH_ITERATIONS = 200_000
@@ -99,11 +100,38 @@ def verify_password(password: str, stored: str) -> bool:
         return False
 
 
-def get_users() -> dict:
+def secrets_users() -> dict:
     try:
         return {k.lower(): dict(v) for k, v in st.secrets["users"].items()}
     except (KeyError, FileNotFoundError):
         return {}
+
+
+def get_users() -> dict:
+    """Users from Secrets, plus users approved in the portal (stored in GitHub)."""
+    users = secrets_users()
+    try:
+        doc, _ = load_store()
+    except (requests.RequestException, ValueError, KeyError):
+        return users
+    for name, extra in doc["users"].items():
+        users[name] = {**users.get(name, {}), **extra}
+    return users
+
+
+def admin_emails() -> list[str]:
+    admins = secret("ADMIN_EMAILS", DEFAULT_ADMIN_EMAILS)
+    if isinstance(admins, str):
+        admins = admins.split(",")
+    return [a.strip().lower() for a in admins if a.strip()]
+
+
+def is_admin(username: str, users: dict) -> bool:
+    return str(users.get(username, {}).get("email", "")).strip().lower() in admin_emails()
+
+
+def app_url() -> str:
+    return str(secret("APP_URL", DEFAULT_APP_URL)).rstrip("/")
 
 
 def allowed_regulators(user: dict) -> list[str]:
@@ -136,8 +164,8 @@ def password_problem(pw: str, confirm: str, username: str = "") -> str | None:
     return None
 
 
-# ── Password store: new passwords set via "Forgot password" ──
-# Kept in a JSON file in a (private) GitHub repo, because Streamlit Secrets are read-only.
+# ── Portal store: approved users, reset passwords and access requests ──
+# Kept in one JSON file in a private GitHub repo, because Streamlit Secrets are read-only.
 def store_cfg() -> dict | None:
     cfg = secret("password_store")
     if cfg and cfg.get("repo") and cfg.get("token"):
@@ -146,7 +174,7 @@ def store_cfg() -> dict | None:
 
 
 def _store_request(method: str, cfg: dict, **kw) -> requests.Response:
-    path = cfg.get("path", "password_overrides.json")
+    path = cfg.get("path", "portal_auth.json")
     return requests.request(
         method, f"https://api.github.com/repos/{cfg['repo']}/contents/{path}",
         headers={"Authorization": f"Bearer {cfg['token']}",
@@ -154,63 +182,92 @@ def _store_request(method: str, cfg: dict, **kw) -> requests.Response:
         timeout=20, **kw)
 
 
+def _normalise(doc: dict) -> dict:
+    if doc and not {"passwords", "users", "requests"} & set(doc):
+        doc = {"passwords": doc}  # older file that only held reset passwords
+    for key in ("passwords", "users", "requests"):
+        doc.setdefault(key, {})
+    return doc
+
+
 @st.cache_data(ttl=30, show_spinner=False)
-def load_overrides() -> tuple[dict, str | None]:
-    """Returns (overrides, file_sha). Raises if GitHub can't be reached (not cached)."""
+def load_store() -> tuple[dict, str | None]:
+    """Returns (doc, file_sha). Raises if GitHub can't be reached (errors aren't cached)."""
     cfg = store_cfg()
     if not cfg:
-        return {}, None
+        return _normalise({}), None
     r = _store_request("GET", cfg, params={"ref": cfg.get("branch", "main")})
     if r.status_code == 404:
-        return {}, None
+        return _normalise({}), None
     r.raise_for_status()
     body = r.json()
-    return json.loads(base64.b64decode(body["content"]).decode() or "{}"), body["sha"]
+    return _normalise(json.loads(base64.b64decode(body["content"]).decode() or "{}")), body["sha"]
 
 
-def save_override(username: str, password_hash: str) -> bool:
+def update_store(change, message: str) -> bool:
+    """Apply change(doc) and save. Retries if someone else saved at the same moment."""
     cfg = store_cfg()
     if not cfg:
         return False
-    for _ in range(3):  # retry if someone else saved at the same moment
-        load_overrides.clear()
+    for _ in range(3):
+        load_store.clear()
         try:
-            overrides, sha = load_overrides()
+            doc, sha = load_store()
         except requests.RequestException:
             return False
-        overrides[username] = {"password_hash": password_hash,
-                               "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
-        payload = {
-            "message": f"Password reset for {username}",
-            "content": base64.b64encode(json.dumps(overrides, indent=2).encode()).decode(),
-            "branch": cfg.get("branch", "main"),
-        }
+        doc = json.loads(json.dumps(doc))  # don't mutate the cached copy
+        change(doc)
+        payload = {"message": message,
+                   "content": base64.b64encode(json.dumps(doc, indent=2).encode()).decode(),
+                   "branch": cfg.get("branch", "main")}
         if sha:
             payload["sha"] = sha
         r = _store_request("PUT", cfg, json=payload)
         if r.status_code in (200, 201):
-            load_overrides.clear()
+            load_store.clear()
             return True
         if r.status_code not in (409, 422):
+            print(f"[store] save failed {r.status_code}: {r.text[:200]}", flush=True)
             return False
     return False
 
 
+def now_iso() -> str:
+    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+
+
+def save_override(username: str, password_hash: str) -> bool:
+    def change(doc):
+        doc["passwords"][username] = {"password_hash": password_hash, "updated_at": now_iso()}
+    return update_store(change, f"Password reset for {username}")
+
+
 def current_password_hash(username: str, user: dict) -> str | None:
-    """Reset password wins over the one in Secrets. None = store unreachable."""
+    """Reset password wins over the stored one. None = store unreachable."""
     try:
-        overrides, _ = load_overrides()
+        doc, _ = load_store()
     except (requests.RequestException, ValueError, KeyError):
         return None if store_cfg() else user.get("password_hash", "")
-    entry = overrides.get(username)
+    entry = doc["passwords"].get(username)
     return entry["password_hash"] if entry else user.get("password_hash", "")
 
 
 # ── Email ──
 def send_email(to: list[str] | str, subject: str, body_html: str) -> bool:
-    cfg = secret("smtp")
-    if not cfg or not cfg.get("user") or not cfg.get("password"):
+    """Sends an email. On failure, stores a plain-English reason in st.session_state.email_error."""
+    st.session_state.pop("email_error", None)
+
+    def fail(reason: str) -> bool:
+        st.session_state.email_error = reason
+        print(f"[email] FAILED to {to}: {reason}", flush=True)  # visible in Manage app -> logs
         return False
+
+    cfg = secret("smtp")
+    if not cfg:
+        return fail("Email isn't configured: the [smtp] section is missing from the app's Secrets.")
+    if not cfg.get("user") or not cfg.get("password"):
+        return fail("Email isn't configured: [smtp] needs both 'user' and 'password' in Secrets.")
+    host, port = cfg.get("host", "smtp.office365.com"), int(cfg.get("port", 587))
     msg = EmailMessage()
     msg["Subject"] = subject
     msg["From"] = f"Finance Listening Portal <{cfg['user']}>"
@@ -218,14 +275,31 @@ def send_email(to: list[str] | str, subject: str, body_html: str) -> bool:
     msg.set_content("Please view this email in an HTML-capable client.")
     msg.add_alternative(body_html, subtype="html")
     try:
-        with smtplib.SMTP(cfg.get("host", "smtp.office365.com"), int(cfg.get("port", 587)),
-                          timeout=20) as server:
+        with smtplib.SMTP(host, port, timeout=20) as server:
             server.starttls()
             server.login(cfg["user"], cfg["password"])
             server.send_message(msg)
         return True
-    except (smtplib.SMTPException, OSError):
-        return False
+    except smtplib.SMTPAuthenticationError as e:
+        detail = e.smtp_error.decode(errors="ignore") if isinstance(e.smtp_error, bytes) else str(e.smtp_error)
+        if "disabled" in detail.lower() or "5.7.139" in detail:
+            return fail("The mailbox refused login because SMTP AUTH is disabled for it. "
+                        "Ask IT to enable 'Authenticated SMTP' for this mailbox in Microsoft 365.")
+        return fail(f"The mailbox refused the username/password ({e.smtp_code}). "
+                    "Check [smtp] user and password in Secrets.")
+    except smtplib.SMTPRecipientsRefused:
+        return fail("The mail server refused the recipient address.")
+    except smtplib.SMTPSenderRefused as e:
+        return fail(f"The mail server refused to send from {cfg['user']} ({e.smtp_code}).")
+    except (TimeoutError, ConnectionError, OSError) as e:
+        return fail(f"Couldn't connect to {host}:{port} ({type(e).__name__}). "
+                    "Check host/port in Secrets.")
+    except smtplib.SMTPException as e:
+        return fail(f"The mail server returned an error: {e}")
+
+
+def email_error_text(prefix: str) -> str:
+    return f"{prefix} Reason: {st.session_state.get('email_error', 'unknown')}"
 
 
 def email_shell(title: str, inner: str) -> str:
@@ -282,6 +356,11 @@ LOGIN_CSS = """
   [class*="st-key-link_"] > div {display: flex; justify-content: center; width: 100%;}
   [data-testid="stForm"] [data-testid="stMultiSelect"] [data-baseweb="select"] > div {background: #fff !important;}
   .login-hint {font-size: 12px; color: #5a6474; margin: -4px 0 8px;}
+  .st-key-reject_btn button {background: #fff !important; color: #c0392b !important;
+                             border: 1px solid #e8b4ae !important;}
+  .st-key-reject_btn button:hover {background: #fdf2f1 !important;}
+  [data-testid="stMultiSelectTagsContainer"] [data-tag] {background: #e8f0fe !important; color: #1a56db !important;}
+  [data-testid="stMultiSelectTagsContainer"] [data-tag] * {color: #1a56db !important; background: transparent !important;}
   .login-foot {text-align: center; font-size: 12px; color: #9aa3b0; margin-top: 18px;}
 </style>
 """
@@ -303,10 +382,11 @@ def go(view: str):
     st.rerun()
 
 
-def flash():
+def flash() -> bool:
     msg = st.session_state.pop("flash", None)
     if msg:
         st.success(msg)
+    return bool(msg)
 
 
 def footer():
@@ -316,6 +396,8 @@ def footer():
 
 def view_login(users: dict):
     brand("Sign in to continue")
+    if st.session_state.get("review_id"):
+        st.info("Sign in as an admin to review the access request.")
     with st.form("login"):
         username = st.text_input("Username", placeholder="Enter your username").strip().lower()
         password = st.text_input("Password", type="password", placeholder="Enter your password")
@@ -385,7 +467,7 @@ def view_forgot(users: dict):
                     "<p style='color:#5a6474'>If you didn't ask for this, ignore this email; "
                     "your password won't change.</p>"))
                 if not ok:
-                    st.error("Couldn't send the email right now. Please try again later or contact the admin.")
+                    st.error(email_error_text("Couldn't send the email."))
                     st.stop()
             st.session_state.reset = state
             st.session_state.flash = ("If this email is registered, a 6-digit code has been sent to it. "
@@ -457,12 +539,13 @@ def view_request(users: dict):
         submitted = st.form_submit_button("Send request", use_container_width=True)
 
     if submitted:
-        username = email.split("@")[0].replace(".", "_") if "@" in email else ""
+        base = re.sub(r"[^a-z0-9_]", "_", email.split("@")[0]) if "@" in email else ""
+        username, n = base, 2
+        while username in users:
+            username, n = f"{base}{n}", n + 1
         existing = next((u for u, d in users.items()
                          if str(d.get("email", "")).strip().lower() == email), None)
-        admins = secret("ADMIN_EMAILS", DEFAULT_ADMIN_EMAILS)
-        if isinstance(admins, str):
-            admins = [a.strip() for a in admins.split(",") if a.strip()]
+        admins = admin_emails()
         last = st.session_state.get("last_request", 0)
 
         if not name:
@@ -481,34 +564,47 @@ def view_request(users: dict):
             st.error("Access requests aren't set up yet. Please contact the portal admin directly.")
         else:
             safe = html_lib.escape
-            if existing:
-                current = allowed_regulators(users[existing])
-                merged = [r for r in ALL_REGULATORS if r in set(current) | set(regs)]
-                block = (f"[users.{existing}]  # existing user - update the regulators line only\n"
-                         f"regulators = {json.dumps(merged)}")
-                kind = f"Existing user <b>{safe(existing)}</b> asks for more regulators."
-            else:
-                block = (f"[users.{username}]\n"
-                         f"name = {json.dumps(name)}\n"
-                         f"email = {json.dumps(email)}\n"
-                         f"password_hash = \"{make_hash(pw)}\"\n"
-                         f"regulators = {json.dumps(regs)}")
-                kind = "New user request."
-            ok = send_email(admins, f"Portal access request: {name}", email_shell(
-                "Access request",
-                f"<p>{kind}</p>"
-                f"<p><b>Name:</b> {safe(name)}<br><b>Email:</b> {safe(email)}<br>"
-                f"<b>Regulators:</b> {safe(', '.join(regs))}<br>"
-                f"<b>Reason:</b> {safe(reason)}</p>"
-                "<p><b>To approve:</b> paste this into the app's Secrets (Streamlit Cloud → app → "
-                "Settings → Secrets) and save. To reject, just ignore this email.</p>"
-                f"<pre style='background:#f7f8fa;border:1px solid #e2e6ea;border-radius:6px;"
-                f"padding:12px;font-size:12px;white-space:pre-wrap'>{safe(block)}</pre>"
-                + ("" if existing else
-                   f"<p style='color:#5a6474'>They will sign in as <b>{safe(username)}</b> "
-                   "with the password they chose.</p>")))
+            details = (f"<p><b>Name:</b> {safe(name)}<br><b>Email:</b> {safe(email)}<br>"
+                       f"<b>Regulators:</b> {safe(', '.join(regs))}<br>"
+                       f"<b>Reason:</b> {safe(reason)}</p>")
+            kind = (f"Existing user <b>{safe(existing)}</b> asks for more regulators."
+                    if existing else f"New user request (username will be <b>{safe(username)}</b>).")
+            if store_cfg():
+                rid = secrets_mod.token_urlsafe(16)
+                req = {"name": name, "email": email, "username": existing or username,
+                       "existing": bool(existing), "regulators": regs, "reason": reason,
+                       "status": "pending", "created_at": now_iso()}
+                if not existing:
+                    req["password_hash"] = make_hash(pw)
+                if not update_store(lambda d: d["requests"].__setitem__(rid, req),
+                                    f"Access request from {email}"):
+                    st.error("Couldn't save your request. Please try again in a minute.")
+                    st.stop()
+                link = f"{app_url()}/?review={rid}"
+                ok = send_email(admins, f"Portal access request: {name}", email_shell(
+                    "Access request", f"<p>{kind}</p>{details}"
+                    f"<p style='margin:22px 0'><a href='{link}' style='background:#1a56db;color:#fff;"
+                    "padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600'>"
+                    "Review &amp; approve</a></p>"
+                    "<p style='color:#5a6474;font-size:12px'>Opens the portal; sign in as admin, "
+                    "then click Approve or Reject. Access is granted immediately on approval.</p>"))
+            else:  # no store configured: fall back to a block the admin pastes into Secrets
+                if existing:
+                    current = allowed_regulators(users[existing])
+                    merged = [r for r in ALL_REGULATORS if r in set(current) | set(regs)]
+                    block = (f"[users.{existing}]  # existing user - update the regulators line only\n"
+                             f"regulators = {json.dumps(merged)}")
+                else:
+                    block = (f"[users.{username}]\nname = {json.dumps(name)}\n"
+                             f"email = {json.dumps(email)}\npassword_hash = \"{make_hash(pw)}\"\n"
+                             f"regulators = {json.dumps(regs)}")
+                ok = send_email(admins, f"Portal access request: {name}", email_shell(
+                    "Access request", f"<p>{kind}</p>{details}"
+                    "<p><b>To approve:</b> paste this into the app's Secrets and save.</p>"
+                    f"<pre style='background:#f7f8fa;border:1px solid #e2e6ea;border-radius:6px;"
+                    f"padding:12px;font-size:12px;white-space:pre-wrap'>{safe(block)}</pre>"))
             if not ok:
-                st.error("Couldn't send your request right now. Please try again later.")
+                st.error(email_error_text("Couldn't send your request."))
             else:
                 send_email(email, "We received your access request", email_shell(
                     "Request received",
@@ -527,6 +623,100 @@ def view_request(users: dict):
     footer()
 
 
+def view_review(users: dict):
+    rid = st.session_state.review_id
+    brand("Review access request")
+    safe = html_lib.escape
+
+    def done_button():
+        if st.button("Go to the portal", key="link_portal"):
+            st.session_state.pop("review_id", None)
+            st.query_params.clear()
+            st.rerun()
+
+    if not is_admin(auth_user(), users):
+        st.error("Only portal admins can review access requests.")
+        done_button(); footer(); st.stop()
+    try:
+        doc, _ = load_store()
+    except requests.RequestException:
+        st.error("Couldn't load the request right now. Please try again in a minute.")
+        done_button(); footer(); st.stop()
+    req = doc["requests"].get(rid)
+    just_decided = flash()
+    if not req:
+        st.error("This request link isn't valid (it may have been removed).")
+        done_button(); footer(); st.stop()
+    if req["status"] != "pending":
+        if not just_decided:
+            st.info(f"This request was already **{req['status']}** by {req.get('decided_by', '?')} "
+                    f"on {req.get('decided_at', '?')[:10]}.")
+        done_button(); footer(); st.stop()
+
+    current = allowed_regulators(users.get(req["username"], {})) if req["existing"] else []
+    with st.form("review"):
+        st.markdown(
+            f"**{safe(req['name'])}** · {safe(req['email'])}  \n"
+            + (f"Existing user **{safe(req['username'])}**, currently has: "
+               f"{', '.join(current) or 'nothing'}" if req["existing"]
+               else f"New user · will sign in as **{safe(req['username'])}**")
+            + f"  \n**Reason:** {safe(req['reason'])}")
+        default = [r for r in ALL_REGULATORS if r in set(current) | set(req["regulators"])]
+        regs = st.multiselect("Regulators to grant", ALL_REGULATORS, default=default)
+        c1, c2 = st.columns(2)
+        approve = c1.form_submit_button("Approve", use_container_width=True)
+        reject = c2.form_submit_button("Reject", use_container_width=True, key="reject_btn")
+
+    if approve and not regs:
+        st.error("Choose at least one regulator, or reject the request.")
+    elif approve or reject:
+        status = "approved" if approve else "rejected"
+        admin = auth_user()
+
+        def change(d):
+            r = d["requests"][rid]
+            if r["status"] != "pending":
+                return
+            if approve:
+                entry = d["users"].get(r["username"], {})
+                if not r["existing"]:
+                    entry.update({"name": r["name"], "email": r["email"],
+                                  "password_hash": r["password_hash"]})
+                entry.update({"regulators": regs, "approved_by": admin, "approved_at": now_iso()})
+                d["users"][r["username"]] = entry
+            r.pop("password_hash", None)
+            r.update({"status": status, "decided_by": admin, "decided_at": now_iso(),
+                      "granted": regs if approve else []})
+
+        if not update_store(change, f"{status.title()} access request for {req['email']}"):
+            st.error("Couldn't save the decision. Please try again.")
+        else:
+            if approve:
+                body = (f"<p>Hi {safe(req['name'])},</p><p>Your access to the Finance Listening "
+                        f"Portal has been approved for <b>{safe(', '.join(regs))}</b>.</p>"
+                        f"<p>Sign in at <a href='{app_url()}'>{app_url()}</a> with username "
+                        f"<b>{safe(req['username'])}</b>"
+                        + ("." if req["existing"] else " and the password you chose.") + "</p>")
+            else:
+                body = (f"<p>Hi {safe(req['name'])},</p><p>Your access request for the Finance "
+                        "Listening Portal was not approved. Please contact the portal admin "
+                        "if you have questions.</p>")
+            sent = send_email(req["email"], f"Portal access {status}",
+                              email_shell(f"Access {status}", body))
+            st.session_state.flash = (f"Request {status}. " + (
+                f"{req['name']} has been emailed." if sent
+                else email_error_text("Couldn't email them.")))
+            st.rerun()
+
+    done_button()
+    footer()
+    st.stop()
+
+
+def auth_user() -> str:
+    return st.session_state.get("auth", {}).get("username", "")
+
+
 def auth_screens():
     users = get_users()
     if not users and st.session_state.get("view", "login") == "login":
@@ -538,8 +728,14 @@ def auth_screens():
     st.stop()
 
 
+if st.query_params.get("review"):
+    st.session_state.review_id = st.query_params.get("review")
+
 if "auth" not in st.session_state:
     auth_screens()
+
+if st.session_state.get("review_id"):
+    view_review(get_users())
 
 auth = st.session_state.auth
 
