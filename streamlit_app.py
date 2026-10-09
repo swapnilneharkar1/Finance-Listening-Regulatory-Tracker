@@ -12,6 +12,7 @@ import hmac
 import html as html_lib
 import json
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -157,6 +158,7 @@ def login_screen():
                 "name": user.get("name", username),
                 "regulators": regs,
             }
+            st.session_state.pop("data", None)  # fetch fresh data after every login
             st.rerun()
         else:
             st.error("Invalid username or password.")
@@ -173,18 +175,60 @@ auth = st.session_state.auth
 
 
 # ───────────────────────── Data ─────────────────────────
-@st.cache_data(ttl=900, show_spinner="Loading latest regulatory data…")
-def load_data() -> dict:
+def gh_headers() -> dict:
+    """Optional GITHUB_TOKEN secret raises GitHub's API limit from 60 to 5,000 calls/hour."""
+    h = {"Accept": "application/vnd.github+json"}
     try:
-        r = requests.get(RAW_URL, timeout=30)
+        token = st.secrets.get("GITHUB_TOKEN")
+    except FileNotFoundError:
+        token = None
+    if token:
+        h["Authorization"] = f"Bearer {token}"
+    return h
+
+
+def latest_data_sha() -> str | None:
+    """SHA of the newest commit that changed the data file (always live, no CDN cache)."""
+    try:
+        r = requests.get(
+            f"https://api.github.com/repos/{REPO}/commits",
+            params={"sha": BRANCH, "path": DATA_FILE, "per_page": 1},
+            headers=gh_headers(), timeout=15,
+        )
+        if r.status_code == 200 and r.json():
+            return r.json()[0]["sha"]
+    except (requests.RequestException, ValueError, KeyError, IndexError):
+        pass
+    return None
+
+
+@st.cache_data(max_entries=3, show_spinner=False)
+def data_at_commit(sha: str) -> dict:
+    """A file at a fixed commit never changes, so it is safe to cache by SHA."""
+    r = requests.get(f"https://raw.githubusercontent.com/{REPO}/{sha}/{DATA_FILE}", timeout=60)
+    r.raise_for_status()
+    return r.json()
+
+
+def fetch_latest_data() -> tuple[dict, str]:
+    """Return (data, version). Tries the exact latest commit first, then fallbacks."""
+    sha = latest_data_sha()
+    if sha:
+        try:
+            return data_at_commit(sha), sha
+        except (requests.RequestException, ValueError):
+            pass
+    try:  # fallback: branch URL with cache-busting
+        r = requests.get(RAW_URL, params={"t": int(time.time())},
+                         headers={"Cache-Control": "no-cache"}, timeout=60)
         if r.status_code == 200:
-            return r.json()
+            return r.json(), "raw"
     except (requests.RequestException, ValueError):
         pass
     local = BASE_DIR / DATA_FILE
     if local.exists():
-        return json.loads(local.read_text(encoding="utf-8"))
-    return {}
+        return json.loads(local.read_text(encoding="utf-8")), "local"
+    return {}, "none"
 
 
 def filter_data(data: dict, regs: list[str]) -> dict:
@@ -218,11 +262,24 @@ document.querySelectorAll('.reg-btn').forEach(b => {{
   if (!__ALLOWED__.includes(b.dataset.reg)) b.remove();
 }});
 currentReg = __ALLOWED__.find(k => REGULATORS[k]) || currentReg;
+try {{  // after a data refresh, return to the regulator/tab the user was on
+  const v = JSON.parse(sessionStorage.getItem('__portal_view') || 'null');
+  if (v && REGULATORS[v.reg]) {{
+    currentReg = v.reg;
+    if (v.tab < REGULATORS[v.reg].tabs.length) currentTabIdx = v.tab;
+  }}
+}} catch (e) {{}}
 document.querySelectorAll('.reg-btn').forEach(b => b.classList.toggle('active', b.dataset.reg === currentReg));
 if (REGULATORS[currentReg]) document.documentElement.style.setProperty('--active-accent', REGULATORS[currentReg].color);
 
 /* ── Bootstrap ── */"""
     page = page.replace("/* ── Bootstrap ── */", access_js, 1)
+
+    # Refresh button and the 30-minute auto-refresh pull live data from GitHub
+    page = page.replace("function refreshCurrent() { loadTab(true); }",
+                        "function refreshCurrent() { __reloadData(); }", 1)
+    page = page.replace("setInterval(() => loadTab(true), 30 * 60 * 1000);",
+                        "setInterval(() => __reloadData(), 30 * 60 * 1000);", 1)
 
     # 3) User initials + Sign out inside the portal header
     initials = "".join(w[0] for w in name.split()[:2]).upper() or "U"
@@ -235,6 +292,15 @@ if (REGULATORS[currentReg]) document.documentElement.style.setProperty('--active
 function __signOut() {{
   try {{
     const b = window.parent.document.querySelector('.st-key-signout button');
+    if (b) {{ b.click(); return; }}
+  }} catch (e) {{}}
+  window.top.location.reload();
+}}
+function __reloadData() {{
+  try {{ sessionStorage.setItem('__portal_view', JSON.stringify({{reg: currentReg, tab: currentTabIdx}})); }} catch (e) {{}}
+  try {{ setLoading(true); }} catch (e) {{}}
+  try {{
+    const b = window.parent.document.querySelector('.st-key-reload button');
     if (b) {{ b.click(); return; }}
   }} catch (e) {{}}
   window.top.location.reload();
@@ -257,7 +323,7 @@ st.markdown(
     <style>
       .block-container {padding: 0 !important; max-width: 100% !important;}
       [data-testid="stMainBlockContainer"] {padding: 0 !important;}
-      .st-key-signout {display: none !important;}
+      .st-key-signout, .st-key-reload {display: none !important;}
       iframe {display: block; height: 100vh !important; border: 0;}
       [data-testid="stVerticalBlock"] {gap: 0 !important;}
     </style>
@@ -265,11 +331,28 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Hidden button the portal's "Sign out" clicks
+# Hidden buttons clicked by the portal's own "Sign out" and "Refresh"
 if st.button("Sign out", key="signout"):
-    del st.session_state["auth"]
+    for k in ("auth", "data", "data_version"):
+        st.session_state.pop(k, None)
     st.rerun()
 
-page = build_page(load_html(), filter_data(load_data(), auth["regulators"]),
+refresh_clicked = st.button("Reload", key="reload")
+
+if refresh_clicked or "data" not in st.session_state:
+    old_version = st.session_state.get("data_version")
+    with st.spinner("Loading latest data from GitHub…"):
+        data, version = fetch_latest_data()
+    st.session_state.data = data
+    st.session_state.data_version = version
+    st.session_state.loads = st.session_state.get("loads", 0) + 1  # forces the page to re-render
+    if refresh_clicked:
+        if version != old_version:
+            st.toast("Loaded the latest data.")
+        else:
+            st.toast("Already up to date.")
+
+page = build_page(load_html(), filter_data(st.session_state.data, auth["regulators"]),
                   auth["regulators"], auth["name"])
+page += f"\n<!-- load {st.session_state.loads} -->"
 components.html(page, height=1000, scrolling=True)
