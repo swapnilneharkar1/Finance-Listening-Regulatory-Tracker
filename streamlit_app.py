@@ -403,9 +403,9 @@ LOGIN_CSS = """
   [class*="st-key-link_"] > div {display: flex; justify-content: center; width: 100%;}
   [data-testid="stForm"] [data-testid="stMultiSelect"] [data-baseweb="select"] > div {background: #fff !important;}
   .login-hint {font-size: 12px; color: #5a6474; margin: -4px 0 8px;}
-  .st-key-reject_btn button {background: #fff !important; color: #c0392b !important;
-                             border: 1px solid #e8b4ae !important;}
-  .st-key-reject_btn button:hover {background: #fdf2f1 !important;}
+  [class*="st-key-reject_"] button {background: #fff !important; color: #c0392b !important;
+                                    border: 1px solid #e8b4ae !important;}
+  [class*="st-key-reject_"] button:hover {background: #fdf2f1 !important;}
   [data-testid="stMultiSelectTagsContainer"] [data-tag] {background: #e8f0fe !important; color: #1a56db !important;}
   [data-testid="stMultiSelectTagsContainer"] [data-tag] * {color: #1a56db !important; background: transparent !important;}
   .login-foot {text-align: center; font-size: 12px; color: #9aa3b0; margin-top: 18px;}
@@ -623,8 +623,15 @@ def view_request(users: dict):
                        "status": "pending", "created_at": now_iso()}
                 if not existing:
                     req["password_hash"] = make_hash(pw)
-                if not update_store(lambda d: d["requests"].__setitem__(rid, req),
-                                    f"Access request from {email}"):
+                def add_request(d):
+                    for r in d["requests"].values():  # a newer request replaces an older pending one
+                        if r.get("status") == "pending" and r.get("email") == email:
+                            r.pop("password_hash", None)
+                            r.update({"status": "superseded", "decided_by": "system",
+                                      "decided_at": now_iso()})
+                    d["requests"][rid] = req
+
+                if not update_store(add_request, f"Access request from {email}"):
                     st.error(store_error_text("Couldn't save your request."))
                     st.stop()
                 link = f"{app_url()}/?review={rid}"
@@ -670,6 +677,63 @@ def view_request(users: dict):
     footer()
 
 
+def decide(rid: str, req: dict, approve: bool, regs: list[str]):
+    """Approve or reject a request, email the requester, then rerun with a flash message."""
+    safe = html_lib.escape
+    status = "approved" if approve else "rejected"
+    admin = auth_user()
+
+    def change(d):
+        r = d["requests"][rid]
+        if r["status"] != "pending":
+            return
+        if approve:
+            entry = d["users"].get(r["username"], {})
+            if not r["existing"]:
+                entry.update({"name": r["name"], "email": r["email"],
+                              "password_hash": r["password_hash"]})
+            entry.update({"regulators": regs, "approved_by": admin, "approved_at": now_iso()})
+            d["users"][r["username"]] = entry
+        r.pop("password_hash", None)
+        r.update({"status": status, "decided_by": admin, "decided_at": now_iso(),
+                  "granted": regs if approve else []})
+
+    if not update_store(change, f"{status.title()} access request for {req['email']}"):
+        st.error(store_error_text("Couldn't save the decision."))
+        return
+    if approve:
+        body = (f"<p>Hi {safe(req['name'])},</p><p>Your access to the Finance Listening "
+                f"Portal has been approved for <b>{safe(', '.join(regs))}</b>.</p>"
+                f"<p>Sign in at <a href='{app_url()}'>{app_url()}</a> with username "
+                f"<b>{safe(req['username'])}</b>"
+                + (" and your existing password." if req["existing"]
+                   else " and the password you chose.") + "</p>")
+    else:
+        body = (f"<p>Hi {safe(req['name'])},</p><p>Your access request for the Finance "
+                "Listening Portal was not approved. Please contact the portal admin "
+                "if you have questions.</p>")
+    sent = send_email(req["email"], f"Portal access {status}",
+                      email_shell(f"Access {status}", body))
+    st.session_state.flash = (f"{req['name']}: request {status}. " + (
+        "They have been emailed." if sent else email_error_text("Couldn't email them.")))
+    st.rerun()
+
+
+def request_summary(req: dict, users: dict) -> tuple[str, list[str]]:
+    """Markdown description of a request, and the regulators to pre-tick."""
+    safe = html_lib.escape
+    current = allowed_regulators(users.get(req["username"], {})) if req["existing"] else []
+    text = (f"**{safe(req['name'])}** · {safe(req['email'])}  \n"
+            + (f"Existing user **{safe(req['username'])}**, currently has: "
+               f"{', '.join(current) or 'nothing'}" if req["existing"]
+               else f"New user · will sign in as **{safe(req['username'])}**")
+            + f"  \n**Asked for:** {', '.join(req['regulators'])}"
+            + f"  \n**Reason:** {safe(req['reason'])}"
+            + f"  \n<span style='color:#9aa3b0;font-size:12px'>Requested {req.get('created_at', '')[:16].replace('T', ' ')} UTC</span>")
+    default = [r for r in ALL_REGULATORS if r in set(current) | set(req["regulators"])]
+    return text, default
+
+
 def view_review(users: dict):
     rid = st.session_state.review_id
     brand("Review access request")
@@ -700,15 +764,9 @@ def view_review(users: dict):
                     f"on {req.get('decided_at', '?')[:10]}.")
         done_button(); footer(); st.stop()
 
-    current = allowed_regulators(users.get(req["username"], {})) if req["existing"] else []
+    text, default = request_summary(req, users)
     with st.form("review"):
-        st.markdown(
-            f"**{safe(req['name'])}** · {safe(req['email'])}  \n"
-            + (f"Existing user **{safe(req['username'])}**, currently has: "
-               f"{', '.join(current) or 'nothing'}" if req["existing"]
-               else f"New user · will sign in as **{safe(req['username'])}**")
-            + f"  \n**Reason:** {safe(req['reason'])}")
-        default = [r for r in ALL_REGULATORS if r in set(current) | set(req["regulators"])]
+        st.markdown(text, unsafe_allow_html=True)
         regs = st.multiselect("Regulators to grant", ALL_REGULATORS, default=default)
         c1, c2 = st.columns(2)
         approve = c1.form_submit_button("Approve", use_container_width=True)
@@ -717,46 +775,123 @@ def view_review(users: dict):
     if approve and not regs:
         st.error("Choose at least one regulator, or reject the request.")
     elif approve or reject:
-        status = "approved" if approve else "rejected"
-        admin = auth_user()
-
-        def change(d):
-            r = d["requests"][rid]
-            if r["status"] != "pending":
-                return
-            if approve:
-                entry = d["users"].get(r["username"], {})
-                if not r["existing"]:
-                    entry.update({"name": r["name"], "email": r["email"],
-                                  "password_hash": r["password_hash"]})
-                entry.update({"regulators": regs, "approved_by": admin, "approved_at": now_iso()})
-                d["users"][r["username"]] = entry
-            r.pop("password_hash", None)
-            r.update({"status": status, "decided_by": admin, "decided_at": now_iso(),
-                      "granted": regs if approve else []})
-
-        if not update_store(change, f"{status.title()} access request for {req['email']}"):
-            st.error(store_error_text("Couldn't save the decision."))
-        else:
-            if approve:
-                body = (f"<p>Hi {safe(req['name'])},</p><p>Your access to the Finance Listening "
-                        f"Portal has been approved for <b>{safe(', '.join(regs))}</b>.</p>"
-                        f"<p>Sign in at <a href='{app_url()}'>{app_url()}</a> with username "
-                        f"<b>{safe(req['username'])}</b>"
-                        + ("." if req["existing"] else " and the password you chose.") + "</p>")
-            else:
-                body = (f"<p>Hi {safe(req['name'])},</p><p>Your access request for the Finance "
-                        "Listening Portal was not approved. Please contact the portal admin "
-                        "if you have questions.</p>")
-            sent = send_email(req["email"], f"Portal access {status}",
-                              email_shell(f"Access {status}", body))
-            st.session_state.flash = (f"Request {status}. " + (
-                f"{req['name']} has been emailed." if sent
-                else email_error_text("Couldn't email them.")))
-            st.rerun()
+        decide(rid, req, approve, regs)
 
     done_button()
     footer()
+    st.stop()
+
+
+ADMIN_CSS = """
+<style>
+  .block-container, [data-testid="stMainBlockContainer"] {max-width: 900px !important; padding-top: 4vh !important;}
+  .admin-head {display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid #e2e6ea;
+               border-radius: 10px; padding: 14px 22px; margin-bottom: 14px;}
+  .admin-head img {height: 36px;}
+  .admin-head h1 {font-size: 18px !important; font-weight: 700 !important; margin: 0 !important; padding: 0 !important; color: #1a2030 !important;}
+  .admin-head p {font-size: 12px; color: #5a6474; margin: 0;}
+  [data-testid="stMetric"] {background: #fff; border: 1px solid #e2e6ea; border-radius: 10px; padding: 12px 16px;}
+  [data-testid="stForm"] {border-radius: 10px !important; margin-bottom: 12px;}
+  [data-testid="stTabs"] button p {font-weight: 600;}
+  .st-key-back_portal button {background: #fff !important; border: 1px solid #e2e6ea !important; color: #1a2030 !important;}
+</style>
+"""
+
+
+def admin_page(users: dict):
+    st.markdown(LOGIN_CSS + ADMIN_CSS, unsafe_allow_html=True)
+    safe = html_lib.escape
+    h1, h2 = st.columns([5, 1.3])
+    with h1:
+        st.markdown(f"""<div class="admin-head"><img src="{company_logo()}"/>
+            <div><h1>Admin</h1><p>Finance Listening Portal · signed in as {safe(auth_user())}</p></div></div>""",
+                    unsafe_allow_html=True)
+    with h2:
+        st.write("")
+        if st.button("← Back to portal", key="back_portal", use_container_width=True):
+            st.session_state.pop("admin_view", None)
+            st.rerun()
+
+    try:
+        doc, _ = load_store()
+    except requests.RequestException:
+        st.error("Couldn't load data from the portal store. Please try again in a minute.")
+        st.stop()
+    reqs = doc["requests"]
+    pending = sorted(((rid, r) for rid, r in reqs.items() if r.get("status") == "pending"),
+                     key=lambda x: x[1].get("created_at", ""))
+    decided = sorted(((rid, r) for rid, r in reqs.items()
+                      if r.get("status") in ("approved", "rejected")),
+                     key=lambda x: x[1].get("decided_at", ""), reverse=True)
+    flash()
+
+    t_req, t_users = st.tabs([f"Requests ({len(pending)} pending)", f"Users ({len(users)})"])
+
+    with t_req:
+        if not store_cfg():
+            st.info("Access requests need the [password_store] section in Secrets.")
+        elif not pending:
+            st.success("No pending requests.")
+        for rid, req in pending:
+            text, default = request_summary(req, users)
+            with st.form(f"req_{rid}"):
+                st.markdown(text, unsafe_allow_html=True)
+                regs = st.multiselect("Regulators to grant", ALL_REGULATORS, default=default,
+                                      key=f"regs_{rid}")
+                c1, c2, _ = st.columns([1, 1, 2])
+                approve = c1.form_submit_button("Approve", use_container_width=True)
+                reject = c2.form_submit_button("Reject", use_container_width=True,
+                                               key=f"reject_{rid}")
+            if approve and not regs:
+                st.error("Choose at least one regulator, or reject the request.")
+            elif approve or reject:
+                decide(rid, req, approve, regs)
+
+        if decided:
+            st.markdown("##### Recent decisions")
+            st.dataframe(
+                [{"Name": r.get("name"), "Email": r.get("email"), "Username": r.get("username"),
+                  "Decision": r.get("status", "").title(),
+                  "Granted": ", ".join(r.get("granted", [])),
+                  "By": r.get("decided_by"),
+                  "On": r.get("decided_at", "")[:16].replace("T", " ")}
+                 for _, r in decided[:25]],
+                hide_index=True, use_container_width=True)
+
+    with t_users:
+        rows = []
+        for uname, u in sorted(users.items()):
+            regs = allowed_regulators(u)
+            rows.append({
+                "Name": u.get("name", uname), "Username": uname, "Email": u.get("email", ""),
+                "Role": "Admin" if is_admin(uname, users) else "User",
+                "Access": "ALL" if len(regs) == len(ALL_REGULATORS) else ", ".join(regs) or "—",
+                "# Regulators": len(regs),
+                "Added via": "Portal request" if uname in doc["users"] else "Secrets",
+                "Approved on": doc["users"].get(uname, {}).get("approved_at", "")[:10],
+            })
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("Total users", len(rows))
+        m2.metric("Admins", sum(r["Role"] == "Admin" for r in rows))
+        m3.metric("Full access", sum(r["# Regulators"] == len(ALL_REGULATORS) for r in rows))
+        m4.metric("Pending requests", len(pending))
+
+        st.markdown("##### Users per regulator")
+        counts = {reg: sum(reg in allowed_regulators(u) for u in users.values()) for reg in ALL_REGULATORS}
+        st.bar_chart(counts, height=220, color="#1a56db")
+
+        st.markdown("##### All users")
+        q = st.text_input("Filter", placeholder="Search name, username, email or regulator",
+                          label_visibility="collapsed")
+        reg_filter = st.multiselect("Has access to", ALL_REGULATORS, key="user_reg_filter",
+                                    placeholder="Filter by regulator")
+        shown = [r for r in rows
+                 if (not q or q.lower() in " ".join(str(v) for v in r.values()).lower())
+                 and all(x in allowed_regulators(users[r["Username"]]) for x in reg_filter)]
+        st.dataframe(shown, hide_index=True, use_container_width=True,
+                     column_config={"# Regulators": st.column_config.NumberColumn(width="small")})
+        st.caption(f"Showing {len(shown)} of {len(rows)} users. Users from Secrets are edited in "
+                   "Streamlit → Settings → Secrets; approved users live in your portal-auth repo.")
     st.stop()
 
 
@@ -783,6 +918,12 @@ if "auth" not in st.session_state:
 
 if st.session_state.get("review_id"):
     view_review(get_users())
+
+if st.session_state.get("admin_view"):
+    _users = get_users()
+    if is_admin(auth_user(), _users):
+        admin_page(_users)
+    st.session_state.pop("admin_view", None)
 
 auth = st.session_state.auth
 
@@ -853,7 +994,8 @@ def filter_data(data: dict, regs: list[str]) -> dict:
     return {**data, "data": keep}
 
 
-def build_page(page: str, data: dict, regs: list[str], name: str) -> str:
+def build_page(page: str, data: dict, regs: list[str], name: str,
+               admin_pending: int | None = None) -> str:
     def js(obj) -> str:  # JSON safe to embed inside <script>
         return json.dumps(obj).replace("</", "<\\/")
 
@@ -896,7 +1038,12 @@ if (REGULATORS[currentReg]) document.documentElement.style.setProperty('--active
 
     # 3) User initials + Sign out inside the portal header
     initials = "".join(w[0] for w in name.split()[:2]).upper() or "U"
+    admin_btn = ""
+    if admin_pending is not None:
+        badge = f'<span class="__badge">{admin_pending}</span>' if admin_pending else ""
+        admin_btn = f'<button class="__signout __admin" onclick="__openAdmin()">Admin{badge}</button>'
     user_ui = f"""<span class="header-time" id="headerTime"></span>
+    {admin_btn}
     <div class="__user" title="{html_lib.escape(name)}">{html_lib.escape(initials)}</div>
     <button class="__signout" onclick="__signOut()">Sign out</button>"""
     page = page.replace('<span class="header-time" id="headerTime"></span>', user_ui, 1)
@@ -908,6 +1055,12 @@ function __signOut() {{
     if (b) {{ b.click(); return; }}
   }} catch (e) {{}}
   window.top.location.reload();
+}}
+function __openAdmin() {{
+  try {{
+    const b = window.parent.document.querySelector('.st-key-adminopen button');
+    if (b) {{ b.click(); return; }}
+  }} catch (e) {{}}
 }}
 function __reloadData() {{
   try {{ sessionStorage.setItem('__portal_view', JSON.stringify({{reg: currentReg, tab: currentTabIdx}})); }} catch (e) {{}}
@@ -926,6 +1079,9 @@ function __reloadData() {{
                border-radius: 6px; padding: 6px 12px; font-size: 12px; font-weight: 600; cursor: pointer;
                font-family: inherit;}}
   .__signout:hover {{border-color: #c0392b; color: #c0392b;}}
+  .__admin {{color: #1a56db; border-color: #c9d8f8; display: inline-flex; align-items: center; gap: 6px;}}
+  .__admin:hover {{border-color: #1a56db !important; color: #1a56db !important; background: #f3f7ff;}}
+  .__badge {{background: #c0392b; color: #fff; border-radius: 10px; font-size: 11px; padding: 1px 7px;}}
 </style>"""
     return page.replace("<head>", "<head>" + head_extra, 1) if "<head>" in page else head_extra + page
 
@@ -936,7 +1092,7 @@ st.markdown(
     <style>
       .block-container {padding: 0 !important; max-width: 100% !important;}
       [data-testid="stMainBlockContainer"] {padding: 0 !important;}
-      .st-key-signout, .st-key-reload {display: none !important;}
+      .st-key-signout, .st-key-reload, .st-key-adminopen {display: none !important;}
       iframe {display: block; height: 100vh !important; border: 0;}
       [data-testid="stVerticalBlock"] {gap: 0 !important;}
     </style>
@@ -953,6 +1109,19 @@ if st.button("Sign out", key="signout"):
 
 refresh_clicked = st.button("Reload", key="reload")
 
+if st.button("Admin", key="adminopen"):
+    st.session_state.admin_view = True
+    st.rerun()
+
+admin_pending = None
+_users_now = get_users()
+if is_admin(auth_user(), _users_now):
+    try:
+        _doc, _ = load_store()
+        admin_pending = sum(r.get("status") == "pending" for r in _doc["requests"].values())
+    except (requests.RequestException, ValueError, KeyError):
+        admin_pending = 0
+
 if refresh_clicked or "data" not in st.session_state:
     old_version = st.session_state.get("data_version")
     with st.spinner("Loading latest data from GitHub…"):
@@ -967,6 +1136,6 @@ if refresh_clicked or "data" not in st.session_state:
             st.toast("Already up to date.")
 
 page = build_page(load_html(), filter_data(st.session_state.data, auth["regulators"]),
-                  auth["regulators"], auth["name"])
+                  auth["regulators"], auth["name"], admin_pending)
 page += f"\n<!-- load {st.session_state.loads} -->"
 components.html(page, height=1000, scrolling=True)
