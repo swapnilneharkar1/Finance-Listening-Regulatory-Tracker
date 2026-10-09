@@ -6,13 +6,20 @@ Finance Listening Portal on Streamlit, with login and per-user regulator access.
 - Access is enforced server-side: data for regulators a user is not allowed to
   see is removed before the page is sent to their browser.
 - Generate password hashes with: python make_password_hash.py
+- "Forgot password" emails a 6-digit code (needs [smtp] and [password_store]).
+- "Request access" emails the admins a ready-to-paste Secrets block (needs ADMIN_EMAILS).
 """
+import base64
 import hashlib
 import hmac
 import html as html_lib
 import json
+import os
 import re
+import secrets as secrets_mod
+import smtplib
 import time
+from email.message import EmailMessage
 from pathlib import Path
 
 import requests
@@ -57,6 +64,28 @@ def company_logo() -> str:
 
 
 # ───────────────────────── Authentication ─────────────────────────
+# Only these email domains can reset passwords or request access
+ALLOWED_EMAIL_DOMAINS = ("bajajfinserv.in", "bizsupportc.com", "bizsupporta.com")
+OTP_TTL_SECONDS = 10 * 60
+DEFAULT_ADMIN_EMAILS = ["swapnil.neharkar1@bajajfinserv.in"]  # used if ADMIN_EMAILS isn't in Secrets
+OTP_MAX_ATTEMPTS = 5
+RESEND_COOLDOWN_SECONDS = 60
+HASH_ITERATIONS = 200_000
+
+
+def secret(key, default=None):
+    try:
+        return st.secrets.get(key, default)
+    except FileNotFoundError:
+        return default
+
+
+def make_hash(password: str) -> str:
+    salt = os.urandom(16)
+    digest = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, HASH_ITERATIONS)
+    return f"pbkdf2_sha256${HASH_ITERATIONS}${salt.hex()}${digest.hex()}"
+
+
 def verify_password(password: str, stored: str) -> bool:
     """stored format: pbkdf2_sha256$<iterations>$<salt_hex>$<hash_hex>"""
     try:
@@ -84,19 +113,142 @@ def allowed_regulators(user: dict) -> list[str]:
     return [r for r in ALL_REGULATORS if r in regs]  # keep portal order
 
 
+def email_allowed(email: str) -> bool:
+    email = email.strip().lower()
+    if not re.fullmatch(r"[a-z0-9._%+\-]+@[a-z0-9.\-]+", email):
+        return False
+    return email.rsplit("@", 1)[1] in ALLOWED_EMAIL_DOMAINS
+
+
+def domains_text() -> str:
+    return ", ".join("@" + d for d in ALLOWED_EMAIL_DOMAINS)
+
+
+def password_problem(pw: str, confirm: str, username: str = "") -> str | None:
+    if len(pw) < 8:
+        return "Password must be at least 8 characters."
+    if not (re.search(r"[A-Za-z]", pw) and re.search(r"\d", pw)):
+        return "Password must contain both letters and numbers."
+    if username and username.lower() in pw.lower():
+        return "Password must not contain your username."
+    if pw != confirm:
+        return "Passwords don't match."
+    return None
+
+
+# ── Password store: new passwords set via "Forgot password" ──
+# Kept in a JSON file in a (private) GitHub repo, because Streamlit Secrets are read-only.
+def store_cfg() -> dict | None:
+    cfg = secret("password_store")
+    if cfg and cfg.get("repo") and cfg.get("token"):
+        return dict(cfg)
+    return None
+
+
+def _store_request(method: str, cfg: dict, **kw) -> requests.Response:
+    path = cfg.get("path", "password_overrides.json")
+    return requests.request(
+        method, f"https://api.github.com/repos/{cfg['repo']}/contents/{path}",
+        headers={"Authorization": f"Bearer {cfg['token']}",
+                 "Accept": "application/vnd.github+json"},
+        timeout=20, **kw)
+
+
+@st.cache_data(ttl=30, show_spinner=False)
+def load_overrides() -> tuple[dict, str | None]:
+    """Returns (overrides, file_sha). Raises if GitHub can't be reached (not cached)."""
+    cfg = store_cfg()
+    if not cfg:
+        return {}, None
+    r = _store_request("GET", cfg, params={"ref": cfg.get("branch", "main")})
+    if r.status_code == 404:
+        return {}, None
+    r.raise_for_status()
+    body = r.json()
+    return json.loads(base64.b64decode(body["content"]).decode() or "{}"), body["sha"]
+
+
+def save_override(username: str, password_hash: str) -> bool:
+    cfg = store_cfg()
+    if not cfg:
+        return False
+    for _ in range(3):  # retry if someone else saved at the same moment
+        load_overrides.clear()
+        try:
+            overrides, sha = load_overrides()
+        except requests.RequestException:
+            return False
+        overrides[username] = {"password_hash": password_hash,
+                               "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+        payload = {
+            "message": f"Password reset for {username}",
+            "content": base64.b64encode(json.dumps(overrides, indent=2).encode()).decode(),
+            "branch": cfg.get("branch", "main"),
+        }
+        if sha:
+            payload["sha"] = sha
+        r = _store_request("PUT", cfg, json=payload)
+        if r.status_code in (200, 201):
+            load_overrides.clear()
+            return True
+        if r.status_code not in (409, 422):
+            return False
+    return False
+
+
+def current_password_hash(username: str, user: dict) -> str | None:
+    """Reset password wins over the one in Secrets. None = store unreachable."""
+    try:
+        overrides, _ = load_overrides()
+    except (requests.RequestException, ValueError, KeyError):
+        return None if store_cfg() else user.get("password_hash", "")
+    entry = overrides.get(username)
+    return entry["password_hash"] if entry else user.get("password_hash", "")
+
+
+# ── Email ──
+def send_email(to: list[str] | str, subject: str, body_html: str) -> bool:
+    cfg = secret("smtp")
+    if not cfg or not cfg.get("user") or not cfg.get("password"):
+        return False
+    msg = EmailMessage()
+    msg["Subject"] = subject
+    msg["From"] = f"Finance Listening Portal <{cfg['user']}>"
+    msg["To"] = ", ".join(to) if isinstance(to, list) else to
+    msg.set_content("Please view this email in an HTML-capable client.")
+    msg.add_alternative(body_html, subtype="html")
+    try:
+        with smtplib.SMTP(cfg.get("host", "smtp.office365.com"), int(cfg.get("port", 587)),
+                          timeout=20) as server:
+            server.starttls()
+            server.login(cfg["user"], cfg["password"])
+            server.send_message(msg)
+        return True
+    except (smtplib.SMTPException, OSError):
+        return False
+
+
+def email_shell(title: str, inner: str) -> str:
+    return f"""<div style="font-family:Segoe UI,Arial,sans-serif;max-width:520px;margin:auto;
+    border:1px solid #e2e6ea;border-radius:10px;overflow:hidden">
+    <div style="background:#1a56db;color:#fff;padding:14px 22px;font-weight:600">Finance Listening Portal</div>
+    <div style="padding:22px;color:#1a2030;font-size:14px;line-height:1.6">
+    <h2 style="font-size:17px;margin:0 0 12px">{title}</h2>{inner}</div></div>"""
+
+
+# ── Screens ──
 LOGIN_CSS = """
 <style>
-  html, body, .stApp, input, button, label, p {
+  html, body, .stApp, input, button, label, p, textarea {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
   }
-  .block-container, [data-testid="stMainBlockContainer"] {max-width: 460px !important; padding-top: 11vh !important;}
+  .block-container, [data-testid="stMainBlockContainer"] {max-width: 460px !important; padding-top: 9vh !important;}
   .login-brand {
     display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px;
     background: #fff; border: 1px solid #e2e6ea; border-bottom: none;
     border-radius: 10px 10px 0 0; padding: 22px 28px 18px;
   }
   .login-brand img {height: 46px;}
-  .login-brand .divider {display: none;}
   .login-brand h1 {font-size: 19px !important; font-weight: 700 !important;
                    color: #1a2030 !important; margin: 0 !important; padding: 0 !important; line-height: 1.25; white-space: nowrap;}
   .login-brand p {font-size: 13px; color: #5a6474; margin: 2px 0 0;}
@@ -106,70 +258,288 @@ LOGIN_CSS = """
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   }
   [data-testid="stForm"] label p {font-size: 13px !important; font-weight: 600; color: #5a6474;}
-  [data-testid="stForm"] input {font-size: 14px !important; background: #fff !important;}
-  [data-testid="stForm"] [data-baseweb="input"] *, [data-testid="stForm"] [data-baseweb="input"] button {background-color: #fff !important;}
-  [data-testid="stForm"] [data-baseweb="input"] {
+  [data-testid="stForm"] input, [data-testid="stForm"] textarea {font-size: 14px !important; background: #fff !important;}
+  [data-testid="stForm"] [data-baseweb="input"] *, [data-testid="stForm"] [data-baseweb="input"] button,
+  [data-testid="stForm"] [data-baseweb="textarea"] *, [data-testid="stForm"] [data-baseweb="select"] > div {background-color: #fff !important;}
+  [data-testid="stForm"] [data-baseweb="input"], [data-testid="stForm"] [data-baseweb="textarea"],
+  [data-testid="stForm"] [data-baseweb="select"] > div {
     background: #fff !important; border: 1px solid #e2e6ea !important; border-radius: 8px !important;
   }
   [data-testid="stForm"] [data-baseweb="input"]:focus-within {border-color: #1a56db !important;}
-  [data-testid="stForm"] [data-baseweb="input"] > div {background: #fff !important;}
   [data-testid="stFormSubmitButton"] button {
     background: #1a56db !important; color: #fff !important; border: none !important;
     border-radius: 8px !important; height: 42px; font-weight: 600 !important; margin-top: 6px;
   }
   [data-testid="stFormSubmitButton"] button:hover {background: #1546b8 !important;}
+  .login-links {display: flex; justify-content: center; gap: 0;}
+  [class*="st-key-link_"] button {
+    background: none !important; border: none !important; box-shadow: none !important;
+    color: #1a56db !important; font-size: 13px !important; font-weight: 600 !important;
+    padding: 4px 0 !important; min-height: 0 !important;
+  }
+  [class*="st-key-link_"] button:hover {text-decoration: underline;}
+  [class*="st-key-link_"] {display: flex !important; justify-content: center !important; width: 100% !important; margin-top: 8px;}
+  [class*="st-key-link_"] > div {display: flex; justify-content: center; width: 100%;}
+  [data-testid="stForm"] [data-testid="stMultiSelect"] [data-baseweb="select"] > div {background: #fff !important;}
+  .login-hint {font-size: 12px; color: #5a6474; margin: -4px 0 8px;}
   .login-foot {text-align: center; font-size: 12px; color: #9aa3b0; margin-top: 18px;}
 </style>
 """
 
 
-def login_screen():
+def brand(subtitle: str):
     st.markdown(LOGIN_CSS, unsafe_allow_html=True)
     st.markdown(
-        f"""
-        <div class="login-brand">
+        f"""<div class="login-brand">
           <img src="{company_logo()}" alt="Bajaj Finance"/>
-          <div class="divider"></div>
-          <div><h1>Finance Listening Portal</h1><p>Sign in to continue</p></div>
-        </div>
-        """,
+          <div><h1>Finance Listening Portal</h1><p>{html_lib.escape(subtitle)}</p></div>
+        </div>""",
         unsafe_allow_html=True,
     )
 
-    users = get_users()
-    if not users:
-        st.error("No users configured. Add a [users] section in the app's Secrets.")
-        st.stop()
 
+def go(view: str):
+    st.session_state.view = view
+    st.rerun()
+
+
+def flash():
+    msg = st.session_state.pop("flash", None)
+    if msg:
+        st.success(msg)
+
+
+def footer():
+    st.markdown("<div class='login-foot'>Bajaj Finserv · Internal use only</div>",
+                unsafe_allow_html=True)
+
+
+def view_login(users: dict):
+    brand("Sign in to continue")
     with st.form("login"):
         username = st.text_input("Username", placeholder="Enter your username").strip().lower()
         password = st.text_input("Password", type="password", placeholder="Enter your password")
         submitted = st.form_submit_button("Sign in", use_container_width=True)
+    flash()
 
     if submitted:
         user = users.get(username)
-        if user and verify_password(password, user.get("password_hash", "")):
+        stored = current_password_hash(username, user) if user else ""
+        if user and stored is None:
+            st.error("Can't verify your password right now. Please try again in a minute.")
+        elif user and verify_password(password, stored):
             regs = allowed_regulators(user)
             if not regs:
-                st.error("Your account has no regulators assigned. Contact the admin.")
-                st.stop()
-            st.session_state.auth = {
-                "username": username,
-                "name": user.get("name", username),
-                "regulators": regs,
-            }
-            st.session_state.pop("data", None)  # fetch fresh data after every login
-            st.rerun()
+                st.error("Your account has no regulators assigned. Use 'Request access' below.")
+            else:
+                st.session_state.auth = {"username": username,
+                                         "name": user.get("name", username),
+                                         "regulators": regs}
+                st.session_state.pop("data", None)  # fetch fresh data after every login
+                st.rerun()
         else:
             st.error("Invalid username or password.")
 
-    st.markdown("<div class='login-foot'>Bajaj Finserv · Internal use only</div>",
-                unsafe_allow_html=True)
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.button("Forgot password?", key="link_forgot"):
+            go("forgot")
+    with c2:
+        if st.button("Request access", key="link_request"):
+            go("request")
+    footer()
+
+
+def view_forgot(users: dict):
+    brand("Reset your password")
+    with st.form("forgot"):
+        email = st.text_input("Registered email", placeholder="name@bajajfinserv.in").strip().lower()
+        st.markdown(f"<div class='login-hint'>Allowed domains: {domains_text()}</div>",
+                    unsafe_allow_html=True)
+        submitted = st.form_submit_button("Send verification code", use_container_width=True)
+
+    if submitted:
+        last = st.session_state.get("reset", {}).get("sent_at", 0)
+        if not email_allowed(email):
+            st.error(f"Please use your work email ({domains_text()}).")
+        elif time.time() - last < RESEND_COOLDOWN_SECONDS:
+            st.error(f"Please wait {int(RESEND_COOLDOWN_SECONDS - (time.time() - last))}s before requesting another code.")
+        elif not store_cfg():
+            st.error("Password reset isn't set up yet. Please contact the portal admin.")
+        else:
+            match = next((u for u, d in users.items()
+                          if str(d.get("email", "")).strip().lower() == email), None)
+            state = {"email": email, "username": match, "otp_hash": None,
+                     "expires": time.time() + OTP_TTL_SECONDS, "attempts": 0,
+                     "sent_at": time.time()}
+            if match:
+                code = f"{secrets_mod.randbelow(1_000_000):06d}"
+                state["otp_hash"] = hashlib.sha256(code.encode()).hexdigest()
+                ok = send_email(email, "Your password reset code", email_shell(
+                    "Password reset code",
+                    f"<p>Hi {html_lib.escape(users[match].get('name', match))},</p>"
+                    f"<p>Your verification code is:</p>"
+                    f"<p style='font-size:28px;font-weight:700;letter-spacing:6px;color:#1a56db'>{code}</p>"
+                    f"<p>It expires in {OTP_TTL_SECONDS // 60} minutes. Your username is "
+                    f"<b>{html_lib.escape(match)}</b>.</p>"
+                    "<p style='color:#5a6474'>If you didn't ask for this, ignore this email; "
+                    "your password won't change.</p>"))
+                if not ok:
+                    st.error("Couldn't send the email right now. Please try again later or contact the admin.")
+                    st.stop()
+            st.session_state.reset = state
+            st.session_state.flash = ("If this email is registered, a 6-digit code has been sent to it. "
+                                      "Check your inbox (and spam).")
+            go("verify")
+
+    if st.button("Back to sign in", key="link_back_f"):
+        go("login")
+    footer()
+
+
+def view_verify(users: dict):
+    brand("Enter code and new password")
+    reset = st.session_state.get("reset")
+    if not reset:
+        go("forgot")
+    with st.form("verify"):
+        code = st.text_input("6-digit code", max_chars=6, placeholder="123456").strip()
+        pw = st.text_input("New password", type="password",
+                           placeholder="At least 8 characters, letters and numbers")
+        pw2 = st.text_input("Confirm new password", type="password")
+        submitted = st.form_submit_button("Reset password", use_container_width=True)
+    flash()
+
+    if submitted:
+        reset["attempts"] += 1
+        username = reset.get("username")
+        if reset["attempts"] > OTP_MAX_ATTEMPTS:
+            st.session_state.pop("reset", None)
+            st.error("Too many attempts. Please request a new code.")
+        elif time.time() > reset["expires"]:
+            st.error("This code has expired. Please request a new one.")
+        elif not (reset.get("otp_hash") and hmac.compare_digest(
+                hashlib.sha256(code.encode()).hexdigest(), reset["otp_hash"])):
+            st.error("Incorrect code.")
+        elif problem := password_problem(pw, pw2, username or ""):
+            st.error(problem)
+        elif not save_override(username, make_hash(pw)):
+            st.error("Couldn't save your new password. Please try again or contact the admin.")
+        else:
+            send_email(reset["email"], "Your password was changed", email_shell(
+                "Password changed",
+                f"<p>The password for <b>{html_lib.escape(username)}</b> was just changed.</p>"
+                "<p style='color:#5a6474'>If this wasn't you, contact the portal admin immediately.</p>"))
+            st.session_state.pop("reset", None)
+            st.session_state.flash = "Password updated. You can sign in now."
+            go("login")
+
+    if st.button("Didn't get a code? Request again", key="link_resend"):
+        go("forgot")
+    if st.button("Back to sign in", key="link_back_v"):
+        go("login")
+    footer()
+
+
+def view_request(users: dict):
+    brand("Request access")
+    with st.form("request"):
+        name = st.text_input("Full name").strip()
+        email = st.text_input("Work email", placeholder="name@bajajfinserv.in").strip().lower()
+        st.markdown(f"<div class='login-hint'>Allowed domains: {domains_text()}</div>",
+                    unsafe_allow_html=True)
+        regs = st.multiselect("Regulators you need", ALL_REGULATORS,
+                              placeholder="Choose one or more")
+        reason = st.text_area("Reason / team", height=80)
+        pw = st.text_input("Choose a password", type="password",
+                           placeholder="At least 8 characters, letters and numbers")
+        pw2 = st.text_input("Confirm password", type="password")
+        submitted = st.form_submit_button("Send request", use_container_width=True)
+
+    if submitted:
+        username = email.split("@")[0].replace(".", "_") if "@" in email else ""
+        existing = next((u for u, d in users.items()
+                         if str(d.get("email", "")).strip().lower() == email), None)
+        admins = secret("ADMIN_EMAILS", DEFAULT_ADMIN_EMAILS)
+        if isinstance(admins, str):
+            admins = [a.strip() for a in admins.split(",") if a.strip()]
+        last = st.session_state.get("last_request", 0)
+
+        if not name:
+            st.error("Please enter your name.")
+        elif not email_allowed(email):
+            st.error(f"Please use your work email ({domains_text()}).")
+        elif not regs:
+            st.error("Please choose at least one regulator.")
+        elif not reason.strip():
+            st.error("Please tell the admin why you need access.")
+        elif not existing and (problem := password_problem(pw, pw2, username)):
+            st.error(problem)
+        elif time.time() - last < 300:
+            st.error("You've just sent a request. Please wait a few minutes before sending another.")
+        elif not admins:
+            st.error("Access requests aren't set up yet. Please contact the portal admin directly.")
+        else:
+            safe = html_lib.escape
+            if existing:
+                current = allowed_regulators(users[existing])
+                merged = [r for r in ALL_REGULATORS if r in set(current) | set(regs)]
+                block = (f"[users.{existing}]  # existing user - update the regulators line only\n"
+                         f"regulators = {json.dumps(merged)}")
+                kind = f"Existing user <b>{safe(existing)}</b> asks for more regulators."
+            else:
+                block = (f"[users.{username}]\n"
+                         f"name = {json.dumps(name)}\n"
+                         f"email = {json.dumps(email)}\n"
+                         f"password_hash = \"{make_hash(pw)}\"\n"
+                         f"regulators = {json.dumps(regs)}")
+                kind = "New user request."
+            ok = send_email(admins, f"Portal access request: {name}", email_shell(
+                "Access request",
+                f"<p>{kind}</p>"
+                f"<p><b>Name:</b> {safe(name)}<br><b>Email:</b> {safe(email)}<br>"
+                f"<b>Regulators:</b> {safe(', '.join(regs))}<br>"
+                f"<b>Reason:</b> {safe(reason)}</p>"
+                "<p><b>To approve:</b> paste this into the app's Secrets (Streamlit Cloud → app → "
+                "Settings → Secrets) and save. To reject, just ignore this email.</p>"
+                f"<pre style='background:#f7f8fa;border:1px solid #e2e6ea;border-radius:6px;"
+                f"padding:12px;font-size:12px;white-space:pre-wrap'>{safe(block)}</pre>"
+                + ("" if existing else
+                   f"<p style='color:#5a6474'>They will sign in as <b>{safe(username)}</b> "
+                   "with the password they chose.</p>")))
+            if not ok:
+                st.error("Couldn't send your request right now. Please try again later.")
+            else:
+                send_email(email, "We received your access request", email_shell(
+                    "Request received",
+                    f"<p>Hi {safe(name)},</p><p>Your request for "
+                    f"<b>{safe(', '.join(regs))}</b> has been sent to the portal admin. "
+                    "You'll be able to sign in once it's approved"
+                    + ("." if existing else
+                       f", using username <b>{safe(username)}</b> and the password you chose.")
+                    + "</p>"))
+                st.session_state.last_request = time.time()
+                st.session_state.flash = "Request sent. You'll get an email confirmation; the admin will review it."
+                go("login")
+
+    if st.button("Back to sign in", key="link_back_r"):
+        go("login")
+    footer()
+
+
+def auth_screens():
+    users = get_users()
+    if not users and st.session_state.get("view", "login") == "login":
+        brand("Sign in to continue")
+        st.error("No users configured. Add a [users] section in the app's Secrets.")
+        st.stop()
+    {"login": view_login, "forgot": view_forgot, "verify": view_verify,
+     "request": view_request}.get(st.session_state.get("view", "login"), view_login)(users)
     st.stop()
 
 
 if "auth" not in st.session_state:
-    login_screen()
+    auth_screens()
 
 auth = st.session_state.auth
 
@@ -333,6 +703,7 @@ st.markdown(
 
 # Hidden buttons clicked by the portal's own "Sign out" and "Refresh"
 if st.button("Sign out", key="signout"):
+    st.session_state.view = "login"
     for k in ("auth", "data", "data_version"):
         st.session_state.pop(k, None)
     st.rerun()
