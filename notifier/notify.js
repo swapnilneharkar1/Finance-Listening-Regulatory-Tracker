@@ -66,7 +66,11 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function loadPortalDirectory() {
   const { PORTAL_AUTH_REPO, PORTAL_AUTH_TOKEN, PORTAL_AUTH_PATH, PORTAL_AUTH_BRANCH } = process.env;
-  if (!PORTAL_AUTH_TOKEN) return null;
+  if (!PORTAL_AUTH_TOKEN) {
+    console.log('  PORTAL_AUTH_TOKEN is empty: add it under this repo\'s Settings → Secrets and variables → Actions ' +
+                '(tab "Secrets", "New repository secret", name exactly PORTAL_AUTH_TOKEN).');
+    return null;
+  }
   const repo = PORTAL_AUTH_REPO || 'swapnilneharkar1/portal-auth';
   const path = PORTAL_AUTH_PATH || 'portal_auth.json';
   const ref = PORTAL_AUTH_BRANCH || 'main';
@@ -165,7 +169,7 @@ function buildEmailHtml(newByRegulator, recipient) {
       <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid ${BORDER};border-radius:8px;overflow:hidden;">
         <tr><td style="background:#0f2d52;padding:22px 28px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-            <td style="${FONT}font-size:11px;font-weight:700;letter-spacing:1.5px;color:#a9c6f0;text-transform:uppercase;">Bajaj Finserv — Secretarial</td>
+            <td style="${FONT}font-size:11px;font-weight:700;letter-spacing:1.5px;color:#a9c6f0;text-transform:uppercase;">Bajaj Finserv</td>
           </tr><tr>
             <td style="${FONT}font-size:19px;font-weight:700;color:#ffffff;padding-top:4px;">Regulatory Updates Tracker</td>
           </tr></table>
@@ -220,8 +224,13 @@ async function main() {
     host: SMTP_HOST || 'smtp.office365.com',
     port: Number(SMTP_PORT) || 587,
     secure: false, // STARTTLS on port 587
-    auth: { user: SMTP_USER, pass: SMTP_PASS }
+    auth: { user: SMTP_USER, pass: SMTP_PASS },
+    // Fail fast instead of hanging for minutes if Office 365 stalls a connection.
+    connectionTimeout: 30000, greetingTimeout: 30000, socketTimeout: 60000
   });
+
+  console.log(`Recipients in portal directory: ${directory.length} ` +
+              `(${directory.map(u => `${u.email} [${u.regulators.join(', ')}]`).join('; ')})`);
 
   let sent = 0, skipped = 0, failed = 0;
   for (const user of directory) {
@@ -232,6 +241,7 @@ async function main() {
       console.log(`  [dry run] would send ${n} item(s) to ${user.email} (${Object.keys(mine).join(', ')})`);
       sent++; continue;
     }
+    console.log(`  Sending ${n} item(s) to ${user.email}…`);
     try {
       await transporter.sendMail({ from: SMTP_USER, to: user.email, subject: subjectFor(mine), html: buildEmailHtml(mine, user) });
       sent++;
