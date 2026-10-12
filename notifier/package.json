@@ -1,0 +1,10 @@
+{
+  "name": "portal-email-notifier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Per-user email alerts for the Finance Listening Portal",
+  "main": "notify.js",
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
