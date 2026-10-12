@@ -1,0 +1,48 @@
+name: Send Per-User Email Alerts
+
+# Runs automatically after "Scrape Regulatory Data" finishes successfully, and emails each
+# portal user only the new items for their regulators. It does not modify the scraper.
+on:
+  workflow_run:
+    workflows: ["Scrape Regulatory Data"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (log who would get what, send nothing)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout latest data
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        working-directory: notifier
+        run: npm install
+      - name: Send per-user alerts
+        working-directory: notifier
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          TRACKER_URL: ${{ secrets.TRACKER_URL }}
+          PORTAL_AUTH_TOKEN: ${{ secrets.PORTAL_AUTH_TOKEN }}
+          PORTAL_AUTH_REPO: swapnilneharkar1/portal-auth
+          PORTAL_AUTH_PATH: portal_auth.json
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+        run: node notify.js
