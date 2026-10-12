@@ -185,7 +185,7 @@ def _store_request(method: str, cfg: dict, **kw) -> requests.Response:
 def _normalise(doc: dict) -> dict:
     if doc and not {"passwords", "users", "requests"} & set(doc):
         doc = {"passwords": doc}  # older file that only held reset passwords
-    for key in ("passwords", "users", "requests"):
+    for key in ("passwords", "users", "requests", "directory"):
         doc.setdefault(key, {})
     return doc
 
@@ -297,6 +297,39 @@ def current_password_hash(username: str, user: dict) -> str | None:
         return None if store_cfg() else user.get("password_hash", "")
     entry = doc["passwords"].get(username)
     return entry["password_hash"] if entry else user.get("password_hash", "")
+
+
+def notification_directory(users: dict) -> dict:
+    """Who should get which email alerts: name, email and regulators only (no passwords)."""
+    out = {}
+    for uname, u in users.items():
+        email = str(u.get("email", "")).strip().lower()
+        regs = allowed_regulators(u)
+        if email and regs:
+            out[uname] = {"name": u.get("name", uname), "email": email, "regulators": regs,
+                          "notify": bool(u.get("notify", True))}
+    return out
+
+
+def sync_directory(users: dict | None = None) -> None:
+    """Keep the recipient list in portal-auth up to date for the scraper's email alerts.
+    Only writes when something changed, so it's cheap to call often."""
+    if not store_cfg():
+        return
+    users = users if users is not None else get_users()
+    wanted = notification_directory(users)
+    try:
+        doc, _ = load_store()
+    except (requests.RequestException, ValueError, KeyError):
+        return
+    if doc.get("directory", {}).get("users") == wanted:
+        return
+
+    def change(d):
+        d["directory"] = {"users": wanted, "updated_at": now_iso(),
+                          "note": "Written by the portal app; read by the scraper for email alerts."}
+    if not update_store(change, "Update email alert recipients"):
+        print(f"[directory] sync failed: {st.session_state.get('store_error')}", flush=True)
 
 
 # ── Email ──
@@ -465,6 +498,7 @@ def view_login(users: dict):
                                          "name": user.get("name", username),
                                          "regulators": regs}
                 st.session_state.pop("data", None)  # fetch fresh data after every login
+                sync_directory(users)
                 st.rerun()
         else:
             st.error("Invalid username or password.")
@@ -702,6 +736,8 @@ def decide(rid: str, req: dict, approve: bool, regs: list[str]):
         st.error(store_error_text("Couldn't save the decision."))
         return
     if approve:
+        sync_directory()
+    if approve:
         body = (f"<p>Hi {safe(req['name'])},</p><p>Your access to the Finance Listening "
                 f"Portal has been approved for <b>{safe(', '.join(regs))}</b>.</p>"
                 f"<p>Sign in at <a href='{app_url()}'>{app_url()}</a> with username "
@@ -800,6 +836,7 @@ ADMIN_CSS = """
 
 def admin_page(users: dict):
     st.markdown(LOGIN_CSS + ADMIN_CSS, unsafe_allow_html=True)
+    sync_directory(users)
     safe = html_lib.escape
     h1, h2 = st.columns([5, 1.3])
     with h1:
@@ -868,6 +905,8 @@ def admin_page(users: dict):
                 "Access": "ALL" if len(regs) == len(ALL_REGULATORS) else ", ".join(regs) or "—",
                 "# Regulators": len(regs),
                 "Added via": "Portal request" if uname in doc["users"] else "Secrets",
+                "Email alerts": ("Off" if not u.get("notify", True)
+                                 else "On" if u.get("email") and regs else "No email"),
                 "Approved on": doc["users"].get(uname, {}).get("approved_at", "")[:10],
             })
         m1, m2, m3, m4 = st.columns(4)
