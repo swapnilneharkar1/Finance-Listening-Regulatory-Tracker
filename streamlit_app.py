@@ -985,13 +985,34 @@ def fetch_latest_data() -> tuple[dict, str]:
     return {}, "none"
 
 
+# PAN numbers (5 letters + 4 digits + 1 letter, e.g. ABCDE1234F) appear in some regulator
+# documents. Corporate DLP filters block pages that carry them, so they're masked before
+# anything is sent to the browser. Links are left untouched so "Open" still works.
+PAN_RE = re.compile(r"(?<![A-Za-z0-9])(?:[A-Z]{5}[0-9]{4}[A-Z]|[a-z]{5}[0-9]{4}[a-z])(?![A-Za-z0-9])")
+PAN_RE_LOOSE = re.compile(r"[A-Z]{5}[0-9]{4}[A-Z]")  # also catches PANs glued to other text
+PAN_MASK = "[PAN hidden]"
+URL_KEYS = {"link", "url", "href", "src", "source", "pdf", "pdfurl", "pdf_url"}
+
+
+def mask_pan(value, key: str = ""):
+    if isinstance(value, str):
+        if key.lower() in URL_KEYS or value.startswith(("http://", "https://")):
+            return value
+        return PAN_RE_LOOSE.sub(PAN_MASK, PAN_RE.sub(PAN_MASK, value))
+    if isinstance(value, dict):
+        return {k: mask_pan(v, str(k)) for k, v in value.items()}
+    if isinstance(value, list):
+        return [mask_pan(v, key) for v in value]
+    return value
+
+
 def filter_data(data: dict, regs: list[str]) -> dict:
     """Keep only the keys (e.g. 'RBI_0', 'SEBI_3') for allowed regulators."""
     if not data:
         return {}
     keep = {k: v for k, v in data.get("data", {}).items()
             if k.rsplit("_", 1)[0].upper() in regs}
-    return {**data, "data": keep}
+    return mask_pan({**data, "data": keep})
 
 
 def build_page(page: str, data: dict, regs: list[str], name: str,
