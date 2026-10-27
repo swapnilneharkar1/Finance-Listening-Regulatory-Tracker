@@ -508,7 +508,7 @@ def view_login(users: dict):
         if user and stored is None:
             st.error("Can't verify your password right now. Please try again in a minute.")
         elif user and verify_password(password, stored):
-            regs = allowed_regulators(user)
+            regs = ALL_REGULATORS if is_admin(username, users) else allowed_regulators(user)
             if not regs:
                 st.error("Your account has no regulators assigned. Use 'Request access' below.")
             else:
@@ -983,6 +983,15 @@ if st.session_state.get("admin_view"):
     st.session_state.pop("admin_view", None)
 
 auth = st.session_state.auth
+# Re-read access on every visit, so new access (e.g. Treasury) shows without signing out.
+# Admins always see everything.
+_all_users = get_users()
+_me = _all_users.get(auth.get("username", ""))
+if _me:
+    _regs = ALL_REGULATORS if is_admin(auth["username"], _all_users) else allowed_regulators(_me)
+    if _regs and _regs != auth.get("regulators"):
+        auth["regulators"] = _regs
+        st.session_state.pop("data", None)
 
 
 # ───────────────────────── Data ─────────────────────────
