@@ -343,6 +343,12 @@
         h('div', { class: 'foot', text: 'Years are filled in automatically when the report is found. For anything not on NSE/BSE, a direct PDF link can be added in scraper/treasury-sources.js.' })));
     }
 
+    if (T.overview_summary && T.overview_summary.text) {
+      const o = T.overview_summary;
+      view.append(card('Summary', o.edited ? `Edited by ${o.edited.by}.` : 'Drafted by AI from the extracted figures; every number is checked against the data.',
+        h('div', { class: 'tpb-summary' }, String(o.text).split(/\n+/).map(p => h('p', { text: p }))), edited(o)));
+    }
+
     const grid2 = h('div', { class: 'tpb-grid2' });
     [[bt, 'Borrowing mix'], [it, 'Investment mix']].forEach(([t, name]) => {
       if (!t) return;
@@ -506,7 +512,9 @@
       try { const b = window.parent.document.querySelector('.st-key-tpbedit button'); if (b) b.click(); } catch (e) {}
     }, text: '✎ Edit commentary' });
   }
-  const edited = r => r && r.edited ? h('span', { class: 'chip', title: `Edited by ${r.edited.by} on ${String(r.edited.at || '').slice(0, 10)}`, text: 'edited' }) : null;
+  const edited = r => !r ? null
+    : r.edited ? h('span', { class: 'chip', title: `Edited by ${r.edited.by} on ${String(r.edited.at || '').slice(0, 10)}`, text: 'edited' })
+    : r.ai ? h('span', { class: 'chip tpb-ai', title: 'Drafted by AI from the extracted figures', text: 'AI draft' }) : null;
 
   function renderInsights() {
     studies.forEach(st => {
