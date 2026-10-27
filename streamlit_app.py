@@ -40,9 +40,11 @@ def reg_label(r: str) -> str:
     return REG_LABELS.get(r, r)
 
 
-# Treasury Peer Benchmarking: the Excel lives in the app repo. To update the dashboards,
-# upload a new version of the file (same layout) to this folder.
-TREASURY_DIR = "data/treasury"
+# Treasury Peer Benchmarking: built weekly by the "Treasury Peer Benchmarking" GitHub Action
+# (scraper/treasury.js) from the NBFCs' annual reports, in the same repo as the regulator data.
+TREASURY_FILE = "data/treasury/benchmark.json"
+# AI-written commentary, produced on the VM by ai-treasury-commentary.js (Azure OpenAI).
+TREASURY_AI_FILE = "data/treasury/ai_commentary.json"
 
 BASE_DIR = Path(__file__).parent
 
@@ -60,30 +62,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-
-def treasury_file() -> Path | None:
-    """Newest .xlsx in data/treasury (so re-uploading under any name just works)."""
-    folder = BASE_DIR / TREASURY_DIR
-    files = [f for f in folder.glob("*.xlsx") if not f.name.startswith("~$")] if folder.exists() else []
-    return max(files, key=lambda f: f.stat().st_mtime) if files else None
-
-
-@st.cache_data(show_spinner=False)
-def _treasury_data(path: str, mtime: float) -> dict:
-    import treasury  # local module: treasury.py
-    return treasury.load_workbook_data(path)
-
-
-def load_treasury() -> dict | None:
-    f = treasury_file()
-    if not f:
-        return None
-    try:
-        return _treasury_data(str(f), f.stat().st_mtime)
-    except Exception as e:  # a malformed upload must never take the portal down
-        print(f"[treasury] could not read {f.name}: {e}", flush=True)
-        return None
 
 
 @st.cache_data
@@ -1020,12 +998,12 @@ def gh_headers() -> dict:
     return h
 
 
-def latest_data_sha() -> str | None:
+def latest_data_sha(path: str = DATA_FILE) -> str | None:
     """SHA of the newest commit that changed the data file (always live, no CDN cache)."""
     try:
         r = requests.get(
             f"https://api.github.com/repos/{REPO}/commits",
-            params={"sha": BRANCH, "path": DATA_FILE, "per_page": 1},
+            params={"sha": BRANCH, "path": path, "per_page": 1},
             headers=gh_headers(), timeout=15,
         )
         if r.status_code == 200 and r.json():
@@ -1036,9 +1014,9 @@ def latest_data_sha() -> str | None:
 
 
 @st.cache_data(max_entries=3, show_spinner=False)
-def data_at_commit(sha: str) -> dict:
+def data_at_commit(sha: str, path: str = DATA_FILE) -> dict:
     """A file at a fixed commit never changes, so it is safe to cache by SHA."""
-    r = requests.get(f"https://raw.githubusercontent.com/{REPO}/{sha}/{DATA_FILE}", timeout=60)
+    r = requests.get(f"https://raw.githubusercontent.com/{REPO}/{sha}/{path}", timeout=60)
     r.raise_for_status()
     return r.json()
 
@@ -1062,6 +1040,172 @@ def fetch_latest_data() -> tuple[dict, str]:
     if local.exists():
         return json.loads(local.read_text(encoding="utf-8")), "local"
     return {}, "none"
+
+
+def fetch_repo_json(path: str) -> dict:
+    """Latest version of a JSON file in the data repo. Empty dict if it doesn't exist yet."""
+    sha = latest_data_sha(path)
+    if sha:
+        try:
+            return data_at_commit(sha, path)
+        except (requests.RequestException, ValueError):
+            pass
+    try:
+        r = requests.get(f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{path}",
+                         params={"t": int(time.time())}, timeout=60)
+        if r.status_code == 200:
+            return r.json()
+    except (requests.RequestException, ValueError):
+        pass
+    local = BASE_DIR / path
+    if local.exists():
+        try:
+            return json.loads(local.read_text(encoding="utf-8"))
+        except ValueError:
+            pass
+    return {}
+
+
+def basis_hash(text: str) -> str:  # same as ai-treasury-commentary.js
+    return hashlib.sha256(str(text).encode("utf-8")).hexdigest()[:16]
+
+
+def fetch_treasury() -> dict:
+    """benchmark.json with the AI drafts applied where they still match the figures."""
+    data = fetch_repo_json(TREASURY_FILE)
+    if not data.get("companies"):
+        return data
+    ai = (fetch_repo_json(TREASURY_AI_FILE) or {}).get("items", {})
+    data = json.loads(json.dumps(data))
+    overview_basis = "\n".join(r.get("remark") or "" for t in data.get("summary", []) or []
+                               for r in t.get("rows", []))
+
+    def apply(item, field):
+        a = ai.get(item.get("key"))
+        if a and a.get("text") and a.get("basis") == basis_hash(item.get(field, "")):
+            item["rule"] = item.get(field, "")
+            item[field] = a["text"]
+            item["ai"] = True
+
+    for t in data.get("summary", []) or []:
+        for r in t.get("rows", []):
+            if r.get("key") and r.get("remark"):
+                apply(r, "remark")
+    for c in data.get("companies", []) or []:
+        for r in c.get("readouts", []) or []:
+            if r.get("key"):
+                apply(r, "text")
+    a = ai.get("summary:overview")
+    if a and a.get("text") and a.get("basis") == basis_hash(overview_basis):
+        data["overview_summary"] = {"key": "summary:overview", "text": a["text"], "ai": True}
+    return data
+
+
+def treasury_notes() -> dict:
+    """Commentary edited by Treasury users: {key: {text, by, at}} kept in the portal store."""
+    if "tpb_notes" not in st.session_state:
+        try:
+            doc, _ = load_store()
+            st.session_state.tpb_notes = doc.get("treasury_notes", {}) or {}
+        except (requests.RequestException, ValueError, KeyError, TypeError):
+            st.session_state.tpb_notes = {}
+    return st.session_state.tpb_notes
+
+
+def treasury_items(data: dict):
+    """Every editable piece of commentary: (key, section, heading, auto text, item dict)."""
+    if data.get("overview_summary"):
+        o = data["overview_summary"]
+        yield o["key"], "Overview · Summary", "Overall summary", o.get("auto", o.get("text", "")), o, "text"
+    for t in data.get("summary", []) or []:
+        for r in t.get("rows", []):
+            if r.get("key") and (r.get("remark") or r.get("auto")):
+                yield r["key"], f"Overview · {t.get('title', '')}", r.get("metric", ""), r.get("auto", r.get("remark", "")), r, "remark"
+    for c in data.get("companies", []) or []:
+        for r in c.get("readouts", []) or []:
+            if r.get("key"):
+                yield r["key"], f"{c.get('name', '')} · Key readouts", r.get("area", ""), r.get("auto", r.get("text", "")), r, "text"
+
+
+def with_notes(data: dict, notes: dict) -> dict:
+    """Copy of the benchmark with Treasury's edits in place of the drafted text."""
+    data = json.loads(json.dumps(data))
+    for key, _, _, auto, item, field in treasury_items(data):
+        item["auto"] = auto
+        n = notes.get(key)
+        if n and n.get("text", "").strip():
+            item[field] = n["text"]
+            item["edited"] = {"by": n.get("by", ""), "at": n.get("at", "")}
+    return data
+
+
+def can_edit_treasury(username: str, users: dict) -> bool:
+    if is_admin(username, users):
+        return True
+    return "TREASURY" in allowed_regulators(users.get(username, {}))
+
+
+def view_tpb_edit(data: dict):
+    """Edit the drafted commentary of the Treasury dashboards."""
+    brand("Treasury Peer Benchmarking · Edit commentary")
+    st.markdown("""<style>
+  .block-container, [data-testid="stMainBlockContainer"] {max-width: 980px !important; padding-top: 4vh !important;}
+  [data-testid="stForm"] {border-radius: 10px !important;}
+  [data-testid="stForm"] strong {display: block; margin-top: 14px; font-size: 15px; color: #0f2d52;}
+</style>""", unsafe_allow_html=True)
+    flash()
+    if not data.get("companies"):
+        st.info("There is no benchmark data yet, so there is nothing to edit.")
+    notes = treasury_notes()
+    st.caption("Each box starts with the drafted text (written by AI from the extracted figures where "
+               "available, otherwise by rules). Change it and press Save; "
+               "clear a box (or use “Reset”) to go back to the drafted text. Edits stay when the "
+               "data is refreshed, as long as the same item is still on the dashboard.")
+    items = list(treasury_items(data))
+    with st.form("tpb_edit_form"):
+        values = {}
+        section = None
+        for key, sec, head, auto, item, _ in items:
+            if sec != section:
+                st.markdown(f"**{html_lib.escape(sec)}**")
+                section = sec
+            cur = (notes.get(key) or {}).get("text") or auto
+            n = notes.get(key)
+            label = head + (f"  ·  edited by {n.get('by', '')} {str(n.get('at', ''))[:10]}" if n
+                            else ("  ·  AI draft" if item.get("ai") else ""))
+            values[key] = (st.text_area(label, value=cur, key=f"tpb_{key}", height=80), auto)
+        c1, c2 = st.columns(2)
+        save = c1.form_submit_button("Save", type="primary", use_container_width=True)
+        back = c2.form_submit_button("Back to portal", use_container_width=True)
+    reset = st.multiselect("Reset to the drafted text", [k for k in notes if k in values],
+                           format_func=lambda k: k.split(":", 2)[-1].replace(":", " · "))
+    if reset and st.button("Reset selected"):
+        values = {k: (a, a) if k in reset else ((notes.get(k) or {}).get("text") or a, a)
+                  for k, (v, a) in values.items()}
+        save = True
+    if save:
+        user = auth_user()
+        stamp = now_iso()
+
+        def change(doc):
+            tn = doc.setdefault("treasury_notes", {})
+            for k, (text, auto) in values.items():
+                text = (text or "").strip()
+                if not text or text == (auto or "").strip():
+                    tn.pop(k, None)
+                elif (tn.get(k) or {}).get("text") != text:
+                    tn[k] = {"text": text, "by": user, "at": stamp}
+
+        if update_store(change, f"Treasury commentary edited by {user}"):
+            st.session_state.pop("tpb_notes", None)
+            st.session_state.flash = "Commentary saved. Press “Back to portal” to see it on the dashboards."
+            st.rerun()
+        else:
+            st.error(store_error_text("Couldn't save the commentary."))
+    if back:
+        st.session_state.pop("tpb_edit", None)
+        st.rerun()
+    st.stop()
 
 
 # PAN numbers (5 letters + 4 digits + 1 letter, e.g. ABCDE1234F) appear in some regulator
@@ -1095,17 +1239,18 @@ def filter_data(data: dict, regs: list[str]) -> dict:
 
 
 def build_page(page: str, data: dict, regs: list[str], name: str,
-               admin_pending: int | None = None) -> str:
+               admin_pending: int | None = None, treasury: dict | None = None,
+               can_edit: bool = False) -> str:
     def js(obj) -> str:  # JSON safe to embed inside <script>
         return json.dumps(obj).replace("</", "<\\/")
 
     # 0) Treasury Peer Benchmarking dashboards (only for users with TREASURY access)
-    treasury_data = load_treasury() if "TREASURY" in regs else None
-    if treasury_data:
+    if "TREASURY" in regs:
         script = load_asset("treasury_dashboard.js").replace("</", "<\\/")
         style = load_asset("treasury_dashboard.css")
         page = page.replace("/* ── Bootstrap ── */",
-                            f"window.__TREASURY__ = {js(mask_pan(treasury_data))};\n{script}\n"
+                            f"window.__TREASURY__ = {js(mask_pan(treasury or {}))};\n"
+                            f"window.__TPB_CAN_EDIT__ = {js(bool(can_edit))};\n{script}\n"
                             "/* ── Bootstrap ── */", 1)
         page = page.replace("</head>", f"<style>{style}</style></head>", 1)
 
@@ -1197,12 +1342,20 @@ function __reloadData() {{
 
 
 # ───────────────────────── Portal page ─────────────────────────
+# Treasury "Edit commentary" screen (opened from the dashboards)
+if st.session_state.get("tpb_edit"):
+    if "TREASURY" in auth["regulators"] and can_edit_treasury(auth_user(), get_users()):
+        if "treasury" not in st.session_state:
+            st.session_state.treasury = fetch_treasury()
+        view_tpb_edit(st.session_state.treasury)
+    st.session_state.pop("tpb_edit", None)
+
 st.markdown(
     """
     <style>
       .block-container {padding: 0 !important; max-width: 100% !important;}
       [data-testid="stMainBlockContainer"] {padding: 0 !important;}
-      .st-key-signout, .st-key-reload, .st-key-adminopen {display: none !important;}
+      .st-key-signout, .st-key-reload, .st-key-adminopen, .st-key-tpbedit {display: none !important;}
       iframe {display: block; height: 100vh !important; border: 0;}
       [data-testid="stVerticalBlock"] {gap: 0 !important;}
     </style>
@@ -1213,7 +1366,7 @@ st.markdown(
 # Hidden buttons clicked by the portal's own "Sign out" and "Refresh"
 if st.button("Sign out", key="signout"):
     st.session_state.view = "login"
-    for k in ("auth", "data", "data_version"):
+    for k in ("auth", "data", "data_version", "treasury", "tpb_notes", "tpb_edit"):
         st.session_state.pop(k, None)
     st.rerun()
 
@@ -1221,6 +1374,10 @@ refresh_clicked = st.button("Reload", key="reload")
 
 if st.button("Admin", key="adminopen"):
     st.session_state.admin_view = True
+    st.rerun()
+
+if st.button("Edit commentary", key="tpbedit"):
+    st.session_state.tpb_edit = True
     st.rerun()
 
 admin_pending = None
@@ -1238,6 +1395,9 @@ if refresh_clicked or "data" not in st.session_state:
         data, version = fetch_latest_data()
     st.session_state.data = data
     st.session_state.data_version = version
+    if "TREASURY" in auth["regulators"]:
+        st.session_state.treasury = fetch_treasury()
+        st.session_state.pop("tpb_notes", None)
     st.session_state.loads = st.session_state.get("loads", 0) + 1  # forces the page to re-render
     if refresh_clicked:
         if version != old_version:
@@ -1245,7 +1405,15 @@ if refresh_clicked or "data" not in st.session_state:
         else:
             st.toast("Already up to date.")
 
+treasury_view = None
+can_edit = False
+if "TREASURY" in auth["regulators"]:
+    if "treasury" not in st.session_state:
+        st.session_state.treasury = fetch_treasury()
+    can_edit = can_edit_treasury(auth_user(), _users_now)
+    treasury_view = with_notes(st.session_state.treasury, treasury_notes())
+
 page = build_page(load_html(), filter_data(st.session_state.data, auth["regulators"]),
-                  auth["regulators"], auth["name"], admin_pending)
+                  auth["regulators"], auth["name"], admin_pending, treasury_view, can_edit)
 page += f"\n<!-- load {st.session_state.loads} -->"
 components.html(page, height=1000, scrolling=True)
