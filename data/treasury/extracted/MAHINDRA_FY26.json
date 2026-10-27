@@ -1,0 +1,47 @@
+{
+ "ok": true,
+ "fy": "FY26",
+ "prevFy": "FY25",
+ "unit": "crore",
+ "pages": 325,
+ "standalonePages": [
+  177,
+  259
+ ],
+ "statement": {
+  "investments": {
+   "cy": 6820.37,
+   "py": 10400.48,
+   "note": "8",
+   "page": 177
+  }
+ },
+ "borrowing": {
+  "FY26": [],
+  "FY25": []
+ },
+ "investments": {
+  "FY26": []
+ },
+ "totals": {
+  "FY26": 0,
+  "FY25": 0
+ },
+ "finance_cost": {},
+ "log": [
+  "debt_securities: not on the balance sheet (treated as nil)",
+  "borrowings: not on the balance sheet (treated as nil)",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: not on the balance sheet (treated as nil)",
+  "investments: breakdown not readable (sum 309.00 vs balance sheet 6820.37) -> book size only"
+ ],
+ "investment_total": {
+  "FY26": 6820.37,
+  "FY25": 10400.48
+ },
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_29455_M&MFIN_2025_2026_A_14497256_25062026233609.pdf",
+ "via": "NSE",
+ "reportFy": "FY26",
+ "sha": "4dff4c5f0cf031c0",
+ "extractedAt": "2026-10-27T12:42:00.201Z"
+}

@@ -1,0 +1,175 @@
+{
+ "ok": true,
+ "fy": "FY26",
+ "prevFy": "FY25",
+ "unit": "crore",
+ "pages": 334,
+ "standalonePages": [
+  227,
+  334
+ ],
+ "statement": {
+  "investments": {
+   "cy": 3747.66,
+   "py": 2060.13,
+   "note": "9",
+   "page": 227
+  },
+  "debt_securities": {
+   "cy": 32358.95,
+   "py": 41373.09,
+   "note": "17",
+   "page": 227
+  },
+  "borrowings": {
+   "cy": 59895.2,
+   "py": 42077.33,
+   "note": "18",
+   "page": 227
+  },
+  "subordinated": {
+   "cy": 6975.9,
+   "py": 6231.94,
+   "note": "19",
+   "page": 227
+  },
+  "finance_cost": {
+   "cy": 6820.15,
+   "py": 6390.15,
+   "note": "28",
+   "page": 228
+  }
+ },
+ "borrowing": {
+  "FY26": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 32358.95,
+    "page": 227,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 12328.55,
+    "page": 256,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under financing activity",
+    "category": "Bank term loans",
+    "value": 44289.15,
+    "page": 256,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 3108.26,
+    "page": 256,
+    "section": "borrowings"
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 6975.9,
+    "page": 227,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ],
+  "FY25": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 41373.09,
+    "page": 227,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 8974.88,
+    "page": 256,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under financing activity",
+    "category": "Bank term loans",
+    "value": 32990.21,
+    "page": 256,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 0,
+    "page": 256,
+    "section": "borrowings"
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 6231.94,
+    "page": 227,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ]
+ },
+ "investments": {
+  "FY26": [
+   {
+    "label": "Securities receipt of ARC",
+    "category": "Other investments",
+    "value": 13.74,
+    "page": 250
+   },
+   {
+    "label": "Unquoted equity shares",
+    "category": "Equity",
+    "value": 2.3,
+    "page": 250
+   },
+   {
+    "label": "Treasury bills / G-Sec",
+    "category": "Treasury bills",
+    "value": 2044.09,
+    "page": 250
+   },
+   {
+    "label": "Treasury bills / G-Sec",
+    "category": "Treasury bills",
+    "value": 0,
+    "page": 250
+   }
+  ]
+ },
+ "totals": {
+  "FY26": 99060.80999999998,
+  "FY25": 89570.12
+ },
+ "finance_cost": {
+  "FY26": 6820.15,
+  "FY25": 6390.15
+ },
+ "log": [
+  "debt_securities: note p.255; breakdown sums to 30901.68 vs balance sheet 32358.95 -> using balance-sheet total",
+  "borrowings: 3 lines from note p.256, reconciles to balance sheet",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: note p.258; breakdown sums to 6727.00 vs balance sheet 6975.9 -> using balance-sheet total",
+  "investments: 4 lines from note p.250"
+ ],
+ "investment_total": {
+  "FY26": 3747.66,
+  "FY25": 2060.13
+ },
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_29323_HDBFS_2025_2026_A_14173828_01062026192621.pdf",
+ "via": "NSE",
+ "reportFy": "FY26",
+ "sha": "f25a8f406e91ad46",
+ "extractedAt": "2026-10-27T12:44:39.171Z"
+}

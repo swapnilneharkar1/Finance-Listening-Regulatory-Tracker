@@ -1,0 +1,159 @@
+{
+ "ok": true,
+ "fy": "FY24",
+ "prevFy": "FY23",
+ "unit": "crore",
+ "pages": 512,
+ "standalonePages": [
+  188,
+  341
+ ],
+ "statement": {
+  "debt_securities": {
+   "cy": 44948.61,
+   "py": 43652.59,
+   "note": "21",
+   "page": 188
+  },
+  "borrowings": {
+   "cy": 92148.8,
+   "py": 73590.02,
+   "note": "22",
+   "page": 188
+  },
+  "deposits": {
+   "cy": 44443.66,
+   "py": 36139.83,
+   "note": "23",
+   "page": 188
+  },
+  "subordinated": {
+   "cy": 4300.07,
+   "py": 4523.85,
+   "note": "24",
+   "page": 188
+  },
+  "finance_cost": {
+   "cy": 14806.12,
+   "py": 12545.76,
+   "note": "36",
+   "page": 189
+  }
+ },
+ "borrowing": {
+  "FY24": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 44948.61,
+    "page": 188,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 92148.8,
+    "page": 188,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Unsecured i. Public deposits (Refer note 65)*",
+    "category": "Deposits",
+    "value": 42802.28,
+    "page": 241,
+    "section": "deposits"
+   },
+   {
+    "label": "ii. From Banks",
+    "category": "Deposits",
+    "value": 0,
+    "page": 241,
+    "section": "deposits"
+   },
+   {
+    "label": "Deposits from corporates **",
+    "category": "Deposits",
+    "value": 1641.38,
+    "page": 241,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated debts - Debentures #",
+    "category": "Subordinated debt",
+    "value": 4300.07,
+    "page": 241,
+    "section": "subordinated"
+   }
+  ],
+  "FY23": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 43652.59,
+    "page": 188,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 73590.02,
+    "page": 188,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Unsecured i. Public deposits (Refer note 65)*",
+    "category": "Deposits",
+    "value": 34671.99,
+    "page": 241,
+    "section": "deposits"
+   },
+   {
+    "label": "ii. From Banks",
+    "category": "Deposits",
+    "value": 0,
+    "page": 241,
+    "section": "deposits"
+   },
+   {
+    "label": "Deposits from corporates **",
+    "category": "Deposits",
+    "value": 1467.84,
+    "page": 241,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated debts - Debentures #",
+    "category": "Subordinated debt",
+    "value": 4523.85,
+    "page": 241,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY24": []
+ },
+ "totals": {
+  "FY24": 185841.14,
+  "FY23": 157906.29
+ },
+ "finance_cost": {
+  "FY24": 14806.12,
+  "FY23": 12545.76
+ },
+ "log": [
+  "debt_securities: note p.230; breakdown sums to 134845.83 vs balance sheet 44948.61 -> using balance-sheet total",
+  "borrowings: note p.236; breakdown sums to 276446.40 vs balance sheet 92148.8 -> using balance-sheet total",
+  "deposits: 3 lines from note p.241, reconciles to balance sheet",
+  "subordinated: 1 lines from note p.241, reconciles to balance sheet"
+ ],
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_24341_SHRIRAMFIN_2023_2024_06072024172245.pdf",
+ "via": "NSE",
+ "reportFy": "FY24",
+ "sha": "3dc7263f269a6801",
+ "extractedAt": "2026-10-27T12:43:29.310Z"
+}

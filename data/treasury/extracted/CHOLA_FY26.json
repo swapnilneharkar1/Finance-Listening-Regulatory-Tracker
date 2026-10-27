@@ -1,0 +1,150 @@
+{
+ "ok": true,
+ "fy": "FY26",
+ "prevFy": "FY25",
+ "unit": "crore",
+ "pages": 354,
+ "standalonePages": [
+  166,
+  275
+ ],
+ "statement": {
+  "investments": {
+   "cy": 6638.05,
+   "py": 6390.39,
+   "note": "10",
+   "page": 166
+  },
+  "debt_securities": {
+   "cy": 40636.05,
+   "py": 30133.99,
+   "note": "17",
+   "page": 166
+  },
+  "borrowings": {
+   "cy": 156528.78,
+   "py": 133791.98,
+   "note": "18",
+   "page": 166
+  },
+  "subordinated": {
+   "cy": 13701.73,
+   "py": 11020.14,
+   "note": "19",
+   "page": 166
+  },
+  "finance_cost": {
+   "cy": 14374.2,
+   "py": 12484.85,
+   "note": "27",
+   "page": 167
+  }
+ },
+ "borrowing": {
+  "FY26": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 40636.05,
+    "page": 166,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 156528.78,
+    "page": 166,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Perpetual Debt - Unsecured",
+    "category": "Subordinated debt",
+    "value": 2697.59,
+    "page": 198,
+    "section": "subordinated"
+   },
+   {
+    "label": "Rupee Denominated Bonds",
+    "category": "Subordinated debt",
+    "value": 408.52,
+    "page": 198,
+    "section": "subordinated"
+   },
+   {
+    "label": "Other Subordinated Debts",
+    "category": "Subordinated debt",
+    "value": 10595.62,
+    "page": 198,
+    "section": "subordinated"
+   }
+  ],
+  "FY25": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 30133.99,
+    "page": 166,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 133791.98,
+    "page": 166,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Perpetual Debt - Unsecured",
+    "category": "Subordinated debt",
+    "value": 2593.2,
+    "page": 198,
+    "section": "subordinated"
+   },
+   {
+    "label": "Rupee Denominated Bonds",
+    "category": "Subordinated debt",
+    "value": 408.32,
+    "page": 198,
+    "section": "subordinated"
+   },
+   {
+    "label": "Other Subordinated Debts",
+    "category": "Subordinated debt",
+    "value": 8018.62,
+    "page": 198,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY26": []
+ },
+ "totals": {
+  "FY26": 210866.56,
+  "FY25": 174946.11000000002
+ },
+ "finance_cost": {
+  "FY26": 14374.2,
+  "FY25": 12484.85
+ },
+ "log": [
+  "debt_securities: note p.175; breakdown not readable -> using balance-sheet total",
+  "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 3 lines from note p.198, reconciles to balance sheet",
+  "investments: breakdown not readable (sum 163.00 vs balance sheet 6638.05) -> book size only"
+ ],
+ "investment_total": {
+  "FY26": 6638.05,
+  "FY25": 6390.39
+ },
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_29596_CHOLAFIN_2025_2026_A_8171029_06072026201106.pdf",
+ "via": "NSE",
+ "reportFy": "FY26",
+ "sha": "faa0aebea622fdb2",
+ "extractedAt": "2026-10-27T12:43:46.316Z"
+}

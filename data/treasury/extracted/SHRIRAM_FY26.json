@@ -1,0 +1,82 @@
+{
+ "ok": true,
+ "fy": "FY26",
+ "prevFy": "FY25",
+ "unit": "crore",
+ "pages": 298,
+ "standalonePages": [
+  117,
+  203
+ ],
+ "statement": {
+  "borrowings": {
+   "cy": 125917.78,
+   "py": 121448.42,
+   "note": "22",
+   "page": 117
+  },
+  "deposits": {
+   "cy": 69480.34,
+   "py": 56085.99,
+   "note": "23",
+   "page": 117
+  }
+ },
+ "borrowing": {
+  "FY26": [
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 125917.78,
+    "page": 117,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Deposits (balance sheet total)",
+    "category": "Deposits",
+    "value": 69480.34,
+    "page": 117,
+    "section": "deposits",
+    "unsplit": false
+   }
+  ],
+  "FY25": [
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 121448.42,
+    "page": 117,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Deposits (balance sheet total)",
+    "category": "Deposits",
+    "value": 56085.99,
+    "page": 117,
+    "section": "deposits",
+    "unsplit": false
+   }
+  ]
+ },
+ "investments": {
+  "FY26": []
+ },
+ "totals": {
+  "FY26": 195398.12,
+  "FY25": 177534.41
+ },
+ "finance_cost": {},
+ "log": [
+  "debt_securities: not on the balance sheet (treated as nil)",
+  "borrowings: note p.142; breakdown sums to 370288.97 vs balance sheet 125917.78 -> using balance-sheet total",
+  "deposits: note p.145; breakdown sums to 10368.32 vs balance sheet 69480.34 -> using balance-sheet total",
+  "subordinated: not on the balance sheet (treated as nil)"
+ ],
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_29401_SHRIRAMFIN_2025_2026_A_18605156_17062026163904.pdf",
+ "via": "NSE",
+ "reportFy": "FY26",
+ "sha": "e2911eafac1bcff7",
+ "extractedAt": "2026-10-27T12:43:07.811Z"
+}
