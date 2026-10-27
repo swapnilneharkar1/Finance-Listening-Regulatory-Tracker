@@ -32,7 +32,17 @@ HTML_FILE = "regulatory_tracker_live.html"
 DATA_FILE = "data/regulatory_data.json"
 RAW_URL = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{DATA_FILE}"
 ALL_REGULATORS = ["RBI", "SEBI", "BSE", "NSE", "IRDAI", "IEPFA", "MCA",
-                  "NFRA", "PCAOB", "TAXATION", "NEWSLETTER"]
+                  "NFRA", "PCAOB", "TAXATION", "NEWSLETTER", "TREASURY"]
+REG_LABELS = {"TREASURY": "Treasury Peer Benchmarking"}
+
+
+def reg_label(r: str) -> str:
+    return REG_LABELS.get(r, r)
+
+
+# Treasury Peer Benchmarking: the Excel lives in the app repo. To update the dashboards,
+# upload a new version of the file (same layout) to this folder.
+TREASURY_DIR = "data/treasury"
 
 BASE_DIR = Path(__file__).parent
 
@@ -50,6 +60,36 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+
+def treasury_file() -> Path | None:
+    """Newest .xlsx in data/treasury (so re-uploading under any name just works)."""
+    folder = BASE_DIR / TREASURY_DIR
+    files = [f for f in folder.glob("*.xlsx") if not f.name.startswith("~$")] if folder.exists() else []
+    return max(files, key=lambda f: f.stat().st_mtime) if files else None
+
+
+@st.cache_data(show_spinner=False)
+def _treasury_data(path: str, mtime: float) -> dict:
+    import treasury  # local module: treasury.py
+    return treasury.load_workbook_data(path)
+
+
+def load_treasury() -> dict | None:
+    f = treasury_file()
+    if not f:
+        return None
+    try:
+        return _treasury_data(str(f), f.stat().st_mtime)
+    except Exception as e:  # a malformed upload must never take the portal down
+        print(f"[treasury] could not read {f.name}: {e}", flush=True)
+        return None
+
+
+@st.cache_data
+def load_asset(name: str) -> str:
+    p = BASE_DIR / name
+    return p.read_text(encoding="utf-8") if p.exists() else ""
 
 
 @st.cache_data
@@ -611,7 +651,7 @@ def view_request(users: dict):
         email = st.text_input("Work email", placeholder="name@bajajfinserv.in").strip().lower()
         st.markdown(f"<div class='login-hint'>Allowed domains: {domains_text()}</div>",
                     unsafe_allow_html=True)
-        regs = st.multiselect("Regulators you need", ALL_REGULATORS,
+        regs = st.multiselect("Regulators you need", ALL_REGULATORS, format_func=reg_label,
                               placeholder="Choose one or more")
         reason = st.text_area("Reason / team", height=80)
         pw = st.text_input("Choose a password", type="password",
@@ -803,7 +843,7 @@ def view_review(users: dict):
     text, default = request_summary(req, users)
     with st.form("review"):
         st.markdown(text, unsafe_allow_html=True)
-        regs = st.multiselect("Regulators to grant", ALL_REGULATORS, default=default)
+        regs = st.multiselect("Regulators to grant", ALL_REGULATORS, default=default, format_func=reg_label)
         c1, c2 = st.columns(2)
         approve = c1.form_submit_button("Approve", use_container_width=True)
         reject = c2.form_submit_button("Reject", use_container_width=True, key="reject_btn")
@@ -873,7 +913,7 @@ def admin_page(users: dict):
             text, default = request_summary(req, users)
             with st.form(f"req_{rid}"):
                 st.markdown(text, unsafe_allow_html=True)
-                regs = st.multiselect("Regulators to grant", ALL_REGULATORS, default=default,
+                regs = st.multiselect("Regulators to grant", ALL_REGULATORS, default=default, format_func=reg_label,
                                       key=f"regs_{rid}")
                 c1, c2, _ = st.columns([1, 1, 2])
                 approve = c1.form_submit_button("Approve", use_container_width=True)
@@ -922,7 +962,7 @@ def admin_page(users: dict):
         st.markdown("##### All users")
         q = st.text_input("Filter", placeholder="Search name, username, email or regulator",
                           label_visibility="collapsed")
-        reg_filter = st.multiselect("Has access to", ALL_REGULATORS, key="user_reg_filter",
+        reg_filter = st.multiselect("Has access to", ALL_REGULATORS, format_func=reg_label, key="user_reg_filter",
                                     placeholder="Filter by regulator")
         shown = [r for r in rows
                  if (not q or q.lower() in " ".join(str(v) for v in r.values()).lower())
@@ -1058,6 +1098,16 @@ def build_page(page: str, data: dict, regs: list[str], name: str,
                admin_pending: int | None = None) -> str:
     def js(obj) -> str:  # JSON safe to embed inside <script>
         return json.dumps(obj).replace("</", "<\\/")
+
+    # 0) Treasury Peer Benchmarking dashboards (only for users with TREASURY access)
+    treasury_data = load_treasury() if "TREASURY" in regs else None
+    if treasury_data:
+        script = load_asset("treasury_dashboard.js").replace("</", "<\\/")
+        style = load_asset("treasury_dashboard.css")
+        page = page.replace("/* ── Bootstrap ── */",
+                            f"window.__TREASURY__ = {js(mask_pan(treasury_data))};\n{script}\n"
+                            "/* ── Bootstrap ── */", 1)
+        page = page.replace("</head>", f"<style>{style}</style></head>", 1)
 
     # 1) Use embedded (filtered) data instead of fetching the JSON file
     page = page.replace(
