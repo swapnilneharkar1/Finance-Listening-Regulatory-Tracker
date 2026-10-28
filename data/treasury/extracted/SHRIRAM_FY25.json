@@ -9,6 +9,12 @@
   383
  ],
  "statement": {
+  "investments": {
+   "cy": 15598.71,
+   "py": 10656.64,
+   "note": "13",
+   "page": 226
+  },
   "debt_securities": {
    "cy": 54148.86,
    "py": 44948.61,
@@ -43,20 +49,95 @@
  "borrowing": {
   "FY25": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 54148.86,
-    "page": 226,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Public issue",
+    "category": "Secured NCDs",
+    "value": 732.92,
+    "page": 273,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 121448.42,
-    "page": 226,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Privately placed",
+    "category": "Secured NCDs",
+    "value": 37563.97,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial bond",
+    "category": "ECB bonds",
+    "value": 15851.97,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed",
+    "category": "Unsecured NCDs",
+    "value": 0,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial papers",
+    "category": "Commercial paper",
+    "value": 0,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loan from banks - INR",
+    "category": "Bank term loans",
+    "value": 35347.15,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from banks - FCNR",
+    "category": "Bank term loans",
+    "value": 2702.01,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - INR",
+    "category": "FI & NHB loans",
+    "value": 9864.34,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - FCNR",
+    "category": "FI & NHB loans",
+    "value": 1425,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Constituent's Subsidiary General Ledger loan (CSGL loan)",
+    "category": "Repo, TREPS & CBLO",
+    "value": 402.97,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "External commercial borrowing",
+    "category": "ECB loans",
+    "value": 33653.95,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loans repayable on demand from banks (Cash credit from banks)",
+    "category": "Cash credit & WCDL",
+    "value": 0.92,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Other loans - Securitisation liabilities - INR",
+    "category": "Securitisation",
+    "value": 38052.08,
+    "page": 278,
+    "section": "borrowings"
    },
    {
     "label": "Unsecured i. Public deposits (Refer note 84)*",
@@ -89,20 +170,95 @@
   ],
   "FY24": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 44948.61,
-    "page": 226,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Public issue",
+    "category": "Secured NCDs",
+    "value": 1128.46,
+    "page": 273,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 92148.8,
-    "page": 226,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Privately placed",
+    "category": "Secured NCDs",
+    "value": 30411.55,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial bond",
+    "category": "ECB bonds",
+    "value": 10948.31,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed",
+    "category": "Unsecured NCDs",
+    "value": 90.42,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial papers",
+    "category": "Commercial paper",
+    "value": 2369.87,
+    "page": 273,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loan from banks - INR",
+    "category": "Bank term loans",
+    "value": 35232.49,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from banks - FCNR",
+    "category": "Bank term loans",
+    "value": 0,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - INR",
+    "category": "FI & NHB loans",
+    "value": 10405.19,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - FCNR",
+    "category": "FI & NHB loans",
+    "value": 0,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Constituent's Subsidiary General Ledger loan (CSGL loan)",
+    "category": "Repo, TREPS & CBLO",
+    "value": 0,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "External commercial borrowing",
+    "category": "ECB loans",
+    "value": 14467.05,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loans repayable on demand from banks (Cash credit from banks)",
+    "category": "Cash credit & WCDL",
+    "value": 2905.91,
+    "page": 278,
+    "section": "borrowings"
+   },
+   {
+    "label": "Other loans - Securitisation liabilities - INR",
+    "category": "Securitisation",
+    "value": 29138.16,
+    "page": 278,
+    "section": "borrowings"
    },
    {
     "label": "Unsecured i. Public deposits (Refer note 84)*",
@@ -138,7 +294,7 @@
   "FY25": []
  },
  "totals": {
-  "FY25": 234197.25,
+  "FY25": 234197.25000000003,
   "FY24": 185841.14
  },
  "finance_cost": {
@@ -146,14 +302,20 @@
   "FY24": 14802.6
  },
  "log": [
-  "debt_securities: note p.273; breakdown sums to 162446.58 vs balance sheet 54148.86 -> using balance-sheet total",
-  "borrowings: note p.278; breakdown sums to 364345.26 vs balance sheet 121448.42 -> using balance-sheet total",
+  "debt_securities: 5 lines from note p.273, reconciles to balance sheet",
+  "borrowings: 8 lines from note p.278, reconciles to balance sheet",
   "deposits: 3 lines from note p.283, reconciles to balance sheet",
-  "subordinated: 1 lines from note p.283, reconciles to balance sheet"
+  "subordinated: 1 lines from note p.283, reconciles to balance sheet",
+  "investments: breakdown not readable (sum 10990.09 vs balance sheet 15598.71) -> book size only"
  ],
+ "investment_total": {
+  "FY25": 15598.71,
+  "FY24": 10656.64
+ },
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_26597_SHRIRAMFIN_2024_2025_A_24062025170941.pdf",
  "via": "NSE",
  "reportFy": "FY25",
+ "extractor": 2,
  "sha": "f7f1d0c6a62ae965",
- "extractedAt": "2026-10-27T12:43:21.637Z"
+ "extractedAt": "2026-10-28T06:04:20.598Z"
 }

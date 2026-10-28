@@ -1,7 +1,7 @@
 {
  "source": "Annual reports (standalone financial statements)",
  "method": "auto",
- "generated_at": "2026-10-27T12:45:59.871Z",
+ "generated_at": "2026-10-28T06:07:16.771Z",
  "companies": [
   {
    "key": "MAHINDRA",
@@ -10,28 +10,230 @@
    "sheet": "annual reports",
    "base": false,
    "borrowing": {
-    "years": [],
-    "rows": [],
+    "years": [
+     "FY21",
+     "FY22",
+     "FY23"
+    ],
+    "rows": [
+     {
+      "label": "Non-convertible debentures (Secured)",
+      "category": "Secured NCDs",
+      "values": {
+       "FY21": 15393.64,
+       "FY22": 16610.55
+      },
+      "pages": {
+       "FY21": 140,
+       "FY22": 140
+      }
+     },
+     {
+      "label": "Non-convertible debentures (Unsecured)",
+      "category": "Unsecured NCDs",
+      "values": {
+       "FY21": 596.66,
+       "FY22": 795.82
+      },
+      "pages": {
+       "FY21": 140,
+       "FY22": 140
+      }
+     },
+     {
+      "label": "Commercial Papers (Unsecured)",
+      "category": "Commercial paper",
+      "values": {
+       "FY21": 494.52,
+       "FY22": 496.56,
+       "FY23": 3936
+      },
+      "pages": {
+       "FY21": 140,
+       "FY22": 140,
+       "FY23": 203
+      }
+     },
+     {
+      "label": "Rupee Denominated Secured Bonds overseas (Masala Bonds)",
+      "category": "ECB bonds",
+      "values": {
+       "FY21": 349.75,
+       "FY22": 349.78,
+       "FY23": 349.8
+      },
+      "pages": {
+       "FY21": 140,
+       "FY22": 140,
+       "FY23": 203
+      }
+     },
+     {
+      "label": "Subordinated liabilities (balance sheet total)",
+      "category": "Subordinated debt",
+      "values": {
+       "FY21": 3149.37,
+       "FY22": 3129.85
+      },
+      "pages": {
+       "FY21": 126,
+       "FY22": 126
+      }
+     },
+     {
+      "label": "Interest paid in terms of Section 16 of the MSMED Act along with the amount of - - Non–convertible debentures (Secured)",
+      "category": "Secured NCDs",
+      "values": {
+       "FY23": 19464.32
+      },
+      "pages": {
+       "FY23": 203
+      }
+     },
+     {
+      "label": "Non–convertible debentures (Unsecured)",
+      "category": "Unsecured NCDs",
+      "values": {
+       "FY23": 994.95
+      },
+      "pages": {
+       "FY23": 203
+      }
+     },
+     {
+      "label": "Principal paid beyond the appointed date",
+      "category": "Secured NCDs",
+      "values": {
+       "FY23": 0
+      },
+      "pages": {
+       "FY23": 203
+      }
+     },
+     {
+      "label": "Amount of interest due and payable for the period of delay on payments made",
+      "category": "Secured NCDs",
+      "values": {
+       "FY23": 0
+      },
+      "pages": {
+       "FY23": 203
+      }
+     },
+     {
+      "label": "Borrowings (other than debt securities) (balance sheet total)",
+      "category": "Borrowings (not split)",
+      "values": {
+       "FY23": 41234.06
+      },
+      "pages": {
+       "FY23": 186
+      }
+     }
+    ],
     "subtotals": [],
-    "total": {},
-    "mix": {
-     "categories": [],
-     "amounts": {},
-     "shares": {}
+    "total": {
+     "FY21": 19983.94,
+     "FY22": 21382.559999999998,
+     "FY23": 65979.13
     },
-    "finance_cost": {},
-    "avg_borrowing": {},
-    "avg_cost": {}
+    "mix": {
+     "categories": [
+      "Secured NCDs",
+      "Unsecured NCDs",
+      "Commercial paper",
+      "ECB bonds",
+      "Subordinated debt",
+      "Borrowings (not split)"
+     ],
+     "amounts": {
+      "Secured NCDs": {
+       "FY21": 15393.64,
+       "FY22": 16610.55,
+       "FY23": 19464.32
+      },
+      "Unsecured NCDs": {
+       "FY21": 596.66,
+       "FY22": 795.82,
+       "FY23": 994.95
+      },
+      "Commercial paper": {
+       "FY21": 494.52,
+       "FY22": 496.56,
+       "FY23": 3936
+      },
+      "ECB bonds": {
+       "FY21": 349.75,
+       "FY22": 349.78,
+       "FY23": 349.8
+      },
+      "Subordinated debt": {
+       "FY21": 3149.37,
+       "FY22": 3129.85,
+       "FY23": 0
+      },
+      "Borrowings (not split)": {
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 41234.06
+      }
+     },
+     "shares": {
+      "Secured NCDs": {
+       "FY21": 0.7703005513427282,
+       "FY22": 0.7768270029407144,
+       "FY23": 0.29500722425409365
+      },
+      "Unsecured NCDs": {
+       "FY21": 0.02985697515104629,
+       "FY22": 0.03721818154608242,
+       "FY23": 0.015079768405554908
+      },
+      "Commercial paper": {
+       "FY21": 0.024745870934360294,
+       "FY22": 0.023222663703504166,
+       "FY23": 0.059655227342342944
+      },
+      "ECB bonds": {
+       "FY21": 0.01750155374765937,
+       "FY22": 0.016358190974326742,
+       "FY23": 0.005301676454357612
+      },
+      "Subordinated debt": {
+       "FY21": 0.15759504882420583,
+       "FY22": 0.14637396083537238,
+       "FY23": 0
+      },
+      "Borrowings (not split)": {
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 0.6249561035436507
+      }
+     }
+    },
+    "finance_cost": {
+     "FY21": 4733.19,
+     "FY22": 3920.18,
+     "FY23": 4576.72
+    },
+    "avg_borrowing": {
+     "FY22": 20683.25,
+     "FY23": 43680.845
+    },
+    "avg_cost": {
+     "FY22": 0.18953404324755538,
+     "FY23": 0.10477636135473112
+    }
    },
    "investments": {
     "years": [
-     "FY25",
-     "FY26"
+     "FY21",
+     "FY22"
     ],
     "rows": [],
     "total": {
-     "FY25": 10400.48,
-     "FY26": 6820.37
+     "FY21": 11705.35,
+     "FY22": 8440.27
     },
     "mix": {
      "categories": [],
@@ -39,9 +241,81 @@
      "shares": {}
     }
    },
-   "sources": {},
-   "warnings": [],
-   "readouts": []
+   "sources": {
+    "FY21": {
+     "report": "FY22",
+     "via": "NSE",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_20324_M&MFIN_2021_2022_11072022203700_07112022210004.zip",
+     "column": "previous-year comparative",
+     "unit": "crore",
+     "pages": {
+      "investments": 126,
+      "debt_securities": 126,
+      "subordinated": 126,
+      "finance_cost": 126
+     }
+    },
+    "FY22": {
+     "report": "FY22",
+     "via": "NSE",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_20324_M&MFIN_2021_2022_11072022203700_07112022210004.zip",
+     "column": "current year",
+     "unit": "crore",
+     "pages": {
+      "investments": 126,
+      "debt_securities": 126,
+      "subordinated": 126,
+      "finance_cost": 126
+     }
+    },
+    "FY23": {
+     "report": "FY23",
+     "via": "NSE",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_22127_M&MFIN_2022_2023_01072023204544_07012023210002.zip",
+     "column": "current year",
+     "unit": "crore",
+     "pages": {
+      "debt_securities": 186,
+      "borrowings": 186,
+      "finance_cost": 186
+     }
+    }
+   },
+   "warnings": [
+    "FY23: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)"
+   ],
+   "readouts": [
+    {
+     "area": "Borrowing book",
+     "text": "Total borrowings of ₹65,979 cr in FY23, up 208.6% on FY22; 81.7% a year (CAGR) since FY21 (₹19,984 cr).",
+     "key": "readout:MAHINDRA:Borrowing book"
+    },
+    {
+     "area": "Funding mix",
+     "text": "Largest sources in FY23: Secured NCDs (29.5%), Commercial paper (6.0%), Unsecured NCDs (1.5%).",
+     "key": "readout:MAHINDRA:Funding mix"
+    },
+    {
+     "area": "Mix shift",
+     "text": "Biggest changes since FY21: Secured NCDs −47.5 pp, Subordinated debt −15.8 pp.",
+     "key": "readout:MAHINDRA:Mix shift"
+    },
+    {
+     "area": "Borrowing cost",
+     "text": "Average borrowing cost 10.48% in FY23 (−848 bps vs FY22).",
+     "key": "readout:MAHINDRA:Borrowing cost"
+    },
+    {
+     "area": "Investment book",
+     "text": "Investment book of ₹8,440 cr in FY22.",
+     "key": "readout:MAHINDRA:Investment book"
+    },
+    {
+     "area": "Data notes",
+     "text": "FY23: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
+     "key": "readout:MAHINDRA:Data notes"
+    }
+   ]
   },
   {
    "key": "SHRIRAM",
@@ -51,6 +325,8 @@
    "base": false,
    "borrowing": {
     "years": [
+     "FY21",
+     "FY22",
      "FY23",
      "FY24",
      "FY25",
@@ -58,45 +334,257 @@
     ],
     "rows": [
      {
-      "label": "Debt securities (balance sheet total)",
-      "category": "Debt securities (not split)",
+      "label": "Public issue ¥",
+      "category": "Secured NCDs",
       "values": {
-       "FY23": 43652.59,
-       "FY24": 44948.61,
-       "FY25": 54148.86
+       "FY21": 5776.24,
+       "FY22": 2500.63
       },
       "pages": {
-       "FY23": 188,
-       "FY24": 188,
-       "FY25": 226
+       "FY21": 143,
+       "FY22": 143
       }
      },
      {
-      "label": "Borrowings (other than debt securities) (balance sheet total)",
-      "category": "Borrowings (not split)",
+      "label": "Privately placed ¥ ¥",
+      "category": "Secured NCDs",
       "values": {
-       "FY23": 73590.02,
-       "FY24": 92148.8,
-       "FY25": 121448.42,
-       "FY26": 125917.78
+       "FY21": 15153.29,
+       "FY22": 18768.05,
+       "FY23": 27648.08
       },
       "pages": {
-       "FY23": 188,
-       "FY24": 188,
-       "FY25": 226,
-       "FY26": 117
+       "FY21": 143,
+       "FY22": 143,
+       "FY23": 206
       }
      },
      {
-      "label": "Unsecured i. Public deposits (Refer note 65)*",
+      "label": "external commercial bond",
+      "category": "ECB bonds",
+      "values": {
+       "FY21": 17779.55,
+       "FY22": 19011.29,
+       "FY23": 12513.28,
+       "FY24": 10948.31,
+       "FY25": 15851.97
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143,
+       "FY23": 206,
+       "FY24": 273,
+       "FY25": 273
+      }
+     },
+     {
+      "label": "Senior secured notes",
+      "category": "ECB bonds",
+      "values": {
+       "FY21": 888.35,
+       "FY22": 891.4,
+       "FY23": 894.73
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143,
+       "FY23": 206
+      }
+     },
+     {
+      "label": "Privately placed",
+      "category": "Unsecured NCDs",
+      "values": {
+       "FY21": 464.44,
+       "FY22": 85.18,
+       "FY24": 90.42,
+       "FY25": 0
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143,
+       "FY24": 273,
+       "FY25": 273
+      }
+     },
+     {
+      "label": "Secured term loan from banks - inR",
+      "category": "Bank term loans",
+      "values": {
+       "FY21": 13304.7,
+       "FY22": 16755.62,
+       "FY23": 31900.26
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143,
+       "FY23": 207
+      }
+     },
+     {
+      "label": "term loan from financial institutions/corporates - inR",
+      "category": "FI & NHB loans",
+      "values": {
+       "FY21": 3783.2,
+       "FY22": 5685.24,
+       "FY23": 9296.56
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143,
+       "FY23": 207
+      }
+     },
+     {
+      "label": "external commercial borrowing - FcnR",
+      "category": "ECB loans",
+      "values": {
+       "FY21": 4122.49,
+       "FY22": 4243.13,
+       "FY23": 9828.01
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143,
+       "FY23": 207
+      }
+     },
+     {
+      "label": "loans repayable on demand from banks (cash credit from banks)",
+      "category": "Cash credit & WCDL",
+      "values": {
+       "FY21": 667.38,
+       "FY22": 454.86,
+       "FY23": 459.1,
+       "FY24": 2905.91,
+       "FY25": 0.92
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143,
+       "FY23": 207,
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "other loans - inR -Securitisation liabilities",
+      "category": "Securitisation",
+      "values": {
+       "FY21": 23403.6,
+       "FY22": 19538.08
+      },
+      "pages": {
+       "FY21": 143,
+       "FY22": 143
+      }
+     },
+     {
+      "label": "Public deposits (refer note 65) *",
       "category": "Deposits",
       "values": {
-       "FY23": 34671.99,
-       "FY24": 42802.28
+       "FY21": 15790.71,
+       "FY22": 20190.08
       },
       "pages": {
-       "FY23": 241,
-       "FY24": 241
+       "FY21": 144,
+       "FY22": 144
+      }
+     },
+     {
+      "label": "From Banks",
+      "category": "Deposits",
+      "values": {
+       "FY21": 0,
+       "FY22": 0
+      },
+      "pages": {
+       "FY21": 144,
+       "FY22": 144
+      }
+     },
+     {
+      "label": "From others deposits from corporates **",
+      "category": "Deposits",
+      "values": {
+       "FY21": 392.11,
+       "FY22": 1729.76
+      },
+      "pages": {
+       "FY21": 144,
+       "FY22": 144
+      }
+     },
+     {
+      "label": "inter-corporate deposits ***",
+      "category": "Deposits",
+      "values": {
+       "FY21": 49.59,
+       "FY22": 29.14,
+       "FY23": 0
+      },
+      "pages": {
+       "FY21": 144,
+       "FY22": 144,
+       "FY23": 207
+      }
+     },
+     {
+      "label": "Subordinated debts - debentures #",
+      "category": "Subordinated debt",
+      "values": {
+       "FY21": 4620.76,
+       "FY22": 4614.25,
+       "FY23": 4523.85,
+       "FY24": 4300.07,
+       "FY25": 2513.98
+      },
+      "pages": {
+       "FY21": 144,
+       "FY22": 144,
+       "FY23": 207,
+       "FY24": 283,
+       "FY25": 283
+      }
+     },
+     {
+      "label": "Redeemable non-convertible debentures public issue ¥",
+      "category": "Secured NCDs",
+      "values": {
+       "FY23": 2508.89
+      },
+      "pages": {
+       "FY23": 206
+      }
+     },
+     {
+      "label": "Redeemable non-convertible debentures privately placed",
+      "category": "Unsecured NCDs",
+      "values": {
+       "FY23": 87.61
+      },
+      "pages": {
+       "FY23": 206
+      }
+     },
+     {
+      "label": "Other loans - InR - Securitisation liabilities",
+      "category": "Securitisation",
+      "values": {
+       "FY23": 22106.09
+      },
+      "pages": {
+       "FY23": 207
+      }
+     },
+     {
+      "label": "unsecured i. public deposits (Refer note 67)*",
+      "category": "Deposits",
+      "values": {
+       "FY23": 34671.99
+      },
+      "pages": {
+       "FY23": 207
       }
      },
      {
@@ -108,8 +596,150 @@
        "FY25": 0
       },
       "pages": {
-       "FY23": 241,
-       "FY24": 241,
+       "FY23": 207,
+       "FY24": 283,
+       "FY25": 283
+      }
+     },
+     {
+      "label": "iii. From Others deposits from corporates **",
+      "category": "Deposits",
+      "values": {
+       "FY23": 1467.84
+      },
+      "pages": {
+       "FY23": 207
+      }
+     },
+     {
+      "label": "Public issue",
+      "category": "Secured NCDs",
+      "values": {
+       "FY24": 1128.46,
+       "FY25": 732.92
+      },
+      "pages": {
+       "FY24": 273,
+       "FY25": 273
+      }
+     },
+     {
+      "label": "Privately placed",
+      "category": "Secured NCDs",
+      "values": {
+       "FY24": 30411.55,
+       "FY25": 37563.97
+      },
+      "pages": {
+       "FY24": 273,
+       "FY25": 273
+      }
+     },
+     {
+      "label": "Commercial papers",
+      "category": "Commercial paper",
+      "values": {
+       "FY24": 2369.87,
+       "FY25": 0
+      },
+      "pages": {
+       "FY24": 273,
+       "FY25": 273
+      }
+     },
+     {
+      "label": "Term loan from banks - INR",
+      "category": "Bank term loans",
+      "values": {
+       "FY24": 35232.49,
+       "FY25": 35347.15
+      },
+      "pages": {
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "Term loan from banks - FCNR",
+      "category": "Bank term loans",
+      "values": {
+       "FY24": 0,
+       "FY25": 2702.01
+      },
+      "pages": {
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "Term loan from financial institutions/ corporates - INR",
+      "category": "FI & NHB loans",
+      "values": {
+       "FY24": 10405.19,
+       "FY25": 9864.34
+      },
+      "pages": {
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "Term loan from financial institutions/ corporates - FCNR",
+      "category": "FI & NHB loans",
+      "values": {
+       "FY24": 0,
+       "FY25": 1425
+      },
+      "pages": {
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "Constituent's Subsidiary General Ledger loan (CSGL loan)",
+      "category": "Repo, TREPS & CBLO",
+      "values": {
+       "FY24": 0,
+       "FY25": 402.97
+      },
+      "pages": {
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "External commercial borrowing",
+      "category": "ECB loans",
+      "values": {
+       "FY24": 14467.05,
+       "FY25": 33653.95
+      },
+      "pages": {
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "Other loans - Securitisation liabilities - INR",
+      "category": "Securitisation",
+      "values": {
+       "FY24": 29138.16,
+       "FY25": 38052.08
+      },
+      "pages": {
+       "FY24": 278,
+       "FY25": 278
+      }
+     },
+     {
+      "label": "Unsecured i. Public deposits (Refer note 84)*",
+      "category": "Deposits",
+      "values": {
+       "FY24": 42802.28,
+       "FY25": 53452.81
+      },
+      "pages": {
+       "FY24": 283,
        "FY25": 283
       }
      },
@@ -117,38 +747,22 @@
       "label": "Deposits from corporates **",
       "category": "Deposits",
       "values": {
-       "FY23": 1467.84,
        "FY24": 1641.38,
        "FY25": 2633.18
       },
       "pages": {
-       "FY23": 241,
-       "FY24": 241,
+       "FY24": 283,
        "FY25": 283
       }
      },
      {
-      "label": "Subordinated debts - Debentures #",
-      "category": "Subordinated debt",
+      "label": "Borrowings (other than debt securities) (balance sheet total)",
+      "category": "Borrowings (not split)",
       "values": {
-       "FY23": 4523.85,
-       "FY24": 4300.07,
-       "FY25": 2513.98
+       "FY26": 125917.78
       },
       "pages": {
-       "FY23": 241,
-       "FY24": 241,
-       "FY25": 283
-      }
-     },
-     {
-      "label": "Unsecured i. Public deposits (Refer note 84)*",
-      "category": "Deposits",
-      "values": {
-       "FY25": 53452.81
-      },
-      "pages": {
-       "FY25": 283
+       "FY26": 117
       }
      },
      {
@@ -160,118 +774,512 @@
       "pages": {
        "FY26": 117
       }
+     },
+     {
+      "label": "Subordinated liabilities (balance sheet total)",
+      "category": "Subordinated debt",
+      "values": {
+       "FY26": 2418.57
+      },
+      "pages": {
+       "FY26": 117
+      }
      }
     ],
     "subtotals": [],
     "total": {
+     "FY21": 106196.40999999997,
+     "FY22": 114496.70999999999,
      "FY23": 157906.29,
      "FY24": 185841.14,
-     "FY25": 234197.25,
-     "FY26": 195398.12
+     "FY25": 234197.25000000003,
+     "FY26": 197816.69
     },
     "mix": {
      "categories": [
+      "Secured NCDs",
+      "Unsecured NCDs",
+      "Commercial paper",
+      "Bank term loans",
+      "FI & NHB loans",
+      "Cash credit & WCDL",
+      "ECB loans",
+      "ECB bonds",
+      "Repo, TREPS & CBLO",
+      "Securitisation",
       "Deposits",
       "Subordinated debt",
-      "Debt securities (not split)",
       "Borrowings (not split)"
      ],
      "amounts": {
+      "Secured NCDs": {
+       "FY21": 20929.53,
+       "FY22": 21268.68,
+       "FY23": 30156.97,
+       "FY24": 31540.01,
+       "FY25": 38296.89,
+       "FY26": 0
+      },
+      "Unsecured NCDs": {
+       "FY21": 464.44,
+       "FY22": 85.18,
+       "FY23": 87.61,
+       "FY24": 90.42,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Commercial paper": {
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 0,
+       "FY24": 2369.87,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Bank term loans": {
+       "FY21": 13304.7,
+       "FY22": 16755.62,
+       "FY23": 31900.26,
+       "FY24": 35232.49,
+       "FY25": 38049.16,
+       "FY26": 0
+      },
+      "FI & NHB loans": {
+       "FY21": 3783.2,
+       "FY22": 5685.24,
+       "FY23": 9296.56,
+       "FY24": 10405.19,
+       "FY25": 11289.34,
+       "FY26": 0
+      },
+      "Cash credit & WCDL": {
+       "FY21": 667.38,
+       "FY22": 454.86,
+       "FY23": 459.1,
+       "FY24": 2905.91,
+       "FY25": 0.92,
+       "FY26": 0
+      },
+      "ECB loans": {
+       "FY21": 4122.49,
+       "FY22": 4243.13,
+       "FY23": 9828.01,
+       "FY24": 14467.05,
+       "FY25": 33653.95,
+       "FY26": 0
+      },
+      "ECB bonds": {
+       "FY21": 18667.899999999998,
+       "FY22": 19902.690000000002,
+       "FY23": 13408.01,
+       "FY24": 10948.31,
+       "FY25": 15851.97,
+       "FY26": 0
+      },
+      "Repo, TREPS & CBLO": {
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 402.97,
+       "FY26": 0
+      },
+      "Securitisation": {
+       "FY21": 23403.6,
+       "FY22": 19538.08,
+       "FY23": 22106.09,
+       "FY24": 29138.16,
+       "FY25": 38052.08,
+       "FY26": 0
+      },
       "Deposits": {
+       "FY21": 16232.41,
+       "FY22": 21948.98,
        "FY23": 36139.829999999994,
        "FY24": 44443.659999999996,
        "FY25": 56085.99,
        "FY26": 69480.34
       },
       "Subordinated debt": {
+       "FY21": 4620.76,
+       "FY22": 4614.25,
        "FY23": 4523.85,
        "FY24": 4300.07,
        "FY25": 2513.98,
-       "FY26": 0
-      },
-      "Debt securities (not split)": {
-       "FY23": 43652.59,
-       "FY24": 44948.61,
-       "FY25": 54148.86,
-       "FY26": 0
+       "FY26": 2418.57
       },
       "Borrowings (not split)": {
-       "FY23": 73590.02,
-       "FY24": 92148.8,
-       "FY25": 121448.42,
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
        "FY26": 125917.78
       }
      },
      "shares": {
+      "Secured NCDs": {
+       "FY21": 0.19708321590155453,
+       "FY22": 0.18575800125610598,
+       "FY23": 0.1909801693143446,
+       "FY24": 0.16971489735803383,
+       "FY25": 0.16352408066277463,
+       "FY26": 0
+      },
+      "Unsecured NCDs": {
+       "FY21": 0.004373405843003545,
+       "FY22": 0.0007439515074275934,
+       "FY23": 0.0005548227369536704,
+       "FY24": 0.0004865445831854023,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Commercial paper": {
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 0,
+       "FY24": 0.0127521279733863,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Bank term loans": {
+       "FY21": 0.12528389613170543,
+       "FY22": 0.1463414974980504,
+       "FY23": 0.202020198182099,
+       "FY24": 0.1895839102149287,
+       "FY25": 0.16246629710639215,
+       "FY26": 0
+      },
+      "FI & NHB loans": {
+       "FY21": 0.03562455642332919,
+       "FY22": 0.04965417783620158,
+       "FY23": 0.05887390552966572,
+       "FY24": 0.055989701742036234,
+       "FY25": 0.048204408890369116,
+       "FY26": 0
+      },
+      "Cash credit & WCDL": {
+       "FY21": 0.006284393229488644,
+       "FY22": 0.003972690569012857,
+       "FY23": 0.002907420597368224,
+       "FY24": 0.01563652698213108,
+       "FY25": 0.000003928312565583071,
+       "FY26": 0
+      },
+      "ECB loans": {
+       "FY21": 0.03881948551744829,
+       "FY22": 0.03705896876862226,
+       "FY23": 0.06223950926844016,
+       "FY24": 0.07784632616868363,
+       "FY25": 0.14369916811576564,
+       "FY26": 0
+      },
+      "ECB bonds": {
+       "FY21": 0.17578654495006002,
+       "FY22": 0.17382761478473926,
+       "FY23": 0.08491118371535421,
+       "FY24": 0.05891219780507157,
+       "FY25": 0.06768640536983248,
+       "FY26": 0
+      },
+      "Repo, TREPS & CBLO": {
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0.0017206436027750111,
+       "FY26": 0
+      },
+      "Securitisation": {
+       "FY21": 0.22038033112418776,
+       "FY22": 0.17064315647148293,
+       "FY23": 0.1399949932330118,
+       "FY24": 0.15679068692755543,
+       "FY25": 0.1624787652288829,
+       "FY26": 0
+      },
       "Deposits": {
+       "FY21": 0.1528527188442623,
+       "FY22": 0.19169965669755926,
        "FY23": 0.22886884366670887,
        "FY24": 0.23914866213153876,
-       "FY25": 0.23948184703278966,
-       "FY26": 0.35558346211314623
+       "FY25": 0.23948184703278963,
+       "FY26": 0.35123598519417143
       },
       "Subordinated debt": {
+       "FY21": 0.04351145203496052,
+       "FY22": 0.04030028461079799,
        "FY23": 0.02864895375605367,
        "FY24": 0.023138418113448935,
-       "FY25": 0.01073445567785275,
-       "FY26": 0
-      },
-      "Debt securities (not split)": {
-       "FY23": 0.2764461757666524,
-       "FY24": 0.24186576771967713,
-       "FY25": 0.23121048603260713,
-       "FY26": 0
+       "FY25": 0.010734455677852748,
+       "FY26": 0.012226319225137172
       },
       "Borrowings (not split)": {
-       "FY23": 0.4660360268105849,
-       "FY24": 0.4958471520353351,
-       "FY25": 0.5185732112567505,
-       "FY26": 0.6444165378868538
+       "FY21": 0,
+       "FY22": 0,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0.6365376955806914
       }
      }
     },
     "finance_cost": {
+     "FY21": 9054.26,
+     "FY22": 9734.31,
      "FY23": 12545.76,
-     "FY24": 14806.12,
+     "FY24": 14802.6,
      "FY25": 18454.58
     },
     "avg_borrowing": {
+     "FY22": 110346.55999999998,
+     "FY23": 136201.5,
      "FY24": 171873.71500000003,
      "FY25": 210019.195,
-     "FY26": 214797.685
+     "FY26": 216006.97000000003
     },
     "avg_cost": {
-     "FY24": 0.0861453422357223,
+     "FY22": 0.08821579938694964,
+     "FY23": 0.0921117608836907,
+     "FY24": 0.08612486208260524,
      "FY25": 0.0878709205603802
     }
    },
-   "investments": null,
+   "investments": {
+    "years": [
+     "FY21",
+     "FY22",
+     "FY23",
+     "FY24",
+     "FY25",
+     "FY26"
+    ],
+    "rows": [
+     {
+      "label": "investments in mutual",
+      "category": "Other investments",
+      "values": {
+       "FY22": 0
+      },
+      "pages": {
+       "FY22": 136
+      }
+     },
+     {
+      "label": "funds investments in",
+      "category": "Other investments",
+      "values": {
+       "FY22": 2058.34
+      },
+      "pages": {
+       "FY22": 136
+      }
+     },
+     {
+      "label": "(refer note 65) investments in equity",
+      "category": "Equity",
+      "values": {
+       "FY22": 6.74
+      },
+      "pages": {
+       "FY22": 136
+      }
+     },
+     {
+      "label": "instruments investments in associates",
+      "category": "Subsidiaries, associates & JVs",
+      "values": {
+       "FY22": 13.37
+      },
+      "pages": {
+       "FY22": 136
+      }
+     },
+     {
+      "label": "(at cost) investments in pass",
+      "category": "Other investments",
+      "values": {
+       "FY22": 1155.87
+      },
+      "pages": {
+       "FY22": 136
+      }
+     },
+     {
+      "label": "(unquoted) investments in certificate",
+      "category": "Other investments",
+      "values": {
+       "FY22": 0
+      },
+      "pages": {
+       "FY22": 136
+      }
+     },
+     {
+      "label": "of deposits investments in",
+      "category": "Other investments",
+      "values": {
+       "FY22": 0
+      },
+      "pages": {
+       "FY22": 136
+      }
+     },
+     {
+      "label": "commercial papers others (venture capital",
+      "category": "Commercial paper",
+      "values": {
+       "FY22": 1.54
+      },
+      "pages": {
+       "FY22": 136
+      }
+     }
+    ],
+    "total": {
+     "FY21": 3197.85,
+     "FY22": 6809.16,
+     "FY23": 8565.06,
+     "FY24": 10656.64,
+     "FY25": 15598.71,
+     "FY26": 14782.76
+    },
+    "mix": {
+     "categories": [
+      "Commercial paper",
+      "Subsidiaries, associates & JVs",
+      "Equity",
+      "Other investments"
+     ],
+     "amounts": {
+      "Commercial paper": {
+       "FY21": 0,
+       "FY22": 1.54,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Subsidiaries, associates & JVs": {
+       "FY21": 0,
+       "FY22": 13.37,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Equity": {
+       "FY21": 0,
+       "FY22": 6.74,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Other investments": {
+       "FY21": 0,
+       "FY22": 3214.21,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      }
+     },
+     "shares": {
+      "Commercial paper": {
+       "FY21": 0,
+       "FY22": 0.00022616592942448116,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Subsidiaries, associates & JVs": {
+       "FY21": 0,
+       "FY22": 0.001963531478185268,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Equity": {
+       "FY21": 0,
+       "FY22": 0.000989843093714937,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      },
+      "Other investments": {
+       "FY21": 0,
+       "FY22": 0.4720420727373127,
+       "FY23": 0,
+       "FY24": 0,
+       "FY25": 0,
+       "FY26": 0
+      }
+     }
+    }
+   },
    "sources": {
-    "FY23": {
-     "report": "FY24",
+    "FY21": {
+     "report": "FY22",
      "via": "NSE",
-     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24341_SHRIRAMFIN_2023_2024_06072024172245.pdf",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_21840_SRTRANSFIN_2021_2022_12102022150846_10122022160001.zip",
      "column": "previous-year comparative",
      "unit": "crore",
      "pages": {
-      "debt_securities": 188,
-      "borrowings": 188,
-      "deposits": 188,
-      "subordinated": 188,
-      "finance_cost": 189
+      "investments": 106,
+      "debt_securities": 106,
+      "borrowings": 106,
+      "deposits": 106,
+      "subordinated": 106,
+      "finance_cost": 107
      }
     },
-    "FY24": {
-     "report": "FY24",
+    "FY22": {
+     "report": "FY22",
      "via": "NSE",
-     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24341_SHRIRAMFIN_2023_2024_06072024172245.pdf",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_21840_SRTRANSFIN_2021_2022_12102022150846_10122022160001.zip",
      "column": "current year",
      "unit": "crore",
      "pages": {
-      "debt_securities": 188,
-      "borrowings": 188,
-      "deposits": 188,
-      "subordinated": 188,
-      "finance_cost": 189
+      "investments": 106,
+      "debt_securities": 106,
+      "borrowings": 106,
+      "deposits": 106,
+      "subordinated": 106,
+      "finance_cost": 107
+     }
+    },
+    "FY23": {
+     "report": "FY23",
+     "via": "NSE",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_21945_SHRIRAMFIN_2022_2023_31052023233852_06012023070001.zip",
+     "column": "current year",
+     "unit": "crore",
+     "pages": {
+      "investments": 164,
+      "debt_securities": 164,
+      "borrowings": 164,
+      "deposits": 164,
+      "subordinated": 164,
+      "finance_cost": 165
+     }
+    },
+    "FY24": {
+     "report": "FY25",
+     "via": "NSE",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_26597_SHRIRAMFIN_2024_2025_A_24062025170941.pdf",
+     "column": "previous-year comparative",
+     "unit": "crore",
+     "pages": {
+      "investments": 226,
+      "debt_securities": 226,
+      "borrowings": 226,
+      "deposits": 226,
+      "subordinated": 226,
+      "finance_cost": 227
      }
     },
     "FY25": {
@@ -281,6 +1289,7 @@
      "column": "current year",
      "unit": "crore",
      "pages": {
+      "investments": 226,
       "debt_securities": 226,
       "borrowings": 226,
       "deposits": 226,
@@ -295,39 +1304,40 @@
      "column": "current year",
      "unit": "crore",
      "pages": {
+      "investments": 117,
       "borrowings": 117,
-      "deposits": 117
+      "deposits": 117,
+      "subordinated": 117
      }
     }
    },
    "warnings": [
-    "FY23: Debt securities shown as a balance-sheet total (note breakdown could not be read)",
-    "FY23: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
-    "FY24: Debt securities shown as a balance-sheet total (note breakdown could not be read)",
-    "FY24: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
-    "FY25: Debt securities shown as a balance-sheet total (note breakdown could not be read)",
-    "FY25: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
     "FY26: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)"
    ],
    "readouts": [
     {
      "area": "Borrowing book",
-     "text": "Total borrowings of ₹1,95,398 cr in FY26, down 16.6% on FY25; 7.4% a year (CAGR) since FY23 (₹1,57,906 cr).",
+     "text": "Total borrowings of ₹1,97,817 cr in FY26, down 15.5% on FY25; 13.2% a year (CAGR) since FY21 (₹1,06,196 cr).",
      "key": "readout:SHRIRAM:Borrowing book"
     },
     {
      "area": "Funding mix",
-     "text": "Largest sources in FY26: Deposits (35.6%), Subordinated debt (0.0%).",
+     "text": "Largest sources in FY26: Deposits (35.1%), Subordinated debt (1.2%), Secured NCDs (0.0%).",
      "key": "readout:SHRIRAM:Funding mix"
     },
     {
      "area": "Mix shift",
-     "text": "Biggest changes since FY23: Deposits +12.7 pp, Subordinated debt −2.9 pp.",
+     "text": "Biggest changes since FY21: Securitisation −22.0 pp, Deposits +19.8 pp.",
      "key": "readout:SHRIRAM:Mix shift"
     },
     {
+     "area": "Investment book",
+     "text": "Investment book of ₹14,783 cr in FY26.",
+     "key": "readout:SHRIRAM:Investment book"
+    },
+    {
      "area": "Data notes",
-     "text": "FY23: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY23: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY24: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY24: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY25: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY25: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY26: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
+     "text": "FY26: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
      "key": "readout:SHRIRAM:Data notes"
     }
    ]
@@ -340,6 +1350,8 @@
    "base": false,
    "borrowing": {
     "years": [
+     "FY21",
+     "FY22",
      "FY23",
      "FY24",
      "FY25",
@@ -350,13 +1362,17 @@
       "label": "Debt securities (balance sheet total)",
       "category": "Debt securities (not split)",
       "values": {
+       "FY21": 12357.67,
+       "FY22": 13321.1,
        "FY23": 19682.41,
        "FY24": 24812.76,
        "FY25": 30133.99,
        "FY26": 40636.05
       },
       "pages": {
-       "FY23": 148,
+       "FY21": 108,
+       "FY22": 108,
+       "FY23": 142,
        "FY24": 148,
        "FY25": 166,
        "FY26": 166
@@ -366,13 +1382,17 @@
       "label": "Borrowings (other than debt securities) (balance sheet total)",
       "category": "Borrowings (not split)",
       "values": {
+       "FY21": 47182.26,
+       "FY22": 52004.520000000004,
        "FY23": 73186.19,
        "FY24": 104511.13,
        "FY25": 133791.98,
        "FY26": 156528.78
       },
       "pages": {
-       "FY23": 148,
+       "FY21": 108,
+       "FY22": 108,
+       "FY23": 142,
        "FY24": 148,
        "FY25": 166,
        "FY26": 166
@@ -382,13 +1402,17 @@
       "label": "Perpetual Debt - Unsecured",
       "category": "Subordinated debt",
       "values": {
+       "FY21": 1489.2,
+       "FY22": 1328.99,
        "FY23": 1527.96,
        "FY24": 1612.89,
        "FY25": 2593.2,
        "FY26": 2697.59
       },
       "pages": {
-       "FY23": 180,
+       "FY21": 142,
+       "FY22": 142,
+       "FY23": 176,
        "FY24": 180,
        "FY25": 198,
        "FY26": 198
@@ -398,13 +1422,17 @@
       "label": "Rupee Denominated Bonds",
       "category": "Subordinated debt",
       "values": {
+       "FY21": 406.84000000000003,
+       "FY22": 407.36,
        "FY23": 407.94,
        "FY24": 408.18,
        "FY25": 408.32,
        "FY26": 408.52
       },
       "pages": {
-       "FY23": 180,
+       "FY21": 142,
+       "FY22": 142,
+       "FY23": 176,
        "FY24": 180,
        "FY25": 198,
        "FY26": 198
@@ -414,13 +1442,17 @@
       "label": "Other Subordinated Debts",
       "category": "Subordinated debt",
       "values": {
+       "FY21": 2294.02,
+       "FY22": 2111.53,
        "FY23": 2551.56,
        "FY24": 3128.62,
        "FY25": 8018.62,
        "FY26": 10595.62
       },
       "pages": {
-       "FY23": 180,
+       "FY21": 142,
+       "FY22": 142,
+       "FY23": 176,
        "FY24": 180,
        "FY25": 198,
        "FY26": 198
@@ -429,6 +1461,8 @@
     ],
     "subtotals": [],
     "total": {
+     "FY21": 63729.98999999999,
+     "FY22": 69173.5,
      "FY23": 97356.06000000001,
      "FY24": 134473.58,
      "FY25": 174946.11000000002,
@@ -442,18 +1476,24 @@
      ],
      "amounts": {
       "Subordinated debt": {
+       "FY21": 4190.0599999999995,
+       "FY22": 3847.88,
        "FY23": 4487.46,
        "FY24": 5149.6900000000005,
        "FY25": 11020.14,
        "FY26": 13701.730000000001
       },
       "Debt securities (not split)": {
+       "FY21": 12357.67,
+       "FY22": 13321.1,
        "FY23": 19682.41,
        "FY24": 24812.76,
        "FY25": 30133.99,
        "FY26": 40636.05
       },
       "Borrowings (not split)": {
+       "FY21": 47182.26,
+       "FY22": 52004.520000000004,
        "FY23": 73186.19,
        "FY24": 104511.13,
        "FY25": 133791.98,
@@ -462,18 +1502,24 @@
      },
      "shares": {
       "Subordinated debt": {
+       "FY21": 0.06574706821701996,
+       "FY22": 0.05562650436944784,
        "FY23": 0.046093278631037446,
        "FY24": 0.03829518036182275,
        "FY25": 0.06299162639283605,
        "FY26": 0.06497820232852473
       },
       "Debt securities (not split)": {
+       "FY21": 0.19390666780270954,
+       "FY22": 0.19257519136663606,
        "FY23": 0.20216933594066971,
        "FY24": 0.18451773203331093,
        "FY25": 0.1722472708881609,
        "FY26": 0.19270978764959226
       },
       "Borrowings (not split)": {
+       "FY21": 0.7403462639802707,
+       "FY22": 0.7517983042639161,
        "FY23": 0.7517373854282927,
        "FY24": 0.7771870876048664,
        "FY25": 0.764761102719003,
@@ -482,17 +1528,23 @@
      }
     },
     "finance_cost": {
+     "FY21": 4575.91,
+     "FY22": 4298.82,
      "FY23": 5748.75,
      "FY24": 9230.61,
      "FY25": 12484.85,
      "FY26": 14374.2
     },
     "avg_borrowing": {
+     "FY22": 66451.745,
+     "FY23": 83264.78,
      "FY24": 115914.82,
      "FY25": 154709.845,
      "FY26": 192906.33500000002
     },
     "avg_cost": {
+     "FY22": 0.06469085198590345,
+     "FY23": 0.06904179654350855,
      "FY24": 0.0796326992527789,
      "FY25": 0.08069848431429816,
      "FY26": 0.07451388260525503
@@ -500,6 +1552,8 @@
    },
    "investments": {
     "years": [
+     "FY21",
+     "FY22",
      "FY23",
      "FY24",
      "FY25",
@@ -507,6 +1561,8 @@
     ],
     "rows": [],
     "total": {
+     "FY21": 1618.82,
+     "FY22": 2076.16,
      "FY23": 3620.02,
      "FY24": 4100.23,
      "FY25": 6390.39,
@@ -519,18 +1575,46 @@
     }
    },
    "sources": {
-    "FY23": {
-     "report": "FY24",
+    "FY21": {
+     "report": "FY22",
      "via": "NSE",
-     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24313_CHOLAFIN_2023_2024_0407202423375.pdf",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_20279_CHOLAFIN_2021_2022_07072022231803_07082022070003.zip",
      "column": "previous-year comparative",
+     "unit": "lakh",
+     "pages": {
+      "investments": 108,
+      "debt_securities": 108,
+      "borrowings": 108,
+      "subordinated": 108,
+      "finance_cost": 109
+     }
+    },
+    "FY22": {
+     "report": "FY22",
+     "via": "NSE",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_20279_CHOLAFIN_2021_2022_07072022231803_07082022070003.zip",
+     "column": "current year",
+     "unit": "lakh",
+     "pages": {
+      "investments": 108,
+      "debt_securities": 108,
+      "borrowings": 108,
+      "subordinated": 108,
+      "finance_cost": 109
+     }
+    },
+    "FY23": {
+     "report": "FY23",
+     "via": "NSE",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_22274_CHOLAFIN_2022_2023_10072023223519_07112023070000.zip",
+     "column": "current year",
      "unit": "crore",
      "pages": {
-      "investments": 148,
-      "debt_securities": 148,
-      "borrowings": 148,
-      "subordinated": 148,
-      "finance_cost": 149
+      "investments": 142,
+      "debt_securities": 142,
+      "borrowings": 142,
+      "subordinated": 142,
+      "finance_cost": 143
      }
     },
     "FY24": {
@@ -577,6 +1661,10 @@
     }
    },
    "warnings": [
+    "FY21: Debt securities shown as a balance-sheet total (note breakdown could not be read)",
+    "FY21: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
+    "FY22: Debt securities shown as a balance-sheet total (note breakdown could not be read)",
+    "FY22: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
     "FY23: Debt securities shown as a balance-sheet total (note breakdown could not be read)",
     "FY23: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
     "FY24: Debt securities shown as a balance-sheet total (note breakdown could not be read)",
@@ -589,18 +1677,13 @@
    "readouts": [
     {
      "area": "Borrowing book",
-     "text": "Total borrowings of ₹2,10,867 cr in FY26, up 20.5% on FY25; 29.4% a year (CAGR) since FY23 (₹97,356 cr).",
+     "text": "Total borrowings of ₹2,10,867 cr in FY26, up 20.5% on FY25; 27.0% a year (CAGR) since FY21 (₹63,730 cr).",
      "key": "readout:CHOLA:Borrowing book"
     },
     {
      "area": "Funding mix",
      "text": "Largest sources in FY26: Subordinated debt (6.5%).",
      "key": "readout:CHOLA:Funding mix"
-    },
-    {
-     "area": "Mix shift",
-     "text": "Biggest changes since FY23: Subordinated debt +1.9 pp.",
-     "key": "readout:CHOLA:Mix shift"
     },
     {
      "area": "Borrowing cost",
@@ -614,7 +1697,7 @@
     },
     {
      "area": "Data notes",
-     "text": "FY23: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY23: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY24: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY24: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY25: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY25: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY26: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY26: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
+     "text": "FY21: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY21: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY22: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY22: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY23: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY23: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY24: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY24: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY25: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY25: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read) FY26: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY26: Borrowings (other than debt securities) shown as a balance-sheet total (note breakdown could not be read)",
      "key": "readout:CHOLA:Data notes"
     }
    ]
@@ -909,6 +1992,8 @@
  "summary": [],
  "studies": [],
  "years": [
+  "FY21",
+  "FY22",
   "FY23",
   "FY24",
   "FY25",
@@ -956,15 +2041,9 @@
    "FY22"
   ],
   "MAHINDRA": [
-   "FY24",
-   "FY23",
-   "FY22"
-  ],
-  "SHRIRAM": [
-   "FY22"
-  ],
-  "CHOLA": [
-   "FY22"
+   "FY26",
+   "FY25",
+   "FY24"
   ],
   "HDB": [
    "FY24",

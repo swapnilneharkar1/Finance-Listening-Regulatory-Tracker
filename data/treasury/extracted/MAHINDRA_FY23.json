@@ -1,0 +1,160 @@
+{
+ "ok": true,
+ "fy": "FY23",
+ "prevFy": "FY22",
+ "unit": "crore",
+ "pages": 311,
+ "standalonePages": [
+  186,
+  258
+ ],
+ "statement": {
+  "debt_securities": {
+   "cy": 24745.07,
+   "py": 18252.71,
+   "note": "16",
+   "page": 186
+  },
+  "borrowings": {
+   "cy": 41234.06,
+   "py": 26005.17,
+   "note": "17",
+   "page": 186
+  },
+  "finance_cost": {
+   "cy": 4576.72,
+   "py": 3920.18,
+   "note": "28",
+   "page": 186
+  }
+ },
+ "borrowing": {
+  "FY23": [
+   {
+    "label": "Interest paid in terms of Section 16 of the MSMED Act along with the amount of - - Non–convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 19464.32,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non–convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 994.95,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Principal paid beyond the appointed date",
+    "category": "Secured NCDs",
+    "value": 0,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 3936,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Denominated Secured Bonds overseas (Masala Bonds)",
+    "category": "ECB bonds",
+    "value": 349.8,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Amount of interest due and payable for the period of delay on payments made",
+    "category": "Secured NCDs",
+    "value": 0,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 41234.06,
+    "page": 186,
+    "section": "borrowings",
+    "unsplit": true
+   }
+  ],
+  "FY22": [
+   {
+    "label": "Interest paid in terms of Section 16 of the MSMED Act along with the amount of - - Non–convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 16610.55,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non–convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 795.82,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Principal paid beyond the appointed date",
+    "category": "Secured NCDs",
+    "value": 0,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 496.56,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Denominated Secured Bonds overseas (Masala Bonds)",
+    "category": "ECB bonds",
+    "value": 349.78,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Amount of interest due and payable for the period of delay on payments made",
+    "category": "Secured NCDs",
+    "value": 0,
+    "page": 203,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 26005.17,
+    "page": 186,
+    "section": "borrowings",
+    "unsplit": true
+   }
+  ]
+ },
+ "investments": {
+  "FY23": []
+ },
+ "totals": {
+  "FY23": 65979.13,
+  "FY22": 44257.88
+ },
+ "finance_cost": {
+  "FY23": 4576.72,
+  "FY22": 3920.18
+ },
+ "log": [
+  "debt_securities: 6 lines from note p.203, reconciles to balance sheet",
+  "borrowings: note p.204; breakdown sums to 40126.47 vs balance sheet 41234.06 -> using balance-sheet total",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: not on the balance sheet (treated as nil)"
+ ],
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_22127_M&MFIN_2022_2023_01072023204544_07012023210002.zip",
+ "via": "NSE",
+ "reportFy": "FY23",
+ "extractor": 2,
+ "sha": "8f4cc11c2283c79c",
+ "extractedAt": "2026-10-28T06:03:29.505Z"
+}

@@ -1,0 +1,143 @@
+{
+ "ok": true,
+ "fy": "FY22",
+ "prevFy": "FY21",
+ "unit": "crore",
+ "pages": 236,
+ "standalonePages": [
+  126,
+  186
+ ],
+ "statement": {
+  "investments": {
+   "cy": 8440.27,
+   "py": 11705.35,
+   "note": "8",
+   "page": 126
+  },
+  "debt_securities": {
+   "cy": 18252.71,
+   "py": 16834.57,
+   "note": "16",
+   "page": 126
+  },
+  "subordinated": {
+   "cy": 3129.85,
+   "py": 3149.37,
+   "note": "19",
+   "page": 126
+  },
+  "finance_cost": {
+   "cy": 3920.18,
+   "py": 4733.19,
+   "note": "28",
+   "page": 126
+  }
+ },
+ "borrowing": {
+  "FY22": [
+   {
+    "label": "Non-convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 16610.55,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non-convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 795.82,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 496.56,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Denominated Secured Bonds overseas (Masala Bonds)",
+    "category": "ECB bonds",
+    "value": 349.78,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 3129.85,
+    "page": 126,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ],
+  "FY21": [
+   {
+    "label": "Non-convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 15393.64,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non-convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 596.66,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 494.52,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Denominated Secured Bonds overseas (Masala Bonds)",
+    "category": "ECB bonds",
+    "value": 349.75,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 3149.37,
+    "page": 126,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ]
+ },
+ "investments": {
+  "FY22": []
+ },
+ "totals": {
+  "FY22": 21382.559999999998,
+  "FY21": 19983.94
+ },
+ "finance_cost": {
+  "FY22": 3920.18,
+  "FY21": 4733.19
+ },
+ "log": [
+  "debt_securities: 4 lines from note p.140, reconciles to balance sheet",
+  "borrowings: not on the balance sheet (treated as nil)",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: note p.133; breakdown sums to 8548.57 vs balance sheet 3129.85 -> using balance-sheet total",
+  "investments: breakdown not readable (sum 432.00 vs balance sheet 8440.27) -> book size only"
+ ],
+ "investment_total": {
+  "FY22": 8440.27,
+  "FY21": 11705.35
+ },
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_20324_M&MFIN_2021_2022_11072022203700_07112022210004.zip",
+ "via": "NSE",
+ "reportFy": "FY22",
+ "extractor": 2,
+ "sha": "b00ea0d0fc34a003",
+ "extractedAt": "2026-10-28T06:03:39.681Z"
+}

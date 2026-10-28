@@ -1,5 +1,232 @@
 {
- "started": "2026-10-27T12:54:28.230Z",
- "companies": {},
- "finished": "2026-10-27T12:54:28.230Z"
+ "started": "2026-10-28T06:00:25.542Z",
+ "companies": {
+  "BFL": {
+   "reports": [
+    {
+     "fy": "FY26",
+     "status": "extraction failed: Standalone balance sheet not found",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_29642_BAJFINANCE_2025_2026_A_23098027_07072026220255.pdf"
+    },
+    {
+     "fy": "FY25",
+     "status": "extraction failed: Standalone balance sheet not found",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_26674_BAJFINANCE_2024_2025_A_02072025000055.pdf"
+    },
+    {
+     "fy": "FY24",
+     "status": "extraction failed: Standalone balance sheet not found",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24208_BAJFINANCE_2023_2024_27062024194955.pdf"
+    },
+    {
+     "fy": "FY23",
+     "status": "extraction failed: Standalone balance sheet not found",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_22157_BAJFINANCE_2022_2023_03072023222618.zip"
+    },
+    {
+     "fy": "FY22",
+     "status": "extraction failed: Standalone balance sheet not found",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_20205_BAJFINANCE_2021_2022_04072022220250_07042022230013.zip"
+    }
+   ],
+   "missing": [
+    "FY26",
+    "FY25",
+    "FY24",
+    "FY23",
+    "FY22"
+   ]
+  },
+  "MAHINDRA": {
+   "reports": [
+    {
+     "fy": "FY26",
+     "status": "extraction failed: no borrowing lines found on the standalone balance sheet (p.177)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_29455_M&MFIN_2025_2026_A_14497256_25062026233609.pdf"
+    },
+    {
+     "fy": "FY25",
+     "status": "extraction error: Invalid PDF structure",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf"
+    },
+    {
+     "fy": "FY24",
+     "status": "not on BSE",
+     "url": "https://www.bseindia.com/bseplus/AnnualReport/532720/5327200324.pdf"
+    },
+    {
+     "fy": "FY23",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_22127_M&MFIN_2022_2023_01072023204544_07012023210002.zip",
+     "notes": [
+      "debt_securities: 6 lines from note p.203, reconciles to balance sheet",
+      "borrowings: note p.204; breakdown sums to 40126.47 vs balance sheet 41234.06 -> using balance-sheet total",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: not on the balance sheet (treated as nil)"
+     ]
+    },
+    {
+     "fy": "FY22",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_20324_M&MFIN_2021_2022_11072022203700_07112022210004.zip",
+     "notes": [
+      "debt_securities: 4 lines from note p.140, reconciles to balance sheet",
+      "borrowings: not on the balance sheet (treated as nil)",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: note p.133; breakdown sums to 8548.57 vs balance sheet 3129.85 -> using balance-sheet total",
+      "investments: breakdown not readable (sum 432.00 vs balance sheet 8440.27) -> book size only"
+     ]
+    }
+   ],
+   "missing": [
+    "FY26",
+    "FY25",
+    "FY24"
+   ]
+  },
+  "SHRIRAM": {
+   "reports": [
+    {
+     "fy": "FY26",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_29401_SHRIRAMFIN_2025_2026_A_18605156_17062026163904.pdf",
+     "notes": [
+      "debt_securities: not on the balance sheet (treated as nil)",
+      "borrowings: note p.142; breakdown sums to 118453.41 vs balance sheet 125917.78 -> using balance-sheet total",
+      "deposits: note p.145; breakdown sums to 1783.67 vs balance sheet 69480.34 -> using balance-sheet total",
+      "subordinated: note p.145; breakdown sums to 2560.34 vs balance sheet 2418.57 -> using balance-sheet total",
+      "investments: breakdown not readable (sum 22057.43 vs balance sheet 14782.76) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY25",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_26597_SHRIRAMFIN_2024_2025_A_24062025170941.pdf",
+     "notes": [
+      "debt_securities: 5 lines from note p.273, reconciles to balance sheet",
+      "borrowings: 8 lines from note p.278, reconciles to balance sheet",
+      "deposits: 3 lines from note p.283, reconciles to balance sheet",
+      "subordinated: 1 lines from note p.283, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 10990.09 vs balance sheet 15598.71) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY24",
+     "status": "extraction failed: no borrowing lines found on the standalone balance sheet (p.281)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24341_SHRIRAMFIN_2023_2024_06072024172245.pdf"
+    },
+    {
+     "fy": "FY23",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_21945_SHRIRAMFIN_2022_2023_31052023233852_06012023070001.zip",
+     "notes": [
+      "debt_securities: 5 lines from note p.206, reconciles to balance sheet",
+      "borrowings: 5 lines from note p.207, reconciles to balance sheet",
+      "deposits: 4 lines from note p.207, reconciles to balance sheet",
+      "subordinated: 1 lines from note p.207, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 38843.86 vs balance sheet 8565.06) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY22",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_21840_SRTRANSFIN_2021_2022_12102022150846_10122022160001.zip",
+     "notes": [
+      "debt_securities: 5 lines from note p.143, reconciles to balance sheet",
+      "borrowings: 5 lines from note p.143, reconciles to balance sheet",
+      "deposits: 4 lines from note p.144, reconciles to balance sheet",
+      "subordinated: 1 lines from note p.144, reconciles to balance sheet",
+      "investments: 8 lines from note p.136"
+     ]
+    }
+   ],
+   "missing": []
+  },
+  "CHOLA": {
+   "reports": [
+    {
+     "fy": "FY26",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_29596_CHOLAFIN_2025_2026_A_8171029_06072026201106.pdf",
+     "notes": [
+      "debt_securities: note p.175; breakdown not readable -> using balance-sheet total",
+      "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.198, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 163.00 vs balance sheet 6638.05) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY25",
+     "status": "extraction error: Invalid PDF structure",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_26821_CHOLAFIN_2024_2025_A_09072025221445.pdf"
+    },
+    {
+     "fy": "FY24",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24313_CHOLAFIN_2023_2024_0407202423375.pdf",
+     "notes": [
+      "debt_securities: note p.157; breakdown not readable -> using balance-sheet total",
+      "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.180, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 2013.00 vs balance sheet 4100.23) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY23",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_22274_CHOLAFIN_2022_2023_10072023223519_07112023070000.zip",
+     "notes": [
+      "debt_securities: note p.150; breakdown not readable -> using balance-sheet total",
+      "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.176, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 135.00 vs balance sheet 3620.02) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY22",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_20279_CHOLAFIN_2021_2022_07072022231803_07082022070003.zip",
+     "notes": [
+      "debt_securities: note p.116; breakdown not readable -> using balance-sheet total",
+      "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.142, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 103.00 vs balance sheet 207616) -> book size only"
+     ]
+    }
+   ],
+   "missing": []
+  },
+  "HDB": {
+   "reports": [
+    {
+     "fy": "FY26",
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_29323_HDBFS_2025_2026_A_14173828_01062026192621.pdf",
+     "notes": [
+      "debt_securities: note p.255; breakdown sums to 30901.68 vs balance sheet 32358.95 -> using balance-sheet total",
+      "borrowings: 3 lines from note p.256, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: note p.258; breakdown sums to 6727.00 vs balance sheet 6975.9 -> using balance-sheet total",
+      "investments: 4 lines from note p.250"
+     ]
+    }
+   ],
+   "missing": [
+    "FY24",
+    "FY23",
+    "FY22"
+   ]
+  },
+  "TATACAP": {
+   "reports": [],
+   "missing": [
+    "no annual reports found — add links in treasury-sources.js"
+   ]
+  }
+ },
+ "finished": "2026-10-28T06:07:16.773Z"
 }

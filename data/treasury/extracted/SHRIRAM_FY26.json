@@ -9,6 +9,12 @@
   203
  ],
  "statement": {
+  "investments": {
+   "cy": 14782.76,
+   "py": 15598.71,
+   "note": "13",
+   "page": 117
+  },
   "borrowings": {
    "cy": 125917.78,
    "py": 121448.42,
@@ -19,6 +25,12 @@
    "cy": 69480.34,
    "py": 56085.99,
    "note": "23",
+   "page": 117
+  },
+  "subordinated": {
+   "cy": 2418.57,
+   "py": 2513.98,
+   "note": "24",
    "page": 117
   }
  },
@@ -39,6 +51,14 @@
     "page": 117,
     "section": "deposits",
     "unsplit": false
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 2418.57,
+    "page": 117,
+    "section": "subordinated",
+    "unsplit": false
    }
   ],
   "FY25": [
@@ -57,6 +77,14 @@
     "page": 117,
     "section": "deposits",
     "unsplit": false
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 2513.98,
+    "page": 117,
+    "section": "subordinated",
+    "unsplit": false
    }
   ]
  },
@@ -64,19 +92,25 @@
   "FY26": []
  },
  "totals": {
-  "FY26": 195398.12,
-  "FY25": 177534.41
+  "FY26": 197816.69,
+  "FY25": 180048.39
  },
  "finance_cost": {},
  "log": [
   "debt_securities: not on the balance sheet (treated as nil)",
-  "borrowings: note p.142; breakdown sums to 370288.97 vs balance sheet 125917.78 -> using balance-sheet total",
-  "deposits: note p.145; breakdown sums to 10368.32 vs balance sheet 69480.34 -> using balance-sheet total",
-  "subordinated: not on the balance sheet (treated as nil)"
+  "borrowings: note p.142; breakdown sums to 118453.41 vs balance sheet 125917.78 -> using balance-sheet total",
+  "deposits: note p.145; breakdown sums to 1783.67 vs balance sheet 69480.34 -> using balance-sheet total",
+  "subordinated: note p.145; breakdown sums to 2560.34 vs balance sheet 2418.57 -> using balance-sheet total",
+  "investments: breakdown not readable (sum 22057.43 vs balance sheet 14782.76) -> book size only"
  ],
+ "investment_total": {
+  "FY26": 14782.76,
+  "FY25": 15598.71
+ },
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_29401_SHRIRAMFIN_2025_2026_A_18605156_17062026163904.pdf",
  "via": "NSE",
  "reportFy": "FY26",
+ "extractor": 2,
  "sha": "e2911eafac1bcff7",
- "extractedAt": "2026-10-27T12:43:07.811Z"
+ "extractedAt": "2026-10-28T06:03:51.851Z"
 }

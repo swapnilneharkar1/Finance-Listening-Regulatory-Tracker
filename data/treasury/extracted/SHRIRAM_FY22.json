@@ -1,0 +1,342 @@
+{
+ "ok": true,
+ "fy": "FY22",
+ "prevFy": "FY21",
+ "unit": "crore",
+ "pages": 360,
+ "standalonePages": [
+  106,
+  227
+ ],
+ "statement": {
+  "investments": {
+   "cy": 6809.16,
+   "py": 3197.85,
+   "note": "13",
+   "page": 106
+  },
+  "debt_securities": {
+   "cy": 41256.55,
+   "py": 40061.87,
+   "note": "22",
+   "page": 106
+  },
+  "borrowings": {
+   "cy": 46676.93,
+   "py": 45281.37,
+   "note": "23",
+   "page": 106
+  },
+  "deposits": {
+   "cy": 21948.98,
+   "py": 16232.41,
+   "note": "24",
+   "page": 106
+  },
+  "subordinated": {
+   "cy": 4614.25,
+   "py": 4620.76,
+   "note": "25",
+   "page": 106
+  },
+  "finance_cost": {
+   "cy": 9734.31,
+   "py": 9054.26,
+   "note": "37",
+   "page": 107
+  }
+ },
+ "borrowing": {
+  "FY22": [
+   {
+    "label": "Public issue ¥",
+    "category": "Secured NCDs",
+    "value": 2500.63,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed ¥ ¥",
+    "category": "Secured NCDs",
+    "value": 18768.05,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "external commercial bond",
+    "category": "ECB bonds",
+    "value": 19011.29,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Senior secured notes",
+    "category": "ECB bonds",
+    "value": 891.4,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed",
+    "category": "Unsecured NCDs",
+    "value": 85.18,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Secured term loan from banks - inR",
+    "category": "Bank term loans",
+    "value": 16755.62,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "term loan from financial institutions/corporates - inR",
+    "category": "FI & NHB loans",
+    "value": 5685.24,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "external commercial borrowing - FcnR",
+    "category": "ECB loans",
+    "value": 4243.13,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "loans repayable on demand from banks (cash credit from banks)",
+    "category": "Cash credit & WCDL",
+    "value": 454.86,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "other loans - inR -Securitisation liabilities",
+    "category": "Securitisation",
+    "value": 19538.08,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits (refer note 65) *",
+    "category": "Deposits",
+    "value": 20190.08,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "From Banks",
+    "category": "Deposits",
+    "value": 0,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "From others deposits from corporates **",
+    "category": "Deposits",
+    "value": 1729.76,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "inter-corporate deposits ***",
+    "category": "Deposits",
+    "value": 29.14,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated debts - debentures #",
+    "category": "Subordinated debt",
+    "value": 4614.25,
+    "page": 144,
+    "section": "subordinated"
+   }
+  ],
+  "FY21": [
+   {
+    "label": "Public issue ¥",
+    "category": "Secured NCDs",
+    "value": 5776.24,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed ¥ ¥",
+    "category": "Secured NCDs",
+    "value": 15153.29,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "external commercial bond",
+    "category": "ECB bonds",
+    "value": 17779.55,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Senior secured notes",
+    "category": "ECB bonds",
+    "value": 888.35,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed",
+    "category": "Unsecured NCDs",
+    "value": 464.44,
+    "page": 143,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Secured term loan from banks - inR",
+    "category": "Bank term loans",
+    "value": 13304.7,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "term loan from financial institutions/corporates - inR",
+    "category": "FI & NHB loans",
+    "value": 3783.2,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "external commercial borrowing - FcnR",
+    "category": "ECB loans",
+    "value": 4122.49,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "loans repayable on demand from banks (cash credit from banks)",
+    "category": "Cash credit & WCDL",
+    "value": 667.38,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "other loans - inR -Securitisation liabilities",
+    "category": "Securitisation",
+    "value": 23403.6,
+    "page": 143,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits (refer note 65) *",
+    "category": "Deposits",
+    "value": 15790.71,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "From Banks",
+    "category": "Deposits",
+    "value": 0,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "From others deposits from corporates **",
+    "category": "Deposits",
+    "value": 392.11,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "inter-corporate deposits ***",
+    "category": "Deposits",
+    "value": 49.59,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated debts - debentures #",
+    "category": "Subordinated debt",
+    "value": 4620.76,
+    "page": 144,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY22": [
+   {
+    "label": "investments in mutual",
+    "category": "Other investments",
+    "value": 0,
+    "page": 136
+   },
+   {
+    "label": "funds investments in",
+    "category": "Other investments",
+    "value": 2058.34,
+    "page": 136
+   },
+   {
+    "label": "(refer note 65) investments in equity",
+    "category": "Equity",
+    "value": 6.74,
+    "page": 136
+   },
+   {
+    "label": "instruments investments in associates",
+    "category": "Subsidiaries, associates & JVs",
+    "value": 13.37,
+    "page": 136
+   },
+   {
+    "label": "(at cost) investments in pass",
+    "category": "Other investments",
+    "value": 1155.87,
+    "page": 136
+   },
+   {
+    "label": "(unquoted) investments in certificate",
+    "category": "Other investments",
+    "value": 0,
+    "page": 136
+   },
+   {
+    "label": "of deposits investments in",
+    "category": "Other investments",
+    "value": 0,
+    "page": 136
+   },
+   {
+    "label": "commercial papers others (venture capital",
+    "category": "Commercial paper",
+    "value": 1.54,
+    "page": 136
+   }
+  ]
+ },
+ "totals": {
+  "FY22": 114496.70999999999,
+  "FY21": 106196.40999999997
+ },
+ "finance_cost": {
+  "FY22": 9734.31,
+  "FY21": 9054.26
+ },
+ "log": [
+  "debt_securities: 5 lines from note p.143, reconciles to balance sheet",
+  "borrowings: 5 lines from note p.143, reconciles to balance sheet",
+  "deposits: 4 lines from note p.144, reconciles to balance sheet",
+  "subordinated: 1 lines from note p.144, reconciles to balance sheet",
+  "investments: 8 lines from note p.136"
+ ],
+ "investment_total": {
+  "FY22": 6809.16,
+  "FY21": 3197.85
+ },
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_21840_SRTRANSFIN_2021_2022_12102022150846_10122022160001.zip",
+ "via": "NSE",
+ "reportFy": "FY22",
+ "extractor": 2,
+ "sha": "b592ddbf0a81b7a1",
+ "extractedAt": "2026-10-28T06:05:12.206Z"
+}
