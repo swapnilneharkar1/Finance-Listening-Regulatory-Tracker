@@ -45,6 +45,9 @@ def reg_label(r: str) -> str:
 TREASURY_FILE = "data/treasury/benchmark.json"
 # AI-written commentary, produced on the VM by ai-treasury-commentary.js (Azure OpenAI).
 TREASURY_AI_FILE = "data/treasury/ai_commentary.json"
+# Repo where the "Treasury Peer Benchmarking" workflow runs and commits these files.
+# Can be changed without editing code: add TREASURY_REPO = "owner/repo" to the app's Secrets.
+TREASURY_REPO_DEFAULT = "swapnilneharkar1/Finance-Listening-Regulatory-Tracker"
 
 BASE_DIR = Path(__file__).parent
 
@@ -1007,11 +1010,11 @@ def gh_headers() -> dict:
     return h
 
 
-def latest_data_sha(path: str = DATA_FILE) -> str | None:
+def latest_data_sha(path: str = DATA_FILE, repo: str | None = None) -> str | None:
     """SHA of the newest commit that changed the data file (always live, no CDN cache)."""
     try:
         r = requests.get(
-            f"https://api.github.com/repos/{REPO}/commits",
+            f"https://api.github.com/repos/{repo or REPO}/commits",
             params={"sha": BRANCH, "path": path, "per_page": 1},
             headers=gh_headers(), timeout=15,
         )
@@ -1023,9 +1026,9 @@ def latest_data_sha(path: str = DATA_FILE) -> str | None:
 
 
 @st.cache_data(max_entries=3, show_spinner=False)
-def data_at_commit(sha: str, path: str = DATA_FILE) -> dict:
+def data_at_commit(sha: str, path: str = DATA_FILE, repo: str | None = None) -> dict:
     """A file at a fixed commit never changes, so it is safe to cache by SHA."""
-    r = requests.get(f"https://raw.githubusercontent.com/{REPO}/{sha}/{path}", timeout=60)
+    r = requests.get(f"https://raw.githubusercontent.com/{repo or REPO}/{sha}/{path}", timeout=60)
     r.raise_for_status()
     return r.json()
 
@@ -1051,16 +1054,24 @@ def fetch_latest_data() -> tuple[dict, str]:
     return {}, "none"
 
 
+def treasury_repo() -> str:
+    try:
+        return st.secrets.get("TREASURY_REPO") or TREASURY_REPO_DEFAULT
+    except FileNotFoundError:
+        return TREASURY_REPO_DEFAULT
+
+
 def fetch_repo_json(path: str) -> dict:
-    """Latest version of a JSON file in the data repo. Empty dict if it doesn't exist yet."""
-    sha = latest_data_sha(path)
+    """Latest version of a treasury JSON file. Empty dict if it doesn't exist yet."""
+    repo = treasury_repo()
+    sha = latest_data_sha(path, repo)
     if sha:
         try:
-            return data_at_commit(sha, path)
+            return data_at_commit(sha, path, repo)
         except (requests.RequestException, ValueError):
             pass
     try:
-        r = requests.get(f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{path}",
+        r = requests.get(f"https://raw.githubusercontent.com/{repo}/{BRANCH}/{path}",
                          params={"t": int(time.time())}, timeout=60)
         if r.status_code == 200:
             return r.json()
