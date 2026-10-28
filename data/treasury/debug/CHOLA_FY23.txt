@@ -1,0 +1,334 @@
+https://nsearchives.nseindia.com/annual_reports/AR_22274_CHOLAFIN_2022_2023_10072023223519_07112023070000.zip
+Reason: breakdown problems: debt_securities: note p.150; breakdown not readable -> using balance-sheet total | borrowings: note not found; breakdown not readable -> using balance-sheet total | investments: breakdown not readable (sum 135.00 vs balance sheet 3620.02) -> book size only
+Pages: 330
+Repeated header/footer lines (ignored): cholamandalam investment and finance company limited annual report 2022 2023 | in crores | corporate overview management reports financial statements | march 31 2023 march 31 2022 | for the year ended march 31 2023 | notes forming part of the standalone financial statements contd | notes forming part of the consolidated financial statements contd
+
+===== page 142 =====
+Cholamandalam Investment and Finance Company Limited   Annual Report 2022-2023
+Standalone Balance Sheet As at March 31, 2023
+` in crores
+Note No.   As at   As at
+March 31, 2023   March 31, 2022
+ASSETS
+Financial Assets
+Cash and Cash Equivalents   5   910.29   2,657.88
+Bank Balances other than Cash and Cash Equivalents   6   2,051.13   1,562.20
+Derivative financial instruments   7   272.86   186.53
+Receivables   8
+i) Trade Receivables   77.18   32.47
+ii) Other Receivables   113.88   95.54
+Loans   9   1,04,748.32   74,149.21
+Investments   10   3,620.02   2,076.16
+Other Financial Assets   11   273.77   320.88
+1,12,067.45   81,080.87
+Non- Financial Assets
+Current Tax Assets(Net)   267.06   250.71
+Deferred Tax Assets (Net)   12   608.50   671.43
+Investment Property   13   0.13   0.13
+Property, Plant and Equipment   14   372.17   239.89
+Capital Work in Progress   35.74   23.03
+Intangible Assets Under Development   24.60   13.95
+Other Intangible Assets   15   26.43   14.55
+Other Non-Financial Assets   16   105.43   68.79
+1,440.06   1,282.48
+Asset classified as held for sale - Investment   10   8.00   -
+TOTAL ASSETS   1,13,515.51   82,363.35
+LIABILITIES AND EQUITY
+Financial Liabilities
+Derivative financial instruments   7   134.27   169.56
+Payables
+(I) Trade Payables
+i) Total outstanding dues of micro and small enterprises   3.40   3.06
+ii) Total outstanding dues of creditors other than micro and small enterprises   119.93   79.84
+(II) Other Payables
+i) Total outstanding dues of micro and small enterprises   -   -
+ii) Total outstanding dues of creditors other than micro and small enterprises   1,064.69   719.90
+Debt Securities   17   19,682.41   13,321.10
+Borrowings(Other than Debt Securities)   18   73,186.19   52,004.52
+Subordinated Liabilities   19   4,487.46   3,847.88
+Other Financial Liabilities   20   354.11   333.43
+99,032.46   70,479.29
+Non-Financial Liabilities
+Current Tax Liabilities(Net)   -   -
+Provisions   21   140.88   118.27
+Other Non-Financial Liabilities   22   46.12   58.11
+187.00   176.38
+Equity
+Equity Share Capital   23A   164.48   164.28
+Other Equity   23B   14,131.57   11,543.40
+14,296.05   11,707.68
+TOTAL LIABILITIES AND EQUITY   1,13,515.51   82,363.35
+The accompanying notes are an integral part of the Standalone financial statements
+As per our report of even date
+For Price Waterhouse LLP   For Sundaram and Srinivasan   For and on behalf of the Board of Directors
+Chartered Accountants   Chartered Accountants
+ICAI Firm Regn No. : 301112E/E300264   ICAI Firm Regn No. : 004207S
+A.J. Shaikh   S. Usha   Ravindra Kumar Kundu   Vellayan Subbiah
+Partner   Partner   Executive Director   Chairman
+Membership No. : 203637   Membership No. : 211785
+Date : May 3, 2023   P. Sujatha   D. Arul Selvan
+Place : Chennai   Company Secretary   President & Chief Financial Officer
+128
+
+===== page 143 =====
+Corporate Overview   Management Reports   Financial Statements
+Standalone Statement of Profit and Loss for the year ended March 31, 2023
+` in crores
+Note No.   Year ended   Year ended
+March 31, 2023   March 31, 2022
+Revenue from Operations
+Interest Income   24A   12,082.18   9,566.81
+Fee Income   24B   524.37   383.74
+Net gain on fair value change on financial instruments   24C   69.40   12.99
+Sale of Services   24D   81.09   84.75
+Total Revenue from operations (I)   12,757.04   10,048.29
+Other Income (II)   25   220.94   90.48
+Total Income (III) = (I) + (II)   12,977.98   10,138.77
+Expenses
+Finance costs   26   5,748.75   4,298.82
+Impairment of financial Instruments (Net)   27   849.68   880.30
+Employee benefits expense   28   1,265.68   894.53
+Depreciation and amortisation expense   13, 14 & 15   118.88   97.35
+Other expenses   29   1,395.30   1,076.83
+Total Expenses (IV)   9,378.29   7,247.83
+Profit before tax (V) = (III) - (IV)   3,599.69   2,890.94
+Tax expense/(benefit)
+- Current tax   881.72   691.96
+- Adjustment of tax relating to earlier periods   0.21   0.68
+- Deferred tax   51.56   51.59
+Net tax expense (VI)   933.49   744.23
+Profit for the year - A = (V) - (VI)   2,666.20   2,146.71
+Other Comprehensive income:
+i) Items that will not be reclassified to profit or loss:
+Re-measurement gains / (losses) of Post employment benefit Obligations (net)   (0.46)   0.05
+Income tax impact   0.12   (0.01)
+ii) Items that will be reclassified to profit or loss:
+Net Gain On Cashflow Hedge Reserve   45.64   161.97
+Income tax impact   (11.49)   (40.77)
+Other comprehensive income/(loss) net of tax for the year (B)   33.81   121.24
+Total comprehensive income net of tax for the year (A + B)   2,700.01   2,267.95
+Earnings per equity share of ₹ 2 each   30
+Basic (₹)   32.45   26.16
+Diluted (₹)   32.40   26.11
+The accompanying notes are an integral part of the Standalone financial statements
+As per our report of even date
+For Price Waterhouse LLP   For Sundaram and Srinivasan   For and on behalf of the Board of Directors
+Chartered Accountants   Chartered Accountants
+ICAI Firm Regn No. : 301112E/E300264   ICAI Firm Regn No. : 004207S
+A.J. Shaikh   S. Usha   Ravindra Kumar Kundu   Vellayan Subbiah
+Partner   Partner   Executive Director   Chairman
+Membership No. : 203637   Membership No. : 211785
+Date : May 3, 2023   P. Sujatha   D. Arul Selvan
+Place : Chennai   Company Secretary President & Chief Financial Officer
+129
+
+===== page 144 =====
+Cholamandalam Investment and Finance Company Limited   Annual Report 2022-2023
+-   -
+Total   (0.35)34.15 24.0728.46
+in crores   in crores   2,666.20   (164.36)
+`   `   11,543.4011,543.40   14,131.57
+-   - -   - -   - -
+164.48
+hedge 15.39 15.39   34.15   49.54
+Balance as at
+March 31, 2023Effectivecashflow
+portion of
+-   - -   -   - -   - -
+(1.29)
+Equity   (1.29)   (1.29)
+income
+instruments
+through Other
+Comprehensive
+Debt   - -   -   - -   -   - -   - -   -
+Income
+0.20
+instruments
+through Other
+Comprehensive
+-   - -   -   - -   -
+during the current year
+54.93 54.93   28.46 83.39
+Changes in Equity share capital
+Reserve
+Payments
+Share based
+-   - -   -   - -   -
+540.00
+Reserve   2,020.46
+2,020.46   2,560.46
+Statutory
+-   -   -   -
+Reserve and Surplus
+(0.35)
+(1,540)
+(164.36)
+Retainedearnings 1,792.821,792.822,666.20   2,754.31
+164.28
+-   - -   -   - -   -
+for the year ended March 31, 2023
+1,000
+current reporting yearGeneralReserve   4,739.13
+4,739.13   5,739.13
+-   - -   -   - -   - -
+33.00 33.00   33.00
+Restated Balance at the beginning of theCapital
+Reserve
+Redemption
+-   - -   -   -   - -
+24.07
+2,888.92
+Premium 2,888.92   2,912.99
+Securities
+-
+-   - -   -   - -   - -
+0.04   0.04   0.04
+Capital
+Reserve
+due to prior year errorsfor
+- -   -   - -   -   - -   - -   -
+Share
+Money
+Changes in Equity Share capital
+Pending
+allotment
+application
+164.28
+Balance as at
+March 31, 2022
+Other Equity (Refer Note 23B)
+Standalone Statement of Changes in Equity1. Current reporting yearA) Equity Share CapitalB)   Particulars   Balance as at March 31, 2022Changes in accounting policy/prior period errorsRestated Balance at the beginningof the current reporting yearProfit for the yearRemeasurement ofdefined benefit plansTotal comprehensive incomefor the period, net of income taxDividend including taxShare premium received onallotment of equity shares under ESOPRecognition of share based paymentsTransfer to reserves from Retainedearings during the yearBalance as at March 31, 2023
+130
+===== note page 150 =====
+Cholamandalam Investment and Finance Company Limited   Annual Report 2022-2023
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2023
+has been established, except when the Company benefits   and after the modification and accounts for the same in
+from such proceeds as a recovery of part of the cost of   the Statement of Profit and Loss.
+the instrument, in which case, such gains are recorded in
+3.4.1A Derecognition of financial assets
+OCI (Other Comprehensive Income).Equity instruments at
+FVOCI are not subject to an impairment assessment.   A financial asset (or, where applicable, a part of a financial
+asset or part of a group of similar financial assets) is
+3.2.4   Debt securities and other borrowed funds
+derecognised when the rights to receive cash flows
+After initial measurement, debt issued and other borrowed
+from the financial asset have expired. The Company also
+funds are subsequently measured at amortised cost.
+derecognises the financial asset if it has both transferred the
+Amortised cost is calculated by taking into account any
+financial asset and the transfer qualifies for derecognition.
+discount or premium on issue funds, and costs that are an
+The Company has transferred the financial asset if, and
+integral part of the Effective Interest Rate (“EIR”).
+only if, either:
+3.2.5   Undrawn loan commitments
+• The Company has transferred its contractual rights to
+Undrawn loan commitments are commitments under
+receive cash flows from the financial asset
+which, over the duration of the commitment, the Company
+Or
+is required to provide a loan with pre-specified terms to the
+customer. Undrawn loan commitments are in the scope of   • It retains the rights to the cash flows, but has assumed
+the Expected Credit Losses (“ECL”) requirements.   an obligation to pay the received cash flows in full
+without material delay to a third party under a ‘pass–
+The nominal contractual value of undrawn loan
+through’ arrangement.
+commitments, where the loan agreed to be provided is on
+market terms, are not recorded in the balance sheet. The   Pass-through arrangements are transactions whereby the
+nominal values of these commitments together with the   Company retains the contractual rights to receive the cash
+corresponding ECLs are disclosed in notes.
+flows of a financial asset (the 'original asset'), but assumes
+3.3   Modification and Derecognition of financial   a contractual obligation to pay those cash flows to one or
+more entities, when all of the following three conditions
+assets and liabilities
+are met:
+3.4.1   Modification of financial assets
+• The Company has no obligation to pay amounts to the
+A modification of a financial asset occurs when the
+eventual recipients unless it has collected equivalent
+contractual terms governing the cash flows of a financial
+amounts from the original asset, excluding short-term
+asset are renegotiated or otherwise modified between
+advances with the right to full recovery of the amount
+the initial recognition and maturity of the financial asset.
+lent plus accrued interest at market rates
+A modification affects the amount and/or timing of the
+contractual cash flows either immediately or at a future   • The Company cannot sell or pledge the original asset
+date. The company renegotiates loans to customers in   other than as security to the eventual recipients
+financial difficulty to maximise collection and minimise
+• The Company has to remit any cash flows it collects
+the risk of default. Modification of loan terms is granted in
+on behalf of the eventual recipients without material
+cases where although the borrower made all reasonable
+delay. In addition, the Company is not entitled to
+efforts to pay under the original contractual terms, there is
+reinvest such cash flows, except for investments in
+a risk of default or default has already happened and the
+cash or cash equivalents including interest earned,
+borrower is expected to be able to meet the revised terms.
+during the period between the collection date and the
+The revised terms in most of the cases include an extension
+date of required remittance to the eventual recipients.
+of the maturity of the loan, changes to the timing of the
+cash flows of the loan (principal and interest repayment).   A transfer only qualifies for derecognition if either:
+When a financial asset is modified the company assesses   • The Company has transferred substantially all the risks
+whether this modification results in derecognition. In
+and rewards of the asset
+accordance with the company’s policy, a modification
+Or
+results in derecognition when it gives rise to substantially
+different terms. Where a modification does not lead to   • The Company has neither transferred nor retained
+derecognition, the company calculates the modification   substantially all the risks and rewards of the asset, but
+gain/loss comparing the gross carrying amount before   has transferred control of the asset
+136
+===== note page 176 =====
+Cholamandalam Investment and Finance Company Limited   Annual Report 2022-2023
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2023
+Particulars   As at   As at
+March 31, 2023 March 31, 2022
+Note : 19 SUBORDINATED LIABILITIES (at amortised cost)
+Perpetual Debt - Unsecured   1,527.96   1,328.99
+Subordinated Debt - Unsecured
+a) Rupee Denominated Bonds   407.94   407.36
+b) Other Subordinated Debts   2,551.56   2,111.53
+Total   4,487.46   3,847.88
+i) All Subordinated liabilities have been contracted in India except for Rupee denominated bonds.
+ii) The Company has not defaulted in the repayment of dues to its lenders.
+19.1 Details of Subordinated Liabilities - Contractual principal repayment value
+(i) Unsecured Redeemable Non-Convertible Debentures - Subordinated debt - Redeemable at par - No put call option
+No. of Debentures   Face Value `   Balance as at   Due date of   Rate of interest %
+redemption
+March 31, 2023   March 31, 2022
+` in crores
+290   1,00,00,000   290.00   -   Dec-32   8.65
+150   1,00,00,000   150.00   150.00   Feb-32   8.10
+200   1,00,00,000   200.00   200.00   Oct-31   7.90
+400   1,00,00,000   400.00   400.00   Jan-30   9.25
+4000   5,00,000   200.00   -   Oct-29   9.00
+3000   10,00,000   300.00   300.00   Aug-28   9.75
+5300   10,00,000   530.00   530.00   Mar-28   9.05
+1500   10,00,000   150.00   150.00   Aug-27   8.53
+2500   10,00,000   250.00   250.00   Jun-27   8.78 to 8.80
+100   10,00,000   10.00   10.00   Nov-26   9.20
+150   10,00,000   15.00   15.00   Jun-24   11.00
+50   10,00,000   5.00   5.00   May-24   11.00
+250   10,00,000   25.00   25.00   Apr-24   11.00
+250   10,00,000   25.00   25.00   Mar-24   11.00
+200   10,00,000   20.00   20.00   Feb-24   11.00
+250   10,00,000   25.00   25.00   Jan-24   11.00
+2,000   10,00,000   200.00   200.00   Nov-23   9.08 to 9.20
+500   10,00,000   50.00   50.00   Oct-23   9.08
+150   10,00,000   15.00   15.00   Sep-23   11.00
+600   10,00,000   -   60.00   Dec-22   11.05 to 11.25
+2,860.00   2,430.00
+(ii) Unsecured Redeemable Non-Convertible Debentures - Subordinated debt -Redeemable at premium - No put call option
+No. of Debentures   Face Value `   Balance as at   Due date of   Redemption   Premium `
+redemption   price `
+March 31, 2023 March 31, 2022
+` in crores
+150   10,00,000   15.00   15.00   Nov-23   17,57,947   7,57,947
+15.00   15.00
+162

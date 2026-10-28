@@ -1,0 +1,286 @@
+https://nsearchives.nseindia.com/annual_reports/AR_29455_M&MFIN_2025_2026_A_14497256_25062026233609.pdf
+Reason: no borrowing lines found on the standalone balance sheet
+Pages: 325
+Repeated header/footer lines (ignored): th | st | in crore | financial statements | statutory reports | standalone | for the year ended march 31 2026 for the year ended march 31 2026 | notes forming part of the standalone notes forming part of the standalone | financial statements financial statements | consolidated | notes forming part of the consolidated notes forming part of the consolidated
+
+===== page 177 =====
+Financial Statements
+Standalone
+Standalone Balance Sheet   Standalone Statement of Profit and Loss
+As at March 31, 2026   for the year ended March 31, 2026
+` in crore   ` in crore
+Particulars   Note   As at   As at   Particulars   Note   Year ended   Year ended
+March 31, 2026   March 31, 2025   March 31, 2026   March 31, 2025
+ASSETS   Revenue from operations
+Financial Assets
+i)   Interest income   24   17,211.69   15,331.41
+a) Cash and cash equivalents   3   391.22   1,666.56
+ii)   Dividend income   177.32   15.46
+b) Bank balance other than (a) above   4   6,949.26   3,869.31
+iii) Rental income   174.86   153.45
+c) Derivative financial instruments   5   402.60   30.95
+iv) Fees, charges and commission income   25   854.39   510.59
+d) Receivables
+v) Net gain/(loss) on fair value changes   26   27.33   6.14
+-   Trade receivables   6   86.12   53.02
+vi) Net gain on derecognition of financial instruments under amortized cost   -   1.90
+e) Loans   7   1,30,160.14   1,16,214.02
+category
+f) Investments   8   6,820.37   10,400.48
+I   Total revenue from operations   18,445.59   16,018.95
+g) Other financial assets   9   222.10   247.53
+II   Other income   27   54.69   55.74
+1,45,031.81   1,32,481.87
+Non-financial Assets   III Total income (I+II)   18,500.28   16,074.69
+a) Current tax assets (Net)   438.64   601.68   Expenses
+b) Deferred tax assets (Net)   10 (i)   654.12   640.99   i)   Finance costs   28   8,392.05   7,898.30
+c) Property, Plant and Equipment   11 (a)   939.31   876.38   ii)   Fees and commission expense   139.87   97.84
+d) Capital work-in-progress   11 (b)   1.65   0.52   iii) Impairment on financial instruments   29   2,441.22   1,617.86
+e) Intangible assets under development   12 (a)   5.42   65.10   iv) Employee benefits expenses   30   2,054.17   1,903.13
+f) Other Intangible assets   12 (b)   248.37   172.89   v) Depreciation, amortization and impairment   31   342.68   273.42
+g) Other non-financial assets   13   585.95   708.75
+vi) Other Expenses   32   1,340.33   1,136.87
+2,873.46   3,066.31
+IV Total expenses   14,710.32   12,927.42
+Total Assets   1,47,905.27   1,35,548.18
+V   Profit before exceptional items and tax (III-IV)   3,789.96   3,147.27
+LIABILITIES AND EQUITY
+VI Exceptional items   33   (117.33)   -
+LIABILITIES
+VII Profit before tax (V+VI)   3,672.63   3,147.27
+Financial Liabilities
+VIII Tax expense:   10 (ii)
+a) Derivative financial instruments   14   6.85   390.05
+b) Payables   15   (i) Current tax   923.02   779.45
+I)   Trade payables   (ii) Deferred tax   (34.89)   22.78
+i)   total outstanding dues of micro enterprises and small enterprises   -   -   (iii) (Excess)/Short Provision for Income Tax - earlier years   2.27   -
+ii)   total outstanding dues of creditors other than micro enterprises and   855.51   1,208.56   890.40   802.23
+small enterprises
+IX Profit for the year (VII-VIII)   2,782.23   2,345.04
+II)   Other payables
+X   Other Comprehensive Income (OCI)
+i)   total outstanding dues of micro enterprises and small enterprises   5.72   2.71
+(A) (i)   Items that will not be reclassified to profit or loss
+ii)   total outstanding dues of creditors other than micro enterprises and   34.00   17.62
+small enterprises   -   Remeasurement gain/(loss) on defined benefit plans   (22.34)   (9.99)
+c) Debt securities   16   26,539.06   26,204.83   -   Net gain/(loss) on equity instruments through OCI   28.58   84.26
+d) Borrowings (Other than debt securities)   17   74,240.03   69,734.92   (ii) Income tax relating to items that will not be reclassified to profit   10 (iii)   (1.57)   (18.69)
+e) Deposits   18   14,196.03   11,404.15   or loss
+f) Subordinated liabilities   19   5,359.74   5,529.57   Subtotal (A)   4.67   55.58
+g) Other financial liabilities   20   1,128.02   790.60   (B) (i)   Items that will be reclassified to profit or loss
+1,22,364.96   1,15,283.01   -   Net gain/(loss) on debt instruments through OCI   (22.52)   96.49
+Non-Financial Liabilities   -   Effective portion of gains and loss on designated portion   102.74   (62.23)
+a) Current tax liabilities (net)   158.87   69.73   of hedging instruments in a cash flow hedge
+b) Provisions   21   407.22   217.04   (ii)   Income tax relating to items that will be reclassified to profit or loss   (20.19)   (8.62)
+c) Other non-financial liabilities   22   215.52   166.17   Subtotal (B)   60.03   25.64
+781.61   452.94   Other Comprehensive Income (A+B)   64.70   81.22
+EQUITY   23
+XI Total Comprehensive Income for the year (IX+X)   2,846.93   2,426.26
+a) Equity share capital   277.91   246.98
+XII Earnings per equity share (face value ` 2/- per equity share)   34
+b) Other equity   24,480.79   19,565.25
+Basic (Rupees)   20.35   18.43
+24,758.70   19,812.23
+Diluted (Rupees)   20.33   18.43
+Total Liabilities and Equity   1,47,905.27   1,35,548.18
+The accompanying notes form an integral part of the Standalone financial statements.   1 to 58
+The accompanying notes form an integral part of the Standalone financial statements.   1 to 58
+In terms of our report attached.   For and on behalf of the Board of Directors   In terms of our report attached.   For and on behalf of the Board of Directors
+For M M NISSIM & CO LLP   Mahindra & Mahindra Financial Services Limited   For M M NISSIM & CO LLP   Mahindra & Mahindra Financial Services Limited
+Chartered Accountants   Chartered Accountants
+ICAI FRN: 107122W/W100672   ICAI FRN: 107122W/W100672
+Sanjay Khemani   Amarjyoti Barua   Raul Rebello   Sanjay Khemani   Amarjyoti Barua   Raul Rebello
+Partner   Director   Managing Director & CEO   Partner   Director   Managing Director & CEO
+ICAI Membership No: 044577   [DIN: 09202472]   [DIN: 10052487]   ICAI Membership No: 044577   [DIN: 09202472]   [DIN: 10052487]
+For M. P. Chitale & Co.   Pradeep Kumar Agrawal   Brijbala Batwal   For M. P. Chitale & Co.   Pradeep Kumar Agrawal   Brijbala Batwal
+Chartered Accountants   Chief Financial Officer   Company Secretary   Chartered Accountants   Chief Financial Officer   Company Secretary
+ICAI FRN: 101851W   Membership No.F5220   ICAI FRN: 101851W   Membership No.F5220
+Ashutosh Pednekar   Ashutosh Pednekar
+Partner   Partner
+ICAI Membership No: 041037   ICAI Membership No: 041037
+Mumbai   Mumbai   Mumbai   Mumbai
+April 24, 2026   April 24, 2026   April 24, 2026   April 24, 2026
+284   Integrated Report 2025-26   SHAPING THE NEXT LEAP   285
+
+===== page 178 =====
+Financial Statements
+Standalone
+Statement of Changes in Equity for   Statement of Changes in Equity for
+Standalone financial statements   Standalone financial statements
+for the year ended March 31, 2026   for the year ended March 31, 2026
+-   -   -   -   -   -   -
+-   -   -
+0.10   0.04   Total   1.12   5.67   Total   0.20
+in crore   in crore   64.70   (7.60)   14.22
+in crore   30.89   `   81.19   `   Mumbai
+` Amount246.88246.88 246.98246.98246.98   277.91   (778.38)   (903.48)
+2,345.042,426.23   2,782.232,846.93 2,965.27
+17,910.6117,910.61   19,565.25   19,565.2519,565.25   24,480.79
+Raul Rebello
+-   -   -   -   -   - - -   -   -   -   -   -   -   -   - - -   April 24, 2026
+Brijbala Batwal
+[DIN: 10052487]
+(7.28) (7.28)   76.8876.88   23.03   Company Secretary
+hedges   (46.57)(46.57)   (53.85)   hedges(53.85) (53.85)
+Membership No.F5220
+Effectivecash flow   Effectiveportion ofcash flow
+portion of   Managing Director & CEO
+-   -   -   -   -   - - -   -   -   -   -   -   -   -   - - -
+63.05
+Equity   21.46 21.46   63.05   84.51   Equity   84.51 84.51 21.3921.39
+105.90
+instrumentsthrough OCI
+instrumentsthrough OCI
+For and on behalf of the Board of Directors
+-   -   -   -   -   - - -   -   -   -   -   -   -   -   - - -
+Debt   1.26   Debt   1.26   1.26   Mahindra & Mahindra Financial Services Limited
+72.2072.20
+(70.94) (70.94)   (16.85)(16.85)   (15.59)
+instrumentsthrough OCI   Director
+instrumentsthrough OCI
+-   -   -   - -   -   -   -   -   -   - -
+Financial Officer
+(7.49)   Amarjyoti Barua[DIN: 09202472]
+(16.72)
+earnings
+Retainedearnings7,037.937,037.932,345.042,337.55(778.38)   (469.00)8,128.10   Retained 8,128.108,128.102,782.232,765.51(903.48)   (556.46)9,433.67
+Chief
+-   - - -   -   -   -   -   - - -   -   -   -   -   -
+Pradeep Kumar Agrawal
+5.67 9.18   9.18   9.18
+12.24 12.24   (8.32)   (0.42)   (5.51)   (0.19)14.22 17.70
+Employee
+Employee
+outstanding
+outstanding   stock options
+stock options
+-   - - -   -   -   -   - -   -   - - -   -   -   -   -   -   - -
+0.42   0.19
+reserve
+Generalreserve798.20 798.20   798.61   General 798.61 798.61   798.80
+-   - - -   -   - - -   -   - - -   -   - -
+-
+8.32 1.12   5.51 0.20
+(7.60)
+premium7,185.657,185.65   7,195.09   Securitiespremium7,195.097,195.09   2,965.27
+Securities   10,158.47
+Reserves and Surplus
+Reserves and Surplus-   -
+- - -   -   -   -   - - -   - - -   -   -   -   -   -   - - -
+50.00 50.00   50.00   50.00 50.00   50.00
+Capitalreserve   Capitalreserve
+redemption
+redemption
+-   - - -   -   -   -   - -   -   - - -   -   -   -   -   -   - -
+469.00   556.46
+Statutory
+Statutory2,883.352,883.35   3,352.35   3,352.353,352.35   3,908.81
+reserve as perRBI Act, 1934
+reserve as per
+Section 45-IC of
+the RBI Act, 1934
+Section 45-IC of the
+shares   shares
+(Contd.)
+attached.
+equity   equity
+on   on
+paid   paid   our report
+Allotment of shares by ESOP Trust to employees on exercise of options (refer note 35)Fresh allotment of shares through Rights Issue during the year (refer note 39)Allotment of shares by ESOP Trust to employees on exercise of options (refer note 35)
+ParticularsIssued, Subscribed and fully paid up:Balance as at April 1 2024Changes due to prior period errorsRestated balance as at April 1 2024Changes during the year:Add:Balance as at March 31, 2025Balance as at April 1 2025Changes due to prior period errorsRestated balance as at April 1 2025Changes during the year:Add:Add:Balance as at March 31, 2026Particulars Balance as at April 1 2024Changes in accounting policy/priorperiod errorsRestated balance as at April 1 2024Profit/(loss) for the yearOther Comprehensive Income/(loss)Total Comprehensive Income forthe yearDividend(including tax thereon)Transfers to Securities premium onexercise of employee stock optionsSecurities premium on transfer ofESOP Shares to employees fromgrant created out of Rights IssueEmployee stock options expiredShare based payment expenseTransfers to Statutory reservesBalance as at March 31, 2025   Particulars Balance as at April 1 2025Changes in accounting policy/priorperiod errorsRestated balance as at April 1 2025Profit/(loss) for the yearOther Comprehensive Income/(loss)Total Comprehensive Income forthe yearDividend(including tax thereon)Securities premium on fresh issue ofequity share capital (refer note 39)Expenses incurred in respect ofissue of equity sharesTransfers to Securities premium onexercise of employee stock optionsSecurities premium on transfer ofESOP Shares to employees fromgrant created out of Rights IssueEmployee stock options expiredShare based payment expenseTransfers to Statutory reservesBalance as at March 31, 2026
+A. Equity share capital   B. Other Equity   B. Other Equity   The accompanying notes 1 to 58 form an integral part of the Standalone financial statements.In terms ofFor M M NISSIM & CO LLPChartered AccountantsICAI FRN: 107122W/W100672Sanjay KhemaniPartnerICAI Membership No: 044577For M. P. Chitale & Co.Chartered AccountantsICAI FRN: 101851WAshutosh PednekarPartnerICAI Membership No: 041037MumbaiApril 24, 2026
+286   Integrated Report 2025-26   SHAPING THE NEXT LEAP   287
+
+===== page 179 =====
+Financial Statements
+Standalone
+Statement of Standalone cash flows   Statement of Standalone cash flows
+for the year ended March 31, 2026   for the year ended March 31, 2026
+` in crore   ` in crore
+Particulars   Year ended   Year ended   Particulars   Year ended   Year ended
+March 31, 2026   March 31, 2025   March 31, 2026   March 31, 2025
+A)   CASH FLOW FROM OPERATING ACTIVITIES   C)   CASH FLOW FROM FINANCING ACTIVITIES
+Profit before exceptional items and taxes   3,789.96   3,147.27   Proceeds from issue of Equity shares, including securities premium (net of issue   2,988.56   -
+expenses)
+Adjustments for:
+Proceeds from borrowings through Debt Securities   18,082.82   27,048.97
+Depreciation, amortization and impairment   342.68   273.42
+Repayment of borrowings through Debt Securities   (17,577.67)   (28,613.08)
+Impairment on financial instruments (excluding bad debts and write offs)   482.05   58.95
+Proceeds from Borrowings (Other than Debt Securities)   46,314.61   42,239.22
+Bad debts and write offs   1,959.17   1,558.91
+Repayment of Borrowings (Other than Debt Securities)   (42,287.57)   (27,105.20)
+Interest expense   8,360.34   7,978.79
+Proceeds from borrowings through Subordinated Liabilities   -   1,500.00
+Interest income from loans   (16,318.73)   (14,500.50)
+Repayment of borrowings through Subordinated Liabilities   (174.82)   (274.04)
+Interest income from other deposits with banks   (430.43)   (318.80)
+Increase/(decrease) in Public deposits (net)   2,485.71   3,733.33
+Net (gain)/loss on fair value of derivative financial instruments   -   (107.25)
+Payments of lease liability   (107.28)   (102.41)
+Unrealized foreign exchange (Gain)/loss   544.37   37.74
+Dividend paid   (903.48)   (778.38)
+Share based payments to employees   15.82   7.25
+NET CASH GENERATED FROM/(USED IN) FINANCING ACTIVITIES (C)   8,820.88   17,648.41
+Net (gain)/loss on fair value changes   (16.38)   0.85
+NET INCREASE/(DECREASE) IN CASH AND CASH EQUIVALENTS (A+B+C)   (1,275.34)   1,355.49
+Interest income on investments   (462.53)   (512.11)
+CASH AND CASH EQUIVALENTS AT THE BEGINNING OF THE YEAR   1,666.56   311.07
+Net gain on derecognition of Property, Plant and Equipment   (0.59)   (4.10)
+CASH AND CASH EQUIVALENTS AT THE END OF THE YEAR   391.22   1,666.56
+Net (gain)/loss on sale of investments   (23.41)   (1.31)
+Components of Cash and Cash Equivalents
+Operating profit/(loss) before working capital changes   (1,757.68)   (2,380.89)
+Cash and cash equivalents at the end of the year
+Adjustments for changes in working capital -
+-   Cash on hand   40.10   47.85
+Loans   (15,020.80)   (17,514.42)
+-   Cheques and drafts on hand   9.26   16.28
+Trade receivables   (33.37)   (28.42)
+-   Balances with banks in current accounts   241.85   293.51
+Other financial assets   23.06   (18.70)
+-   Term deposits with original maturity up to 3 months   100.00   1,307.00
+Other financial liabilities   455.05   31.26
+-   Interest accrued on Term deposits   0.01   1.92
+Other non-financial assets   102.72   (150.41)
+Total   391.22   1,666.56
+Trade Payables   (333.66)   (296.00)
+Other non-financial liabilities   49.35   15.50
+Note:
+Derivative financial instruments   (754.85)   131.08
+The above Statement of Standalone Cash Flow has been prepared under the 'Indirect method' as set out in Ind AS 7 on 'Statement of Cash
+Provisions   46.43   1.25   Flows'.
+Cash generated from/(used in) operations before adjustments for interest received   (17,223.75)   (20,209.75)
+and interest paid   Purchase of Property, Plant and Equipment and intangible assets represents additions to Property, Plant and Equipment and intangible assets
+adjusted for movement of capital-work-in-progress during the year.
+Interest paid   (8,265.96)   (7,630.56)
+Interest received from loans   14,957.32   13,379.76
+Cash generated from/(used in) operations   (10,532.39)   (14,460.55)
+Income taxes paid (net of refunds)   (673.11)   (820.88)   In terms of our report attached.   For and on behalf of the Board of Directors
+NET CASH GENERATED FROM/(USED IN) OPERATING ACTIVITIES (A)   (11,205.50)   (15,281.43)   For M M NISSIM & CO LLP   Mahindra & Mahindra Financial Services Limited
+Chartered Accountants
+B)   CASH FLOW FROM INVESTING ACTIVITIES
+ICAI FRN: 107122W/W100672
+Purchase of Property, Plant and Equipment and intangible assets   (390.85)   (425.10)
+Proceeds from sale of Property, Plant and Equipment   61.15   64.49
+Sanjay Khemani   Amarjyoti Barua   Raul Rebello
+Proceeds from sale of investments measured at amortized cost   283.00   35.25
+Partner   Director   Managing Director & CEO
+(Increase)/decrease in Investment in Triparty Repo Dealing System (TREPS) (net)   -   124.98   ICAI Membership No: 044577   [DIN: 09202472]   [DIN: 10052487]
+Purchase of investments measured at FVOCI   (638.70)   -
+Proceeds from sale of investments measured at FVOCI   1,746.25   476.40   For M. P. Chitale & Co.   Pradeep Kumar Agrawal   Brijbala Batwal
+Purchase of investments measured at FVTPL   (44,453.60)   (17,823.01)   Chartered Accountants   Chief Financial Officer   Company Secretary
+ICAI FRN: 101851W   Membership No.F5220
+Proceeds from sale of investments measured at FVTPL   46,651.24   16,604.91
+Proceeds from term deposits with banks (including margin account with banks)   2,772.38   2,492.13   Ashutosh Pednekar
+Partner
+Investments in term deposits with banks (including margin account with banks)   (5,789.07)   (3,406.55)
+ICAI Membership No: 041037
+Interest received from other deposits with banks   367.06   319.99
+Mumbai   Mumbai
+Interest income received on investments measured at amortized cost, FVOCI, FVTPL   500.31   525.11
+April 24, 2026   April 24, 2026
+and at cost
+Change in Earmarked balances with banks   0.11   (0.09)
+NET CASH GENERATED FROM/(USED IN) IN INVESTING ACTIVITIES (B)   1,109.28   (1,011.49)
+288   Integrated Report 2025-26   SHAPING THE NEXT LEAP   289

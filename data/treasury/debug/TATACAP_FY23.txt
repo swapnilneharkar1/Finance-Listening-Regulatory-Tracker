@@ -1,0 +1,252 @@
+https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/22-23/tata-capital-limited-annual-report-fy-2022-23.pdf
+Reason: breakdown problems: debt_securities: note p.297; breakdown sums to 0.00 vs balance sheet 332351 -> using balance-sheet total | investments: breakdown not readable (sum 1913148.00 vs balance sheet 1459849) -> book size only
+Pages: 392
+Repeated header/footer lines (ignored): annual report 2022 23 | in lakh | march 31 2023 march 31 2022 | notes f orming part of consolidated f inancial statements
+
+===== page 290 =====
+Annual Report 2022-23
+STANDALONE BALANCE SHEET AS AT MARCH 31, 2023
+(` in lakh)
+Note   As at   As at
+Particulars
+No.   March 31, 2023   March 31, 2022
+ASSETS
+(I) Financial Assets
+(a) Cash and cash equivalents   3   212   195
+(b) Bank balance other than (a) above   4   2   13
+(c) Receivables
+(i) Trade receivables   5(i)   788   1,265
+(ii) Other receivables   5(ii)   2   24
+(d) Loans   6   44,198   97,510
+(e) Investments   7   14,59,849   10,13,997
+(f) Other financial assets   8   575   774
+Total Financial Assets   15,05,626   11,13,778
+(II) Non-Financial Assets
+(a) Current tax assets (net)   157   2,222
+(b) Investment property   10   4,622   4,935
+(c) Property, plant and equipment   10   3,361   3,504
+(d) Other intangible assets   10   1   2
+(e) Right of use assets   10   853   37
+(f) Other non-financial assets   11   1,635   1,773
+Total Non-Financial Assets   10,629   12,473
+Total Assets   15,16,255   11,26,251
+LIABILITIES AND EQUITY
+LIABILITIES
+(I) Financial Liabilities
+(a) Payables
+(i) Trade payables
+- Total outstanding dues of micro enterprises and small enterprises   12(i)   1   9
+- Total outstanding dues other than micro enterprises and small   12   2,939   2,297
+enterprises
+(b) Debt securities   13   3,32,351   2,98,046
+(c) Subordinated liabilities   14   1,07,013   1,10,983
+(d) Lease liability   840   36
+(e) Other financial liabilities   15   9,415   10,963
+Total Financial Liabilities   4,52,559   4,22,334
+(II) Non-Financial Liabilities
+(a) Provisions   16   378   436
+(b) Deferred tax liabilities (Net)   9   49,074   80
+(c) Other non-financial liabilities   17   3,191   1,603
+Total Non-Financial Liabilities   52,643   2,119
+EQUITY
+(a) Equity share capital   18   3,56,012   3,51,617
+(b) Other equity   19   6,55,041   3,50,181
+Total Equity   10,11,053   7,01,798
+Total Liabilities and Equity   15,16,255   11,26,251
+Summary of significant accounting policies   2
+See accompanying notes forming part of the Standalone Financial Statements   3-54
+In terms of our report of even date   For and on behalf of the Board of Directors
+For KKC & Associates LLP   Saurabh Agrawal   F. N. Subedar   Varsha Purandare
+Chartered Accountants   (Chairman)   (Director)   (Director)
+(formerly Khimji Kunverji & Co LLP)   DIN: 02144558   DIN: 00028428   DIN : 05288076
+Firm’s Registration No: 105146W/W100621
+Hasmukh B. Dedhia   Malvika Sinha   V.S. Radhakrishnan   Mathew Cyriac
+(Partner)   (Director)   (Independent Director)   (Independent Director)
+Membership No: 033494   DIN: 08373142   DIN: 08064705   DIN: 01903606
+Aarthi Subramanian   Rajiv Sabharwal
+(Director)   (Managing Director & CEO)
+DIN: 07121802   DIN: 00057333
+Mumbai   Sarita Kamath   Rakesh Bhatia
+April 27, 2023   (Head - Legal and   (Chief Financial Officer)
+Compliance
+& Company Secretary)
+286
+
+===== page 291 =====
+STANDALONE STATEMENT OF PROFIT AND LOSS FOR THE YEAR ENDED MARCH 31, 2023
+(` in lakh)
+Particulars   Note   For the Year   For the Year
+No.   Ended   Ended
+March 31, 2023   March 31, 2022
+I   Revenue from operations
+(i) Interest income   22   8,351   14,213
+(ii) Dividend income   13,403   20,717
+(iii) Rental income   1,905   1,901
+(iv) Fee and commission income   23   6,383   5,214
+(v) Net gain on fair value changes   24   988   518
+(vi) Net gain on de-recognition of associate   -   923
+I   Total revenue from operations   31,030   43,486
+II Other income   25   4,365   4,732
+III Profit on sale of investment   99,918   2,971
+IV Total income (I+II+III)   1,35,313   51,189
+V Expenses
+(i) Finance costs   27   30,483   28,970
+(ii) Impairment on investments at cost and financial   28   621   730
+instruments
+(iii) Employee benefits expense   29   10,943   8,742
+(iv) Depreciation, amortisation and impairment   10   1,127   710
+(v) Other expenses   30   3,576   1,742
+V Total expenses   46,750   40,894
+VI Profit before exceptional items and tax (IV-V)   88,563   10,295
+VII Exceptional items   -   -
+VIII Profit before tax (VI-VII)   88,563   10,295
+IX Tax expenses
+(1) Current tax
+- Current tax charge   17,651   1,826
+- Short/ (Excess) of previous years   (1,416)   -
+(2) Deferred tax charge   278   159
+IX Total Net tax expense   31   16,513   1,985
+X Profit for the period (VIII-IX)   72,050   8,310
+XI Other Comprehensive Income
+(A) (i) Items that will not be reclassified to profit or loss
+(a) Remeasurement of defined employee benefit   (138)   9
+plans
+(b) Equity instruments through Other   2,32,651   -
+Comprehensive Income
+(ii) Income tax relating to items that will not be
+reclassified to profit or loss
+(a) Remeasurement of defined employee benefit   35   (2)
+plans
+(b) Equity instruments through Other   (48,955)   -
+Comprehensive Income
+Subtotal A ((i) + (ii))   1,83,593   7
+287
+
+===== page 292 =====
+Annual Report 2022-23
+STANDALONE STATEMENT OF PROFIT AND LOSS FOR THE YEAR ENDED MARCH 31, 2023
+(` in lakh)
+Particulars   Note   For the Year   For the Year
+No.   Ended   Ended
+March 31, 2023   March 31, 2022
+(B) (i) Items that will be reclassified to profit or loss
+(a) Debt instruments at fair value through Other   (1,041)   (144)
+Comprehensive Income - net change in fair value
+(ii) Income tax relating to items that will be   238   38
+reclassified to profit or loss
+Subtotal B ((i) + (ii))   (803)   (106)
+XI Total Other Comprehensive Income (A+B)   1,82,790   (99)
+XII Total Comprehensive Income for the year (X+XI)   2,54,840   8,211
+XIII Earnings per equity share   32
+Equity Share of par value ` 10/- each
+(1) Basic (`)   2.05   0.24
+(2) Diluted (`)   2.05   0.24
+Summary of significant accounting policies   2
+See accompanying notes forming part of the Standalone   3-54
+Financial Statements
+In terms of our report of even date   For and on behalf of the Board of Directors
+For KKC & Associates LLP   Saurabh Agrawal   F. N. Subedar   Varsha Purandare
+Chartered Accountants   (Chairman)   (Director)   (Director)
+(formerly Khimji Kunverji & Co LLP)   DIN: 02144558   DIN: 00028428   DIN : 05288076
+Firm’s Registration No: 105146W/W100621
+Hasmukh B. Dedhia   Malvika Sinha   V.S. Radhakrishnan   Mathew Cyriac
+(Partner)   (Director)   (Independent Director)   (Independent Director)
+Membership No: 033494   DIN: 08373142   DIN: 08064705   DIN: 01903606
+Aarthi Subramanian   Rajiv Sabharwal
+(Director)   (Managing Director & CEO)
+DIN: 07121802   DIN: 00057333
+Mumbai   Sarita Kamath   Rakesh Bhatia
+April 27, 2023   (Head - Legal and   (Chief Financial Officer)
+Compliance
+& Company Secretary)
+288
+===== note page 297 =====
+STANDALONE CASH FLOW STATEMENT FOR THE YEAR ENDED MARCH 31, 2023 (contd...)
+Changes in Liabilities arising from financing activities
+Particulars   Debt securities   Borrowing   Subordinated
+(Other than debt   liabilities
+securities)
+Balance as at April 1, 2021   2,29,107   -   1,15,740
+Net change due to proceeds/ (repayment)   67,409   -   (4,988)
+Others *   1,530   -   231
+Balance as at March 31, 2022   2,98,046   -   1,10,983
+Net change due to proceeds/ (repayment)   31,248   -   (4,020)
+Others *   3,057   -   49
+Balance as at March 31, 2023   3,32,351   -   1,07,013
+Summary of significant accounting policies   2
+See accompanying notes forming part of the Standalone   3-54
+Financial Statements
+* Others includes the effect of interest accrued but not due, amortisation of borrowing cost, amortisation of premium/
+discount on CPs/NCDs.
+In terms of our report of even date   For and on behalf of the Board of Directors
+For KKC & Associates LLP   Saurabh Agrawal   F. N. Subedar   Varsha Purandare
+Chartered Accountants   (Chairman)   (Director)   (Director)
+(formerly Khimji Kunverji & Co LLP)   DIN: 02144558   DIN: 00028428   DIN : 05288076
+Firm’s Registration No: 105146W/W100621
+Hasmukh B. Dedhia   Malvika Sinha   V.S. Radhakrishnan   Mathew Cyriac
+(Partner)   (Director)   (Independent Director)   (Independent Director)
+Membership No: 033494   DIN: 08373142   DIN: 08064705   DIN: 01903606
+Aarthi Subramanian   Rajiv Sabharwal
+(Director)   (Managing Director & CEO)
+DIN: 07121802   DIN: 00057333
+Mumbai   Sarita Kamath   Rakesh Bhatia
+April 27, 2023   (Head - Legal and   (Chief Financial Officer)
+Compliance
+& Company Secretary)
+293
+===== note page 328 =====
+Annual Report 2022-23
+NOT E S F O RMING P ART O F   STANDALONE   FINANCIAL   STATEMENTS
+NOTE “14”   (` in lakh)
+SUBORDINATED LIABILITIES   As at   As at
+March 31, 2023 March 31, 2022
+At Amortised cost
+UNSECURED
+(a) Preference Shares other than those that qualify as equity
+(i) Cumulative Redeemable Preference Shares [Face Value   1,07,013   1,10,983
+` 1,06,972 lakh (As at March 31, 2022 ` 1,10,992 lakh)]
+Total (A)   1,07,013   1,10,983
+Subordinated Liabilities in India   1,07,013   1,10,983
+Subordinated Liabilities outside India   -   -
+Total (B)   1,07,013   1,10,983
+No default has been made in repayment of any Debt securities, Subordinated liabilities and interest thereon
+for the year ended March 31, 2023 and March 31, 2022.
+Particulars of Cumulative Redeemable Preference Shares :   (` in lakh)
+Particulars   Tranche   No of   Allotment Date Redemption Date/ Redemption Date / March 31, March 31,
+shares   Actual Redemption Early Redemption   2023   2022
+Date   Date
+7.50% Cumulative   T   1,276,000 March 10, 2017   March 9, 2024   March 9, 2024   12,760   12,760
+Redeemable Preference   U   6,04,500 July 7, 2017   July 6, 2024   July 6, 2024   6,045   6,045
+Shares of ` 1,000 each   V   7,36,000 July 12, 2017   July 11, 2024   July 11, 2024   7,360   7,360
+W   6,69,500 July 26, 2017   July 25, 2024   July 25, 2024   6,695   6,695
+7.33% Cumulative   X   750,000 July 28, 2017   July 27, 2024   July 27, 2024   7,500   7,500
+Redeemable Preference   Y   6,59,500 August 4, 2017   August 3, 2024   August 3, 2024   6,672   6,666
+Shares of ` 1,000 each
+7.15% Cumulative   Z   6,45,500 September 15, 2017 September 14, 2024 September 14, 2024   6,455   6,455
+Redeemable Preference
+Shares of ` 1,000 each
+7.10% Cumulative   AA   5,83,700 September 29, 2017 September 28, 2024 September 28, 2024   5,837   5,837
+Redeemable Preference   AB   1,19,000 April 20, 2018   August 1, 2022   August 1, 2022   -   1,189
+Shares of ` 1,000 each   AB   2,81,000 April 20, 2018   April 19, 2025   April 19, 2025   2,810   2,807
+AC   2,45,450 May 10, 2018   August 1, 2022   August 1, 2022   -   2,452
+AC   1,54,550 May 10, 2018   May 9, 2025   May 9, 2025   1,546   1,544
+AD   37,500 June 15, 2018   August 1, 2022   August 1, 2022   -   375
+AD   2,97,000 June 15, 2018   June 14, 2025   June 14, 2025   2,970   2,967
+7.75% Cumulative   AE   4,00,000 March 13, 2019   March 12, 2026   June 30, 2023   3,994   3,985
+Redeemable Preference
+Shares of ` 1,000 each
+7.50% Cumulative   AF   4,00,000 June 12, 2019   June 11, 2026   September 30, 2023   3,992   3,992
+Redeemable Preference   AG   4,00,000 June 28, 2019   June 27, 2026   October 31, 2023   3,990   3,991
+Shares of ` 1,000 each   AH   3,90,000 August 7, 2019   August 6, 2026   November 30, 2023   3,900   3,896
+AI   4,00,000 August 28, 2019   August 27, 2026   November 30, 2023   4,001   3,998
+AJ   4,00,000 August 30, 2019   August 29, 2026   December 31, 2023   4,000   3,998
+AK   4,00,000 September 4, 2019 September 3, 2026 January 31, 2024   3,997   3,992
+AL   4,00,000 September 9, 2019 September 8, 2026 February 29, 2024   3,996   3,992
+AM   4,50,000 September 18, 2019 September 17, 2026 March 31, 2024   4,498   4,496
+AN   4,00,000 September 24, 2019 September 23, 2026 March 31, 2024   3,995   3,991
+Total   1,07,013 1,10,983
+Notes:
+Early Date of Redemption refers to the date on or before which the CRPS shall be redeemed, as per the
+terms of offer, in the event of exercise of Call / Put Option by Option Exercise Date by the Company or CRPS
+holder(s), as the case may be, to seek early redemption.
+324

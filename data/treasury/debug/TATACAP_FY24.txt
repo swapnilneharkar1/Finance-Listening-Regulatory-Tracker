@@ -1,0 +1,267 @@
+https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/23-24/tata-capital-limited.pdf
+Reason: breakdown problems: investments: breakdown not readable (sum 24019.36 vs balance sheet 9492.97) -> book size only
+Pages: 515
+Repeated header/footer lines (ignored): annual report 2023 24 | in crore | notes f orming part of consolidated f inancial statements | notes f orming part of standalone f inancial statements
+
+===== page 321 =====
+STANDALONE BALANCE SHEET AS AT MARCH 31, 2024
+(` in crore)
+Note   As at   As at
+Particulars
+No.   March 31, 2024   March 31, 2023
+ASSETS
+(1) Financial Assets
+(a) Cash and cash equivalents   3   4,886.95   2,265.99
+(b) Bank balances other than (a) above   4   98.33   237.77
+(c) Derivative financial instruments   5   192.44   184.45
+(d) Receivables
+(i) Trade receivables   6   78.15   53.27
+(ii) Other receivables   -   -
+(e) Loans   7   1,06,436.92   80,390.34
+(f) Investments   8   9,492.97   12,009.68
+(g) Other financial assets   9   500.98   356.40
+Total Financial Assets   1,21,686.74   95,497.90
+(2) Non-Financial Assets
+(a) Current tax assets   10(i)   161.22   157.57
+(b) Deferred tax assets (net)   10(ii)   418.25   259.97
+(c) Investment property   11   -   15.63
+(d) Property, plant and equipment   11   763.16   440.64
+(e) Capital work-in-progress   11 (i)   4.08   1.15
+(f) Intangible assets under development   11 (ii)   3.07   8.55
+(g) Other intangible assets   11   29.70   21.10
+(h) Right of use assets   39   205.30   127.82
+(i) Other non-financial assets   12   441.59   271.27
+Total Non-Financial Assets   2,026.37   1,303.70
+Total Assets   1,23,713.11   96,801.60
+LIABILITIES AND EQUITY
+(1) Financial Liabilities
+(a) Derivative financial instruments   5   39.75   60.96
+(b) Payables
+(i) Trade payables
+- Total outstanding dues of micro enterprises and small   13(ii)   2.55   4.76
+enterprises
+- Total outstanding dues of creditors other than micro   13(i)   1,162.21   1,042.67
+enterprises and small enterprises
+(ii) Other payables
+- Total outstanding dues of micro enterprises and small   -   -
+enterprises
+- Total outstanding dues of creditors other than micro   -   -
+enterprises and small enterprises
+317
+
+===== page 322 =====
+Annual Report 2023-24
+STANDALONE BALANCE SHEET AS AT MARCH 31, 2024
+(` in crore)
+Note   As at   As at
+Particulars
+No.   March 31, 2024   March 31, 2023
+(c) Debt securities   14   39,065.71   35,088.16
+(d) Borrowings (other than debt securities)   15   54,687.05   37,738.40
+(e) Subordinated liabilities   16   7,161.55   5,920.63
+(f) Lease liabilities   39   210.47   133.39
+(g) Other financial liabilities   17   1,294.97   1,580.55
+Total Financial Liabilities   1,03,624.26   81,569.52
+(2) Non-Financial liabilities
+(a) Current tax liabilities   18   365.65   263.99
+(b) Provisions   19   69.36   58.77
+(c) Other non-financial liabilities   20   201.42   167.84
+Total Non-Financial Liabilities   636.43   490.60
+(3) Equity
+(a) Equity share capital   21   3,746.41   3,560.12
+(b) Shares pending for issuance   -   71.65
+(c) Other equity   22   15,706.01   11,109.71
+Total Equity   19,452.42   14,741.48
+Total Liabilities and Equity   1,23,713.11   96,801.60
+Material accounting policies   2
+See accompanying notes forming part of the Standalone Financial   3-57
+Statements
+In terms of our report attached,   For and on behalf of the Board of Directors
+For KKC & Associates LLP   M S K A & Associates   Saurabh Agrawal   F. N. Subedar   Varsha Purandare
+Chartered Accountants   Chartered Accountants   (Chairman)   (Director)   (Independent Director)
+DIN: 02144558   DIN: 00028428   DIN : 05288076
+(formerly Khimji Kunverji & Co LLP) Firm’s Registration No:
+Firm’s Registration No:   105047W
+105146W/W100621
+Hasmukh B. Dedhia   Swapnil Kale   Nagaraj Ijari   V.S. Radhakrishnan Sujit Kumar Varma
+(Partner)   (Partner)   (Independent Director) (Independent Director) (Independent Director)
+Membership No: 033494   Membership No: 117812 DIN: 09390579   DIN: 08064705   DIN: 09075212
+Mumbai   Mumbai
+Aarthi Subramanian Rajiv Sabharwal
+(Director)   (Managing Director &
+DIN: 07121802   CEO)
+DIN: 00057333
+May 10, 2024   Sarita Kamath   Rakesh Bhatia
+(Head - Legal and   (Chief Financial Officer)
+Compliance &
+Company Secretary)
+318
+
+===== page 323 =====
+STANDALONE STATEMENT OF PROFIT AND LOSS FOR THE YEAR ENDED MARCH 31, 2024
+(` in crore)
+Particulars   Note   For the Year Ended   For the Year Ended
+No.   March 31, 2024   March 31, 2023
+I   Revenue from operations
+(i) Interest income   23   11,513.89   8,276.39
+(ii) Dividend income   24   122.86   79.49
+(iii) Rental income   25   209.18   278.71
+(iv) Fees and commission income   26   712.45   434.05
+(v) Net gain on fair value changes   27   731.47   1,102.33
+Total Revenue from operations   13,289.85   10,170.97
+II Other income   28   19.26   3.00
+III Total income (I+II)   13,309.11   10,173.97
+IV Expenses
+(i) Finance costs   29   6,645.67   4,557.38
+(ii) Impairment on financial instruments   31   748.45   552.01
+(iii) Employee benefit expenses   30   1,385.37   969.21
+(iv) Depreciation, amortisation and impairment   11   243.67   197.93
+(v) Other expenses   32   1,077.32   848.13
+Total expenses   10,100.48   7,124.66
+V Profit before exceptional items and tax (III-IV)   3,208.63   3,049.31
+VI Exceptional items   -   -
+VII Profit before tax (V-VI)   3,208.63   3,049.31
+VIII Tax expenses
+(1) Current tax   10(i)   786.58   801.33
+(2) Deferred tax charge   10(ii)   (70.40)   (73.12)
+Total tax expenses   716.18   728.21
+IX Profit for the year (VII-VIII)   2,492.45   2,321.10
+319
+===== note page 371 =====
+NOTES F ORMING PART OF STANDALONE F INANCIAL STATEMENTS
+Note 14: Debt Securities
+(` in crore)
+Particulars   As at   As at
+March 31, 2024   March 31, 2023
+DEBT SECURITIES In India
+At amortised cost
+Secured
+(i) Privately Placed Non-Convertible Debentures (Refer note 14.1   29,075.87   21,821.82
+below)
+(ii) Public issue of Non-Convertible Debentures (Refer notes 14.2   1,182.67   2,781.37
+below)
+Unsecured
+(i) Privately Placed Non-Convertible Debentures   2,831.34   3,083.66
+(ii) Commercial paper (Refer note 14.4 below)   5,975.83   7,401.31
+[Net of unamortised discount of ` 109.07 crore
+(March 31, 2023 : ` 163.19 crore) and
+ancillary borrowing cost of ` 0.10 crore
+(March 31, 2023 : ` 0.51 crore)]
+Total   39,065.71   35,088.16
+Notes
+14.1. Privately Placed Non-Convertible Debentures are secured by pari passu charge on the specific
+immovable property, specified receivables arising out of loan, lease, hire purchase transactions and to
+the extent of shortfall in security cover by a pari passu charge on the assets of the Company.
+14.2. Public issue of Non-Convertible Debentures are secured by a pari passu charge on the specific
+immovable property, receivables against unsecured loans, bills discounted and trade advances and
+other current assets of the Company.
+14.3. The Company has, at all times, for the secured NCDs, maintained sufficient security cover as stated in
+the respective information memorandum towards the principal amount, interest accrued thereon, and
+such other sums as mentioned therein
+14.4. Discount on commercial paper varies between 7.67% to 8.39% (March 31, 2023 : 6.65% to 8.06%)
+and are repayable at maturity ranging between 88 days and 366 days from the date of respective
+commercial paper.
+14.5. Of the above, Public issue of Non-Convertible Debentures amounting to face value of ` 6.04 crore
+(March 31, 2023 : ` 6.00 crore) are held by related parties.
+14.6. Of the above, Privately placed Secured Non-Convertible Debentures amounting to face value of ` 235
+Crore (March 31, 2023 : ` 440 crore) and Unsecured Non-Convertible Debentures amounting to face
+value of ` 530 crore (March 31, 2023 : ` 490 crore) are held by related parties.
+14.7.The Company has not defaulted in the repayment of debt securities and interest thereon for the year
+ended March 31, 2024 and March 31, 2023.
+367
+===== note page 379 =====
+NOTES F ORMING PART OF STANDALONE F INANCIAL STATEMENTS
+Note 15: Borrowings (Other Than Debt Securities)   (` in crore)
+Particulars   As at   As at
+March 31, 2024   March 31, 2023
+At amortised cost
+(a) Term loans
+Secured - In India
+(i) From Banks (Refer note 15.1 and 15.2 below)   28,136.97   22,900.20
+(ii) From Others (Refer note 15.1 and 15.2 below)   12,986.07   5,335.09
+Secured - Outside India
+(i) From Banks (Refer note 15.2 below)   9,939.45   5,869.40
+(b) Loans repayable on demand
+Secured
+From Banks - In India
+(i) Working capital demand loan (Refer note 15.2 below)   3,183.60   3,131.07
+(ii) Bank Overdraft (Refer note 15.2 below)   -   0.31
+Unsecured
+From Banks - In India
+(i) Working capital demand loan (Refer note 15.2 below)   400.00   450.34
+(c) Other loans - In India
+Unsecured
+(i) Inter corporate deposits from others (Refer note 15.2 below)   40.96   51.99
+Total   54,687.05   37,738.40
+Note:
+15.1. Loans and advances from banks and others are secured by pari passu charge on the receivables of the
+Company through Security Trustee.
+15.2. Terms of repayment of borrowings and rate of interest:
+As per terms of agreements, loans from banks aggregating ` 37,992.86 crore (March 31, 2023 :
+` 27,816.95 crore ) are repayable at maturity ranging between 5 and 118 months from the date of
+respective loan. Rate of interest payable on term loans varies between 6.50% to 9.38% (March 31,
+2023 : 6.40% to 8.99%).
+As per terms of agreements, loans from others aggregating ` 12,962.41 crore (March 31, 2023 :
+` 5,322.86 crore) are repayable at maturity ranging between 17 and 180 months from the date of
+respective loan. Rate of interest payable on term loans varies between 4.24% to 8.35%. (March 31,
+2023 : 4.24% to 8.35%).
+Rate of interest payable on working capital demand loans varies between 7.50% to 8.45% (March 31,
+2023 : 7.19% to 8.30%)
+Rate of interest payable on Inter-corporate deposits varies between 7.60% to 7.80% (March 31, 2023 :
+5.20% to 7.20%).
+15.3. As at March 31, 2024, the Company had undrawn borrowing facilities of ` 7,893.26 crore (March 31,
+2023 : ` 7,929.17 crore).
+15.4. The Company has not defaulted in the repayment of borrowings (other than debt securities) and interest
+thereon for the year ended March 31, 2024 and March 31, 2023.
+15.5. The quarterly returns/statements of current assets filed by the company with banks or financials
+institutions are in agreement with the books of accounts.
+375
+===== note page 380 =====
+Annual Report 2023-24
+NOTES F ORMING PART OF STANDALONE F INANCIAL STATEMENTS
+Note 16: Subordinated Liabilities
+(` in crore)
+Particulars   As at   As at
+March 31, 2024   March 31, 2023
+At amortised cost
+Unsecured - In India
+Debentures
+Non-Convertible Subordinated Debentures   5,242.07   3,633.45
+Non-Convertible Perpetual Debentures   1,124.09   1,217.03
+Cumulative Redeemable Preference Shares   795.39   1,070.15
+Total   7,161.55   5,920.63
+Note:
+1. Of the above, subordinated liabilities and perpetual debentures amounting to face value of ` 213.62
+crore (March 31, 2023 : ` 213.72 crore) are held by related parties.
+2. Of the above, Cumulative Redeemable Preference Shares amounting to face value of ` 50.50 crore
+(March 31, 2023 : ` 50.50 crore) are held by related parties.
+3. The Company has not defaulted in the repayment of subordinated liabilities and interest thereon for the
+year ended March 31, 2024 and March 31, 2023.
+16.1 Particulars of Subordinated unsecured non-convertible debentures (“NCDs”) outstanding as on
+March 31, 2024
+Description of NCDs   Issue   Redemp-   As at March 31, 2024   As at March 31, 2023
+Date   tion Date
+Number of ` in crore   Number of ` in crore
+NCDs   NCDs
+TCFSL Tier II Bond ‘A’ FY 2014-15   26-Sep-14   25-Sep-24   1,000   100.00   1,000   100.00
+TCFSL Tier II Bond ‘B’ FY 2014-15   07-Jan-15   07-Jan-25   350   35.00   350   35.00
+TCFSL Tier II Bond ‘C’ FY 2014-15   30-Jan-15   30-Jan-25   750   75.00   750   75.00
+TCFSL Tier II Bond ‘D’ FY 2014-15   31-Mar-15   31-Mar-25   2,000   200.00   2,000   200.00
+TCFSL Tier II Bond ‘A’ FY 2015-16   22-Jul-15   22-Jul-25   900   90.00   900   90.00
+TCFSL Tier II Bond ‘B’ FY 2015-16   30-Mar-16   30-Mar-26   2,000   200.00   2,000   200.00
+TCFSL Tier-II Bond ‘A’ FY 2016-17   11-Aug-16   11-Aug-26   2,000   200.00   2,000   200.00
+TCFSL Tier-II Bond ‘B’ FY 2016-17   26-Oct-16   26-Oct-26   150   15.00   150   15.00
+TCFSL NCD Series III (2018)   27-Sep-18   27-Sep-28   2,95,490   29.55   2,95,490   29.55
+TCFSL NCD Series III (2018)   27-Sep-18   27-Sep-28   34,18,488   341.85   34,18,488   341.85
+TCFSL Tier-II Bond ‘A’ FY 2018-19   28-Dec-18   28-Dec-28   2,000   200.00   2,000   200.00
+TCFSL Tier-II Bond “A” FY 2019-20   16-Apr-19   16-Apr-29   200   20.00   200   20.00
+TCFSL Tier II NCD “A” FY 2019-20 13-Jun-19   16-Apr-29   650   65.00   650   65.00
+Discount Reissuance 1
+TCFSL Tier II NCD “A” FY 2019-20 26-Jun-19   16-Apr-29   1,000   100.00   1,000   100.00
+Premium Reissuance 2
+TCFSL Tier II NCD “A” FY 2019-20 29-Jul-19   16-Apr-29   295   29.50   295   29.50
+Premium Reissuance 3
+TCCL Tier II Bond ‘A’ FY 2019-20   10-May-19   10-May-29   500   50.00   500   50.00
+TCCL Tier II Bond ‘A’ FY 2019-20 29-May-19   10-May-29   500   50.00   500   50.00
+Reissuance no 1
+376

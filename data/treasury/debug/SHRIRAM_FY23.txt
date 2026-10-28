@@ -1,0 +1,369 @@
+https://nsearchives.nseindia.com/annual_reports/AR_21945_SHRIRAMFIN_2022_2023_31052023233852_06012023070001.zip
+Reason: breakdown problems: investments: breakdown not readable (sum 38843.86 vs balance sheet 8565.06) -> book size only
+Pages: 466
+Repeated header/footer lines (ignored): shriram finance limited | annual report 2022 23 | rs in crores | for the year ended march 31 2023 contd standalone accounts | particulars march 31 2023 march 31 2022 | notes forming part of the standalone financial statements | for the year ended march 31 2023 contd | notes forming part of the consolidated financial statements
+
+===== page 164 =====
+StAndALOne BALAnCe sheet
+AS At MARCH 31, 2023
+(Rs. in crores)
+note   As at   As at
+particulars   no.   march 31, 2023   march 31, 2022
+Assets
+(1) Financial assets
+(a) Cash and cash equivalents   8   9,505.30   10,662.44
+(b) Bank balance other than (a) above   9   6,312.11   5,692.72
+(c) derivative financial instruments   10   668.81   201.40
+(d) Receivables   11
+(I) trade receivables   17.00   5.35
+(II) Other receivables   260.12   190.49
+(e) Loans   12   171,984.58   116,665.15
+(f) Investments   13   8,565.06   6,809.16
+(g) Other financial assets   14   72.70   51.45
+total financial assets   197,385.68   140,278.16
+(2) non-financial assets
+(a) Current tax assets (net)   15   716.97   228.24
+(b) deferred tax assets (net)   43   1,743.92   869.38
+(c) Investment property   16   2.62   1.97
+(d) property, plant and equipment   17   209.49   110.56
+(e) Right-of-use assets   18   490.21   302.52
+(f) Intangible assets under development   19A   66.08   -
+(g) Goodwill   19B   1,406.73   -
+(h) Other intangible assets   19B   1,217.65   3.04
+(i) Other non-financial assets   20   424.51   312.22
+total non-financial assets   6,278.18   1,827.93
+total assets   203,663.86   142,106.09
+LiABiLities And eQuitY
+Liabilities
+(1) Financial liabilities
+(a) payables   21
+(I) trade payables
+(i) total outstanding dues of micro enterprises and small enterprises   -   0.02
+(ii) total outstanding dues of creditors other than micro enterprises and small enterprises   293.24   166.01
+(II) Other payables
+(i) total outstanding dues of micro enterprises and small enterprises   0.36   1.46
+(ii) total outstanding dues of creditors other than micro enterprises and small enterprises   1.09   1.21
+(b) debt securities   22   43,652.59   41,256.55
+(c) Borrowings (other than debt securities)   23   73,590.02   46,676.93
+(d) deposits   24   36,139.83   21,948.98
+(e) Subordinated liabilities   25   4,523.85   4,614.25
+(f) Lease liabilities   18   563.46   349.43
+(g) Other financial liabilities   26   1,020.66   859.64
+total financial liabilities   159,785.10   115,874.48
+(2) non-financial liabilities
+(a) Current tax liabilities (net)   27   160.89   36.82
+(b) provisions   28   211.48   138.18
+(c) Other non-financial liabilities   29   199.75   124.42
+total non-financial liabilities   572.12   299.42
+total liabilities   160,357.22   116,173.90
+(3) equity
+(a) equity share capital   30   374.43   270.52
+(b) Other equity   31   42,932.21   25,661.67
+total equity   43,306.64   25,932.19
+total liabilities and equity   203,663.86   142,106.09
+See accompanying notes to the financial statements
+As per our report of even date
+For KKC & Associates LLp   For sundaram & srinivasan   For and on behalf of the Board of directors of
+(formerly Khimji Kunverji & Co LLp)
+Chartered Accountants   Chartered Accountants   shriram Finance Limited
+ICAI Firm Registration no.: 105146W/W100621 ICAI Firm Registration no.: 004207S (formerly shriram transport Finance Company
+Limited)
+devang doshi   p menakshi sundaram   Jugal Kishore mohapatra   Y. s. Chakravarti
+partner   partner   Chairman   Managingdirector
+& CeO
+Membership no.: 140056   Membership no.: 217914   dIn: 03190289   dIn: 00052308
+Mumbai   Mumbai   new delhi   Mumbai
+April 27, 2023   April 27, 2023   April 27, 2023   April 27, 2023
+parag sharma   u Balasundararao
+Joint Managing director & CFO Company Secretary
+dIn: 02916744
+Mumbai   Mumbai
+April 27, 2023   April 27, 2023
+Annual Report 2022-23
+160
+
+===== page 165 =====
+StAndALOne StAteMent OF proFit And Loss
+FOR tHe YeAR ended MARCH 31, 2023   standalone accounts
+(Rs. in crores)
+note   Year ended   Year ended
+particulars   no.   march 31, 2023   march 31, 2022
+revenue from operations
+(i) Interest income   32   28,607.36   18,646.26
+(ii) dividend income   6.52   -
+(iii) Rental income   0.17   0.17
+(iv) Fees and commission income   33   242.61   100.08
+(v) net gain on fair value changes   34   340.07   221.70
+(vi) net gain on derecognition of financial instruments under amortised cost category   224.46   217.74
+(vii) Other operating income   35   350.97   69.22
+(i) total revenue from operations   29,772.16   19,255.17
+(ii) other income   36   30.73   19.06
+(iii) totalincome (i+ii)   29,802.89   19,274.23
+expenses
+(i) Finance cost   37   12,545.76   9,734.31
+(ii) Fees and commission expenses   38   303.61   91.74
+(iii) Impairment on financial instruments   39   4,159.17   3,860.86
+(iv) employee benefits expenses   40   2,506.11   997.09
+(v) depreciation, amortisation and impairment (Refer note 16,17 and 19)   41   524.18   135.37
+(vi) Other expenses   42   1,579.17   905.61
+(iV) total expenses   21,618.00   15,724.98
+(V) profit before exceptional items and tax (iii - iV)   8,184.89   3,549.25
+(Vi) exceptional items   -   -
+(Vii) profit before tax (V+ Vi)   8,184.89   3,549.25
+(Viii) tax expense:
+(1) Current tax   43   2,875.01   1,112.57
+(2) deferred tax   43   (680.96)   (188.93)
+(3) tax adjustment for earlier years   43   11.50   (82.32)
+(ix) profit for the year from continuing operations (Vii - Viii)   5,979.34   2,707.93
+(x) profit for the year   5,979.34   2,707.93
+(xi) other comprehensive income
+A   (i) Items that will not be reclassified to profit or loss
+Remeasurement gain/(loss) on defined benefit plan   (8.02)   (3.24)
+Gain / (loss) on Fair valuation of quoted investments in equity shares   (11.80)   -
+(ii) Income tax relating to items that will not be reclassified to profit or loss   4.99   0.82
+subtotal (A)   (14.83)   (2.42)
+B   (i) Items that will be reclassified to profit or loss
+Cash flow hedge reserve
+Gain/(loss) on effective portion of hedging instruments in a cash flow hedge   (14.68)   (160.87)
+(ii) Income tax relating to items that will be reclassified to profit or loss   3.69   40.49
+subtotal (B)   (10.99)   (120.38)
+other comprehensive income (A + B)   (25.82)   (122.80)
+(xii) total Comprehensive income for the year (x + xi)   5,953.52   2,585.13
+(xiii) earnings per equity share (face value rs. 10/- per equity share)   44
+Basic (Rs.)   159.69   101.74
+diluted (Rs.)   158.99   101.74
+See accompanying notes to the financial statements
+As per our report of even date
+For KKC & Associates LLp   For sundaram & srinivasan   For and on behalf of the Board of directors of
+(formerly Khimji Kunverji & Co LLp)
+Chartered Accountants   Chartered Accountants   shriram Finance Limited
+ICAI Firm Registration no.: 105146W/W100621 ICAI Firm Registration no.: 004207S (formerly shriram transport Finance Company
+Limited)
+devang doshi   p menakshi sundaram   Jugal Kishore mohapatra   Y. s. Chakravarti
+partner   partner   Chairman   Managingdirector
+& CeO
+Membership no.: 140056   Membership no.: 217914   dIn: 03190289   dIn: 00052308
+Mumbai   Mumbai   new delhi   Mumbai
+April 27, 2023   April 27, 2023   April 27, 2023   April 27, 2023
+parag sharma   u Balasundararao
+Joint Managing director & CFO Company Secretary
+dIn: 02916744
+Mumbai   Mumbai
+April 27, 2023   April 27, 2023
+Shriram Finance Limited
+161
+
+===== page 166 =====
+StAndALOne StAteMent OF ChAnGes in eQuitY
+FOR tHe YeAR ended MARCH 31, 2023
+-   -
+0.90
+76.93
+otal   164.56
+t   5,979.34(25.82)5,953.52(561.64)   (53.33)
+25,661.67 25,738.60   11,689.60   42,932.21
+-   -   -   - - - - -   -   - - -   -
+(Rs. in crores)
+oney   hare
+m eceivedAgainsts
+r   Warrants
+- -   -   - -   -   - - -
+edges   (10.99)
+ffectiveortionFlow   (213.40)   (10.99)
+e p of Cashh   (213.40)   (224.39)
+-   - - -   -   - -   -   - - -
+income
+(8.83)(8.83)   (8.83)
+ther Comprehensiveon fair in equityshares
+o   Gain/(loss)valuation ofinvestments
+-   -   - - - - -   -   - - -
+eserves   (1,706.81)(1,706.81)   (1,706.81)
+r
+Adjustment
+Amalgamation
+-   - - -   - - - -   -
+ut
+hare   83.65   (0.04)
+s ptionso   164.56(53.33) 194.84
+270.52
+374.43   o   standing
+- -   -   -   - - -
+(Rs. in crores)   (Rs. in crores)
+etainedarnings   5,979.345,979.34(561.64)
+r e   12,193.92 12,193.92   (1,988.41)   15,623.21
+arch 31, 2023   arch 31, 2022
+- -   -   - -   -   - - -
+m   m   n
+o
+(6.00)(6.00)
+(12.08)   (12.08)   (18.08)
+As at   As at   lan
+Balance at the end of thecurrent reporting periodBalance at the end of the   p
+previous reporting period
+eserves efined Benefit
+r emeasurement
+r Gain/ (Loss)d
+17.46   ther   - -   - - - -   -   - -
+103.91   surplus
+o   0.04
+597.94
+eserve
+Generalr   2,934.07   2,934.07   3,532.05
+- -   - - - - -   -   - - -
+eserves And   53.88   53.88   53.88
+r
+previous year   eserve
+(Refer note 52)   Capitaledemptionr
+Changes in equity   Changes in equity   r
+- -   - - - -   -   - - -
+share capital during thecurrent reporting periodshare capital during the
+307.28   307.28   111.85   419.13
+ebentureeserve #
+d redemptionr
+270.52   253.06   -   - - - -   -   - - -
+eserve
+tatutory   4,707.98 1,706.816,414.79   1,195.87   7,610.66
+s r
+period   - -   - - - - -   - - -
+estated balance at   estated balance at
+remium
+r the beginning of the r the beginning of theprevious reporting   securitiesp   5,662.38   5,662.38   11,689.60
+-   - - - - -   -   - - -
+current reporting period
+-   -   76.93
+eserve   27.64
+Capitalr   104.57   104.57 17,351.98
+-   - - -   - - - - -   -   - - -   -
+hare oney
+s   m ending
+p
+ApplicationAllotment
+rrors
+e
+period errors   period errors
+Changes in equity   Changes in equity
+eriod   lan
+p   p lan   eporting
+share capital due to priorshare capital due to prior   p   r
+rior
+p
+270.52eriod   253.06   olicy/
+eriod   p   eriod   p   ncome for the year
+p   p   i
+arch 31, 2023)
+mployee Stock Option
+arch 31, 2022   arch 31, 2021   eriod (As at April 01, 2022)eriod   e mployee Stock Optionm
+eporting
+eporting   period   periodm   eporting   p   p   remium proceeds received on issue ofe
+m   r
+hare Capitalr   quity r   p
+s   e
+ther Change:
+o
+As at   As at
+ther
+quity   revious   articulars   eportingffects of business combination (Refer note 52)estated balance at the beginning of the Currenteportingrofit for the yearotal Comprehensiveividends (Interim)ransferred to/ (from) (Refer note 31)quity Shares (Refer note 30 and 31)xpenses onxercise ofransferred to/(from) (Refer note 31) on accounteriod (As at
+e   Current Balance at the beginningof the current reportingp   Balance at the beginningof the previous reportingo   Currentp   Balance at the beginning of the Currentr Changes in Accountinge r r p Other Comprehensive Income for the yeart d t AnySecuritiese e e t of share forfeitureBalance at the end of the Currentp
+A.   (1)   (2)   B.   (1)
+Annual Report 2022-23
+162
+===== note page 206 =====
+notes FORMInG pARt OF tHe StAndALOne FInAnCIAL StAteMentS
+FOR tHe YeAR ended MARCH 31, 2023 (Contd.)
+21   pAYABLes (Contd.)
+As at march 31, 2022   (Rs. in crores)
+particulars   unbilled   not   outstanding for following periods from   total
+due for   due date of payment
+payment
+Less than 1-2 years 2-3 years   more
+1 year   than
+3 years
+(i)   MSMe   -   -   0.02   -   -   -   0.02
+(ii) Others   108.81   -   50.63   4.25   1.10   1.22   166.01
+(iii) disputed dues – MSMe   -   -   -   -   -   -   -
+(iv) disputed dues - Others   -   -   -   -   -   -   -
+total   108.81   -   50.65   4.25   1.10   1.22   166.03
+(ii)   other payables
+(Rs. in crores)
+As at   As at
+particulars   march 31, 2023   march 31, 2022
+(i) total outstanding dues of micro enterprises and small enterprises (Refer note 56)   0.36   1.46
+(ii) total outstanding dues of creditors other than micro enterprises and small   1.09   1.21
+enterprises
+total   1.45   2.67
+(Rs. in crores)
+As at   As at
+particulars   march 31, 2023   march 31, 2022
+22   deBt seCurities
+At amortised cost
+secured
+Redeemable non-convertible debentures
+- public issue ¥   2,508.89   2,500.63
+- privately placed ¥ ¥   27,648.08   18,768.05
+external commercial bond   12,513.28   19,011.29
+Senior secured notes   894.73   891.40
+unsecured
+Redeemable non-convertible debentures
+- privately placed   87.61   85.18
+total   43,652.59   41,256.55
+debt securities in India   30,244.58   21,353.86
+debt securities outside India   13,408.01   19,902.69
+total   43,652.59   41,256.55
+There are no debt securities measured at FVtpL or designated at FVtpL.
+¥ includes Rs. 87.68 crores (March 31, 2022 Rs. 47.36 crores) issued to related parties including directors.
+¥¥ includes Rs. 370.13 crores (March 31, 2022 Rs. 10.01 crores) issued to related parties.
+Annual Report 2022-23
+202
+===== note page 207 =====
+notes FORMInG pARt OF tHe StAndALOne FInAnCIAL StAteMentS
+FOR tHe YeAR ended MARCH 31, 2023 (Contd.)   standalone accounts
+(Rs. in crores)
+As at   As at
+particulars   march 31, 2023   march 31, 2022
+23   BorroWinGs (other thAn deBt seCurities)
+At amortised cost
+secured
+term loan from banks - InR   31,900.26   16,755.62
+term loan from financial institutions/corporates - InR   9,296.56   5,685.24
+external commercial borrowing - FCnR   9,828.01   4,243.13
+Loans repayable on demand from banks (Cash credit from banks)   459.10   454.86
+Other loans - InR - Securitisation liabilities   22,106.09   19,538.08
+total   73,590.02   46,676.93
+Borrowings in India   63,762.01   42,433.80
+Borrowings outside India   9,828.01   4,243.13
+total   73,590.02   46,676.93
+There are no borrowings measured at FVtpL or designated at FVtpL.
+The borrowings have not been guaranteed by directors or others. The Company has not defaulted in repayment of principal
+and interest to its lenders.
+The Company has utilised the funds raised from banks and financial institutions for the specific purpose for which they
+were borrowed.
+The Company has borrowed funds from banks and financial institutions on the basis of security of current assets. It has
+filed quarterly returns or statements of current assets with banks and financial institutions and the said returns/statements
+are in agreement with books of accounts.
+(Rs. in crores)
+As at   As at
+particulars   march 31, 2023   march 31, 2022
+24   deposits
+At amortised cost
+unsecured
+i. public deposits (Refer note 67)*   34,671.99   20,190.08
+ii. From Banks   -   -
+iii. From Others
+- deposits from corporates **   1,467.84   1,729.76
+- Inter-corporate deposits ***   -   29.14
+total   36,139.83   21,948.98
+There are no deposits measured at FVtpL or designated at FVtpL.
+* includes Rs. 3.47 crores (March 31, 2022 Rs. 3.01 crores) accepted from related parties including director.
+** includes Rs. 171.87 crores (March 31, 2022 Rs. 118.94 crores) accepted from related parties.
+*** includes Rs. nil (March 31, 2022 Rs. 27.45 crores) accepted from associate.
+(Rs. in crores)
+As at   As at
+particulars   march 31, 2023   march 31, 2022
+25   suBordinAted LiABiLities
+At amortised cost
+others
+unsecured
+Subordinated debts - debentures #   4,523.85   4,614.25
+total   4,523.85   4,614.25
+Shriram Finance Limited
+203

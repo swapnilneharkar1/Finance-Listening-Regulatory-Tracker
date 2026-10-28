@@ -1,0 +1,322 @@
+https://nsearchives.nseindia.com/annual_reports/AR_29596_CHOLAFIN_2025_2026_A_8171029_06072026201106.pdf
+Reason: breakdown problems: debt_securities: note p.175; breakdown not readable -> using balance-sheet total | borrowings: note not found; breakdown not readable -> using balance-sheet total | investments: breakdown not readable (sum 163.00 vs balance sheet 6638.05) -> book size only
+Pages: 354
+Repeated header/footer lines (ignored): cholamandalam investment and finance company limited | company overview 01 51 management report 52 141 financial statements 142 342 | in crores | march 31 2026 march 31 2025 | notes forming part of the standalone financial statements contd | for the year ended march 31 2026 | notes forming part of the consolidated financial statements contd
+
+===== page 166 =====
+Cholamandalam Investment and Finance Company Limited
+Standalone Balance Sheet As at March 31, 2026
+` in crores
+Note No.   As at   As at
+March 31, 2026   March 31, 2025
+ASSETS
+Financial Assets
+Cash and Cash Equivalents   5   8,312.40   5,278.19
+Bank Balances other than Cash and Cash Equivalents   6   6,298.99   4,122.49
+Derivative financial instruments   7   1,701.06   203.32
+Receivables   8
+i) Trade Receivables   289.56   187.58
+ii) Other Receivables   202.20   116.64
+Loans   9   2,17,571.16   1,81,929.90
+Investments   10   6,638.05   6,390.39
+Other Financial Assets   11   840.48   349.74
+2,41,853.90   1,98,578.25
+Non- Financial Assets
+Current Tax Assets(Net)   29.47   216.45
+Deferred Tax Assets (Net)   12   1,158.32   946.72
+Investment Property   13   0.13   0.13
+Property, Plant and Equipment   14   1,834.03   1,746.85
+Capital Work in Progress   49   18.29   3.69
+Intangible Assets Under Development   49   14.50   7.22
+Other Intangible Assets   15   28.50   24.96
+Other Non-Financial Assets   16   132.71   123.32
+3,215.95   3,069.34
+TOTAL ASSETS   2,45,069.85   2,01,647.59
+LIABILITIES AND EQUITY
+Financial Liabilities
+Derivative financial instruments   7   86.45   284.60
+Payables
+(I) Trade Payables   20
+i) Total outstanding dues of micro and small enterprises   13.19   14.33
+ii) Total outstanding dues of creditors other than micro and small enterprises   103.65   134.90
+(II) Other Payables
+i) Total outstanding dues of micro and small enterprises   -   -
+ii) Total outstanding dues of creditors other than micro and small enterprises   2,225.41   1,573.28
+Debt Securities   17   40,636.05   30,133.99
+Borrowings (Other than Debt Securities)   18   1,56,528.78   1,33,791.98
+Subordinated Liabilities   19   13,701.73   11,020.14
+Other Financial Liabilities   21   1,009.49   738.73
+2,14,304.75   1,77,691.95
+Non-Financial Liabilities
+Provisions   22   279.21   233.62
+Other Non-Financial Liabilities   23   81.87   94.62
+361.08   328.24
+Equity
+Equity Share Capital   24A   170.48   168.25
+Other Equity   24B   30,233.54   23,459.15
+30,404.02   23,627.40
+TOTAL LIABILITIES AND EQUITY   2,45,069.85   2,01,647.59
+The accompanying notes are integral part of the Standalone financial statements
+As per our report of even date
+For KKC & Associates LLP   For B.K. Khare & Co   For and on behalf of the Board of Directors
+Chartered Accountants   Chartered Accountants
+ICAI Firm Regn No. 105146W/Wl00621   ICAI Firm Regn No. 105102W
+Devang Doshi   Shirish Rahalkar   Ravindra Kumar Kundu   Vellayan Subbiah
+Partner   Partner   Managing Director   Executive Chairman
+Membership No: 140056   Membership No: 111212   DIN: 07337155   DIN: 01138759
+Date : April 30, 2026   P. Sujatha   D. Arul Selvan
+Place : Chennai   Company Secretary   Chief Financial Officer
+154 Annual Report / 2025-26
+
+===== page 167 =====
+Company Overview 01-51   Management Report 52-141   Financial Statements 142-342
+Standalone Statement of Profit and Loss for the year ended March 31, 2026
+` in crores
+Note No.   Year ended   Year ended
+March 31, 2026   March 31, 2025
+Revenue from Operations
+Interest Income   25A   28,372.63   23,719.96
+Net gain on derecognition of financial instruments under amortised cost category   32.1B   439.11   159.04
+Fee & commission income   25B   2,053.48   1,666.45
+Net gain on fair value change on financial instruments   25C   111.38   196.57
+Sale of Services   25D   5.14   3.55
+Total Revenue from operations (I)   30,981.74   25,745.57
+Other Income (II)   26   463.10   309.19
+Total Income (III) = (I) + (II)   31,444.84   26,054.76
+Expenses
+Finance costs   27   14,374.20   12,484.85
+Impairment of financial instruments (Net)   28   3,535.83   2,494.26
+Employee benefits expense   29   4,152.80   3,280.51
+Depreciation and amortisation expense   13, 14 & 15   281.32   242.12
+Other expenses   30   2,140.03   1,816.15
+Total Expenses (IV)   24,484.18   20,317.89
+Profit before tax (V) = (III) - (IV)   6,960.66   5,736.87
+Tax expense/(benefit)
+- Current tax   2,049.43   1,713.10
+- Adjustment of tax relating to earlier year(s)   (38.75)   10.22
+- Deferred tax   12   (269.61)   (244.98)
+Net tax expense (VI)   1,741.07   1,478.34
+Profit for the year (A) = (V) - (VI)   5,219.59   4,258.53
+Other Comprehensive income:
+i) Items that will not be reclassified to profit or loss:
+Re-measurement gain /(loss) of Post employment benefit Obligations (net)   36   (3.80)   (14.13)
+Income tax impact   0.96   3.56
+ii) Items that will be reclassified to profit or loss:
+Net gain /(loss) On Cashflow Hedge Reserve   234.28   (174.92)
+Income tax impact   (58.97)   44.03
+Other comprehensive income/(loss) net of tax for the year (B)   172.47   (141.46)
+Total comprehensive income net of tax for the year (A + B)   5,392.06   4,117.07
+Earnings per equity share of ₹ 2 each
+Basic (₹)   31   61.83   50.67
+Diluted (₹)   61.68   50.55
+The accompanying notes are integral part of the Standalone financial statements
+As per our report of even date
+For KKC & Associates LLP   For B.K. Khare & Co   For and on behalf of the Board of Directors
+Chartered Accountants   Chartered Accountants
+ICAI Firm Regn No. 105146W/Wl00621   ICAI Firm Regn No. 105102W
+Devang Doshi   Shirish Rahalkar   Ravindra Kumar Kundu   Vellayan Subbiah
+Partner   Partner   Managing Director   Executive Chairman
+Membership No: 140056   Membership No: 111212   DIN: 07337155   DIN: 01138759
+Date : April 30, 2026   P. Sujatha   D. Arul Selvan
+Place : Chennai   Company Secretary   Chief Financial Officer
+Annual Report / 2025-26 155
+
+===== page 168 =====
+Cholamandalam Investment and Finance Company Limited
+-   -
+Total   (2.87)   83.52   86.1314.28
+175.31
+in crores   in crores   5,219.59   (169.60) 1,368.03
+23,459.1523,459.15   30,233.54
+`   `
+-   - -   - -   -   - - -
+170.48
+Balance as at   175.31   39.94
+March 31, 2026
+(135.37)(135.37)
+hedge
+of cashflow
+Effective portion
+-   - - -   - -   -   - - -
+(1.29) (1.29)   (1.29)
+Equity income
+instruments
+through othercomprehensive
+2.23   -   - - -   - -   -   - -
+86.13
+ShareBased   213.24213.24   299.37
+reserve
+Payments
+during the current year
+-   - - -   - -   -   - -
+Changes in Equity share capital
+1,050.00
+Reserve   4,110.464,110.46   5,160.46
+Statutory
+-   -   -   -   - -
+(2.87)
+5,219.59   (169.60)
+Retainedearnings   8,534.058,534.05   (1,050.00)
+12,531.17
+-   - - -   - -   -   - - -
+GeneralReserve
+5,739.135,739.13   5,739.13
+for the year ended March 31, 2026168.25
+-   - - -   - -   -   - - -
+current reporting yearReserve and Surplus 33.00 33.00   33.00
+CapitalReserve
+Redemption
+-   - - -   -   - - -
+Restated Balance at the beginning of the
+83.52
+1,368.03
+4,963.914,963.91   6,415.46
+SecuritiesPremium
+-   - - -   - -   -   - - -
+0.04 0.04   0.04
+CapitalReserve
+-   -   - - -   - -   -   -   -
+1.98 1.98   14.28
+16.26
+Share
+moneypending
+applicationallotment
+due to prior period errors
+Changes in Equity Share capital
+(Refer Note 24A)
+l
+168.25
+Balance as at
+March 31, 2025
+Particulars
+Other Equity (Refer Note 24B)
+Standalone Statement of Changes in Equity1) Current reporting periodA) Equity Share CapitaB)   Balance as at March 31, 2025Changes in accounting policy/prior period errorsRestated Balance at the beginning of the currentreporting yearProfit for the yearRemeasurement of defined benefit plansOther items in comprehensive income for theyear, net of income taxDividendsShare Premium received on allotment of equityshares under ESOPShare Premium received on allotment of equityshares upon Conversion of CCDsRecognition of Share based PaymentsShare application money -Pending for allotmentTransfer to reserves from Retained earingsduring the yearBalance as at March 31, 2026
+156 Annual Report / 2025-26
+===== note page 175 =====
+Company Overview 01-51   Management Report 52-141   Financial Statements 142-342
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2026
+Fees, charges and reimbursements due from borrowers   net gain/loss on fair value changes in the statement of
+as per the contractual terms of the loan are recognised on   profit and loss.
+realisation.
+When a hedging instrument expires, is sold, terminated,
+Any recovery from written off loan is recognised in the   exercised, or when a hedge no longer meets the criteria
+statement of profit and loss.   for hedge accounting, any cumulative gain or loss that
+has been recognised in OCI at that time remains in OCI
+3.4   Borrowings
+and is recognised when the hedged forecast transaction is
+3.4.1   Debt securities and other borrowings
+ultimately recognised in the statement of profit and loss.
+The Company recognises debt securities and other   When a forecast transaction is no longer expected to occur,
+borrowings at fair value when funds reach the Company.   the cumulative gain or loss that was reported in OCI is
+immediately transferred to the statement of profit and loss.
+Debt issued and other borrowed funds are subsequently
+measured at amortised cost. Amortised cost is calculated   3.4.4   Finance cost on Borrowing
+by taking into account any discount or premium on issue
+Finance cost on borrowings measured at amortised cost is
+funds, and costs that are an integral part of the EIR.
+recorded using the effective interest rate (‘EIR’) method. The
+3.4.2   Foreign Currency Borrowings   EIR is the rate that discounts estimated future payments
+through the expected life of the borrowing to its gross
+Borrowings in foreign currencies are initially recorded at
+carrying amount. The EIR is calculated taking in to account
+the respective functional currency spot rates at the date
+any discount or premium on issue funds, and costs that are
+the transaction first qualifies for recognition. They are
+an integral part of the EIR.
+translated at the functional currency spot rates of exchange
+at the reporting date and exchange gains and losses arising 4   Other accounting policies
+on restatement are recognized under OCI in the statement
+4.1   Cash and Cash equivalents
+of profit and loss as an adjustment to borrowing cost.
+Cash and cash equivalent in the balance sheet comprise
+3.4.3   Derivative and Hedge accounting
+cash at banks and on hand and short-term deposits with an
+The company enters into derivative transactions only   original maturity of three months or less, which are subject
+for economic hedging purposes and not as speculative   to an insignificant risk of changes in value.
+investments. Derivative instruments are used to manage
+4.2   Bank balances other cash and cash
+exposures to interest rate and foreign currency. In order
+equivalents
+to manage particular risks, the Company applies hedge
+accounting for transactions that meet specified criteria.   These are measured at amortised cost as they are held for
+collecting contractual cash flows that are solely payments
+Derivatives are initially recognised at fair value at the date
+of principal and interest on principal outstanding.
+a derivative contract is entered into and are subsequently
+remeasured to their fair value at each balance sheet date. 4.3   Receivables and other financial assets
+The resulting gain/loss is recognised in statement of profit   Receivables and other financial assets are measured
+and loss immediately unless the derivative is designated   at amortised cost. The Company follows a ‘simplified
+and is effective as a hedging instrument, in which event the   approach' for recognition of impairment loss allowance
+timing of the recognition in profit or loss depends on the   on these assets. The application of simplified approach
+nature of the hedge relationship.   does not require the Company to track changes in credit
+Hedges that meet the strict criteria for hedge accounting   risk and calculated on case-by-case approach, taking into
+are accounted for as cash flow hedge.   consideration different recovery scenarios.
+A cash flow hedge is a hedge of the exposure to variability in 4.4   Investments
+cash flows that is attributable to a particular risk associated
+Investments are initially recognised on the trade date,
+with a recognised asset or liability (such as all or some
+i.e., the date that the company becomes a party to the
+future interest payments on variable rate debt) or a highly
+contractual provisions of the instrument.
+probable forecast transaction and could affect profit or loss.
+4.4.1   Equity instruments
+For designated and qualifying cash flow hedges, the
+Equity Investment in Subsidiaries ,Associates and Joint
+effective portion of the cumulative gain or loss on the
+Ventures are carried at Cost and are subject to impairment
+hedging instrument is initially recognised directly in Other
+assessment of every reporting period.
+Comprehensive Income (OCI) within equity (cash flow
+hedge reserve). The ineffective portion of the gain or loss   The Company subsequently measures all equity
+on the hedging instrument is recognised immediately as   investments other than investment in subsidiaries and
+Annual Report / 2025-26 163
+===== note page 198 =====
+Cholamandalam Investment and Finance Company Limited
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2026
+18.2 Details of term loans/working capital demand loan - Contractual principal repayment value (Contd.)
+Details of Securitised loan   ` in crores
+Rate of Interest   Maturity   Amount outstanding
+March 31, 2026 March 31, 2025
+Fixed (4% to 8.65%)   Less than 1 year   11,902.44   11,113.27
+1-2 year   8,925.54   8,121.35
+2-3 year   5,067.50   4,833.49
+3-4 year   2,097.72   1,870.72
+4-5 year   419.07   458.84
+more than 5 years   69.13   115.99
+Total   28,481.40   26,513.66
+Floating   Less than 1 year   1,272.44   19.89
+Base Rate/ MCLR - spread (0.75% to 1.30%)   1-2 year   979.53   17.14
+2-3 year   639.45   14.56
+3-4 year   100.64   11.12
+4-5 year   2.86   9.07
+more than 5 years   10.42   36.99
+Total   3,005.34   108.77
+18.3 No borrowings are guaranteed by directors and /or others.
+` in crores
+Particulars   As at   As at
+March 31, 2026 March 31, 2025
+Note : 19 SUBORDINATED LIABILITIES (at amortised cost)
+Perpetual Debt - Unsecured   2,697.59   2,593.20
+Subordinated Debt - Unsecured
+a) Rupee Denominated Bonds   408.52   408.32
+b) Other Subordinated Debts   10,595.62   8,018.62
+Total   13,701.73   11,020.14
+i) All Subordinated liabilities have been contracted in India except for Rupee denominated bonds.
+ii) The Company has not defaulted in the repayment of dues to its lenders.
+19.1 Details of Subordinated Liabilities - Contractual principal repayment value
+(i) Unsecured Redeemable Non-Convertible Debentures - Subordinated debt - Redeemable at par - No put / call option
+No. of Debentures   Face Value `   Balance as at ` in crore   Due date of   Rate of interest %
+redemption
+March 31, 2026   March 31, 2025
+100   10,00,000   10.00   10.00   Nov-26   9.20
+2,500   10,00,000   250.00   250.00   Jun-27   8.78 to 8.80
+1,500   10,00,000   150.00   150.00   Aug-27   8.53
+5,300   10,00,000   530.00   530.00   Mar-28   9.05
+3,000   10,00,000   300.00   300.00   Aug-28   9.75
+20,000   1,00,000   200.00   200.00   Oct-29   9.00
+400   1,00,00,000   400.00   400.00   Jan-30   9.75
+30,000   1,00,000   300.00   300.00   May-30   8.75
+11,000   1,00,000   110.00   110.00   Apr-31   9.00
+186 Annual Report / 2025-26

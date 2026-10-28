@@ -1,0 +1,101 @@
+{
+ "ok": true,
+ "fy": "FY23",
+ "prevFy": "FY22",
+ "unit": "lakh",
+ "pages": 392,
+ "standalonePages": [
+  290,
+  392
+ ],
+ "statement": {
+  "investments": {
+   "cy": 14598.49,
+   "py": 10139.97,
+   "note": "7",
+   "page": 290
+  },
+  "debt_securities": {
+   "cy": 3323.51,
+   "py": 2980.46,
+   "note": "13",
+   "page": 290
+  },
+  "subordinated": {
+   "cy": 1070.13,
+   "py": 1109.83,
+   "note": "14",
+   "page": 290
+  },
+  "finance_cost": {
+   "cy": 304.83,
+   "py": 289.7,
+   "note": "27",
+   "page": 291
+  }
+ },
+ "borrowing": {
+  "FY23": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 3323.51,
+    "page": 290,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Cumulative Redeemable Preference Shares [Face Value",
+    "category": "Subordinated debt",
+    "value": 1070.13,
+    "page": 328,
+    "section": "subordinated"
+   }
+  ],
+  "FY22": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 2980.46,
+    "page": 290,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Cumulative Redeemable Preference Shares [Face Value",
+    "category": "Subordinated debt",
+    "value": 1109.83,
+    "page": 328,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY23": []
+ },
+ "totals": {
+  "FY23": 4393.64,
+  "FY22": 4090.29
+ },
+ "finance_cost": {
+  "FY23": 304.83,
+  "FY22": 289.7
+ },
+ "log": [
+  "debt_securities: note p.297; breakdown sums to 0.00 vs balance sheet 332351 -> using balance-sheet total",
+  "borrowings: not on the balance sheet (treated as nil)",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 1 lines from note p.328, reconciles to balance sheet",
+  "investments: breakdown not readable (sum 1913148.00 vs balance sheet 1459849) -> book size only"
+ ],
+ "investment_total": {
+  "FY23": 14598.49,
+  "FY22": 10139.97
+ },
+ "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/22-23/tata-capital-limited-annual-report-fy-2022-23.pdf",
+ "via": "company website",
+ "reportFy": "FY23",
+ "extractor": 2,
+ "sha": "ea4d6de5f3e58355",
+ "extractedAt": "2026-10-28T06:37:22.601Z"
+}

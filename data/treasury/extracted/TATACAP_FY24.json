@@ -1,0 +1,273 @@
+{
+ "ok": true,
+ "fy": "FY24",
+ "prevFy": "FY23",
+ "unit": "crore",
+ "pages": 515,
+ "standalonePages": [
+  321,
+  515
+ ],
+ "statement": {
+  "investments": {
+   "cy": 9492.97,
+   "py": 12009.68,
+   "note": "8",
+   "page": 321
+  },
+  "debt_securities": {
+   "cy": 39065.71,
+   "py": 35088.16,
+   "note": "14",
+   "page": 322
+  },
+  "borrowings": {
+   "cy": 54687.05,
+   "py": 37738.4,
+   "note": "15",
+   "page": 322
+  },
+  "subordinated": {
+   "cy": 7161.55,
+   "py": 5920.63,
+   "note": "16",
+   "page": 322
+  },
+  "finance_cost": {
+   "cy": 6645.67,
+   "py": 4557.38,
+   "note": "29",
+   "page": 323
+  }
+ },
+ "borrowing": {
+  "FY24": [
+   {
+    "label": "Privately Placed Non-Convertible Debentures (Refer note",
+    "category": "Secured NCDs",
+    "value": 29075.87,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Public issue of Non-Convertible Debentures (Refer notes",
+    "category": "Secured NCDs",
+    "value": 1182.67,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately Placed Non-Convertible Debentures",
+    "category": "Unsecured NCDs",
+    "value": 2831.34,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper (Refer note 14.4 below)",
+    "category": "Commercial paper",
+    "value": 5975.83,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "From Banks (Refer note 15.1 and 15.2 below)",
+    "category": "Bank term loans",
+    "value": 28136.97,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "From Others (Refer note 15.1 and 15.2 below)",
+    "category": "Other borrowings",
+    "value": 12986.07,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "From Banks (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 9939.45,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 3183.6,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Bank Overdraft (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 0,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 400,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter corporate deposits from others (Refer note 15.2 below)",
+    "category": "Deposits",
+    "value": 40.96,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Non-Convertible Subordinated Debentures",
+    "category": "Subordinated debt",
+    "value": 5242.07,
+    "page": 380,
+    "section": "subordinated"
+   },
+   {
+    "label": "Non-Convertible Perpetual Debentures",
+    "category": "Subordinated debt",
+    "value": 1124.09,
+    "page": 380,
+    "section": "subordinated"
+   },
+   {
+    "label": "Cumulative Redeemable Preference Shares",
+    "category": "Subordinated debt",
+    "value": 795.39,
+    "page": 380,
+    "section": "subordinated"
+   }
+  ],
+  "FY23": [
+   {
+    "label": "Privately Placed Non-Convertible Debentures (Refer note",
+    "category": "Secured NCDs",
+    "value": 21821.82,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Public issue of Non-Convertible Debentures (Refer notes",
+    "category": "Secured NCDs",
+    "value": 2781.37,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately Placed Non-Convertible Debentures",
+    "category": "Unsecured NCDs",
+    "value": 3083.66,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper (Refer note 14.4 below)",
+    "category": "Commercial paper",
+    "value": 7401.31,
+    "page": 371,
+    "section": "debt_securities"
+   },
+   {
+    "label": "From Banks (Refer note 15.1 and 15.2 below)",
+    "category": "Bank term loans",
+    "value": 22900.2,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "From Others (Refer note 15.1 and 15.2 below)",
+    "category": "Other borrowings",
+    "value": 5335.09,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "From Banks (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 5869.4,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 3131.07,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Bank Overdraft (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 0.31,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 450.34,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter corporate deposits from others (Refer note 15.2 below)",
+    "category": "Deposits",
+    "value": 51.99,
+    "page": 379,
+    "section": "borrowings"
+   },
+   {
+    "label": "Non-Convertible Subordinated Debentures",
+    "category": "Subordinated debt",
+    "value": 3633.45,
+    "page": 380,
+    "section": "subordinated"
+   },
+   {
+    "label": "Non-Convertible Perpetual Debentures",
+    "category": "Subordinated debt",
+    "value": 1217.03,
+    "page": 380,
+    "section": "subordinated"
+   },
+   {
+    "label": "Cumulative Redeemable Preference Shares",
+    "category": "Subordinated debt",
+    "value": 1070.15,
+    "page": 380,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY24": []
+ },
+ "totals": {
+  "FY24": 100914.31000000001,
+  "FY23": 78747.18999999999
+ },
+ "finance_cost": {
+  "FY24": 6645.67,
+  "FY23": 4557.38
+ },
+ "log": [
+  "debt_securities: 4 lines from note p.371, reconciles to balance sheet",
+  "borrowings: 7 lines from note p.379, reconciles to balance sheet",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 3 lines from note p.380, reconciles to balance sheet",
+  "investments: breakdown not readable (sum 24019.36 vs balance sheet 9492.97) -> book size only"
+ ],
+ "investment_total": {
+  "FY24": 9492.97,
+  "FY23": 12009.68
+ },
+ "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/23-24/tata-capital-limited.pdf",
+ "via": "company website",
+ "reportFy": "FY24",
+ "extractor": 2,
+ "sha": "08f98297b269517d",
+ "extractedAt": "2026-10-28T06:36:55.659Z"
+}

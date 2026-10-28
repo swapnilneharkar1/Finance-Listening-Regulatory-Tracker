@@ -1,0 +1,151 @@
+{
+ "ok": true,
+ "fy": "FY25",
+ "prevFy": "FY24",
+ "unit": "crore",
+ "pages": 332,
+ "standalonePages": [
+  146,
+  244
+ ],
+ "statement": {
+  "investments": {
+   "cy": 6390.39,
+   "py": 4100.23,
+   "note": "10",
+   "page": 146
+  },
+  "debt_securities": {
+   "cy": 30133.99,
+   "py": 24812.76,
+   "note": "17",
+   "page": 146
+  },
+  "borrowings": {
+   "cy": 133791.98,
+   "py": 104511.13,
+   "note": "18",
+   "page": 146
+  },
+  "subordinated": {
+   "cy": 11020.14,
+   "py": 5149.69,
+   "note": "19",
+   "page": 146
+  },
+  "finance_cost": {
+   "cy": 12484.85,
+   "py": 9230.61,
+   "note": "26",
+   "page": 147
+  }
+ },
+ "borrowing": {
+  "FY25": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 30133.99,
+    "page": 146,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 133791.98,
+    "page": 146,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Perpetual Debt - Unsecured",
+    "category": "Subordinated debt",
+    "value": 2593.2,
+    "page": 178,
+    "section": "subordinated"
+   },
+   {
+    "label": "Rupee Denominated Bonds",
+    "category": "Subordinated debt",
+    "value": 408.32,
+    "page": 178,
+    "section": "subordinated"
+   },
+   {
+    "label": "Other Subordinated Debts",
+    "category": "Subordinated debt",
+    "value": 8018.62,
+    "page": 178,
+    "section": "subordinated"
+   }
+  ],
+  "FY24": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 24812.76,
+    "page": 146,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 104511.13,
+    "page": 146,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Perpetual Debt - Unsecured",
+    "category": "Subordinated debt",
+    "value": 1612.89,
+    "page": 178,
+    "section": "subordinated"
+   },
+   {
+    "label": "Rupee Denominated Bonds",
+    "category": "Subordinated debt",
+    "value": 408.18,
+    "page": 178,
+    "section": "subordinated"
+   },
+   {
+    "label": "Other Subordinated Debts",
+    "category": "Subordinated debt",
+    "value": 3128.62,
+    "page": 178,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY25": []
+ },
+ "totals": {
+  "FY25": 174946.11000000002,
+  "FY24": 134473.58
+ },
+ "finance_cost": {
+  "FY25": 12484.85,
+  "FY24": 9230.61
+ },
+ "log": [
+  "debt_securities: note p.155; breakdown not readable -> using balance-sheet total",
+  "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 3 lines from note p.178, reconciles to balance sheet",
+  "investments: breakdown not readable (sum 157.00 vs balance sheet 6390.39) -> book size only"
+ ],
+ "investment_total": {
+  "FY25": 6390.39,
+  "FY24": 4100.23
+ },
+ "url": "https://files.cholamandalam.com/Annual_Report_for_FY_2024_25_6829876a3e.pdf",
+ "via": "company website",
+ "reportFy": "FY25",
+ "extractor": 2,
+ "sha": "ca0758137ded5652",
+ "extractedAt": "2026-10-28T06:32:59.983Z"
+}

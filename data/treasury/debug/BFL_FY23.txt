@@ -1,0 +1,314 @@
+https://nsearchives.nseindia.com/annual_reports/AR_22157_BAJFINANCE_2022_2023_03072023222618.zip
+Reason: Standalone balance sheet not found
+Pages: 435
+Repeated header/footer lines (ignored): th | corporate statutory financial | overview reports statements | c in crore | particulars 2023 2022 | notes to standalone financial statements for the year ended 31 march 2023 contd | notes to consolidated financial statements for the year ended 31 march 2023 contd
+Candidate pages: 210 (6 lines), 216 (10 lines), 268 (6 lines), 279 (9 lines), 314 (8 lines), 342 (10 lines)
+
+===== page 210 =====
+Standalone Balance Sheet
+(C in crore)
+As at 31 March
+Particulars   Note No.   2023   2022
+ASSETS
+Financial assets
+Cash and cash equivalents   5   1,191.35   2,872.93
+Bank balances other than cash and cash equivalents   6   2,128.11   27.80
+Derivative financial instruments   7   146.98   121.90
+Trade receivables   8   1,070.21   1,017.11
+Loans   9   179,097.12   144,276.25
+Investments   10   28,737.85   16,371.82
+Other financial assets   11   715.21   464.94
+213,086.83   165,152.75
+Non-financial assets
+Current tax assets (net)   175.85   158.96
+Deferred tax assets (net)   12   919.00   908.40
+Property, plant and equipment   13   1,551.96   1,189.77
+Capital work-in-progress   13   14.60   13.27
+Intangible assets under development   13   64.93   19.41
+Intangible assets   13   594.95   408.67
+Other non-financial assets   14   116.63   165.35
+3,437.92   2,863.83
+Total assets   216,524.75   168,016.58
+LIABILITIES AND EQUITY
+Liabilities
+Financial liabilities
+Derivative financial instruments   7   -   140.02
+Payables   15
+Trade payables
+Total outstanding dues of micro enterprises and small enterprises   1.77   -
+Total outstanding dues of creditors other than micro enterprises and
+small enterprises   951.41   750.72
+Other payables
+Total outstanding dues of micro enterprises and small enterprises   0.65   -
+Total outstanding dues of creditors other than micro enterprises and
+small enterprises   558.45   313.20
+Debt securities   16   65,669.85   59,034.58
+Borrowings (other than debt securities)   17   47,894.70   29,870.38
+Deposits   18   44,489.79   30,289.13
+Subordinated liabilities   19   3,630.29   3,845.77
+Other financial liabilities   20   1,121.52   963.60
+164,318.43   125,207.40
+th
+192 36 Annual Report 2022-23
+
+===== page 216 =====
+Standalone Statement of Cash Flows
+(C in crore)
+For the year ended 31 March
+Particulars   2023   2022
+(I)   Operating activities
+Profit before tax   13,881.51   8,586.39
+Adjustments for:
+Interest income   (30,141.84)   (23,736.06)
+Depreciation and amortisation   443.77   354.91
+Impairment on financial instruments   3,066.46   4,622.06
+Net loss on disposal of property, plant and equipment and intangible assets   12.65   24.10
+Finance costs   9,285.23   7,578.58
+Share based payment expenses   197.08   141.80
+Net gain on fair value changes   (207.85)   (260.42)
+Service fees for management of assigned portfolio of loans   (29.17)   (43.38)
+Dividend income (C 31,125, Previous year C 30,750)
+(3,492.16)   (2,732.02)
+Cash inflow from interest on loans   29,884.69   24,110.29
+Cash inflow from service asset   61.28   53.06
+Cash outflow towards finance costs   (9,953.33)   (6,483.60)
+Cash generated from operation before working capital changes   16,500.48   14,947.73
+Working capital changes
+(Increase)/decrease in bank balances other than cash and cash equivalents   (2,100.31)   (25.69)
+(Increase)/decrease in trade receivables   (80.41)   (323.23)
+(Increase)/decrease in loans   (38,436.92)   (36,609.62)
+(Increase)/decrease in other financial assets   (69.54)   99.82
+(Increase)/decrease in other non-financial assets   45.18   (24.60)
+Increase/(decrease) in trade payables   202.46   84.41
+Increase/(decrease) in other payables   245.90   122.12
+Increase/(decrease) in other financial liabilities   45.47   75.36
+Increase/(decrease) in provisions   58.90   21.38
+Increase/(decrease) in other non-financial liabilities   (175.76)   116.00
+(40,265.03)   (36,464.05)
+Income tax paid (net of refunds)   (3,566.46)   (2,339.34)
+Net cash used in operating activities (I)   (27,331.01)   (23,855.66)
+(II) Investing activities
+Purchase of property, plant and equipment and capital work-in-progress   (449.23)   (349.95)
+Sale of property, plant and equipment   15.63   17.38
+Purchase of intangible assets and intangible assets under development   (375.97)   (246.81)
+Purchase of investments measured at amortised cost   (148.72)   (9,466.94)
+Proceeds from liquidation of investments measured at amortised cost   5,107.14   4,879.41
+Purchase of investments classified as FVOCI   (21,272.49)   (3,291.40)
+Proceeds from liquidation of investments classified as FVOCI   10,900.36   2,083.84
+Purchase of investments classified as FVTPL   (252,102.38)   (189,905.59)
+Proceeds from liquidation of investments classified as FVTPL   247,971.31   200,402.37
+Purchase of equity investments designated under FVOCI   -   (283.16)
+Dividend received (C 31,125, Previous year C 30,750)
+Interest received on investments   575.54   367.31
+Investment in associate   (92.74)   -
+Investment in subsidiaries   (2,500.00)   (400.00)
+Net cash (used in)/generated from investing activities (II)   (12,371.55)   3,806.46
+th
+198 36 Annual Report 2022-23
+
+===== page 268 =====
+Notes to standalone financial statements for the year ended 31 March 2023 (Contd.)
+41 Contingent liabilities and commitments (Contd.)
+(v)   The Assistant Commissioner, West Bengal, through an order dated 06 February 2023, has confirmed the
+demand of GST of C 11.46 crore and penalty of C 11.46 crore from the Company alleging that input tax credit
+to the extent of credit notes issued by Company was not reversed by customers for the period 1 July 2017
+to 31 March 2020. The Assistant Commissioner has also demanded payment of interest on the GST liability
+confirmed until the date the Company pays the GST demanded, which as at 31 March 2023 amounted to
+C 7.49 crore. In accordance with legal advice, the Company is in the process of filing an appeal before the
+Deputy Commissioner, West Bengal disputing the demands. The Company, in line with the opinion obtained
+from a legal counsel, is of view that the said demands are not tenable.
+(vi) It is not practicable for the Company to estimate the timings of the cash flows, if any, in respect of the
+above pending resolution of the respective proceedings.
+(b) Capital and other commitments
+(C in crore)
+As at 31 March
+Particulars   2023   2022
+(i)   Capital commitments [Estimated amount of contracts remaining to be
+executed on capital account not provided for (net of advances)]
+Tangible   48.03   8.02
+Intangible   5.93   23.29
+(ii)   Other commitments
+Towards partially disbursed/un-encashed loans   3,280.44   2,624.20
+Towards future corporate social responsibility spend   165.83   82.65
+3,500.23   2,738.16
+42 Changes in liability arising from financing activities
+(a) Changes in capital and asset structure arising from financing activities and investing
+activities (Ind AS 7 - Statement of Cash flows)
+The Company does not have any financing activities and investing activities which affect the capital and
+asset structure of the Company without the use of cash and cash equivalents.
+(b) Changes in liability arising from financing activities (Ind AS 7 - Statement of Cash flows)
+(C in crore)
+As at   Exchange   As at
+Particulars   1 April 2022   Cash flows   difference   Other 31 March 2023
+Debt securities   59,034.58   7,484.60   -   (849.33)   65,669.85
+Borrowing other than debt
+securities   29,870.38   17,994.90   9.59   19.83   47,894.70
+Deposits   30,289.13   13,897.54   -   303.12   44,489.79
+Subordinated liabilities   3,845.77   (207.12)   -   (8.36)   3,630.29
+123,039.86   39,169.92   9.59   (534.74)   161,684.63
+(C in crore)
+As at   Exchange   As at
+Particulars   1 April 2021   Cash flows   difference   Other 31 March 2022
+Debt securities   43,071.71   15,101.77   -   861.10   59,034.58
+Borrowing other than debt
+securities   27,080.25   2,729.39   37.53   23.21   29,870.38
+Deposits   25,803.43   4,273.68   -   212.02   30,289.13
+Subordinated liabilities   3,898.61   (50.01)   -   (2.83)   3,845.77
+99,854.00   22,054.83   37.53   1,093.50   123,039.86
+th
+250 36 Annual Report 2022-23
+
+===== page 279 =====
+Corporate   Statutory   Financial
+Overview   Reports   Statements
+Notes to standalone financial statements for the year ended 31 March 2023 (Contd.)
+46 Fair values (Contd.)
+Fair value of financial instruments measured at amortised cost as at 31 March 2023
+(C in crore)
+Fair value measurement using
+Quoted prices in   Significant   Significant
+active markets   observable   unobservable
+Particulars   Carrying value   (Level 1) inputs (Level 2)* inputs (Level 3)*   Total
+Financial assets
+Loans   179,097.12   -   -   178,683.20   178,683.20
+Investments   128.59   -   -   129.45   129.45
+179,225.71   -   -   178,812.65   178,812.65
+Financial liabilities
+Debt securities   65,669.85   -   66,063.93   -   66,063.93
+Borrowings (other than debt   47,894.70   -   -   47,894.70   47,894.70
+securities)
+Deposits   44,489.79   -   -   44,395.63   44,395.63
+Subordinated liabilities   3,630.29   -   3,725.52   -   3,725.52
+161,684.63   -   69,789.45   92,290.33   162,079.78
+*Fair value computed using discounted cash flow method.
+Fair value of financial instruments measured at amortised cost as at 31 March 2022
+(C in crore)
+Fair value measurement using
+Quoted prices in   Significant   Significant
+active markets   observable   unobservable
+Particulars   Carrying value   (Level 1) inputs (Level 2)* inputs (Level 3)*   Total
+Financial assets
+Loans   144,276.25   -   -   144,827.76   144,827.76
+Investments   5,125.74   5,129.73   -   -   5,129.73
+149,401.99   5,129.73   -   144,827.76   149,957.49
+Financial liabilities
+Debt securities   59,034.58   -   60,106.37   -   60,106.37
+Borrowings (other than debt
+securities)   29,870.38   -   -   29,870.38   29,870.38
+Deposits   30,289.13   -   -   30,454.77   30,454.77
+Subordinated liabilities   3,845.77   -   4,143.60   -   4,143.60
+123,039.86   -   64,249.97   60,325.15   124,575.12
+*Fair value computed using discounted cash flow method.
+Standalone Financial Statements 261
+
+===== page 314 =====
+Notes to standalone financial statements for the year ended 31 March 2023 (Contd.)
+52 The disclosures as required by the NBFC Master Directions and Disclosures in Financial
+Statements- Notes to Accounts of NBFCs as issued by RBI (Disclosures are made as per
+Ind AS financial statements except otherwise stated) (Contd.)
+(T) Transactions with related parties
+For the year ended 31 March 2023
+1. Parent (as per ownership or control)   2. Subsidiaries   3. Associate   4. Director
+Maximum   Maximum O/s   Maximum   Maximum O/s
+Sr   Transaction Outstanding O/s during Transaction Outstanding during the Transaction Outstanding O/s during Transaction Outstanding   during the
+No. Item/Related Party   value at year end   the year   value at year end   year   value at year end   the year   value at year end   year
+1   Borrowings   - (770.00) (845.00)   -   -   -   -   -   -   -   -   -
+2 Deposits   -   -   -   -   -   -   -   -   -   -   -   (0.30)
+3 Placement of deposits   -   -   -   10.00   0.08   5.08   -   -   -   -   -   -
+4 Advances   -   -   -   7,478.00   -   655.00   -   -   -   -   -   -
+5 Investments   -   -   -   2,500.00 8,198.38 8,198.38   92.74   92.74   92.74   -   -   -
+6 Purchase of fixed/other
+assets   0.08   (0.09)   NA   0.48   (0.35)   NA   -   -   NA   -   -   NA
+7 Sale of fixed/other
+assets   0.15   -   NA   0.80   0.10   NA   -   -   NA   -   -   NA
+8 Interest paid   50.50   -   NA   -   -   NA   -   -   NA   0.01   -   NA
+9 Interest received   -   -   NA   5.23   -   NA   -   -   NA   -   -   NA
+10 Others
+Dividend paid   635.63   -   NA   -   -   NA   -   -   NA   0.94   -   NA
+Loan portfolio assigned
+in   -   -   NA   1,789.90   -   NA   -   -   NA   -   -   NA
+Others   45.34   (66.09)   NA   112.74   2.50   NA   4.98   -   NA   3.36   (2.25)   NA
+731.70 (836.18) (845.00) 11,897.15 8,200.71 8,858.46   97.72   92.74   92.74   4.31   (2.25)   (0.30)
+For the year ended 31 March 2022
+1. Parent (as per ownership or control)   2. Subsidiaries   3. Director   4. Relative of Director
+Maximum O/s   Maximum O/s   Maximum O/s   Maximum O/s
+Sr   Transaction Outstanding during the Transaction Outstanding during the Transaction Outstanding during the Transaction Outstanding during the
+No. Item/Related Party   value at year end   year   value at year end   year   value at year end   year   value at year end   year
+1   Borrowings   - (685.00) (720.00)   -   -   -   -   -   -   -   -   -
+2 Deposits   -   -   -   4,900.00   - (750.00)   -   -   -   -   (2.00)   (2.00)
+3 Placement of deposits   -   -   -   -   0.08   0.08   -   -   -   -   -   -
+4 Advances   -   -   -   7,270.00   50.00   500.00   -   -   -   -   -   -
+5 Investments   -   -   -   400.00 5,698.38 5,698.38   -   -   -   -   -   -
+6 Purchase of fixed/other
+assets   -   -   NA   0.38   -   NA   -   -   NA   -   -   NA
+7 Sale of fixed/other
+assets   0.01   -   NA   0.28   -   NA   -   -   NA   -   -   NA
+8 Interest paid   42.17   -   NA   3.82   -   NA   -   -   NA   0.04   -   NA
+9 Interest received   -   -   NA   5.51   0.01   NA   -   -   NA   -   -   NA
+10 Others
+Dividend Paid   317.82   -   NA   -   -   NA   0.54   -   NA   0.26   -   NA
+Loan portfolio assigned
+in   NA   1,503.69   -   NA   -   -   NA   -   -   NA
+Others   40.65   (63.56)   NA   821.06   (0.14)   NA   4.09   (2.70)   NA   0.09   (0.05)   NA
+400.65 (748.56) (720.00) 14,904.74 5,748.33 5,448.46   4.63   (2.70)   -   0.39   (2.05)   (2.00)
+NA in above statement denotes ‘Not Applicable’.
+*The amount is below the rounding off norm adopted by the Company.
+th
+296 36 Annual Report 2022-23
+
+===== page 342 =====
+Consolidated Statement of Cash Flows
+(C in crore)
+For the year ended 31 March
+Particulars   2023   2022
+(I)   Operating activities
+Profit before tax   15,527.86   9,503.78
+Adjustments for:
+Interest income   (35,550.19)   (27,277.24)
+Depreciation and amortisation   485.38   384.57
+Impairment on financial instruments   3,189.65   4,803.40
+Net loss on disposal of property, plant and equipment and intangible assets   13.33   24.84
+Finance costs   12,559.89   9,753.70
+Share based payment expenses   224.41   161.23
+Net gain on fair value changes   (334.32)   (327.73)
+Service fees for management of assigned portfolio of loans   (38.18)   (74.96)
+Income on derecognised (assigned) loans   (23.17)   -
+Dividend income (C 31,125, Previous year C 30,750)
+Share of (profit)/loss from associate   (1.67)   -
+(3,947.01)   (3,048.41)
+Cash inflow from interest on loans   35,034.46   27,627.36
+Cash inflow from service asset   106.59   95.77
+Cash outflow towards finance costs   (13,112.46)   (9,002.65)
+Cash generated from operation before working capital changes   18,081.58   15,672.07
+Working capital changes
+(Increase)/decrease in bank balances other than cash and cash equivalents   (2,441.80)   16.57
+(Increase)/decrease in trade receivables   (93.43)   (320.93)
+(Increase)/decrease in loans   (54,412.09)   (50,347.94)
+(Increase)/decrease in other financial assets   87.83   (141.34)
+(Increase)/decrease in other non-financial assets   47.16   (23.48)
+(Increase)/decrease in derivative financial instruments   8.75   -
+Increase/(decrease) in trade payables   292.93   274.07
+Increase/(decrease) in other payables   285.69   139.82
+Increase/(decrease) in other financial liabilities   80.42   90.45
+Increase/(decrease) in provisions   75.83   22.70
+Increase/(decrease) in other non-financial liabilities   (181.09)   114.21
+(56,249.80)   (50,175.87)
+Income tax paid (net of refunds)   (3,972.18)   (2,586.10)
+Net cash used in operating activities (I)   (42,140.40)   (37,089.90)
+(II) Investing activities
+Purchase of property, plant and equipment and capital work-in-progress   (482.85)   (375.55)
+Sale of property, plant and equipment   19.81   19.14
+Purchase of intangible assets and intangible assets under development   (395.47)   (258.62)
+Purchase of investments measured at amortised cost   (148.72)   (14,366.94)
+Proceeds from liquidation of investments measured at amortised cost   5,107.14   10,279.41
+Purchase of investments classified as FVOCI   (21,272.49)   (3,291.40)
+Proceeds from liquidation of investments classified as FVOCI   10,900.36   2,083.84
+Purchase of investments classified as FVTPL   (296,988.97)   (223,239.39)
+Proceeds from liquidation of investments classified as FVTPL   292,353.31   235,378.88
+Purchase of equity investments designated under FVOCI   -   (283.16)
+Dividend income (C 31,125, Previous year C 30,750)
+Interest received on investments   635.37   400.58
+Investment in associate   (92.74)   -
+Net cash (used in)/generated from investing activities (II)   (10,365.25)   6,346.79
+th
+324 36 Annual Report 2022-23

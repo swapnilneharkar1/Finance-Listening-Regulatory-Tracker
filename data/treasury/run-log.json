@@ -1,5 +1,5 @@
 {
- "started": "2026-10-28T06:00:25.542Z",
+ "started": "2026-10-28T06:23:18.757Z",
  "companies": {
   "BFL": {
    "reports": [
@@ -46,7 +46,7 @@
     },
     {
      "fy": "FY25",
-     "status": "extraction error: Invalid PDF structure",
+     "status": "extraction error: Invalid PDF structure (pdf.js: Invalid Root reference.; 3702784 bytes; starts \"%PDF-1.7.%......\"; ends \"`....NU3..b7>*.P..j.L.......].f.\")",
      "url": "https://nsearchives.nseindia.com/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf"
     },
     {
@@ -158,8 +158,20 @@
     },
     {
      "fy": "FY25",
-     "status": "extraction error: Invalid PDF structure",
+     "status": "extraction error: Invalid PDF structure (pdf.js: Invalid Root reference.; 2981888 bytes; starts \"%PDF-1.7.%......\"; ends \";.)F............C..... ....A...r\")",
      "url": "https://nsearchives.nseindia.com/annual_reports/AR_26821_CHOLAFIN_2024_2025_A_09072025221445.pdf"
+    },
+    {
+     "fy": "FY25",
+     "status": "extracted",
+     "url": "https://files.cholamandalam.com/Annual_Report_for_FY_2024_25_6829876a3e.pdf",
+     "notes": [
+      "debt_securities: note p.155; breakdown not readable -> using balance-sheet total",
+      "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.178, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 157.00 vs balance sheet 6390.39) -> book size only"
+     ]
     },
     {
      "fy": "FY24",
@@ -213,20 +225,123 @@
       "subordinated: note p.258; breakdown sums to 6727.00 vs balance sheet 6975.9 -> using balance-sheet total",
       "investments: 4 lines from note p.250"
      ]
+    },
+    {
+     "fy": "FY25",
+     "status": "extracted",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2024-25.pdf",
+     "notes": [
+      "debt_securities: 2 lines from note p.174, reconciles to balance sheet",
+      "borrowings: 3 lines from note p.175, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 2 lines from note p.176, reconciles to balance sheet",
+      "investments: 4 lines from note p.169"
+     ]
+    },
+    {
+     "fy": "FY24",
+     "status": "extracted",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2023-24.pdf",
+     "notes": [
+      "debt_securities: 2 lines from note p.158, reconciles to balance sheet",
+      "borrowings: 3 lines from note p.159, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 2 lines from note p.160, reconciles to balance sheet",
+      "investments: 5 lines from note p.153"
+     ]
+    },
+    {
+     "fy": "FY23",
+     "status": "extracted",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2022-23.pdf",
+     "notes": [
+      "debt_securities: 1 lines from note p.139, reconciles to balance sheet",
+      "borrowings: 3 lines from note p.140, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 2 lines from note p.142, reconciles to balance sheet",
+      "investments: 4 lines from note p.134"
+     ]
+    },
+    {
+     "fy": "FY22",
+     "status": "extracted",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/HDB_Annual-Report-2021-22.pdf",
+     "notes": [
+      "debt_securities: 2 lines from note p.122, reconciles to balance sheet",
+      "borrowings: 4 lines from note p.123, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 2 lines from note p.126, reconciles to balance sheet",
+      "investments: 4 lines from note p.119"
+     ]
     }
    ],
-   "missing": [
-    "FY24",
-    "FY23",
-    "FY22"
-   ]
+   "missing": []
   },
   "TATACAP": {
-   "reports": [],
-   "missing": [
-    "no annual reports found — add links in treasury-sources.js"
-   ]
+   "reports": [
+    {
+     "fy": "FY26",
+     "status": "extracted",
+     "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/25-26/tata-capital-limited-annual-report-fy-2025-26.pdf",
+     "notes": [
+      "debt_securities: 5 lines from note p.216, reconciles to balance sheet",
+      "borrowings: 10 lines from note p.220, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.226, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 23063.13 vs balance sheet 11239.92) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY25",
+     "status": "extracted",
+     "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/24-25/tata-capital-limited.pdf",
+     "notes": [
+      "debt_securities: 5 lines from note p.396, reconciles to balance sheet",
+      "borrowings: 9 lines from note p.405, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.406, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 19071.34 vs balance sheet 11500.66) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY24",
+     "status": "extracted",
+     "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/23-24/tata-capital-limited.pdf",
+     "notes": [
+      "debt_securities: 4 lines from note p.371, reconciles to balance sheet",
+      "borrowings: 7 lines from note p.379, reconciles to balance sheet",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 3 lines from note p.380, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 24019.36 vs balance sheet 9492.97) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY23",
+     "status": "extracted",
+     "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/22-23/tata-capital-limited-annual-report-fy-2022-23.pdf",
+     "notes": [
+      "debt_securities: note p.297; breakdown sums to 0.00 vs balance sheet 332351 -> using balance-sheet total",
+      "borrowings: not on the balance sheet (treated as nil)",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 1 lines from note p.328, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 1913148.00 vs balance sheet 1459849) -> book size only"
+     ]
+    },
+    {
+     "fy": "FY22",
+     "status": "extracted",
+     "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/21-22/TATA%20Capital%20-%20Annual%20Report%20FY%202021-22.pdf",
+     "notes": [
+      "debt_securities: note p.268; breakdown sums to 0.00 vs balance sheet 298046 -> using balance-sheet total",
+      "borrowings: not on the balance sheet (treated as nil)",
+      "deposits: not on the balance sheet (treated as nil)",
+      "subordinated: 1 lines from note p.298, reconciles to balance sheet",
+      "investments: breakdown not readable (sum 5323942.00 vs balance sheet 1013997) -> book size only"
+     ]
+    }
+   ],
+   "missing": []
   }
  },
- "finished": "2026-10-28T06:07:16.773Z"
+ "finished": "2026-10-28T06:37:26.904Z"
 }

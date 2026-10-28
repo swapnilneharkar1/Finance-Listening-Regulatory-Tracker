@@ -1,0 +1,214 @@
+{
+ "ok": true,
+ "fy": "FY22",
+ "prevFy": "FY21",
+ "unit": "crore",
+ "pages": 246,
+ "standalonePages": [
+  96,
+  172
+ ],
+ "statement": {
+  "investments": {
+   "cy": 2233.51,
+   "py": 1592.9,
+   "note": "9",
+   "page": 96
+  },
+  "debt_securities": {
+   "cy": 25332.31,
+   "py": 23802.07,
+   "note": "16",
+   "page": 96
+  },
+  "borrowings": {
+   "cy": 19501.72,
+   "py": 22569.07,
+   "note": "17",
+   "page": 96
+  },
+  "subordinated": {
+   "cy": 4139.05,
+   "py": 3987.61,
+   "note": "18",
+   "page": 96
+  },
+  "finance_cost": {
+   "cy": 3325.5,
+   "py": 3882.93,
+   "note": "27",
+   "page": 97
+  }
+ },
+ "borrowing": {
+  "FY22": [
+   {
+    "label": "Privately placed redeemable non convertible debenture",
+    "category": "Secured NCDs",
+    "value": 25357.7,
+    "page": 122,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper",
+    "category": "Commercial paper",
+    "value": 0,
+    "page": 123,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 4017,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under",
+    "category": "Bank term loans",
+    "value": 14291.45,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 1205.64,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under ARC",
+    "category": "Other borrowings",
+    "value": 0,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Privately placed subordinated (Tier II) redeemable bonds",
+    "category": "Subordinated debt",
+    "value": 3500,
+    "page": 126,
+    "section": "subordinated"
+   },
+   {
+    "label": "Redeemable non convertible perpetual bonds",
+    "category": "Subordinated debt",
+    "value": 650,
+    "page": 126,
+    "section": "subordinated"
+   }
+  ],
+  "FY21": [
+   {
+    "label": "Privately placed redeemable non convertible debenture",
+    "category": "Secured NCDs",
+    "value": 23356.2,
+    "page": 122,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper",
+    "category": "Commercial paper",
+    "value": 400,
+    "page": 123,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 4849.83,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under",
+    "category": "Bank term loans",
+    "value": 15614.53,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 2036.41,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under ARC",
+    "category": "Other borrowings",
+    "value": 97.2,
+    "page": 123,
+    "section": "borrowings"
+   },
+   {
+    "label": "Privately placed subordinated (Tier II) redeemable bonds",
+    "category": "Subordinated debt",
+    "value": 3500,
+    "page": 126,
+    "section": "subordinated"
+   },
+   {
+    "label": "Redeemable non convertible perpetual bonds",
+    "category": "Subordinated debt",
+    "value": 500,
+    "page": 126,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY22": [
+   {
+    "label": "Mutual fund units",
+    "category": "Mutual funds",
+    "value": 572.21,
+    "page": 119
+   },
+   {
+    "label": "Treasury bills / G-Sec",
+    "category": "Treasury bills",
+    "value": 882.82,
+    "page": 119
+   },
+   {
+    "label": "Securities receipt of ARC",
+    "category": "Other investments",
+    "value": 136.42,
+    "page": 119
+   },
+   {
+    "label": "Unquoted equity shares",
+    "category": "Equity",
+    "value": 1.45,
+    "page": 119
+   }
+  ]
+ },
+ "totals": {
+  "FY22": 49021.79,
+  "FY21": 50354.17
+ },
+ "finance_cost": {
+  "FY22": 3325.5,
+  "FY21": 3882.93
+ },
+ "log": [
+  "debt_securities: 2 lines from note p.122, reconciles to balance sheet",
+  "borrowings: 4 lines from note p.123, reconciles to balance sheet",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 2 lines from note p.126, reconciles to balance sheet",
+  "investments: 4 lines from note p.119"
+ ],
+ "investment_total": {
+  "FY22": 2233.51,
+  "FY21": 1592.9
+ },
+ "url": "https://www.hdbfs.com/sites/default/files/reports/HDB_Annual-Report-2021-22.pdf",
+ "via": "company website",
+ "reportFy": "FY22",
+ "extractor": 2,
+ "sha": "5554cd54572f3520",
+ "extractedAt": "2026-10-28T06:34:13.962Z"
+}

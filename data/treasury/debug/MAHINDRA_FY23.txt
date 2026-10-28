@@ -1,0 +1,491 @@
+https://nsearchives.nseindia.com/annual_reports/AR_22127_M&MFIN_2022_2023_01072023204544_07012023210002.zip
+Reason: breakdown problems: borrowings: note p.204; breakdown sums to 40126.47 vs balance sheet 41234.06 -> using balance-sheet total
+Pages: 311
+Repeated header/footer lines (ignored): th | st | st st | business | management report on standalone consolidated | corporate board s responsibility | discussion and corporate financial financial | overview ir report sustainability | analysis governance statements statements | report | in crores | for the year ended 31 march 2023 for the year ended 31 march 2023 | notes forming part of the standalone notes forming part of the standalone | financial statements financial statements | notes forming part of the consolidated notes forming part of the consolidated | as at 31 march 2023 as at 31 march 2023
+
+===== page 186 =====
+Business
+Management   Report on   Standalone   Consolidated
+Corporate   Board’s   Responsibility
+Discussion and Corporate   Financial   Financial
+Overview & IR   Report   & Sustainability
+Analysis   Governance   Statements   Statements
+Report
+Standalone Balance Sheet   Standalone Statement of Profit and Loss
+st   st
+as at 31 March 2023   for the year ended 31 March 2023
+₹ in crores   ₹ in crores
+As at   As at   Year ended   Year ended
+Particulars   Note   st   st   Particulars   Note
+31 March 2023 31 March 2022   st   st
+31 March 2023 31 March 2022
+ASSETS   Revenue from operations
+Financial Assets   i) Interest income   24   10,682.57   9,475.61
+a) Cash and cash equivalents   3   249.75   327.87
+ii) Dividend income   -   -
+b) Bank balance other than (a) above   4   2,582.31   3,822.82
+iii) Rental income   72.68   26.31
+c) Derivative financial instruments   5   -   26.63
+iv) Fees and commission income   25   167.96   105.29
+d) Receivables
+- Trade receivables   6   21.84   9.09   v) Net gain on fair value changes   26   5.59   50.76
+e) Loans   7   79,454.73   60,444.64   I Total revenue from operations   10,928.80   9,657.97
+f) Investments   8   9,988.62   8,440.27   II Other income   27   127.29   60.83
+g) Other financial assets   9   1,589.28   223.13   III Total income (I+II)   11,056.09   9,718.80
+93,886.53   73,294.45
+Expenses
+Non-financial Assets
+i) Finance costs   28   4,576.72   3,920.18
+a) Current tax assets (Net)   504.36   462.40
+ii) Fees and commission expense   80.24   44.91
+b) Deferred tax assets (Net)   10 (i)   637.24   836.42
+c) Property, plant and equipment   11   681.20   383.10   iii) Impairment on financial instruments   29   999.23   2,368.30
+d) Other Intangible assets   12   14.35   9.77   iv) Employee benefits expenses   30   1,584.27   1,171.40
+e) Other non-financial assets   13   492.87   302.59   v) Depreciation, amortisation and impairment   31   187.23   126.83
+2,330.02   1,994.28   vi) Others expenses   32   875.82   730.27
+Total Assets   96,216.55   75,288.73
+IV Total expenses   8,303.51   8,361.89
+LIABILITIES AND EQUITY
+V Profit before exceptional items and tax (III-IV)   2,752.58   1,356.91
+LIABILITIES
+VI Exceptional items   33   (54.51)   -
+Financial Liabilities
+a) Derivative financial instruments   14   180.70   182.22   VII Profit before tax (V+VI)   2,698.07   1,356.91
+b) Payables   15   VIII Tax expense:   10 (ii)
+I) Trade payables   (i) Current tax   486.28   348.16
+i) total outstanding dues of micro enterprises and small enterprises   -   -   (ii) Deferred tax   227.47   20.00
+ii) total outstanding dues of creditors other than micro enterprises and small   1,126.57   954.88
+713.75   368.16
+enterprises
+II) Other payables   IX Profit for the year (VII-VIII)   1,984.32   988.75
+i) total outstanding dues of micro enterprises and small enterprises   2.62   3.53   X Other Comprehensive Income (OCI)
+ii) total outstanding dues of creditors other than micro enterprises and small   37.12   46.87   (A) (i) Items that will not be reclassified to profit or loss
+enterprises
+- Remeasurement gain / (loss) on defined benefit plans   (17.27)   (3.10)
+c) Debt securities   16   24,745.07   18,252.71
+- Net gain / (loss) on equity instruments through OCI   -   26.01
+d) Borrowings (Other than debt securities)   17   41,234.06   26,005.17
+e) Deposits   18   5,524.60   8,426.19   (ii) Income tax relating to items that will not be reclassified to profit or loss   10 (iii)   4.35   (5.77)
+f) Subordinated liabilities   19   3,442.13   3,129.85   Subtotal (A)   (12.92)   17.14
+g) Other financial liabilities   20   2,384.28   2,316.17   (B) (i) Items that will be reclassified to profit or loss
+78,677.15   59,317.59   - Net gain / (loss) on debt instruments through OCI   (88.82)   0.70
+Non-Financial Liabilities
+- Effective portion of gains and loss on designated portion of hedging   (6.34)   -
+a) Current tax liabilities (net)   65.67   13.92
+instruments in a cash flow hedge
+b) Provisions   21   260.74   221.35
+(ii) Income tax relating to items that will be reclassified to profit or loss   10 (iii)   23.95   (0.18)
+c) Other non-financial liabilities   22   124.08   107.78
+450.49   343.05   Subtotal (B)   (71.20)   0.52
+EQUITY   23   Other Comprehensive Income (A+B)   (84.12)   17.67
+a) Equity share capital   246.72   246.60   XI Total Comprehensive Income for the year (IX+X)   1,900.20   1,006.42
+b) Other equity   16,842.19   15,381.49
+XII Earnings per equity share (face value ₹ 2/- per equity share)   34
+17,088.91   15,628.09
+Basic (Rupees)   16.09   8.02
+Total Liabilities and Equity   96,216.55   75,288.73
+Diluted (Rupees)   16.08   8.01
+The accompanying notes form an integral part of the Standalone financial statements.   1 to 65
+The accompanying notes form an integral part of the Standalone financial statements.   1 to 65
+In terms of our report attached.
+In terms of our report attached.
+For Deloitte Haskins & Sells   For and on behalf of the Board of Directors
+For Deloitte Haskins & Sells   For and on behalf of the Board of Directors
+Chartered Accountants   Mahindra & Mahindra Financial Services Limited
+Chartered Accountants   Mahindra & Mahindra Financial Services Limited
+Firm’s Registration No: 117365W
+Firm’s Registration No: 117365W
+Rupen K. Bhatt   Dr. Anish Shah   Ramesh Iyer
+Rupen K. Bhatt   Dr. Anish Shah   Ramesh Iyer
+Partner   Chairman   Vice-Chairman & Managing Director
+Partner   Chairman   Vice-Chairman & Managing Director
+Membership No: 046930   [DIN: 02719429]   [DIN: 00220759]
+Membership No: 046930   [DIN: 02719429]   [DIN: 00220759]
+For Mukund M. Chitale & Co.   Vivek Karve   Brijbala Batwal
+For Mukund M. Chitale & Co.   Vivek Karve   Brijbala Batwal
+Chartered Accountants   Chief Financial Officer   Company Secretary
+Chartered Accountants   Chief Financial Officer   Company Secretary
+Firm’s Registration No: 106655W   Membership No: F5220
+Firm’s Registration No: 106655W   Membership No: F5220
+M. M. Chitale
+M. M. Chitale
+Partner
+Partner
+Membership No: 14054
+Membership No: 14054
+Place: Mumbai   Place: Mumbai
+Place: Mumbai   Place: Mumbai
+Date: 28th April 2023   Date: 28th April 2023   th   th
+Date: 28 April 2023   Date: 28 April 2023
+266 Empowering Emerging India   INTEGRATED REPORT 2022̡23 267
+
+===== page 187 =====
+Business
+Management   Report on   Standalone   Consolidated
+Corporate   Board’s   Responsibility
+Discussion and Corporate   Financial   Financial
+Overview & IR   Report   & Sustainability
+Analysis   Governance   Statements   Statements
+Report
+Statement of Changes in Equity for   Statement of Changes in Equity for
+Standalone Financial Statements   Standalone Financial Statements
+st   st
+for the year ended 31 March 2023   for the year ended 31 March 2023
+-   -   -   -   -   -   -   -
+-   -
+2.30   6.50   1.57 3.72
+Total   Total
+0.20   0.12   988.7517.67 (98.84)   (84.12)
+1,984.32 (444.79)
+Amount246.40246.40 246.60246.60246.60 246.72   14,465.111,006.42   15,381.491,900.20
+14,465.11
+- - - -   - -   -   - - -   - 15,381.49- - -   - -   - - - -
+₹ in crores   ₹ in crores   –   -   - 15,381.49   ₹ in crores
+(4.74)(4.74)   (4.74) 16,842.19
+hedges   hedges
+Effectivecash flow   Effectivecash flow
+portion of   portion of
+-   -   - -   -   - - -   -   - - - - -   - - - -
+35)   35)
+1.99   1.99
+19.47   21.46
+Equity   19.47   21.46   Equity   21.46   21.46
+instrumentsthrough OCI(Refer note   instrumentsthrough OCI(Refer note
+-   -   - -   -   - - -   -   -   - -   - - - -
+35)   35)
+Debt   0.520.52   Debt
+(57.82) (57.82)   (57.30)   (57.30)(57.30)(66.46)(66.46)
+(123.76)
+instrumentsthrough OCI(Refer note   instrumentsthrough OCI(Refer note
+-   -   -   - -   -   -   - - -
+(2.32)
+988.75986.43(98.84)   (12.92)
+(198.00)   (444.79)   (398.00)
+Retainedearnings4,558.404,558.40   5,247.99   Retainedearnings5,247.995,247.991,984.321,971.40   6,376.60
+-   - - - -   -   -   -   - - - -   -   -
+6.50   3.72
+stock 42.76 42.76   (0.12)   31.29   stock 31.2931.29   (0.54)   23.30
+(17.85)   (11.18)
+options   options
+Employee   Employee
+outstanding   outstanding
+-   - - - - -   -   - -   -   - - - - -   -   - -
+0.12   0.54
+Ramesh IyerVice-Chairman & Managing Director[DIN: 00220759]Brijbala BatwalCompany SecretaryMembership No: F5220
+797.29   797.41
+Generalreserve797.29   797.41   Generalreserve797.41   797.94
+-   - - - -   - - -   -   - - - -   - - -
+2.30   1.57
+17.85   11.18
+premium7,137.147,137.14   7,157.29   premium7,157.297,157.29   7,170.04
+Securities   Securities
+Reserves and Surplus -   - - - - -   -   - - -   Reserves and Surplus -   - - - - -   - - - -
+April 2023
+th
+50.00 50.00   50.00   50.0050.00   50.00
+Capitalreserve   Capitalreserve
+redemption   redemption
+For and on behalf of the Board of DirectorsMahindra & Mahindra Financial Services LimitedDr. Anish ShahChairman[DIN: 02719429]Vivek KarveChief Financial OfficerPlace: MumbaiDate: 28
+-   - - - - -   -   - -   -   - - - - -   - - -
+as per   198.00   as per   398.00
+reserveSection45-IC ofthe RBI   reserveSection45-IC ofthe RBI
+1,935.35   2,133.35
+1,935.35   2,133.35   2,133.35   2,531.35
+Statutory Act, 1934   Statutory Act, 1934
+April 2021   April 2022
+st   st
+April 2022
+April 2021
+st
+March 2022   March 2023   st
+April 2021   st April 2022   st
+st   st   March 2022   March 2023
+st   April 2022   st
+st
+April 2023
+th
+Equity share capital   Other Equity
+April 2021
+st
+A.   ParticularsIssued, Subscribed and fully paid up:Balance as at 1Changes due to prior period errorsRestated balance as at 1Changes during the year:Add: Allotment of shares by ESOS Trust to employees on exercise of options (refer note 36)Balance as at 31Balance as at 1Changes due to prior period errorsRestated balance as at 1Changes during the year:Add: Allotment of shares by ESOS Trust to employees on exercise of options (refer note 36)Balance as at 31B.   ParticularsBalance as at1 Changes in accounting policy/prior period errorsRestated balance as at 1Profit/(loss) for the yearOther Comprehensive Income / (loss)Total Comprehensive Income for the yearDividend paid on equity shares (including tax thereon)Transfers to Securities premium on exercise of employee stockoptionsSecurities premium on shares allotted to ESOP Trust throughRights IssueEmployee stock options expiredShare based payment expenseTransfers to Statutory reservesBalance as at 31   ParticularsBalance as at 1Changes in accounting policy/prior period errorsRestated balance as at 1Profit/(loss) for the yearOther Comprehensive Income / (loss)Total Comprehensive Income for the yearDividend paid on equity shares (including tax thereon)Transfers to Securities premium on exercise of employee stockoptionsSecurities premium on transfer of ESOP Shares to employeesEmployee stock options expiredShare based payment expenseTransfers to Statutory reservesBalance as at 31
+The accompanying notes 1 to 65 form an integral part of the Standalone financial statements.In terms of our report attached.For Deloitte Haskins & SellsChartered AccountantsFirm’s Registration No: 117365WRupen K. BhattPartnerMembership No: 046930For Mukund M. Chitale & Co.Chartered AccountantsFirm’s Registration No: 106655WM. M. ChitalePartnerMembership No: 14054Place: MumbaiDate: 28
+268 Empowering Emerging India   INTEGRATED REPORT 2022̡23 269
+
+===== page 188 =====
+Business
+Management   Report on   Standalone   Consolidated
+Corporate   Board’s   Responsibility
+Discussion and Corporate   Financial   Financial
+Overview & IR   Report   & Sustainability
+Analysis   Governance   Statements   Statements
+Report
+Statement of Standalone Cash Flows   Statement of Standalone Cash Flows
+st   st
+for the year ended 31 March 2023   for the year ended 31 March 2023
+₹ in crores   ₹ in crores
+Year ended   Year ended   Year ended   Year ended
+Particulars   st   st   Particulars   st   st
+31 March 2023 31 March 2022   31 March 2023 31 March 2022
+A)   CASH FLOW FROM OPERATING ACTIVITIES   C)   CASH FLOW FROM FINANCING ACTIVITIES
+Profit before exceptional items and taxes   2,752.58   1,356.91   Proceeds from borrowings through Debt Securities   16,501.95   6,425.50
+Adjustments for:   Repayment of borrowings through Debt Securities   (10,005.95)   (5,019.80)
+Depreciation, amortisation and impairment   187.23   126.83   Proceeds from Borrowings (Other than Debt Securities)   33,521.08   39,444.31
+Impairment on financial instruments (excluding bad debts and write offs)   (1,214.13)   (144.77)   Repayment of Borrowings (Other than Debt Securities)   (18,362.66)   (42,505.96)
+Bad debts and write offs   2,213.36   2,513.07   Proceeds from borrowings through Subordinated Liabilities   380.00   132.91
+Interest expense   4,535.85   3,866.50   Repayment of borrowings through Subordinated Liabilities   (70.01)   (155.16)
+Interest income from loans   (9,949.25)   (8,909.59)
+(Decrease) / Increase in loans repayable on demand and cash credit/overdraft facilities   169.97   –
+Interest income from other deposits with banks   (210.08)   (181.36)   with banks (net)
+Net (Gain) / loss on fair value of derivative financial instruments   (10.77)   7.99   Increase / (decrease) in Public deposits (net)   (2,905.23)   (1,034.09)
+Unrealised foreign exchange gain/loss   (96.85)   (90.38)   Payments for principal portion of lease liability   (56.80)   (44.14)
+Share based payments to employees   4.55   9.20   Dividend paid   (444.79)   (98.84)
+Net gain on fair value changes   26.74   (11.70)   NET CASH GENERATED FROM / (USED IN) FINANCING ACTIVITIES (C)   18,727.56   (2,855.27)
+Interest income on investments   (523.24)   (384.66)   NET INCREASE / (DECREASE) IN CASH AND CASH EQUIVALENTS (A+B+C)   (78.12)   (242.71)
+Dividend income   (4.12)   (2.47)   CASH AND CASH EQUIVALENTS AT THE BEGINING OF THE YEAR   327.87   570.58
+Net gain on derecognition of property, plant and equipment   (2.89)   (1.27)   CASH AND CASH EQUIVALENTS AT THE END OF THE YEAR   249.75   327.87
+Net (gain) / loss on sale of investments   (5.59)   64.80   Components of Cash and Cash Equivalents
+Operating profit / (loss) before working capital changes   (2,296.61)   (1,780.90)   Cash and cash equivalents at the end of the year
+Adjustments for changes in working capital -
+- Cash on hand   32.91   40.58
+Loans   (21,125.42)   (4,610.88)
+- Cheques and drafts on hand   17.65   36.30
+Trade receivables   (11.71)   (0.43)
+- Balances with banks in current accounts   199.19   250.99
+Other financial assets   (129.52)   (8.92)
+Total   249.75   327.87
+Other financial liabilities   31.78   125.09
+Notes:
+Other non-financial assets   (107.16)   (11.08)
+1) The above Statement of Standalone Cash Flow has been prepared under the 'Indirect method' as set out in Ind AS 7 on
+Trade Payables   161.03   362.19
+'Statement of Cash Flows'.
+Other non-financial liabilities   16.30   8.88
+Derivative financial instruments   35.88   0.14   2) Purchase of Property, plant and equipment and intangible assets represents additions to Property, plant and equipment
+Provisions   21.87   4.35   and intangible assets adjusted for movement of capital-work-in-progress during the year.
+Cash generated from / (used in) operations before adjustments for interest
+(23,403.57)   (5,911.56)
+received and interest paid
+Interest paid   (4,668.87)   (4,234.25)
+Interest received from loans   11,063.93   10,654.89
+Cash generated from / (used in) operations   (17,008.51)   509.08   In terms of our report attached.
+Income taxes paid (net of refunds)   (476.49)   (509.40)
+For Deloitte Haskins & Sells
+NET CASH GENERATED FROM / (USED IN) OPERATING ACTIVITIES (A)   (17,485.00)   (0.32)
+Chartered Accountants   For and on behalf of the Board of Directors
+B)   CASH FLOW FROM INVESTING ACTIVITIES
+Firm’s Registration No: 117365W   Mahindra & Mahindra Financial Services Limited
+Purchase of Property, plant and equipment and intangible assets   (362.55)   (275.45)
+Rupen K. Bhatt   Dr. Anish Shah   Ramesh Iyer
+Proceeds from sale of Property, plant and equipment   13.55   5.26
+Partner   Chairman   Vice-Chairman & Managing Director
+Purchase of investments measured at amortised cost   (400.42)   (223.76)
+Membership No: 046930   [DIN: 02719429]   [DIN: 00220759]
+Proceeds from sale of investments measured at amortised cost   496.35   77.44
+(Increase) / decrease in Investment in Triparty Repo Dealing System (TREPS) (net)   –   2,404.00   For Mukund M. Chitale & Co.   Vivek Karve   Brijbala Batwal
+Purchase of investments measured at FVOCI   (915.95)   (17.75)   Chartered Accountants   Chief Financial Officer Company Secretary
+Proceeds from sale of investments measured at FVOCI   345.34   39.06   Firm’s Registration No: 106655W   Membership No: F5220
+Purchase of investments measured at FVTPL   (4,404.44)   (9,939.03)
+M. M. Chitale
+Proceeds from sale of investments measured at FVTPL   3,177.54   10,941.90
+Partner
+Purchase of investments measured at cost   (0.00)   (33.99)
+Membership No: 14054
+Proceeds from / (Investments in) term deposits with banks (net)   (8.44)   (871.82)
+Place: Mumbai   Place: Mumbai
+Dividend income received   4.12   2.47   th   th
+Date: 28 April 2023   Date: 28 April 2023
+Interest received from other deposits with banks   221.59   128.74
+Interest income received on investments measured at amortised cost, FVOCI, FVTPL
+512.64   375.78
+and at cost
+Change in Earmarked balances with banks   (0.02)   0.02
+NET CASH GENERATED FROM / (USED IN) IN INVESTING ACTIVITIES (B)   (1,320.68)   2,612.88
+270 Empowering Emerging India   INTEGRATED REPORT 2022̡23   271
+===== note page 203 =====
+Business
+Management   Report on   Standalone   Consolidated
+Corporate   Board’s   Responsibility
+Discussion and Corporate   Financial   Financial
+Overview & IR   Report   & Sustainability
+Analysis   Governance   Statements   Statements
+Report
+Notes forming part of the Standalone   Notes forming part of the Standalone
+Financial Statements   Financial Statements
+st   st
+for the year ended 31 March 2023   for the year ended 31 March 2023
+Note : 16
+₹ in crores
+31st March 2023 31st March 2022
+Debt Securities
+a) Dues remaining unpaid to any supplier at the year end
+₹ in crores
+– Principal   2.62   3.53   31st March 2023 31st March 2022
+– Interest on the above   At Amortised cost
+b) Interest paid in terms of Section 16 of the MSMED Act along with the amount of   -   -   Non–convertible debentures (Secured)   19,464.32   16,610.55
+payment made to the supplier beyond the appointed day during the year
+Non–convertible debentures (Unsecured)   994.95   795.82
+– Principal paid beyond the appointed date   -   -
+Commercial Papers (Unsecured)   3,936.00   496.56
+– Interest paid in terms of Section 16 of the MSMED Act
+Rupee Denominated Secured Bonds overseas (Masala Bonds)   349.80   349.78
+c) Amount of interest due and payable for the period of delay on payments made   -   -
+Total   24,745.07   18,252.71
+beyond the appointed day during the year
+Debt securities in India   24,395.27   17,902.93
+d) Amount of interest accrued and remaining unpaid
+Debt securities outside India   349.80   349.78
+e) Further interest due and payable even in the succeeding years, until such date when   -   -
+the interest due as above are actually paid to the small enterprises   Total   24,745.07   18,252.71
+2.62   3.53
+Note: There is no debt securities measured at FVTPL or designated at FVTPL.
+The Secured Non-convertible debentures are secured by pari-passu charges on Buildings (forming part of PPE)
+Trade Payables aging schedule
+and exclusive charges on receivables under loan contracts having carrying value of ₹ 22,363.93 crore (March
+st
+As at 31 March 2023
+2022: ₹ 21,093.21 crore).
+₹ in crores
+Outstanding for following periods from due date of payment
+There are no redeemed bonds/debentures which the Company has power to reissue.
+Particulars   Less than   More than 3
+1 - 2 years   2 - 3 years   Total
+1 year   years
+i)   MSME   2.62   -   -   -   2.62   Details of Non-convertible debentures (Secured):
+st   st
+ii)   Others   1,094.44   17.64   7.11   44.50   1,163.69   As at 31 March 2023   As at 31 March 2022
+Total   1,097.06   17.64   7.11   44.50   1,166.31   Interest   Interest
+From the Balance Sheet date   Amount   Amount
+rate range   rate range
+Disputed dues –
+A) Issued on private placement basis (wholesale) –
+– MSME   -   -   -   -   -
+Repayable on maturity:
+– Others   -   -   -   0.59   0.59
+Maturing within 1 years   5.25%-8.75%   3,969.70   4.80%-8.95%   3,677.90
+Maturing between 1 years to 3 years   6.25%-9.00%   8,203.00   4.93%-8.95%   6,383.00
+There is neither an instance where due date is not specified nor there is any unbilled due.   Maturing between 3 years to 5 years   7.90%-8.25%   752.25   6.25%-9.00%   1,565.00
+st
+As at 31 March 2022
+Maturing beyond 5 years   7.45%-8.48%   4,978.00   7.75%-8.48%   2,978.00
+₹ in crores
+Sub–total at face value   17,902.95   14,603.90
+Outstanding for following periods from due date of payment
+Repayable in Half yearly instalments:
+Particulars   Less than   More than 3
+1 - 2 years   2 - 3 years   Total   Maturing between 1 year to 3 years   6.35%   168.75   6.35%   56.25
+1 year   years
+Maturing between 3 years to 5 years   6.35%   56.25   6.35%   168.75
+i)   MSME   3.53   -   -   -   3.53
+Sub-total at face value   225.00   225.00
+ii)   Others   890.49   22.34   28.43   60.49   1,001.75
+Total at face value (A)   18,127.95   14,828.90
+Total   894.02   22.34   28.43   60.49   1,005.28
+B) Issued on retail public issue –
+Disputed dues –
+Repayable on maturity:
+– MSME   -   -   -   -   -
+Maturing within 1 year   9.10%-9.15%   535.56   9.00%-9.05%   405.41
+– Others   -   -   -   0.59   0.59
+Maturing between 1 year to 3 years   -   -   9.10%-9.15%   535.56
+Maturing between 3 years to 5 years   9.20%-9.30%   869.15   9.20%-9.30%   869.15
+There is neither an instance where due date is not specified nor there is any unbilled due.
+Sub-total at face value (B)   1,404.71   1,810.12
+Total at face value (A+B)   19,532.66   16,639.02
+Less: Unamortised discounting charges   68.34   28.47
+Total amortised cost   19,464.32   16,610.55
+300 Empowering Emerging India   INTEGRATED REPORT 2022̡23   301
+===== note page 204 =====
+Business
+Management   Report on   Standalone   Consolidated
+Corporate   Board’s   Responsibility
+Discussion and Corporate   Financial   Financial
+Overview & IR   Report   & Sustainability
+Analysis   Governance   Statements   Statements
+Report
+Notes forming part of the Standalone   Notes forming part of the Standalone
+Financial Statements   Financial Statements
+st   st
+for the year ended 31 March 2023   for the year ended 31 March 2023
+Details of Non-convertible debentures (Unsecured) –:   ₹ in crores
+₹ in crores   st   st
+31 March 2023 31 March 2022
+As at 31st March 2023   As at 31st March 2022
+b) Loans from related parties
+Interest   Interest
+From the Balance Sheet date   Amount   Amount   Unsecured -
+rate range   rate range
+- Inter-corporate deposits (ICDs)   437.00   348.26
+Repayable on maturity:
+c) Loans repayable on demand
+Maturing beyond 5 years   8.53%   1,000.00   8.53%   800.00
+Secured –
+Total at face value   1,000.00   800.00
+- Cash credit facilities with banks   169.97   -
+Less: Unamortised discounting charges   5.05   4.18
+d) Other loans and advances
+Total amortised cost   994.95   795.82
+Unsecured -
+- Inter-corporate deposits (ICDs) other than related parties   500.62   -
+Details of Commercial Papers (Unsecured):   Total   41,234.06   26,005.17
+₹ in crores
+As at 31st March 2023   As at 31st March 2022   Borrowings in India   38,683.35   23,827.65
+Interest   Interest   Borrowings outside India   2,550.71   2,177.52
+From the Balance Sheet date   Amount   Amount
+rate range   rate range   Total   41,234.06   26,005.17
+Repayable on maturity:
+Maturing within 1 year   5.50%-8.26%   4,075.00   4.70%   500.00   Note: There is no borrowings measured at FVTPL or designated at FVTPL.
+Total at face value   4,075.00   500.00
+The secured term loans from banks and External Commercial Borrowings are secured by exclusive charges on
+Less: Unamortised discounting charges   139.00   3.44
+receivables under loan contracts having carrying amount of ₹ 30,645.34 crore (March 2022: ₹ 21,830.92 crore).
+Total amortised cost   3,936.00   496.56
+The borrowings have not been guaranteed by directors or others. Also the Company has not defaulted in
+repayment of principal and interest.
+Rupee Denominated Secured Bonds overseas (Masala Bonds)
+₹ in crores
+As at 31st March 2023   As at 31st March 2022
+Details of term loans from banks (Secured):
+Interest   Interest   ₹ in crores
+From the Balance Sheet date   Amount   Amount
+rate range   rate range   st   st
+As at 31 March 2023   As at 31 March 2022
+Repayable on maturity:
+Interest   Interest
+From the Balance Sheet date   Amount   Amount
+Maturing between 1 year to 3 years   7.40%   350.00   7.40%   350.00   rate range   rate range
+Total at face value   350.00   350.00   1) Repayable on maturity:
+Less: Unamortised discounting charges   0.20   0.22   Maturing within 1 year   5.98%-8.85%   3,020.00   4.40%-6.95%   821.00
+Total amortised cost   349.80   349.78   Maturing between 1 year to 3 years   -   -   5.25%-6.10%   1,100.00
+Total for repayable on maturity   3,020.00   1,921.00
+2) Repayable in installments:
+Note : 17
+i) Quarterly -
+Borrowings (Other than Debt Securities)
+Maturing within 1 year   5.15%-8.89%   4,820.25   4.50%-7.35%   3,502.99
+₹ in crores
+Maturing between 1 year to 3 years   5.15%-8.62%   6,767.00   4.50%-6.95%   3,768.70
+31st March 2023 31st March 2022
+Maturing between 3 years to 5 years   5.75%-8.62%   1,833.35   4.50%-5.80%   451.00
+At Amortised cost
+Sub-Total   13,420.60   7,722.69
+a) Term loans
+ii) Half yearly -
+i) Secured -
+Maturing within 1 year   6.25%-10.50%   3,267.11 4.47%-10.50%   1,431.99
+- from banks   30,622.15   15,305.19
+Maturing between 1 year to 3 years   6.25%-8.40%   5,238.56 4.47%-10.50%   3,063.58
+- External Commercial Borrowings   2,550.71   2,177.52
+Maturing beyond 3 years to 5 years   7.45%-8.40%   2,689.03   4.47%-4.90%   249.13
+- Associated liabilities in respect of securitisation transactions   6,718.60   8,089.20
+Sub-Total   11,194.70   4,744.70
+ii) Unsecured -
+iii) Yearly -
+- from banks   85.00   85.00
+Maturing within 1 year   7.49%-8.72%   460.00   5.40%-6.85%   380.00
+- from other parties   150.01   -
+Maturing between 1 year to 3 years   7.49%-8.72%   1,649.17   4.46%-6.00%   395.00
+Maturing between 3 years to 5 years   8.35%-8.72%   877.50   4.46%-6.00%   141.67
+Sub-Total   2,986.67   916.67
+Total for repayable in instalments   27,601.97   13,384.06
+Total (1+2) (As per contractual terms)   30,621.97   15,305.06
+302 Empowering Emerging India   INTEGRATED REPORT 2022̡23 303

@@ -1,0 +1,237 @@
+https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/21-22/TATA%20Capital%20-%20Annual%20Report%20FY%202021-22.pdf
+Reason: breakdown problems: debt_securities: note p.268; breakdown sums to 0.00 vs balance sheet 298046 -> using balance-sheet total | investments: breakdown not readable (sum 5323942.00 vs balance sheet 1013997) -> book size only
+Pages: 357
+Repeated header/footer lines (ignored): annual report 2021 22 | in lakh | march 31 2022 march 31 2021 | notes forming part of standalone financial statements
+
+===== page 262 =====
+Annual Report 2021-22
+StAndAlone bAlAnCe Sheet AS At MArCh 31, 2022
+(` in lakh)
+note   As at   As at
+particulars
+no.   March 31, 2022 March 31, 2021
+ASSetS
+(I)   Financial Assets
+(a)   Cash and cash equivalents   3   195   2,511
+(b)   Bank balance other than (a) above   4   13   16
+(c)   Receivables
+(i) Trade receivables   5(i)   1,265   1,289
+(ii) Other receivables   5(ii)   24   7
+(d)   Loans   6   97,510   1,27,948
+(e)   Investments   7   10,13,997   9,08,263
+(f)   Other financial assets   8   774   74
+total Financial Assets   11,13,778   10,40,108
+(II)   non-Financial Assets
+(a)   Current tax assets (net)   2,222   826
+(b)   Deferred tax assets (net)   9   -   42
+(c)   Investment property   10   4,935   5,247
+(d)   Property, plant and equipment   10   3,504   3,745
+(e)   Other intangible assets   10   2   4
+(f)   Right of use assets   10   37   9
+(g)   Other non-financial assets   11   1,773   1,405
+total non-Financial Assets   12,473   11,278
+total Assets   11,26,251   10,51,386
+lIAbIlItIeS And eQuIty
+lIAbIlItIeS
+(I)   Financial liabilities
+(a)   Payables
+(i) Trade payables
+-   Total outstanding dues of micro enterprises and 12(i)   9   2
+small enterprises
+-   Total outstanding dues other than micro enterprises   12   2,297   2,034
+and small enterprises
+(b)   Debt securities   13   2,98,046   2,29,107
+(c)   Subordinated liabilities   14   1,10,983   1,15,740
+(d)   Lease liability   36   9
+(e)   Other financial liabilities   15   10,963   9,253
+total Financial liabilities   4,22,334   3,56,145
+(II)   non-Financial liabilities
+(a)   Provisions   16   436   435
+(b)   Deferred tax liabilities (Net)   9   80   -
+(c)   Other non-financial liabilities   17   1,603   1,929
+total non-Financial liabilities   2,119   2,364
+eQuIty
+(a)   Equity share capital   18   3,51,617   3,51,617
+(b)   Other equity   19   3,50,181   3,41,260
+total equity   7,01,798   6,92,877
+total liabilities and equity   11,26,251   10,51,386
+Summary of significant accounting policies   2
+See accompanying notes forming part of the Standalone Financial Statements 3-53
+In terms of our report attached   For and on behalf of the Board of Directors
+For Khimji Kunverji & Co llp   Saurabh Agrawal   F. n. Subedar   Varsha purandare
+Chartered Accountants   (Chairman)   (Director)   (Director) (Pune)
+Firm’s Registration No: 105146W/W100621 DIN: 02144558   DIN: 00028428   DIN: 05288076
+hasmukh b. dedhia   Malvika Sinha   Aarthi Subramanian   rajiv Sabharwal
+Partner   (Director)   (Director)   (Managing Director & CEO)
+Membership No: 033494   DIN: 08373142   DIN: 07121802   DIN: 00057333
+Sarita Kamath   rakesh bhatia
+(Head - Legal and   (Chief Financial Officer)
+Mumbai   Compliance &
+April 26, 2022   Company Secretary)
+260
+
+===== page 263 =====
+StAndAlone StAteMent oF proFIt And loSS For the yeAr ended MArCh 31, 2022
+(` in lakh)
+For the year   For the year
+note
+particulars   ended   ended
+no.
+March 31, 2022 March 31, 2021
+I   revenue from operations
+(i)   Interest income   22   14,213   10,098
+(ii)   Dividend income   20,717   20,035
+(iii) Rental income   1,901   1,901
+(iv) Fee and commission income   23   5,214   4,458
+(v) Net gain on fair value changes   24   518   477
+(vi) Net gain on de-recognition of associate   923   -
+I   total revenue from operations   43,486   36,969
+II   Other income   25   4,732   2,200
+III   Profit on sale of investment   2,971   6,048
+IV   total income (I+II+III)   51,189   45,217
+V   expenses
+(i)   Finance costs   27   28,970   25,513
+(ii)   Impairment on investments at cost and financial   28   730   1,898
+instruments
+(iii) Employee benefits expense   29   8,742   9,184
+(iv) Depreciation, amortisation and impairment   10   710   727
+(v) Other expenses   30   1,742   1,592
+V   total expenses   40,894   38,914
+VI   Profit before exceptional items and tax (IV-V)   10,295   6,303
+VII exceptional Items   -   -
+VIII Profit before tax (VI-VII)   10,295   6,303
+Ix   tax expenses :
+(1) Current tax   1,826   1,538
+(2) Deferred tax charge   159   98
+Ix   total net tax expense   31   1,985   1,636
+x   Profit for the period (VIII-IX)   8,310   4,667
+xI   other Comprehensive Income
+(A) (i)   Items that will not be reclassified to profit or loss
+(a) Remeasurement of defined employee benefit plans   9   451
+(ii) Income tax relating to items that will not be   (2)   (114)
+reclassified to profit or loss
+Subtotal A ((i) + (ii))   7   337
+(b) (i)   Items that will be reclassified to profit or loss
+(a) Debt instruments at fair value through Other   (144)   458
+Comprehensive Income - net change in fair value
+(ii) Income tax relating to items that will be   38   (107)
+reclassified to profit or loss
+Subtotal b ((i) + (ii))   (106)   351
+xI   total other Comprehensive Income (A+b)   (99)   688
+261
+
+===== page 264 =====
+Annual Report 2021-22
+StAndAlone StAteMent oF proFIt And loSS For the yeAr ended MArCh 31, 2022 (Contd.)
+(` in lakh)
+For the year   For the year
+note
+particulars   ended   ended
+no.
+March 31, 2022 March 31, 2021
+xII total Comprehensive Income for the year (x+xI)   8,211   5,355
+xIII earnings per equity share:   32
+Equity Share of par value ` 10/- each
+(1) Basic (`)   0.24   0.13
+(2) Diluted (`)   0.24   0.13
+Summary of significant accounting policies   2
+See accompanying notes forming part of the Standalone Financial 3-53
+Statements
+In terms of our report attached   For and on behalf of the Board of Directors
+For Khimji Kunverji & Co llp   Saurabh Agrawal   F. n. Subedar   Varsha purandare
+Chartered Accountants   (Chairman)   (Director)   (Director) (Pune)
+Firm’s Registration No: 105146W/W100621 DIN: 02144558   DIN: 00028428   DIN: 05288076
+hasmukh b. dedhia   Malvika Sinha   Aarthi Subramanian   rajiv Sabharwal
+Partner   (Director)   (Director)   (Managing Director & CEO)
+Membership No: 033494   DIN: 08373142   DIN: 07121802   DIN: 00057333
+Sarita Kamath   rakesh bhatia
+(Head - Legal and   (Chief Financial Officer)
+Mumbai   Compliance &
+April 26, 2022   Company Secretary)
+262
+===== note page 268 =====
+Annual Report 2021-22
+StAndAlone CASh FloW StAteMent For the yeAr ended MArCh 31, 2022 (contd...)
+(` in lakh)
+Changes in Liabilities arising from financing activities
+particulars   debt   borrowing   Subordinated
+securities   (other than   liabilities
+debt securities)
+balance as at April 1, 2020   1,75,216   -   1,46,146
+Net change due to proceeds/ (repayment)   51,613   -   (30,740)
+Others *   2,278   -   335
+balance as at March 31, 2021   2,29,107   -   1,15,740
+Net change due to proceeds/ (repayment)   67,409   -   (4,988)
+Others *   1,530   -   231
+balance as at March 31, 2022   2,98,046   -   1,10,983
+Summary of significant accounting policies   2
+See accompanying notes forming part of the Standalone 3-53
+Financial Statements
+* Others includes the effect of interest accrued but not due, amortisation of borrowing cost, amortisation
+of premium/discount on CPs/NCDs.
+In terms of our report attached   For and on behalf of the Board of Directors
+For Khimji Kunverji & Co llp   Saurabh Agrawal   F. n. Subedar   Varsha purandare
+Chartered Accountants   (Chairman)   (Director)   (Director) (Pune)
+Firm’s Registration No: 105146W/W100621 DIN: 02144558   DIN: 00028428   DIN: 05288076
+hasmukh b. dedhia   Malvika Sinha   Aarthi Subramanian   rajiv Sabharwal
+Partner   (Director)   (Director)   (Managing Director & CEO)
+Membership No: 033494   DIN: 08373142   DIN: 07121802   DIN: 00057333
+Sarita Kamath   rakesh bhatia
+(Head - Legal and   (Chief Financial Officer)
+Mumbai   Compliance &
+April 26, 2022   Company Secretary)
+266
+===== note page 298 =====
+Annual Report 2021-22
+Notes foRmiNg pARt of stANdAloNe fiNANciAl stAtemeNts
+note “14”   (` in lakh)
+As at   As at
+SubordInAted lIAbIlItIeS
+March 31, 2022 March 31, 2021
+At Amortised cost
+UNSECURED
+(a) Preference Shares other than those that qualify as equity
+(i)   Cumulative Redeemable Preference Shares   1,10,983   1,15,740
+(Refer Footnote 1) [Face Value ` 1,10,992 lakh (As at
+March 31, 2021 ` 1,15,980 lakh)]
+total (A)   1,10,983   1,15,740
+Subordinated Liabilities in India   1,10,983   1,15,740
+Subordinated Liabilities outside India   –   –
+total (b)   1,10,983   1,15,740
+Footnote 1: Of the above Subordinated Liabilities, Preference shares amounting to face value of ` 5,150
+lakh (March 31, 2021 : ` 5,233 lakh) are held by related parties.
+No default has been made in repayment of any Debt securities, Subordinated liabilities and interest
+thereon for the year ended March 31, 2022 and March 31, 2021.
+particulars of Cumulative redeemable preference Shares :   (` in lakh)
+particulars   tranche no of   Allotment date   redemption   redemption date / March   March
+shares   date/ Actual   early redemption 31, 2022 31, 2021
+redemption date   date
+7.50% Cumulative   T   12,76,000   March 10, 2017   March 9, 2024   March 9, 2024   12,760   12,757
+Redeemable Preference
+U   6,04,500   July 7, 2017   July 6, 2024   July 6, 2024   6,045   6,036
+Shares of ` 1,000 each
+U   45,500   July 7, 2017   August 23, 2021   August 23, 2021   -   454
+V   7,36,000   July 12, 2017   July 11, 2024   July 11, 2024   7,360   7,350
+V   14,000   July 12, 2017   August 23, 2021   August 23, 2021   -   140
+W   6,69,500   July 26, 2017   July 25, 2024   July 25, 2024   6,695   6,685
+W   80,500   July 26, 2017   August 23, 2021   August 23, 2021   -   804
+7.33% Cumulative   X   7,50,000   July 28, 2017   July 27, 2024   July 27, 2024   7,500   7,489
+Redeemable Preference
+Y   6,59,500   August 4, 2017   August 3, 2024   August 3, 2024   6,666   6,585
+Shares of ` 1,000 each
+Y   88,000   August 4, 2017   August 23, 2021   August 23, 2021   -   879
+7.15% Cumulative   Z   6,45,500 September 15, 2017 September 14, 2024 September 14, 2024   6,455   6,439
+Redeemable Preference
+Z   1,04,500 September 15, 2017 November 30, 2021 November 30, 2021   -   1,042
+Shares of ` 1,000 each
+7.10% Cumulative   AA   5,83,700 September 29, 2017 September 28, 2024 September 28, 2024   5,837   5,822
+Redeemable Preference
+AA   1,66,300 September 29, 2017 November 30, 2021 November 30, 2021   -   1,659
+Shares of ` 1,000 each
+AB   4,00,000   April 20, 2018   April 19, 2025 September 30, 2022   3,996   3,983
+AC   4,00,000   May 10, 2018   May 9, 2025 September 30, 2022   3,996   3,983
+AD   3,34,500   June 15, 2018   June 14, 2025 September 30, 2022   3,341   3,330
+7.75% Cumulative   AE   4,00,000   March 13, 2019   March 12, 2026   June 30, 2023   3,985   3,977
+Redeemable Preference
+Shares of Rs. 1,000 each
+296

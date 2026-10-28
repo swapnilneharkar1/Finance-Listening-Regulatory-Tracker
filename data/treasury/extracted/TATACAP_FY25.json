@@ -1,0 +1,315 @@
+{
+ "ok": true,
+ "fy": "FY25",
+ "prevFy": "FY24",
+ "unit": "crore",
+ "pages": 554,
+ "standalonePages": [
+  342,
+  554
+ ],
+ "statement": {
+  "investments": {
+   "cy": 11500.66,
+   "py": 9492.97,
+   "note": "8",
+   "page": 342
+  },
+  "debt_securities": {
+   "cy": 51807.61,
+   "py": 39065.71,
+   "note": "14",
+   "page": 343
+  },
+  "borrowings": {
+   "cy": 87204.94,
+   "py": 54687.05,
+   "note": "15",
+   "page": 343
+  },
+  "subordinated": {
+   "cy": 8325.37,
+   "py": 7161.55,
+   "note": "16",
+   "page": 343
+  },
+  "finance_cost": {
+   "cy": 10889.48,
+   "py": 6645.67,
+   "note": "29",
+   "page": 344
+  }
+ },
+ "borrowing": {
+  "FY25": [
+   {
+    "label": "Privately Placed Non-Convertible Debentures (Refer note",
+    "category": "Secured NCDs",
+    "value": 34517.69,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Public issue of Non-Convertible Debentures (Refer note",
+    "category": "Secured NCDs",
+    "value": 723.7,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately Placed Non-Convertible Debentures",
+    "category": "Unsecured NCDs",
+    "value": 2474.95,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper (Refer note 14.4 below)",
+    "category": "Commercial paper",
+    "value": 10641.76,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Medium Term Notes",
+    "category": "Unsecured NCDs",
+    "value": 3449.51,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term Loans (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 53200.8,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings (Refer note 15.2 below)",
+    "category": "ECB loans",
+    "value": 17056.23,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term Loans (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 8327.29,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings (Refer note 15.2 below)",
+    "category": "ECB loans",
+    "value": 831.06,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term Loans (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 653.54,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 6485.49,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Bank Overdraft (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 50.12,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 574.9,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter corporate deposits from others (Refer note 15.2 below)",
+    "category": "Deposits",
+    "value": 25.51,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Non-Convertible Subordinated Debentures",
+    "category": "Subordinated debt",
+    "value": 6870.18,
+    "page": 406,
+    "section": "subordinated"
+   },
+   {
+    "label": "Non-Convertible Perpetual Debentures",
+    "category": "Subordinated debt",
+    "value": 1124.67,
+    "page": 406,
+    "section": "subordinated"
+   },
+   {
+    "label": "Cumulative Redeemable Preference Shares",
+    "category": "Subordinated debt",
+    "value": 330.52,
+    "page": 406,
+    "section": "subordinated"
+   }
+  ],
+  "FY24": [
+   {
+    "label": "Privately Placed Non-Convertible Debentures (Refer note",
+    "category": "Secured NCDs",
+    "value": 29075.87,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Public issue of Non-Convertible Debentures (Refer note",
+    "category": "Secured NCDs",
+    "value": 1182.67,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately Placed Non-Convertible Debentures",
+    "category": "Unsecured NCDs",
+    "value": 2831.34,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper (Refer note 14.4 below)",
+    "category": "Commercial paper",
+    "value": 5975.83,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Medium Term Notes",
+    "category": "Unsecured NCDs",
+    "value": 0,
+    "page": 396,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term Loans (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 28136.97,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings (Refer note 15.2 below)",
+    "category": "ECB loans",
+    "value": 9137.17,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term Loans (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 12986.07,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings (Refer note 15.2 below)",
+    "category": "ECB loans",
+    "value": 802.28,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term Loans (Refer note 15.2 below)",
+    "category": "Bank term loans",
+    "value": 0,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 3183.6,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Bank Overdraft (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 0,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Working capital demand loan (Refer note 15.2 below)",
+    "category": "Cash credit & WCDL",
+    "value": 400,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter corporate deposits from others (Refer note 15.2 below)",
+    "category": "Deposits",
+    "value": 40.96,
+    "page": 405,
+    "section": "borrowings"
+   },
+   {
+    "label": "Non-Convertible Subordinated Debentures",
+    "category": "Subordinated debt",
+    "value": 5242.07,
+    "page": 406,
+    "section": "subordinated"
+   },
+   {
+    "label": "Non-Convertible Perpetual Debentures",
+    "category": "Subordinated debt",
+    "value": 1124.09,
+    "page": 406,
+    "section": "subordinated"
+   },
+   {
+    "label": "Cumulative Redeemable Preference Shares",
+    "category": "Subordinated debt",
+    "value": 795.39,
+    "page": 406,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY25": []
+ },
+ "totals": {
+  "FY25": 147337.91999999998,
+  "FY24": 100914.31000000001
+ },
+ "finance_cost": {
+  "FY25": 10889.48,
+  "FY24": 6645.67
+ },
+ "log": [
+  "debt_securities: 5 lines from note p.396, reconciles to balance sheet",
+  "borrowings: 9 lines from note p.405, reconciles to balance sheet",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 3 lines from note p.406, reconciles to balance sheet",
+  "investments: breakdown not readable (sum 19071.34 vs balance sheet 11500.66) -> book size only"
+ ],
+ "investment_total": {
+  "FY25": 11500.66,
+  "FY24": 9492.97
+ },
+ "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/24-25/tata-capital-limited.pdf",
+ "via": "company website",
+ "reportFy": "FY25",
+ "extractor": 2,
+ "sha": "3d2418f8563b9384",
+ "extractedAt": "2026-10-28T06:36:30.009Z"
+}

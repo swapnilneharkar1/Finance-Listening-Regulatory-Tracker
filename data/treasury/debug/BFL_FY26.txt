@@ -1,0 +1,309 @@
+https://nsearchives.nseindia.com/annual_reports/AR_29642_BAJFINANCE_2025_2026_A_23098027_07072026220255.pdf
+Reason: Standalone balance sheet not found
+Pages: 515
+Repeated header/footer lines (ignored): th | corporate statutory financial | overview reports statements | thth | c in crore | particulars 2026 2025 | notes to standalone financial statements for the year ended 31 march 2026 contd | notes to consolidated financial statements for the year ended 31 march 2026 contd
+Candidate pages: 279 (10 lines), 350 (9 lines), 383 (10 lines), 417 (10 lines), 490 (8 lines), 494 (10 lines)
+
+===== page 279 =====
+Standalone Statement of Cash Flows
+(C in crore)
+For the year ended 31 March
+Particulars   2026   2025
+(I)   Operating activities
+Profit before tax   23,671.90   21,676.09
+Adjustments for:
+Interest income   (61,357.11)   (51,548.57)
+Depreciation and amortisation expenses   942.19   821.98
+Impairment on financial instruments (Gross of recoveries)   10,076.03   7,882.86
+Net loss on disposal of property, plant and equipment and intangible assets   17.16   32.86
+Finance costs   21,416.98   18,436.31
+Share based payment expenses   394.32   353.99
+Net gain on fair value changes   (336.93)   (344.00)
+Service fees for management of assigned portfolio of loans   (10.62)   (18.11)
+Income on derecognised (assigned) loans   (364.02)   (459.02)
+Exceptional items - Gain on sale of shares of subsidiary   (1,416.38)   (2,544.11)
+Dividend income   (4.50)   (10.96)
+(6,970.98)   (5,720.68)
+Cash inflow from interest on loans   59,564.64   49,069.13
+Cash inflow from interest on Investments   2,642.81   2,071.14
+Cash inflow from servicing of assigned loans   25.13   33.85
+Cash outflow towards finance cost   (19,238.05)   (16,614.78)
+Cash generated from operation before working capital changes   36,023.55   28,838.66
+Working capital changes:
+(Increase)/decrease in bank balances other than cash and cash equivalents   (2,595.90)   (3,288.21)
+(Increase)/decrease in trade receivables   (195.46)   (180.96)
+(Increase)/decrease in loans   (75,582.46)   (69,587.98)
+(Increase)/decrease in Investments classified as FVTPL   5,065.58   (1,701.86)
+(Increase)/decrease in other financial assets   676.30   8.37
+(Increase)/decrease in other non-financial assets   52.05   (111.24)
+Increase/(decrease) in trade payables   160.30   119.72
+Increase/(decrease) in other payables   188.67   136.05
+Increase/(decrease) in other financial liabilities   684.74   (33.24)
+Increase/(decrease) in provisions   225.55   56.69
+Increase/(decrease) in other non-financial liabilities   147.47   30.20
+(71,173.16)   (74,552.46)
+Income tax paid (net of refunds)   (5,704.17)   (4,918.83)
+Net cash used in operating activities (I)   (40,853.78)   (50,632.63)
+(II) Investing activities
+Purchase of property, plant and equipment and capital work-in-progress   (515.71)   (551.21)
+Purchase of intangible assets and intangible assets under development   (382.26)   (478.61)
+Sale of property, plant and equipment and intangible assets   59.06   30.79
+Purchase of investments measured at amortised cost   (15,756.03)   (11,191.62)
+Proceeds from liquidation of investments measured at amortised cost   15,862.63   11,353.97
+Purchase of investments classified as FVOCI   (41,067.86)   (30,735.22)
+Proceeds from liquidation of investments classified as FVOCI   39,834.74   29,745.96
+Purchase of equity investments designated under FVOCI   (64.72)   (35.00)
+Proceeds from sale of equity investments designated at FVOCI   99.15   -
+Dividend received   4.50   10.96
+Proceeds from dilution of stake in subsidiary (net of expenses and tax)   1,380.22   2,587.85
+Investment in subsidiaries   (600.00)   (2,200.00)
+Net cash used in investing activities (II)   (1,146.28)   (1,462.13)
+th
+246 39 Annual Report 2025-26
+
+===== page 350 =====
+Corporate   Statutory   Financial
+Overview   Reports   Statements
+Notes to standalone financial statements for the year ended 31 March 2026 (Contd.)
+48 Fair values (Contd.)
+Fair value of financial instruments measured at amortised cost as at 31 March 2026
+(C in crore)
+Fair value measurement using
+Quoted
+prices   Significant   Significant
+in active   observable unobservable
+Carrying   markets   inputs   inputs
+Particulars   value   (Level 1)   (Level 2)   (Level 3)   Total
+Financial Assets
+Loans   367,225.96   -   -   367,337.37   367,337.37
+Investments   87.74   -   -   88.20   88.20
+367,313.70   -   -   367,425.57   367,425.57
+Financial liabilities
+Debt Securities   133,527.08   -   133,633.97   -   133,633.97
+Borrowings
+(other than debt securities)   118,000.45   -   -   118,007.13   118,007.13
+Deposits   68,485.55   -   -   69,518.11   69,518.11
+Subordinated liabilities   2,805.31   -   2,812.64   -   2,812.64
+322,818.39   -   136,446.61   187,525.24   323,971.85
+Fair value of financial instruments measured at amortised cost as at 31 March 2025
+(C in crore)
+Fair value measurement using
+Quoted
+prices   Significant   Significant
+in active   observable unobservable
+Carrying   markets   inputs   inputs
+Particulars   value   (Level 1)   (Level 2)   (Level 3)   Total
+Financial Assets
+Loans   304,359.16   -   -   304,703.42   304,703.42
+Investments   193.85   -   -   194.64   194.64
+304,553.01   -   -   304,898.06   304,898.06
+Financial liabilities
+Debt Securities   111,010.88   -   112,546.20   -   112,546.20
+Borrowings (other than debt
+securities)   89,737.66   -   -   89,726.79   89,726.79
+Deposits   71,365.52   -   -   71,680.85   71,680.85
+Subordinated liabilities   3,103.54   -   3,140.92   -   3,140.92
+275,217.60   -   115,687.12   161,407.64   277,094.76
+Standalone Financial S tatements   317
+
+===== page 383 =====
+Notes to standalone financial statements for the year ended 31 March 2026 (Contd.)
+54 The disclosures as required by Master Direction – Reserve Bank of India (Non-Banking
+Financial Companies – Financial Statements: Presentation and Disclosures) Directions,
+2025 as amended from time to time (Contd.)
+(T) Disclosure of transactions with related parties
+(Cincrore)
+1. Parent
+(as per ownership or
+control)   2. Subsidiaries   3. Associate   4. Director
+31 March   31 March   31 March   31 March
+S. No. Item/Related Party   2026   2025   2026   2025   2026   2025   2026   2025
+(A)   Details of Related party
+transactions during the
+year ended
+1   Borrowings   -   -   -   -   -   -   -   -
+2   Deposits   -   -   -   -   42.91   40.00   -   0.00
+3   Placement of deposits   1.30   -   -   -   -   -   -   -
+4   Advances   -   -   47,007.00   19,170.00   0.94   0.32   0.02   -
+5   Investmets   -   -   600.00   2,200.00   -   -   -   -
+6   Purchase of fixed/other
+assets   -   -   1.05   0.93   -   -   -   -
+7   Sale of fixed/other assets   0.85   -   0.62   0.49   -   -   -   0.02
+8   Interest paid   113.71   93.74   -   -   3.06   1.80   0.00   0.00
+9   Interest received   -   -   1.88   5.48   0.07   0.00   -   -
+10   Others - Loan portfolio
+Assigned in   -   -   3,645.28   3,361.67   -   -   -   -
+11   Others - Dividend paid   1,788.45   1,144.14   -   -   -   -   2.65   1.69
+12   Others - Proceeds for
+conversion of 1,550,000
+warrants   -   891.64   -   -   -   -   -   -
+13   Others   20.38   21.05   61.36   112.09   55.52   51.25   43.00   39.32
+1,924.69   2,150.56   51,317.19   24,850.66   102.50   93.38   45.67   41.03
+(B)   Outstanding Balances for
+the year ended
+1   Borrowings   (300.00)   (800.00)   -   -   -   -   -   -
+2   Deposits   (550.00)   (550.00)   -   -   (42.91)   (40.00)   -   (0.01)
+3   Placement of deposits   1.30   -   0.08   0.08   -   -   -   -
+4   Advances   -   -   -   525.00   1.06   0.32   -   -
+5   Investmets   -   -   10,625.21   10,191.81   360.20   360.20   -   -
+6   Purchase of fixed/other
+assets   -   -   -   -   -   -   -   -
+7   Sale of fixed/other assets   -   -   -   0.03   -   -   -   -
+8   Interest paid   (114.06)   (69.78)   -   -   (1.46)   (1.62)   -   (0.00)
+9   Interest received   -   -   -   -   -   -   -   -
+10   Others - Contribution to
+equity shares of BFL   (319.37)   (63.87)   -   -   -   -   (0.47)   (0.09)
+11   Others   -   -   0.91   (1.26)   -   (11.84)   (13.11)   (18.51)
+(1,282.13)   (1,483.66)   10,626.20   10,715.66   316.89   307.07   (13.58)   (18.62)
+(C)   Maximum Outstanding
+balances for the year
+ended
+1   Borrowings   (800.00)   (800.00)   -   -   -   -   -   -
+2   Deposits   (550.00)   (550.00)   -   -   (42.91)   (40.00)   (0.01)   (0.01)
+3   Placement of deposits   1.30   -   0.08   0.08   -   -   -
+4   Advances   -   -   725.00   730.00   1.12   0.32   0.02   -
+5   Investments   -   -   10,791.81   10,598.38   360.20   360.20   -   -
+(1,348.70)   (1,350.00)   11,516.89   11,328.46   318.41   320.53   0.01   (0.01)
+'0.00' represents the amount below the rounding off norm adopted by the Company
+With respect to above disclosure, related parties includes all related parties as defined in Indian Accounting Standard 24,
+as defined in section 2(76) of Companies Act, 2013 and Key Management Personal as defined in section 2(51) of Companies Act, 2013
+th
+350 39 Annual Report 2025-26
+
+===== page 417 =====
+Consolidated Statement of Cash Flows
+(C in crore)
+For the year ended 31 March
+Particulars   2026   2025
+(I)   Operating activities
+Profit before tax   25,816.65   22,079.63
+Adjustments for:
+Interest income   (72,776.01)   (61,163.55)
+Depreciation and amortisation expenses   1,008.98   880.99
+Impairment on financial instruments (Gross of recoveries)   10,281.50   7,966.03
+Net loss on disposal of property, plant and equipment and other intangible assets   18.34   35.50
+Finance costs   28,665.95   24,769.75
+Share based payment expenses   439.60   393.98
+Net gain on fair value changes   (471.24)   (539.03)
+Service fees for management of assigned portfolio of loans   (15.71)   (27.13)
+Income on derecognised (assigned) loans   (465.46)   (552.04)
+Dividend income   (1.14)   (1.28)
+Share of (profit)/loss from associate   (16.46)   (17.81)
+(7,515.00)   (6,174.96)
+Cash inflow from interest on loans   70,393.75   58,185.94
+Cash inflow from interest on investments   2,947.54   2,313.47
+Cash inflow from servicing of assigned loans   51.39   59.31
+Cash outflow towards finance cost   (25,946.79)   (22,420.31)
+Cash generated from operation before working capital changes   39,930.89   31,963.45
+Working capital changes:
+(Increase)/decrease in bank balances other than cash and cash equivalents   (4,124.26)   (3,095.95)
+(Increase)/decrease in trade receivables   (52.03)   (206.31)
+(Increase)/decrease in loans   (103,794.27)   (89,988.25)
+(Increase)/decrease in investments classified as FVTPL   6,212.53   (1,429.16)
+(Increase)/decrease in other financial assets   736.52   531.57
+(Increase)/decrease in other non-financial assets   33.81   (116.70)
+(Increase)/decrease in derivative financial instruments (net)   105.12   56.54
+Increase/(decrease) in trade payables   226.49   (186.00)
+Increase/(decrease) in other payables   242.89   166.33
+Increase/(decrease) in other financial liabilities   724.18   (7.48)
+Increase/(decrease) in provisions   250.99   67.31
+Increase/(decrease) in other non-financial liabilities   178.19   38.08
+(99,259.84)   (94,170.02)
+Income tax paid (net of refunds)   (6,460.85)   (5,585.07)
+Net cash used in operating activities (I)   (65,789.80)   (67,791.64)
+(II) Investing activities
+Purchase of property, plant and equipment and capital work-in-progress   (560.03)   (584.06)
+Purchase of other intangible assets and intangible assets under development   (401.07)   (497.76)
+Sale of property, plant and equipment and other intangible assets   65.25   36.39
+Purchase of investments measured at amortised cost   (59,340.07)   (27,461.88)
+Proceeds from liquidation of investments measured at amortised cost   59,446.67   27,624.23
+Purchase of investments classified as FVOCI   (44,831.64)   (31,594.18)
+Proceeds from liquidation of investments classified as FVOCI   42,440.11   29,745.96
+Purchase of equity investments designated under FVOCI   (308.14)   (35.00)
+Proceeds from sale of equity investments designated under FVOCI   99.15   -
+Dividend income   1.14   1.28
+Net cash used in investing activities (II)   (3,388.63)   (2,765.02)
+th
+384 39 Annual Report 2025-26
+
+===== page 490 =====
+Corporate   Statutory   Financial
+Overview   Reports   Statements
+Notes to consolidated financial statements for the year ended 31 March 2026 (Contd.)
+48 Fairvalues(Contd.)
+Fairvalueoffinancialinstrumentsmeasuredatamortisedcostasat31March2026
+(C in crore)
+Fair value measurement using
+Quoted
+prices   Significant   Significant
+in active   observable unobservable
+Carrying   markets   inputs   inputs
+Particulars   value   (Level1)   (Level2)   (Level3)   Total
+Financial assets
+Loans   473,185.59   -   -   473,297.00   473,297.00
+Investments   87.74   -   -   88.20   88.20
+473,273.33   -   -   473,385.20   473,385.20
+Financial liabilities
+Debt securities   193,131.90   -   193,126.25   -   193,126.25
+Borrowings (other than debt
+securities)   170,642.53   -   -   170,649.21   170,649.21
+Deposits   68,532.75   -   -   69,565.31   69,565.31
+Subordinated liabilities   2,805.31   -   2,812.64   -   2,812.64
+435,112.49   -   195,938.89   240,214.52   436,153.41
+Fairvalueoffinancialinstrumentsmeasuredatamortisedcostasat31March2025
+(C in crore)
+Fair value measurement using
+Quoted
+prices   Significant   Significant
+in active   observable unobservable
+Carrying   markets   inputs   inputs
+Particulars   value   (Level1)   (Level2)   (Level3)   Total
+Financial assets
+Loans   339,264.87   -   -   339,609.13   339,609.13
+Investments   193.85   -   -   194.64   194.64
+339,458.72   -   -   339,803.77   339,803.77
+Financial liabilities
+Debt securities   154,639.73   -   156,579.65   -   156,579.65
+Borrowings (other than debt
+securities)   132,102.25   -   -   132,091.38   132,091.38
+Deposits   71,403.13   -   -   71,718.46   71,718.46
+Subordinated liabilities   3,103.54   -   3,140.92   -   3,140.92
+361,248.65   -   159,720.57   203,809.84   363,530.41
+Consolidated Financial S tatements 457
+
+===== page 494 =====
+Corporate   Statutory   Financial
+Overview   Reports   Statements
+Notes to consolidated financial statements for the year ended 31 March 2026 (Contd.)
+49 Financialriskmanagement(Contd.)
+The table below summarises the maturity profile of the undiscounted contractual cash flow of the Group's
+financial liabilities :
+As at 31 March 2026
+(C in crore)
+Over1   Over3   Over1
+Up to   months to   months to   yearto5   Over5
+Particulars   1month   3months   1year   years   years   Total
+Debt securities   8,239.92   25,983.97   21,443.81   116,905.81   75,909.21   248,482.72
+Borrowings (other than
+debt securities)   25,243.45   11,352.77   40,912.15   105,322.43   5,687.37   188,518.17
+Deposits   3,039.35   7,440.82   26,463.59   38,546.06   -   75,489.82
+Subordinated liabilities   -   48.90   2,238.52   648.90   -   2,936.32
+Trade payables   1,319.19   493.63   291.71   -   -   2,104.53
+Other payables   837.30   6.07   309.50   20.93   -   1,173.80
+Other financial liabilities   1,130.26   85.44   666.88   862.33   383.69   3,128.60
+39,809.47   45,411.60   92,326.16   262,306.46   81,980.27   521,833.96
+As at 31 March 2025
+(C in crore)
+Over   Over   Over
+Up to 1monthto 3monthsto   1yearto   Over
+Particulars   1month   3months   1year   5years   5years   Total
+Debt securities   7,075.92   19,109.95   33,336.49   80,061.44   63,018.72   202,602.52
+Borrowings (other than
+debt securities)   21,089.55   7,555.54   25,121.33   93,811.85   2,688.39   150,266.66
+Deposits   2,662.71   5,307.47   24,522.51   48,169.81   -   80,662.51
+Subordinated liabilities   -   48.90   494.61   2,936.32   -   3,479.83
+Trade payables   1,497.59   265.69   114.77   -   -   1,878.05
+Other payables   692.68   -   238.22   -   -   930.90
+Other financial liabilities   517.79   104.19   511.82   803.81   280.82   2,218.43
+33,536.24   32,391.74   84,339.75   225,783.23   65,987.93   442,038.90
+Consolidated Financial S tatements 461

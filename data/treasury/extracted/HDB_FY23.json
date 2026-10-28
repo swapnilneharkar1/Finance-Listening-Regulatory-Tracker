@@ -1,0 +1,186 @@
+{
+ "ok": true,
+ "fy": "FY23",
+ "prevFy": "FY22",
+ "unit": "crore",
+ "pages": 268,
+ "standalonePages": [
+  112,
+  192
+ ],
+ "statement": {
+  "investments": {
+   "cy": 1243.25,
+   "py": 2233.51,
+   "note": "9",
+   "page": 112
+  },
+  "debt_securities": {
+   "cy": 27096.41,
+   "py": 25332.31,
+   "note": "17",
+   "page": 112
+  },
+  "borrowings": {
+   "cy": 24227.8,
+   "py": 19501.72,
+   "note": "18",
+   "page": 112
+  },
+  "subordinated": {
+   "cy": 3541.1,
+   "py": 4139.05,
+   "note": "19",
+   "page": 112
+  },
+  "finance_cost": {
+   "cy": 3511.92,
+   "py": 3325.5,
+   "note": "28",
+   "page": 113
+  }
+ },
+ "borrowing": {
+  "FY23": [
+   {
+    "label": "Privately placed redeemable Non Convertible Debenture",
+    "category": "Secured NCDs",
+    "value": 27246.28,
+    "page": 139,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 1889.91,
+    "page": 140,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under financing activity",
+    "category": "Bank term loans",
+    "value": 21968,
+    "page": 140,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 370.86,
+    "page": 140,
+    "section": "borrowings"
+   },
+   {
+    "label": "Privately placed subordinated (Tier II) redeemable bonds",
+    "category": "Subordinated debt",
+    "value": 2900,
+    "page": 142,
+    "section": "subordinated"
+   },
+   {
+    "label": "Redeemable non convertible perpetual bonds",
+    "category": "Subordinated debt",
+    "value": 650,
+    "page": 142,
+    "section": "subordinated"
+   }
+  ],
+  "FY22": [
+   {
+    "label": "Privately placed redeemable Non Convertible Debenture",
+    "category": "Secured NCDs",
+    "value": 25357.7,
+    "page": 139,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 4017,
+    "page": 140,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under financing activity",
+    "category": "Bank term loans",
+    "value": 14291.45,
+    "page": 140,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 1205.64,
+    "page": 140,
+    "section": "borrowings"
+   },
+   {
+    "label": "Privately placed subordinated (Tier II) redeemable bonds",
+    "category": "Subordinated debt",
+    "value": 3500,
+    "page": 142,
+    "section": "subordinated"
+   },
+   {
+    "label": "Redeemable non convertible perpetual bonds",
+    "category": "Subordinated debt",
+    "value": 650,
+    "page": 142,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY23": [
+   {
+    "label": "Mutual fund units",
+    "category": "Mutual funds",
+    "value": 946.45,
+    "page": 134
+   },
+   {
+    "label": "Treasury bills / G-Sec",
+    "category": "Treasury bills",
+    "value": 1197.57,
+    "page": 134
+   },
+   {
+    "label": "Securities receipt of ARC",
+    "category": "Other investments",
+    "value": 88.04,
+    "page": 134
+   },
+   {
+    "label": "Unquoted equity shares",
+    "category": "Equity",
+    "value": 1.45,
+    "page": 134
+   }
+  ]
+ },
+ "totals": {
+  "FY23": 55025.05,
+  "FY22": 49021.79
+ },
+ "finance_cost": {
+  "FY23": 3511.92,
+  "FY22": 3325.5
+ },
+ "log": [
+  "debt_securities: 1 lines from note p.139, reconciles to balance sheet",
+  "borrowings: 3 lines from note p.140, reconciles to balance sheet",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 2 lines from note p.142, reconciles to balance sheet",
+  "investments: 4 lines from note p.134"
+ ],
+ "investment_total": {
+  "FY23": 1243.25,
+  "FY22": 2233.51
+ },
+ "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2022-23.pdf",
+ "via": "company website",
+ "reportFy": "FY23",
+ "extractor": 2,
+ "sha": "95f58a45d2b3ef63",
+ "extractedAt": "2026-10-28T06:34:08.570Z"
+}

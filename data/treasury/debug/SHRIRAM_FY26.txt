@@ -1,0 +1,448 @@
+https://nsearchives.nseindia.com/annual_reports/AR_29401_SHRIRAMFIN_2025_2026_A_18605156_17062026163904.pdf
+Reason: breakdown problems: borrowings: note p.142; breakdown sums to 118453.41 vs balance sheet 125917.78 -> using balance-sheet total | deposits: note p.145; breakdown sums to 1783.67 vs balance sheet 69480.34 -> using balance-sheet total | subordinated: note p.145; breakdown sums to 2560.34 vs balance sheet 2418.57 -> using balance-sheet total | investments: breakdown not readable (sum 22057.43 vs balance sheet 14782.76) -> book size only
+Pages: 298
+Repeated header/footer lines (ignored): annual report 2025 26 shriram finance limited | rs in crores | standalone accounts | particulars march 31 2026 march 31 2025 | notes forming part of the standalone financial statements notes forming part of the standalone financial statements | for the year ended march 31 2026 contd for the year ended march 31 2026 contd | consolidated accounts | notes forming part of the consolidated financial statements notes forming part of the consolidated financial statements
+
+===== page 117 =====
+STANDALONE BALANCE SHEET   STANDALONE STATEMENT OF PROFIT AND LOSS
+AS AT MARCH 31, 2026   FOR THE YEAR ENDED MARCH 31, 2026   STANDALONE ACCOUNTS
+(Rs. in crores)   (Rs. in crores)
+Note   As at   As at
+Particulars   No.   March 31, 2026   March 31, 2025   Note   Year ended   Year ended
+ASSETS   Particulars   No.   March 31, 2026   March 31, 2025
+(1) Financial assets   Revenue from operations
+(a) Cash and cash equivalents   8   5,741.04   10,681.40
+(i) Interest income   30   46,644.04   40,307.64
+(b) Bank balance other than (a) above   9   2,197.31   10,684.34
+(ii) Dividend income   1.84   1.69
+(c) Derivative financial instruments   10   4,684.06   525.50
+(iii) Fees and commission income   31   490.55   681.93
+(d) Receivables
+(I) Trade receivables   11(I)   51.78   50.82   (iv) Net gain on fair value changes   32   356.99   200.94
+(II) Other receivables   11(II)   0.21   -   (v) Net gain on derecognition of financial instruments under amortised cost category   -   132.64
+(e) Loans   12   282,452.44   245,392.79   (vi) Other operating income   33   624.47   509.58
+(f) Investments   13   14,782.76   15,598.71
+(I) Total revenue from operations   48,117.89   41,834.42
+(g) Other financial assets   14   3,335.38   3,510.83
+(II) Other income   34   60.09   25.05
+Total financial assets   313,244.98   286,444.39
+(2) Non-financial assets   (III) Total income (I + II)   48,177.98   41,859.47
+(a) Current tax assets (net)   604.33   432.07   Expenses
+(b) Deferred tax assets (net)   42   4,263.32   3,694.86   i Finance costs   35   21,520.41   18,454.58
+(c) Investment property   15   -   -
+(ii) Fees and commission expenses   36   596.54   572.46
+(d) Property, plant and equipment   16   1,108.77   1,025.68
+(iii) Impairment on financial instruments   37   5,339.07   5,311.66
+(e) Goodwill   17(I)   1,189.45   1,189.45
+(iv) Employee benefits expenses   38   4,126.01   3,651.16
+(f) Other intangible assets   17(II)   336.96   698.95
+(g) Other non-financial assets   18   406.38   321.95   (v) Depreciation, amortisation and impairment (Refer note 15, 16 and 17)   39   698.75   645.32
+Total non-financial assets   7,909.21   7,362.96   (vi) Other expenses   40   2,604.94   2,275.04
+(3) Non-current assets held for sale/ disposal   19   0.97   0.97   (IV) Total expenses   34,885.72   30,910.22
+Total assets (1+2+3)   321,155.16   293,808.32
+(V) Profit before exceptional items and tax (III - IV)   13,292.26   10,949.25
+LIABILITIES AND EQUITY
+(VI) Exceptional items (net)   41   -   1,656.77
+Liabilities
+(1) Financial liabilities   (VII)Profit before tax (V + VI)   13,292.26   12,606.02
+(a) Derivative financial instruments   10   59.77   275.41   (VIII)Tax expense:   42
+(b) Payables   (i) Current tax   4,157.90   3,590.88
+(I) Trade payables   20(I)
+(ii) Deferred tax   (863.79)   (745.86)
+(i)   total outstanding dues of micro enterprises and small enterprises   5.65   1.02
+(IX) Profit for the year (VII - VIII)   9,998.15   9,761.00
+(ii) total outstanding dues of creditors other than micro enterprises and small enterprises   326.69   297.83
+(X) Other comprehensive income
+(II) Other payables   20(II)
+(i)   total outstanding dues of micro enterprises and small enterprises   -   0.23   A   (i) Items that will not be reclassified to profit or loss
+(ii) total outstanding dues of creditors other than micro enterprises and small enterprises   2.51   1.37   Remeasurement gain/ (loss) on defined benefit plan   43.34   (12.40)
+(c) Debt securities   21   52,873.19   54,148.86   Gain/ (loss) on fair valuation of quoted investments in equity shares   12.77   30.97
+(d) Borrowings (other than debt securities)   22   125,917.78   121,448.42
+(ii) Income tax relating to items that will not be reclassified to profit or loss   (11.42)   (4.67)
+(e) Deposits   23   69,480.34   56,085.99
+Subtotal (A)   44.69   13.90
+(f) Subordinated liabilities   24   2,418.57   2,513.98
+(g) Other financial liabilities   25   3,368.89   2,136.61   B   (i) Items that will be reclassified to profit or loss
+Total financial liabilities   254,453.39   236,909.72   Cash flow hedge reserve
+(2) Non-financial liabilities   Gain/ (loss) on effective portion of hedging instruments in a cash flow hedge   1,128.02   (276.66)
+(a) Current tax liabilities (net)   402.42   38.98
+(ii) Income tax relating to items that will be reclassified to profit or loss   (283.90)   69.63
+(b) Provisions   26   397.80   344.38
+Subtotal (B)   844.12   (207.03)
+(c) Other non-financial liabilities   27   196.62   234.67
+Other comprehensive income for the year (A + B)   888.81   (193.13)
+Total non-financial liabilities   996.84   618.03
+(3) Total liabilities (1+2)   255,450.23   237,527.75   (XI) Total comprehensive income for the year (IX + X)   10,886.96   9,567.87
+(4) Equity   (XII)Earnings per equity share (face value Rs. 2/- per equity share)   43
+(a) Equity share capital   28   376.31   376.08   (i) Basic (Rs.)   53.15   51.92
+(b) Other equity   29   65,328.62   55,904.49
+(ii) Diluted (Rs.)   53.11   51.85
+Total equity   65,704.93   56,280.57
+See accompanying notes forming an integral part of the standalone financial statements.
+Total liabilities and equity (3+4)   321,155.16   293,808.32
+See accompanying notes forming an integral part of the standalone financial statements.
+As per our report of even date
+As per our report of even date   For M M NISSIM & CO LLP   For G. D. Apte & Co.   For and on behalf of the Board of Directors of
+For M M NISSIM & CO LLP   For G. D. Apte & Co.   For and on behalf of the Board of Directors of   Chartered Accountants   Chartered Accountants   Shriram Finance Limited
+Chartered Accountants   Chartered Accountants   Shriram Finance Limited   ICAI Firm Registration No.: 107122W/W100672   ICAI Firm Registration No.: 100515W
+ICAI Firm Registration No.: 107122W/W100672   ICAI Firm Registration No.: 100515W
+Manish Singhania   Anagha M. Nanivadekar   Jugal Kishore Mohapatra   Parag Sharma
+Manish Singhania   Anagha M. Nanivadekar   Jugal Kishore Mohapatra   Parag Sharma   Partner   Partner   Chairman   Managing Director and CEO
+Partner   Partner   Chairman   Managing Director and CEO   Membership No.: 155411   Membership No.: 121007   DIN: 03190289   DIN: 02916744
+Membership No.: 155411   Membership No.: 121007   DIN: 03190289   DIN: 02916744   Mumbai   Mumbai   Mumbai   Mumbai
+Mumbai   Mumbai   Mumbai   Mumbai   April 24, 2026   April 24, 2026   April 24, 2026   April 24, 2026
+April 24, 2026   April 24, 2026   April 24, 2026   April 24, 2026
+S. Sunder   U Balasundararao
+S. Sunder   U Balasundararao   Joint Managing Director and CFO   Company Secretary and CCO
+Joint Managing Director and CFO   Company Secretary and CCO   DIN: 08189901
+DIN: 08189901   Mumbai   Mumbai
+Mumbai   Mumbai   April 24, 2026   April 24, 2026
+April 24, 2026   April 24, 2026
+Annual Report 2025-26   Shriram Finance Limited
+224   225
+
+===== page 118 =====
+STANDALONE STATEMENT OF CHANGES IN EQUITY   STANDALONE STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED MARCH 31, 2026   FOR THE YEAR ENDED MARCH 31, 2026 (Contd.)   STANDALONE ACCOUNTS
+-   -   -   -   -
+26.43
+888.80   (22.09)
+Total   9,998.15   (902.93)(564.23)   Total   Total   48,192.60   48,192.609,761.00(193.13)9,567.87 (563.90)
+55,904.49   55,904.49   10,886.95   65,328.62   (1,297.29)
+(Rs. in crores)   -   -   -   -   -   (Rs. in crores)   -   - -   (Rs. in crores)   -   -   -   -   -
+844.12844.12   370.70
+(473.42)   (473.42)   (266.39)   (266.39) (207.03)(207.03)
+Effectivecash flowhedges   Effectivecash flowhedges   Effectivecash flowhedges
+portion of   portion of   portion of
+-   -   -   -   -   -   - -   -   -   -   -   -
+3.51   3.51
+income   26.69   26.69   12.2512.25   income   38.94   income   23.1823.18
+Other comprehensiveof quoted   Other comprehensiveof quoted   Other comprehensiveof quoted
+Gain/ (loss) onfair valuationinvestments inequity shares   Gain/ (loss) onfair valuationinvestments inequity shares   Gain/ (loss) onfair valuationinvestments inequity shares
+-   -   -   - -   -   -
+9,998.15 9,998.15(902.93)(564.23)   9,761.00 9,761.00 (563.90)
+24,051.94   24,051.94   (3,017.30)   29,565.63   19,065.20   19,065.20   (1,297.29)   (2,913.07)
+Retainedearnings   Retainedearnings   Retainedearnings
+-   - - - -   -   -   -   -   - - - -   -   -
+42.92   42.92   (0.17) 20.66   70.40   70.40
+(22.09)
+376.08
+376.31   Share optionoutstanding   Share optionoutstanding   Share optionoutstanding
+-   -   -   -   -   -   - -   -   -   -   -   -
+(Rs. in crores)   (Rs. in crores)   32.4332.43   (9.28)(9.28)
+(85.80)   (85.80)   (53.37)   (76.52)   (76.52)
+previous   plan   plan   plan
+reporting period   gain/ (loss) ondefined benefit   gain/ (loss) ondefined benefit   gain/ (loss) ondefined benefit
+Remeasurement   Remeasurement   Remeasurement
+As at March 31, 2026 As at March 31, 2025
+Balance at the end of thecurrent reporting periodBalance at the end of the   -   - - - -   -   -   -   -   - - - -   -
+0.17
+999.82   976.10
+0.23   0.29   Generalreserve   5,227.53   5,227.53   Generalreserve   6,227.52   Generalreserve   4,251.10   4,251.10
+-   - - - -   -   -   -   - -   -   - - - -   -   -
+53.88   53.88   53.88   53.88   53.88
+Other Reserves   Other Reserves   Other Reserves
+Capitalreserve   Capitalreserve   Capitalreserve
+redemption   redemption   redemption
+Reserves and surplus   -   - - - -   -   Reserves and surplus   -   - -   Reserves and surplus   -   - - - -   -
+capital during the   17.85
+capital during the   119.02   119.02   136.87   134.25   134.25   (15.23)
+29)   29)   29)
+Changes in equity share
+Changes in equity sharecurrent reporting periodprevious reporting period   reserve   reserve   reserve
+Debentureredemption(Refer note   Debentureredemption(Refer note   Debentureredemption(Refer note
+-   - - - -   -   -   - -   -   - - - -   -
+376.08   375.79
+9,294.15   9,294.15   1,999.63   7,341.95   7,341.95   1,952.20
+11,293.78
+(Pursuant to   (Pursuant to   (Pursuant to
+Statutory reserveSection 45-IC of   Statutory reserveSection 45-IC of   Statutory reserveSection 45-IC of
+the RBI Act, 1934)   the RBI Act, 1934)   the RBI Act, 1934)
+-   - - - -   -   -   - -   -   - - - -   -   -
+beginning of the   26.43
+beginning of the
+Restated balance at the   premium   17,543.01   17,543.01   premium   17,569.44   premium   17,510.65   17,510.65
+Restated balance at the   Securities   Securities   Securities
+current reporting periodprevious reporting period   -   - - - -   -   -   -   - -   -   - - - -   -   -
+-   -
+104.57   104.57   104.57   104.57   104.57
+Capitalreserve   Capitalreserve   Capitalreserve
+-   -   -   - - - -   -   -   -   - -   -   -   -   -   - - - -   -   -
+Sharemoney   Sharemoney   Sharemoney
+pending   pending   pending
+applicationallotment   applicationallotment   applicationallotment
+period errors   period errors
+capital due to prior   capital due to prior
+Changes in equity shareChanges in equity share
+376.08   375.79
+of the current   of the previous
+reporting periodAs at April 01, 2025 reporting periodAs at April 01, 2024
+Equity share capitalCurrent reporting periodBalance at the beginningPrevious reporting periodBalance at the beginningOther equityCurrent reporting periodParticulars   Balance at the beginning of the currentreporting period (As at April 01, 2025)Changes in accounting policy/ prior perioderrorsRestated balance at the beginning of thecurrent reporting periodProfit for the yearOther comprehensive income for the yearTotal comprehensive income for the yearDividends (Interim) during the financial year2025-26Dividends (Final) for the year ended March31, 2025Transferred to/ (from) (Refer note 29)   Particulars   Any other change:Securities premium proceeds received on issueof equity shares (Refer note 28 and 29)Exercise of employee stock option planTransferred to/ (from) (Refer note 29) onaccount of share forfeitureBalance at the end of the current reportingperiod (As at March 31, 2026)Previous reporting periodParticulars   Balance at the beginning of the previousreporting period (As at April 01, 2024)Changes in accounting policy/ prior perioderrorsRestated balance at the beginning of theprevious reporting periodProfit for the yearOther comprehensive income for the yearTotal comprehensive income for the yearDividends (Interim) during the financial year2024-25Dividends (Final) for the year endedMarch 31, 2024Transferred to/ (from) (Refer note 29)
+(A) 1)   2)   (B) 1)   2)
+Annual Report 2025-26   Shriram Finance Limited
+226   227
+
+===== page 119 =====
+STANDALONE STATEMENT OF CHANGES IN EQUITY   STANDALONE STATEMENT OF CASH FLOWS
+FOR THE YEAR ENDED MARCH 31, 2026 (Contd.)   FOR THE YEAR ENDED MARCH 31, 2026   STANDALONE ACCOUNTS
+-
+(Rs. in crores)
+32.36
+(27.15)
+Total   Year ended   Year ended
+55,904.49
+Particulars   March 31, 2026   March 31, 2025
+(Rs. in crores)   -   - -
+A.   CASH FLOW FROM OPERATING ACTIVITIES
+(473.42)
+Effectivecash flowhedges   Profit before tax   13,292.26   12,606.02
+portion of
+-   - -   Adjustments for:
+income   26.69   Depreciation, amortisation and impairment   698.75   645.32
+Interest on income tax refund   (1.61)   (0.88)
+Other comprehensiveof quoted
+Gain/ (loss) onfair valuationinvestments inequity shares   Exceptional items (net) (Refer note 41)   -   (1,656.77)
+-   - -
+Parag SharmaManaging Director and CEODIN: 02916744MumbaiApril 24, 2026U BalasundararaoCompany Secretary and CCOMumbaiApril 24, 2026   Share-based payments to employees   28.13   0.26
+Interest income on loans   (44,485.13)   (38,669.51)
+24,051.94
+Interest income from investments   (1,010.68)   (826.00)
+Retainedearnings
+Interest income on deposits   (926.12)   (679.68)
+-
+Interest others   (0.01)   (0.16)
+(0.33) 42.92
+(27.15)
+Finance costs on borrowings   21,425.02   18,333.88
+Share optionoutstanding   Interest on lease liabilities   67.34   59.60
+-   - -
+Loss/ (profit) on sale of property, plant and equipment (net)   5.13   7.91
+(85.80)   Fair value adjustments to investments   -   (0.20)
+Dividend income   (1.84)   (1.69)
+plan
+Impairment on loans   5,310.18   5,279.00
+Remeasurementgain/ (loss) ondefined benefit
+Impairment on investments   30.57   26.13
+-   -
+0.33   Impairment on undrawn loan commitment   4.41   4.83
+Generalreserve   5,227.53   For and on behalf of the Board of Directors ofShriram Finance LimitedJugal Kishore MohapatraChairmanDIN: 03190289MumbaiApril 24, 2026S. SunderJoint Managing Director and CFODIN: 08189901MumbaiApril 24, 2026   Impairment on other assets   (6.09)   1.70
+-   - -   Non-cash components of lease liabilities   (13.77)   (12.28)
+53.88   Net (gain)/ loss on fair value changes on investment   (342.13)   (277.00)
+Other Reserves
+Capitalreserve   Net (gain)/ loss on fair value changes on direct assignment   (14.86)   76.06
+redemption
+Reserves and surplus   -   - -   Net gain on derecognition of financial instruments under amortised cost category   -   (132.64)
+Cash inflow from interest on loans   44,097.39   38,739.78
+119.02
+29)
+reserve   Cash inflow from interest and dividend on investments   841.62   683.66
+Debentureredemption(Refer note
+Cash inflow from bank deposits   1,003.15   568.94
+-   - -
+Cash outflow towards finance costs   (18,453.24)   (15,560.26)
+9,294.15   Operating profit before working capital changes   21,548.47   19,216.02
+Movements in working capital:
+(Pursuant to
+Statutory reserveSection 45-IC of   Decrease/ (increase) in loans   (41,982.09)   (42,812.65)
+the RBI Act, 1934)
+- -
+Decrease/ (increase) in investments   1,661.30   (6,570.98)
+32.36
+Decrease/ (increase) in receivables   15.17   59.46
+Securitiespremium   17,543.01   For G. D. Apte & Co.Chartered AccountantsICAI Firm Registration No.: 100515WAnagha M. NanivadekarPartnerMembership No.: 121007MumbaiApril 24, 2026
+Decrease/ (increase) in bank deposits   8,423.87   (9,041.95)
+-   - -
+Decrease/ (increase) in other financial assets   165.86   156.19
+104.57
+Capitalreserve   Decrease/ (increase) in other non-financial assets   (82.64)   32.18
+-   - -   -
+Increase/ (decrease) in payables   33.49   87.10
+Sharemoney   Increase/ (decrease) in other financial liabilities excluding lease liabilities   1,174.09   184.98
+pending
+applicationallotment   Increase/ (decrease) in non-financial liabilities   (38.05)   (24.68)
+Increase/ (decrease) in other provision   64.21   30.68
+Cash used in operations   (9,016.32)   (38,683.65)
+Direct taxes paid (net of refunds)   (3,965.11)   (3,591.16)
+Net cash flows from/ (used in) operating activities (A)   (12,981.43)   (42,274.81)
+B.   CASH FLOW FROM INVESTING ACTIVITIES
+Purchase of property, plant and equipment   (191.22)   (223.59)
+Proceeds from sale of property, plant and equipment   2.59   3.70
+Purchase of other intangible assets   (5.02)   (31.00)
+Investment in subsidiary   (350.12)   -
+Proceeds from sale of investment in a subsidiary   -   3,929.03
+Particulars   Any other change:Securities premium proceeds received on issueof equity shares (Refer note 29)Exercise of employee stock option planTransferred to/ (from) (Refer note 29) onaccount of share forfeitureBalance at the end of the previous reportingperiod (As at March 31, 2025)See accompanying notes forming an integral part of the standalone financial statements.   Net cash generated from/ (used in) investing activities (B)   (543.77)   3,678.14
+As per our report of even dateFor M M NISSIM & CO LLPChartered AccountantsICAI Firm Registration No.: 107122W/W100672Manish SinghaniaPartnerMembership No.: 155411MumbaiApril 24, 2026
+Annual Report 2025-26   Shriram Finance Limited
+228   229
+===== note page 142 =====
+NOTES FORMING PART OF THE STANDALONE FINANCIAL STATEMENTS   NOTES FORMING PART OF THE STANDALONE FINANCIAL STATEMENTS
+STANDALONE ACCOUNTS
+FOR THE YEAR ENDED MARCH 31, 2026 (Contd.)   FOR THE YEAR ENDED MARCH 31, 2026 (Contd.)
+(Rs. in crores)
+21   DEBT SECURITIES Contd.
+As at   As at
+Redemption details are given below:   (Rs. in crores)   Particulars   March 31, 2026   March 31, 2025
+Date of redemption   Amount redeemed
+22   BORROWINGS OTHER THAN DEBT SECURITIES
+July 18, 2025   3,512.86
+At amortised cost
+Issue details of ED outstanding as at March 31, 2026 and March 31, 2025   Secured
+Term loan from banks - INR   36,880.41   35,348.07
+(Rs. in crores)
+Term loan from banks - FCNR   5,230.03   2,702.01
+Date of   Product   Rate of   Issue amount   Programme   Listed on   Due dates   Amount outstanding*
+issue   interest   USD   Rs in   As at March As at March   Term loan from financial institutions/ corporates - INR   7,495.37   9,864.34
+crores   31, 2026   31, 2025
+Term loan from financial institutions/ corporates - FCNR   1,597.09   1,425.00
+September Senior secured   6.150%   500,000,000 4,183.46   USD   Indian   April 03, 2028   4,852.84   4,397.25
+Constituent's subsidiary general ledger loan (CSGL loan)   -   402.97
+30, 2024   notes (social   3,500,000,000 International
+bonds)   Global   Exchange   External commercial borrowing   36,255.30   33,653.95
+Medium Term (“INX”)
+Other loans - Securitisation liabilities - INR   38,459.58   38,052.08
+Note (GMTN) September 30,
+Total   125,917.78   121,448.42
+Programme 2024
+January 22, Senior secured   6.625%   750,000,000 6,238.50   Indian   April 22, 2027   7,413.28   6,660.02   Borrowings in India   89,662.48   87,794.47
+2024   notes   International
+Borrowings outside India   36,255.30   33,653.95
+Exchange
+(“INX”)   Total   125,917.78   121,448.42
+January 24,
+2024   There are no borrowings measured at FVTPL or designated at FVTPL.
+March 29, Senior secured   6.370%   150,000,000 1,233.00   Indian   September 29,   992.44   1,277.37
+The borrowings have not been guaranteed by directors or others. The Company has not defaulted in repayment of principal
+2023   floating rate   International 2026
+notes   Exchange   and interest to its lenders.
+(“INX”) March
+29, 2023   The Company has utilised the funds raised from banks and financial institutions for the specific purpose for which they
+January 18, Senior secured   4.150%   475,000,000 3,512.86   Singapore   July 18, 2025   -   3,517.33   were borrowed.
+2022   notes (social   Stock
+bonds)   Exchange   The Company has borrowed funds from banks and financial institutions on the basis of security of current assets. It has
+(SGX-ST) on
+filed quarterly returns or statements of current assets with banks and financial institutions and the said returns/ statements
+January 19,
+are in agreement with the books of accounts.
+2022
+Total   13,258.56   15,851.97
+Terms of repayment, nature of security, etc.
+*Includes Ind AS impact
+A)   Term loans from banks - Secured (INR)
+The proceeds of the issue of the notes have been utilised in accordance with the Company’s Social Finance Framework and
+Terms of repayment
+as may be permitted by the RBI ECB guidelines for onward lending and other activities.
+Nature of security   (Rs. in crores)
+Tenure (from the   As at March 31, 2026   As at March 31, 2025
+Secured by way of an exclusive fixed charge over hypothecation loan receivables of the Company.
+date of the balance
+Repayment Details   Rate of   Amount   Repayment Details   Rate of   Amount
+sheet)
+interest   interest
+Upto 1 year   1 to 60 installments   6.46% to   2,579.50 1 to 60 installments   7.25% to   3,338.39
+of bullet, monthly,   8.85%   of bullet, monthly,   11.25%
+quarterly and specific   quarterly and specific
+frequency   frequency
+1-2 years   1 to 60 installments   6.50% to   3,446.23 1 to 60 installments   7.71% to   4,530.34
+of bullet, monthly,   8.87%   of bullet, monthly,   10.60%
+quarterly and specific   quarterly and specific
+frequency   frequency
+2-3 years   8 to 60 installments of   6.50% to   10,164.79 1 to 60 installments   7.72% to   6,010.07
+monthly and quarterly   9.75%   of bullet, monthly,   10.55%
+frequency   quarterly and specific
+frequency
+3-4 years   8 to 20 installments of   5.50% to   9,223.15 15 to 60 installments   7.65% to   10,769.25
+quarterly, half-yearly   9.10%   of monthly and   10.50%
+and specific frequency   quarterly frequency
+4-5 years   18 to 20 installments   7.36% to   11,565.64 8 to 20 installments of   8.75% to   10,920.34
+of quarterly frequency   8.90%   quarterly, half-yearly   9.95%
+and specific frequency
+Annual Report 2025-26   Shriram Finance Limited
+274   275
+===== note page 145 =====
+NOTES FORMING PART OF THE STANDALONE FINANCIAL STATEMENTS   NOTES FORMING PART OF THE STANDALONE FINANCIAL STATEMENTS
+STANDALONE ACCOUNTS
+FOR THE YEAR ENDED MARCH 31, 2026 (Contd.)   FOR THE YEAR ENDED MARCH 31, 2026 (Contd.)
+23   DEPOSITS Contd.   24   SUBORDINATED LIABILITIES Contd.
+Terms of repayment   Terms of repayment
+As at March 31, 2026   Subordinated liabilities - Unsecured - Debentures
+(Rs. in crores)   i) Privately placed subordinated liabilities of face value of Rs. 1,000,000/- each
+Redeemable at par (from the date of the balance sheet)   Public deposits   Deposit from banks Deposit from others
+(Rs. in crores)
+Rate of interest   6.79% - 9.73%   8.00% - 8.71%   6.79% - 9.08%
+Redeemable at par (from the date   As at March 31, 2026   As at March 31, 2025
+Upto 1 year   13,443.72   -   2,192.30
+of the balance sheet)
+Rate of interest   Amount   Rate of interest   Amount
+1-2 years   16,644.67   67.00   1,689.82
+Upto 1 year   8.50%   135.00   8.95% to 11.00%   94.20
+2-3 years   18,979.26   15.00   899.62
+1-2 years   8.20% to 9.00%   1,389.00   8.50%   135.00
+3-4 years   6,574.31   -   168.44
+2-3 years   10.00% to 11.05%   75.00   8.20% to 9.00%   1,389.00
+4-5 years   5,173.76   -   104.52
+3-4 years   -   -   10.00% to 11.05%   75.00
+Principal outstanding   60,815.72   82.00   5,054.70
+Principal outstanding   1,599.00   1,693.20
+Less: Unamortised finance cost   349.32   0.25   24.24
+Less: Unamortised finance cost   2.59   4.02
+Add: Unwinding of merger fair value   11.71   -   -
+Add: Interest accrued but not due   19.93   23.39
+Add: Interest accrued but not due   3,574.66   0.74   314.62
+Total   1,616.34   1,712.57
+Total   64,052.77   82.49   5,345.08
+ii) Privately placed subordinated liabilities of face value of Rs. 10,000,000/- each
+As at March 31, 2025
+(Rs. in crores)
+(Rs. in crores)
+Redeemable at par (from the date   As at March 31, 2026   As at March 31, 2025
+Redeemable at par (from the date of the balance sheet)   Public deposits   Deposit from banks Deposit from others
+of the balance sheet)
+Rate of interest   Amount   Rate of interest   Amount
+Rate of interest   7.26% to 9.73%   8.38% to 8.71%   7.26% to 9.08%
+Over 5 years   8.75% to 9.10%   765.00   8.75% to 9.10%   765.01
+Upto 1 year   12,804.95   -   794.50
+Principal outstanding   765.00   765.01
+1-2 years   10,307.43   -   748.57
+Less: Unamortised finance cost   9.99   10.82
+2-3 years   15,158.77   87.00   696.98
+Add: Interest accrued but not due   47.22   47.22
+3-4 years   6,313.81   -   143.95
+Total   802.23   801.41
+4-5 years   6,109.99   10.00   120.98
+Principal outstanding   50,694.95   97.00   2,504.98
+(Rs. in crores)
+Less: Unamortised finance cost   308.89   0.54   15.90
+Particulars   As at March 31, 2026 As at March 31, 2025
+Add: Unwinding of merger fair value   30.43   -   -
+Privately placed (i + ii)   2,418.57   2,513.98
+Add: Interest accrued but not due   2,938.86   1.00   144.10
+Total subordinated liabilities   2,418.57   2,513.98
+Total   53,355.35   97.46   2,633.18
+(Rs. in crores)
+(Rs. in crores)
+As at   As at   As at   As at
+Particulars   March 31, 2026   March 31, 2025   Particulars   March 31, 2026   March 31, 2025
+24   SUBORDINATED LIABILITIES   25   OTHER FINANCIAL LIABILITIES
+Investor education and protection fund shall be credited by the following
+At amortised cost
+amounts (as and when due) ^
+Others
+- Unclaimed dividend   14.55   12.49
+Unsecured
+- Unclaimed matured deposits and interest accrued thereon   123.83   143.65
+Subordinated debts - Debentures #   2,418.57   2,513.98
+- Unclaimed matured debentures and interest accrued thereon   3.39   4.64
+Total   2,418.57   2,513.98
+- Unclaimed matured subordinated debts and interest accrued thereon   3.43   5.15
+Subordinated debts in India   2,418.57   2,513.98
+Temporary credit balance in bank accounts   30.52   118.47
+Subordinated debts outside India   -   -
+Payable on account of assignment   106.38   193.28
+Total   2,418.57   2,513.98
+Payable to dealers   154.06   89.65
+There are no subordinated liabilities measured at FVTPL or designated at FVTPL.   Income received in advance   1.41   15.79
+#Includes Rs. 523.81 crores (March 31, 2025: Rs. 554.93 crores) issued to related parties.   Payable to employees   367.85   389.79
+$ # @
+Retention money and other sundry liabilities   46.53   168.57
+Annual Report 2025-26   Shriram Finance Limited
+280   281

@@ -1,0 +1,200 @@
+{
+ "ok": true,
+ "fy": "FY25",
+ "prevFy": "FY24",
+ "unit": "crore",
+ "pages": 320,
+ "standalonePages": [
+  146,
+  242
+ ],
+ "statement": {
+  "investments": {
+   "cy": 2060.13,
+   "py": 3380.33,
+   "note": "9",
+   "page": 146
+  },
+  "debt_securities": {
+   "cy": 39465.17,
+   "py": 34851.12,
+   "note": "17",
+   "page": 146
+  },
+  "borrowings": {
+   "cy": 41928.89,
+   "py": 33831.38,
+   "note": "18",
+   "page": 146
+  },
+  "subordinated": {
+   "cy": 6003.71,
+   "py": 5648.17,
+   "note": "19",
+   "page": 146
+  },
+  "finance_cost": {
+   "cy": 6390.15,
+   "py": 4864.32,
+   "note": "28",
+   "page": 147
+  }
+ },
+ "borrowing": {
+  "FY25": [
+   {
+    "label": "Privately placed redeemable Non Convertible Debenture",
+    "category": "Secured NCDs",
+    "value": 36203.68,
+    "page": 174,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper",
+    "category": "Commercial paper",
+    "value": 3525,
+    "page": 174,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 8974.88,
+    "page": 175,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under 昀椀nancing activity",
+    "category": "Bank term loans",
+    "value": 32990.21,
+    "page": 175,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 0,
+    "page": 175,
+    "section": "borrowings"
+   },
+   {
+    "label": "Privately placed subordinated (Tier II) redeemable bonds",
+    "category": "Subordinated debt",
+    "value": 4527,
+    "page": 176,
+    "section": "subordinated"
+   },
+   {
+    "label": "Redeemable non convertible perpetual bonds",
+    "category": "Subordinated debt",
+    "value": 1500,
+    "page": 176,
+    "section": "subordinated"
+   }
+  ],
+  "FY24": [
+   {
+    "label": "Privately placed redeemable Non Convertible Debenture",
+    "category": "Secured NCDs",
+    "value": 33896.68,
+    "page": 174,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial paper",
+    "category": "Commercial paper",
+    "value": 1175,
+    "page": 174,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial borrowings (ECB)",
+    "category": "ECB loans",
+    "value": 2085.13,
+    "page": 175,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan against hypothecation of Receivables under 昀椀nancing activity",
+    "category": "Bank term loans",
+    "value": 31661.03,
+    "page": 175,
+    "section": "borrowings"
+   },
+   {
+    "label": "Borrowing under Securitisation",
+    "category": "Securitisation",
+    "value": 85.22,
+    "page": 175,
+    "section": "borrowings"
+   },
+   {
+    "label": "Privately placed subordinated (Tier II) redeemable bonds",
+    "category": "Subordinated debt",
+    "value": 4670,
+    "page": 176,
+    "section": "subordinated"
+   },
+   {
+    "label": "Redeemable non convertible perpetual bonds",
+    "category": "Subordinated debt",
+    "value": 1000,
+    "page": 176,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY25": [
+   {
+    "label": "Mutual fund units",
+    "category": "Mutual funds",
+    "value": 1753.41,
+    "page": 169
+   },
+   {
+    "label": "Securities receipt of ARC",
+    "category": "Other investments",
+    "value": 37.33,
+    "page": 169
+   },
+   {
+    "label": "Unquoted equity shares",
+    "category": "Equity",
+    "value": 2.3,
+    "page": 169
+   },
+   {
+    "label": "Treasury bills/G-Sec",
+    "category": "Treasury bills",
+    "value": 1587.29,
+    "page": 169
+   }
+  ]
+ },
+ "totals": {
+  "FY25": 87720.76999999999,
+  "FY24": 74573.06
+ },
+ "finance_cost": {
+  "FY25": 6390.15,
+  "FY24": 4864.32
+ },
+ "log": [
+  "debt_securities: 2 lines from note p.174, reconciles to balance sheet",
+  "borrowings: 3 lines from note p.175, reconciles to balance sheet",
+  "deposits: not on the balance sheet (treated as nil)",
+  "subordinated: 2 lines from note p.176, reconciles to balance sheet",
+  "investments: 4 lines from note p.169"
+ ],
+ "investment_total": {
+  "FY25": 2060.13,
+  "FY24": 3380.33
+ },
+ "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2024-25.pdf",
+ "via": "company website",
+ "reportFy": "FY25",
+ "extractor": 2,
+ "sha": "13a3d7e32bb42911",
+ "extractedAt": "2026-10-28T06:33:56.147Z"
+}

@@ -1,0 +1,331 @@
+https://nsearchives.nseindia.com/annual_reports/AR_24313_CHOLAFIN_2023_2024_0407202423375.pdf
+Reason: breakdown problems: debt_securities: note p.157; breakdown not readable -> using balance-sheet total | borrowings: note not found; breakdown not readable -> using balance-sheet total | investments: breakdown not readable (sum 2013.00 vs balance sheet 4100.23) -> book size only
+Pages: 334
+Repeated header/footer lines (ignored): cholamandalam investment and finance company limited | 01 37 38 122 123 318 | company overview management report financial statements | in crores | march 31 2024 march 31 2023 | for the year ended march 31 2024 | notes forming part of the standalone financial statements contd | notes forming part of the consolidated financial statements contd
+
+===== page 148 =====
+Cholamandalam Investment and Finance Company Limited
+Standalone Balance Sheet As at March 31, 2024
+` in crores
+Note No.   As at   As at
+March 31, 2024   March 31, 2023
+ASSETS
+Financial Assets
+Cash and Cash Equivalents   5   841.97   910.29
+Bank Balances other than Cash and Cash Equivalents   6   3,478.18   2,051.13
+Derivative financial instruments   7   247.82   272.86
+Receivables   8
+i) Trade Receivables   199.00   77.18
+ii) Other Receivables   200.46   113.88
+Loans   9   1,44,424.29   1,04,748.32
+Investments   10   4,100.23   3,620.02
+Other Financial Assets   11   241.25   273.77
+1,53,733.20   1,12,067.45
+Non- Financial Assets
+Current Tax Assets(Net)   357.09   267.06
+Deferred Tax Assets (Net)   12   654.15   608.50
+Investment Property   13   0.13   0.13
+Property, Plant and Equipment   14   1,534.00   372.17
+Capital Work in Progress   49   -   35.74
+Intangible Assets Under Development   49   12.45   24.60
+Other Intangible Assets   15   23.01   26.43
+Other Non-Financial Assets   16   99.65   105.43
+2,680.48   1,440.06
+Asset held for sale - Investment   10   37.09   8.00
+TOTAL ASSETS   1,56,450.77   1,13,515.51
+LIABILITIES AND EQUITY
+Financial Liabilities
+Derivative financial instruments   7   186.70   134.27
+Payables
+(I) Trade Payables   49
+i) Total outstanding dues of micro and small enterprises   7.65   3.40
+ii) Total outstanding dues of creditors other than micro and small enterprises   107.72   119.93
+(II) Other Payables
+i) Total outstanding dues of micro and small enterprises   -   -
+ii) Total outstanding dues of creditors other than micro and small enterprises   1,338.05   1,064.69
+Debt Securities   17   24,812.76   19,682.41
+Borrowings(Other than Debt Securities)   18   1,04,511.13   73,186.19
+Subordinated Liabilities   19   5,149.69   4,487.46
+Other Financial Liabilities   20   505.63   354.11
+1,36,619.33   99,032.46
+Non-Financial Liabilities
+Current Tax Liabilities(Net)   -   -
+Provisions   21   192.70   140.88
+Other Non-Financial Liabilities   22   82.23   46.12
+274.93   187.00
+Equity
+Equity Share Capital   23A   168.06   164.48
+Other Equity   23B   19,388.45   14,131.57
+19,556.51   14,296.05
+TOTAL LIABILITIES AND EQUITY   1,56,450.77   1,13,515.51
+The accompanying notes are integral part of the Standalone financial statements
+As per our report of even date
+For Price Waterhouse LLP   For Sundaram and Srinivasan   For and on behalf of the Board of Directors
+Chartered Accountants   Chartered Accountants
+ICAI Firm Regn No. : 301112E/ E300264   ICAI Firm Regn No. : 004207S
+A.J. Shaikh   S. Usha   Ravindra Kumar Kundu   Vellayan Subbiah
+Partner   Partner   Executive Director   Chairman
+Membership No. : 203637   Membership No. : 211785
+Date : April 30, 2024   P. Sujatha   D. Arul Selvan
+Place : Chennai   Company Secretary   President & Chief Financial Officer
+134 Annual Report / 2023-24
+
+===== page 149 =====
+01-37   38-122   123-318
+Company Overview   Management Report   Financial Statements
+Standalone Statement of Profit and Loss for the year ended March 31, 2024
+` in crores
+Note No.   Year ended   Year ended
+March 31, 2024   March 31, 2023
+Revenue from Operations
+Interest Income   24A   17,613.68   12,082.18
+Fee & commission income   24B   1,046.58   524.37
+Net gain on fair value change on financial instruments   24C   160.55   69.40
+Sale of Services   24D   24.41   81.09
+Total Revenue from operations (I)   18,845.22   12,757.04
+Other Income (II)   25   371.06   220.94
+Total Income (III) = (I) + (II)   19,216.28   12,977.98
+Expenses
+Finance costs   26   9,230.61   5,748.75
+Impairment of financial Instruments (Net)   27   1,321.80   849.68
+Employee benefits expense   28   2,330.55   1,265.68
+Depreciation and amortisation expense   13, 14 & 15   195.77   118.88
+Other expenses   29   1,555.45   1,395.30
+Total Expenses (IV)   14,634.18   9,378.29
+Profit before tax (V) = (III) - (IV)   4,582.10   3,599.69
+Tax expense/(benefit)
+- Current tax   1,198.28   881.72
+- Adjustment of tax relating to earlier year   (13.51)   0.21
+- Deferred tax   12   (25.43)   51.56
+Net tax expense (VI)   1,159.34   933.49
+Profit for the year - A = (V) - (VI)   3,422.76   2,666.20
+Other Comprehensive income:
+i) Items that will not be reclassified to profit or loss:
+Re-measurement gains / (loss) of Post employment benefit Obligations (net)   (8.14)   (0.46)
+Income tax impact   2.05   0.12
+ii) Items that will be reclassified to profit or loss:
+Net gain / (loss) On Cashflow Hedge Reserve   (72.19)   45.64
+Income tax impact   18.17   (11.49)
+Other comprehensive income/(loss) net of tax for the year (B)   (60.11)   33.81
+Total comprehensive income net of tax for the year (A + B)   3,362.65   2,700.01
+Earnings per equity share of ₹ 2 each
+Basic (₹)   30   41.20   32.45
+Diluted (₹)   41.09   32.40
+The accompanying notes are integral part of the Standalone financial statements
+As per our report of even date
+For Price Waterhouse LLP   For Sundaram and Srinivasan   For and on behalf of the Board of Directors
+Chartered Accountants   Chartered Accountants
+ICAI Firm Regn No. : 301112E/ E300264   ICAI Firm Regn No. : 004207S
+A.J. Shaikh   S. Usha   Ravindra Kumar Kundu   Vellayan Subbiah
+Partner   Partner   Executive Director   Chairman
+Membership No. : 203637   Membership No. : 211785
+Date : April 30, 2024   P. Sujatha   D. Arul Selvan
+Place : Chennai   Company Secretary   President & Chief Financial Officer
+Annual Report / 2023-24 135
+
+===== page 150 =====
+Cholamandalam Investment and Finance Company Limited
+-   -
+1.59
+Total   (6.11)   35.34   55.40
+(54.02)
+in crores   in crores   3,422.76   (166.72)1,968.64
+14,131.5714,131.57   19,388.45
+`   `
+-   - -   - -   -   - -   -
+168.06
+hedge 49.54 49.54   (4.48)
+Balance as at   (54.02)
+March 31, 2024Effectivecashflow
+portion of
+-   - -   -   - -   -   - -   -
+Equity   (1.29) (1.29)   (1.29)
+income
+instruments
+through Other
+Comprehensive
+Debt   - -   -   - -   -   - -   -   - -   -   -
+Income
+3.58
+instruments
+through Other
+Comprehensive
+-   - -   -   - -   -   -   -
+during the current year
+83.39 83.39   55.40
+Changes in Equity share capital   138.79
+Reserve
+Payments
+Share based
+-   - -   -   - -   -   - -
+690.00
+Reserve
+2,560.462,560.46   3,250.46
+Statutory
+-   -   - -
+(6.11)
+(166.72)   (690.00)
+Retainedearnings 2,754.312,754.313,422.76   5,314.24
+164.48
+Reserve and Surplus-   - -   -   - -   -   - -   -
+for the year ended March 31, 2024
+current reporting yearGeneralReserve
+5,739.135,739.13   5,739.13
+-   - -   -   - -   -   - -   -
+33.00 33.00   33.00
+Restated Balance at the beginning of theCapital
+Reserve
+Redemption
+-   - -   -   -   - -   -
+35.34
+1,968.64
+Premium 2,912.992,912.99   4,916.97
+Securities
+-
+-   - -   -   - -   -   - -   -
+0.04   0.04   0.04
+Capital
+Reserve
+due to prior year errorsfor
+- -   -   - -   -   - -   -   -   -
+Share
+Changes in Equity Share capitalMoney   1.59   1.59
+Pending
+allotment
+application
+(Refer Note 23A)
+l
+164.48
+Balance as at
+March 31, 2023
+Other Equity (Refer Note 23B)
+Standalone Statement of Changes in Equity1) Current reporting periodA) Equity Share CapitaB)   Particulars   Balance as at March 31, 2023Changes in accounting policy/prior period errorsRestated Balance at the beginningof the current reporting yearProfit for the yearRemeasurement of definedbenefit plansOther items in comprehensive incomefor the year, net of income taxDividendShare Premium received onallotment of equity shares under ESOPShare Premium received on allotmentof equity shares under QIP(net of issue expenses of Rs. 27.97 Cr)Recognition of Share based PaymentsShare application money -Pending for allotmentTransfer to reserves from Retainedearnings during the yearBalance as at March 31, 2024
+136 Annual Report / 2023-24
+===== note page 157 =====
+01-37   38-122   123-318
+Company Overview   Management Report   Financial Statements
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2024
+3.2.4   Collateral repossessed   Any recovery from written off loan is recognised in the
+statement of profit and loss.
+The Company generally does not use the assets
+repossessed for the internal operations. The underlying 3.4   Borrowings
+loans in respect of which collaterals have been repossessed
+3.4.1   Debt securities and other borrowings
+with an intention to realize by way of sale are considered as
+The Company recognises debt securities and other
+Stage 3 assets and the ECL allowance is determined based
+on the estimated net realisable value of the repossessed   borrowings when funds reach the Company.
+asset. Any surplus funds are returned to the borrower and   After initial measurement, debt issued and other borrowed
+accordingly collateral repossessed are not recorded on the   funds are subsequently measured at amortised cost.
+balance sheet and not treated as non-current assets held
+Amortised cost is calculated by taking into account any
+for sale.
+discount or premium on issue funds, and costs that are an
+3.2.5   Restructured, rescheduled, and modified loans   integral part of the EIR.
+The Company sometimes makes concessions or   3.4.2   Foreign Currency Borrowings
+modifications to the original terms of loans such as
+Borrowings in foreign currencies are initially recorded at
+changing the instalment value or changing the tenor of the
+the respective functional currency spot rates at the date
+loan, as a response to the borrower’s request. The Company
+the transaction first qualifies for recognition. They are
+considers the modification of the loan only before the loans
+translated at the functional currency spot rates of exchange
+gets credit impaired.
+at the reporting date and exchange gains and losses
+When the loan has been renegotiated or modified but not   arising on restatement are recognized under OCI in the
+derecognised, the Company also reassesses whether there   statement of profit and loss as an adjustment to borrowing
+has been a significant increase in credit risk. The Company   cost.
+also considers whether the assets should be classified as
+3.4.3   Derivative and Hedge accounting
+Stage 3. Once an asset has been classified as restructured,
+it will remain restructured for a period of year from the date   The company enters into derivative transactions only
+on which it has been restructured.   for economic hedging purposes and not as speculative
+investments. Derivative instruments are used to manage
+Loans which have been renegotiated or modified in
+exposures to interest rate and foreign currency. In order
+accordance with RBI Notifications (including extensions
+to manage particular risks, the Company applies hedge
+granted) - RBI/2020-21/16 DOR.No.BP.BC/3/21.04.048/2020-
+accounting for transactions that meet specified criteria.
+21- Resolution Framework for COVID-19 related Stress
+and RBI/2020-21/17 DOR.No.BP.BC/4/21.04.048/2020-   Derivatives are initially recognised at fair value at the date
+21- Micro, Small and Medium Enterprises (MSME) sector –   a derivative contract is entered into and are subsequently
+Restructuring of Advances, have been classified as Stage 2   remeasured to their fair value at each balance sheet date.
+due to significant increase in credit risk.   The resulting gain/loss is recognised in statement of profit
+and loss immediately unless the derivative is designated
+3.3   Loans – Revenue recognition
+and is effective as a hedging instrument , in which event
+Interest income on loans measured at amortised cost is
+the timing of the recognition in profit or loss depends on
+recorded using the effective interest rate (‘EIR’) method. The
+the nature of the hedge relationship.
+EIR is the rate that discounts estimated future cash receipts
+Hedges that meet the strict criteria for hedge accounting
+through the expected life of the loan to the gross carrying
+are accounted for as cash flow hedge.
+amount of the loan. For credit-impaired loans, interest
+income is calculated by applying the EIR to the amortised   A cash flow hedge is a hedge of the exposure to variability
+cost. (i.e. the gross carrying amount less the allowance for   in cash flows that is attributable to a particular risk
+expected credit losses).   associated with a recognised asset or liability (such as all or
+The EIR is calculated by taking into account the fees and   some future interest payments on variable rate debt) or a
+costs that are an integral part of the EIR of the loan such   highly probable forecast transaction and could affect profit
+as origination fees received for acquisition of the loan and   or loss.
+sourcing cost incurred for closing the transaction.
+For designated and qualifying cash flow hedges, the
+Fees, charges and reimbursements due from borrowers   effective portion of the cumulative gain or loss on the
+as per the contractual terms of the loan are recognised on   hedging instrument is initially recognised directly in Other
+realisation.   Comprehensive Income (OCI) within equity (cash flow
+Annual Report / 2023-24 143
+===== note page 180 =====
+Cholamandalam Investment and Finance Company Limited
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2024
+18.2 Details of term loans/working capital demand loan - Contractual principal repayment value (Contd.)
+Details of Securitised loan   ` in crores
+Rate of Interest   Maturity   Amount outstanding*
+March 31, 2024 March 31, 2023
+Less than 1 year   9,448.78   3,975.72
+Fixed   1-2 year   7,184.46   3,052.67
+(4.9% to 8%)   2-3 year   4,526.29   1,771.34
+3-4 year   1,959.39   690.48
+4-5 year   345.33   72.07
+more than 5 years   85.16   51.72
+Total   23,549.41   9,614.00
+Less than 1 year   29.75   46.32
+Floating   1-2 year   27.01   41.92
+Base Rate/ MCLR - spread   2-3 year   26.55   43.09
+(0.75% to 2.65%)   3-4 year   22.47   41.08
+4-5 year   18.66   34.34
+more than 5 years   78.94   144.74
+Total   203.38   351.49
+* Represents amounts to be paid to the securitisation trust as per the securitisation cash flows net of amounts to be received
+against Investment in PTC.
+18.3 No borrowings are guaranteed by directors and /or others.
+` in crores
+Particulars   As at   As at
+March 31, 2024 March 31, 2023
+Note : 19 SUBORDINATED LIABILITIES (at amortised cost)
+Perpetual Debt - Unsecured   1,612.89   1,527.96
+Subordinated Debt - Unsecured
+a) Rupee Denominated Bonds   408.18   407.94
+b) Other Subordinated Debts   3,128.62   2,551.56
+Total   5,149.69   4,487.46
+i) All Subordinated liabilities have been contracted in India except for Rupee denominated bonds.
+ii) The Company has not defaulted in the repayment of dues to its lenders.
+19.1 Details of Subordinated Liabilities - Contractual principal repayment value
+(i) Unsecured Redeemable Non-Convertible Debentures - Subordinated debt - Redeemable at par - No put / call option
+No. of Debentures   Face Value `   Balance as at   Due date of   Rate of interest %
+redemption
+March 31, 2024   March 31, 2023
+` in crores
+150   10,00,000   0.00   15.00   Sep-23   11.00
+500   10,00,000   0.00   50.00   Oct-23   9.08
+2,000   10,00,000   0.00   200.00   Nov-23   9.08 to 9.20
+250   10,00,000   0.00   25.00   Jan-24   11.00
+200   10,00,000   0.00   20.00   Feb-24   11.00
+250   10,00,000   0.00   25.00   Mar-24   11.00
+250   10,00,000   25.00   25.00   Apr-24   11.00
+50   10,00,000   5.00   5.00   May-24   11.00
+166 Annual Report / 2023-24
