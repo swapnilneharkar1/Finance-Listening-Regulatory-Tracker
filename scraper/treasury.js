@@ -23,6 +23,8 @@ const EXTRACTED_DIR = path.join(OUT_DIR, 'extracted');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const FORCE = process.env.TREASURY_FORCE === 'true';
 const ONLY = (process.env.TREASURY_ONLY || '').split(',').map(s => s.trim().toUpperCase()).filter(Boolean);
+// Bump when the extractor changes, so earlier extractions are redone automatically
+const EXTRACTOR_VERSION = 2;
 const LOCAL_DIR = process.env.TREASURY_LOCAL_DIR || '';
 
 const BORROWING_CATEGORIES = [
@@ -97,11 +99,53 @@ function bseGuesses(code, years) {
   return years.map(fy => ({ fy, url: `https://www.bseindia.com/bseplus/AnnualReport/${code}/${code}03${String(fyNum(fy)).padStart(2, '0')}.pdf`, via: 'BSE', guess: true }));
 }
 
+/** Older annual reports on NSE are .zip files holding one or more PDFs (often one per
+ *  section). Returns the PDFs inside, largest first. Plain zip only (no encryption). */
+function unzipPdfs(buf) {
+  const zlib = require('zlib');
+  let eocd = -1;
+  for (let i = buf.length - 22; i >= Math.max(0, buf.length - 70000); i--) if (buf.readUInt32LE(i) === 0x06054b50) { eocd = i; break; }
+  if (eocd < 0) return [];
+  const n = buf.readUInt16LE(eocd + 10);
+  let p = buf.readUInt32LE(eocd + 16);
+  const out = [];
+  for (let k = 0; k < n && p + 46 <= buf.length; k++) {
+    if (buf.readUInt32LE(p) !== 0x02014b50) break;
+    const method = buf.readUInt16LE(p + 10), csize = buf.readUInt32LE(p + 20);
+    const nameLen = buf.readUInt16LE(p + 28), extraLen = buf.readUInt16LE(p + 30), commentLen = buf.readUInt16LE(p + 32);
+    const local = buf.readUInt32LE(p + 42);
+    const name = buf.slice(p + 46, p + 46 + nameLen).toString('utf8');
+    p += 46 + nameLen + extraLen + commentLen;
+    if (!/\.pdf$/i.test(name) || /__MACOSX/.test(name)) continue;
+    const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
+    const data = buf.slice(start, start + csize);
+    try {
+      const pdf = method === 0 ? data : method === 8 ? zlib.inflateRawSync(data) : null;
+      if (pdf && pdf.slice(0, 5).toString() === '%PDF-') out.push({ name, pdf });
+    } catch (e) { /* skip a damaged entry */ }
+  }
+  return out.sort((a, b) => b.pdf.length - a.pdf.length);
+}
+
+// A downloaded file -> PDF buffer, or an array of PDF buffers for a zipped report
+function asPdf(buf) {
+  if (!buf || buf.length < 5) return null;
+  if (buf.slice(0, 5).toString() === '%PDF-') return buf;
+  if (buf.slice(0, 2).toString() === 'PK') {
+    const pdfs = unzipPdfs(buf);
+    if (!pdfs.length) return null;
+    // a single file whose name says standalone financials beats the rest
+    const sa = pdfs.filter(x => /standalone/i.test(x.name));
+    return (sa.length ? sa : pdfs).map(x => x.pdf);
+  }
+  return null;
+}
+
 async function download(url) {
   const headers = { 'User-Agent': UA, Accept: 'application/pdf,*/*', Referer: new URL(url).origin + '/' };
   try {
     const r = await fetch(url, { headers, signal: AbortSignal.timeout(180000) });
-    if (r.ok) { const buf = Buffer.from(await r.arrayBuffer()); if (buf.slice(0, 5).toString() === '%PDF-') return buf; }
+    if (r.ok) { const got = asPdf(Buffer.from(await r.arrayBuffer())); if (got) return got; }
   } catch (e) { /* try the browser */ }
   try { // via a real browser session (BSE/NSE archives sometimes refuse plain requests)
     const b = await browser(); const page = await b.newPage(); await page.setUserAgent(UA);
@@ -112,7 +156,7 @@ async function download(url) {
       return btoa(s);
     }, url);
     await page.close();
-    if (b64) { const buf = Buffer.from(b64, 'base64'); if (buf.slice(0, 5).toString() === '%PDF-') return buf; }
+    if (b64) { const got = asPdf(Buffer.from(b64, 'base64')); if (got) return got; }
   } catch (e) { /* give up */ }
   return null;
 }
@@ -127,7 +171,7 @@ function wantedYears(found, n) {
 
 async function discover(co) {
   if (LOCAL_DIR) {
-    return fs.readdirSync(LOCAL_DIR).map(f => f.match(new RegExp(`^${co.key}_(FY\\d{2})\\.pdf$`, 'i')))
+    return fs.readdirSync(LOCAL_DIR).map(f => f.match(new RegExp(`^${co.key}_(FY\\d{2})\\.(pdf|zip)$`, 'i')))
       .filter(Boolean).map(m => ({ fy: m[1].toUpperCase(), url: 'file://' + path.join(LOCAL_DIR, m[0]), via: 'local' }));
   }
   const found = Object.entries(co.reports || {}).map(([fy, url]) => ({ fy: fy.toUpperCase(), url, via: 'manual link' }));
@@ -303,16 +347,20 @@ async function main() {
       const cand = found.filter(r => r.fy === fy);
       if (!FORCE && fs.existsSync(cached)) {
         const e = JSON.parse(fs.readFileSync(cached, 'utf8'));
-        if (e.ok) { extracted.push(e); log.reports.push({ fy, status: 'cached', url: e.url }); continue; }
+        if (e.ok && e.extractor === EXTRACTOR_VERSION) { extracted.push(e); log.reports.push({ fy, status: 'cached', url: e.url }); continue; }
       }
       let done = false;
       for (const r of cand) {
         console.log(`    ${fy}: ${r.via} ${r.url}`);
-        const buf = r.url.startsWith('file://') ? fs.readFileSync(r.url.slice(7)) : await download(r.url);
+        const buf = r.url.startsWith('file://') ? asPdf(fs.readFileSync(r.url.slice(7))) : await download(r.url);
         if (!buf) { log.reports.push({ fy, status: r.guess ? 'not on BSE' : 'download failed', url: r.url }); continue; }
         try {
           const e = await extractReport(buf, { fyHint: fy });
-          Object.assign(e, { url: r.url, via: r.via, reportFy: fy, sha: sha(buf), extractedAt: new Date().toISOString() });
+          Object.assign(e, { url: r.url, via: r.via, reportFy: fy, extractor: EXTRACTOR_VERSION,
+            sha: sha(Array.isArray(buf) ? Buffer.concat(buf) : buf), extractedAt: new Date().toISOString() });
+          if (e.ok && !['debt_securities', 'borrowings', 'deposits', 'subordinated'].some(k => e.statement[k])) {
+            e.ok = false; e.error = `no borrowing lines found on the standalone balance sheet (p.${e.standalonePages[0]})`;
+          }
           if (!e.ok) { log.reports.push({ fy, status: 'extraction failed: ' + e.error, url: r.url }); continue; }
           if (e.fy !== fy) e.log.push(`report labelled ${fy} but balance sheet is dated ${e.fy}`);
           fs.writeFileSync(cached, JSON.stringify(e, null, 1));

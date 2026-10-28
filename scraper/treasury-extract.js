@@ -13,40 +13,71 @@
  * parsing miss can never publish a wrong mix.
  */
 const pdfParse = require('pdf-parse');
+let pdfjs = null; // newer pdf.js reads PDFs that pdf-parse's bundled 2018 copy can't ("Invalid PDF structure")
+try {
+  const w = console.warn, l = console.log; console.warn = () => {}; console.log = () => {};
+  try { pdfjs = require('pdfjs-dist/legacy/build/pdf.js'); } finally { console.warn = w; console.log = l; }
+} catch (e) { pdfjs = null; }
 
 /* ── 1. PDF -> pages of text lines (columns kept apart with wide gaps) ── */
-async function pdfToPages(buffer) {
+function itemsToLines(items) {
+  const rows = [];
+  for (const it of items) {
+    const s = it.str; if (!s || !s.trim()) continue;
+    const x = it.transform[4], y = it.transform[5], w = it.width || s.length * 4;
+    let row = rows.find(r => Math.abs(r.y - y) <= 2.5);
+    if (!row) { row = { y, items: [] }; rows.push(row); }
+    row.items.push({ x, w, s });
+  }
+  rows.sort((a, b) => b.y - a.y);
+  return rows.map(r => {
+    r.items.sort((a, b) => a.x - b.x);
+    let out = '', end = null;
+    for (const it of r.items) {
+      if (end != null) { const gap = it.x - end; out += gap > 12 ? '   ' : gap > 1.5 ? ' ' : ''; }
+      out += it.s; end = it.x + it.w;
+    }
+    return out.replace(/\s+$/, '');
+  });
+}
+
+async function pagesWithPdfjs(buffer) {
+  const doc = await pdfjs.getDocument({ data: new Uint8Array(buffer), isEvalSupported: false, disableFontFace: true,
+    useSystemFonts: false, verbosity: 0 }).promise;
   const pages = [];
-  const quiet = console.warn; // pdf.js font warnings are noise
-  console.warn = (...a) => { const m = a.join(' '); if (/font|TT:|glyf|Warning/i.test(m)) return; quiet(...a); };
+  for (let i = 1; i <= doc.numPages; i++) {
+    const page = await doc.getPage(i);
+    const tc = await page.getTextContent();
+    pages.push(itemsToLines(tc.items));
+    page.cleanup();
+  }
+  await doc.destroy();
+  return pages;
+}
+
+async function pagesWithPdfParse(buffer) {
+  const pages = [];
+  await pdfParse(buffer, {
+    pagerender: async page => {
+      const tc = await page.getTextContent({ normalizeWhitespace: true, disableCombineTextItems: false });
+      const lines = itemsToLines(tc.items);
+      pages.push(lines);
+      return lines.join('\n');
+    },
+  });
+  return pages;
+}
+
+async function pdfToPages(buffer) {
+  const quiet = console.warn, ql = console.log; // pdf.js font warnings are noise
+  const mute = (...a) => { const m = a.join(' '); if (/font|TT:|glyf|Warning|DOMMatrix|Path2D|canvas/i.test(m)) return; quiet(...a); };
+  console.warn = mute; console.log = (...a) => { if (/Warning|font/i.test(a.join(' '))) return; ql(...a); };
   try {
-    await pdfParse(buffer, {
-      pagerender: async page => {
-        const tc = await page.getTextContent({ normalizeWhitespace: true, disableCombineTextItems: false });
-        const rows = [];
-        for (const it of tc.items) {
-          const s = it.str; if (!s || !s.trim()) continue;
-          const x = it.transform[4], y = it.transform[5], w = it.width || s.length * 4;
-          let row = rows.find(r => Math.abs(r.y - y) <= 2.5);
-          if (!row) { row = { y, items: [] }; rows.push(row); }
-          row.items.push({ x, w, s });
-        }
-        rows.sort((a, b) => b.y - a.y);
-        const lines = rows.map(r => {
-          r.items.sort((a, b) => a.x - b.x);
-          let out = '', end = null;
-          for (const it of r.items) {
-            if (end != null) { const gap = it.x - end; out += gap > 12 ? '   ' : gap > 1.5 ? ' ' : ''; }
-            out += it.s; end = it.x + it.w;
-          }
-          return out.replace(/\s+$/, '');
-        });
-        pages.push(lines);
-        return lines.join('\n');
-      },
-    });
-  } finally { console.warn = quiet; }
-  return pages; // pages[i] = array of lines, page number = i + 1
+    if (pdfjs) {
+      try { return await pagesWithPdfjs(buffer); } catch (e) { /* fall back to pdf-parse */ }
+    }
+    return await pagesWithPdfParse(buffer); // pages[i] = array of lines, page number = i + 1
+  } finally { console.warn = quiet; console.log = ql; }
 }
 
 /* ── 2. Numbers ── */
@@ -90,13 +121,34 @@ function detectUnit(lines) {
 /* ── 4. Find the standalone statements ── */
 const norm = s => s.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
 
+/** Lines that repeat on many pages: running headers, footers and side tabs such as
+ *  "Standalone Financial Statements | Consolidated Financial Statements". They must not
+ *  decide whether a page is standalone or consolidated. */
+function boilerplate(pages) {
+  const count = new Map();
+  for (const lines of pages) for (const l of new Set(lines.map(norm))) if (l) count.set(l, (count.get(l) || 0) + 1);
+  const limit = Math.max(6, pages.length * 0.15);
+  return new Set([...count].filter(([, n]) => n >= limit).map(([l]) => l));
+}
+
 function findStandaloneRange(pages) {
-  const isBS = p => pages[p].slice(0, 15).some(l => /balance\s*sheet\s*as\s*(at|on)/i.test(l));
-  const isConsol = p => pages[p].slice(0, 15).some(l => /consolidated/i.test(l) && /(balance\s*sheet|financial\s*statements|profit)/i.test(l));
-  const hasLiabs = p => pages[p].some(l => /debt\s*securities/i.test(l)) && pages[p].some(l => /total\s*(equity\s*and\s*)?liabilities|total\s*liabilities\s*and\s*equity/i.test(l));
+  const skip = boilerplate(pages);
+  const head = p => pages[p].filter(l => !skip.has(norm(l))).slice(0, 18);
+  const BS_RE = /balance\s*sheet\s*(as\s*(at|on)|for)|statement\s*of\s*(assets\s*and\s*liabilities|financial\s*position)/i;
+  const isBS = p => head(p).some(l => BS_RE.test(l));
+  const isConsol = p => head(p).some(l => /consolidated/i.test(l) && !/standalone/i.test(l) &&
+    /(balance\s*sheet|statement\s*of\s*profit|financial\s*position|cash\s*flow)/i.test(l)) ||
+    head(p).some((l, i, a) => /^consolidated$/i.test(l.trim()) && BS_RE.test(a[i + 1] || ''));
+  const isStandalone = p => head(p).some(l => /standalone/i.test(l) && BS_RE.test(l));
+  const debt = p => pages[p].some(l => /debt\s*securities/i.test(l));
+  const totalLE = p => pages[p].some(l => /total\s*(equity\s*and\s*)?liabilities|total\s*liabilities\s*and\s*equity/i.test(l));
+  // the liabilities half of a balance sheet is often on the page after the assets half
+  const hasLiabs = p => (debt(p) || (p + 1 < pages.length && debt(p + 1))) && (totalLE(p) || (p + 1 < pages.length && totalLE(p + 1)));
   let start = -1;
-  for (let p = 0; p < pages.length; p++) if (isBS(p) && hasLiabs(p) && !isConsol(p)) { start = p; break; }
-  if (start < 0) for (let p = 0; p < pages.length; p++) if (hasLiabs(p) && !isConsol(p)) { start = p; break; }
+  for (const test of [p => isStandalone(p) && hasLiabs(p), p => isBS(p) && hasLiabs(p) && !isConsol(p), p => debt(p) && totalLE(p) && !isConsol(p)]) {
+    for (let p = 0; p < pages.length && start < 0; p++) if (test(p)) start = p;
+    if (start >= 0) break;
+  }
   if (start < 0) return null;
   let end = pages.length;
   for (let p = start + 1; p < pages.length; p++) if (isConsol(p) && (isBS(p) || hasLiabs(p))) { end = p; break; }
@@ -254,7 +306,8 @@ const close = (a, b, tol = 0.015) => a != null && b != null && Math.abs(a - b) <
 
 /* ── 8. Whole report ── */
 async function extractReport(buffer, { fyHint } = {}) {
-  const pages = await pdfToPages(buffer);
+  let pages = [];
+  for (const b of Array.isArray(buffer) ? buffer : [buffer]) pages = pages.concat(await pdfToPages(b));
   const log = [];
   const range = findStandaloneRange(pages);
   if (!range) return { ok: false, error: 'Standalone balance sheet not found', pages: pages.length };
