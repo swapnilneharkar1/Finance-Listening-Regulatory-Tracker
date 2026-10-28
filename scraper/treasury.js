@@ -19,6 +19,7 @@ const CONFIG = require('./treasury-sources');
 const { extractReport } = require('./treasury-extract');
 
 const OUT_DIR = path.join(__dirname, '..', 'data', 'treasury');
+const DEBUG_DIR = path.join(OUT_DIR, 'debug');
 const EXTRACTED_DIR = path.join(OUT_DIR, 'extracted');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const FORCE = process.env.TREASURY_FORCE === 'true';
@@ -339,6 +340,7 @@ async function main() {
     if (ONLY.length && !ONLY.includes(co.key)) continue;
     console.log(`\n▶ ${co.name}`);
     const log = runLog.companies[co.key] = { reports: [], missing: [] };
+    if (fs.existsSync(DEBUG_DIR)) for (const f of fs.readdirSync(DEBUG_DIR)) if (f.startsWith(co.key + '_')) fs.unlinkSync(path.join(DEBUG_DIR, f));
     const found = await discover(co);
     const years = wantedYears(found, CONFIG.years);
     const extracted = [];
@@ -353,7 +355,7 @@ async function main() {
       for (const r of cand) {
         console.log(`    ${fy}: ${r.via} ${r.url}`);
         const buf = r.url.startsWith('file://') ? asPdf(fs.readFileSync(r.url.slice(7))) : await download(r.url);
-        if (!buf) { log.reports.push({ fy, status: r.guess ? 'not on BSE' : 'download failed', url: r.url }); continue; }
+        if (!buf) { log.reports.push({ fy, status: r.guess ? 'not on BSE' : 'download failed', url: r.url }); console.log(`      ✗ ${r.guess ? 'not on BSE' : 'download failed'}`); continue; }
         try {
           const e = await extractReport(buf, { fyHint: fy });
           Object.assign(e, { url: r.url, via: r.via, reportFy: fy, extractor: EXTRACTOR_VERSION,
@@ -361,7 +363,12 @@ async function main() {
           if (e.ok && !['debt_securities', 'borrowings', 'deposits', 'subordinated'].some(k => e.statement[k])) {
             e.ok = false; e.error = `no borrowing lines found on the standalone balance sheet (p.${e.standalonePages[0]})`;
           }
-          if (!e.ok) { log.reports.push({ fy, status: 'extraction failed: ' + e.error, url: r.url }); continue; }
+          if (e.debug) { // what the reader saw, so a failed or partial report can be fixed
+            fs.mkdirSync(DEBUG_DIR, { recursive: true });
+            fs.writeFileSync(path.join(DEBUG_DIR, `${co.key}_${fy}.txt`), `${r.url}\n${e.debug}\n`);
+            delete e.debug;
+          }
+          if (!e.ok) { log.reports.push({ fy, status: 'extraction failed: ' + e.error, url: r.url }); console.log(`      ✗ ${e.error}`); continue; }
           if (e.fy !== fy) e.log.push(`report labelled ${fy} but balance sheet is dated ${e.fy}`);
           fs.writeFileSync(cached, JSON.stringify(e, null, 1));
           extracted.push(e); done = true;
@@ -370,6 +377,9 @@ async function main() {
           break;
         } catch (err) {
           log.reports.push({ fy, status: 'extraction error: ' + err.message, url: r.url });
+          console.log(`      ✗ ${err.message}`);
+          fs.mkdirSync(DEBUG_DIR, { recursive: true });
+          fs.writeFileSync(path.join(DEBUG_DIR, `${co.key}_${fy}.txt`), `${r.url}\nReason: ${err.message}\n`);
         }
         if (!r.url.startsWith('file://')) await sleep(1500);
       }
