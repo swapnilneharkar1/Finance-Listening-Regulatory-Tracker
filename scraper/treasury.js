@@ -49,7 +49,7 @@ let _browser = null;
 async function browser() {
   if (!_browser) {
     const puppeteer = require('puppeteer');
-    _browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'] });
+    _browser = await puppeteer.launch({ headless: 'new', executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined, args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'] });
   }
   return _browser;
 }
@@ -87,13 +87,84 @@ async function nseReports(symbol) {
     const b = await browser(); const page = await b.newPage();
     await page.setUserAgent(UA);
     await page.goto(`https://www.nseindia.com/get-quotes/equity?symbol=${encodeURIComponent(symbol)}`, { waitUntil: 'networkidle2', timeout: 60000 }).catch(() => {});
-    const json = await page.evaluate(async u => { const r = await fetch(u, { credentials: 'include' }); return r.ok ? r.json() : null; }, api);
+    let json = null;
+    for (let attempt = 1; attempt <= 3 && !json; attempt++) {
+      try { // the quote page sometimes redirects/reloads while we read ("Execution context was destroyed")
+        json = await page.evaluate(async u => { const r = await fetch(u, { credentials: 'include' }); return r.ok ? r.json() : null; }, api);
+      } catch (e) {
+        if (attempt === 3) throw e;
+        await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 20000 }).catch(() => {});
+        await sleep(3000);
+      }
+    }
     await page.close();
     return json ? reportsFromJson(json) : [];
   } catch (e) {
     console.log(`    NSE listing failed for ${symbol}: ${e.message}`);
     return [];
   }
+}
+
+/* ── Company investor pages (second source; same pages as the FDG document collector) ── */
+// "Annual Report 2024-25", "FY 2024-25", "FY25", "ar-2025-26", "Integrated Annual Report 2023-24" -> FY
+function fyFromText(t) {
+  const s = String(t).replace(/%20|_/g, ' ');
+  let m = s.match(/(?:19|20)?(\d{2})\s*[-–/ ]\s*(?:20)?(\d{2})(?!\d)/);
+  if (m && (+m[2] === (+m[1] + 1) % 100)) return 'FY' + m[2].padStart(2, '0');
+  m = s.match(/\bfy\s*-?\s*(?:20)?(\d{2})(?!\d)/i);
+  if (m) return 'FY' + m[1];
+  return null;
+}
+// Bajaj's CMS links point at an internal host; the public file lives under /bfl/ (verified in the FDG collector)
+function publicUrl(u) {
+  const m = u.match(/aboutbajajfinserv\.com\/corporate-pdf\/bajaj-finance-limited\/(.+?)(?:\.pdf)?$/i);
+  return m ? 'https://www.aboutbajajfinserv.com/bfl/' + m[1] : u;
+}
+const AR_RE = /annual\s*report|integrated\s*(annual\s*)?report|\biar\b|annual-report|annualreport/i;
+const DOC_RE = /\.pdf\b|\.ashx\b|\.zip\b|\/-\/media\/|\/documents\/d\/|\/download|aboutbajajfinserv\.com\/bfl\/|cms-assets\.bajajfinserv\.in/i;
+
+async function siteReports(co) {
+  const site = co.site; if (!site || !(site.pages || []).length) return [];
+  const links = [];
+  for (const pageUrl of site.pages) {
+    try {
+      const b = await browser(); const page = await b.newPage(); await page.setUserAgent(UA);
+      await page.goto(pageUrl, { waitUntil: 'networkidle2', timeout: 60000 }).catch(() => {});
+      await sleep(2000);
+      // open accordions/tabs that hide older years (best effort)
+      await page.evaluate(() => {
+        for (const el of document.querySelectorAll('button, [role=tab], .accordion-header, summary, li a'))
+          if (/20\d\d\s*[-–]\s*\d\d|annual|fy\s*\d/i.test(el.textContent || '') && !/\.pdf/i.test(el.getAttribute('href') || '')) { try { el.click(); } catch (e) {} }
+      }).catch(() => {});
+      await sleep(1500);
+      const found = await page.evaluate(() => {
+        const out = [];
+        for (const a of document.querySelectorAll('a[href]')) out.push({ href: a.href, text: (a.textContent || a.getAttribute('title') || a.getAttribute('aria-label') || '').trim().slice(0, 200), ctx: (a.closest('li,tr,div,section') || a).textContent.trim().slice(0, 300) });
+        const html = document.documentElement.innerHTML;
+        for (const m of html.matchAll(/https?:\/\/[^"'\s<>()]+/g)) out.push({ href: m[0].replace(/\\\//g, '/'), text: '', ctx: '' });
+        return out;
+      }).catch(() => []);
+      await page.close();
+      links.push(...found.map(f => ({ ...f, page: pageUrl })));
+    } catch (e) { console.log(`    company site ${pageUrl}: ${e.message}`); }
+  }
+  const exclude = site.exclude ? new RegExp(site.exclude, 'i') : null;
+  const out = [], seen = new Set();
+  for (const l of links) {
+    let url; try { url = publicUrl(new URL(l.href, l.page).href); } catch (e) { continue; }
+    const host = new URL(url).hostname;
+    if (!(site.domains || []).some(d => host === d || host.endsWith('.' + d))) continue;
+    if (!DOC_RE.test(url)) continue;
+    const words = `${l.text} ${decodeURIComponent(url)}`;
+    if (!AR_RE.test(words) && !AR_RE.test(l.ctx)) continue;
+    if (exclude && exclude.test(words)) continue;
+    if (/notice|agm|brsr|business responsibility|sustainability|esg|annual return|mgt|abridged|summary|subsidiar/i.test(words)) continue;
+    const fy = fyFromText(l.text) || fyFromText(decodeURIComponent(url)) || fyFromText(l.ctx);
+    if (!fy || seen.has(url)) continue;
+    seen.add(url);
+    out.push({ fy, url, via: 'company website' });
+  }
+  return out;
 }
 
 function bseGuesses(code, years) {
@@ -176,10 +247,16 @@ async function discover(co) {
       .filter(Boolean).map(m => ({ fy: m[1].toUpperCase(), url: 'file://' + path.join(LOCAL_DIR, m[0]), via: 'local' }));
   }
   const found = Object.entries(co.reports || {}).map(([fy, url]) => ({ fy: fy.toUpperCase(), url, via: 'manual link' }));
+  // Every source is kept: if one copy of a year's report can't be read, the next is tried
   if (co.nse) {
     const nse = await nseReports(co.nse);
     console.log(`    NSE listing: ${nse.length} report(s)`);
-    for (const r of nse) if (!found.some(f => f.fy === r.fy)) found.push(r);
+    for (const r of nse) if (!found.some(f => f.url === r.url)) found.push(r);
+  }
+  if (co.site) {
+    const sr = await siteReports(co);
+    console.log(`    company website: ${sr.length} annual report(s)`);
+    for (const r of sr) if (!found.some(f => f.url === r.url)) found.push(r);
   }
   if (co.bse) {
     const latestGuess = new Date().getMonth() >= 8 ? new Date().getFullYear() % 100 : new Date().getFullYear() % 100 - 1;
@@ -418,4 +495,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch(async e => { console.error(e); if (_browser) await _browser.close(); process.exit(1); });
-module.exports = { mergeCompany, summaryTables, readouts, reportsFromJson };
+module.exports = { mergeCompany, summaryTables, readouts, reportsFromJson, siteReports, fyFromText, publicUrl, unzipPdfs };
