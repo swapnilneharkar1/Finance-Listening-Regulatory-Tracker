@@ -1,5 +1,5 @@
 https://nsearchives.nseindia.com/annual_reports/AR_20279_CHOLAFIN_2021_2022_07072022231803_07082022070003.zip
-Reason: breakdown problems: debt_securities: note p.116; breakdown not readable -> using balance-sheet total | borrowings: note not found; breakdown not readable -> using balance-sheet total | investments: breakdown not readable (sum 103.00 vs balance sheet 207616) -> book size only
+Reason: breakdown problems: investments: note p.132; breakdown not readable (sum 7290.00 vs balance sheet 207616) -> book size only
 Pages: 284
 Repeated header/footer lines (ignored): corporate overview management reports financial statements | in lakhs | march 31 2022 march 31 2021 | for the year ended march 31 2022 | notes forming part of the standalone financial statements contd | notes forming part of the consolidated financial statements contd
 
@@ -195,80 +195,100 @@ Other Equity (Refer Note 23B)
 Transfer to reserves from Retained
 Standalone Statement of Changes in EquityA) Equity Share CapitalB)   Particulars   Balance as at March 31, 2021Changes in accounting policy/prior period errorsRestated Balance at the beginningof the current reporting periodRemeasurement of definedbenefit plansTotal comprehensive incomefor the period, net of income taxDividend including taxTransfer to retained earningsChanges during the periodearnings during the yearBalance as at March 31, 2022
 98
-===== note page 116 =====
+===== note page 136 =====
 Notes forming part of the Standalone Financial Statements (Contd.)
 For the year ended March 31, 2022
-from such proceeds as a recovery of part of the cost of   results in derecognition when it gives rise to substantially
-the instrument, in which case, such gains are recorded in   different terms. When the contractual terms of a financial
-OCI (Other Comprehensive Income).Equity instruments at   asset are modified and the modification does not result
-FVOCI are not subject to an impairment assessment.   in derecognition, the financial asset is considered as
-impaired, which is reviewed after a period of 12 months
-3.2.4   Debt securities and other borrowed funds
-from the date of modification. In case of modifications
-After initial measurement, debt issued and other borrowed
-done in compliance with regulatory guidelines/ directives,
-funds are subsequently measured at amortised cost.
-the financial asset’s risk is considered to have increased
-Amortised cost is calculated by taking into account any
-significantly since initial recognition. Where a modification
-discount or premium on issue funds, and costs that are an
-does not lead to derecognition, the company calculates
-integral part of the EIR.
-the modification gain/loss comparing the gross carrying
-3.2.5   Undrawn loan commitments   amount before and after the modification (excluding the
-ECL allowance).
-Undrawn loan commitments are commitments under
-which, over the duration of the commitment, the Company   A financial asset (or, where applicable, a part of a financial
-is required to provide a loan with pre-specified terms to the   asset or part of a group of similar financial assets) is
-customer. Undrawn loan commitments are in the scope of   derecognised when the rights to receive cash flows
-the ECL requirements.   from the financial asset have expired. The Company also
-derecognises the financial asset if it has both transferred the
-The nominal contractual value of undrawn loan
-financial asset and the transfer qualifies for derecognition.
-commitments, where the loan agreed to be provided is on
-market terms, are not recorded in the balance sheet. The   The Company has transferred the financial asset if, and
-nominal values of these commitments together with the   only if, either:
-corresponding ECLs are disclosed in notes.
-• The Company has transferred its contractual rights to
-3.3   Reclassification of financial assets and liabilities   receive cash flows from the financial asset
-The Company does not reclassify its financial assets   Or
-subsequent to their initial recognition, apart from the
-• It retains the rights to the cash flows, but has assumed
-exceptional circumstances in which the Company
-an obligation to pay the received cash flows in full
-acquires, disposes of, or terminates a business line.
-without material delay to a third party under a ‘pass–
-Financial liabilities are never reclassified.
-through’ arrangement.
-3.4   Derecognition of financial assets and liabilities
-Pass-through arrangements are transactions whereby the
-3.4.1   Derecognition of financial assets   Company retains the contractual rights to receive the cash
-flows of a financial asset (the 'original asset'), but assumes
-A modification of a financial asset occurs when the
-a contractual obligation to pay those cash flows to one or
-contractual terms governing the cash flows of a financial
-more entities, when all of the following three conditions
-asset are renegotiated or otherwise modified between
-are met:
-the initial recognition and maturity of the financial asset.
-A modification affects the amount and/or timing of the   • The Company has no obligation to pay amounts to the
-contractual cash flows either immediately or at a future   eventual recipients unless it has collected equivalent
-date. The company renegotiates loans to customers in   amounts from the original asset, excluding short-term
-financial difficulty to maximise collection and minimise   advances with the right to full recovery of the amount
-the risk of default. Modification of loan terms is granted in   lent plus accrued interest at market rates
-cases where although the borrower made all reasonable
-• The Company cannot sell or pledge the original asset
-efforts to pay under the original contractual terms, there is
-other than as security to the eventual recipients
-a risk of default or default has already happened and the
-borrower is expected to be able to meet the revised terms.   • The Company has to remit any cash flows it collects
-The revised terms in most of the cases include an extension   on behalf of the eventual recipients without material
-of the maturity of the loan, changes to the timing of the   delay. In addition, the Company is not entitled to
-cash flows of the loan (principal and interest repayment).   reinvest such cash flows, except for investments in cash
-When a financial asset is modified the company assesses   or cash equivalents including interest earned, during
-whether this modification results in derecognition. In   the period between the collection date and the date of
-accordance with the company’s policy, a modification   required remittance to the eventual recipients.
-104
+Note : 15 INTANGIBLE ASSETS (Contd.)
+` in lakhs
+Particulars   Computer
+Software
+Amortization for the year   1,271
+Amortization on disposals   -
+Balance as at March 31, 2022   6,979
+Net Carrying amount
+As at March 31, 2021   1,645
+As at March 31, 2022   1,455
+Useful Life of the asset (In Years)   3
+Method of depreciation   Straight line method
+1. Company has not carried out any revaluation of intangible assets during the year ended March 31, 2022.
+` in lakhs
+Particulars   As at   As at
+March 31, 2022 March 31, 2021
+Note : 16 OTHER NON FINANCIAL ASSETS
+Prepaid expenses   2,431   1,495
+Capital advances   143   1,006
+GST Input Credit   993   1,816
+Others   3,312   2,717
+Total   6,879   7,034
+` in lakhs
+Particulars   As at   As at
+March 31, 2022 March 31, 2021
+Note : 17 DEBT SECURITIES (at amortised cost)
+Redeemable Non-Convertible Debentures
+Medium-Term - Secured   10,52,995   9,34,263
+Medium-Term - Unsecured   2,500   -
+Commercial Papers - Unsecured   2,76,615   3,01,504
+Total   13,32,110   12,35,767
+All debt securities have been contracted in India
+17.1 Security
+(i) Redeemable Non-Convertible Debentures - Medium-term is secured by way of specific charge on assets under hypothecation
+relating to Vehicle Finance, Loan against property, Bills discounted and other loans and pari passu charge on immovable property
+which are owned assets of the Company situated at Chennai.
+(ii) The Company has not defaulted in the repayment of dues to its lenders.
+124
+===== note page 138 =====
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2022
+17.2 Details of Debentures - Contractual principal repayment value (Contd.)
+(ii) Secured Redeemable Non-Convertible Debentures - Redeemable at premium - No put call option
+No. of Debentures   Face Value `   Balance as at   Due date of   Redemption   Premium `
+redemption   price `
+March 31, 2022   March 31, 2021
+` in lakhs   ` in lakhs
+1000   10,00,000   10,000   -   Mar-27   14,22,599   4,22,599
+1250   10,00,000   12,500   12,500   Jul-25   14,61,481   4,61,481
+850   10,00,000   8,500   8,500   Jul-25   13,53,045   3,53,045
+500   10,00,000   5,000   5,000   Jan-23   12,54,470   2,54,470
+250   10,00,000   2,500   2,500   Dec-24   12,93,960   2,93,960
+350   10,00,000   3,500   3,500   Oct-24   13,01,025   3,01,025
+1100   10,00,000   11,000   May-21   12,94,211   2,94,211
+42,000   43,000
+(iii) Secured Redeemable Non-Convertible Debentures - Redeemable at par - with Put option
+No. of Debentures   Face Value `   Balance as at   Due date of   Put option   Rate of
+redemption   date   interest %
+March 31, 2022 March 31, 2021
+` in lakhs   ` in lakhs
+10   10,00,000   100   100   Aug-23   Jul-21   9.06
+100   100
+(iv) UnSecured Redeemable Non-Convertible Debentures - Redeemable at par - No put call option
+No. of Debentures   Face Value `   Balance as at   Due date of   Put option   Rate of
+redemption   date   interest %
+March 31, 2022 March 31, 2021
+` in lakhs   ` in lakhs
+250   10,00,000   2,500   -   Jul-23   -   5.12
+2,500   -   -
+` in lakhs
+Particulars   As at   As at
+March 31, 2022 March 31, 2021
+Note : 18 BORROWINGS (Other than Debt Securities) at amortised cost
+A) Term Loans
+i) a) From Banks - Secured
+- Rupee Loans   41,87,373   35,68,218
+- Foreign currency Loans   61,577   -
+- External Commercial Borrowings   1,94,543   2,39,869
+b) From Banks - Unsecured
+Short term loans   -   20,000
+ii) From Other Parties - Secured
+Financial Institutions
+- Rupee Loans   1,53,894   1,72,786
+- External Commercial Borrowings   1,44,285   1,37,230
+Securitisation - Rupee Loans   3,43,306   4,34,452
+B) Loan repayable on demand - Secured   1,15,474   1,45,671
+from Banks - Rupee Loans (Refer Note 6 and 18.1.(vi))
+Total   52,00,452   47,18,226
+Borrowings within India   48,61,624   43,41,127
+Borrowings Outside India   3,38,828   3,77,099
+126
 ===== note page 142 =====
 Notes forming part of the Standalone Financial Statements (Contd.)
 For the year ended March 31, 2022
@@ -319,3 +339,55 @@ March 31, 2022 March 31, 2021
 150   10,00,000   1,500   1,500   Nov-23   17,57,947   7,57,947
 1,500   1,500
 130
+===== note page 132 =====
+Notes forming part of the Standalone Financial Statements (Contd.)
+For the year ended March 31, 2022
+Note : 9.1 LOANS (Contd.)
+ECL across stages have been computed on collective basis.
+The Company uses Days past due of the customer to determine the credit quality of loans
+*Total write off includes Loss on disposal of repossessed vehicles - ` 60,124 Lakhs for the year ended March 31, 2022 (` 27,211 lakhs -March 31,
+2021)
+Note : 9.2 OVERDUE GREATER THAN 90 DAYS AS ON MARCH 31, 2022
+` in lakhs
+No. of cases   Principal   Overdue
+outstanding   Instalments*
+87,914   2,03,229   1,44,889
+*Overdue instalments includes principal amount overdue and interest overdue
+` in lakhs
+Particulars   As at   As at
+March 31, 2022 March 31, 2021
+Note : 10 INVESTMENTS
+Investment in Equity Instruments* Unquoted -
+a) Subsidiaries at cost
+Cholamandalam Home Finance Limited   4,240   4,240
+4,24,00,000 Equity shares of `10 each fully paid up
+Cholamandalam Securities Limited   2,250   2,250
+2,25,00,014 Equity shares of ` 10 each fully paid up
+b) Joint Venture
+Payswiff Technologies Private Limited 27,73,227   45,001   -
+Equity shares of ` 10 each fully paid up
+c) Associate at cost
+White Data System India Private Limited   800   800
+12,75,917 Equity shares of ` 10 each fully paid up
+Vishvakarma Payments Private Limited   -   -
+2,100 Equity shares of ` 10 each fully paid up
+Paytail commerce Private limited   975   -
+27,482 Equity shares of ` 10 each fully paid up
+d) Others - Unquoted - FVOCI **
+Amaravathi Sri Venkatesa Paper Mills Limited   -   -
+2,93,272 Equity shares of ` 10 each fully paid up#
+Saraswat Co-operative Bank Limited   -   -
+1,000 Equity shares of ` 10 each fully paid up#
+The Shamrao Vithal Co-operative Bank Limited   -   -
+1,000 Equity shares of ` 25 each fully paid up#
+Chola Insurance Distribution Services Private Limited   2   2
+19,133 Equity shares of ` 10 each fully paid up
+Chennai Willingdon Corporate Foundation
+5 shares of ` 10 each fully paid up
+e) Investment in Indian Government Securities - amortised cost   1,54,348   1,54,590
+(Issued by Government of India)
+Total   2,07,616   1,61,882
+*Investments are made in India
+**The Company has designated certain unquoted equity instruments as FVOCI on the basis that these are not held for trading.
+# represents amount less than Rs 1 lakh.
+120

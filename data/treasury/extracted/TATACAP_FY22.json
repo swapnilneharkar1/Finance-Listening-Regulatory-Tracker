@@ -86,7 +86,7 @@
   "borrowings: not on the balance sheet (treated as nil)",
   "deposits: not on the balance sheet (treated as nil)",
   "subordinated: 1 lines from note p.298, reconciles to balance sheet",
-  "investments: breakdown not readable (sum 5323942.00 vs balance sheet 1013997) -> book size only"
+  "investments: note p.266; breakdown not readable (sum 5323942.00 vs balance sheet 1013997) -> book size only"
  ],
  "investment_total": {
   "FY22": 10139.97,
@@ -95,7 +95,7 @@
  "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/21-22/TATA%20Capital%20-%20Annual%20Report%20FY%202021-22.pdf",
  "via": "company website",
  "reportFy": "FY22",
- "extractor": 2,
+ "extractor": 3,
  "sha": "5dee0e5c0489dcb4",
- "extractedAt": "2026-10-28T06:37:26.729Z"
+ "extractedAt": "2026-10-28T07:17:20.315Z"
 }

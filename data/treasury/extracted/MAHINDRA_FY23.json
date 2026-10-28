@@ -9,6 +9,12 @@
   258
  ],
  "statement": {
+  "investments": {
+   "cy": 9988.62,
+   "py": 8440.27,
+   "note": "8",
+   "page": 186
+  },
   "debt_securities": {
    "cy": 24745.07,
    "py": 18252.71,
@@ -21,6 +27,18 @@
    "note": "17",
    "page": 186
   },
+  "deposits": {
+   "cy": 5524.6,
+   "py": 8426.19,
+   "note": "18",
+   "page": 186
+  },
+  "subordinated": {
+   "cy": 3442.13,
+   "py": 3129.85,
+   "note": "19",
+   "page": 186
+  },
   "finance_cost": {
    "cy": 4576.72,
    "py": 3920.18,
@@ -31,7 +49,7 @@
  "borrowing": {
   "FY23": [
    {
-    "label": "Interest paid in terms of Section 16 of the MSMED Act along with the amount of - - Non–convertible debentures (Secured)",
+    "label": "Non–convertible debentures (Secured)",
     "category": "Secured NCDs",
     "value": 19464.32,
     "page": 203,
@@ -41,13 +59,6 @@
     "label": "Non–convertible debentures (Unsecured)",
     "category": "Unsecured NCDs",
     "value": 994.95,
-    "page": 203,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Principal paid beyond the appointed date",
-    "category": "Secured NCDs",
-    "value": 0,
     "page": 203,
     "section": "debt_securities"
    },
@@ -66,24 +77,86 @@
     "section": "debt_securities"
    },
    {
-    "label": "Amount of interest due and payable for the period of delay on payments made",
-    "category": "Secured NCDs",
-    "value": 0,
-    "page": 203,
-    "section": "debt_securities"
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 30622.15,
+    "page": 204,
+    "section": "borrowings"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 41234.06,
-    "page": 186,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 2550.71,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitisation transactions",
+    "category": "Securitisation",
+    "value": 6718.6,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "from banks",
+    "category": "Bank term loans",
+    "value": 85,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "from other parties",
+    "category": "Other borrowings",
+    "value": 150.01,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 437,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Cash credit facilities with banks",
+    "category": "Cash credit & WCDL",
+    "value": 169.97,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs) other than related parties",
+    "category": "Deposits",
+    "value": 500.62,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 5524.6,
+    "page": 206,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non–convertible debentures – private placement",
+    "category": "Subordinated debt",
+    "value": 1028.73,
+    "page": 206,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non–convertible debentures – retail public issue",
+    "category": "Subordinated debt",
+    "value": 2413.4,
+    "page": 206,
+    "section": "subordinated"
    }
   ],
   "FY22": [
    {
-    "label": "Interest paid in terms of Section 16 of the MSMED Act along with the amount of - - Non–convertible debentures (Secured)",
+    "label": "Non–convertible debentures (Secured)",
     "category": "Secured NCDs",
     "value": 16610.55,
     "page": 203,
@@ -93,13 +166,6 @@
     "label": "Non–convertible debentures (Unsecured)",
     "category": "Unsecured NCDs",
     "value": 795.82,
-    "page": 203,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Principal paid beyond the appointed date",
-    "category": "Secured NCDs",
-    "value": 0,
     "page": 203,
     "section": "debt_securities"
    },
@@ -118,19 +184,81 @@
     "section": "debt_securities"
    },
    {
-    "label": "Amount of interest due and payable for the period of delay on payments made",
-    "category": "Secured NCDs",
-    "value": 0,
-    "page": 203,
-    "section": "debt_securities"
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 15305.19,
+    "page": 204,
+    "section": "borrowings"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 26005.17,
-    "page": 186,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 2177.52,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitisation transactions",
+    "category": "Securitisation",
+    "value": 8089.2,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "from banks",
+    "category": "Bank term loans",
+    "value": 85,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "from other parties",
+    "category": "Other borrowings",
+    "value": 0,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 348.26,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Cash credit facilities with banks",
+    "category": "Cash credit & WCDL",
+    "value": 0,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs) other than related parties",
+    "category": "Deposits",
+    "value": 0,
+    "page": 204,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 8426.19,
+    "page": 206,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non–convertible debentures – private placement",
+    "category": "Subordinated debt",
+    "value": 719.08,
+    "page": 206,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non–convertible debentures – retail public issue",
+    "category": "Subordinated debt",
+    "value": 2410.77,
+    "page": 206,
+    "section": "subordinated"
    }
   ]
  },
@@ -138,23 +266,28 @@
   "FY23": []
  },
  "totals": {
-  "FY23": 65979.13,
-  "FY22": 44257.88
+  "FY23": 74945.86,
+  "FY22": 55813.92
  },
  "finance_cost": {
   "FY23": 4576.72,
   "FY22": 3920.18
  },
  "log": [
-  "debt_securities: 6 lines from note p.203, reconciles to balance sheet",
-  "borrowings: note p.204; breakdown sums to 40126.47 vs balance sheet 41234.06 -> using balance-sheet total",
-  "deposits: not on the balance sheet (treated as nil)",
-  "subordinated: not on the balance sheet (treated as nil)"
+  "debt_securities: 4 lines from note p.203, reconciles to balance sheet",
+  "borrowings: 8 lines from note p.204, reconciles to balance sheet",
+  "deposits: 1 lines from note p.206, reconciles to balance sheet",
+  "subordinated: 2 lines from note p.206, reconciles to balance sheet",
+  "investments: note not found; breakdown not readable (sum 0.00 vs balance sheet 9988.62) -> book size only"
  ],
+ "investment_total": {
+  "FY23": 9988.62,
+  "FY22": 8440.27
+ },
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_22127_M&MFIN_2022_2023_01072023204544_07012023210002.zip",
  "via": "NSE",
  "reportFy": "FY23",
- "extractor": 2,
+ "extractor": 3,
  "sha": "8f4cc11c2283c79c",
- "extractedAt": "2026-10-28T06:31:07.495Z"
+ "extractedAt": "2026-10-28T07:10:49.295Z"
 }

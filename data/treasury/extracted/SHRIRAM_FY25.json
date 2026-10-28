@@ -6,7 +6,7 @@
  "pages": 560,
  "standalonePages": [
   226,
-  383
+  391
  ],
  "statement": {
   "investments": {
@@ -306,7 +306,7 @@
   "borrowings: 8 lines from note p.278, reconciles to balance sheet",
   "deposits: 3 lines from note p.283, reconciles to balance sheet",
   "subordinated: 1 lines from note p.283, reconciles to balance sheet",
-  "investments: breakdown not readable (sum 10990.09 vs balance sheet 15598.71) -> book size only"
+  "investments: note p.263; breakdown not readable (sum 10990.09 vs balance sheet 15598.71) -> book size only"
  ],
  "investment_total": {
   "FY25": 15598.71,
@@ -315,7 +315,7 @@
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_26597_SHRIRAMFIN_2024_2025_A_24062025170941.pdf",
  "via": "NSE",
  "reportFy": "FY25",
- "extractor": 2,
+ "extractor": 3,
  "sha": "f7f1d0c6a62ae965",
- "extractedAt": "2026-10-28T06:31:53.099Z"
+ "extractedAt": "2026-10-28T07:12:53.106Z"
 }

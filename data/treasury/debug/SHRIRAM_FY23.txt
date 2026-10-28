@@ -1,5 +1,5 @@
 https://nsearchives.nseindia.com/annual_reports/AR_21945_SHRIRAMFIN_2022_2023_31052023233852_06012023070001.zip
-Reason: breakdown problems: investments: breakdown not readable (sum 38843.86 vs balance sheet 8565.06) -> book size only
+Reason: breakdown problems: investments: note p.197; breakdown not readable (sum 38843.86 vs balance sheet 8565.06) -> book size only
 Pages: 466
 Repeated header/footer lines (ignored): shriram finance limited | annual report 2022 23 | rs in crores | for the year ended march 31 2023 contd standalone accounts | particulars march 31 2023 march 31 2022 | notes forming part of the standalone financial statements | for the year ended march 31 2023 contd | notes forming part of the consolidated financial statements
 
@@ -367,3 +367,60 @@ Subordinated debts - debentures #   4,523.85   4,614.25
 total   4,523.85   4,614.25
 Shriram Finance Limited
 203
+===== note page 197 =====
+notes FORMInG pARt OF tHe StAndALOne FInAnCIAL StAteMentS
+FOR tHe YeAR ended MARCH 31, 2023 (Contd.)   standalone accounts
+13   inVestments
+(Rs. in crores)
+As at march 31, 2023   As at march 31, 2022
+Amotised At Fair   At Fair   others   total   Amotised At Fair   At Fair   others   total
+Cost   value   value   (at cost)   Cost   value   value   (at cost)
+Through Through   Through Through
+oCi   profit or   oCi   profit or
+particulars   loss   loss
+i) Investments in   -   -   512.31   -   512.31   -   - 1,523.02   - 1,523.02
+mutual funds
+ii) Investments   5,219.92   -   -   - 5,219.92 3,154.39   -   -   - 3,154.39
+in government
+securities
+(Refer note 67)
+iii) Investments   -   63.35   25.40   -   88.75   -   -   23.89   -   23.89
+in equity
+instruments
+iv) Investments   -   -   -   13.37   13.37   -   -   -   13.37   13.37
+in associate (at
+cost) (Refer
+note 45)
+v) Investments in   1,207.71   -   -   - 1,207.71 1,106.88   -   -   - 1,106.88
+pass through
+certificates
+(unquoted)
+vi) Investments in   -   -   -   -   -   -   -   822.29   -   822.29
+certificate of
+deposits
+vii) Investments   -   -   -   -   -   199.79   -   -   -   199.79
+in commercial
+papers
+viii) Investment   -   -   - 1,562.24 1,562.24   -   -   -   -   -
+in subsidiary
+(Refer note
+45)
+ix) Others
+Venture   -   -   1.53   -   1.53   -   -   1.53   -   1.53
+Capital Fund
+total Gross (A)   6,427.63   63.35   539.24 1,575.61 8,605.83 4,461.06   - 2,370.73   13.37 6,845.16
+i) Investments   -   63.35   -   -   63.35   -   -   -   -   -
+outside India
+ii) Investments in   6,427.63   -   539.24 1,575.61 8,542.48 4,461.06   - 2,370.73   13.37 6,845.16
+India
+total Gross (B)   6,427.63   63.35   539.24 1,575.61 8,605.83 4,461.06   - 2,370.73   13.37 6,845.16
+Less : Allowance   (40.77)   -   -   -   (40.77)   (36.00)   -   -   -   (36.00)
+for impairment
+loss (C)
+total - net d = (A) 6,386.86   63.35   539.24 1,575.61 8,565.06 4,425.06   - 2,370.73   13.37 6,809.16
+- (C)
+More information regarding the valuation methodologies can be found in note 54.09.
+There are no investments designated at FVtpL.
+The dividends of Rs. 6.52 crores (March 31, 2022: Rs. nil) received from investments in shares are recorded as dividend income.
+Shriram Finance Limited
+193

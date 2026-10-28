@@ -1,65 +1,7 @@
 https://nsearchives.nseindia.com/annual_reports/AR_26674_BAJFINANCE_2024_2025_A_02072025000055.pdf
-Reason: Standalone balance sheet not found
+Reason: breakdown problems: debt_securities: note p.288; breakdown sums to 585453.46 vs balance sheet 111010.88 -> using balance-sheet total | borrowings: note p.291; breakdown sums to 359726.42 vs balance sheet 89737.66 -> using balance-sheet total | deposits: note p.294; breakdown sums to 148518.55 vs balance sheet 71365.52 -> using balance-sheet total | subordinated: note p.295; breakdown sums to 17389.16 vs balance sheet 3103.54 -> using balance-sheet total | investments: note p.279; breakdown not readable (sum 713.78 vs balance sheet 41716.23) -> book size only
 Pages: 503
 Repeated header/footer lines (ignored): th | corporate statutory financial | overview reports statements | c in crore | particulars 2025 2024 | notes to standalone financial statements for the year ended 31 march 2025 contd | notes to consolidated financial statements for the year ended 31 march 2025 contd
-Candidate pages: 88 (5 lines), 255 (4 lines), 261 (7 lines), 317 (4 lines), 397 (4 lines), 481 (4 lines)
-
-===== page 88 =====
-Corporate   Statutory   Financial
-Overview   Reports   Statements
-At present, the LCR requirement for BFL and BHFL is at 100%. As on 31 March 2025, BFL maintained a LCR of
-124.93% and BHFL maintained a LCR of 192.81%. Both are well above the RBI’s stipulated norms.
-Table 7 gives the behavioural maturity pattern of BFL’s asset and liabilities and depicts its prudent approach
-towards ALM management. As can be seen, BFL has maintained significant positive ALM position in 1-7 days
-bucket against RBI permitted negative ALM mismatch of up to 10%. Similarly, in cumulative ALM buckets like
-8-14 days and 15-30/31 days, BFL has maintained significant cumulative positive ALM balances against RBI
-permitted cumulative negative ALM mismatches of up to 10% and up to 20% respectively.
-Table 7: Behaviouralised ALM snapshot as on 31 March 2025
-(Hin crore)
-15 to   Over
-1 to 7 8 to 14   30/31   one Over 2 Over 3 Over 6   Over
-days   days   days month months months months   one   Over
-Statement of Structural Liquidity as on: -   (one   (one   (one   to 2   to 3   to 6   to one year to   3 to 5 Over 5
-31 March 2025   month) month) month) months months months   year 3 years   years   years   Total
-Capital and Reserves and Surplus   -   -   -   -   -   -   -   -   -   87,996   87,996
-Deposits   870   489   1,516   2,433   3,102   8,037   14,976   34,890   5,052   -   71,366
-Borrowings from Commercial Paper   -   -   6,064   5,935   4,088   2,738   2,531   -   -   -   21,356
-Borrowings from Banks/FI   4,416   3   789   1,797   3,259   3,851   15,544   42,805   7,430   165   80,059
-Borrowings from Debentures   185   -   387   942   1,705   2,461   11,767   26,835   20,790   28,387   93,458
-TREPS/REPO   15,311   -   -   -   -   -   -   -   -   -   15,311
-Other Outflows   2,477   699   3,407   400   290   766   1,003   1,922   2,628   1,605   15,198
-Total Outflows (A)   23,259   1,192   12,162   11,506 12,444   17,853 45,822 106,452 35,900 118,153 384,743
-Cumulative Total Outflows (B)   23,259 24,451 36,613   48,119 60,563 78,416 124,238 230,690 266,590 384,743
-Cash, Cash Equivalents & Investments   18,024   -   11,505   1,140   1,023   2,101   4,265   3,757   145   12,208   54,167
-Advances (Receivables under financing activities)   10,813   2,887   6,889   17,518   14,969   37,228   56,798   111,798   31,903   24,050 314,854
-Other inflows   6,274   115   625   1,144   191   314   782   982   1,976   3,320   15,722
-Total Inflows (C)   35,112   3,002   19,019 19,802   16,182 39,643 61,844 116,537 34,024 39,578 384,743
-Cumulative Total Inflows (D)   35,112   38,114   57,133 76,935   93,118 132,760 194,605 311,141 345,166 384,743
-E. Mismatch (C - A)   11,853   1,811   6,857   8,296   3,738   21,790 16,022 10,084   (1,876) (78,575)
-F. Cumulative mismatch (D-B)   11,853 13,664 20,520 28,816 32,555 54,344 70,367 80,451 78,575   -
-G. F as percentage of B   51%   56%   56%   60%   54%   69%   57%   35%   29%   0%
-The assigned portfolio outstanding as on 31 March 2025 stood at H 4,473 crore on a standalone basis and
-H 8,817 crore on a consolidated basis. BFL’s judicious strategy of maintaining a longer duration for liabilities
-than assets, coupled with an optimal mix of borrowings between banks, money markets, external commercial
-borrowings and deposits has helped BFL to effectively manage its net interest margin throughout FY2025.
-Human Resources
-BFL is an equal-opportunity employer. People are its key assets and pillars of strength. The Company has
-adopted people practices that enable it to attract, nurture and grow talent in an increasingly competitive
-market. The Company’s deeply embedded culture fosters an entrepreneurial mindset, humility to continuously
-learn enabled by an innovative mindset to ensure that consistent performance is delivered. BFL’s policies and
-practices are designed to provide its talent with the best opportunities to contribute, learn and grow.
-Attract, Retain and Nurture Talent
-To meet its talent needs, BFL hires a mix of campus and lateral hires, ensuring a balanced inflow of qualified
-candidates. Its innovative Talent Acquisition (TA) Underwriting Practice goes beyond traditional hiring
-metrics, focusing on cultural fit and values alignment. This strategy helps build a workforce that embodies the
-Company's mission and values and fosters performance orientation.
-By prioritising cultural fit, Bajaj Finance attracts top-tier talent from across the country, including those who
-might not excel in conventional recruitment processes. This inclusive approach champions diversity, bringing
-in varied perspectives, diverse backgrounds and eclectic experiences that drive creativity and innovation. The
-TA Underwriting Practice not only benefits the organisation internally but also has a profound impact on the
-broader community. This transformative hiring strategy underscores the Company's commitment to leadership
-and its role in shaping a better future.
-Management Discussion and Analysis 59
 
 ===== page 255 =====
 Standalone Balance Sheet
@@ -108,191 +50,323 @@ Otherfinancialliabilities   20   1,690.64   1,621.61
 th
 226 38 AnnualReport 2024-25
 
-===== page 261 =====
-Standalone Statement of Cash Flows
-(Cincrore)
-Fortheyearended31March
-Particulars   2025   2024
-(I)   Operating activities
-Profitbeforetax   21,676.09   17,053.08
-Adjustmentsfor:
-Interestincome   (51,548.57)   (40,782.76)
-Depreciationandamortisationexpenses   821.98   629.13
-Impairmentonfinancialinstruments   7,882.86   4,572.19
-Netlossondisposalofproperty,plantandequipmentandintangibleassets   32.86   11.76
-Financecosts   18,437.35   13,843.44
-Sharebasedpaymentexpenses   353.99   237.66
-Netgainonfairvaluechanges   (344.00)   (138.85)
-Servicefeesformanagementofassignedportfolioofloans   (18.11)   (24.05)
-Incomeonderecognised(assigned)loans   (459.02)   -
-Exceptionalitems   (2,544.11)   -
-Dividendincome(PreviousyearC 30,225)   (10.96)
-(5,719.64)   (4,598.40)
-Cashinflowfrominterestonloans   49,069.13   38,732.88
-CashinflowfrominterestonInvestments*   2,071.14   808.13
-Cashinflowfromservicingandinterestspreadonassignedloans   33.85   49.58
-Cashoutflowtowardsfinancecost   (16,615.82)   (12,424.79)
-Cash generated from operation before working capital changes   28,838.66   22,567.40
-Working capital changes
-(Increase)/decreaseinbankbalancesotherthancashandcashequivalents   (3,288.21)   (3,210.56)
-(Increase)/decreaseintradereceivables   (180.96)   (193.89)
-(Increase)/decreaseinloans   (69,587.98)   (68,574.24)
-(Increase)/decreaseinInvestmentsclassifiedasFVTPL*   (1,701.86)   1,150.03
-(Increase)/decreaseinotherfinancialassets   8.37   6.08
-(Increase)/decreaseinothernon-financialassets   (111.24)   (33.39)
-Increase/(decrease)intradepayables   119.72   48.21
-Increase/(decrease)inotherpayables   136.05   111.46
-Increase/(decrease)inotherfinancialliabilities   (33.24)   106.17
-Increase/(decrease)inprovisions   56.69   71.13
-Increase/(decrease)inothernon-financialliabilities   30.20   126.95
-(74,552.46)   (70,392.05)
-Incometaxpaid(netofrefunds)   (5,281.66)   (4,554.88)
-Net cash used in operating activities (I)   (50,995.46)   (52,379.53)
-(II) Investing activities
-Purchaseofproperty,plantandequipmentandcapitalwork-in-progress   (551.21)   (568.25)
-Purchaseofintangibleassetsandintangibleassetsunderdevelopment   (478.61)   (414.13)
-Saleofproperty,plantandequipmentandintangibleassets   30.79   35.51
-Purchaseofinvestmentsmeasuredatamortisedcost   -   (289.76)
-Proceedsfromliquidationofinvestmentsmeasuredatamortisedcost   162.35   61.95
-PurchaseofinvestmentsclassifiedasFVOCI   (30,735.22)   (23,310.68)
-ProceedsfromliquidationofinvestmentsclassifiedasFVOCI   29,745.96   15,231.80
-PurchaseofequityinvestmentsdesignatedunderFVOCI   (35.00)   -
-Dividendreceived(PreviousyearC 30,225)   10.96
-Proceedfromofferforsaleofinvestmentinsubsidiarynetofissueexpenses   2,950.68   -
-Investmentinassociates   -   (267.47)
-Investmentinsubsidiaries   (2,200.00)   (200.00)
-Net cash used in investing activities (II)   (1,099.30)   (9,721.03)
-th
-232 38 AnnualReport 2024-25
-
-===== page 317 =====
-Notes to standalone financial statements for the year ended 31 March 2025 (Contd.)
-43 Contingent liabilities and commitments (Contd.)
-(B) Capital and other commitments
-(Cincrore)
-Asat31March
-Particulars   2025   2024
-(i)   Capitalcommitments(Estimatedamountofcontractsremainingtobe
-executedoncapitalaccountnotprovidedfor(netofadvances))
-Tangible   28.30   61.74
-Intangible   17.80   3.78
-(ii) Othercommitments
-Towardspartiallydisbursed/un-encashedloans   3,120.24   3,416.36
-Towardsinvestment   -   2,035.00
-Towardsfuturecorporatesocialresponsibilityspend   178.05   218.85
-3,344.39   5,735.73
-44 Changes in liability arising from financing activities
-(A) Changes in capital and asset structure arising from financing activities and investing
-activities (Ind AS 7 'Statement of Cash Flows')
-   TheCompanydoesnothaveanyfinancingactivitiesandinvestingactivitieswhichaffectthecapitaland
-assetstructureoftheCompanywithouttheuseofcashandcashequivalents.
-(B) Changes in liability arising from financing activities (Ind AS 7 'Statement of CashFlows')
-(Cincrore)
-Cash flows   Foreign
-As at   during the   exchange   As at
-Particulars   1 April 2024   year (net)   fluctuations   Other 31 March 2025
-DebtSecurities   87,596.09   22,334.64   -   1,080.15   111,010.88
-Borrowings(otherthandebt
-securities)   69,238.00   20,207.53   284.01   8.12   89,737.66
-Deposits   59,966.66   10,668.56   -   730.30   71,365.52
-Subordinatedliabilities   3,577.90   (452.50)   -   (21.86)   3,103.54
-Leaseliability   920.93   (194.82)   -   305.88   1,031.99
-221,299.58   52,563.41   284.01   2,102.59   276,249.59
-(Cincrore)
-Cash flows   Foreign
-As at   during the   exchange   As at
-Particulars   1 April 2023   year (net)   fluctuations   Other   31 March 2024
-DebtSecurities   65,669.85   21,162.97   -   763.27   87,596.09
-Borrowings(otherthandebt
-securities)   47,894.70   21,485.93   (110.49)   (32.14)   69,238.00
-Deposits   44,489.79   14,751.88   -   724.99   59,966.66
-Subordinatedliabilities   3,630.29   (49.99)   -   (2.40)   3,577.90
-Leaseliability   518.48   (155.44)   -   557.89   920.93
-162,203.11   57,195.35   (110.49)   2,011.61   221,299.58
-th
-288 38 AnnualReport 2024-25
-
-===== page 397 =====
-Consolidated Balance Sheet
+===== page 256 =====
+Corporate   Statutory   Financial
+Overview   Reports   Statements
+Standalone Balance Sheet (Contd.)
 (Cincrore)
 Asat31March
 Particulars   Note No.   2025   2024
-ASSETS
-Financial Assets
-Cashandcashequivalents   5   3,642.46   4,034.51
-Bankbalancesotherthancashandcashequivalents   6   9,901.08   6,589.50
-Derivativefinancialinstruments   7   250.56   27.84
-Tradereceivables   8   1,913.11   1,733.49
-Loans   9   407,844.14   326,293.32
-Investments   10   34,440.84   30,880.65
-Otherfinancialassets   11   2,444.99   1,431.88
-460,437.18   370,991.19
-Non-financial assets
-Currenttaxassets(net)   480.77   290.92
-Deferredtaxassets(net)   12   1,141.20   1,017.43
-Property,plantandequipment   13   2,688.89   2,358.32
-Capitalwork-in-progress   13   26.74   25.35
-Intangibleassetsunderdevelopment   13   14.55   18.11
-Goodwill   3.27   3.27
-Otherintangibleassets   13   1,088.01   888.31
-Othernon-financialassets   14   246.22   148.72
-5,689.65   4,750.43
-Total assets   466,126.83   375,741.62
-LIABILITIES AND EQUITY
-Liabilities
-Financial liabilities
-Derivativefinancialinstruments   7   37.13   2.12
-Payables   15
-Tradepayables
-Totaloutstandingduesofmicroenterprisesandsmallenterprises   1.80   0.73
-Totaloutstandingduesofcreditorsotherthanmicroenterprises
-andsmallenterprises   1,876.24   2,063.31
-Otherpayables
-Totaloutstandingduesofmicroenterprisesandsmallenterprises   0.42   -
-Totaloutstandingduesofcreditorsotherthanmicroenterprises
-andsmallenterprises   930.49   764.58
-Debtsecurities   16   154,639.73   117,999.54
-Borrowings(otherthandebtsecurities)   17   132,102.25   111,617.47
-Deposits   18   71,403.13   60,150.92
-Subordinatedliabilities   19   3,103.54   3,577.90
-Otherfinancialliabilities   20   1,948.20   1,844.39
-366,042.93   298,020.96
-th
-368 38 AnnualReport 2024-25
+Non-financial liabilities
+Currenttaxliabilities(net)   54.97   82.71
+Provisions   21   464.27   385.23
+Othernon-financialliabilities   22   493.12   462.92
+1,012.36   930.86
+Equity
+Equitysharecapital   23   124.17   123.60
+Otherequity   24   87,871.54   71,886.93
+87,995.71   72,010.53
+Total liabilities and equity   367,869.56   296,614.45
+Summaryofmaterialaccountingpolicies   3
+Theaccompanyingnotesareanintegralpartofthestandalonefinancialstatements
+Asperourreportofevendate   OnbehalfoftheBoardofDirectors
+ForPriceWaterhouseLLP   ForKirtane&PanditLLP   RajeevJain   SanjivBajaj
+CharteredAccountants   CharteredAccountants   ViceChairman   Chairman
+Firm'sregistrationnumber:   Firm'sregistrationnumber:   DIN-01550158   DIN-00014615
+301112E/E300264   105215W/W100057
+SharadVasant   SuhasDeshpande   AnupSaha   AnamiNRoy
+Partner   Partner   ManagingDirector
+Chairman-Audit
+Membershipnumber:101119   Membershipnumber:031787   DIN-07640220   Committee
+DIN-01361110
+SandeepJain   RVijay
+Pune:29April2025   ChiefFinancialOfficer   CompanySecretary
+StandaloneFinancialStatements 227
 
-===== page 481 =====
-Notes to consolidated financial statements for the year ended 31 March 2025 (Contd.)
-48 Financial risk management (Contd.)
-   ThetablebelowsummarisesthematurityprofileoftheundiscountedcontractualcashflowoftheGroup's
-financialliabilities:
-   Asat31March2025
+===== page 257 =====
+Standalone Statement of Profit and Loss
 (Cincrore)
-Over 1   Over 3   Over 1
-Up to   months to   months to   year to   Over
-Particulars   1 month   3 months   1 year   5 years   5 years   Total
-Debtsecurities   7,075.92   19,109.95   33,336.49   80,061.44   63,018.72   202,602.52
-Borrowings(otherthan
-debtsecurities)   21,089.55   7,555.54   25,121.33   93,811.85   2,688.39   150,266.66
-Deposits   2,657.21   5,281.91   24,551.85   48,171.54   -   80,662.51
-Subordinatedliabilities   -   48.90   494.61   2,936.32   -   3,479.83
-Tradepayables   1,497.59   265.69   114.77   -   -   1,878.05
-Otherpayables   692.68   -   238.22   -   -   930.90
-Otherfinancialliabilities   517.79   104.19   511.82   803.81   280.82   2,218.43
-33,530.74   32,366.18   84,369.09   225,784.96   65,987.93   442,038.90
-   Asat31March2024
-(Cincrore)
-Over   Over   Over
-Up to   1 months   3 months   1 year to   Over
-Particulars   1 month to 3 months   to 1 year   5 years   5 years   Total
-Debtsecurities*   7,866.02   22,048.13   18,257.02   59,375.67   43,007.48   150,554.32
-Borrowings(otherthan
-debtsecurities)*   18,347.19   5,098.24   21,096.02   82,407.29   3,046.90   129,995.64
-Deposits   2,925.35   5,467.84   21,895.48   37,797.72   -   68,086.39
-Subordinatedliabilities   -   48.90   703.15   3,479.89   -   4,231.94
-Tradepayables   1,407.21   532.42   124.41   -   -   2,064.04
-Otherpayables   624.73   -   139.85   -   -   764.58
-Otherfinancialliabilities   499.60   124.42   482.13   746.17   238.58   2,090.90
-31,670.10   33,319.95   62,698.06   183,806.74   46,292.96   357,787.81
-   *Netofadjustmentonaccountofrectificationrelatedtoonesubsidiary
+Fortheyearended31March
+Particulars   Note No.   2025   2024
+Revenue from operations
+Interestincome   25   51,548.57   40,782.76
+Feesandcommissionincome   26   5,640.87   5,007.41
+Netgainonfairvaluechanges   27   344.00   138.85
+Saleofservices   28   18.11   24.05
+Incomeonderecognised(assigned)loans   29   459.02   -
+Otheroperatingincome   30   1,369.17   985.73
+Total revenue from operations   59,379.74   46,938.80
+Otherincome   31   40.10   7.18
+Total income   59,419.84   46,945.98
+Expenses
+Financecosts   32   18,437.35   13,843.44
+Feesandcommissionexpense   33   2,599.79   1,959.08
+Impairmentonfinancialinstruments   34   7,882.86   4,572.19
+Employeebenefitsexpense   35   6,907.28   5,849.47
+Depreciationandamortisationexpenses   13   821.98   629.13
+Otherexpenses   36   3,638.60   3,039.59
+Total expenses   40,287.86   29,892.90
+Profit before exceptional items and tax   19,131.98   17,053.08
+Exceptionalitems   37   2,544.11   -
+Profit before tax   21,676.09   17,053.08
+Tax expense
+Currenttax
+Currentyear   5,353.50   4,436.00
+Earlieryears   (249.47)   -
+Deferredtax(credit)/charge   (89.44)   (27.03)
+Total tax expense   12   5,014.59   4,408.97
+Profit after tax   16,661.50   12,644.11
+Other comprehensive income (OCI)
+Itemsthatwillnotbereclassifiedtoprofitorloss:
+Remeasurementgains/(losses)ondefinedbenefitplans   (22.35)   (59.64)
+Taximpactonabove   5.63   15.01
+ChangesinfairvalueoffairvaluethroughOCI(FVOCI)equity
+instruments   (95.49)   151.62
+Taximpactonabove   25.22   (29.82)
+Itemsthatwillbereclassifiedtoprofitorloss:
+ChangesinfairvalueofFVOCIdebtsecurities   122.73   38.74
+Taximpactonabove   (30.90)   (9.75)
+Cashflowhedgereserve   (117.14)   (20.79)
+Taximpactonabove   29.48   5.24
+Costofhedgingreserve   5.99   -
+Taximpactonabove   (1.44)   -
+Total other comprehensive income for the year (net of tax)   (78.27)   90.61
+Total comprehensive income for the year   16,583.23   12,734.72
 th
-452 38 AnnualReport 2024-25
+228 38 AnnualReport 2024-25
+===== note page 288 =====
+Corporate   Statutory   Financial
+Overview   Reports   Statements
+Notes to standalone financial statements for the year ended 31 March 2025 (Contd.)
+16 Debt securities
+(Cincrore)
+Asat31March
+Particulars   2025   2024
+(A) At amortised cost
+Redeemablenon-convertibledebentures
+Securedandfullypaid*   82,282.99   62,170.34
+Unsecuredandfullypaid   6,253.19   6,258.92
+Unsecuredandpartlypaid   1,118.56   745.72
+89,654.74   69,174.98
+Commercialpapers-Unsecured   21,356.14   18,421.11
+111,010.88   87,596.09
+(B) Out of above
+InIndia   111,010.88   87,596.09
+OutsideIndia   -   -
+111,010.88   87,596.09
+*Allthesecurednon-convertibledebentures(NCD)oftheCompanyincludingthoseissuedduringtheyearended31March2025arefully
+securedbyhypothecationofbookdebts/loanreceivablestotheextentasstatedintherespectiveinformationmemorandum.Additionally,
+theCompanyhadmortgagedoneofitsofficesinChennaionparipassuchargeagainstspecificsecuredNCDsissuedtillNovember
+2020.TheCompanyhas,atalltimes,forthesecuredNCDs,maintainedsufficientassetcoverasstatedintherespectiveinformation
+memorandumtowardstheprincipalamount,interestaccruedthereon,andsuchothersumsasmentionedtherein.
+(C) Terms of repayment of non-convertible debentures (NCDs)
+(Cincrore)
+Asat31March
+Date of
+ISIN   Coupon rate   Issue date   redemption   2025   2024
+Redeemable at par
+INE296A07FV8   9.05%   7-Apr-15   7-Apr-24   -   165.00
+INE296A07RR1   5.95%   30-Mar-21   12-Apr-24   -   1,500.00
+INE296A07RU5   5.65%   10-May-21   10-May-24   -   3,150.00
+INE296A07PY1   8.05%   1-Jun-17   31-May-24   -   1,000.00
+INE296A07QV5   8.55%   15-May-19   6-Jun-24   -   75.00
+INE296A07SA5   7.20%   13-Jul-22   12-Jul-24   -   750.00
+INE296A07RK6   6.00%   27-Aug-20   10-Sep-24   -   585.00
+INE296A07RV3   5.55%   27-Aug-21   10-Oct-24   -   1,230.00
+INE296A07EG2   9.36%   17-Nov-14   18-Nov-24   -   100.00
+INE296A07QD3   7.46%   10-Oct-17   18-Nov-24   -   1,000.00
+INE296A07QY9   7.66%   14-Nov-19   9-Dec-24   -   235.00
+INE296A07QZ6   7.65%   28-Jan-20   7-Feb-25   -   850.00
+INE296A07RC3   7.30%   20-Feb-20   10-Mar-25   -   1,035.00
+INE296A07FV8   9.05%   7-Apr-15   7-Apr-25   170.00   170.00
+INE296A07SK4   7.89%   21-Apr-23   10-Jun-25   1,317.00   1,317.00
+INE296A07SB3   7.38%   8-Aug-22   8-Aug-25   1,575.00   1,575.00
+INE296A07HW2   8.90%   20-Aug-15   20-Aug-25   90.00   90.00
+INE296A07IA6   8.70%   13-Oct-15   13-Oct-25   5.00   5.00
+INE296A07SF4   7.90%   16-Nov-22   17-Nov-25   5,100.00   5,100.00
+StandaloneFinancialStatements 259
+===== note page 291 =====
+Notes to standalone financial statements for the year ended 31 March 2025 (Contd.)
+17 Borrowings (other than debt securities)
+(Cincrore)
+Asat31March
+Particulars   2025   2024
+(A) In India
+Atamortisedcost:
+Termloansfrombanks   51,951.98   44,715.52
+Cashcredit/Overdraftfacility   3,527.04   544.62
+Workingcapitaldemandloans   1,820.68   2,200.45
+Tripartyrepodealingandsettlement(TREPs)againstGovernmentsecurities   11,380.87   15,758.96
+Repurchaseagreementborrowings(Repo)   3,929.78   -
+#
+Securitisationliabilities   1,753.68   -
+74,364.03   63,219.55
+Outside India
+Externalcommercialborrowing*   15,373.63   6,018.45
+15,373.63   6,018.45
+(B) Out of above
+Secured(Againstloans,bookdebtsandotherreceivables)   88,288.13   68,737.89
+Unsecured   1,449.53   500.11
+89,737.66   69,238.00
+*Externalcommercialborrowingisdenominatedinforeigncurrencyandsecuredagainstbookdebts.
+#Representsassociatedliabilitiesinrespectofsecuritisationtransactions,thenetoutstandingvalue(NetofInvestmentinPass-through
+Certificates)oftheproceedsreceivedbytheCompanyfromtheTrust.TheCompanyhasprovidedadditionalexternalcreditenhancement
+to the Trustbywayofcashcollateral.
+-TheCompanyhasnotbeendeclaredaswilfuldefaulterbyanybankorfinancialinstitution(asdefinedundertheCompaniesAct,2013)or
+consortiumthereofinaccordancewiththeguidelinesonwilfuldefaultersissuedbytheRBI.
+(C) Terms of repayment of term loans from bank as at 31 March 2025
+Residualmaturityofloan
+Duewithin1year   Duein1to2years   Duein2to3years   Dueinmorethan3years   Total
+Totalno.of   Totalno.of   Totalno.of   Totalno.of   Totalno.of
+Originalmaturityofloan   instalments   Cincrore instalments   Cincrore instalments   Cincrore instalments   Cincrore instalments   Cincrore
+Monthly
+Upto3years   72   422.50   48   320.63   -   -   -   -   120   743.13
+Quarterly
+Upto3years   6   291.68   10   341.68   8   116.64   -   -   24   750.00
+Over3to4years   48   1,643.75   40   1,365.63   26   800.00   12   269.69   126   4,079.07
+Over4years   25   276.76   23   201.14   16   91.76   19   111.76   83   681.42
+Halfyearly
+Upto3years   5   333.33   8   733.33   2   116.67   -   -   15   1,183.33
+Over3to4years   20   1,568.14   20   1,568.18   8   575.89   2   6.25   50   3,718.46
+Over4years   76   6,325.72   91   8,966.63   73   7,872.93   61   6,442.68   301   29,607.96
+th
+262 38 AnnualReport 2024-25
+===== note page 294 =====
+Corporate   Statutory   Financial
+Overview   Reports   Statements
+Notes to standalone financial statements for the year ended 31 March 2025 (Contd.)
+17 Borrowings (other than debt securities) (Contd.)
+(H) Terms of repayment of securitisation liabilities
+As at 31 March 2025   As at 31 March 2024
+Total no. of   Total no. of
+Particulars   instalments   H in crore   instalments   H in crore
+Originalmaturityover3years
+   DueWithin1year   12   396.97   -   -
+   Duein1to2years   12   413.91   -   -
+   Duein2to3years   12   381.74   -   -
+   Dueinover3years   24   556.29   -   -
+Interestaccrued   4.89   -   -
+ImpactofEIR   (0.12)
+60   1,753.68   -   -
+-ContractedInterestrateis7.75%p.aasat31March2025(PreviousyearNil)
+18 Deposits (Unsecured)
+(Cincrore)
+Asat31March
+Particulars   2025   2024
+(A) At amortised cost
+   Publicdeposits*   41,792.22   38,012.62
+   Fromothers   29,573.30   21,954.04
+71,365.52   59,966.66
+*AsdefinedinchapterII,para3(xiii)ofMasterdirections-Non-BankingFinancialCompaniesAcceptanceofPublicDeposits(Reserve
+Bank)Directions,2016asissuedbyRBI.
+(B) Terms of repayment of deposits as at 31 March 2025
+(Cincrore)
+Residualmaturityofdeposits
+Duewithin   Duein1to   Duein2to   Dueinmore
+Originalmaturityofdeposits   1year   2years   3years   than3years   Total
+Upto1year   12,200.60   -   -   -   12,200.60
+Over1to2years   8,707.42   6,292.21   -   -   14,999.63
+Over2to3years   4,587.77   3,125.36   3,066.53   -   10,779.66
+Over3years   2,703.61   8,945.86   13,246.01   5,710.50   30,605.98
+Interestaccrued   1,394.45   876.34   623.13   77.01   2,970.93
+ImpactofEIR   (191.28)
+71,365.52
+StandaloneFinancialStatements 265
+===== note page 295 =====
+Notes to standalone financial statements for the year ended 31 March 2025 (Contd.)
+18 Deposits (Unsecured) (Contd.)
+Terms of repayment of deposits as at 31 March 2024
+(Cincrore)
+Residualmaturityofdeposits
+Duewithin   Duein1to   Duein2to   Dueinmore
+Originalmaturityofdeposits   1year   2years   3years   than3years   Total
+Upto1year   11,634.35   -   -   -   11,634.35
+Over1to2years   8,847.05   3,409.77   -   -   12,256.82
+Over2to3years   4,578.31   4,635.63   2,548.35   -   11,762.29
+Over3years   1,350.99   2,781.44   9,265.73   8,865.68   22,263.84
+Interestaccrued   1,262.24   451.67   378.50   141.75   2,234.16
+ImpactofEIR   (184.80)
+59,966.66
+19 Subordinated liabilities (Unsecured)
+(Cincrore)
+Asat31March
+Particulars   2025   2024
+(A) In India
+At amortised cost
+Privatelyplacedsubordinated(TierII)redeemablenon-convertibledebentures   3,103.54   3,577.90
+3,103.54   3,577.90
+(B) Outside India   -   -
+(C) Terms of repayment of subordinated liabilities
+(Cincrore)
+Asat31March
+Date of
+ISIN   Coupon rate   Issue date   redemption   2025   2024
+Redeemable at par
+INE296A08714   10.15%   19-Sep-14   19-Sep-24   -   452.50
+INE296A08755   8.94%   21-Oct-15   21-Oct-25   40.00   40.00
+INE296A08763   8.94%   9-Nov-15   7-Nov-25   250.00   250.00
+INE296A08771   8.85%   15-Jul-16   15-Jul-26   490.00   490.00
+INE296A08789   8.85%   21-Jul-16   21-Jul-26   480.00   480.00
+INE296A08797   8.75%   16-Aug-16   14-Aug-26   485.00   485.00
+INE296A08805   8.45%   29-Sep-16   29-Sep-26   500.00   500.00
+INE296A08821   8.05%   2-Dec-16   2-Dec-26   105.00   105.00
+INE296A08847   8.15%   22-Jun-17   22-Jun-27   600.00   600.00
+2,950.00   3,402.50
+Interestaccrued   158.92   183.48
+ImpactofEIR   (5.38)   (8.08)
+3,103.54   3,577.90
+th
+266 38 AnnualReport 2024-25
+===== note page 279 =====
+Notes to standalone financial statements for the year ended 31 March 2025 (Contd.)
+10 Investments
+(Cincrore)
+Asat31March
+Particulars   2025   2024
+(A) At amortised cost
+Inpassthroughcertificates(PTC)representingsecuritisationofloan
+receivables   194.63   356.89
+194.63   356.89
+Less:Impairmentlossallowance   0.78   1.43
+Total(A)   193.85   355.46
+(B) At fair value through other comprehensive income
+(i)   InGovernmentsecurities   20,905.19   21,939.26
+Add:Fairvaluegain/(losses)   131.58   11.28
+Sub-total(i)   21,036.77   21,950.54
+Includescarryingvalueof:
+(i) C4,651.84crore(PreviousyearC4,628.28crore)pledgedtowardsfloatingchargeinfavour
+oftrusteesrepresentingthepublicdepositholdersoftheCompanytowardsmaintenance
+ofliquidassetsasprescribedbyRBIAct,1934,
+(ii) C3,930.77crore(PreviousyearCNil)utilisedforRepurchaseAgreementborrowing(Repo)
+transaction,
+(iii) C12,205.83crore(PreviousyearC17,245.47crore)pledgedfortripartyrepodealingand
+settlement(TREPs),and
+(iv) C199.31crore(PreviousYearCNil)keptasmarginforsecuritiessegmentwithClearing
+CorporationofIndiaLimited(CCIL).
+(ii)   Inequityinstruments
+Equityshares(Quoted)   446.89   150.00
+Add:Fairvaluegain/(losses)   (129.90)   (47.11)
+316.99   102.89
+#
+Equityshares(Unquoted)   318.16   299.58
+Add:Fairvaluegain/(losses)   106.46   76.96
+424.62   376.54
+#
+Compulsorilyconvertibletermloan   -   280.47
+Add:Fairvaluegain/(losses)   -   42.21
+-   322.68
+Sub-total(ii)   741.61   802.11
+#On26March2025,BajajFinservDirectLimitedhasconvertedcompulsorilyconvertibleterm
+loansinto64,534,670equitysharesatapreagreedpriceofC43.46pershare.
+(iii) Incertificateofdeposits   2,740.25   1,450.71
+Add:Fairvaluegain/(losses)   4.18   2.53
+Sub-total(iii)   2,744.43   1,453.24
+(iv) Incommercialpapers   925.96   247.13
+Add:Fairvaluegain/(losses)   0.42   0.13
+Sub-total(iv)   926.38   247.26
+(v)   Innon-convertibledebentures   212.83   212.88
+Add:Fairvaluegain/(losses)(CurrentyearC 40,836)   (0.49)
+Sub-total(v)   212.83   212.39
+Total(B)=(i+ii+iii+iv+v)   25,662.02   24,665.54
+th
+250 38 AnnualReport 2024-25

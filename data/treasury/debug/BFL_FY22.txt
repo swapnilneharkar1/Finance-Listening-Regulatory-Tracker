@@ -1,46 +1,72 @@
 https://nsearchives.nseindia.com/annual_reports/AR_20205_BAJFINANCE_2021_2022_04072022220250_07042022230013.zip
-Reason: Standalone balance sheet not found
+Reason: breakdown problems: debt_securities: note p.207; breakdown sums to 118069.16 vs balance sheet 59034.58 -> using balance-sheet total | borrowings: note p.209; breakdown sums to 124597.02 vs balance sheet 29870.38 -> using balance-sheet total | deposits: note p.212; breakdown sums to 64927.81 vs balance sheet 30289.52 -> using balance-sheet total | subordinated: note p.214; breakdown sums to 14044.04 vs balance sheet 3845.77 -> using balance-sheet total
 Pages: 505
 Repeated header/footer lines (ignored): th | bajaj finance limited 35 annual report 2021 22 | in crore | particulars 2022 2021 | notes to standalone financial statements for the year ended 31 march 2022 contd | notes to consolidated financial statements for the year ended 31 march 2022 contd | esg initiatives statutory reporting
-Candidate pages: 178 (9 lines), 237 (8 lines), 255 (8 lines), 312 (8 lines), 375 (8 lines), 393 (8 lines)
 
-===== page 178 =====
-Standalone Financial Statements   Corporate Overview   Statutory Reports   Financial Statements
-Standalone Statement of Cash Flows (Contd.)
+===== page 171 =====
+th
+BAJAJ FINANCE LIMITED   35 Annual Report 2021-22
+Standalone Balance Sheet
 (₹ in crore)
-For the year ended 31 March
-Particulars   2022   2021
-Brought forward   (23,794.56)   4,385.94
-(II) Investing activities
-Purchase of property, plant and equipment and capital work-in-progress   (349.95)   (131.48)
-Sale of property, plant and equipment   17.38   9.83
-Purchase of intangible assets and intangible assets under development   (246.81)   (160.29)
-Purchase of investments measured under amortised cost   (9,466.94)   (500.00)
-Sale of investments measured under amortised cost   4,879.41   20.32
-Purchase of investments measured under FVOCI   (3,291.40)   (3,004.37)
-Sale of investments measured under FVOCI   2,083.84   2,082.54
-Purchase of investments measured under FVTPL   (189,911.56)   (212,917.51)
-Sale of investments measured under FVTPL   200,408.38   214,980.43
-Purchase of equity investments designated under FVOCI   (283.16)   -
-Dividend received (₹ 30,750, Previous year ₹ Nil)   -
-Interest received on investments   367.31   194.79
-Investment in subsidiaries   (400.00)   (150.00)
-Net cash generated from investing activities (II)   3,806.50   424.26
-(III) Financing activities
-Issue of equity share capital (including securities premium)   172.92   103.21
-Share based payment recovered from subsidiary   19.42   20.42
-Dividends paid   (602.63)   (2.74)
-Payment of lease liability   (93.97)   (78.67)
-Deposits received (net)   4,274.07   4,172.75
-Short term borrowing availed (net)   3,049.76   1,045.73
-Long term borrowing availed   25,661.54   17,416.82
-Long term borrowing repaid   (10,966.18)   (26,790.46)
-Net cash generated from/(used in) financing activities (III)   21,514.93   (4,112.94)
-Net increase in cash and cash equivalents (I+II+III)   1,526.87   697.26
-Cash and cash equivalents at the beginning of the year   1,371.79   674.53
-Cash and cash equivalents at the end of the year   2,898.66   1,371.79
-•The above Statement of Cash Flows has been prepared under the indirect method as set out in Ind AS 7 'Statement of Cash Flows'.
-•Components of cash and cash equivalents are disclosed in note no. 5.
+As at 31 March
+Particulars   Note No.   2022   2021
+ASSETS
+Financial assets
+Cash and cash equivalents   5   2,898.66   1,371.79
+Bank balances other than cash and cash equivalents   6   2.07   2.11
+Derivative financial instruments   7   121.90   -
+Trade receivables   8   1,017.11   709.72
+Loans   9   144,276.25   113,089.94
+Investments   10   16,371.82   20,169.12
+Other financial assets   11   464.44   487.13
+165,152.25   135,829.81
+Non-financial assets
+Current tax assets (net)   158.96   155.07
+Deferred tax assets (net)   12   908.40   919.21
+Property, plant and equipment   13   1,189.77   972.44
+Capital work-in-progress   13   13.27   7.07
+Intangible assets under development   13   19.41   43.99
+Intangible assets   13   408.67   254.76
+Other non-financial assets   14   165.35   101.20
+2,863.83   2,453.74
+Total assets   168,016.08   138,283.55
+LIABILITIES AND EQUITY
+Liabilities
+Financial liabilities
+Derivative financial instruments   7   140.02   137.87
+Payables   15
+Trade payables
+Total outstanding dues of micro enterprises and small enterprises   -   0.27
+Total outstanding dues of creditors other than micro enterprises and small enterprises   762.58   666.04
+Other payables
+Total outstanding dues of micro enterprises and small enterprises   -   -
+Total outstanding dues of creditors other than micro enterprises and small enterprises   301.34   191.08
+Debt securities   16   59,034.58   43,071.71
+Borrowings (other than debt securities)   17   29,870.38   27,080.25
+Deposits   18   30,289.52   25,803.43
+Subordinated debts   19   3,845.77   3,898.61
+Other financial liabilities   20   962.71   790.48
+125,206.90   101,639.74
+150
+
+===== page 172 =====
+Standalone Financial Statements   Corporate Overview   Statutory Reports   Financial Statements
+Standalone Balance Sheet (Contd.)
+(₹ in crore)
+As at 31 March
+Particulars   Note No.   2022   2021
+Non-financial liabilities
+Current tax liabilities (net)   79.33   172.78
+Provisions   21   162.24   136.56
+Other non-financial liabilities   22   511.73   395.73
+753.30   705.07
+Equity
+Equity share capital   23   120.66   120.32
+Other equity   24   41,935.22   35,818.42
+42,055.88   35,938.74
+Total liabilities and equity   168,016.08   138,283.55
+Summary of significant accounting policies   3
+The accompanying notes are an integral part of the standalone financial statements
 As per our report of even date   On behalf of the Board of Directors
 For Deloitte Haskins & Sells   For G.M. Kapadia & Co
 Chartered Accountants   Chartered Accountants   Sandeep Jain   Sanjiv Bajaj
@@ -49,202 +75,249 @@ Sanjiv V. Pilgaonkar   Rajen Ashar   R Vijay   Rajeev Jain
 Partner   Partner   Company Secretary Managing Director
 Membership number: 039826   Membership number: 048243
 Pune: 26 April 2022
-157
+151
 
-===== page 237 =====
+===== page 173 =====
+th
+BAJAJ FINANCE LIMITED   35 Annual Report 2021-22
+Standalone Statement of Profit and Loss
+(₹ in crore)
+For the year ended 31 March
+Particulars   Note No.   2022   2021
+Revenue from operations
+Interest income   26   23,728.58   20,419.10
+Fees and commission income   27   2,940.06   2,362.79
+Net gain on fair value changes   28   260.43   527.72
+Sale of services   29   43.38   59.55
+Other operating income   30   891.83   163.00
+Total revenue from operations   27,864.28   23,532.16
+Other income   31   7.20   14.17
+Total income   27,871.48   23,546.33
+Expenses
+Finance costs   32   7,573.13   7,446.39
+Fees and commission expense   33   1,765.78   1,301.56
+Impairment on financial instruments   34   4,622.06   5,721.28
+Employee benefits expense   35   3,221.88   2,242.42
+Depreciation and amortisation expenses   13   354.91   302.25
+Other expenses   36   1,747.33   1,169.55
+Total expenses   19,285.09   18,183.45
+Profit before tax   8,586.39   5,362.88
+Tax expense
+Current tax   2,242.00   1,470.70
+Deferred tax (credit)/charge   (6.10)   (63.33)
+Total tax expense   12   2,235.90   1,407.37
+Profit after tax   6,350.49   3,955.51
+Other comprehensive income (OCI)
+Items that will not be reclassified to profit or loss:
+Remeasurement gains/(losses) on defined benefit plans   (4.30)   (34.12)
+Tax impact on above   1.08   8.59
+Changes in fair value of fair value through OCI (FVOCI) equity instruments   (4.36)   30.87
+Tax impact on above   (2.78)   (16.17)
+Items that will be reclassified to profit or loss in subsequent periods:
+Changes in fair value of FVOCI debt securities   (23.26)   (41.73)
+Tax impact on above   5.86   10.50
+Cash flow hedge reserve   83.68   (21.24)
+Tax impact on above   (21.06)   5.35
+Total other comprehensive income for the year (net of tax)   34.86   (57.95)
+Total comprehensive income for the year   6,385.35   3,897.56
+152
+===== note page 207 =====
 th
 BAJAJ FINANCE LIMITED   35 Annual Report 2021-22
 Notes to standalone financial statements for the year ended 31 March 2022 (Contd.)
-42 Contingent liabilities and commitments (Contd.)
-(b) Capital and other commitments
+15 Payables (Contd.)
+Trade payables aging as at 31 March 2021
+(₹ in crore)
+Outstanding from due date of payment
+Unbilled   Less than   More than
+Particulars   Not due   due   1 year   1-2 years   2-3 years   3 years   Total
+(i) MSME   -   -   0.27   -   -   -   0.27
+(ii) Others   28.80   499.66   135.03   1.09   0.41   1.05   666.04
+28.80   499.66   135.30   1.09   0.41   1.05   666.31
+16 Debt securities
 (₹ in crore)
 As at 31 March
 Particulars   2022   2021
-(i) Capital commitments [Estimated amount of contracts remaining to be executed on
-capital account not provided for (net of advances)]
-Tangible   8.02   20.42
-Intangible   23.29   14.68
-(ii) Other commitments
-Towards partially disbursed/un-encashed loans   2,624.20   2,585.37
-Towards future corporate social responsibility spend   82.65   -
-2,738.16   2,620.47
-43 Changes in liabilities arising from financing activities
-(a) Changes in capital and asset structure arising from financing activities and investing activities
-(Ind AS 7 'Statement of Cash Flows')
-The Company does not have any financing activities and investing activities which affect the capital
-and asset structure of the Company without the use of cash and cash equivalents.
-(b) Changes in liability arising from financing activities (Ind AS 7 'Statement of Cash Flows')
-(₹ in crore)
-As at   Exchange   As at
-Particulars   1 April 2021   Cash flows   difference   Other 31 March 2022
-Debt securities   43,071.71   15,065.75   -   897.12   59,034.58
-Borrowing other than debt securities   27,080.25   2,729.39   37.53   23.21   29,870.38
-Deposits   25,803.43   4,274.07   -   212.02   30,289.52
-Subordinated debts   3,898.61   (50.02)   -   (2.82)   3,845.77
-99,854.00   22,019.19   37.53   1,129.53   123,040.25
-(₹ in crore)
-As at   Exchange   As at
-Particulars   1 April 2020   Cash flows   difference   Other 31 March 2021
-Debt securities   41,713.77   1,622.50   -   (264.56)   43,071.71
-Borrowing other than debt securities   36,923.32   (9,721.69)   (155.26)   33.88   27,080.25
-Deposits   21,427.15   4,172.75   -   203.53   25,803.43
-Subordinated debts   4,141.75   (228.72)   -   (14.42)   3,898.61
-104,205.99   (4,155.16)   (155.26)   (41.57)   99,854.00
-216
-
-===== page 255 =====
+(A) At amortised cost
+*
+(I) Secured
+Privately placed redeemable non-convertible debentures   47,288.30   33,055.89
+Sub-total (I)   47,288.30   33,055.89
+(II) Unsecured
+Privately placed partly paid redeemable non-convertible debentures   5,320.23   4,164.24
+Borrowings by issue of commercial papers   6,426.05   5,851.58
+Sub-total (II)   11,746.28   10,015.82
+Total (I + II)   59,034.58   43,071.71
+(B) Out of above
+In India   59,034.58   43,071.71
+Outside India   -   -
+59,034.58   43,071.71
+* Secured by pari passu charge created by mortgage of Company's office property in Chennai and on loan receivables as stated in the respective information memorandum.
+186
+===== note page 209 =====
 th
 BAJAJ FINANCE LIMITED   35 Annual Report 2021-22
 Notes to standalone financial statements for the year ended 31 March 2022 (Contd.)
-48 Risk management objectives and policies (Contd.)
-On assets and liabilities
-Interest rate sensitivity on fixed and floating rate assets and liabilities with differing maturity profiles is
-measured by using the duration gap analysis. The same is monitored monthly by ALCO. Sensitivity of the
-market value of unquoted equity investments other than those in subsidiaries assuming varied changes in
-interest rates is presented in note no. 47.
-Sensitivity Analysis as at 31 March 2022
+16 Debt securities (Contd.)
+(D) Terms of repayment of commercial papers
 (₹ in crore)
-Sensitivity to fair value
-Carrying   Fair   1%   1%
-Particulars   value   value   increase   decrease
-Loans   144,276.25   144,827.76   (1,516.52)   1,561.83
-Debt securities   59,034.58   60,106.37   1,230.18   (1,311.58)
-Borrowings (other than debt securities)   29,870.38   29,870.38   -   -
-Deposits   30,289.52   30,455.16   384.41   (395.31)
-Subordinated debts   3,845.77   4,143.60   127.60   (133.79)
-Sensitivity Analysis as at 31 March 2021
-(₹ in crore)
-Sensitivity to fair value
-Carrying   Fair   1%   1%
-Particulars   value   value   increase   decrease
-Loans   113,089.94   113,425.33   (1,291.09)   1,328.58
-Debt securities   43,071.71   44,792.19   995.43   (1,057.47)
-Borrowings (other than debt securities)   27,080.25   27,080.25   -   -
-Deposits   25,803.43   26,061.56   340.41   (350.32)
-Subordinated debts   3,898.61   4,263.08   156.12   (164.95)
-(ii) Price risk
-The Company’s quoted equity investments carry a risk of change in prices. To manage its price risk arising
-from investments in equity securities, the Company periodically monitors the sectors it has invested in,
-performance of the investee companies, measures mark-to-market gains/losses.
-Sensitivity Analysis as at 31 March 2022
-(₹ in crore)
-Sensitivity to fair value
-Carrying   Fair   10%   10%
-Particulars   value   value   increase   decrease
-Investment in equity shares (Quoted)   55.73   55.73   5.57   (5.57)
-234
-
-===== page 312 =====
-Consolidated Financial Statements   Corporate Overview   Statutory Reports   Financial Statements
-Consolidated Statement of Cash Flows (Contd.)
-(₹ in crore)
-For the year ended 31 March
+As at 31 March
 Particulars   2022   2021
-Brought forward   (37,028.62)   (807.27)
-(II) Investing activities
-Purchase of property, plant and equipment and capital work-in-progress   (375.55)   (138.73)
-Sale of property, plant and equipment   19.14   11.39
-Purchase of intangible assets and intangible assets under development   (258.62)   (170.76)
-Purchase of investments measured under amortised cost   (14,366.94)   (3,975.00)
-Sale of investments measured under amortised cost   10,279.41   2,995.32
-Purchase of investments measured under FVOCI   (3,291.40)   (3,004.37)
-Sale of investments measured under FVOCI   2,083.84   2,082.54
-Purchase of investments measured under FVTPL   (223,245.35) (234,606.53)
-Sale of investments measured under FVTPL   235,384.89   236,150.89
-Purchase of equity investments designated under FVOCI   (283.16)   -
-Dividend received (₹ 30,750, Previous year ₹ Nil)   -
-Interest received on investment   400.58   226.70
-Net cash generated from/(used in) investing activities (II)   6,346.84   (428.55)
-(III) Financing activities
-Issue of equity share capital (including securities premium)   172.90   103.21
-Dividends paid   (602.63)   (2.74)
-Payment of lease liability   (105.89)   (86.84)
-Deposits received (net)   4,784.07   4,172.75
-Short term borrowing availed (net)   4,702.39   3,148.54
-Long term borrowing availed   41,178.35   (2,338.69)
-Long term borrowing repaid   (17,889.57)   (3,255.60)
-Net cash generated from financing activities (III)   32,239.62   1,740.63
-Net increase in cash and cash equivalents (I+II+III)   1,557.84   504.81
-Cash and cash equivalents at the beginning of the year   1,849.33   1,344.52
-Cash and cash equivalents at the end of the year   3,407.17   1,849.33
-•The above Statement of Cash Flows has been prepared under the indirect method as set out in Ind AS 7 'Statement of Cash Flows'.
-• Components of cash and cash equivalents are disclosed in note no. 5
-As per our report of even date   On behalf of the Board of Directors
-For Deloitte Haskins & Sells   For G.M. Kapadia & Co
-Chartered Accountants   Chartered Accountants   Sandeep Jain   Sanjiv Bajaj
-Firm registration number: 302009E   Firm registration number: 104767W   Chief Financial Officer   Chairman
-Sanjiv V. Pilgaonkar   Rajen Ashar   R Vijay   Rajeev Jain
-Partner   Partner   Company Secretary Managing Director
-Membership number: 039826   Membership number: 048243
-Pune: 26 April 2022
-291
-
-===== page 375 =====
+Issued at discount and redeemable at par with original maturity up to 365 days
+- Due within 1 year   6,426.60   5,852.29
+Impact of EIR   (0.55)   (0.71)
+6,426.05   5,851.58
+- Interest rate ranges from 4.05% to 4.90% p.a as at 31 March 2022 (Previous year 3.65% to 4.60% p.a)
+- As at 31 March 2022, face value of commercial paper is ₹ 6,475 crore (Previous year ₹ 5,930 crore)
+17 Borrowings (other than debt securities)
+(₹ in crore)
+As at 31 March
+Particulars   2022   2021
+(A) In India
+At amortised cost:
+Term loans from banks   21,308.08   21,061.64
+Cash credit / Overdraft facility   290.70   -
+Working capital demand loans   750.00   250.00
+Triparty repo dealing and settlement (TREPs) against Government securities   1,999.16   299.97
+24,347.94   21,611.61
+Outside India
+*
+External commercial borrowing (ECB)   5,522.44   5,468.64
+5,522.44   5,468.64
+(B) Out of above
+Secured (Against hypothecation of loans, book debts and other receivables)   29,870.38   27,080.25
+Unsecured   -   -
+29,870.38   27,080.25
+*ECB is denominated in foreign currency and secured against book debts.
+The Company has not been declared a Wilful Defaulters by any bank or financial institution (as defined under the Companies Act, 2013) or consortium thereof in accordance with the
+guidelines on wilful defaulters issued by the RBI.
+188
+===== note page 212 =====
+Standalone Financial Statements   Corporate Overview   Statutory Reports   Financial Statements
+Notes to standalone financial statements for the year ended 31 March 2022 (Contd.)
+18 Deposits (Unsecured)
+(₹ in crore)
+As at 31 March
+Particulars   2022   2021
+(A) At amortised cost
+*
+Public deposits   21,184.46   18,961.23
+From others   9,105.06   6,842.20
+30,289.52   25,803.43
+* As defined in chapter II, para 3 (xiii) of Master directions - Non-Banking Financial Companies Acceptance of Public Deposits (Reserve Bank) Directions, 2016 as issued by RBI.
+* There are no undisputed amounts which were due and unpaid to Investor Education and Protection Fund as at the end of the year.
+(B) Terms of repayment of public deposits as at 31 March 2022
+(₹ in crore)
+Due within   Due 1 to   Due 2 to   More than
+Original maturity of deposits (In no. of days)   1 year   2 years   3 years   3 years   Total
+366-730   3,272.40   1,239.11   -   -   4,511.51
+731-1095   284.07   2,600.34   11.16   -   2,895.57
+More than 1095   4,116.98   1,216.46   5,761.29   1,880.27   12,975.00
+Interest accrued   505.41   187.64   143.24   42.15   878.44
+Impact of EIR   (76.06)
+21,184.46
+Terms of repayment of public deposits as at 31 March 2021
+(₹ in crore)
+Due within   Due 1 to   Due 2 to   More than
+Original maturity of deposits (In no. of days)   1 year   2 years   3 years   3 years   Total
+366-730   3,462.08   1,080.58   -   -   4,542.66
+731-1095   645.26   292.30   2,454.24   -   3,391.80
+More than 1095   2,603.09   4,200.68   1,215.48   2,366.75   10,386.00
+Interest accrued   331.00   260.77   68.88   59.60   720.25
+Impact of EIR   (79.48)
+18,961.23
+191
+===== note page 214 =====
+Standalone Financial Statements   Corporate Overview   Statutory Reports   Financial Statements
+Notes to standalone financial statements for the year ended 31 March 2022 (Contd.)
+19 Subordinated debts (Unsecured)
+(₹ in crore)
+As at 31 March
+Particulars   2022   2021
+(A) In India
+At amortised cost
+Privately placed subordinated (Tier II) redeemable non-convertible debentures   3,845.77   3,898.61
+3,845.77   3,898.61
+(B) Outside India   -   -
+(C) Terms of repayment of subordinated debts as at 31 March 2022
+(₹ in crore)
+Due within   Due 1 to   Due 2 to   More than
+Original maturity of loan (In no. of days)   1 year   2 years   3 years   3 years   Total
+Issued at par and redeemable at par
+More than 1825   207.10   50.00   452.50   2,950.00   3,659.60
+Interest accrued   198.36   -   -   -   198.36
+Impact of EIR   (12.19)
+3,845.77
+- Interest rate ranges from 8.05% to 10.21% as at 31 March 2022
+Terms of repayment of subordinated debts as at 31 March 2021
+(₹ in crore)
+Due within   Due 1 to   Due 2 to   More than
+Original maturity of loan (In no. of days)   1 year   2 years   3 years   3 years   Total
+Issued at par and redeemable at par
+More than 1825   50.00   207.10   50.00   3,402.50   3,709.60
+Interest accrued   202.84   -   -   -   202.84
+Impact of EIR   (13.83)
+3,898.61
+- Interest rate ranges from 8.05% to 10.21% as at 31 March 2021
+193
+===== note page 201 =====
 th
-BAJAJ F INANCE LIMITED   35 Annual Report 2021-22
-Notes to consolidated financial statements for the year ended 31 March 2022 (Contd.)
-43 (a) Changes in capital and asset structure arising from financing activities and investing
-activities (Ind AS 7 'Statement of Cash flows')
-The Group does not have any financing activities and investing activities which affect the capital and
-asset structure of the Group without the use of cash and cash equivalents.
-43 (b) Changes in liability arising from financing activities (Ind AS 7 'Statement of Cash flows')
+BAJAJ FINANCE LIMITED   35 Annual Report 2021-22
+Notes to standalone financial statements for the year ended 31 March 2022 (Contd.)
+10 Investments
 (₹ in crore)
-As at   Exchange   As at
-Particulars   1 April 2021   Cash flows   difference   Other 31 March 2022
-Debt securities   54,502.14   21,170.59   -   550.34   76,223.07
-Borrowings (other than debt securities)   47,429.36   6,870.61   37.53   26.06   54,363.56
-Deposits   25,803.43   4,784.07   -   212.02   30,799.52
-Subordinated debts   3,898.61   (50.02)   -   (2.82)   3,845.77
-131,633.54   32,775.25   37.53   785.60   165,231.92
+As at 31 March
+Particulars   2022   2021
+(A) At amortised cost
+In fixed deposits   -   508.88
+#
+In Government securities *   5,125.74   -
+Total (A)   5,125.74   508.88
+*includes ₹ 3,268.03 crore (Previous year ₹ Nil) pledged in favour of Credit Corporation of India Ltd. for triparty repo dealing and
+settlement (TREPs)
+(B) At fair value through other comprehensive income
+*
+(i) In Government securities   4,894.17   3,708.39
+Add: Fair value gain/(losses)   (14.03)   9.24
+Sub-total (i)   4,880.14   3,717.63
+* includes ₹ 3,979.59 crore (Previous year ₹ 3,350.48 crore) pledged towards floating charge in favour of trustees
+representing the public deposit holders of the Company towards maintenance of liquid assets as prescribed by RBI Act,
+1934 and ₹ Nil
+(Previous year ₹ 340.12 crore) pledged in favour of Credit Corporation of India Ltd. for triparty repo dealing and settlement
+(TREPs)
+(ii) In equity instruments
+Equity shares (Quoted)   150.00   150.00
+Add: Fair value gain/(losses)   (94.27)   (61.23)
+55.73   88.77
+Equity shares (Unquoted)   299.58   0.01
+Add: Fair value gain/(losses)   28.68   -
+328.26   0.01
+Compulsorily convertible term loan   280.47   -
+Compulsorily convertible preference shares   -   281.20
+Sub-total (ii)   664.46   369.98
+Total (B) = (i+ii)   5,544.60   4,087.61
+(C) At fair value through profit or loss
+(i) In mutual funds   3.07   8,152.86
+Add: Fair value gains/(losses)   0.03   24.28
+Sub-total (i)   3.10   8,177.14
+#
+(ii) In Government securities   -   2,096.88
+Add: Fair value gains/(losses)   -   0.23
+Sub-total (ii)   -   2,097.11
+Total (C) = (i+ii)   3.10   10,274.25
+(D) At cost
+#
+Investment in subsidiaries
+Bajaj Housing Finance Ltd.   5,028.00   5,028.00
+Bajaj Financial Securities Ltd.   670.38   270.38
+Total (D)   5,698.38   5,298.38
+Total (A+B+C+D)   16,371.82   20,169.12
 (₹ in crore)
-As at   Exchange   As at
-Particulars   1 April 2020   Cash flows   difference   Other 31 March 2021
-Debt securities   49,537.36   4,937.14   -   27.64   54,502.14
-Borrowings (other than debt securities)   54,700.17   (7,154.27)   (155.26)   38.72   47,429.36
-Deposits   21,427.15   4,172.75   -   203.53   25,803.43
-Subordinated debts   4,141.75   (228.72)   -   (14.42)   3,898.61
-129,806.43   1,726.90   (155.26)   255.47   131,633.54
-354
-
-===== page 393 =====
-th
-BAJAJ F INANCE LIMITED   35 Annual Report 2021-22
-Notes to consolidated financial statements for the year ended 31 March 2022 (Contd.)
-48 Risk management objectives and policies (Contd.)
-Sensitivity Analysis as at 31 March 2022
-(₹ in crore)
-Sensitivity to fair value
-Carrying   Fair   1%   1%
-Particulars   value   value   increase   decrease
-Loans   191,423.25   191,974.76   (1,516.52)   1,561.83
-Debt securities   76,223.07   77,351.06   981.41   (1,048.20)
-Borrowings (other than debt securities)   54,363.56   54,363.56   -   -
-Deposits   30,799.52   30,965.16   384.41   (395.31)
-Subordinated debts   3,845.77   4,143.60   127.60   (133.79)
-Sensitivity Analysis as at 31 March 2021
-(₹ in crore)
-Sensitivity to fair value
-Carrying   Fair   1%   1%
-Particulars   value   value   increase   decrease
-Loans   146,686.87   147,022.26   (1,291.09)   1,328.58
-Debt securities   54,502.14   56,382.22   879.92   (934.75)
-Borrowings (other than debt securities)   47,429.36   47,429.36   -   -
-Deposits   25,803.43   26,061.56   340.41   (350.32)
-Subordinated debts   3,898.61   4,263.08   156.12   (164.95)
-(ii) Price risk
-The Group’s quoted equity investments carry a risk of change in prices. To manage its price risk arising from
-investments in equity securities, the Group periodically monitors the sectors it has invested in, performance
-of the investee companies, measures mark- to- market gains/losses.
-Sensitivity Analysis as at 31 March 2022
-(₹ in crore)
-Sensitivity to fair value
-Carrying   Fair   10%   10%
-Particulars   value   value   increase   decrease
-Investment in equity shares (Quoted)   55.72   55.72   5.57   (5.57)
-Sensitivity Analysis as at 31 March 2021
-(₹ in crore)
-Sensitivity to fair value
-Carrying   Fair   10%   10%
-Particulars   value   value   increase   decrease
-Investment in equity shares (Quoted)   88.77   88.77   8.88   (8.88)
-372
+As at 31 March
+Particulars   2022   2021
+Out of above
+In India   16,371.82   20,169.12
+Outside India   -   -
+16,371.82   20,169.12
+# Impairment allowance recognised on these investments is ₹ Nil (Previous year ₹ Nil).
+180

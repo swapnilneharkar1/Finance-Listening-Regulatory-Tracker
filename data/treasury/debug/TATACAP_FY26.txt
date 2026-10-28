@@ -1,5 +1,5 @@
 https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/25-26/tata-capital-limited-annual-report-fy-2025-26.pdf
-Reason: breakdown problems: investments: breakdown not readable (sum 23063.13 vs balance sheet 11239.92) -> book size only
+Reason: breakdown problems: debt_securities: note p.216; breakdown sums to 49250.26 vs balance sheet 56403.63 -> using balance-sheet total | investments: note p.204; breakdown not readable (sum 23063.13 vs balance sheet 11239.92) -> book size only
 Pages: 584
 Repeated header/footer lines (ignored): company overview statutory report financial statements | 02 33 34 154 155 550 | in crore | particulars | march 31 2026 march 31 2025 | notes forming part of the standalone financial statements | for the year ended march 31 2026 | notes forming part of the consolidated financial statements
 
@@ -361,3 +361,48 @@ TMFL TIER II A FY 19-20   30-Apr-19   30-Apr-29   10.25%   1,000   100.00   1,00
 TCCL Tier II Bond 'A' FY 2019-20   10-May-19   10-May-29   9.18%   500   50.00   500   50.00
 TCCL Tier II Bond 'A' FY 2019-20 Reissuance no 1   29-May-19   10-May-29   9.18%   500   50.00   500   50.00
 220   Annual Report 2025-26
+===== note page 204 =====
+Notes forming part of the Standalone Financial Statements
+for the year ended March 31, 2026
+7. c. Impairment loss allowance of ` 3.19 crore (March 31, 2025 : ` 1.40 crore) has been provided on loans designated as fair value through other
+comprehensive income.
+7. d.Loans secured by tangible assets include loans measured at fair value through profit and loss is ` 7.01 crore (March 31, 2025 : ` 8.69 crore)
+and loans measured at FVTOCI ` 744.39 crore (March 31, 2025 : ` 221.83 crore).
+7. e.Unsecured loans include loans measured at fair value through profit and loss ` Nil (March 31, 2025 : ` Nil) and loans measured at FVTOCI
+` 402.36 crore (March 31, 2025 : ` 401.19 crore).
+7. f. Loans to related parties ` 1,986.50 crore (March 31, 2025 : ` 1,021.01 crore).
+7. g. The details of Gross investments and unearned finance income in respect of assets given under finance lease are as under:
+(` in crore)
+As at   As at
+Particulars
+March 31, 2026   March 31, 2025
+Gross Investments:
+- Within one year   1,484.99   1,177.56
+- Later than one year and not later than five years   1,888.49   1,859.70
+- Later than five years   53.72   47.74
+Total   3,427.20   3,085.00
+Unearned Finance Income:
+- Within one year   472.80   241.61
+- Later than one year and not later than five years   111.13   259.86
+- Later than five years   1.44   4.67
+Total   585.37   506.14
+Future Outstanding Principal:
+- Within one year   1,012.19   935.95
+- Later than one year and not later than five years   1,777.36   1,599.85
+- Later than five years   52.28   43.07
+Total   2,841.83   2,578.87
+7. h.Loans repayable on demand pertains to loan given to TCL employee welfare trust and accounts for 0.04% of total gross loans and advances
+(March 31, 2025 : 0.05%).
+Note 8 : Investments
+(` in crore)
+As at   As at
+Particulars
+March 31, 2026   March 31, 2025
+(A) At Amortised Cost
+Investment in Government Securities (quoted)   2,265.80   2,568.61
+Investment in State development loan (quoted)   1,792.35   1,794.33
+Investment in Treasury Bills (quoted)   -   398.89
+Investment in Tri Party Repo (TREPS) (quoted)   529.90   399.84
+Investment in Fully Paid Non-Cumulative Redeemable Preference shares (unquoted)   -   0.38
+4,588.05   5,162.05
+198   Annual Report 2025-26

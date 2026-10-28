@@ -6,7 +6,7 @@
  "pages": 284,
  "standalonePages": [
   108,
-  194
+  203
  ],
  "statement": {
   "investments": {
@@ -43,20 +43,81 @@
  "borrowing": {
   "FY22": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 13321.1,
-    "page": 108,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Medium-Term - Secured",
+    "category": "Secured NCDs",
+    "value": 10529.95,
+    "page": 136,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 52004.520000000004,
-    "page": 108,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Medium-Term - Unsecured",
+    "category": "Unsecured NCDs",
+    "value": 25,
+    "page": 136,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers - Unsecured",
+    "category": "Commercial paper",
+    "value": 2766.15,
+    "page": 136,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 41873.73,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Foreign currency Loans",
+    "category": "Other borrowings",
+    "value": 615.77,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 1945.43,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Short term loans",
+    "category": "Bank term loans",
+    "value": 0,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 1538.94,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 1442.8500000000001,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Securitisation - Rupee Loans",
+    "category": "Securitisation",
+    "value": 3433.06,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loan repayable on demand - Secured",
+    "category": "Other borrowings",
+    "value": 1154.74,
+    "page": 138,
+    "section": "borrowings"
    },
    {
     "label": "Perpetual Debt - Unsecured",
@@ -82,20 +143,81 @@
   ],
   "FY21": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 12357.67,
-    "page": 108,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Medium-Term - Secured",
+    "category": "Secured NCDs",
+    "value": 9342.630000000001,
+    "page": 136,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 47182.26,
-    "page": 108,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Medium-Term - Unsecured",
+    "category": "Unsecured NCDs",
+    "value": 0,
+    "page": 136,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers - Unsecured",
+    "category": "Commercial paper",
+    "value": 3015.04,
+    "page": 136,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 35682.18,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Foreign currency Loans",
+    "category": "Other borrowings",
+    "value": 0,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 2398.69,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Short term loans",
+    "category": "Bank term loans",
+    "value": 200,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 1727.8600000000001,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 1372.3,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Securitisation - Rupee Loans",
+    "category": "Securitisation",
+    "value": 4344.52,
+    "page": 138,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loan repayable on demand - Secured",
+    "category": "Other borrowings",
+    "value": 1456.71,
+    "page": 138,
+    "section": "borrowings"
    },
    {
     "label": "Perpetual Debt - Unsecured",
@@ -125,18 +247,18 @@
  },
  "totals": {
   "FY22": 69173.5,
-  "FY21": 63729.98999999999
+  "FY21": 63729.990000000005
  },
  "finance_cost": {
   "FY22": 4298.82,
   "FY21": 4575.91
  },
  "log": [
-  "debt_securities: note p.116; breakdown not readable -> using balance-sheet total",
-  "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+  "debt_securities: 3 lines from note p.136, reconciles to balance sheet",
+  "borrowings: 8 lines from note p.138, reconciles to balance sheet",
   "deposits: not on the balance sheet (treated as nil)",
   "subordinated: 3 lines from note p.142, reconciles to balance sheet",
-  "investments: breakdown not readable (sum 103.00 vs balance sheet 207616) -> book size only"
+  "investments: note p.132; breakdown not readable (sum 7290.00 vs balance sheet 207616) -> book size only"
  ],
  "investment_total": {
   "FY22": 2076.16,
@@ -145,7 +267,7 @@
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_20279_CHOLAFIN_2021_2022_07072022231803_07082022070003.zip",
  "via": "NSE",
  "reportFy": "FY22",
- "extractor": 2,
+ "extractor": 3,
  "sha": "b0742db34c382f43",
- "extractedAt": "2026-10-28T06:33:20.683Z"
+ "extractedAt": "2026-10-28T07:13:54.432Z"
 }

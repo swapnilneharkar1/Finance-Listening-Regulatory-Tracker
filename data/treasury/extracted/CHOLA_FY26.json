@@ -43,20 +43,67 @@
  "borrowing": {
   "FY26": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 40636.05,
-    "page": 166,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Medium-Term - Secured",
+    "category": "Secured NCDs",
+    "value": 29322.12,
+    "page": 190,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 156528.78,
-    "page": 166,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Compulsorily Convertible Debentures-Unsecured",
+    "category": "Unsecured NCDs",
+    "value": 653.57,
+    "page": 190,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers - Unsecured",
+    "category": "Commercial paper",
+    "value": 10660.36,
+    "page": 190,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 89567.48,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 14876.29,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 15073.06,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 639.6,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "Securitisation - Rupee Loans",
+    "category": "Securitisation",
+    "value": 31552.44,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loan repayable on demand - Secured",
+    "category": "Other borrowings",
+    "value": 4819.91,
+    "page": 194,
+    "section": "borrowings"
    },
    {
     "label": "Perpetual Debt - Unsecured",
@@ -82,20 +129,67 @@
   ],
   "FY25": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 30133.99,
-    "page": 166,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Medium-Term - Secured",
+    "category": "Secured NCDs",
+    "value": 24088.19,
+    "page": 190,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 133791.98,
-    "page": 166,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Compulsorily Convertible Debentures-Unsecured",
+    "category": "Unsecured NCDs",
+    "value": 2074.06,
+    "page": 190,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers - Unsecured",
+    "category": "Commercial paper",
+    "value": 3971.74,
+    "page": 190,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 76466.27,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 12349.08,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "Rupee Loans",
+    "category": "Other borrowings",
+    "value": 12564.31,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 877.28,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "Securitisation - Rupee Loans",
+    "category": "Securitisation",
+    "value": 26666.52,
+    "page": 194,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loan repayable on demand - Secured",
+    "category": "Other borrowings",
+    "value": 4868.52,
+    "page": 194,
+    "section": "borrowings"
    },
    {
     "label": "Perpetual Debt - Unsecured",
@@ -121,7 +215,68 @@
   ]
  },
  "investments": {
-  "FY26": []
+  "FY26": [
+   {
+    "label": "Government",
+    "category": "Other investments",
+    "value": 3375.31,
+    "page": 186
+   },
+   {
+    "label": "Treasury Bill",
+    "category": "Treasury bills",
+    "value": 1721.41,
+    "page": 186
+   },
+   {
+    "label": "STRIPS",
+    "category": "STRIPS",
+    "value": 771.91,
+    "page": 186
+   },
+   {
+    "label": "Note (Fair - - 0 - - - - -",
+    "category": "Other investments",
+    "value": 0,
+    "page": 186
+   },
+   {
+    "label": "value on acquistion",
+    "category": "Other investments",
+    "value": 0,
+    "page": 186
+   },
+   {
+    "label": "Others",
+    "category": "Other investments",
+    "value": 0.01,
+    "page": 186
+   },
+   {
+    "label": "Subsidiaries",
+    "category": "Subsidiaries, associates & JVs",
+    "value": 64.9,
+    "page": 186
+   },
+   {
+    "label": "Associates",
+    "category": "Subsidiaries, associates & JVs",
+    "value": 9.75,
+    "page": 186
+   },
+   {
+    "label": "Joint",
+    "category": "Other investments",
+    "value": 456.82,
+    "page": 187
+   },
+   {
+    "label": "Other equity",
+    "category": "Equity",
+    "value": 1.32,
+    "page": 187
+   }
+  ]
  },
  "totals": {
   "FY26": 210866.56,
@@ -132,11 +287,11 @@
   "FY25": 12484.85
  },
  "log": [
-  "debt_securities: note p.175; breakdown not readable -> using balance-sheet total",
-  "borrowings: note not found; breakdown not readable -> using balance-sheet total",
+  "debt_securities: 3 lines from note p.190, reconciles to balance sheet",
+  "borrowings: 6 lines from note p.194, reconciles to balance sheet",
   "deposits: not on the balance sheet (treated as nil)",
   "subordinated: 3 lines from note p.198, reconciles to balance sheet",
-  "investments: breakdown not readable (sum 163.00 vs balance sheet 6638.05) -> book size only"
+  "investments: 10 lines from note p.186"
  ],
  "investment_total": {
   "FY26": 6638.05,
@@ -145,7 +300,7 @@
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_29596_CHOLAFIN_2025_2026_A_8171029_06072026201106.pdf",
  "via": "NSE",
  "reportFy": "FY26",
- "extractor": 2,
+ "extractor": 3,
  "sha": "faa0aebea622fdb2",
- "extractedAt": "2026-10-28T06:32:53.093Z"
+ "extractedAt": "2026-10-28T07:13:24.249Z"
 }

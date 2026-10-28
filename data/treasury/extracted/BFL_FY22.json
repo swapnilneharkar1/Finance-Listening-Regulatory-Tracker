@@ -1,0 +1,160 @@
+{
+ "ok": true,
+ "fy": "FY22",
+ "prevFy": "FY21",
+ "unit": "crore",
+ "pages": 505,
+ "standalonePages": [
+  171,
+  304
+ ],
+ "statement": {
+  "investments": {
+   "cy": 16371.82,
+   "py": 20169.12,
+   "note": "10",
+   "page": 171
+  },
+  "debt_securities": {
+   "cy": 59034.58,
+   "py": 43071.71,
+   "note": "16",
+   "page": 171
+  },
+  "borrowings": {
+   "cy": 29870.38,
+   "py": 27080.25,
+   "note": "17",
+   "page": 171
+  },
+  "deposits": {
+   "cy": 30289.52,
+   "py": 25803.43,
+   "note": "18",
+   "page": 171
+  },
+  "subordinated": {
+   "cy": 3845.77,
+   "py": 3898.61,
+   "note": "19",
+   "page": 171
+  },
+  "finance_cost": {
+   "cy": 7573.13,
+   "py": 7446.39,
+   "note": "32",
+   "page": 173
+  }
+ },
+ "borrowing": {
+  "FY22": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 59034.58,
+    "page": 171,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 29870.38,
+    "page": 171,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Deposits (balance sheet total)",
+    "category": "Deposits",
+    "value": 30289.52,
+    "page": 171,
+    "section": "deposits",
+    "unsplit": false
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 3845.77,
+    "page": 171,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ],
+  "FY21": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 43071.71,
+    "page": 171,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 27080.25,
+    "page": 171,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Deposits (balance sheet total)",
+    "category": "Deposits",
+    "value": 25803.43,
+    "page": 171,
+    "section": "deposits",
+    "unsplit": false
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 3898.61,
+    "page": 171,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ]
+ },
+ "investments": {
+  "FY22": [
+   {
+    "label": "In fixed deposits",
+    "category": "Fixed deposits",
+    "value": 508.88,
+    "page": 201
+   },
+   {
+    "label": "In Government securities *",
+    "category": "Government securities",
+    "value": 0,
+    "page": 201
+   }
+  ]
+ },
+ "totals": {
+  "FY22": 123040.25000000001,
+  "FY21": 99853.99999999999
+ },
+ "finance_cost": {
+  "FY22": 7573.13,
+  "FY21": 7446.39
+ },
+ "log": [
+  "debt_securities: note p.207; breakdown sums to 118069.16 vs balance sheet 59034.58 -> using balance-sheet total",
+  "borrowings: note p.209; breakdown sums to 124597.02 vs balance sheet 29870.38 -> using balance-sheet total",
+  "deposits: note p.212; breakdown sums to 64927.81 vs balance sheet 30289.52 -> using balance-sheet total",
+  "subordinated: note p.214; breakdown sums to 14044.04 vs balance sheet 3845.77 -> using balance-sheet total",
+  "investments: 2 lines from note p.201"
+ ],
+ "investment_total": {
+  "FY22": 16371.82,
+  "FY21": 20169.12
+ },
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_20205_BAJFINANCE_2021_2022_04072022220250_07042022230013.zip",
+ "via": "NSE",
+ "reportFy": "FY22",
+ "extractor": 3,
+ "sha": "16a96bc9d53bef74",
+ "extractedAt": "2026-10-28T07:10:08.231Z"
+}

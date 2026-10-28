@@ -21,6 +21,18 @@
    "note": "16",
    "page": 126
   },
+  "borrowings": {
+   "cy": 26005.17,
+   "py": 29142.08,
+   "note": "17",
+   "page": 126
+  },
+  "deposits": {
+   "cy": 8426.19,
+   "py": 9450.66,
+   "note": "18",
+   "page": 126
+  },
   "subordinated": {
    "cy": 3129.85,
    "py": 3149.37,
@@ -65,12 +77,60 @@
     "section": "debt_securities"
    },
    {
-    "label": "Subordinated liabilities (balance sheet total)",
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 15305.19,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 2177.52,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitisation transactions",
+    "category": "Securitisation",
+    "value": 8089.2,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "from banks",
+    "category": "Bank term loans",
+    "value": 85,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 348.26,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 8426.19,
+    "page": 143,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - private placement",
     "category": "Subordinated debt",
-    "value": 3129.85,
-    "page": 126,
-    "section": "subordinated",
-    "unsplit": false
+    "value": 719.08,
+    "page": 143,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - retail public issue",
+    "category": "Subordinated debt",
+    "value": 2410.77,
+    "page": 143,
+    "section": "subordinated"
    }
   ],
   "FY21": [
@@ -103,12 +163,60 @@
     "section": "debt_securities"
    },
    {
-    "label": "Subordinated liabilities (balance sheet total)",
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 14292.9,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 3680.55,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitisation transactions",
+    "category": "Securitisation",
+    "value": 10390.77,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "from banks",
+    "category": "Bank term loans",
+    "value": 90,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 687.86,
+    "page": 141,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 9450.66,
+    "page": 143,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - private placement",
     "category": "Subordinated debt",
-    "value": 3149.37,
-    "page": 126,
-    "section": "subordinated",
-    "unsplit": false
+    "value": 686.82,
+    "page": 143,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - retail public issue",
+    "category": "Subordinated debt",
+    "value": 2462.55,
+    "page": 143,
+    "section": "subordinated"
    }
   ]
  },
@@ -116,8 +224,8 @@
   "FY22": []
  },
  "totals": {
-  "FY22": 21382.559999999998,
-  "FY21": 19983.94
+  "FY22": 55813.92,
+  "FY21": 58576.680000000015
  },
  "finance_cost": {
   "FY22": 3920.18,
@@ -125,10 +233,10 @@
  },
  "log": [
   "debt_securities: 4 lines from note p.140, reconciles to balance sheet",
-  "borrowings: not on the balance sheet (treated as nil)",
-  "deposits: not on the balance sheet (treated as nil)",
-  "subordinated: note p.133; breakdown sums to 8548.57 vs balance sheet 3129.85 -> using balance-sheet total",
-  "investments: breakdown not readable (sum 432.00 vs balance sheet 8440.27) -> book size only"
+  "borrowings: 5 lines from note p.141, reconciles to balance sheet",
+  "deposits: 1 lines from note p.143, reconciles to balance sheet",
+  "subordinated: 2 lines from note p.143, reconciles to balance sheet",
+  "investments: note not found; breakdown not readable (sum 0.00 vs balance sheet 8440.27) -> book size only"
  ],
  "investment_total": {
   "FY22": 8440.27,
@@ -137,7 +245,7 @@
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_20324_M&MFIN_2021_2022_11072022203700_07112022210004.zip",
  "via": "NSE",
  "reportFy": "FY22",
- "extractor": 2,
+ "extractor": 3,
  "sha": "b00ea0d0fc34a003",
- "extractedAt": "2026-10-28T06:31:16.833Z"
+ "extractedAt": "2026-10-28T07:11:00.970Z"
 }

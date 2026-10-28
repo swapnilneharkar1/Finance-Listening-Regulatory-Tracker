@@ -278,7 +278,7 @@
   "borrowings: 5 lines from note p.207, reconciles to balance sheet",
   "deposits: 4 lines from note p.207, reconciles to balance sheet",
   "subordinated: 1 lines from note p.207, reconciles to balance sheet",
-  "investments: breakdown not readable (sum 38843.86 vs balance sheet 8565.06) -> book size only"
+  "investments: note p.197; breakdown not readable (sum 38843.86 vs balance sheet 8565.06) -> book size only"
  ],
  "investment_total": {
   "FY23": 8565.06,
@@ -287,7 +287,7 @@
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_21945_SHRIRAMFIN_2022_2023_31052023233852_06012023070001.zip",
  "via": "NSE",
  "reportFy": "FY23",
- "extractor": 2,
+ "extractor": 3,
  "sha": "01fa3e918cd9a89b",
- "extractedAt": "2026-10-28T06:32:25.214Z"
+ "extractedAt": "2026-10-28T07:13:05.824Z"
 }

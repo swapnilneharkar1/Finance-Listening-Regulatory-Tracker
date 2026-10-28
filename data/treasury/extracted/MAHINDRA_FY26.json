@@ -14,26 +14,243 @@
    "py": 10400.48,
    "note": "8",
    "page": 177
+  },
+  "debt_securities": {
+   "cy": 26539.06,
+   "py": 26204.83,
+   "note": "16",
+   "page": 177
+  },
+  "borrowings": {
+   "cy": 74240.03,
+   "py": 69734.92,
+   "note": "17",
+   "page": 177
+  },
+  "deposits": {
+   "cy": 14196.03,
+   "py": 11404.15,
+   "note": "18",
+   "page": 177
+  },
+  "subordinated": {
+   "cy": 5359.74,
+   "py": 5529.57,
+   "note": "19",
+   "page": 177
+  },
+  "finance_cost": {
+   "cy": 8392.05,
+   "py": 7898.3,
+   "note": "28",
+   "page": 177
   }
  },
  "borrowing": {
-  "FY26": [],
-  "FY25": []
+  "FY26": [
+   {
+    "label": "Non-convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 19305,
+    "page": 194,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non-convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 1077.09,
+    "page": 194,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 6156.97,
+    "page": 194,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 55718.1,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 5722.28,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitization",
+    "category": "Securitisation",
+    "value": 12799.65,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Triparty repo dealing and settlement (TREPs) against",
+    "category": "Repo, TREPS & CBLO",
+    "value": 0,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 0,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs) other than related parties",
+    "category": "Deposits",
+    "value": 0,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 7175.75,
+    "page": 197,
+    "section": "deposits"
+   },
+   {
+    "label": "Accepted from corporates",
+    "category": "Deposits",
+    "value": 7020.28,
+    "page": 197,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures",
+    "category": "Subordinated debt",
+    "value": 2788.57,
+    "page": 197,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures",
+    "category": "Subordinated debt",
+    "value": 2571.17,
+    "page": 197,
+    "section": "subordinated"
+   }
+  ],
+  "FY25": [
+   {
+    "label": "Non-convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 22974.56,
+    "page": 194,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non-convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 1076.79,
+    "page": 194,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 2153.48,
+    "page": 194,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 52998.12,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 7022.09,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitization",
+    "category": "Securitisation",
+    "value": 8684.41,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Triparty repo dealing and settlement (TREPs) against",
+    "category": "Repo, TREPS & CBLO",
+    "value": 999.82,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 21.64,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs) other than related parties",
+    "category": "Deposits",
+    "value": 8.84,
+    "page": 195,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 6947.62,
+    "page": 197,
+    "section": "deposits"
+   },
+   {
+    "label": "Accepted from corporates",
+    "category": "Deposits",
+    "value": 4456.53,
+    "page": 197,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures",
+    "category": "Subordinated debt",
+    "value": 2967.3,
+    "page": 197,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures",
+    "category": "Subordinated debt",
+    "value": 2562.27,
+    "page": 197,
+    "section": "subordinated"
+   }
+  ]
  },
  "investments": {
   "FY26": []
  },
  "totals": {
-  "FY26": 0,
-  "FY25": 0
+  "FY26": 120334.86,
+  "FY25": 112873.47000000002
  },
- "finance_cost": {},
+ "finance_cost": {
+  "FY26": 8392.05,
+  "FY25": 7898.3
+ },
  "log": [
-  "debt_securities: not on the balance sheet (treated as nil)",
-  "borrowings: not on the balance sheet (treated as nil)",
-  "deposits: not on the balance sheet (treated as nil)",
-  "subordinated: not on the balance sheet (treated as nil)",
-  "investments: breakdown not readable (sum 309.00 vs balance sheet 6820.37) -> book size only"
+  "debt_securities: 3 lines from note p.194, reconciles to balance sheet",
+  "borrowings: 6 lines from note p.195, reconciles to balance sheet",
+  "deposits: 2 lines from note p.197, reconciles to balance sheet",
+  "subordinated: 2 lines from note p.197, reconciles to balance sheet",
+  "investments: note not found; breakdown not readable (sum 0.00 vs balance sheet 6820.37) -> book size only"
  ],
  "investment_total": {
   "FY26": 6820.37,
@@ -42,6 +259,7 @@
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_29455_M&MFIN_2025_2026_A_14497256_25062026233609.pdf",
  "via": "NSE",
  "reportFy": "FY26",
+ "extractor": 3,
  "sha": "4dff4c5f0cf031c0",
- "extractedAt": "2026-10-27T12:42:00.201Z"
+ "extractedAt": "2026-10-28T07:10:35.902Z"
 }

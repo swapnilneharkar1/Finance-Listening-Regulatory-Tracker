@@ -6,7 +6,7 @@
  "pages": 584,
  "standalonePages": [
   174,
-  353
+  363
  ],
  "statement": {
   "investments": {
@@ -43,39 +43,12 @@
  "borrowing": {
   "FY26": [
    {
-    "label": "Privately Placed Non-Convertible Debentures (Refer note 14.1 below)",
-    "category": "Secured NCDs",
-    "value": 42691.92,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Public issue of Non-Convertible Debentures (Refer notes 14.2 below)",
-    "category": "Secured NCDs",
-    "value": 725.33,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Privately Placed Non-Convertible Debentures",
-    "category": "Unsecured NCDs",
-    "value": 2026.43,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Commercial paper (Refer note 14.4 below) [Net of unamortised discount of `",
-    "category": "Commercial paper",
-    "value": 7153.37,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Medium Term Notes (Refer note 14.5 below)",
-    "category": "Unsecured NCDs",
-    "value": 3806.58,
-    "page": 216,
-    "section": "debt_securities"
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 56403.63,
+    "page": 174,
+    "section": "debt_securities",
+    "unsplit": true
    },
    {
     "label": "Term Loans (Refer note 15.4 below)",
@@ -171,39 +144,12 @@
   ],
   "FY25": [
    {
-    "label": "Privately Placed Non-Convertible Debentures (Refer note 14.1 below)",
-    "category": "Secured NCDs",
-    "value": 34517.69,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Public issue of Non-Convertible Debentures (Refer notes 14.2 below)",
-    "category": "Secured NCDs",
-    "value": 723.7,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Privately Placed Non-Convertible Debentures",
-    "category": "Unsecured NCDs",
-    "value": 2474.95,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Commercial paper (Refer note 14.4 below) [Net of unamortised discount of `",
-    "category": "Commercial paper",
-    "value": 10641.76,
-    "page": 216,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Medium Term Notes (Refer note 14.5 below)",
-    "category": "Unsecured NCDs",
-    "value": 3449.51,
-    "page": 216,
-    "section": "debt_securities"
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 51807.61,
+    "page": 174,
+    "section": "debt_securities",
+    "unsplit": true
    },
    {
     "label": "Term Loans (Refer note 15.4 below)",
@@ -310,11 +256,11 @@
   "FY25": 10889.48
  },
  "log": [
-  "debt_securities: 5 lines from note p.216, reconciles to balance sheet",
+  "debt_securities: note p.216; breakdown sums to 49250.26 vs balance sheet 56403.63 -> using balance-sheet total",
   "borrowings: 10 lines from note p.220, reconciles to balance sheet",
   "deposits: not on the balance sheet (treated as nil)",
   "subordinated: 3 lines from note p.226, reconciles to balance sheet",
-  "investments: breakdown not readable (sum 23063.13 vs balance sheet 11239.92) -> book size only"
+  "investments: note p.204; breakdown not readable (sum 23063.13 vs balance sheet 11239.92) -> book size only"
  ],
  "investment_total": {
   "FY26": 11239.92,
@@ -323,7 +269,7 @@
  "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/25-26/tata-capital-limited-annual-report-fy-2025-26.pdf",
  "via": "company website",
  "reportFy": "FY26",
- "extractor": 2,
+ "extractor": 3,
  "sha": "4c70d9256cc99d39",
- "extractedAt": "2026-10-28T06:36:13.532Z"
+ "extractedAt": "2026-10-28T07:17:04.376Z"
 }

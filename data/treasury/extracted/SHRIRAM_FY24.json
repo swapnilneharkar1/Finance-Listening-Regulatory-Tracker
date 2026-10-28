@@ -9,6 +9,12 @@
   341
  ],
  "statement": {
+  "investments": {
+   "cy": 10656.64,
+   "py": 8565.06,
+   "note": "13",
+   "page": 188
+  },
   "debt_securities": {
    "cy": 44948.61,
    "py": 43652.59,
@@ -43,20 +49,88 @@
  "borrowing": {
   "FY24": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 44948.61,
-    "page": 188,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Public issue ¥",
+    "category": "Secured NCDs",
+    "value": 1128.46,
+    "page": 230,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 92148.8,
-    "page": 188,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Privately placed ¥ ¥",
+    "category": "Secured NCDs",
+    "value": 30411.55,
+    "page": 230,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial bond",
+    "category": "ECB bonds",
+    "value": 10948.31,
+    "page": 230,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Senior secured notes",
+    "category": "ECB bonds",
+    "value": 0,
+    "page": 230,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed",
+    "category": "Unsecured NCDs",
+    "value": 90.42,
+    "page": 231,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial papers",
+    "category": "Commercial paper",
+    "value": 2369.87,
+    "page": 231,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loan from banks - INR",
+    "category": "Bank term loans",
+    "value": 35232.49,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/corporates - INR",
+    "category": "FI & NHB loans",
+    "value": 10405.19,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "External commercial borrowing - FCNR",
+    "category": "ECB loans",
+    "value": 14467.05,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loans repayable on demand from banks (Cash credit from banks)",
+    "category": "Cash credit & WCDL",
+    "value": 906.04,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Bank overdrafts",
+    "category": "Cash credit & WCDL",
+    "value": 1999.87,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Other loans - INR - Securitisation liabilities",
+    "category": "Securitisation",
+    "value": 29138.16,
+    "page": 236,
+    "section": "borrowings"
    },
    {
     "label": "Unsecured i. Public deposits (Refer note 65)*",
@@ -89,20 +163,88 @@
   ],
   "FY23": [
    {
-    "label": "Debt securities (balance sheet total)",
-    "category": "Debt securities (not split)",
-    "value": 43652.59,
-    "page": 188,
-    "section": "debt_securities",
-    "unsplit": true
+    "label": "Public issue ¥",
+    "category": "Secured NCDs",
+    "value": 2508.89,
+    "page": 230,
+    "section": "debt_securities"
    },
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 73590.02,
-    "page": 188,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Privately placed ¥ ¥",
+    "category": "Secured NCDs",
+    "value": 27648.08,
+    "page": 230,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial bond",
+    "category": "ECB bonds",
+    "value": 12513.28,
+    "page": 230,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Senior secured notes",
+    "category": "ECB bonds",
+    "value": 894.73,
+    "page": 230,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Privately placed",
+    "category": "Unsecured NCDs",
+    "value": 87.61,
+    "page": 231,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial papers",
+    "category": "Commercial paper",
+    "value": 0,
+    "page": 231,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loan from banks - INR",
+    "category": "Bank term loans",
+    "value": 31900.26,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/corporates - INR",
+    "category": "FI & NHB loans",
+    "value": 9296.56,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "External commercial borrowing - FCNR",
+    "category": "ECB loans",
+    "value": 9828.01,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Loans repayable on demand from banks (Cash credit from banks)",
+    "category": "Cash credit & WCDL",
+    "value": 459.1,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Bank overdrafts",
+    "category": "Cash credit & WCDL",
+    "value": 0,
+    "page": 236,
+    "section": "borrowings"
+   },
+   {
+    "label": "Other loans - INR - Securitisation liabilities",
+    "category": "Securitisation",
+    "value": 22106.09,
+    "page": 236,
+    "section": "borrowings"
    },
    {
     "label": "Unsecured i. Public deposits (Refer note 65)*",
@@ -135,7 +277,56 @@
   ]
  },
  "investments": {
-  "FY24": []
+  "FY24": [
+   {
+    "label": "Investments",
+    "category": "Other investments",
+    "value": 512.31,
+    "page": 222
+   },
+   {
+    "label": "Investments",
+    "category": "Other investments",
+    "value": 5219.92,
+    "page": 222
+   },
+   {
+    "label": "Investments",
+    "category": "Other investments",
+    "value": 63.35,
+    "page": 222
+   },
+   {
+    "label": "Investments",
+    "category": "Other investments",
+    "value": 25.4,
+    "page": 222
+   },
+   {
+    "label": "Investment",
+    "category": "Other investments",
+    "value": 1562.24,
+    "page": 222
+   },
+   {
+    "label": "Investments",
+    "category": "Other investments",
+    "value": 13.37,
+    "page": 222
+   },
+   {
+    "label": "Investments",
+    "category": "Other investments",
+    "value": 1207.71,
+    "page": 222
+   },
+   {
+    "label": "Venture",
+    "category": "Other investments",
+    "value": 1.53,
+    "page": 222
+   }
+  ]
  },
  "totals": {
   "FY24": 185841.14,
@@ -146,14 +337,20 @@
   "FY23": 12545.76
  },
  "log": [
-  "debt_securities: note p.230; breakdown sums to 134845.83 vs balance sheet 44948.61 -> using balance-sheet total",
-  "borrowings: note p.236; breakdown sums to 276446.40 vs balance sheet 92148.8 -> using balance-sheet total",
+  "debt_securities: 6 lines from note p.230, reconciles to balance sheet",
+  "borrowings: 6 lines from note p.236, reconciles to balance sheet",
   "deposits: 3 lines from note p.241, reconciles to balance sheet",
-  "subordinated: 1 lines from note p.241, reconciles to balance sheet"
+  "subordinated: 1 lines from note p.241, reconciles to balance sheet",
+  "investments: 8 lines from note p.222"
  ],
+ "investment_total": {
+  "FY24": 10656.64,
+  "FY23": 8565.06
+ },
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_24341_SHRIRAMFIN_2023_2024_06072024172245.pdf",
  "via": "NSE",
  "reportFy": "FY24",
+ "extractor": 3,
  "sha": "3dc7263f269a6801",
- "extractedAt": "2026-10-27T12:43:29.310Z"
+ "extractedAt": "2026-10-28T07:12:59.785Z"
 }

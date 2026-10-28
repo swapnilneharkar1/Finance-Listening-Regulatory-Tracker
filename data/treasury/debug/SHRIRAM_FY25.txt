@@ -1,5 +1,5 @@
 https://nsearchives.nseindia.com/annual_reports/AR_26597_SHRIRAMFIN_2024_2025_A_24062025170941.pdf
-Reason: breakdown problems: investments: breakdown not readable (sum 10990.09 vs balance sheet 15598.71) -> book size only
+Reason: breakdown problems: investments: note p.263; breakdown not readable (sum 10990.09 vs balance sheet 15598.71) -> book size only
 Pages: 560
 Repeated header/footer lines (ignored): shriram finance limited | annual report 2024 25 | rs in crores | particulars march 31 2025 march 31 2024 | notes forming part of the standalone financial | notes forming part of the consolidated financial statements
 
@@ -382,3 +382,60 @@ There are no subordinated liabilities measured at FVTPL or designated at FVTPL.
 # Includes Rs. 554.93 crores (March 31, 2024 Rs. 330.21 crores) issued to related parties.
 Shriram Finance Limited
 277
+===== note page 263 =====
+NOTES FORMING PART OF THE STANDALONE FINANCIAL
+STATEMENTS FOR THE YEAR ENDED MARCH 31, 2025 (Contd.)   STANDALONE ACCOUNTS
+12   LOANS (Contd.)
+Reconciliation of ECL balance is given below:
+(Rs. in crores)
+Year ended March 31, 2025   Year ended March 31, 2024
+General approach   General approach
+Particulars   Stage 1   Stage 2   Stage 3   Total   Stage 1   Stage 2   Stage 3   Total
+ECL allowance -   6,374.03   1,107.51   6,256.71 13,738.25   4,541.30   1,105.27   5,707.27   11,353.84
+Opening balance
+New assets originated or   5,680.02   608.28   499.26   6,787.56   4,237.94   524.62   624.39   5,386.95
+purchased
+Transfers to stage 1   1,443.58   (729.76)   (713.82)   -   1,999.19   (934.51) (1,064.68)   -
+Transfers to stage 2   (756.19)   931.56   (175.37)   -   (494.81)   695.92   (201.11)   -
+Transfers to stage 3   (387.68)   (245.85)   633.53   -   (208.69)   (205.93)   414.62   -
+Impact on year end ECL   (3,931.41)   (137.12)   3,217.30   (851.23)   (3,337.12)   11.87   2,613.93   (711.32)
+of exposures transferred
+between stages during the
+year and reversal of ECL
+on account of recovery
+Provision no longer   (452.21)   (105.97) (4,593.28) (5,151.46)   (363.78)   (89.73) (1,837.71)   (2,291.22)
+required
+ECL allowance - Closing   7,970.14   1,428.65   5,124.33 14,523.12   6,374.03   1,107.51   6,256.71   13,738.25
+balance
+The contractual amount outstanding on loans that have been written off during the financial year, but were still subject to
+enforcement activity was Rs. 3,683.88 crores (March 31, 2024 Rs. 1,485.28 crores).
+13   INVESTMENTS
+(Rs. in crores)
+As at March 31, 2025   As at March 31, 2024
+Amortised   Fair   Fair value Others   Total   Amortised   Fair   Fair value Others   Total
+cost   value   through   (at cost)   cost   value   through   (at cost)
+through profit or   through profit or
+Particulars   OCI   loss   OCI   loss
+Quoted
+i)   Investments   -   -   10.01   -   10.01   -   -   300.38   -   300.38
+in mutual
+funds *
+ii)   Investments   7,822.90   -   484.94   -   8,307.84 6,468.36   -   -   -   6,468.36
+in
+government
+securities
+(Refer note
+84)
+iii) Investments   -   110.81   -   -   110.81   -   79.84   -   -   79.84
+in equity
+instruments #
+Unquoted
+i)   Investments   -   -   27.67   -   27.67   -   -   25.82   -   25.82
+in equity
+instruments
+ii)   Investment   -   -   -   -   -   -   -   - 1,562.24   1,562.24
+in subsidiary
+(Refer note 43
+and 46)
+Shriram Finance Limited
+257

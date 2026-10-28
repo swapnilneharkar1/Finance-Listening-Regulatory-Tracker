@@ -15,6 +15,12 @@
    "note": "13",
    "page": 117
   },
+  "debt_securities": {
+   "cy": 52873.19,
+   "py": 54148.86,
+   "note": "21",
+   "page": 117
+  },
   "borrowings": {
    "cy": 125917.78,
    "py": 121448.42,
@@ -37,54 +43,202 @@
  "borrowing": {
   "FY26": [
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 125917.78,
-    "page": 117,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Public issue ¥",
+    "category": "Secured NCDs",
+    "value": 737.72,
+    "page": 140,
+    "section": "debt_securities"
    },
    {
-    "label": "Deposits (balance sheet total)",
+    "label": "Privately placed ¥ ¥",
+    "category": "Secured NCDs",
+    "value": 38876.91,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial bond",
+    "category": "ECB bonds",
+    "value": 13258.56,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loan from banks - INR",
+    "category": "Bank term loans",
+    "value": 36880.41,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from banks - FCNR",
+    "category": "Bank term loans",
+    "value": 5230.03,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - INR",
+    "category": "FI & NHB loans",
+    "value": 7495.37,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - FCNR",
+    "category": "FI & NHB loans",
+    "value": 1597.09,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Constituent's subsidiary general ledger loan (CSGL loan)",
+    "category": "Repo, TREPS & CBLO",
+    "value": 0,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "External commercial borrowing",
+    "category": "ECB loans",
+    "value": 36255.3,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Other loans - Securitisation liabilities - INR",
+    "category": "Securitisation",
+    "value": 38459.58,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Unsecured i. Public deposits (Refer note 81)*",
     "category": "Deposits",
-    "value": 69480.34,
-    "page": 117,
-    "section": "deposits",
-    "unsplit": false
+    "value": 64052.77,
+    "page": 144,
+    "section": "deposits"
    },
    {
-    "label": "Subordinated liabilities (balance sheet total)",
+    "label": "ii. From banks",
+    "category": "Deposits",
+    "value": 82.49,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "Deposits from corporates **",
+    "category": "Deposits",
+    "value": 5345.08,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated debts - Debentures #",
     "category": "Subordinated debt",
     "value": 2418.57,
-    "page": 117,
-    "section": "subordinated",
-    "unsplit": false
+    "page": 145,
+    "section": "subordinated"
    }
   ],
   "FY25": [
    {
-    "label": "Borrowings (other than debt securities) (balance sheet total)",
-    "category": "Borrowings (not split)",
-    "value": 121448.42,
-    "page": 117,
-    "section": "borrowings",
-    "unsplit": true
+    "label": "Public issue ¥",
+    "category": "Secured NCDs",
+    "value": 732.92,
+    "page": 140,
+    "section": "debt_securities"
    },
    {
-    "label": "Deposits (balance sheet total)",
+    "label": "Privately placed ¥ ¥",
+    "category": "Secured NCDs",
+    "value": 37563.97,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "External commercial bond",
+    "category": "ECB bonds",
+    "value": 15851.97,
+    "page": 140,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loan from banks - INR",
+    "category": "Bank term loans",
+    "value": 35348.07,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from banks - FCNR",
+    "category": "Bank term loans",
+    "value": 2702.01,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - INR",
+    "category": "FI & NHB loans",
+    "value": 9864.34,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Term loan from financial institutions/ corporates - FCNR",
+    "category": "FI & NHB loans",
+    "value": 1425,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Constituent's subsidiary general ledger loan (CSGL loan)",
+    "category": "Repo, TREPS & CBLO",
+    "value": 402.97,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "External commercial borrowing",
+    "category": "ECB loans",
+    "value": 33653.95,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Other loans - Securitisation liabilities - INR",
+    "category": "Securitisation",
+    "value": 38052.08,
+    "page": 142,
+    "section": "borrowings"
+   },
+   {
+    "label": "Unsecured i. Public deposits (Refer note 81)*",
     "category": "Deposits",
-    "value": 56085.99,
-    "page": 117,
-    "section": "deposits",
-    "unsplit": false
+    "value": 53355.35,
+    "page": 144,
+    "section": "deposits"
    },
    {
-    "label": "Subordinated liabilities (balance sheet total)",
+    "label": "ii. From banks",
+    "category": "Deposits",
+    "value": 97.46,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "Deposits from corporates **",
+    "category": "Deposits",
+    "value": 2633.18,
+    "page": 144,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated debts - Debentures #",
     "category": "Subordinated debt",
     "value": 2513.98,
-    "page": 117,
-    "section": "subordinated",
-    "unsplit": false
+    "page": 145,
+    "section": "subordinated"
    }
   ]
  },
@@ -92,16 +246,16 @@
   "FY26": []
  },
  "totals": {
-  "FY26": 197816.69,
-  "FY25": 180048.39
+  "FY26": 250689.88,
+  "FY25": 234197.24999999997
  },
  "finance_cost": {},
  "log": [
-  "debt_securities: not on the balance sheet (treated as nil)",
-  "borrowings: note p.142; breakdown sums to 118453.41 vs balance sheet 125917.78 -> using balance-sheet total",
-  "deposits: note p.145; breakdown sums to 1783.67 vs balance sheet 69480.34 -> using balance-sheet total",
-  "subordinated: note p.145; breakdown sums to 2560.34 vs balance sheet 2418.57 -> using balance-sheet total",
-  "investments: breakdown not readable (sum 22057.43 vs balance sheet 14782.76) -> book size only"
+  "debt_securities: 3 lines from note p.140, reconciles to balance sheet",
+  "borrowings: 7 lines from note p.142, reconciles to balance sheet",
+  "deposits: 3 lines from note p.144, reconciles to balance sheet",
+  "subordinated: 1 lines from note p.145, reconciles to balance sheet",
+  "investments: note p.135; breakdown not readable (sum 15962.29 vs balance sheet 14782.76) -> book size only"
  ],
  "investment_total": {
   "FY26": 14782.76,
@@ -110,7 +264,7 @@
  "url": "https://nsearchives.nseindia.com/annual_reports/AR_29401_SHRIRAMFIN_2025_2026_A_18605156_17062026163904.pdf",
  "via": "NSE",
  "reportFy": "FY26",
- "extractor": 2,
+ "extractor": 3,
  "sha": "e2911eafac1bcff7",
- "extractedAt": "2026-10-28T06:31:39.259Z"
+ "extractedAt": "2026-10-28T07:11:23.125Z"
 }

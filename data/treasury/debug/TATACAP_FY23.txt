@@ -1,5 +1,5 @@
 https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/22-23/tata-capital-limited-annual-report-fy-2022-23.pdf
-Reason: breakdown problems: debt_securities: note p.297; breakdown sums to 0.00 vs balance sheet 332351 -> using balance-sheet total | investments: breakdown not readable (sum 1913148.00 vs balance sheet 1459849) -> book size only
+Reason: breakdown problems: debt_securities: note p.297; breakdown sums to 0.00 vs balance sheet 332351 -> using balance-sheet total | investments: note p.321; breakdown not readable (sum 1913148.00 vs balance sheet 1459849) -> book size only
 Pages: 392
 Repeated header/footer lines (ignored): annual report 2022 23 | in lakh | march 31 2023 march 31 2022 | notes f orming part of consolidated f inancial statements
 
@@ -250,3 +250,59 @@ Early Date of Redemption refers to the date on or before which the CRPS shall be
 terms of offer, in the event of exercise of Call / Put Option by Option Exercise Date by the Company or CRPS
 holder(s), as the case may be, to seek early redemption.
 324
+===== note page 321 =====
+NOT E S F O RMING P ART O F   STANDALONE   FINANCIAL   STATEMENTS
+NOTE “7”
+Scrip-wise details of investments
+Face   As at   As at
+INVESTMENTS   value Per   March 31, 2023   March 31, 2022
+Unit `
+No. of Units   ` in lakh   No. of Units   ` in lakh
+INVESTMENTS AT COST
+Investment in Subsidiaries
+Unquoted:
+Investment in Equity Shares   10,61,513   8,95,013
+Tata Capital Financial Services Limited   10   1,71,88,46,452   6,83,755   1,65,98,72,100   5,68,755
+Tata Capital Housing Finance Limited   10   57,07,46,700   2,90,600   54,75,55,612   2,40,600
+Tata Securities Limited   10   1,38,25,193   2,289   61,83,837   789
+Tata Capital Pte Limited   SGD 1   3,22,82,000   10,807   3,22,82,000   10,807
+Tata Cleantech Capital Limited   10   36,97,24,934   74,062   36,97,24,940   74,062
+Investment in Venture Capital Units   35,080   32,359
+Tata Capital Growth Fund- ClassA Units   1   2,50,00,00,000   4,690   2,50,00,00,000   5,433
+Tata Capital Special Situations Fund- Class A Units   100,000   4,097   2,175   4,181   2,260
+Tata Capital Special Situations Fund - Class B Units   100   50   0*   50   0*
+Tata Capital Healthcare Fund I- Class A Units   1   1,00,00,00,000   2,377   1,00,00,00,000   2,377
+Tata Capital Innovations Fund- Class A Units   1,000   7,50,000   4,572   7,50,000   5,058
+Tata Capital Innovations Fund - Class B Units   1   10,000   0*   10,000   0*
+Tata Capital Growth Fund II - Class A1 Units   1   3,60,67,70,000   16,561   3,60,67,70,000   14,619
+Tata Capital Growth Fund II - Class B1 Units   1   1,25,00,000   51   1,25,00,000   51
+Tata Capital Growth Fund II - Class B2 Units   1   1,00,00,000   41   1,00,00,000   41
+Tata Capital Healthcare Fund II   1,000   14,00,000   4,613   14,00,000   2,520
+Investment in Associates
+Unquoted :
+Investment in Equity shares   10,720   29,248
+Tata Autocomp Systems Limited (ceased to be   10   -   -   4,83,07,333   18,528
+associate w.e.f. 23.03.2023)
+Tata Play Limited (formerly Tata Sky Limited)   10   1,00,72,871   5,242   1,00,72,871   5,242
+Tata Projects Limited   5 | 10   36,71,821   5,478   36,71,821   5,478
+Total Cost of Investments (A)   11,07,313   9,56,620
+Provision for diminution in value of investments (B)   (7,776)   (7,069)
+Carrying value of Investments in Subsidiaries and   10,99,537   9,49,551
+Associates measured at cost (C) = (A + B)
+INVESTMENTS AT FAIR VALUE THROUGH PROFIT
+& LOSS
+Investment in Others
+Quoted:
+Investment in Equity shares   239   266
+Tata Steel Limited (Fully paid)   10   1,67,400   175   16,740   219
+The Indian Hotels Company Limited   1   19,600   64   19,600   47
+Unquoted:
+Investment in Equity shares   10,327   -
+Supermarket Grocery Supplies Private Limited   1   6,33,235   10,327   -   -
+Investments in Mutual Funds   1,00,550   47,815
+Tata Liquid Fund Regular Plan - Growth   1,000   9,342   329   9,342   311
+ABSL Money Manager Fund Gr-Direct   1,000   1,10,88,858   35,062   33,45,316   9,999
+Tata Money Market Fund Direct Plan - Growth   1,000   6,19,134   25,063   4,70,680   18,005
+Nippon India Money Market Fund - Direct Growth   1,000   5,65,161   20,049   2,83,520   9,500
+Kotak Money Market Fund - Direct Plan - Growth   1,000   5,23,636   20,047   2,76,175   10,000
+317

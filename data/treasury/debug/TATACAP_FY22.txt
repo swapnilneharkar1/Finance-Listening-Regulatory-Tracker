@@ -1,5 +1,5 @@
 https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/21-22/TATA%20Capital%20-%20Annual%20Report%20FY%202021-22.pdf
-Reason: breakdown problems: debt_securities: note p.268; breakdown sums to 0.00 vs balance sheet 298046 -> using balance-sheet total | investments: breakdown not readable (sum 5323942.00 vs balance sheet 1013997) -> book size only
+Reason: breakdown problems: debt_securities: note p.268; breakdown sums to 0.00 vs balance sheet 298046 -> using balance-sheet total | investments: note p.266; breakdown not readable (sum 5323942.00 vs balance sheet 1013997) -> book size only
 Pages: 357
 Repeated header/footer lines (ignored): annual report 2021 22 | in lakh | march 31 2022 march 31 2021 | notes forming part of standalone financial statements
 
@@ -235,3 +235,51 @@ AD   3,34,500   June 15, 2018   June 14, 2025 September 30, 2022   3,341   3,330
 Redeemable Preference
 Shares of Rs. 1,000 each
 296
+===== note page 266 =====
+Annual Report 2021-22
+StAndAlone CASh FloW StAteMent For the yeAr ended MArCh 31, 2022
+(` in lakh)
+For the year   For the year
+note
+particulars   ended   ended
+no.
+March 31, 2022 March 31, 2021
+1.   CASh FloW FroM operAtInG ACtIVItIeS
+Profit before tax   10,295   6,303
+Adjustments for :
+Dividend income   (20,717)   (20,035)
+Interest income   (14,213)   (10,098)
+Net gain/(loss) on fair value changes   (518)   (477)
+Finance cost   28,970   25,513
+Provision for employee benefits   (106)   (111)
+Impairment loss allowance against stage I and stage   (122)   79
+II assets
+Impairment loss / Write off for diminution in value of   227   1,809
+investments
+Impairment provision on trade receivables   -   10
+Distribution of interest income by private equity funds   (2)   (5)
+Equity settled share based payments cost   709   499
+Depreciation, amortisation and impairment   710   727
+Profit on sale of investments   (2,971)   (6,048)
+Net gain on de-recognition of associate   (923)   -
+Net Impact on fair valuation of security deposit   (406)   (406)
+received/ given
+Net gain on derecognition of property, plant and   (1)   -
+equipment
+932   (2,240)
+Interest paid   (18,342)   (12,584)
+Interest received   14,316   10,017
+Dividend received   20,717   20,035
+Operating Profit before working capital changes   17,623   15,228
+Adjustments for :
+Decrease in trade receivables   7   197
+Increase in other financial / non-financial assets   (957)   (44)
+Decrease / (Increase) in loans   30,455   (19,598)
+Increase / (Decrease) in trade payables   270   (99)
+Increase in other financial / non-financial liabilities   1,205   1,017
+and provisions
+Cash generated from / (used in) operations   48,603   (3,299)
+Taxes paid   (3,224)   (2,925)
+net CASh GenerAted FroM / (uSed In)   45,379   (6,224)
+operAtInG ACtIVItIeS
+264

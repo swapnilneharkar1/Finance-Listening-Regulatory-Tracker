@@ -1,0 +1,147 @@
+{
+ "ok": true,
+ "fy": "FY25",
+ "prevFy": "FY24",
+ "unit": "crore",
+ "pages": 503,
+ "standalonePages": [
+  255,
+  396
+ ],
+ "statement": {
+  "investments": {
+   "cy": 41716.23,
+   "py": 37153.36,
+   "note": "10",
+   "page": 255
+  },
+  "debt_securities": {
+   "cy": 111010.88,
+   "py": 87596.09,
+   "note": "16",
+   "page": 255
+  },
+  "borrowings": {
+   "cy": 89737.66,
+   "py": 69238,
+   "note": "17",
+   "page": 255
+  },
+  "deposits": {
+   "cy": 71365.52,
+   "py": 59966.66,
+   "note": "18",
+   "page": 255
+  },
+  "subordinated": {
+   "cy": 3103.54,
+   "py": 3577.9,
+   "note": "19",
+   "page": 255
+  },
+  "finance_cost": {
+   "cy": 18437.35,
+   "py": 13843.44,
+   "note": "32",
+   "page": 257
+  }
+ },
+ "borrowing": {
+  "FY25": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 111010.88,
+    "page": 255,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 89737.66,
+    "page": 255,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Deposits (balance sheet total)",
+    "category": "Deposits",
+    "value": 71365.52,
+    "page": 255,
+    "section": "deposits",
+    "unsplit": false
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 3103.54,
+    "page": 255,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ],
+  "FY24": [
+   {
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 87596.09,
+    "page": 255,
+    "section": "debt_securities",
+    "unsplit": true
+   },
+   {
+    "label": "Borrowings (other than debt securities) (balance sheet total)",
+    "category": "Borrowings (not split)",
+    "value": 69238,
+    "page": 255,
+    "section": "borrowings",
+    "unsplit": true
+   },
+   {
+    "label": "Deposits (balance sheet total)",
+    "category": "Deposits",
+    "value": 59966.66,
+    "page": 255,
+    "section": "deposits",
+    "unsplit": false
+   },
+   {
+    "label": "Subordinated liabilities (balance sheet total)",
+    "category": "Subordinated debt",
+    "value": 3577.9,
+    "page": 255,
+    "section": "subordinated",
+    "unsplit": false
+   }
+  ]
+ },
+ "investments": {
+  "FY25": []
+ },
+ "totals": {
+  "FY25": 275217.6,
+  "FY24": 220378.65
+ },
+ "finance_cost": {
+  "FY25": 18437.35,
+  "FY24": 13843.44
+ },
+ "log": [
+  "debt_securities: note p.288; breakdown sums to 585453.46 vs balance sheet 111010.88 -> using balance-sheet total",
+  "borrowings: note p.291; breakdown sums to 359726.42 vs balance sheet 89737.66 -> using balance-sheet total",
+  "deposits: note p.294; breakdown sums to 148518.55 vs balance sheet 71365.52 -> using balance-sheet total",
+  "subordinated: note p.295; breakdown sums to 17389.16 vs balance sheet 3103.54 -> using balance-sheet total",
+  "investments: note p.279; breakdown not readable (sum 713.78 vs balance sheet 41716.23) -> book size only"
+ ],
+ "investment_total": {
+  "FY25": 41716.23,
+  "FY24": 37153.36
+ },
+ "url": "https://nsearchives.nseindia.com/annual_reports/AR_26674_BAJFINANCE_2024_2025_A_02072025000055.pdf",
+ "via": "NSE",
+ "reportFy": "FY25",
+ "extractor": 3,
+ "sha": "a968ba063ff10734",
+ "extractedAt": "2026-10-28T07:09:22.383Z"
+}
