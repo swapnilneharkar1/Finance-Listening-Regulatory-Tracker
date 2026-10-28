@@ -351,7 +351,7 @@
   function heroKpi(label, value, sub, rank, spark) {
     return h('div', { class: 'tpb-hk' },
       h('div', { class: 'tpb-hk-top' }, h('span', { class: 'k', text: label }), rank ? h('span', { class: 'tpb-rank', text: rank }) : null),
-      h('div', { class: 'v', text: value }),
+      h('div', { class: 'v' + (/^[₹+−\-\d]/.test(String(value)) ? '' : ' txt'), text: value }),
       h('div', { class: 'tpb-hk-bot' }, h('span', { class: 'd' }, ...(Array.isArray(sub) ? sub : [sub || ''])), spark));
   }
   function hero(title, meta, kpis, accent, actions) {
@@ -362,24 +362,28 @@
       h('div', { class: 'tpb-hero-kpis' }, kpis.filter(Boolean)));
   }
 
-  // 100% stacked bar per company: the whole funding mix of every NBFC on one screen
+  // 100% stacked bars: one row per company (or per year), segments = instruments
   function mixStack(holder, part, year) {
-    const rowsC = companies.map(c => ({ c, m: mixValues(c, part, year, 'share') }));
+    return stackRows(holder, companies.map(c => {
+      const p = partOf(c, part);
+      return { label: c.short, bold: c === base, title: `${c.name} · ${year}`, m: mixValues(c, part, year, 'share'),
+        amount: k => p && p.mix.amounts[k] && p.mix.amounts[k][year], missing: `not available for ${year}` };
+    }), part);
+  }
+  function stackRows(holder, rowsC, part) {
     const totals = {};
     rowsC.forEach(({ m }) => m && Object.entries(m).forEach(([k, v]) => { totals[k] = (totals[k] || 0) + (v || 0); }));
-    const cats = Object.keys(totals).sort((a, b) => totals[b] - totals[a]);
+    const cats = Object.keys(totals).filter(k => totals[k] > 0).sort((a, b) => totals[b] - totals[a]);
     const top = cats.slice(0, cats.length > 8 ? 7 : 8), rest = cats.filter(k => !top.includes(k));
     const keys = rest.length ? [...top, 'Other'] : top;
     const color = k => k === 'Other' ? OTHER_COLOR : MIX_COLORS[top.indexOf(k)] || OTHER_COLOR;
     const W = width(holder), labelW = Math.min(150, W * 0.24), barH = 26, gap = 14, padT = 4;
     const H = padT + rowsC.length * (barH + gap);
-    const svg = s('svg', { width: W, height: H, role: 'img', 'aria-label': `${part === 'borrowing' ? 'Borrowing' : 'Investment'} mix by company, ${year}` });
-    rowsC.forEach(({ c, m }, i) => {
-      const y = padT + i * (barH + gap);
-      const isBase = c === base;
-      svg.append(s('text', { x: labelW - 12, y: y + barH / 2 + 4, 'text-anchor': 'end', 'font-size': 12.5, 'font-weight': isBase ? 700 : 500, fill: '#1a2030' }, c.short));
-      if (isBase) svg.append(s('rect', { x: 0, y: y + 4, width: 3, height: barH - 8, rx: 1.5, fill: '#0f2d52' }));
-      if (!m) { svg.append(s('text', { x: labelW, y: y + barH / 2 + 4, 'font-size': 12, fill: '#898781' }, `not available for ${year}`)); return; }
+    const svg = s('svg', { width: W, height: H, role: 'img', 'aria-label': `${part === 'borrowing' ? 'Borrowing' : 'Investment'} mix` });
+    rowsC.forEach((row, i) => {
+      const { m } = row, y = padT + i * (barH + gap);
+      svg.append(s('text', { x: labelW - 12, y: y + barH / 2 + 4, 'text-anchor': 'end', 'font-size': 12.5, 'font-weight': row.bold ? 700 : 500, fill: '#1a2030' }, row.label));
+      if (!m) { svg.append(s('text', { x: labelW, y: y + barH / 2 + 4, 'font-size': 12, fill: '#898781' }, row.missing || 'not available')); return; }
       const vals = keys.map(k => ({ k, v: k === 'Other' ? rest.reduce((a, r) => a + (m[r] || 0), 0) : (m[k] || 0) })).filter(x => x.v > 0.0005);
       const sum = vals.reduce((a, x) => a + x.v, 0) || 1, avail = W - labelW - 4 - (vals.length - 1) * 2;
       let x = labelW;
@@ -393,9 +397,8 @@
         g.append(s('path', { d: path, fill: color(seg.k), class: 'bar' }));
         if (w > 40) g.append(s('text', { x: x + w / 2, y: y + barH / 2 + 4, 'text-anchor': 'middle', 'font-size': 11, 'font-weight': 600, fill: inkOn(color(seg.k)), 'pointer-events': 'none' }, (seg.v / sum * 100).toFixed(0) + '%'));
         const hit = s('rect', { x, y: y - 3, width: w + 2, height: barH + 6, class: 'hit' });
-        const amt = part === 'borrowing' ? c.borrowing.mix.amounts : c.investments && c.investments.mix.amounts;
-        const amount = seg.k === 'Other' ? rest.reduce((a, r) => a + ((amt && amt[r] && amt[r][year]) || 0), 0) : amt && amt[seg.k] && amt[seg.k][year];
-        hit.addEventListener('mousemove', e => { g.classList.add('hl'); showTip(e, `${c.name} · ${year}`, [{ color: color(seg.k), value: pct(seg.v / sum), label: seg.k + (seg.k === 'Other' ? ` (${rest.join(', ')})` : '') }, ...(amount ? [{ value: cr(amount), label: 'amount' }] : [])]); });
+        const amount = row.amount ? (seg.k === 'Other' ? rest.reduce((a, r) => a + (row.amount(r) || 0), 0) : row.amount(seg.k)) : null;
+        hit.addEventListener('mousemove', e => { g.classList.add('hl'); showTip(e, row.title || row.label, [{ color: color(seg.k), value: pct(seg.v / sum), label: seg.k + (seg.k === 'Other' ? ` (${rest.join(', ')})` : '') }, ...(amount ? [{ value: cr(amount), label: 'amount' }] : [])]); });
         hit.addEventListener('mouseleave', () => { g.classList.remove('hl'); hideTip(); });
         g.append(hit); svg.append(g);
         x += w + 2;
@@ -403,6 +406,76 @@
     });
     holder.replaceChildren(svg);
     return keys.map(k => ({ color: color(k), label: k }));
+  }
+
+  // Columns over the years (single series), value on each column, growth below the axis
+  function columnChart(holder, { years, values, color, fmt, axisFmt }) {
+    const pts = years.map(y => ({ y, v: values[y] })).filter(p => p.v != null);
+    if (!pts.length) { holder.replaceChildren(h('div', { class: 'tpb-empty', text: 'No data.' })); return; }
+    const W = width(holder), Hh = 230, L = 48, R = 10, Tp = 22, B = 40;
+    const max = niceMax(Math.max(...pts.map(p => p.v)) * 1.08), bw = Math.min(56, (W - L - R) / pts.length * 0.56);
+    const xs = i => L + (W - L - R) * (i + 0.5) / pts.length, y = v => Tp + (Hh - Tp - B) * (1 - v / max);
+    const svg = s('svg', { width: W, height: Hh, role: 'img', 'aria-label': pts.map(p => `${p.y} ${fmt(p.v)}`).join(', ') });
+    ticks(max).forEach(t => {
+      svg.append(s('line', { x1: L, x2: W - R, y1: y(t), y2: y(t), stroke: t ? '#eef0f3' : '#c3c2b7' }));
+      svg.append(s('text', { x: L - 8, y: y(t) + 4, 'text-anchor': 'end', 'font-size': 11, fill: '#898781' }, axisFmt(t)));
+    });
+    pts.forEach((p, i) => {
+      const x0 = xs(i) - bw / 2, y0 = y(p.v), base0 = y(0), r = Math.min(5, bw / 2, base0 - y0), g = s('g', {});
+      g.append(s('path', { d: `M${x0},${base0}V${y0 + r}Q${x0},${y0} ${x0 + r},${y0}H${x0 + bw - r}Q${x0 + bw},${y0} ${x0 + bw},${y0 + r}V${base0}Z`, fill: color, class: 'bar' }));
+      g.append(s('text', { x: xs(i), y: y0 - 7, 'text-anchor': 'middle', 'font-size': 11.5, 'font-weight': 600, fill: '#1a2030' }, axisFmt(p.v)));
+      g.append(s('text', { x: xs(i), y: Hh - B + 16, 'text-anchor': 'middle', 'font-size': 11.5, fill: '#52514e' }, p.y));
+      const prev = pts[i - 1], gr = prev ? p.v / prev.v - 1 : null;
+      if (gr != null) g.append(s('text', { x: xs(i), y: Hh - B + 31, 'text-anchor': 'middle', 'font-size': 10.5, 'font-weight': 600, fill: gr >= 0 ? '#006300' : '#b42318' }, (gr >= 0 ? '+' : '−') + Math.abs(gr * 100).toFixed(1) + '%'));
+      const hit = s('rect', { x: xs(i) - (W - L - R) / pts.length / 2, y: Tp - 10, width: (W - L - R) / pts.length, height: Hh - Tp - B + 10, class: 'hit' });
+      hit.addEventListener('mousemove', e => { g.classList.add('hl'); showTip(e, p.y, [{ color, value: fmt(p.v), label: 'total borrowings' }, ...(gr != null ? [{ value: (gr >= 0 ? '+' : '−') + Math.abs(gr * 100).toFixed(1) + '%', label: `vs ${prev.y}` }] : [])]); });
+      hit.addEventListener('mouseleave', () => { g.classList.remove('hl'); hideTip(); });
+      g.append(hit); svg.append(g);
+    });
+    holder.replaceChildren(svg);
+  }
+
+  // Scorecard: the CFO table — value, prior year, change, peer average, rank, trend
+  function scorecard(c, year) {
+    const others = companies.filter(x => x !== c), b = c.borrowing, inv = c.investments;
+    const prevOf = y => 'FY' + String(+y.slice(2) - 1).padStart(2, '0'), py = prevOf(year);
+    const growthOf = (x, y) => { const t = x.borrowing.total; return t[y] != null && t[prevOf(y)] ? t[y] / t[prevOf(y)] - 1 : null; };
+    const top3Of = (x, y) => { const m = mixValues(x, 'borrowing', y, 'share'); return m ? Object.values(m).sort((a, z) => z - a).slice(0, 3).reduce((a, v) => a + (v || 0), 0) : null; };
+    const metrics = [
+      { name: 'Total borrowings', get: (x, y) => x.borrowing.total[y], fmt: cr, delta: (a, z) => growth(a, z), asc: false },
+      { name: 'Borrowing growth (YoY)', get: growthOf, fmt: v => (v >= 0 ? '+' : '−') + Math.abs(v * 100).toFixed(1) + '%', delta: (a, z) => pp(a - z), asc: false },
+      { name: 'Average borrowing cost', get: (x, y) => x.borrowing.avg_cost && x.borrowing.avg_cost[y], fmt: v => pct(v, 2), delta: (a, z) => bps(a - z), asc: true, better: 'low' },
+      { name: 'Finance cost', get: (x, y) => x.borrowing.finance_cost && x.borrowing.finance_cost[y], fmt: cr, delta: (a, z) => growth(a, z), asc: false },
+      { name: 'Investment book', get: (x, y) => x.investments && x.investments.total[y], fmt: cr, delta: (a, z) => growth(a, z), asc: false },
+      { name: 'Top-3 funding concentration', get: top3Of, fmt: v => pct(v), delta: (a, z) => pp(a - z), asc: true, better: 'low' },
+    ];
+    const rows = metrics.map(mt => {
+      const v = mt.get(c, year), p = mt.get(c, py);
+      const ov = others.map(x => mt.get(x, year)).filter(x => x != null && !isNaN(x));
+      const avg = ov.length ? ov.reduce((a, z) => a + z, 0) / ov.length : null;
+      const rk = rankOf(c, x => mt.get(x, year), mt.asc);
+      const trend = sparkline((b.years || []).map(y => ({ y, v: mt.get(c, y) })), { w: 96, hgt: 26, color: '#0f2d52', fmt: mt.fmt });
+      return { mt, v, p, avg, rk, trend };
+    }).filter(r => r.v != null && !isNaN(r.v));
+    return h('div', { class: 'tpb-table-wrap' }, h('table', { class: 'tpb-score' },
+      h('thead', {}, h('tr', {}, ['Metric', year, py, 'Change', `Peer avg (${others.length})`, 'Rank', 'Trend'].map((t, i) => h('th', { class: i && i < 6 ? 'n' : '', text: t })))),
+      h('tbody', {}, rows.map(r => {
+        const vsAvg = r.avg != null ? r.v - r.avg : null, good = vsAvg == null || !r.mt.better ? null : (r.mt.better === 'low' ? vsAvg <= 0 : vsAvg >= 0); // only where lower/higher is clearly better
+        return h('tr', {},
+          h('td', {}, h('b', { text: r.mt.name })),
+          h('td', { class: 'n tpb-score-v', text: r.mt.fmt(r.v) }),
+          h('td', { class: 'n', text: r.p != null && !isNaN(r.p) ? r.mt.fmt(r.p) : '—' }),
+          h('td', { class: 'n', text: r.p != null && !isNaN(r.p) ? r.mt.delta(r.v, r.p) : '—' }),
+          h('td', { class: 'n' }, r.avg != null ? r.mt.fmt(r.avg) : '—', good != null ? h('span', { class: 'tpb-flag ' + (good ? 'good' : 'bad'), title: good ? 'better than peer average' : 'worse than peer average', text: good ? '▲ better' : '▼ worse' }) : null),
+          h('td', { class: 'n' }, r.rk ? h('span', { class: 'tpb-rankpill' + (r.rk.n === 1 ? ' first' : ''), text: `${r.rk.n} / ${r.rk.of}` }) : '—'),
+          h('td', {}, r.trend || ''));
+      }))));
+  }
+  function othersAvgMix(c, part, year, cats) {
+    const out = {};
+    const ms = companies.filter(x => x !== c).map(x => mixValues(x, part, year, 'share')).filter(Boolean);
+    cats.forEach(k => { out[k] = ms.length ? ms.reduce((a, m) => a + (m[k] || 0), 0) / ms.length : null; });
+    return out;
   }
 
   // League table: size, growth, cost and investment book of every NBFC, bars inline
@@ -426,6 +499,65 @@
         h('td', { class: 'n', text: r.c === base || r.cost == null || baseCost == null ? '—' : bps(r.cost - baseCost) }),
         h('td', { class: 'n', text: r.inv != null ? cr(r.inv) : '—' }))))));
   }
+
+  // Sequential blue ramp (light -> dark) for the heatmap cells
+  const BLUES = ['#eef4fc', '#cde2fb', '#b7d3f6', '#9ec5f4', '#86b6ef', '#6da7ec', '#5598e7', '#3987e5', '#2a78d6', '#256abf', '#1c5cab'];
+  function heatTable(part, year, cats) {
+    const vals = companies.map(c => ({ c, m: mixValues(c, part, year, 'share') }));
+    const max = Math.max(0.0001, ...vals.flatMap(({ m }) => m ? cats.map(k => m[k] || 0) : []));
+    const avg = peerAvg(cats, part, year, 'share');
+    const cell = v => {
+      if (v == null) return h('td', { class: 'n tpb-heat', text: '—' });
+      const i = Math.min(BLUES.length - 1, Math.round(Math.sqrt(v / max) * (BLUES.length - 1)));
+      return h('td', { class: 'n tpb-heat', style: `background:${v > 0.0005 ? BLUES[i] : '#fafbfc'};color:${i >= 7 ? '#fff' : '#1a2030'}`, text: v > 0.0005 ? pct(v) : '–' });
+    };
+    return h('div', { class: 'tpb-table-wrap' }, h('table', { class: 'tpb-heatmap' },
+      h('thead', {}, h('tr', {}, h('th', { text: 'Instrument' }), ...vals.map(({ c }) => h('th', { class: 'n' + (c === base ? ' is-base' : ''), text: c.short })), h('th', { class: 'n', text: 'Peer avg' }))),
+      h('tbody', {}, cats.filter(k => vals.some(({ m }) => m && (m[k] || 0) > 0.0005)).map(k => h('tr', {}, h('td', { text: k }),
+        ...vals.map(({ c, m }) => { const td = cell(m ? (m[k] || 0) : null); if (c === base) td.classList.add('is-base'); return td; }),
+        h('td', { class: 'n tpb-heat-avg', text: avg[k] != null ? pct(avg[k]) : '—' }))))));
+  }
+
+  // Ranked horizontal bars: one value per company, base company highlighted, optional average line
+  // dots: true -> dot plot on a zoomed scale (small differences such as borrowing cost stay visible)
+  function rankBars(holder, rows, { fmt, avg, avgLabel, asc = true, dots = false, tickFmt }) {
+    rows = rows.filter(r => r.v != null && !isNaN(r.v)).sort((a, b) => asc ? a.v - b.v : b.v - a.v);
+    if (!rows.length) { holder.replaceChildren(h('div', { class: 'tpb-empty', text: 'No data for this year.' })); return; }
+    const W = width(holder), labelW = Math.min(150, W * 0.26), valW = 96, barH = 22, gap = 12, padT = 22, axisH = 20;
+    const vs = rows.map(r => r.v).concat(avg != null ? [avg] : []);
+    let lo = 0, hi = niceMax(Math.max(...vs) * 1.04);
+    if (dots) { const span = Math.max(...vs) - Math.min(...vs) || Math.abs(vs[0]) * 0.1 || 1, st = niceStep(span * 1.6, 4);
+      lo = Math.floor((Math.min(...vs) - span * 0.3) / st) * st; hi = Math.ceil((Math.max(...vs) + span * 0.3) / st) * st; }
+    const plotW = W - labelW - valW - 12, x = v => labelW + (v - lo) / (hi - lo) * plotW;
+    const H = padT + rows.length * (barH + gap) + axisH;
+    const svg = s('svg', { width: W, height: H, role: 'img', 'aria-label': rows.map(r => `${r.c.short} ${fmt(r.v)}`).join(', ') });
+    const st = niceStep(hi - lo, 4), tks = []; for (let t = lo; t <= hi + st / 2; t += st) tks.push(+t.toFixed(10));
+    tks.forEach(t => {
+      svg.append(s('line', { x1: x(t), x2: x(t), y1: padT - 6, y2: H - axisH, stroke: '#eef0f3' }));
+      svg.append(s('text', { x: x(t), y: H - 6, 'text-anchor': 'middle', 'font-size': 11, fill: '#898781' }, (tickFmt || fmt)(t)));
+    });
+    rows.forEach((r, i) => {
+      const y = padT + i * (barH + gap), cy = y + barH / 2, isBase = r.c === base, col = isBase ? '#0f2d52' : '#86b6ef', g = s('g', {});
+      g.append(s('text', { x: labelW - 12, y: cy + 4, 'text-anchor': 'end', 'font-size': 12.5, 'font-weight': isBase ? 700 : 500, fill: '#1a2030' }, `${i + 1}. ${r.c.short}`));
+      if (dots) {
+        g.append(s('line', { x1: labelW, x2: x(r.v), y1: cy, y2: cy, stroke: isBase ? '#0f2d52' : '#cde2fb', 'stroke-width': 2 }));
+        g.append(s('circle', { cx: x(r.v), cy, r: 7, fill: col, stroke: '#fff', 'stroke-width': 2, class: 'bar' }));
+      } else {
+        g.append(s('path', { d: hbarPath(labelW, x(r.v), y, barH, 5), fill: col, class: 'bar' }));
+      }
+      g.append(s('text', { x: W - 4, y: cy + 4, 'text-anchor': 'end', 'font-size': 12.5, 'font-weight': isBase ? 700 : 600, fill: '#1a2030', 'font-variant-numeric': 'tabular-nums' }, fmt(r.v)));
+      const hit = s('rect', { x: 0, y: y - gap / 2, width: W, height: barH + gap, class: 'hit' });
+      hit.addEventListener('mousemove', e => { g.classList.add('hl'); showTip(e, r.c.name, [{ color: col, value: fmt(r.v), label: r.label || '' }, ...(avg != null ? [{ color: '#52514e', value: fmt(avg), label: avgLabel }] : [])]); });
+      hit.addEventListener('mouseleave', () => { g.classList.remove('hl'); hideTip(); });
+      g.append(hit); svg.append(g);
+    });
+    if (avg != null) {
+      svg.append(s('line', { x1: x(avg), x2: x(avg), y1: padT - 8, y2: H - axisH, stroke: '#52514e', 'stroke-width': 1.5, 'stroke-dasharray': '4 3' }));
+      svg.append(s('text', { x: x(avg), y: padT - 11, 'text-anchor': 'middle', 'font-size': 11, fill: '#52514e', 'font-weight': 600 }, `${avgLabel} ${fmt(avg)}`));
+    }
+    holder.replaceChildren(svg);
+  }
+  const heroControls = (...kids) => h('div', { class: 'tpb-hero-pick' }, ...kids);
 
   function renderOverview() {
     const bt = T.summary.find(t => t.kind === 'borrowing'), it = T.summary.find(t => t.kind === 'investment');
@@ -509,13 +641,33 @@
     const missing = companies.filter(c => !present.includes(c));
     const bs = series.find(x => x.name === base.short);
 
-    view.append(filters(...yearSelect(years, year, v => { state.year = v; render(); }),
-      seg([{ value: 'share', label: '% of total' }, { value: 'amount', label: '₹ crore' }], unit, v => { state.unit = v; render(); }),
-      h('span', { class: 'tpb-note', text: missing.length ? `No ${year} data for: ${missing.map(c => c.short).join(', ')}` : '' })));
+    const what = part === 'borrowing' ? 'Borrowing mix' : 'Investment mix', book = part === 'borrowing' ? 'borrowings' : 'investments';
+    // headline numbers for the base company
+    const bShare = mixValues(base, part, year, 'share');
+    const shAvg = peerAvg(cats, part, year, 'share');
+    const sorted = bShare ? cats.slice().sort((a, b) => (bShare[b] || 0) - (bShare[a] || 0)) : [];
+    const gaps = bShare ? cats.map(k => ({ k, g: (bShare[k] || 0) - (shAvg[k] || 0) })).filter(x => shAvg[x.k] != null).sort((a, b) => Math.abs(b.g) - Math.abs(a.g)) : [];
+    const top3 = m => m ? Object.values(m).sort((a, b) => b - a).slice(0, 3).reduce((a, v) => a + (v || 0), 0) : null;
+    const peerTop3 = peers.map(c => top3(mixValues(c, part, year, 'share'))).filter(v => v != null);
+    const pTop3 = peerTop3.length ? peerTop3.reduce((a, v) => a + v, 0) / peerTop3.length : null;
+    const used = bShare ? cats.filter(k => (bShare[k] || 0) > 0.0005).length : 0;
+    view.append(hero(`${what} · ${year}`,
+      (part === 'borrowing' ? `How ${base.short} and ${peers.length} peers fund themselves` : `Where ${base.short} and ${peers.length} peers hold their investments`) + (missing.length ? ` · no ${year} data for ${missing.map(c => c.short).join(', ')}` : ''),
+      [sorted[0] ? heroKpi(`${base.short}'s largest ${part === 'borrowing' ? 'source' : 'holding'}`, sorted[0], `${pct(bShare[sorted[0]])} of ${book} · peers ${pct(shAvg[sorted[0]])}`, null, null) : null,
+       gaps[0] ? heroKpi('Biggest gap vs peers', gaps[0].k, [h('b', { text: pp(gaps[0].g) }), ` · ${base.short} ${pct(bShare[gaps[0].k])} vs ${pct(shAvg[gaps[0].k])}`], null, null) : null,
+       bShare ? heroKpi('Top-3 concentration', pct(top3(bShare)), pTop3 != null ? [`Peer avg ${pct(pTop3)} · `, h('b', { text: pp(top3(bShare) - pTop3) })] : '', null, null) : null,
+       bShare ? heroKpi('Instruments in use', String(used), `of ${cats.length} categories across peers`, null, null) : null],
+      null, heroControls(...yearSelect(years, year, v => { state.year = v; render(); }),
+        seg([{ value: 'share', label: '% of total' }, { value: 'amount', label: '₹ crore' }], unit, v => { state.unit = v; render(); }))));
+
+    const stackHolder = h('div', { class: 'tpb-chart' }), stackLegend = h('div');
+    view.append(card(`${what} at a glance, ${year}`, `Share of each NBFC's total ${book}, on the same 0–100% scale. Hover a segment for the amount.`, stackLegend, stackHolder));
+    requestAnimationFrame(() => stackLegend.replaceChildren(legend(mixStack(stackHolder, part, year))));
+
+    view.append(card(`Instrument heatmap, ${year}`, `Darker = larger share of the company's ${book}. ${base.short}'s column is outlined.`, heatTable(part, year, cats)));
 
     const chart = h('div', { class: 'tpb-chart' });
-    const what = part === 'borrowing' ? 'Borrowing mix' : 'Investment mix';
-    view.append(card(`${what} by instrument, ${year}`,
+    view.append(card(`${what} by instrument, ${year}${unit === 'amount' ? ' (₹ crore)' : ''}`,
       unit === 'share' ? `Share of each company's total ${part === 'borrowing' ? 'borrowings' : 'investments'}. Hover a row for exact values.` : 'Outstanding amount, ₹ crore. Hover a row for exact values.',
       legend([...series.map(sr => ({ color: sr.color, label: sr.name })), ...(peers.length ? [{ color: '#52514e', label: 'Peer average (excl. ' + base.short + ')', kind: 'tick' }] : [])]),
       chart,
@@ -539,11 +691,32 @@
     const invSeries = mk((c, y) => c.investments ? (c.investments.total[y] ?? null) : null);
     const latest = c => { if (c.borrowing.avg_cost[T.default_year] != null) return T.default_year; const ys = c.borrowing.years.filter(y => c.borrowing.avg_cost[y] != null); return ys[ys.length - 1]; };
 
-    view.append(h('div', { class: 'tpb-tiles' }, companies.map(c => {
-      const y = latest(c); const pv = prevYear(c.borrowing.years, y);
-      const v = c.borrowing.avg_cost[y], p = c.borrowing.avg_cost[pv];
-      return tile(`${c.short} · borrowing cost ${y || ''}`, pct(v, 2), p != null ? [h('b', { text: bps(v - p) }), ` vs ${pv}`] : null);
-    })));
+    const yr = T.default_year, b = base.borrowing;
+    const pyr = 'FY' + String(+yr.slice(2) - 1).padStart(2, '0');
+    const costOf = c => c.borrowing.avg_cost && c.borrowing.avg_cost[yr];
+    const peerCosts = peers.map(costOf).filter(v => v != null);
+    const peerAvgCost = peerCosts.length ? peerCosts.reduce((a, v) => a + v, 0) / peerCosts.length : null;
+    const cheapest = peers.filter(c => costOf(c) != null).sort((a, z) => costOf(a) - costOf(z))[0];
+    const costRank = rankOf(base, costOf, true);
+    const fcg = b.finance_cost[yr] && b.finance_cost[pyr] ? b.finance_cost[yr] / b.finance_cost[pyr] - 1 : null;
+    view.append(hero(`Cost & KPIs · ${yr}`, `Borrowing cost, size and investment book across ${companies.length} NBFCs · ${years[0]}–${years[years.length - 1]}`, [
+      costOf(base) != null ? heroKpi(`${base.short} borrowing cost`, pct(costOf(base), 2), b.avg_cost[pyr] != null ? [h('b', { text: bps(costOf(base) - b.avg_cost[pyr]) }), ` vs ${pyr}`] : '',
+        costRank ? (costRank.n === 1 ? 'Lowest' : `${ord(costRank.n)} lowest`) + ` of ${costRank.of}` : null, sparkline(series(b.avg_cost), { fmt: v => pct(v, 2) })) : null,
+      peerAvgCost != null ? heroKpi('Peer average cost', pct(peerAvgCost, 2), costOf(base) != null ? [`${base.short} is `, h('b', { text: bps(costOf(base) - peerAvgCost) }), ' vs peers'] : '', null, null) : null,
+      cheapest ? heroKpi('Cheapest peer', `${cheapest.short} · ${pct(costOf(cheapest), 2)}`, costOf(base) != null ? [`${base.short} `, h('b', { text: bps(costOf(base) - costOf(cheapest)) }), ' vs it'] : '', null, null) : null,
+      fcg != null ? heroKpi(`${base.short} finance cost`, cr(b.finance_cost[yr]), [h('b', { text: (fcg >= 0 ? '+' : '−') + Math.abs(fcg * 100).toFixed(1) + '%' }), ` vs ${pyr}`], null, sparkline(series(b.finance_cost, b.years), { fmt: cr })) : null,
+    ]));
+
+    const rankHolder = h('div', { class: 'tpb-chart' }), sizeHolder = h('div', { class: 'tpb-chart' });
+    const top = h('div', { class: 'tpb-grid2' },
+      card(`Borrowing cost ranking, ${yr}`, 'Lowest cost first, on a zoomed scale. Dashed line = peer average (excluding ' + base.short + ').', rankHolder),
+      card(`Borrowing book ranking, ${yr}`, 'Total borrowings at year end, largest first.', sizeHolder));
+    view.append(top);
+    requestAnimationFrame(() => {
+      rankBars(rankHolder, companies.map(c => ({ c, v: costOf(c), label: 'avg borrowing cost' })), { fmt: v => pct(v, 2), tickFmt: v => +(v * 100).toFixed(2) + '%', avg: peerAvgCost, avgLabel: 'Peer avg', dots: true });
+      rankBars(sizeHolder, companies.map(c => ({ c, v: c.borrowing.total[yr], label: 'total borrowings' })), { fmt: cr, tickFmt: crAxis, asc: false });
+    });
+    view.append(h('h4', { class: 'tpb-section', text: 'Trends' }));
 
     const lg = legend(companies.map(c => ({ color: c.color, label: c.short, kind: 'line' })));
     const charts = [
@@ -584,17 +757,49 @@
       inv ? heroKpi(`Investment book, ${year}`, cr(inv.total[year]), inv.total[pv] ? [h('b', { text: growth(inv.total[year], inv.total[pv]) }), ` vs ${pv}`] : '', null, sparkline(series(inv.total, inv.years), { fmt: cr })) : null,
     ], c.color, yearPick));
 
+    // Scorecard
+    view.append(card(`Scorecard, ${year}`, `${c.short} against the other ${companies.length - 1} NBFCs. Rank 1 = largest; for cost and concentration rank 1 = lowest. ▲/▼ marks better or worse than peers where lower is clearly better.`, scorecard(c, year)));
+
+    // Trends: borrowing book and cost vs peers
+    const others = companies.filter(x => x !== c);
+    const bookHolder = h('div', { class: 'tpb-chart' }), costHolder = h('div', { class: 'tpb-chart' });
+    const peerCost = Object.fromEntries(T.years.map(y => { const v = others.map(x => x.borrowing.avg_cost && x.borrowing.avg_cost[y]).filter(v => v != null); return [y, v.length ? v.reduce((a, z) => a + z, 0) / v.length : null]; }));
+    const costYears = T.years.filter(y => (b.avg_cost && b.avg_cost[y] != null) || peerCost[y] != null);
+    view.append(h('div', { class: 'tpb-grid2' },
+      card('Borrowing book', 'Total borrowings at year end, ₹ crore; growth on the previous year below each column.', bookHolder),
+      card('Borrowing cost vs peers', `${c.short} against the simple average of the other NBFCs.`,
+        legend([{ color: c.color, label: c.short, kind: 'line' }, { color: '#52514e', label: 'Peer average', kind: 'line' }]), costHolder)));
+    requestAnimationFrame(() => {
+      columnChart(bookHolder, { years, values: b.total, color: c.color, fmt: cr, axisFmt: crAxis });
+      lineChart(costHolder, { years: costYears, series: [{ name: c.short, color: c.color, values: b.avg_cost || {} }, { name: 'Peer average', color: '#52514e', values: peerCost }], fmt: v => pct(v, 2), axisFmt: v => +(v * 100).toFixed(2) + '%', minZero: false, height: 230 });
+    });
+
+    // Funding mix over time
+    const mixYears = years.filter(y => mixValues(c, 'borrowing', y, 'share'));
+    if (mixYears.length) {
+      const mtHolder = h('div', { class: 'tpb-chart' }), mtLegend = h('div');
+      view.append(card('Funding mix over time', `Share of ${c.short}'s total borrowings by instrument, each year. Hover a segment for the amount.`, mtLegend, mtHolder));
+      requestAnimationFrame(() => mtLegend.replaceChildren(legend(stackRows(mtHolder, mixYears.slice().reverse().map(y => ({
+        label: y, bold: y === year, title: `${c.name} · ${y}`, m: mixValues(c, 'borrowing', y, 'share'),
+        amount: k => b.mix.amounts[k] && b.mix.amounts[k][y] })), 'borrowing'))));
+    }
+
+    // Mix vs the peer average (other NBFCs)
     const grid2 = h('div', { class: 'tpb-grid2' });
-    const one = (part, label) => {
+    const vsPeers = (part, label) => {
       const p = partOf(c, part); if (!p || !p.years.includes(year)) return;
       const cats = p.mix.categories.filter(cat => (p.mix.shares[cat][year] || 0) >= 0.0005);
+      const avg = othersAvgMix(c, part, year, cats);
       const holder = h('div', { class: 'tpb-chart' });
-      grid2.append(card(`${label}, ${year}`, `Share of total ${part === 'borrowing' ? 'borrowings' : 'investments'} by instrument.`, holder,
-        table([{ label: 'Instrument', get: r => r }, { label: 'Share', num: 1, get: r => pct(p.mix.shares[r][year]) }, { label: '₹ crore', num: 1, get: r => cr(p.mix.amounts[r][year]) }], cats)));
+      grid2.append(card(`${label} vs peer average, ${year}`, `Share of total ${part === 'borrowing' ? 'borrowings' : 'investments'} by instrument; the tick is the average of the other NBFCs.`,
+        legend([{ color: c.color, label: c.short }, { color: '#52514e', label: 'Peer average', kind: 'tick' }]), holder,
+        table([{ label: 'Instrument', get: r => r }, { label: 'Share', num: 1, get: r => pct(p.mix.shares[r][year]) }, { label: 'Peer avg', num: 1, get: r => pct(avg[r]) },
+               { label: 'Gap', num: 1, get: r => avg[r] == null ? '—' : pp(p.mix.shares[r][year] - avg[r]), cls: r => (p.mix.shares[r][year] - (avg[r] || 0)) >= 0 ? 'pos' : 'neg' },
+               { label: '₹ crore', num: 1, get: r => cr(p.mix.amounts[r][year]) }], cats)));
       const only = { name: c.short, color: c.color, values: Object.fromEntries(cats.map(cat => [cat, p.mix.shares[cat][year]])) };
-      requestAnimationFrame(() => groupedBars(holder, { categories: cats, series: [only], fmt: pct, axisFmt: v => Math.round(v * 100) + '%', labelSeries: only }));
+      requestAnimationFrame(() => groupedBars(holder, { categories: cats, series: [only], fmt: pct, axisFmt: v => Math.round(v * 100) + '%', avg: others.length ? avg : null, labelSeries: only }));
     };
-    one('borrowing', 'Borrowing mix'); one('investments', 'Investment mix');
+    vsPeers('borrowing', 'Borrowing mix'); vsPeers('investments', 'Investment mix');
     view.append(grid2);
 
     if (c.readouts && c.readouts.length) {
