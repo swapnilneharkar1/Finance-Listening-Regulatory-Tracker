@@ -11,11 +11,12 @@
 
   const COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300'];
   const companies = T.companies.map((c, i) => Object.assign(c, { color: COLORS[i % COLORS.length] }));
-  const base = companies.find(c => /bajaj/i.test(c.name)) || companies[0];
+  const base = companies.find(c => c.base) || companies.find(c => /bajaj/i.test(c.name));
+  const NO_BASE = companies.length > 0 && !base;   // peers collected, Bajaj Finance not read yet
   const peers = companies.filter(c => c !== base);
   const studies = T.studies || [];
 
-  const TABS = !companies.length ? [{ label: 'Overview', kind: 'empty' }] : [
+  const TABS = (!companies.length || NO_BASE) ? [{ label: 'Overview', kind: 'empty' }] : [
     { label: 'Overview', kind: 'overview' },
     { label: 'Borrowing Mix', kind: 'mix', part: 'borrowing' },
     { label: 'Investment Mix', kind: 'mix', part: 'investments' },
@@ -501,6 +502,11 @@
   }
 
   function renderEmpty() {
+    if (NO_BASE) {
+      view.append(card('Bajaj Finance figures not available yet', '',
+        h('div', { class: 'tpb-empty', text: `Annual reports have been read for ${companies.map(c => c.short).join(', ')}, but not yet for Bajaj Finance, so there is nothing to compare against. The dashboards appear once the next run reads Bajaj Finance's report.` })));
+      return;
+    }
     view.append(card('No benchmark data yet', '',
       h('div', { class: 'tpb-empty', text: 'The annual reports have not been collected yet. In GitHub, open Actions → "Treasury Peer Benchmarking" → Run workflow. The dashboards appear here once it finishes.' })));
   }
