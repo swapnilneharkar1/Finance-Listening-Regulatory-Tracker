@@ -48,7 +48,10 @@ jobs:
             lsb-release wget xdg-utils || true
       - name: Install dependencies
         working-directory: scraper
-        run: npm install
+        run: |
+          npm install
+          # newer PDF reader for annual reports the bundled one can't open (not added to package.json)
+          npm install --no-save pdfjs-dist@3.11.174
       - name: Collect annual reports and build benchmark
         working-directory: scraper
         env:
