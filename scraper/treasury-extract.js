@@ -20,7 +20,14 @@ try {
 } catch (e) { pdfjs = null; }
 
 /* ── 1. PDF -> pages of text lines (columns kept apart with wide gaps) ── */
-function itemsToLines(items) {
+function itemsToLines(items, width, height) {
+  // A landscape PDF page that holds two printed pages side by side (Shriram, Mahindra):
+  // read the left half, then the right half, so lines from the two pages don't merge.
+  if (width && height && width > height * 1.15) {
+    const mid = width / 2;
+    const left = items.filter(it => it.transform[4] < mid - 2), right = items.filter(it => it.transform[4] >= mid - 2);
+    if (left.length > 5 && right.length > 5) return itemsToLines(left).concat(itemsToLines(right));
+  }
   const rows = [];
   for (const it of items) {
     const s = it.str; if (!s || !s.trim()) continue;
@@ -48,7 +55,8 @@ async function pagesWithPdfjs(buffer) {
   for (let i = 1; i <= doc.numPages; i++) {
     const page = await doc.getPage(i);
     const tc = await page.getTextContent();
-    pages.push(itemsToLines(tc.items));
+    const vp = page.getViewport({ scale: 1 });
+    pages.push(itemsToLines(tc.items, vp.width, vp.height));
     page.cleanup();
   }
   await doc.destroy();
@@ -60,7 +68,8 @@ async function pagesWithPdfParse(buffer) {
   await pdfParse(buffer, {
     pagerender: async page => {
       const tc = await page.getTextContent({ normalizeWhitespace: true, disableCombineTextItems: false });
-      const lines = itemsToLines(tc.items);
+      const v = page.view || [];
+      const lines = itemsToLines(tc.items, v[2] - v[0], v[3] - v[1]);
       pages.push(lines);
       return lines.join('\n');
     },
@@ -138,36 +147,63 @@ function boilerplate(pages) {
   return new Set([...count].filter(([, n]) => n >= limit).map(([l]) => l));
 }
 
+// Balance-sheet lines (squashed words such as "Debtsecurities" match too)
+const BS_KEYS = {
+  debt_securities: /^debt\s*securities$/, borrowings: /^borrowings\s*\(?\s*other\s*than\s*debt\s*securities\s*\)?$/,
+  deposits: /^deposits$/, subordinated: /^subordinated\s*(liabilities|debts?)$/, investments: /^investments$/,
+  loans: /^loans$/, cash: /^cash\s*and\s*cash\s*equivalents$/,
+};
+function bsKeysOn(lines) {
+  const keys = new Set();
+  for (const l of lines) {
+    const sp = splitLine(l); if (sp.amounts.length < 2) continue;
+    const lab = norm(sp.label);
+    for (const [k, rx] of Object.entries(BS_KEYS)) if (rx.test(lab)) keys.add(k);
+  }
+  return keys;
+}
+
 function findStandaloneRange(pages) {
   const skip = boilerplate(pages);
   const head = p => pages[p].filter(l => !skip.has(norm(l))).slice(0, 18);
-  const BS_RE = /balance\s*sheet\s*(as\s*(at|on)|for)|statement\s*of\s*(assets\s*and\s*liabilities|financial\s*position)/i;
-  const isBS = p => head(p).some(l => BS_RE.test(l));
+  const raw = p => pages[p].slice(0, 14);
+  const BS_TITLE = /balance\s*sheet|statement\s*of\s*(assets\s*and\s*liabilities|financial\s*position)/i;
   const isConsol = p => head(p).some(l => /consolidated/i.test(l) && !/standalone/i.test(l) &&
-    /(balance\s*sheet|statement\s*of\s*profit|financial\s*position|cash\s*flow)/i.test(l)) ||
-    head(p).some((l, i, a) => /^consolidated$/i.test(l.trim()) && BS_RE.test(a[i + 1] || ''));
-  const isStandalone = p => head(p).some(l => /standalone/i.test(l) && BS_RE.test(l));
-  const debt = p => pages[p].some(l => /debt\s*securities/i.test(l));
-  const totalLE = p => pages[p].some(l => /total\s*(equity\s*and\s*)?liabilities|total\s*liabilities\s*and\s*equity/i.test(l));
-  // the liabilities half of a balance sheet is often on the page after the assets half
-  const hasLiabs = p => (debt(p) || (p + 1 < pages.length && debt(p + 1))) && (totalLE(p) || (p + 1 < pages.length && totalLE(p + 1)));
-  let start = -1;
-  for (const test of [p => isStandalone(p) && hasLiabs(p), p => isBS(p) && hasLiabs(p) && !isConsol(p), p => debt(p) && totalLE(p) && !isConsol(p)]) {
-    for (let p = 0; p < pages.length && start < 0; p++) if (test(p)) start = p;
-    if (start >= 0) break;
+    /(balance\s*sheet|statement\s*of\s*profit|financial\s*position|cash\s*flow)/i.test(l) && l.length < 90) ||
+    head(p).some((l, i, a) => /^consolidated$/i.test(l.trim()) && BS_TITLE.test(a[i + 1] || ''));
+  const notesPage = p => raw(p).slice(0, 6).some(l => /^notes?\s*(forming|to\s*(the\s*)?(standalone|financial))/i.test(l.trim()));
+  let best = null;
+  for (let p = 0; p < pages.length; p++) {
+    if (isConsol(p)) continue;
+    const keys = bsKeysOn(pages[p]);
+    if (!keys.size) continue;
+    const next = p + 1 < pages.length && !isConsol(p + 1) ? bsKeysOn(pages[p + 1]) : new Set();
+    const all = new Set([...keys, ...next]);   // assets on this page, liabilities on the next
+    if (!all.has('debt_securities') && !all.has('borrowings')) continue;
+    let score = all.size;
+    if (raw(p).some(l => /standalone\s*balance\s*sheet/i.test(l))) score += 4;
+    else if (raw(p).some(l => l.length < 70 && /^(the\s*)?balance\s*sheet/i.test(l.trim()))) score += 2;
+    if (notesPage(p)) score -= 4;
+    if (all.has('debt_securities') || all.has('borrowings')) score += 1;
+    if (!best || score > best.score) best = { p, score };
   }
-  if (start < 0) return null;
+  if (!best || best.score < 4) return null;
+  const start = best.p;
   let end = pages.length;
-  for (let p = start + 1; p < pages.length; p++) if (isConsol(p) && (isBS(p) || hasLiabs(p))) { end = p; break; }
+  for (let p = start + 1; p < pages.length; p++) if (isConsol(p) && (bsKeysOn(pages[p]).size >= 2 || head(p).some(l => BS_TITLE.test(l)))) { end = p; break; }
   return { start, end };
 }
 
 /** Year-end of the current-year column, e.g. "As at 31 March 2025" -> 2025. */
 function detectYear(lines) {
-  for (const l of lines.slice(0, 25)) {
+  const top = lines.slice(0, 25);
+  for (const l of top) {
     const m = l.match(/(?:31(?:st)?\s*march,?\s*|march\s*31,?\s*)(20\d{2})/i) || l.match(/31[.\-/]0?3[.\-/](20\d{2})/);
     if (m) return +m[1];
   }
+  // "As at 31 March" with the years as column headings below: "Particulars  Note  2025  2024"
+  const i = top.findIndex(l => /31(?:st)?\s*march|march\s*31/i.test(l));
+  if (i >= 0) for (const l of top.slice(i, i + 3)) { const m = l.match(/\b(20\d{2})\b\s+\b(20\d{2})\b/); if (m && +m[1] === +m[2] + 1) return +m[1]; }
   return null;
 }
 
@@ -215,16 +251,18 @@ const NOTE_TITLES = {
 };
 function findNote(pages, range, key, noteRef, afterPage) {
   const title = NOTE_TITLES[key];
-  const refRe = noteRef ? new RegExp(`^(note\\s*(no\\.?)?\\s*)?${noteRef.replace('.', '\\.')}\\s*[.:)-]?\\s+`, 'i') : null;
+  const refRe = noteRef ? new RegExp(`^(note\\s*(no\\.?)?\\s*[:.]?\\s*)?${noteRef.replace('.', '\\.')}\\s*[.:)-]?\\s*[a-z]`, 'i') : null;
+  const figuresFollow = (p, i) => pages[p].slice(i + 1, i + 30).filter(l => splitLine(l).amounts.length >= 2).length >= 2;
   let best = null;
   for (let p = Math.max(range.start, afterPage || 0); p < range.end; p++) {
     for (let i = 0; i < pages[p].length; i++) {
       const raw = pages[p][i].trim();
       if (splitLine(raw).amounts.length) continue;         // headings carry no figures
-      const stripped = raw.replace(/^(note\s*(no\.?)?\s*)?\d{1,2}(\.\d{1,2})?\s*[.:)-]?\s*/i, '');
+      const stripped = raw.replace(/^(note\s*(no\.?)?\s*[:.]?\s*)?\d{1,2}(\.\d{1,2})*\s*[.:)-]?\s*/i, '');
       if (!title.test(norm(stripped)) || norm(stripped).length > 60) continue;
       if (/movement|maturity|repayment|terms|reconciliation|disclosure/i.test(stripped)) continue;
-      const score = (refRe && refRe.test(raw) ? 2 : 0) + (/^(note\s*)?\d/i.test(raw) ? 1 : 0);
+      if (!figuresFollow(p, i)) continue;                   // accounting-policy text, not the note table
+      const score = (refRe && refRe.test(raw) ? 2 : 0) + (/^(note\b|\d)/i.test(raw) ? 1 : 0);
       if (!best || score > best.score) best = { page: p, line: i, score };
       if (score >= 3) return best;
     }
@@ -255,14 +293,14 @@ function readNoteRows(pages, at, key) {
       let label = lab || pending;
       if (pending && lab && /^[a-z(]/.test(lab)) label = pending + ' ' + lab;
       pending = '';
-      if (/^total\b/i.test(label) || /^(sub[- ]?total)$/i.test(label)) {
+      if ((/^total/i.test(label) && !/^total\s*outstanding/i.test(label)) || /^(sub[- ]?total)$/i.test(label)) {
         if (/sub/i.test(label)) continue;
         total = { cy: sp.amounts[sp.amounts.length - (key === 'investments' ? 1 : 2)], py: key === 'investments' ? null : sp.amounts[sp.amounts.length - 1], page: p + 1 };
         return { rows, total };
       }
-      if (/^less\b|impairment|allowance|provision/i.test(label)) continue;
-      if (/\b(as at|as on|year ended|particulars|amortised|fvoci|fvtpl|fair value)\b/i.test(label) || /\b(january|february|march|april|may|june|july|august|september|october|november|december)\b/i.test(label)) continue;
-      if (/in india|outside india|^\(?[ab]\)?$/i.test(low)) continue;
+      if (/^less\b|^less:|impairment|allowance|provision/i.test(label)) continue;
+      if (/(as\s*at|as\s*on|year\s*ended|particulars|amortised|fvoci|fvtpl|fair\s*value)/i.test(label) || /(january|february|march|april|may|june|july|august|september|october|november|december)\s*\d/i.test(label)) continue;
+      if (/in\s*india|outside\s*india|^\(?[ab]\)?$/i.test(low)) continue;
       const secured = /\bunsecured\b/i.test(label) ? false : /\bsecured\b/i.test(label) ? true : ctx.secured;
       rows.push(key === 'investments'
         ? { label, cy: sp.amounts[sp.amounts.length - 1], page: p + 1, secured }
@@ -275,37 +313,40 @@ function readNoteRows(pages, at, key) {
 }
 
 /* ── 7. Categories (same groups as the portal dashboards) ── */
+const loose = s => s.toLowerCase().replace(/\s+/g, '');
 function borrowingCategory(label, secured, section) {
-  const s = label.toLowerCase();
-  if (section === 'subordinated' || /subordinat|perpetual|tier\s*ii/.test(s)) return 'Subordinated debt';
-  if (section === 'deposits' || /deposit/.test(s) && !/certificate/.test(s)) return 'Deposits';
-  if (/external commercial bond|senior secured note|offshore|masala|foreign currency bond|u\.?s\.? dollar/.test(s)) return 'ECB bonds';
-  if (/external commercial borrowing|\becb\b/.test(s)) return 'ECB loans';
-  if (/commercial paper/.test(s)) return 'Commercial paper';
-  if (/securiti[sz](ation|ed)|pass through|\bptcs?\b/.test(s)) return 'Securitisation';
-  if (/debenture|ncd|bond/.test(s)) return (secured === false || /unsecured/.test(s)) ? 'Unsecured NCDs' : 'Secured NCDs';
-  if (/national housing bank|\bnhb\b|refinance|financial institution|sidbi|nabard|mudra/.test(s)) return 'FI & NHB loans';
-  if (/cash credit|working capital|wcdl|overdraft|demand loan/.test(s)) return 'Cash credit & WCDL';
-  if (/\brepo\b|repurchase|treps|cblo|csgl|tri-?party|collateralised/.test(s)) return 'Repo, TREPS & CBLO';
-  if (/term loan|from banks?|bank loan/.test(s)) return 'Bank term loans';
+  const s = label.toLowerCase() + ' | ' + loose(label);
+  const t = re => new RegExp(re.source.replace(/ /g, '\\s*').replace(/\\b/g, ''), 'i').test(s);
+  if (section === 'subordinated' || t(/subordinat|perpetual|tier\s*ii/)) return 'Subordinated debt';
+  if (section === 'deposits' || t(/deposit/) && !t(/certificate/)) return 'Deposits';
+  if (t(/external commercial bond|senior secured note|offshore|masala|foreign currency bond|u\.?s\.? dollar/)) return 'ECB bonds';
+  if (t(/external commercial borrowing|\becb\b/)) return 'ECB loans';
+  if (t(/commercial paper/)) return 'Commercial paper';
+  if (t(/securiti[sz](ation|ed)|pass through|\bptcs?\b/)) return 'Securitisation';
+  if (t(/debenture|ncd|bond/)) return (secured === false || t(/unsecured/)) ? 'Unsecured NCDs' : 'Secured NCDs';
+  if (t(/national housing bank|\bnhb\b|refinance|financial institution|sidbi|nabard|mudra/)) return 'FI & NHB loans';
+  if (t(/cash credit|working capital|wcdl|overdraft|demand loan/)) return 'Cash credit & WCDL';
+  if (t(/\brepo\b|repurchase|treps|cblo|csgl|tri-?party|collateralised/)) return 'Repo, TREPS & CBLO';
+  if (t(/term loan|from banks?|bank loan/)) return 'Bank term loans';
   if (section === 'debt_securities') return secured === false ? 'Unsecured NCDs' : 'Secured NCDs';
   return 'Other borrowings';
 }
 function investmentCategory(label) {
-  const s = label.toLowerCase();
-  if (/interest accrued|electoral/.test(s)) return 'Other investments';
-  if (/treasury bill|\bt-?bills?\b/.test(s)) return 'Treasury bills';
-  if (/strips/.test(s)) return 'STRIPS';
-  if (/government sec|\bg-?secs?\b|state development loan|\bsdl\b/.test(s)) return 'Government securities';
-  if (/mutual fund/.test(s)) return 'Mutual funds';
-  if (/certificates? of deposit/.test(s)) return 'Certificates of deposit';
-  if (/commercial paper/.test(s)) return 'Commercial paper';
-  if (/pass through|\bptcs?\b|securitised/.test(s)) return 'PTCs';
-  if (/subsidiar|associate|joint venture/.test(s)) return 'Subsidiaries, associates & JVs';
-  if (/treps|tri-?party|\brepo\b/.test(s)) return 'TREPS & repo';
-  if (/fixed deposit|term deposit/.test(s)) return 'Fixed deposits';
-  if (/equity|preference|ccps|shares/.test(s)) return 'Equity';
-  if (/bond|ncd|debenture|debt securit/.test(s)) return 'Bonds & NCDs';
+  const s = label.toLowerCase() + ' | ' + loose(label);
+  const t = re => new RegExp(re.source.replace(/ /g, '\\s*').replace(/\\b/g, ''), 'i').test(s);
+  if (t(/interest accrued|electoral/)) return 'Other investments';
+  if (t(/treasury bill|\bt-?bills?\b/)) return 'Treasury bills';
+  if (t(/strips/)) return 'STRIPS';
+  if (t(/government sec|\bg-?secs?\b|state development loan|\bsdl\b/)) return 'Government securities';
+  if (t(/mutual fund/)) return 'Mutual funds';
+  if (t(/certificates? of deposit/)) return 'Certificates of deposit';
+  if (t(/commercial paper/)) return 'Commercial paper';
+  if (t(/pass through|\bptcs?\b|securitised/)) return 'PTCs';
+  if (t(/subsidiar|associate|joint venture/)) return 'Subsidiaries, associates & JVs';
+  if (t(/treps|tri-?party|\brepo\b/)) return 'TREPS & repo';
+  if (t(/fixed deposit|term deposit/)) return 'Fixed deposits';
+  if (t(/equity|preference|ccps|shares/)) return 'Equity';
+  if (t(/bond|ncd|debenture|debt securit/)) return 'Bonds & NCDs';
   return 'Other investments';
 }
 
@@ -386,7 +427,7 @@ async function extractReport(buffer, { fyHint } = {}) {
       for (const r of parsed.rows) result.investments[fy].push({ label: r.label, category: investmentCategory(r.label), value: r.cy * k, page: r.page });
       log.push(`investments: ${parsed.rows.length} lines from note p.${at.page + 1}`);
     } else {
-      log.push(`investments: breakdown not readable (sum ${sum.toFixed(2)} vs balance sheet ${inv.cy}) -> book size only`);
+      log.push(`investments: note ${at ? 'p.' + (at.page + 1) : 'not found'}; breakdown not readable (sum ${sum.toFixed(2)} vs balance sheet ${inv.cy}) -> book size only`);
     }
     result.investment_total = { [fy]: inv.cy * k, [pfy]: inv.py * k };
   }
