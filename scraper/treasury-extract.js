@@ -73,10 +73,17 @@ async function pdfToPages(buffer) {
   const mute = (...a) => { const m = a.join(' '); if (/font|TT:|glyf|Warning|DOMMatrix|Path2D|canvas/i.test(m)) return; quiet(...a); };
   console.warn = mute; console.log = (...a) => { if (/Warning|font/i.test(a.join(' '))) return; ql(...a); };
   try {
+    let first = null;
     if (pdfjs) {
-      try { return await pagesWithPdfjs(buffer); } catch (e) { /* fall back to pdf-parse */ }
+      try { return await pagesWithPdfjs(buffer); } catch (e) { first = e; }
     }
-    return await pagesWithPdfParse(buffer); // pages[i] = array of lines, page number = i + 1
+    try { return await pagesWithPdfParse(buffer); } // pages[i] = array of lines, page number = i + 1
+    catch (e) {
+      const head = buffer.slice(0, 16).toString('latin1').replace(/[^\x20-\x7e]/g, '.');
+      const tail = buffer.slice(-32).toString('latin1').replace(/[^\x20-\x7e]/g, '.');
+      e.message = `${e.message} (pdf.js: ${pdfjs ? (first && first.message) : 'not installed'}; ${buffer.length} bytes; starts "${head}"; ends "${tail}")`;
+      throw e;
+    }
   } finally { console.warn = quiet; console.log = ql; }
 }
 
@@ -304,17 +311,36 @@ function investmentCategory(label) {
 
 const close = (a, b, tol = 0.015) => a != null && b != null && Math.abs(a - b) <= Math.max(1, Math.abs(b) * tol);
 
+/* ── Diagnostics: what the reader saw, for reports that could not be read ── */
+function diagnose(pages, range, why) {
+  const out = [`Reason: ${why}`, `Pages: ${pages.length}`];
+  const skip = boilerplate(pages);
+  out.push('Repeated header/footer lines (ignored): ' + [...skip].slice(0, 25).join(' | '));
+  const show = (p, n) => { out.push(`\n===== page ${p + 1} =====`); pages[p].slice(0, n).forEach(l => out.push(l)); };
+  if (range) {
+    for (let p = range.start; p < Math.min(pages.length, range.start + 3); p++) show(p, 140);
+  } else {
+    // pages with the most balance-sheet-like lines (label + two amounts) first
+    const ITEM = /debt\s*securities|borrowings|deposits|subordinated|total\s*(equity|liabilities)|investments|financial\s*liabilities/i;
+    const scored = pages.map((lines, p) => ({ p, n: lines.filter(l => { const sp = splitLine(l); return sp.amounts.length >= 2 && ITEM.test(sp.label); }).length }))
+      .filter(x => x.n >= 2).sort((a, b) => b.n - a.n).slice(0, 6).sort((a, b) => a.p - b.p);
+    out.push('Candidate pages: ' + scored.map(x => `${x.p + 1} (${x.n} lines)`).join(', '));
+    for (const { p } of scored) show(p, 90);
+  }
+  return out.join('\n');
+}
+
 /* ── 8. Whole report ── */
 async function extractReport(buffer, { fyHint } = {}) {
   let pages = [];
   for (const b of Array.isArray(buffer) ? buffer : [buffer]) pages = pages.concat(await pdfToPages(b));
   const log = [];
   const range = findStandaloneRange(pages);
-  if (!range) return { ok: false, error: 'Standalone balance sheet not found', pages: pages.length };
+  if (!range) return { ok: false, error: 'Standalone balance sheet not found', pages: pages.length, debug: diagnose(pages, null, 'Standalone balance sheet not found') };
   const bsLines = pages[range.start];
   const unit = detectUnit(pages.slice(range.start, range.start + 2).flat());
   const year = detectYear(bsLines) || (fyHint ? 2000 + +String(fyHint).slice(2) : null);
-  if (!year) return { ok: false, error: 'Could not read the balance-sheet date', pages: pages.length };
+  if (!year) return { ok: false, error: 'Could not read the balance-sheet date', pages: pages.length, debug: diagnose(pages, range, 'Could not read the balance-sheet date') };
   const fy = 'FY' + String(year).slice(2), pfy = 'FY' + String(year - 1).slice(2);
   const k = unit.toCrore;
   const stmt = readStatementItems(pages, range);
@@ -363,6 +389,14 @@ async function extractReport(buffer, { fyHint } = {}) {
       log.push(`investments: breakdown not readable (sum ${sum.toFixed(2)} vs balance sheet ${inv.cy}) -> book size only`);
     }
     result.investment_total = { [fy]: inv.cy * k, [pfy]: inv.py * k };
+  }
+  if (!['debt_securities', 'borrowings', 'deposits', 'subordinated'].some(k => stmt[k])) {
+    result.debug = diagnose(pages, range, 'no borrowing lines found on the standalone balance sheet');
+  } else if (log.some(l => /not readable|sums to|not found/.test(l))) {
+    // breakdown problems: show the balance sheet and the note pages it used
+    const notePages = [...new Set(log.map(l => (l.match(/note p\.(\d+)/) || [])[1]).filter(Boolean).map(Number))];
+    result.debug = diagnose(pages, range, 'breakdown problems: ' + log.filter(l => /not readable|sums to|not found/.test(l)).join(' | '))
+      + notePages.map(n => `\n===== note page ${n} =====\n` + (pages[n - 1] || []).slice(0, 160).join('\n')).join('');
   }
   return result;
 }
