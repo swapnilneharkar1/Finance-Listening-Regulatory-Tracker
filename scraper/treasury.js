@@ -25,7 +25,7 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const FORCE = process.env.TREASURY_FORCE === 'true';
 const ONLY = (process.env.TREASURY_ONLY || '').split(',').map(s => s.trim().toUpperCase()).filter(Boolean);
 // Bump when the extractor changes, so earlier extractions are redone automatically
-const EXTRACTOR_VERSION = 2;
+const EXTRACTOR_VERSION = 3;
 const LOCAL_DIR = process.env.TREASURY_LOCAL_DIR || '';
 
 const BORROWING_CATEGORIES = [
@@ -139,9 +139,26 @@ async function siteReports(co) {
       await sleep(1500);
       const found = await page.evaluate(() => {
         const out = [];
-        for (const a of document.querySelectorAll('a[href]')) out.push({ href: a.href, text: (a.textContent || a.getAttribute('title') || a.getAttribute('aria-label') || '').trim().slice(0, 200), ctx: (a.closest('li,tr,div,section') || a).textContent.trim().slice(0, 300) });
+        const clean = t => (t || '').replace(/\s+/g, ' ').trim();
+        // the row title: climb until the block holds more than the button label ("DOWNLOAD PDF", "VIEW")
+        const rowText = el => {
+          const own = clean(el.textContent);
+          let n = el;
+          for (let i = 0; i < 6 && n.parentElement; i++) {
+            n = n.parentElement;
+            const t = clean(n.textContent);
+            if (t.length > own.length + 8) return t.slice(0, 300);
+          }
+          return own;
+        };
+        const add = (href, el) => href && out.push({ href, text: clean(el.textContent || el.getAttribute('title') || el.getAttribute('aria-label')).slice(0, 200), ctx: rowText(el) });
+        for (const a of document.querySelectorAll('a[href]')) add(a.href, a);
+        for (const el of document.querySelectorAll('[data-href],[data-url],[data-pdf],[data-link],[data-file],[onclick]')) {
+          const v = ['data-href', 'data-url', 'data-pdf', 'data-link', 'data-file', 'onclick'].map(k => el.getAttribute(k)).find(x => x && /https?:|\.pdf|\//i.test(x));
+          if (v) { const m = v.match(/https?:\/\/[^'"\s)]+|\/[^'"\s)]+\.pdf[^'"\s)]*/i); if (m) add(m[0], el); }
+        }
         const html = document.documentElement.innerHTML;
-        for (const m of html.matchAll(/https?:\/\/[^"'\s<>()]+/g)) out.push({ href: m[0].replace(/\\\//g, '/'), text: '', ctx: '' });
+        for (const m of html.matchAll(/https?:\\?\/\\?\/[^"'\s<>()]+/g)) out.push({ href: m[0].replace(/\\\//g, '/'), text: '', ctx: '' });
         return out;
       }).catch(() => []);
       await page.close();
@@ -149,21 +166,39 @@ async function siteReports(co) {
     } catch (e) { console.log(`    company site ${pageUrl}: ${e.message}`); }
   }
   const exclude = site.exclude ? new RegExp(site.exclude, 'i') : null;
-  const out = [], seen = new Set();
+  const out = [], seen = new Set(), rejected = [];
   for (const l of links) {
     let url; try { url = publicUrl(new URL(l.href, l.page).href); } catch (e) { continue; }
     const host = new URL(url).hostname;
     if (!(site.domains || []).some(d => host === d || host.endsWith('.' + d))) continue;
     if (!DOC_RE.test(url)) continue;
-    const words = `${l.text} ${decodeURIComponent(url)}`;
-    if (!AR_RE.test(words) && !AR_RE.test(l.ctx)) continue;
-    if (exclude && exclude.test(words)) continue;
-    if (/notice|agm|brsr|business responsibility|sustainability|esg|annual return|mgt|abridged|summary|subsidiar/i.test(words)) continue;
-    const fy = fyFromText(l.text) || fyFromText(decodeURIComponent(url)) || fyFromText(l.ctx);
-    if (!fy || seen.has(url)) continue;
+    let dec = url; try { dec = decodeURIComponent(url); } catch (e) {}
+    const words = `${l.text} ${dec}`;
+    // judge by the link's own title and file name, not the folder ("…/annual-reports/…" holds AGM notices too).
+    // Buttons labelled only "VIEW" / "DOWNLOAD PDF" take their row's title instead.
+    const file = dec.split(/[?#]/)[0].split('/').pop();
+    const generic = /^(view|download|download pdf|pdf|click here|read more|open|)$/i.test(l.text.trim());
+    const title = `${generic ? l.ctx.slice(0, 160) : l.text} ${file}`;
+    if (!AR_RE.test(title)) continue;
+    if (exclude && exclude.test(title)) continue;
+    if (/notice|agm|brsr|business responsibility|sustainability|esg|annual return|mgt|abridged|summary|subsidiar|newspaper|publication|e-?voting|procedure|postal ballot|intimation|transcript|presentation/i.test(title)) continue;
+    const fy = fyFromText(title) || fyFromText(dec);
+    if (!fy) { rejected.push(`no year: ${url} | ${l.text} | ${l.ctx.slice(0, 120)}`); continue; }
+    if (seen.has(url)) continue;
     seen.add(url);
     out.push({ fy, url, via: 'company website' });
   }
+  // what the investor page showed, so the website source can be tuned
+  try {
+    fs.mkdirSync(DEBUG_DIR, { recursive: true });
+    const docs = links.filter(l => { try { return DOC_RE.test(new URL(l.href, l.page).href); } catch (e) { return false; } });
+    fs.writeFileSync(path.join(DEBUG_DIR, `${co.key}_website.txt`), [
+      `Pages: ${site.pages.join(', ')}`, `Links on page: ${links.length}; document-like: ${docs.length}; kept: ${out.length}`,
+      '', 'KEPT:', ...out.map(r => `${r.fy}  ${r.url}`),
+      '', 'NO YEAR FOUND:', ...rejected.slice(0, 40),
+      '', 'ALL DOCUMENT-LIKE LINKS (href | text | row):', ...docs.slice(0, 150).map(l => `${l.href} | ${l.text} | ${l.ctx.slice(0, 140)}`),
+    ].join('\n'));
+  } catch (e) { /* diagnostics only */ }
   return out;
 }
 
