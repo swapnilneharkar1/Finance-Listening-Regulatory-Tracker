@@ -10,6 +10,7 @@ Finance Listening Portal on Streamlit, with login and per-user regulator access.
 - "Request access" emails the admins a ready-to-paste Secrets block (needs ADMIN_EMAILS).
 """
 import base64
+import calendar
 import hashlib
 import hmac
 import html as html_lib
@@ -206,7 +207,7 @@ def _store_request(method: str, cfg: dict, **kw) -> requests.Response:
 def _normalise(doc: dict) -> dict:
     if doc and not {"passwords", "users", "requests"} & set(doc):
         doc = {"passwords": doc}  # older file that only held reset passwords
-    for key in ("passwords", "users", "requests", "directory"):
+    for key in ("passwords", "users", "requests", "directory", "visits"):
         doc.setdefault(key, {})
     return doc
 
@@ -302,6 +303,48 @@ def store_error_text(prefix: str) -> str:
 
 def now_iso() -> str:
     return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+
+
+# ───────────────────────── Usage tracking ─────────────────────────
+# Each sign-in is recorded in the portal store (doc["visits"]): per user (first/last visit, total,
+# sign-ins per day) and per day (sign-ins, distinct users). Dates are India time. Only usernames
+# are kept: no IP addresses, devices or pages viewed.
+IST_OFFSET = 5.5 * 3600
+USER_DAYS_KEPT, DAILY_DAYS_KEPT = 180, 400
+
+
+def ist_date(ts: float | None = None) -> str:
+    return time.strftime("%Y-%m-%d", time.gmtime((ts or time.time()) + IST_OFFSET))
+
+
+def record_visit(username: str, name: str) -> None:
+    """Never blocks or breaks sign-in: on any problem the visit is simply not counted."""
+    if not store_cfg():
+        return
+    today, stamp = ist_date(), now_iso()
+
+    def change(doc):
+        v = doc.setdefault("visits", {})
+        u = v.setdefault("users", {}).setdefault(username, {"first": stamp, "count": 0, "days": {}})
+        u["name"], u["last"] = name, stamp
+        u["count"] = u.get("count", 0) + 1
+        days = u.setdefault("days", {})
+        days[today] = days.get(today, 0) + 1
+        for d in sorted(days)[:-USER_DAYS_KEPT]:
+            days.pop(d, None)
+        daily = v.setdefault("daily", {})
+        dd = daily.setdefault(today, {"logins": 0, "users": []})
+        dd["logins"] = dd.get("logins", 0) + 1
+        if username not in dd["users"]:
+            dd["users"].append(username)
+        for d in sorted(daily)[:-DAILY_DAYS_KEPT]:
+            daily.pop(d, None)
+
+    try:
+        if not update_store(change, f"Sign-in: {username}"):
+            st.session_state.pop("store_error", None)
+    except Exception as e:  # noqa: BLE001 — usage stats must never stop anyone signing in
+        print(f"[visits] not recorded: {e}", flush=True)
 
 
 def save_override(username: str, password_hash: str) -> bool:
@@ -520,6 +563,7 @@ def view_login(users: dict):
                                          "regulators": regs}
                 st.session_state.pop("data", None)  # fetch fresh data after every login
                 sync_directory(users)
+                record_visit(username, user.get("name", username))
                 st.rerun()
         else:
             st.error("Invalid username or password.")
@@ -883,7 +927,7 @@ def admin_page(users: dict):
                      key=lambda x: x[1].get("decided_at", ""), reverse=True)
     flash()
 
-    t_req, t_users = st.tabs([f"Requests ({len(pending)} pending)", f"Users ({len(users)})"])
+    t_req, t_users, t_usage = st.tabs([f"Requests ({len(pending)} pending)", f"Users ({len(users)})", "Usage"])
 
     with t_req:
         if not store_cfg():
@@ -952,7 +996,67 @@ def admin_page(users: dict):
                      column_config={"# Regulators": st.column_config.NumberColumn(width="small")})
         st.caption(f"Showing {len(shown)} of {len(rows)} users. Users from Secrets are edited in "
                    "Streamlit → Settings → Secrets; approved users live in your portal-auth repo.")
+
+    with t_usage:
+        usage_tab(doc, users)
     st.stop()
+
+
+def usage_tab(doc: dict, users: dict):
+    v = doc.get("visits") or {}
+    vu, daily = v.get("users", {}), v.get("daily", {})
+    if not vu:
+        st.info("No sign-ins recorded yet. From now on every sign-in is counted here.")
+        return
+    today = ist_date()
+    last_n = lambda n: [ist_date(time.time() - i * 86400) for i in range(n)]  # noqa: E731
+    d7, d30 = set(last_n(7)), set(last_n(30))
+    active = lambda days: {u for u, x in vu.items() if days & set(x.get("days", {}))}  # noqa: E731
+
+    m1, m2, m3, m4, m5 = st.columns(5)
+    m1.metric("Users today", len(active({today})))
+    m2.metric("Users, 7 days", len(active(d7)))
+    m3.metric("Users, 30 days", len(active(d30)))
+    m4.metric("Sign-ins, 30 days", sum(daily.get(d, {}).get("logins", 0) for d in d30))
+    never = [u for u in users if u not in vu]
+    m5.metric("Never signed in", len(never), help=", ".join(sorted(never)) or None)
+
+    period = st.radio("Period", ["Last 30 days", "Last 90 days", "Last 12 months"], horizontal=True,
+                      label_visibility="collapsed", key="usage_period")
+    n = {"Last 30 days": 30, "Last 90 days": 90, "Last 12 months": 365}[period]
+    days = sorted(last_n(n))
+    st.markdown("##### Daily head count")
+    st.caption("Distinct users who signed in each day (India time).")
+    st.bar_chart({"Users": {d: len(daily.get(d, {}).get("users", [])) for d in days}}, height=220, color="#1a56db")
+
+    in_period = set(days)
+    rows = []
+    for uname in sorted(set(users) | set(vu)):
+        x, u = vu.get(uname, {}), users.get(uname, {})
+        dd = x.get("days", {})
+        last = x.get("last", "")
+        last_ist = (time.strftime("%Y-%m-%d %H:%M", time.gmtime(calendar.timegm(time.strptime(last, "%Y-%m-%dT%H:%M:%SZ")) + IST_OFFSET))
+                    if last else "")
+        rows.append({
+            "Name": x.get("name") or u.get("name", uname), "Username": uname, "Email": u.get("email", ""),
+            "Last visit (IST)": last_ist or "never",
+            f"Sign-ins ({period.lower()})": sum(c for d, c in dd.items() if d in in_period),
+            f"Days active ({period.lower()})": sum(1 for d in dd if d in in_period),
+            "Total sign-ins": x.get("count", 0),
+            "First visit": x.get("first", "")[:10],
+            "Status": "Removed user" if uname not in users else "",
+        })
+    rows.sort(key=lambda r: r["Last visit (IST)"] if r["Last visit (IST)"] != "never" else "", reverse=True)
+    st.markdown("##### Visits by user")
+    st.dataframe(rows, hide_index=True, use_container_width=True)
+    import csv, io  # noqa: E401
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=list(rows[0].keys()))
+    w.writeheader(); w.writerows(rows)  # noqa: E702
+    st.download_button("Download as CSV", buf.getvalue().encode("utf-8-sig"), file_name=f"portal_usage_{today}.csv",
+                       mime="text/csv")
+    st.caption("A visit is counted each time someone signs in. Only usernames and times are kept "
+               f"(no IP addresses or pages viewed). Per-user history is kept for {USER_DAYS_KEPT} days.")
 
 
 def auth_user() -> str:
