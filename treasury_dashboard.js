@@ -21,6 +21,7 @@
     { label: 'Borrowing Mix', kind: 'mix', part: 'borrowing' },
     { label: 'Investment Mix', kind: 'mix', part: 'investments' },
     { label: 'Cost & KPIs', kind: 'kpi' },
+    ...(peers.length ? [{ label: `${base.short} vs Peers`, kind: 'compare' }] : []),
     ...companies.map(c => ({ label: c.name, kind: 'company', company: c })),
     ...(studies.length ? [{ label: 'Insights', kind: 'insights' }] : []),
   ];
@@ -313,7 +314,7 @@
     const tab = TABS[currentTabIdx] || TABS[0];
     view.replaceChildren();
     try {
-      ({ overview: renderOverview, mix: renderMix, kpi: renderKpi, company: renderCompany, insights: renderInsights, empty: renderEmpty })[tab.kind](tab);
+      ({ overview: renderOverview, mix: renderMix, kpi: renderKpi, compare: renderCompare, company: renderCompany, insights: renderInsights, empty: renderEmpty })[tab.kind](tab);
     } catch (e) {
       console.error(e);
       view.replaceChildren(h('div', { class: 'tpb-empty', text: 'Could not draw this dashboard: ' + e.message }));
@@ -559,6 +560,162 @@
   }
   const heroControls = (...kids) => h('div', { class: 'tpb-hero-pick' }, ...kids);
 
+  // ── AI summaries ("how it was generated") and methodology panels ──
+  const SECTIONS = T.ai_sections || {};
+  const fmtDate = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }); };
+  function aiCard(key, title, ruleText, scope) {
+    const x = SECTIONS[key];
+    const text = x ? x.text : ruleText;
+    if (!text) return null;
+    const chip = x && x.edited ? h('span', { class: 'chip', text: `edited by ${x.edited.by}` })
+      : x ? h('span', { class: 'chip tpb-ai', text: 'AI summary' }) : h('span', { class: 'chip', text: 'Rule-based draft' });
+    const how = h('details', { class: 'tpb-how-inline' }, h('summary', { text: 'How this summary was generated' }),
+      h('ul', { class: 'tpb-how-list' },
+        x ? [h('li', { text: `Written by Azure OpenAI (${x.model || 'model'}) on ${fmtDate(x.at)}, on the Treasury VM, from the figures in ${scope || 'this dashboard'} only.` }),
+             h('li', { text: 'Every number in the text is checked against those figures; if the AI quotes a number that is not in the data, the text is rejected and the rule-based draft is shown instead.' }),
+             h('li', { text: 'It is redrafted automatically when the figures change (a new annual report), and hidden until then if it no longer matches.' }),
+             x.edited ? h('li', { text: `Edited by ${x.edited.by} on ${fmtDate(x.edited.at)}; the edit replaces the AI text.` }) : null]
+          : [h('li', { text: 'Built by fixed rules from the figures on this page (largest values, gaps to the peer average, ranks).' }),
+             h('li', { text: 'An AI-written version replaces it after the next run of the Treasury AI commentary on the VM.' })],
+        CAN_EDIT ? h('li', { text: 'Treasury users can rewrite it with "Edit commentary".' }) : null));
+    return h('div', { class: 'tpb-card tpb-aicard' },
+      h('div', { class: 'tpb-aicard-head' }, h('span', { class: 'tpb-ai-ico', text: '✦' }), h('h3', { text: title }), chip, h('span', { style: 'flex:1' }), editButton()),
+      h('div', { class: 'tpb-summary' }, String(text).split(/\n+/).map(p => h('p', { text: p }))), how);
+  }
+  const HOW = {
+    common: [
+      'Source: each NBFC\'s published annual report (standalone financial statements), downloaded automatically from NSE, the company website or BSE every Monday.',
+      'Figures are read from the standalone balance sheet and the notes to it; each breakdown must add up to its balance-sheet line (±1.5%), otherwise only the balance-sheet total is used and marked "(not split)".',
+      'All amounts are converted to ₹ crore. Each year uses that year\'s own report; if it is missing, the previous-year column of the next report is used.',
+      `Peer average = simple (unweighted) average of the peers, excluding ${base ? base.short : 'the base company'}.`,
+    ],
+    mix: ['Share = instrument ÷ the company\'s total borrowings (or investments) at year end.',
+      'Instrument groups: Secured NCDs = public issue + private placement; Bank term loans exclude cash credit / WCDL; Deposits = public, corporate and inter-corporate deposits; Subordinated debt includes perpetual debt.',
+      'Top-3 concentration = combined share of the three largest instruments (lower = more diversified).'],
+    cost: ['Average borrowing cost = finance cost for the year ÷ average of opening and closing total borrowings.',
+      'Total borrowings = debt securities + borrowings (other than debt securities) + deposits + subordinated liabilities.',
+      'Ranks: 1 = lowest cost / largest book.'],
+    compare: ['Size ratio = BFL\'s total borrowings ÷ the peer\'s. Cost gap = BFL\'s average borrowing cost minus the peer\'s, in basis points (negative = BFL cheaper).',
+      'Mix differences are BFL\'s share minus the peer\'s share of the same instrument, in percentage points.'],
+  };
+  function howCard(...kinds) {
+    const items = [...HOW.common, ...kinds.flatMap(k => HOW[k] || [])];
+    return h('details', { class: 'tpb-card tpb-how' }, h('summary', { text: 'How these figures are calculated' }),
+      h('ul', { class: 'tpb-how-list' }, items.map(t => h('li', { text: t }))),
+      h('div', { class: 'foot', text: 'Sources and page numbers for every figure are on each NBFC\'s tab.' }));
+  }
+
+  // ── Rule-based drafts (shown until the AI version exists) ──
+  const fyBefore = y => 'FY' + String(+y.slice(2) - 1).padStart(2, '0');
+  const top3of = m => m ? Object.values(m).sort((a, b) => b - a).slice(0, 3).reduce((a, v) => a + (v || 0), 0) : null;
+  function ruleMix(part, year) {
+    const bm = mixValues(base, part, year, 'share'); if (!bm) return '';
+    const cats = Object.keys(bm), avg = peerAvg(cats, part, year, 'share'), what = part === 'borrowing' ? 'borrowings' : 'investments';
+    const top = cats.slice().sort((a, b) => bm[b] - bm[a]).slice(0, 3);
+    const gaps = cats.filter(k => avg[k] != null).map(k => ({ k, g: bm[k] - avg[k] })).sort((a, b) => Math.abs(b.g) - Math.abs(a.g)).slice(0, 2);
+    return `${base.short}'s ${what} in ${year} are led by ${top.map(k => `${k} (${pct(bm[k])})`).join(', ')}. ` +
+      (gaps.length ? `The biggest differences from the peer average are ${gaps.map(x => `${x.k} (${pp(x.g)})`).join(' and ')}. ` : '') +
+      `Its top three instruments make up ${pct(top3of(bm))} of ${what}.`;
+  }
+  function ruleCost(year) {
+    const r = companies.filter(c => c.borrowing.avg_cost && c.borrowing.avg_cost[year] != null).sort((a, b) => a.borrowing.avg_cost[year] - b.borrowing.avg_cost[year]);
+    if (!r.length) return '';
+    const i = r.indexOf(base), pc = peers.map(c => c.borrowing.avg_cost && c.borrowing.avg_cost[year]).filter(v => v != null);
+    const pa = pc.length ? pc.reduce((a, v) => a + v, 0) / pc.length : null;
+    return `In ${year}, ${r[0].short} has the lowest average borrowing cost (${pct(r[0].borrowing.avg_cost[year], 2)}) and ${r[r.length - 1].short} the highest (${pct(r[r.length - 1].borrowing.avg_cost[year], 2)}). ` +
+      (i >= 0 ? `${base.short} ranks ${ord(i + 1)} of ${r.length} at ${pct(base.borrowing.avg_cost[year], 2)}` + (pa != null ? `, ${bps(base.borrowing.avg_cost[year] - pa)} against the peer average of ${pct(pa, 2)}.` : '.') : '');
+  }
+  function ruleCompany(c, year) {
+    const b = c.borrowing, py = fyBefore(year), g = b.total[year] && b.total[py] ? b.total[year] / b.total[py] - 1 : null;
+    const m = mixValues(c, 'borrowing', year, 'share'), top = m ? Object.keys(m).sort((a, z) => m[z] - m[a])[0] : null;
+    const cr_ = rankOf(c, x => x.borrowing.avg_cost && x.borrowing.avg_cost[year], true);
+    return `${c.name} had total borrowings of ${cr(b.total[year])} in ${year}` + (g != null ? ` (${g >= 0 ? '+' : '−'}${Math.abs(g * 100).toFixed(1)}% on ${py})` : '') + '. ' +
+      (b.avg_cost && b.avg_cost[year] != null ? `Its average borrowing cost was ${pct(b.avg_cost[year], 2)}` + (cr_ ? `, ${ord(cr_.n)} lowest of ${cr_.of}` : '') + '. ' : '') +
+      (top ? `The largest funding source is ${top} at ${pct(m[top])} of borrowings.` : '');
+  }
+  function compareFacts(c, year) {
+    const b1 = base.borrowing, b2 = c.borrowing, py = fyBefore(year);
+    const gr = b => b.total[year] != null && b.total[py] ? b.total[year] / b.total[py] - 1 : null;
+    const c1 = b1.avg_cost && b1.avg_cost[year], c2 = b2.avg_cost && b2.avg_cost[year];
+    const m1 = mixValues(base, 'borrowing', year, 'share'), m2 = mixValues(c, 'borrowing', year, 'share');
+    const diffs = m1 && m2 ? [...new Set([...Object.keys(m1), ...Object.keys(m2)])].map(k => ({ k, a: m1[k] || 0, b: m2[k] || 0, d: (m1[k] || 0) - (m2[k] || 0) })).sort((a, z) => Math.abs(z.d) - Math.abs(a.d)) : [];
+    return { ratio: b1.total[year] && b2.total[year] ? b1.total[year] / b2.total[year] : null, g1: gr(b1), g2: gr(b2), c1, c2,
+      gap: c1 != null && c2 != null ? c1 - c2 : null, diffs, t1: top3of(m1), t2: top3of(m2) };
+  }
+  function ruleCompare(c, year) {
+    const f = compareFacts(c, year);
+    const parts = [];
+    if (f.ratio) parts.push(`${base.short}'s borrowing book is ${f.ratio.toFixed(1)}x ${c.short}'s in ${year}.`);
+    if (f.gap != null) parts.push(`Its average borrowing cost is ${pct(f.c1, 2)} against ${pct(f.c2, 2)} for ${c.short} (${bps(f.gap)}).`);
+    if (f.diffs.length) parts.push(`The biggest funding-mix differences are ${f.diffs.slice(0, 2).map(x => `${x.k} (${pct(x.a)} vs ${pct(x.b)})`).join(' and ')}.`);
+    if (f.g1 != null && f.g2 != null) parts.push(`Borrowings grew ${pct(f.g1)} at ${base.short} and ${pct(f.g2)} at ${c.short} on ${fyBefore(year)}.`);
+    return parts.join(' ');
+  }
+
+  // ── BFL vs Peers ──
+  function renderCompare() {
+    const yr = T.default_year;
+    if (!state.peer || !peers.includes(state.peer)) state.peer = peers[0];
+    const c = state.peer, f = compareFacts(c, yr);
+
+    view.append(hero(`${base.name} vs ${c.name} · ${yr}`, 'Head-to-head comparison from the standalone annual reports. Pick a peer:', [
+      f.ratio ? heroKpi('Size of borrowing book', `${f.ratio.toFixed(1)}x`, `${base.short} ${cr(base.borrowing.total[yr])} · ${c.short} ${cr(c.borrowing.total[yr])}`, null, null) : null,
+      f.gap != null ? heroKpi('Borrowing cost gap', bps(f.gap), `${base.short} ${pct(f.c1, 2)} · ${c.short} ${pct(f.c2, 2)}`, f.gap <= 0 ? `${base.short} cheaper` : `${c.short} cheaper`, null) : null,
+      f.g1 != null && f.g2 != null ? heroKpi('Borrowing growth', pp(f.g1 - f.g2), `${base.short} ${pct(f.g1)} · ${c.short} ${pct(f.g2)}`, f.g1 >= f.g2 ? `${base.short} faster` : `${c.short} faster`, null) : null,
+      f.t1 != null && f.t2 != null ? heroKpi('Top-3 concentration', pp(f.t1 - f.t2), `${base.short} ${pct(f.t1)} · ${c.short} ${pct(f.t2)}`, f.t1 <= f.t2 ? `${base.short} more diversified` : `${c.short} more diversified`, null) : null,
+    ], c.color, heroControls(h('div', { class: 'tpb-seg' }, peers.map(p => h('button', { type: 'button', 'aria-pressed': String(p === c), onclick: () => { state.peer = p; render(); }, text: p.short }))))));
+
+    view.append(aiCard(`compare:${c.key}`, `${base.short} vs ${c.short}: summary`, ruleCompare(c, yr), `the ${base.short} and ${c.short} annual reports`));
+
+    // every peer at once
+    const all = peers.map(p => ({ p, f: compareFacts(p, yr) }));
+    view.append(card(`${base.short} against every peer, ${yr}`, 'Click a row to open that comparison. Negative cost gap = ' + base.short + ' borrows cheaper.',
+      h('div', { class: 'tpb-table-wrap' }, h('table', { class: 'tpb-league' },
+        h('thead', {}, h('tr', {}, ['Peer', `${base.short} size vs peer`, 'Cost gap', 'Growth gap', 'Biggest funding-mix difference', 'Top-3 concentration gap'].map((t, i) => h('th', { class: i && i < 4 ? 'n' : '', text: t })))),
+        h('tbody', {}, all.map(({ p, f: g }) => h('tr', { class: p === c ? 'is-base' : '', style: 'cursor:pointer', onclick: () => { state.peer = p; render(); } },
+          h('td', {}, h('span', { class: 'tpb-dot', style: `background:${p.color}` }), h('b', { text: p.short })),
+          h('td', { class: 'n', text: g.ratio ? `${g.ratio.toFixed(1)}x` : '—' }),
+          h('td', { class: 'n ' + (g.gap == null ? '' : g.gap <= 0 ? 'pos' : 'neg'), text: g.gap == null ? '—' : bps(g.gap) }),
+          h('td', { class: 'n', text: g.g1 != null && g.g2 != null ? pp(g.g1 - g.g2) : '—' }),
+          h('td', { text: g.diffs[0] ? `${g.diffs[0].k}: ${pct(g.diffs[0].a)} vs ${pct(g.diffs[0].b)} (${pp(g.diffs[0].d)})` : '—' }),
+          h('td', { text: g.t1 != null && g.t2 != null ? pp(g.t1 - g.t2) : '—' }))))))));
+
+    // side-by-side metrics
+    const rowsM = [
+      ['Total borrowings', x => x.borrowing.total[yr], cr, (a, b) => `${(a / b).toFixed(1)}x`],
+      ['Borrowing growth (YoY)', x => { const t = x.borrowing.total; return t[yr] != null && t[fyBefore(yr)] ? t[yr] / t[fyBefore(yr)] - 1 : null; }, v => pct(v), (a, b) => pp(a - b)],
+      ['Average borrowing cost', x => x.borrowing.avg_cost && x.borrowing.avg_cost[yr], v => pct(v, 2), (a, b) => bps(a - b)],
+      ['Finance cost', x => x.borrowing.finance_cost && x.borrowing.finance_cost[yr], cr, (a, b) => `${(a / b).toFixed(1)}x`],
+      ['Investment book', x => x.investments && x.investments.total[yr], cr, (a, b) => `${(a / b).toFixed(1)}x`],
+      ['Top-3 funding concentration', x => top3of(mixValues(x, 'borrowing', yr, 'share')), v => pct(v), (a, b) => pp(a - b)],
+    ];
+    const costHolder = h('div', { class: 'tpb-chart' });
+    view.append(h('div', { class: 'tpb-grid2' },
+      card('Side by side', `${yr}. Difference = ${base.short} relative to ${c.short}.`, h('div', { class: 'tpb-table-wrap' }, h('table', { class: 'tpb-score' },
+        h('thead', {}, h('tr', {}, ['Metric', base.short, c.short, 'Difference'].map((t, i) => h('th', { class: i ? 'n' : '', text: t })))),
+        h('tbody', {}, rowsM.map(([name, get, fmt, diff]) => { const a = get(base), b = get(c); return h('tr', {},
+          h('td', {}, h('b', { text: name })), h('td', { class: 'n tpb-score-v', text: a != null ? fmt(a) : '—' }), h('td', { class: 'n', text: b != null ? fmt(b) : '—' }),
+          h('td', { class: 'n', text: a != null && b != null && b !== 0 ? diff(a, b) : '—' })); }))))),
+      card('Borrowing cost over time', `${base.short} and ${c.short}.`, legend([{ color: base.color, label: base.short, kind: 'line' }, { color: c.color, label: c.short, kind: 'line' }]), costHolder)));
+    const cy = T.years.filter(y => (base.borrowing.avg_cost || {})[y] != null || (c.borrowing.avg_cost || {})[y] != null);
+    requestAnimationFrame(() => lineChart(costHolder, { years: cy, series: [{ name: base.short, color: base.color, values: base.borrowing.avg_cost || {} }, { name: c.short, color: c.color, values: c.borrowing.avg_cost || {} }], fmt: v => pct(v, 2), axisFmt: v => +(v * 100).toFixed(2) + '%', minZero: false, height: 230 }));
+
+    // mix side by side
+    const grid2 = h('div', { class: 'tpb-grid2' });
+    [['borrowing', 'Borrowing mix'], ['investments', 'Investment mix']].forEach(([part, label]) => {
+      const m1 = mixValues(base, part, yr, 'share'), m2 = mixValues(c, part, yr, 'share'); if (!m1 || !m2) return;
+      const cats = [...new Set([...Object.keys(m1), ...Object.keys(m2)])].filter(k => (m1[k] || 0) + (m2[k] || 0) > 0.0005).sort((a, z) => ((m1[z] || 0) + (m2[z] || 0)) - ((m1[a] || 0) + (m2[a] || 0)));
+      const holder = h('div', { class: 'tpb-chart' });
+      const ser = [{ name: base.short, color: base.color, values: m1 }, { name: c.short, color: c.color, values: m2 }];
+      grid2.append(card(`${label}, ${yr}`, `Share of total ${part === 'borrowing' ? 'borrowings' : 'investments'}.`, legend(ser.map(x => ({ color: x.color, label: x.name }))), holder,
+        table([{ label: 'Instrument', get: r => r }, { label: base.short, num: 1, get: r => pct(m1[r] || 0) }, { label: c.short, num: 1, get: r => pct(m2[r] || 0) },
+               { label: 'Difference', num: 1, get: r => pp((m1[r] || 0) - (m2[r] || 0)), cls: r => (m1[r] || 0) >= (m2[r] || 0) ? 'pos' : 'neg' }], cats)));
+      requestAnimationFrame(() => groupedBars(holder, { categories: cats, series: ser, fmt: pct, axisFmt: v => Math.round(v * 100) + '%', labelSeries: ser[0] }));
+    });
+    view.append(grid2);
+    view.append(howCard('compare', 'mix', 'cost'));
+  }
+
   function renderOverview() {
     const bt = T.summary.find(t => t.kind === 'borrowing'), it = T.summary.find(t => t.kind === 'investment');
     const yr = (bt && bt.fy) || T.default_year;
@@ -589,11 +746,8 @@
         h('div', { class: 'foot', text: 'Years are filled in automatically when the report is found. For anything not on NSE/BSE, a direct PDF link can be added in scraper/treasury-sources.js.' })));
     }
 
-    if (T.overview_summary && T.overview_summary.text) {
-      const o = T.overview_summary;
-      view.append(card('Summary', o.edited ? `Edited by ${o.edited.by}.` : 'Drafted by AI from the extracted figures; every number is checked against the data.',
-        h('div', { class: 'tpb-summary' }, String(o.text).split(/\n+/).map(p => h('p', { text: p }))), edited(o)));
-    }
+    if (T.overview_summary && T.overview_summary.text) SECTIONS['summary:overview'] = T.overview_summary;
+    view.append(aiCard('summary:overview', 'Executive summary', [ruleMix('borrowing', yr), ruleCost(yr)].filter(Boolean).join(' '), 'all the dashboards'));
 
     // Funding mix of every NBFC side by side
     const stackHolder = h('div', { class: 'tpb-chart' }), stackLegend = h('div');
@@ -624,6 +778,7 @@
     });
     view.append(grid2);
     if (!bt && !it) view.append(h('div', { class: 'tpb-empty', text: 'No BFL-vs-peer summary table found in the Excel.' }));
+    view.append(howCard('mix', 'cost'));
   }
 
   function renderMix(tab) {
@@ -660,6 +815,7 @@
       null, heroControls(...yearSelect(years, year, v => { state.year = v; render(); }),
         seg([{ value: 'share', label: '% of total' }, { value: 'amount', label: '₹ crore' }], unit, v => { state.unit = v; render(); }))));
 
+    view.append(aiCard(part === 'borrowing' ? 'summary:borrowing_mix' : 'summary:investment_mix', `${what}: summary`, ruleMix(part, year), `the ${what.toLowerCase()} dashboard`));
     const stackHolder = h('div', { class: 'tpb-chart' }), stackLegend = h('div');
     view.append(card(`${what} at a glance, ${year}`, `Share of each NBFC's total ${book}, on the same 0–100% scale. Hover a segment for the amount.`, stackLegend, stackHolder));
     requestAnimationFrame(() => stackLegend.replaceChildren(legend(mixStack(stackHolder, part, year))));
@@ -680,6 +836,7 @@
         : `Instruments grouped from the ${AUTO ? 'investments note of each annual report' : 'company sheets'}: Subsidiaries, associates & JVs = strategic holdings; Other = InvITs, security receipts, VCF and similar. `)
         + `Shares are of each company's own total. Source: ${AUTO ? 'annual reports (standalone)' : T.source}.` })));
     requestAnimationFrame(() => groupedBars(chart, { categories: cats, series, fmt, axisFmt, avg: peers.length ? avg : null, labelSeries: bs }));
+    view.append(howCard('mix'));
   }
 
   function renderKpi() {
@@ -707,6 +864,7 @@
       fcg != null ? heroKpi(`${base.short} finance cost`, cr(b.finance_cost[yr]), [h('b', { text: (fcg >= 0 ? '+' : '−') + Math.abs(fcg * 100).toFixed(1) + '%' }), ` vs ${pyr}`], null, sparkline(series(b.finance_cost, b.years), { fmt: cr })) : null,
     ]));
 
+    view.append(aiCard('summary:cost_kpis', 'Cost & KPIs: summary', ruleCost(yr), 'the Cost & KPIs dashboard'));
     const rankHolder = h('div', { class: 'tpb-chart' }), sizeHolder = h('div', { class: 'tpb-chart' });
     const top = h('div', { class: 'tpb-grid2' },
       card(`Borrowing cost ranking, ${yr}`, 'Lowest cost first, on a zoomed scale. Dashed line = peer average (excluding ' + base.short + ').', rankHolder),
@@ -735,6 +893,7 @@
     view.append(grid2);
     view.append(h('div', { class: 'foot', style: 'font-size:11.5px;color:#898781', text:
       AUTO ? 'CRAR, Tier I / Tier II capital and LCR (BRD KPIs) are not extracted yet.' : 'BRD KPIs not yet in the Excel: CRAR, Tier I / Tier II capital, LCR and other regulatory ratios.' }));
+    view.append(howCard('cost'));
   }
 
   function renderCompany(tab) {
@@ -757,6 +916,19 @@
       inv ? heroKpi(`Investment book, ${year}`, cr(inv.total[year]), inv.total[pv] ? [h('b', { text: growth(inv.total[year], inv.total[pv]) }), ` vs ${pv}`] : '', null, sparkline(series(inv.total, inv.years), { fmt: cr })) : null,
     ], c.color, yearPick));
 
+    view.append(aiCard(`summary:company:${c.key}`, `${c.short}: summary`, ruleCompany(c, year), `${c.short}'s annual reports`));
+    if (c !== base) {
+      const f = compareFacts(c, year);
+      view.append(h('div', { class: 'tpb-card tpb-cmp' },
+        h('div', { class: 'tpb-aicard-head' }, h('h3', { text: `Compared with ${base.short}, ${year}` }), h('span', { style: 'flex:1' }),
+          h('button', { type: 'button', class: 'tpb-edit', onclick: () => { state.peer = c; const i = TABS.findIndex(t => t.kind === 'compare'); const btn = document.querySelectorAll('#subtabBar .subtab')[i]; if (btn) btn.click(); }, text: 'Open full comparison →' })),
+        h('div', { class: 'tpb-cmp-grid' },
+          h('div', {}, h('div', { class: 'k', text: 'Size of borrowing book' }), h('div', { class: 'v', text: f.ratio ? `${base.short} is ${f.ratio.toFixed(1)}x` : '—' })),
+          h('div', {}, h('div', { class: 'k', text: 'Borrowing cost gap' }), h('div', { class: 'v', text: f.gap != null ? `${bps(f.gap)} (${f.gap <= 0 ? base.short + ' cheaper' : c.short + ' cheaper'})` : '—' })),
+          h('div', {}, h('div', { class: 'k', text: 'Biggest funding-mix difference' }), h('div', { class: 'v', text: f.diffs[0] ? `${f.diffs[0].k} ${pp(f.diffs[0].d)}` : '—' }))),
+        h('div', { class: 'tpb-summary' }, h('p', { text: (SECTIONS[`compare:${c.key}`] || {}).text || ruleCompare(c, year) })),
+        h('div', { class: 'foot', text: SECTIONS[`compare:${c.key}`] ? 'AI summary — see "How this summary was generated" on the comparison tab.' : 'Rule-based draft; the AI version appears after the next AI commentary run.' })));
+    }
     // Scorecard
     view.append(card(`Scorecard, ${year}`, `${c.short} against the other ${companies.length - 1} NBFCs. Rank 1 = largest; for cost and concentration rank 1 = lowest. ▲/▼ marks better or worse than peers where lower is clearly better.`, scorecard(c, year)));
 
@@ -832,6 +1004,7 @@
               rows, { summary: 'Show detailed table' }));
     };
     view.append(detail(b, 'Detailed borrowings') || '', detail(inv, 'Detailed investments') || '');
+    view.append(howCard('mix', 'cost'));
   }
 
   function renderEmpty() {

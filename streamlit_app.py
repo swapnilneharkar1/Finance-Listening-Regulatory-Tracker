@@ -1221,7 +1221,15 @@ def fetch_treasury() -> dict:
                 apply(r, "text")
     a = ai.get("summary:overview")
     if a and a.get("text") and a.get("basis") == basis_hash(overview_basis):
-        data["overview_summary"] = {"key": "summary:overview", "text": a["text"], "ai": True}
+        data["overview_summary"] = {"key": "summary:overview", "text": a["text"], "ai": True,
+                                    "at": a.get("at", ""), "model": a.get("model", "")}
+    # dashboard summaries and BFL-vs-peer comparisons: shown while they match the current figures
+    current = {data.get("fingerprint"), data.get("generated_at")} - {None}
+    data["ai_sections"] = {
+        k: {"key": k, "text": x["text"], "ai": True, "at": x.get("at", ""), "model": x.get("model", "")}
+        for k, x in ai.items()
+        if k != "summary:overview" and k.startswith(("summary:", "compare:")) and x.get("text")
+        and x.get("fp") in current}
     return data
 
 
@@ -1241,6 +1249,18 @@ def treasury_items(data: dict):
     if data.get("overview_summary"):
         o = data["overview_summary"]
         yield o["key"], "Overview · Summary", "Overall summary", o.get("auto", o.get("text", "")), o, "text"
+    names = {c.get("key"): c.get("short") or c.get("name") for c in data.get("companies", []) or []}
+    base = next((c.get("short") for c in data.get("companies", []) or [] if c.get("base")), "BFL")
+    group = lambda k: (0 if k.startswith("summary:") and not k.startswith("summary:company:") else 1 if k.startswith("compare:") else 2, k)  # noqa: E731
+    for k, x in sorted((data.get("ai_sections") or {}).items(), key=lambda kv: group(kv[0])):
+        part = k.split(":")
+        if k.startswith("compare:"):
+            yield k, "BFL vs Peers · comparisons", f"{base} vs {names.get(part[1], part[1])}", x.get("auto", x.get("text", "")), x, "text"
+        elif k.startswith("summary:company:"):
+            yield k, "NBFC tabs · summaries", names.get(part[2], part[2]), x.get("auto", x.get("text", "")), x, "text"
+        else:
+            label = {"borrowing_mix": "Borrowing Mix", "investment_mix": "Investment Mix", "cost_kpis": "Cost & KPIs"}.get(part[1], part[1])
+            yield k, "Dashboard summaries", label, x.get("auto", x.get("text", "")), x, "text"
     for t in data.get("summary", []) or []:
         for r in t.get("rows", []):
             if r.get("key") and (r.get("remark") or r.get("auto")):

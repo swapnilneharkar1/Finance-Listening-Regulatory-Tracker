@@ -164,3 +164,23 @@
 .tpb-flag.bad { background: #fdecec; color: #b42318; }
 .tpb-rankpill { display: inline-block; min-width: 44px; text-align: center; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 2px 8px; background: #eef1f6; color: #1a2030; }
 .tpb-rankpill.first { background: #0f2d52; color: #fff; }
+
+/* AI summary cards and methodology */
+.tpb-aicard { border-color: #d6e4fb; background: linear-gradient(180deg, #f7faff 0%, #ffffff 60%); }
+.tpb-aicard-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.tpb-aicard-head h3 { margin: 0; }
+.tpb-aicard-head .chip, .tpb-cmp .chip { display: inline-block; font-size: 11px; font-weight: 600; border-radius: 4px; padding: 1px 7px; background: #f1f3f5; color: #5a6474; }
+.tpb-aicard-head .chip.tpb-ai { background: #e8f0fe; color: #1a56db; }
+.tpb-aicard-head .tpb-edit { margin-left: 0; }
+.tpb-ai-ico { display: inline-flex; width: 24px; height: 24px; border-radius: 7px; align-items: center; justify-content: center; font-size: 13px; color: #fff; background: linear-gradient(135deg, #1a56db, #6250d6); }
+.tpb-how-inline { margin-top: 4px; }
+.tpb-how-inline summary, .tpb-how > summary { font-size: 12px; font-weight: 600; color: #1a56db; cursor: pointer; }
+.tpb-how { padding: 12px 18px; }
+.tpb-how > summary { font-size: 13px; }
+.tpb-how-list { margin: 8px 0 2px 18px; padding: 0; font-size: 12.5px; color: #3d4757; line-height: 1.6; }
+.tpb-how-list li { margin: 2px 0; }
+.tpb-cmp { border-left: 4px solid #0f2d52; }
+.tpb-cmp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 4px 0 10px; }
+.tpb-cmp-grid > div { background: #f5f7fb; border-radius: 10px; padding: 10px 12px; }
+.tpb-cmp-grid .k { font-size: 11.5px; color: #5a6474; }
+.tpb-cmp-grid .v { font-size: 15px; font-weight: 700; color: #0f2d52; margin-top: 3px; }
