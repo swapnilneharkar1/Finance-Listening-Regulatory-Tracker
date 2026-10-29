@@ -511,8 +511,10 @@ async function main() {
   // Default year: the latest year with data for the base company and at least one peer.
   const defYear = allYears.slice().reverse().find(fy => base?.borrowing.total[fy] != null && companies.filter(c => c !== base && c.borrowing.total[fy] != null).length) || allYears[allYears.length - 1];
   for (const c of companies) c.readouts = readouts(c);
+  // fingerprint of the figures: AI summaries are shown only while it matches what they were written from
+  const fingerprint = crypto.createHash('sha256').update(JSON.stringify(companies.map(c => [c.key, c.borrowing, c.investments]))).digest('hex').slice(0, 16);
   const out = {
-    source: 'Annual reports (standalone financial statements)', method: 'auto', generated_at: new Date().toISOString(),
+    source: 'Annual reports (standalone financial statements)', method: 'auto', generated_at: new Date().toISOString(), fingerprint,
     companies, summary: defYear ? summaryTables(companies, defYear) : [], studies: [],
     years: allYears, default_year: defYear,
     borrowing_categories: BORROWING_CATEGORIES, investment_categories: INVESTMENT_CATEGORIES,
