@@ -70,7 +70,8 @@ jobs:
           git diff --staged --quiet || git commit -m "Update regulatory data ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
           # other workflows (e.g. Treasury Peer Benchmarking) may have pushed during this run: rebase and retry
           for i in 1 2 3; do
-            git pull --rebase && git push && exit 0
+            # --autostash: files changed but not saved (e.g. package-lock.json from npm install) are set aside during the pull
+            git pull --rebase --autostash && git push && exit 0
             echo "Push failed, retrying in 10s..."; sleep 10
           done
           exit 1
