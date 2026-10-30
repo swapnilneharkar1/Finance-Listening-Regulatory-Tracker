@@ -1,2 +1,0 @@
-https://nsearchives.nseindia.com/annual_reports/AR_26821_CHOLAFIN_2024_2025_A_09072025221445.pdf
-Reason: Invalid PDF structure (pdf.js: Invalid Root reference.; 2981888 bytes; starts "%PDF-1.7.%......"; ends ";.)F............C..... ....A...r")

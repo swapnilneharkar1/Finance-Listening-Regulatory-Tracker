@@ -6,7 +6,7 @@
  "pages": 320,
  "standalonePages": [
   146,
-  242
+  251
  ],
  "statement": {
   "investments": {
@@ -194,7 +194,7 @@
  "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2024-25.pdf",
  "via": "company website",
  "reportFy": "FY25",
- "extractor": 2,
+ "extractor": 3,
  "sha": "13a3d7e32bb42911",
- "extractedAt": "2026-10-28T06:33:56.147Z"
+ "extractedAt": "2026-10-30T12:31:29.293Z"
 }

@@ -1,7 +1,13 @@
 Pages: https://www.hdbfs.com/investor/dur62-annual-report
-Links on page: 339; document-like: 15; kept: 0
+Links on page: 451; document-like: 24; kept: 6
 
 KEPT:
+FY26  https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2025-26.pdf
+FY25  https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2024-25.pdf
+FY24  https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2023-24.pdf
+FY23  https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2022-23.pdf
+FY22  https://www.hdbfs.com/sites/default/files/reports/HDB_Annual-Report-2021-22.pdf
+FY21  https://www.hdbfs.com/sites/default/files/reports/HDB-Annual-Report-2020-21.pdf
 
 NO YEAR FOUND:
 
@@ -15,6 +21,15 @@ https://synergy.hdbfs.com/download_app/ | Download Now | HDB ontheGo App One app
 https://www.hdbfs.com/pdf/HDBFS_Grievance_Flowchart_Final_31032026.pdf | Customer Grievance Redressal Flowchart | Customer Grievance/Escalation Customer Grievance Redressal Flowchart Whatsapp Account Management Customer Service Week Grievance Redressal-I
 https://www.hdbfs.com/customer-services/download-forms | Download Forms | Customer Grievance/Escalation Customer Grievance Redressal Flowchart Whatsapp Account Management Customer Service Week Grievance Redressal-I
 https://www.hdbfs.com/sites/default/files/Policy_on_Customer_Rights_Jan_15052026.pdf | Customer Right Policy | Customer Awareness Customer Right Policy Notices Privacy Policy Cookie Policy Disclaimer
+https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2025-26.pdf | Annual Report for FY 2025-26 | Annual Report for FY 2025-26 Annual Report for FY 2024-25 Annual Report for FY 2023-24 Annual Report for FY 2022-23 Annual Report for FY 202
+https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2024-25.pdf | Annual Report for FY 2024-25 | Annual Report for FY 2025-26 Annual Report for FY 2024-25 Annual Report for FY 2023-24 Annual Report for FY 2022-23 Annual Report for FY 202
+https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2023-24.pdf | Annual Report for FY 2023-24 | Annual Report for FY 2025-26 Annual Report for FY 2024-25 Annual Report for FY 2023-24 Annual Report for FY 2022-23 Annual Report for FY 202
+https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2022-23.pdf | Annual Report for FY 2022-23 | Annual Report for FY 2025-26 Annual Report for FY 2024-25 Annual Report for FY 2023-24 Annual Report for FY 2022-23 Annual Report for FY 202
+https://www.hdbfs.com/sites/default/files/reports/HDB_Annual-Report-2021-22.pdf | Annual Report for FY 2021-22 | Annual Report for FY 2025-26 Annual Report for FY 2024-25 Annual Report for FY 2023-24 Annual Report for FY 2022-23 Annual Report for FY 202
+https://www.hdbfs.com/sites/default/files/reports/HDB-Annual-Report-2020-21.pdf | Annual Report for FY 2020-21 | Annual Report for FY 2025-26 Annual Report for FY 2024-25 Annual Report for FY 2023-24 Annual Report for FY 2022-23 Annual Report for FY 202
+https://www.hdbfs.com/sites/default/files/reports/Business_Responsibility_and_Sustainability_Report_2025-26.pdf | Business Responsibility and Sustainability Report 2025-26 | BUSINESS RESPONSIBILITY AND SUSTAINABILITY REPORT Business Responsibility and Sustainability Report 2025-26
+https://www.hdbfs.com/customer-services/download-forms | Download Forms | Home About Us Products Make Payment Blogs Investors Download Forms Careers Disclaimer Terms and Conditions Privacy Sitemap FAQ's GST - FAQ I
+https://www.hdbfs.com/customer-services/download-forms | Download Forms | Home About Us Products Make Payment Blogs Investors Download Forms
 https://synergy.hdbfs.com/download_app/ |  | 
 https://synergy.hdbfs.com/download_app/ |  | 
 https://synergy.hdbfs.com/download_app/ |  | 

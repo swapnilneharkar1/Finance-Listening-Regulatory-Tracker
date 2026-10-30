@@ -6,7 +6,7 @@
  "pages": 268,
  "standalonePages": [
   112,
-  192
+  201
  ],
  "statement": {
   "investments": {
@@ -180,7 +180,7 @@
  "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2022-23.pdf",
  "via": "company website",
  "reportFy": "FY23",
- "extractor": 2,
+ "extractor": 3,
  "sha": "95f58a45d2b3ef63",
- "extractedAt": "2026-10-28T06:34:08.570Z"
+ "extractedAt": "2026-10-30T12:31:38.021Z"
 }

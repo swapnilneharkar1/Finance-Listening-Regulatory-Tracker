@@ -6,7 +6,7 @@
  "pages": 246,
  "standalonePages": [
   96,
-  172
+  181
  ],
  "statement": {
   "investments": {
@@ -43,18 +43,12 @@
  "borrowing": {
   "FY22": [
    {
-    "label": "Privately placed redeemable non convertible debenture",
-    "category": "Secured NCDs",
-    "value": 25357.7,
-    "page": 122,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Commercial paper",
-    "category": "Commercial paper",
-    "value": 0,
-    "page": 123,
-    "section": "debt_securities"
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 25332.31,
+    "page": 96,
+    "section": "debt_securities",
+    "unsplit": true
    },
    {
     "label": "External commercial borrowings (ECB)",
@@ -101,18 +95,12 @@
   ],
   "FY21": [
    {
-    "label": "Privately placed redeemable non convertible debenture",
-    "category": "Secured NCDs",
-    "value": 23356.2,
-    "page": 122,
-    "section": "debt_securities"
-   },
-   {
-    "label": "Commercial paper",
-    "category": "Commercial paper",
-    "value": 400,
-    "page": 123,
-    "section": "debt_securities"
+    "label": "Debt securities (balance sheet total)",
+    "category": "Debt securities (not split)",
+    "value": 23802.07,
+    "page": 96,
+    "section": "debt_securities",
+    "unsplit": true
    },
    {
     "label": "External commercial borrowings (ECB)",
@@ -187,15 +175,15 @@
   ]
  },
  "totals": {
-  "FY22": 49021.79,
-  "FY21": 50354.17
+  "FY22": 48996.4,
+  "FY21": 50400.04
  },
  "finance_cost": {
   "FY22": 3325.5,
   "FY21": 3882.93
  },
  "log": [
-  "debt_securities: 2 lines from note p.122, reconciles to balance sheet",
+  "debt_securities: note p.123; breakdown sums to 19514.09 vs balance sheet 25332.31 -> using balance-sheet total",
   "borrowings: 4 lines from note p.123, reconciles to balance sheet",
   "deposits: not on the balance sheet (treated as nil)",
   "subordinated: 2 lines from note p.126, reconciles to balance sheet",
@@ -208,7 +196,7 @@
  "url": "https://www.hdbfs.com/sites/default/files/reports/HDB_Annual-Report-2021-22.pdf",
  "via": "company website",
  "reportFy": "FY22",
- "extractor": 2,
+ "extractor": 3,
  "sha": "5554cd54572f3520",
- "extractedAt": "2026-10-28T06:34:13.962Z"
+ "extractedAt": "2026-10-30T12:31:41.967Z"
 }
