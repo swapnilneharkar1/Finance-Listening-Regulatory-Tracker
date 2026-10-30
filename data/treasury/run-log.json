@@ -1,5 +1,5 @@
 {
- "started": "2026-10-30T12:27:39.904Z",
+ "started": "2026-10-30T18:23:57.557Z",
  "companies": {
   "BFL": {
    "reports": [
@@ -132,51 +132,23 @@
     },
     {
      "fy": "FY25",
-     "status": "extracted",
-     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2024-25.pdf",
-     "notes": [
-      "debt_securities: 2 lines from note p.174, reconciles to balance sheet",
-      "borrowings: 3 lines from note p.175, reconciles to balance sheet",
-      "deposits: not on the balance sheet (treated as nil)",
-      "subordinated: 2 lines from note p.176, reconciles to balance sheet",
-      "investments: 4 lines from note p.169"
-     ]
+     "status": "cached",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2024-25.pdf"
     },
     {
      "fy": "FY24",
-     "status": "extracted",
-     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2023-24.pdf",
-     "notes": [
-      "debt_securities: 2 lines from note p.158, reconciles to balance sheet",
-      "borrowings: 3 lines from note p.159, reconciles to balance sheet",
-      "deposits: not on the balance sheet (treated as nil)",
-      "subordinated: 2 lines from note p.160, reconciles to balance sheet",
-      "investments: 5 lines from note p.153"
-     ]
+     "status": "cached",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2023-24.pdf"
     },
     {
      "fy": "FY23",
-     "status": "extracted",
-     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2022-23.pdf",
-     "notes": [
-      "debt_securities: 1 lines from note p.139, reconciles to balance sheet",
-      "borrowings: 3 lines from note p.140, reconciles to balance sheet",
-      "deposits: not on the balance sheet (treated as nil)",
-      "subordinated: 2 lines from note p.142, reconciles to balance sheet",
-      "investments: 4 lines from note p.134"
-     ]
+     "status": "cached",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/Annual-Report-2022-23.pdf"
     },
     {
      "fy": "FY22",
-     "status": "extracted",
-     "url": "https://www.hdbfs.com/sites/default/files/reports/HDB_Annual-Report-2021-22.pdf",
-     "notes": [
-      "debt_securities: note p.123; breakdown sums to 19514.09 vs balance sheet 25332.31 -> using balance-sheet total",
-      "borrowings: 4 lines from note p.123, reconciles to balance sheet",
-      "deposits: not on the balance sheet (treated as nil)",
-      "subordinated: 2 lines from note p.126, reconciles to balance sheet",
-      "investments: 4 lines from note p.119"
-     ]
+     "status": "cached",
+     "url": "https://www.hdbfs.com/sites/default/files/reports/HDB_Annual-Report-2021-22.pdf"
     }
    ],
    "missing": []
@@ -204,5 +176,5 @@
    ]
   }
  },
- "finished": "2026-10-30T12:33:32.994Z"
+ "finished": "2026-10-30T18:27:13.814Z"
 }
