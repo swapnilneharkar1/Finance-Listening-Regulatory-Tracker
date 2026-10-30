@@ -67,6 +67,40 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# Streamlit Community Cloud adds a "Hosted with Streamlit" badge and the app owner's profile icon
+# (bottom right) on its own page around the app. That page is served from the same address as the
+# app, so this small script can reach it and hide both. Unofficial: if Streamlit ever isolates that
+# page, the script silently does nothing. The owner's "Manage app" button is left alone.
+HIDE_CLOUD_BADGES = """<script>
+(function () {
+  function hide() {
+    var doc;
+    try { doc = window.top.document; if (!doc || !doc.body || doc === document) return; } catch (e) { return; }
+    if (!doc.getElementById('__hide_cloud_badges')) {
+      var st = doc.createElement('style'); st.id = '__hide_cloud_badges';
+      st.textContent = '[class*="viewerBadge"],[class*="ViewerBadge"],[class*="profileContainer"],[class*="ProfileContainer"],' +
+        '[class*="profilePreview"],[data-testid="appCreatorAvatar"],[data-testid*="viewerBadge"]{display:none!important}';
+      (doc.head || doc.body).appendChild(st);
+    }
+    // the badge links to streamlit.io, the avatar to the owner's profile: hide their floating boxes
+    doc.querySelectorAll('a[href*="streamlit.io"], a[href*="/user/"]').forEach(function (a) {
+      var n = a;
+      for (var i = 0; i < 6 && n && n !== doc.body; i++) {
+        if (doc.defaultView.getComputedStyle(n).position === 'fixed') { n.style.setProperty('display', 'none', 'important'); return; }
+        n = n.parentElement;
+      }
+      a.style.setProperty('display', 'none', 'important');
+    });
+  }
+  hide();
+  try { new window.top.MutationObserver(hide).observe(window.top.document.body, { childList: true, subtree: true }); } catch (e) {}
+  var k = 0, t = setInterval(function () { hide(); if (++k > 30) clearInterval(t); }, 1000);
+})();
+</script>"""
+with st.container(key="cloudbadges"):
+    components.html(HIDE_CLOUD_BADGES, height=0)
+st.markdown("<style>.st-key-cloudbadges{display:none!important}</style>", unsafe_allow_html=True)
+
 
 @st.cache_data
 def load_asset(name: str) -> str:
@@ -1494,16 +1528,22 @@ if st.session_state.get("tpb_edit"):
         view_tpb_edit(st.session_state.treasury)
     st.session_state.pop("tpb_edit", None)
 
+# Opened through the wrapper page (docs/index.html: embed mode, Cloud badges hidden)? That page
+# clips a 44px strip at the bottom, so the portal is made 44px shorter to keep everything reachable.
+if st.query_params.get("wrapped") == "1":
+    st.session_state.wrapped = True
+PORTAL_H = "calc(100vh - 44px)" if st.session_state.get("wrapped") else "100vh"
+
 st.markdown(
     """
     <style>
       .block-container {padding: 0 !important; max-width: 100% !important;}
       [data-testid="stMainBlockContainer"] {padding: 0 !important;}
       .st-key-signout, .st-key-reload, .st-key-adminopen, .st-key-tpbedit {display: none !important;}
-      iframe {display: block; height: 100vh !important; border: 0;}
+      iframe {display: block; height: __PORTAL_H__ !important; border: 0;}
       [data-testid="stVerticalBlock"] {gap: 0 !important;}
     </style>
-    """,
+    """.replace("__PORTAL_H__", PORTAL_H),
     unsafe_allow_html=True,
 )
 
