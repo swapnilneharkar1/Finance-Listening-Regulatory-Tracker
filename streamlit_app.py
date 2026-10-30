@@ -403,7 +403,7 @@ def notification_directory(users: dict) -> dict:
     for uname, u in users.items():
         email = str(u.get("email", "")).strip().lower()
         regs = allowed_regulators(u)
-        if email and regs:
+        if email and regs and not u.get("disabled"):
             out[uname] = {"name": u.get("name", uname), "email": email, "regulators": regs,
                           "notify": bool(u.get("notify", True))}
     return out
@@ -587,6 +587,8 @@ def view_login(users: dict):
         stored = current_password_hash(username, user) if user else ""
         if user and stored is None:
             st.error("Can't verify your password right now. Please try again in a minute.")
+        elif user and user.get("disabled") and verify_password(password, stored):
+            st.error("This account has been disabled. Please contact the portal admin.")
         elif user and verify_password(password, stored):
             regs = ALL_REGULATORS if is_admin(username, users) else allowed_regulators(user)
             if not regs:
@@ -961,9 +963,14 @@ def admin_page(users: dict):
                      key=lambda x: x[1].get("decided_at", ""), reverse=True)
     flash()
 
-    t_req, t_users, t_usage = st.tabs([f"Requests ({len(pending)} pending)", f"Users ({len(users)})", "Usage"])
+    # A remembered selector instead of st.tabs: tabs jump back to the first one after every save
+    labels = {"requests": f"Requests ({len(pending)} pending)", "users": f"Users ({len(users)})",
+              "manage": "Add / manage users", "usage": "Usage"}
+    section = st.segmented_control("Admin section", list(labels), format_func=labels.get, key="admin_section",
+                                   default="requests", label_visibility="collapsed") or "requests"
+    st.write("")
 
-    with t_req:
+    if section == "requests":
         if not store_cfg():
             st.info("Access requests need the [password_store] section in Secrets.")
         elif not pending:
@@ -994,7 +1001,7 @@ def admin_page(users: dict):
                  for _, r in decided[:25]],
                 hide_index=True, use_container_width=True)
 
-    with t_users:
+    if section == "users":
         rows = []
         for uname, u in sorted(users.items()):
             regs = allowed_regulators(u)
@@ -1007,6 +1014,7 @@ def admin_page(users: dict):
                 "Email alerts": ("Off" if not u.get("notify", True)
                                  else "On" if u.get("email") and regs else "No email"),
                 "Approved on": doc["users"].get(uname, {}).get("approved_at", "")[:10],
+                "Status": "Disabled" if u.get("disabled") else "Active",
             })
         m1, m2, m3, m4 = st.columns(4)
         m1.metric("Total users", len(rows))
@@ -1031,9 +1039,168 @@ def admin_page(users: dict):
         st.caption(f"Showing {len(shown)} of {len(rows)} users. Users from Secrets are edited in "
                    "Streamlit → Settings → Secrets; approved users live in your portal-auth repo.")
 
-    with t_usage:
+    if section == "manage":
+        manage_users_tab(doc, users)
+    if section == "usage":
         usage_tab(doc, users)
     st.stop()
+
+
+def temp_password() -> str:
+    """Readable one-time password: letters and digits, always passes password_problem()."""
+    alphabet = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ"
+    core = "".join(secrets_mod.choice(alphabet) for _ in range(7))
+    return core + "".join(secrets_mod.choice("23456789") for _ in range(3))
+
+
+def login_details_email(name: str, username: str, password: str, regs: list[str], new: bool) -> str:
+    safe = html_lib.escape
+    body = (f"<p>Hi {safe(name)},</p>"
+            + (f"<p>An account has been created for you on the Finance Listening Portal with access to "
+               f"<b>{safe(', '.join(reg_label(r) for r in regs))}</b>.</p>" if new else
+               "<p>Your Finance Listening Portal password has been reset by the portal admin.</p>")
+            + f"<p>Sign in at <a href='{app_url()}'>{app_url()}</a><br/>Username: <b>{safe(username)}</b><br/>"
+              f"Temporary password: <b>{safe(password)}</b></p>"
+              "<p>Please change it after signing in, using <i>Forgot password?</i> on the sign-in page.</p>")
+    return email_shell("Your portal account" if new else "Password reset", body)
+
+
+def manage_users_tab(doc: dict, users: dict):
+    me = auth_user()
+    if not store_cfg():
+        st.info("Adding and changing users needs the [password_store] section in Secrets.")
+        return
+
+    # ── Add a user ──
+    st.markdown("##### Add a user")
+    with st.form("add_user", clear_on_submit=False):
+        c1, c2 = st.columns(2)
+        name = c1.text_input("Full name")
+        email = c2.text_input("Email", placeholder=f"name{domains_text().split(',')[0].strip()}")
+        c3, c4 = st.columns(2)
+        uname = c3.text_input("Username", placeholder="Optional: defaults to the part before @")
+        all_regs = c4.checkbox("All regulators (incl. Treasury)", value=False)
+        regs = st.multiselect("Access", ALL_REGULATORS, format_func=reg_label, placeholder="Choose one or more",
+                              disabled=False)
+        c5, c6 = st.columns(2)
+        alerts = c5.checkbox("Email alerts on", value=True)
+        send = c6.checkbox("Email the login details to the user", value=True)
+        add = st.form_submit_button("Add user", type="primary")
+    if add:
+        email_l = (email or "").strip().lower()
+        username = (uname or "").strip().lower() or re.sub(r"[^a-z0-9_]", "_", email_l.split("@")[0])
+        grant = ["ALL"] if all_regs else regs
+        clash = next((u for u, d in users.items() if str(d.get("email", "")).strip().lower() == email_l), None)
+        if not name.strip() or not email_l:
+            st.error("Enter the person's name and email.")
+        elif not email_allowed(email_l):
+            st.error(f"Email must end with {domains_text()}.")
+        elif not re.fullmatch(r"[a-z0-9_.-]{3,40}", username):
+            st.error("Username: 3–40 characters, letters, digits, . _ or - only.")
+        elif username in users:
+            st.error(f"The username '{username}' is already taken.")
+        elif clash:
+            st.error(f"{email_l} already has an account (username '{clash}'). Change their access below instead.")
+        elif not grant:
+            st.error("Choose at least one regulator, or tick All regulators.")
+        else:
+            pw = temp_password()
+
+            def change(d):
+                d["users"][username] = {"name": name.strip(), "email": email_l, "regulators": grant,
+                                        "password_hash": make_hash(pw), "notify": alerts,
+                                        "approved_by": me, "approved_at": now_iso(), "added_by_admin": True}
+                d["passwords"].pop(username, None)
+
+            if update_store(change, f"Admin {me} added user {username}"):
+                sync_directory()
+                mailed = send and send_email(email_l, "Your Finance Listening Portal account",
+                                             login_details_email(name.strip(), username, pw, grant if grant != ["ALL"] else ALL_REGULATORS, True))
+                st.session_state.flash = (f"Added {name.strip()} as '{username}'. "
+                                          + ("Login details emailed to them." if mailed else
+                                             f"Temporary password: {pw} — share it with them securely"
+                                             + (" (the email could not be sent)." if send else ".")))
+                st.rerun()
+            else:
+                st.error(store_error_text("Couldn't add the user."))
+
+    # ── Change a user ──
+    st.markdown("##### Change a user")
+    names = sorted(users, key=lambda u: users[u].get("name", u).lower())
+    pick = st.selectbox("User", names, index=None, placeholder="Choose a user",
+                        format_func=lambda u: f"{users[u].get('name', u)} · {u} · {users[u].get('email', '')}"
+                                              + (" · DISABLED" if users[u].get("disabled") else ""))
+    if not pick:
+        return
+    u = users[pick]
+    from_secrets = pick in secrets_users()
+    is_self = pick == me
+    cur = allowed_regulators(u)
+    st.caption(("Defined in Streamlit Secrets; changes made here are saved in portal-auth and take priority. "
+                if from_secrets else "Added through the portal. ")
+               + (f"Admin account. " if is_admin(pick, users) else ""))
+    with st.form(f"edit_{pick}"):
+        all_e = st.checkbox("All regulators (incl. Treasury)", value=len(cur) == len(ALL_REGULATORS))
+        regs_e = st.multiselect("Access", ALL_REGULATORS, default=cur, format_func=reg_label)
+        alerts_e = st.checkbox("Email alerts on", value=bool(u.get("notify", True)))
+        save = st.form_submit_button("Save changes", type="primary")
+    if save:
+        grant = ["ALL"] if all_e else regs_e
+        if not grant:
+            st.error("Choose at least one regulator, or tick All regulators.")
+        else:
+            def change(d):
+                e = d["users"].setdefault(pick, {})
+                e.update({"regulators": grant, "notify": alerts_e, "changed_by": me, "changed_at": now_iso()})
+            if update_store(change, f"Admin {me} changed access for {pick}"):
+                sync_directory()
+                st.session_state.flash = f"Saved: {u.get('name', pick)} now has {', '.join(grant)}."
+                st.rerun()
+            else:
+                st.error(store_error_text("Couldn't save."))
+
+    b1, b2, b3 = st.columns(3)
+    if b1.button("Reset password", key=f"reset_{pick}", use_container_width=True, disabled=not u.get("email")):
+        pw = temp_password()
+
+        def change(d):
+            d["passwords"][pick] = {"password_hash": make_hash(pw), "reset_at": now_iso(), "reset_by": me}
+        if update_store(change, f"Admin {me} reset the password of {pick}"):
+            mailed = send_email(u["email"], "Your Finance Listening Portal password",
+                                login_details_email(u.get("name", pick), pick, pw, cur, False))
+            st.session_state.flash = (f"Password reset for {pick}. "
+                                      + ("New temporary password emailed to them." if mailed
+                                         else f"Email failed — temporary password: {pw}"))
+            st.rerun()
+        else:
+            st.error(store_error_text("Couldn't reset the password."))
+    if u.get("disabled"):
+        if b2.button("Enable account", key=f"enable_{pick}", use_container_width=True):
+            def change(d):
+                d["users"].setdefault(pick, {}).update({"disabled": False, "changed_by": me, "changed_at": now_iso()})
+            if update_store(change, f"Admin {me} enabled {pick}"):
+                sync_directory()
+                st.session_state.flash = f"{pick} can sign in again."
+                st.rerun()
+    elif b2.button("Disable account", key=f"disable_{pick}", use_container_width=True, disabled=is_self):
+        def change(d):
+            d["users"].setdefault(pick, {}).update({"disabled": True, "changed_by": me, "changed_at": now_iso()})
+        if update_store(change, f"Admin {me} disabled {pick}"):
+            sync_directory()
+            st.session_state.flash = f"{pick} is disabled: they can't sign in and get no alerts."
+            st.rerun()
+    if not from_secrets and not is_self:
+        confirm = b3.checkbox(f"Confirm removing {pick}", key=f"confirm_rm_{pick}")
+        if b3.button("Remove user", key=f"remove_{pick}", use_container_width=True, disabled=not confirm):
+            def change(d):
+                d["users"].pop(pick, None)
+                d["passwords"].pop(pick, None)
+            if update_store(change, f"Admin {me} removed {pick}"):
+                sync_directory()
+                st.session_state.flash = f"Removed {pick}."
+                st.rerun()
+    elif from_secrets:
+        b3.caption("Defined in Secrets: disable it here, or delete it in Streamlit → Settings → Secrets.")
 
 
 def usage_tab(doc: dict, users: dict):
@@ -1128,6 +1295,11 @@ auth = st.session_state.auth
 # Admins always see everything.
 _all_users = get_users()
 _me = _all_users.get(auth.get("username", ""))
+if _me and _me.get("disabled"):  # disabled by an admin while signed in
+    for _k in ("auth", "data", "data_version", "treasury", "tpb_notes", "tpb_edit"):
+        st.session_state.pop(_k, None)
+    st.session_state.view = "login"
+    st.rerun()
 if _me:
     _regs = ALL_REGULATORS if is_admin(auth["username"], _all_users) else allowed_regulators(_me)
     if _regs and _regs != auth.get("regulators"):
