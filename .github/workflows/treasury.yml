@@ -6,7 +6,7 @@ name: Treasury Peer Benchmarking
 # before are downloaded, so weekly runs are quick once the history is in.
 on:
   schedule:
-    - cron: '30 1 * * 1'   # Mondays 01:30 UTC (07:00 IST)
+    - cron: '0 * * * *'    # Mondays 01:30 UTC (07:00 IST)
   workflow_dispatch:
     inputs:
       force:
