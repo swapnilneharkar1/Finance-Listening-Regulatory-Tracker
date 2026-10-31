@@ -1,5 +1,5 @@
 {
- "started": "2026-10-31T14:58:06.688Z",
+ "started": "2026-10-31T19:09:22.535Z",
  "companies": {
   "BFL": {
    "reports": [
@@ -40,7 +40,7 @@
     },
     {
      "fy": "FY25",
-     "status": "download failed",
+     "status": "extraction error: Invalid PDF structure (pdf.js: Invalid Root reference.; 3702784 bytes; starts \"%PDF-1.7.%......\"; ends \"`....NU3..b7>*.P..j.L.......].f.\")",
      "url": "https://nsearchives.nseindia.com/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf"
     },
     {
@@ -176,5 +176,5 @@
    ]
   }
  },
- "finished": "2026-10-31T15:13:16.208Z"
+ "finished": "2026-10-31T19:12:20.591Z"
 }
