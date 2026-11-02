@@ -1567,11 +1567,28 @@ PAN_MASK = "[PAN hidden]"
 URL_KEYS = {"link", "url", "href", "src", "source", "pdf", "pdfurl", "pdf_url"}
 
 
+# Date-of-birth wording trips the corporate DLP "Date of Birth" engine (e.g. KYC circulars that
+# list "name, date of birth, address", or orders that give a person's birth date). So a date right
+# after such wording is hidden, and the wording itself is replaced with "age details".
+_MONTHS = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?"
+DOB_DATE_RE = (r"(?:\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|\d{4}-\d{1,2}-\d{1,2}"
+               r"|\d{1,2}(?:st|nd|rd|th)?\s+" + _MONTHS + r",?\s+\d{2,4}|" + _MONTHS + r"\s+\d{1,2}(?:st|nd|rd|th)?,?\s+\d{2,4})")
+DOB_WORDS = r"(?:date\s*(?:&|and)?\s*(?:place\s*)?of\s*birth|date[\s-]*of[\s-]*birth|birth[\s-]*date|birthdate|d\.\s?o\.\s?b\.?|\bdob\b|born\s+on)"
+DOB_WITH_DATE_RE = re.compile(r"(" + DOB_WORDS + r")([^\n]{0,40}?)" + DOB_DATE_RE, re.I)
+DOB_WORDS_RE = re.compile(DOB_WORDS, re.I)
+
+
+def mask_dob(text: str) -> str:
+    text = DOB_WITH_DATE_RE.sub(lambda m: m.group(1) + m.group(2) + "[date hidden]", text)
+    return DOB_WORDS_RE.sub("age details", text)
+
+
 def mask_pan(value, key: str = ""):
+    """Masks what corporate DLP blocks (PAN numbers, birth dates) before anything reaches a browser."""
     if isinstance(value, str):
         if key.lower() in URL_KEYS or value.startswith(("http://", "https://")):
             return value
-        return PAN_RE_LOOSE.sub(PAN_MASK, PAN_RE.sub(PAN_MASK, value))
+        return mask_dob(PAN_RE_LOOSE.sub(PAN_MASK, PAN_RE.sub(PAN_MASK, value)))
     if isinstance(value, dict):
         return {k: mask_pan(v, str(k)) for k, v in value.items()}
     if isinstance(value, list):
