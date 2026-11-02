@@ -9,6 +9,12 @@
  *
  * Env: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, PORTAL_AUTH_TOKEN,
  *      PORTAL_AUTH_REPO, PORTAL_AUTH_PATH, PORTAL_AUTH_BRANCH, TRACKER_URL,
+ *      TEAMS_CHANNELS -> also post to Teams channels by email (same SMTP account, no Power Automate).
+ *                        One channel per line (or separated by ";"): regulators = channel email, e.g.
+ *                          ALL = a1b2c3d4.bajajfinserv.in@apac.teams.ms
+ *                          RBI, SEBI = e5f6a7b8.bajajfinserv.in@apac.teams.ms
+ *                        Each channel gets only the new items of the regulators listed for it.
+ *      TEAMS_TEST=true -> send one test post to every channel in TEAMS_CHANNELS and stop.
  *      DRY_RUN=true  -> log who would get what, send nothing.
  */
 const fs = require('fs');
@@ -61,7 +67,16 @@ function newItemsFromData() {
 }
 
 const PAN_RE = /[A-Z]{5}[0-9]{4}[A-Z]/g; // PAN numbers trip corporate DLP filters; never email them
-function maskPan(s) { return String(s == null ? '' : s).replace(PAN_RE, '[PAN hidden]'); }
+// Date-of-birth wording trips the corporate DLP "Date of Birth" engine: a date right after such
+// wording is hidden and the wording becomes "age details" (same rules as the portal).
+const MONTHS = '(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\\.?';
+const DOB_DATE = '(?:\\d{1,2}[./-]\\d{1,2}[./-]\\d{2,4}|\\d{4}-\\d{1,2}-\\d{1,2}|\\d{1,2}(?:st|nd|rd|th)?\\s+' + MONTHS +
+  ',?\\s+\\d{2,4}|' + MONTHS + '\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+\\d{2,4})';
+const DOB_WORDS = '(?:date\\s*(?:&|and)?\\s*(?:place\\s*)?of\\s*birth|date[\\s-]*of[\\s-]*birth|birth[\\s-]*date|birthdate|d\\.\\s?o\\.\\s?b\\.?|\\bdob\\b|born\\s+on)';
+const DOB_WITH_DATE_RE = new RegExp('(' + DOB_WORDS + ')([^\\n]{0,40}?)' + DOB_DATE, 'gi');
+const DOB_WORDS_RE = new RegExp(DOB_WORDS, 'gi');
+function maskDob(s) { return s.replace(DOB_WITH_DATE_RE, (m, w, mid) => w + mid + '[date hidden]').replace(DOB_WORDS_RE, 'age details'); }
+function maskPan(s) { return maskDob(String(s == null ? '' : s).replace(PAN_RE, '[PAN hidden]')); }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function loadPortalDirectory() {
@@ -201,25 +216,33 @@ function subjectFor(newByRegulator) {
   return `Regulatory Updates — ${n} new item${n === 1 ? '' : 's'}${which} (${new Date().toLocaleDateString('en-IN')})`;
 }
 
+// ───────────────────────── Teams channels (posted by email) ─────────────────────────
+// Every standard Teams channel has an email address ("⋯ → Get email address"). Mail sent there
+// appears as a channel post from the sender, so the same SMTP account is used — no flow, no app.
+// Who sees it = the members of that team, so access is managed by team membership.
+function teamsChannels() {
+  const raw = process.env.TEAMS_CHANNELS || '';
+  const out = [];
+  for (const part of raw.split(/[\n;]+/)) {
+    const line = part.trim(); if (!line || line.startsWith('#')) continue;
+    const m = line.match(/^(.+?)\s*[=:]\s*([^\s=]+@[^\s=]+)$/);
+    if (!m) { console.log(`  TEAMS_CHANNELS: could not read "${line}" (expected "RBI, SEBI = channel-address@…teams.ms")`); continue; }
+    const regulators = m[1].split(/[,\s]+/).map(r => r.trim().toUpperCase()).filter(Boolean);
+    out.push({ regulators, email: m[2], label: `Teams channel ${m[2].split('@')[0].slice(0, 8)}… [${regulators.join(', ')}]` });
+  }
+  return out;
+}
+
 
 async function main() {
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
-  const { newByRegulator, generatedAt } = newItemsFromData();
-  const total = countItems(newByRegulator);
-  console.log(`Data generated at ${generatedAt}: ${total} new item(s)` +
-              (total ? ` in ${Object.keys(newByRegulator).join(', ')}` : '') + '.');
-  if (!total) { console.log('Nothing new — no emails to send.'); return; }
-
-  const directory = await loadPortalDirectory();
-  if (!directory) {
-    console.log('No portal directory available — per-user emails skipped (the scraper\'s own email still goes out as before).');
-    return;
-  }
+  const channels = teamsChannels();
+  console.log(`Teams channels: ${channels.length ? channels.map(c => c.label).join('; ') : 'none (TEAMS_CHANNELS not set)'}.`);
+  const TEAMS_TEST = String(process.env.TEAMS_TEST || '').toLowerCase() === 'true';
   if (!DRY_RUN && (!SMTP_USER || !SMTP_PASS)) {
     console.log('SMTP_USER / SMTP_PASS not set — cannot send.');
     return;
   }
-
   const transporter = DRY_RUN ? null : require('nodemailer').createTransport({
     host: SMTP_HOST || 'smtp.office365.com',
     port: Number(SMTP_PORT) || 587,
@@ -228,6 +251,52 @@ async function main() {
     // Fail fast instead of hanging for minutes if Office 365 stalls a connection.
     connectionTimeout: 30000, greetingTimeout: 30000, socketTimeout: 60000
   });
+
+  if (TEAMS_TEST) { // setup check: one test post per channel
+    if (!channels.length) { console.log('TEAMS_TEST is on but TEAMS_CHANNELS is empty — add the secret first.'); process.exitCode = 1; return; }
+    for (const ch of channels) {
+      const sample = { [ch.regulators[0] === 'ALL' ? 'RBI' : ch.regulators[0]]: { name: 'Test post', tabs: { 'Setup check': [
+        { title: `Test from the Finance Listening Portal — this channel will receive: ${ch.regulators.join(', ')}`, link: process.env.TRACKER_URL || '', date: new Date().toLocaleDateString('en-IN') }] } } };
+      if (DRY_RUN) { console.log(`  [dry run] would send a test post to ${ch.label}`); continue; }
+      try {
+        await transporter.sendMail({ from: SMTP_USER, to: ch.email, subject: 'Finance Listening Portal — Teams channel test', html: buildEmailHtml(sample, { name: 'team', regulators: ch.regulators }) });
+        console.log(`  Test post sent to ${ch.label}. It should appear in the channel within a few minutes.`);
+      } catch (e) { console.log(`  Test post FAILED for ${ch.label}: ${e.message}`); process.exitCode = 1; }
+      await sleep(2500);
+    }
+    return;
+  }
+
+  const { newByRegulator, generatedAt } = newItemsFromData();
+  const total = countItems(newByRegulator);
+  console.log(`Data generated at ${generatedAt}: ${total} new item(s)` +
+              (total ? ` in ${Object.keys(newByRegulator).join(', ')}` : '') + '.');
+  if (!total) { console.log('Nothing new — no emails to send.'); return; }
+
+  // Teams channels first: they don't depend on the portal directory
+  let cSent = 0, cFailed = 0;
+  for (const ch of channels) {
+    const mine = filterForUser(newByRegulator, ch.regulators);
+    const n = countItems(mine);
+    if (!n) { console.log(`  ${ch.label}: nothing new for its regulators.`); continue; }
+    if (DRY_RUN) { console.log(`  [dry run] would post ${n} item(s) to ${ch.label} (${Object.keys(mine).join(', ')})`); cSent++; continue; }
+    try {
+      await transporter.sendMail({ from: SMTP_USER, to: ch.email, subject: subjectFor(mine), html: buildEmailHtml(mine, { name: 'team', regulators: ch.regulators }) });
+      cSent++;
+      console.log(`  Posted ${n} item(s) to ${ch.label} (${Object.keys(mine).join(', ')}).`);
+    } catch (e) {
+      cFailed++;
+      console.log(`  Teams channel FAILED for ${ch.label}: ${e.message}`);
+    }
+    await sleep(2500);
+  }
+  if (channels.length) console.log(`Teams channels: ${cSent} ${DRY_RUN ? 'would be posted' : 'posted'}, ${cFailed} failed.`);
+
+  const directory = await loadPortalDirectory();
+  if (!directory) {
+    console.log('No portal directory available — per-user emails skipped (the scraper\'s own email still goes out as before).');
+    return;
+  }
 
   console.log(`Recipients in portal directory: ${directory.length} ` +
               `(${directory.map(u => `${u.email} [${u.regulators.join(', ')}]`).join('; ')})`);
