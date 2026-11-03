@@ -1677,6 +1677,20 @@ def filter_data(data: dict, regs: list[str]) -> dict:
     return mask_pan({**data, "data": keep})
 
 
+def lazy_view(data: dict, active: str) -> dict:
+    """Send only the tab being viewed; other tabs carry just their counts. Keeps each message to the
+    browser small (the corporate DLP keyword engine reads the whole message), and loads faster."""
+    out = {}
+    for k, v in (data.get("data") or {}).items():
+        if not isinstance(v, dict):
+            continue
+        if k == active:
+            out[k] = {**v, "rows": [{f: x for f, x in r.items() if f != "desc"} for r in v.get("rows", [])]}
+        else:
+            out[k] = {kk: vv for kk, vv in v.items() if kk != "rows"} | {"rows": [], "_lazy": True}
+    return {**data, "data": out}
+
+
 def build_page(page: str, data: dict, regs: list[str], name: str,
                admin_pending: int | None = None, treasury: dict | None = None,
                can_edit: bool = False) -> str:
@@ -1720,6 +1734,22 @@ try {{  // after a data refresh, return to the regulator/tab the user was on
 }} catch (e) {{}}
 document.querySelectorAll('.reg-btn').forEach(b => b.classList.toggle('active', b.dataset.reg === currentReg));
 if (REGULATORS[currentReg]) document.documentElement.style.setProperty('--active-accent', REGULATORS[currentReg].color);
+
+/* ── Tabs are sent one at a time: ask the server for a tab that isn't loaded yet ── */
+const __loadTabInner = loadTab;
+loadTab = async function (force) {{
+  const k = currentReg + '_' + currentTabIdx;
+  const e = ((window.__EMBEDDED_DATA__ || {{}}).data || {{}})[k];
+  if (currentReg !== 'TREASURY' && e && e._lazy) {{
+    try {{ sessionStorage.setItem('__portal_view', JSON.stringify({{reg: currentReg, tab: currentTabIdx}})); }} catch (_) {{}}
+    try {{ setLoading(true); }} catch (_) {{}}
+    try {{
+      const b = window.parent.document.querySelector('.st-key-v_' + k + ' button');
+      if (b) {{ b.click(); return; }}
+    }} catch (_) {{}}
+  }}
+  return __loadTabInner(force);
+}};
 
 /* ── Bootstrap ── */"""
     page = page.replace("/* ── Bootstrap ── */", access_js, 1)
@@ -1817,6 +1847,7 @@ if st.button("Sign out", key="signout"):
 
 refresh_clicked = st.button("Reload", key="reload")
 
+
 if st.button("Admin", key="adminopen"):
     st.session_state.admin_view = True
     st.rerun()
@@ -1858,7 +1889,22 @@ if "TREASURY" in auth["regulators"] and not {"TREASURY", "ALL"} & set(st.session
     can_edit = can_edit_treasury(auth_user(), _users_now)
     treasury_view = with_notes(st.session_state.treasury, treasury_notes())
 
-page = build_page(load_html(), filter_data(st.session_state.data, auth["regulators"]),
+# One hidden button per tab: the portal clicks it to load that tab (only one tab is sent at a time)
+st.markdown('<style>[class*="st-key-v_"]{display:none!important}</style>', unsafe_allow_html=True)
+_skip = st.session_state.get("dlp_skip", [])
+_tab_keys = [k for k in (st.session_state.get("data") or {}).get("data", {})
+             if k.rsplit("_", 1)[0].upper() in auth["regulators"]]
+for _k in _tab_keys:
+    if st.button(_k, key=f"v_{_k}"):
+        st.session_state.view_key = _k
+
+_shown = filter_data(st.session_state.data, auth["regulators"])
+_keys = list((_shown.get("data") or {}).keys())
+_active = st.session_state.get("view_key")
+if _active not in _keys:  # first visit: first tab of the first regulator the portal opens on
+    _first = next((r for r in auth["regulators"] if r != "TREASURY" and f"{r}_0" in _keys), None)
+    _active = f"{_first}_0" if _first else (_keys[0] if _keys else None)
+page = build_page(load_html(), lazy_view(_shown, _active),
                   auth["regulators"], auth["name"], admin_pending, treasury_view, can_edit)
 page += f"\n<!-- load {st.session_state.loads} -->"
 components.html(page, height=1000, scrolling=True)
