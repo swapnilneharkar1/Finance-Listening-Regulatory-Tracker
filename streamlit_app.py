@@ -1646,12 +1646,34 @@ def mask_pan(value, key: str = ""):
     return value
 
 
+def _secret_list(name: str) -> list[str]:
+    try:
+        raw = st.secrets.get(name, "") or ""
+    except FileNotFoundError:
+        raw = ""
+    return [x.strip() for x in re.split(r"[\n;]+", str(raw)) if x.strip() and not x.strip().startswith("#")]
+
+
+# DLP troubleshooting: open the portal with ?skip=TAXATION_6,BSE  (tabs or whole regulators) to load
+# it without those sections, to find which content the corporate DLP objects to. ?skip=ALL loads
+# no regulator data at all. It only hides content for that visit; nothing is changed or saved.
+if st.query_params.get("skip") is not None:
+    st.session_state.dlp_skip = [x.strip().upper() for x in str(st.query_params.get("skip")).split(",") if x.strip()]
+
+
 def filter_data(data: dict, regs: list[str]) -> dict:
-    """Keep only the keys (e.g. 'RBI_0', 'SEBI_3') for allowed regulators."""
+    """Keep only the keys (e.g. 'RBI_0', 'SEBI_3') for allowed regulators, then mask DLP triggers."""
     if not data:
         return {}
+    skip = st.session_state.get("dlp_skip", [])
     keep = {k: v for k, v in data.get("data", {}).items()
-            if k.rsplit("_", 1)[0].upper() in regs}
+            if k.rsplit("_", 1)[0].upper() in regs
+            and "ALL" not in skip and k.upper() not in skip and k.rsplit("_", 1)[0].upper() not in skip}
+    # Items hidden for everyone (Streamlit Secrets -> DLP_HIDE_ITEMS: one title word/phrase per line)
+    hide = [h.lower() for h in _secret_list("DLP_HIDE_ITEMS")]
+    if hide:
+        keep = {k: {**v, "rows": [r for r in v.get("rows", []) if not any(h in str(r.get("title", "")).lower() for h in hide)]}
+                if isinstance(v, dict) else v for k, v in keep.items()}
     return mask_pan({**data, "data": keep})
 
 
@@ -1830,7 +1852,7 @@ if refresh_clicked or "data" not in st.session_state:
 
 treasury_view = None
 can_edit = False
-if "TREASURY" in auth["regulators"]:
+if "TREASURY" in auth["regulators"] and not {"TREASURY", "ALL"} & set(st.session_state.get("dlp_skip", [])):
     if "treasury" not in st.session_state:
         st.session_state.treasury = fetch_treasury()
     can_edit = can_edit_treasury(auth_user(), _users_now)
