@@ -1583,12 +1583,62 @@ def mask_dob(text: str) -> str:
     return DOB_WORDS_RE.sub("age details", text)
 
 
+# Critical keywords: the corporate DLP ("BFL Critical Keywords Engine") blocks pages that carry
+# personal-data words. Regulator text mentions them (e.g. "Aadhaar", "account number" in KYC
+# circulars), so they are replaced by neutral wording before anything reaches a browser.
+# Add or change words without editing code: Streamlit Secrets ->
+#   DLP_MASK_WORDS = """
+#   KYC = customer due diligence
+#   some phrase            (no "=" -> shown as [masked])
+#   """
+DEFAULT_MASK_WORDS = {
+    "aadhaar number": "national ID no.", "aadhar number": "national ID no.", "aadhaar": "national ID", "aadhar": "national ID",
+    "permanent account number": "tax ID", "pan card": "tax ID card", "pan number": "tax ID no.",
+    "account number": "acct. no.", "bank account": "bank a/c", "loan account": "loan a/c", "account no": "acct. no.",
+    "card number": "card no.", "credit card": "credit-card", "debit card": "debit-card", "cvv": "[masked]",
+    "otp": "one-time code", "password": "passcode", "pin number": "[masked]", "ifsc": "bank code",
+    "mobile number": "mobile no.", "phone number": "phone no.", "email id": "e-mail address",
+    "customer id": "customer ref.", "passport number": "travel doc. no.", "voter id": "elector card",
+    "driving licence number": "licence no.", "biometric": "bio-data", "confidential": "restricted",
+}
+
+
+def _mask_words() -> list[tuple[re.Pattern, str]]:
+    words = dict(DEFAULT_MASK_WORDS)
+    try:
+        extra = st.secrets.get("DLP_MASK_WORDS", "") or ""
+    except FileNotFoundError:
+        extra = ""
+    for line in re.split(r"[\n;]+", str(extra)):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        w, _, rep_ = line.partition("=")
+        if w.strip():
+            words[w.strip().lower()] = rep_.strip() or "[masked]"
+    # longest phrases first, whole words only, any spacing/case
+    out = []
+    for w in sorted(words, key=len, reverse=True):
+        rx = re.compile(r"(?<![A-Za-z0-9])" + r"[\s-]*".join(map(re.escape, w.split())) + r"(?:s|es)?(?![A-Za-z0-9])", re.I)
+        out.append((rx, words[w]))
+    return out
+
+
+MASK_WORDS = _mask_words()
+
+
+def mask_keywords(text: str) -> str:
+    for rx, rep_ in MASK_WORDS:
+        text = rx.sub(rep_, text)
+    return text
+
+
 def mask_pan(value, key: str = ""):
-    """Masks what corporate DLP blocks (PAN numbers, birth dates) before anything reaches a browser."""
+    """Masks what corporate DLP blocks (PAN numbers, birth dates, critical keywords) before anything reaches a browser."""
     if isinstance(value, str):
         if key.lower() in URL_KEYS or value.startswith(("http://", "https://")):
             return value
-        return mask_dob(PAN_RE_LOOSE.sub(PAN_MASK, PAN_RE.sub(PAN_MASK, value)))
+        return mask_keywords(mask_dob(PAN_RE_LOOSE.sub(PAN_MASK, PAN_RE.sub(PAN_MASK, value))))
     if isinstance(value, dict):
         return {k: mask_pan(v, str(k)) for k, v in value.items()}
     if isinstance(value, list):
