@@ -164,6 +164,10 @@ module.exports = {
         key: 'NEWSLETTER_0', label: 'Indian Express', cat: 'News',
         rss: 'https://indianexpress.com/section/business/feed/',
         rssHeadlessFallback: true,
+        // indianexpress.com now returns 403 to GitHub's cloud IPs (the feed still opens fine in a
+        // normal browser), so fall back to Google News limited to Indian Express business stories.
+        rssAlt: ['https://news.google.com/rss/search?q=site:indianexpress.com/article/business+when:7d&hl=en-IN&gl=IN&ceid=IN:en'],
+        stripTitleSuffix: /\s+[-–|]\s+The Indian Express\s*$/i,
         src: 'https://indianexpress.com/section/business/banking-and-finance/',
         htmlParse: 'generic', keywordFilter: BANK_NBFC_KEYWORDS, maxAgeDays: 5, fetchDescFromDocument: true
       },
