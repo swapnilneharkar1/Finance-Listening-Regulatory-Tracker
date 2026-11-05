@@ -790,6 +790,18 @@ async function scrapeTab(tab, cat) {
           console.warn(`  Headless RSS retry also failed: ${e2.message}`);
         }
       }
+      // Some sites block GitHub's cloud IPs outright (403 to plain and headless requests alike):
+      // try alternative feeds for the same content, e.g. Google News limited to that site.
+      for (const alt of tab.rssAlt || []) {
+        try {
+          const xml = await fetchWithRetry(alt);
+          let rows = parseRSS(xml, cat, tab.linkFilter, tab.maxRows || DEFAULT_MAX_ROWS);
+          if (tab.stripTitleSuffix) rows = rows.map(r => ({ ...r, title: String(r.title || '').replace(tab.stripTitleSuffix, '').trim() }));
+          if (rows.length) { console.log(`  Alternative feed OK: ${alt}`); return rows; }
+        } catch (e3) {
+          console.warn(`  Alternative feed failed (${alt}): ${e3.message}`);
+        }
+      }
       if (!tab.src) throw e;
       // fall through to HTML parse below
     }
