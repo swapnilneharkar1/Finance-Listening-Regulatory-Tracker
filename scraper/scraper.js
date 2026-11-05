@@ -720,6 +720,34 @@ async function fetchSebiPaginated(url, cat, base, maxPages = 20, maxRows = DEFAU
   return allRows.slice(0, maxRows).map((r, i) => ({ ...r, sr: i + 1 }));
 }
 
+// Alternative feeds (tab.rssAlt) for sites that block GitHub's cloud IPs: returns rows or null
+async function altFeeds(tab, cat) {
+  for (const alt of tab.rssAlt || []) {
+    try {
+      const xml = await fetchWithRetry(alt);
+      let rows = parseRSS(xml, cat, tab.linkFilter, tab.maxRows || DEFAULT_MAX_ROWS);
+      if (tab.stripTitleSuffix) rows = rows.map(r => ({ ...r, title: String(r.title || '').replace(tab.stripTitleSuffix, '').trim() }));
+      if (rows.length) { console.log(`  Alternative feed OK: ${alt}`); return rows; }
+    } catch (e3) {
+      console.warn(`  Alternative feed failed (${alt}): ${e3.message}`);
+    }
+  }
+  return null;
+}
+
+// scrapeTab, then the alternative feeds if the site itself refused (e.g. HTTP 403)
+async function scrapeTabOrAlt(tab, cat) {
+  try {
+    return await scrapeTab(tab, cat);
+  } catch (e) {
+    if (!(tab.rssAlt || []).length) throw e;
+    console.warn(`  ${e.message} — trying alternative feeds...`);
+    const rows = await altFeeds(tab, cat);
+    if (rows) return rows;
+    throw e;
+  }
+}
+
 async function scrapeTab(tab, cat) {
   if (tab.sebiPaginate) {
     try {
@@ -792,16 +820,8 @@ async function scrapeTab(tab, cat) {
       }
       // Some sites block GitHub's cloud IPs outright (403 to plain and headless requests alike):
       // try alternative feeds for the same content, e.g. Google News limited to that site.
-      for (const alt of tab.rssAlt || []) {
-        try {
-          const xml = await fetchWithRetry(alt);
-          let rows = parseRSS(xml, cat, tab.linkFilter, tab.maxRows || DEFAULT_MAX_ROWS);
-          if (tab.stripTitleSuffix) rows = rows.map(r => ({ ...r, title: String(r.title || '').replace(tab.stripTitleSuffix, '').trim() }));
-          if (rows.length) { console.log(`  Alternative feed OK: ${alt}`); return rows; }
-        } catch (e3) {
-          console.warn(`  Alternative feed failed (${alt}): ${e3.message}`);
-        }
-      }
+      const altRows = await altFeeds(tab, cat);
+      if (altRows) return altRows;
       if (!tab.src) throw e;
       // fall through to HTML parse below
     }
@@ -1592,7 +1612,7 @@ async function main() {
     for (const tab of reg.tabs) {
       process.stdout.write(`Scraping ${tab.key} (${tab.label})... `);
       try {
-        let rows = await scrapeTab(tab, tab.cat);
+        let rows = await scrapeTabOrAlt(tab, tab.cat);
         if (tab.keywordFilter || tab.maxAgeDays) {
           const rawCount = rows.length;
           if (tab.keywordFilter) rows = applyKeywordFilter(rows, tab.keywordFilter);
