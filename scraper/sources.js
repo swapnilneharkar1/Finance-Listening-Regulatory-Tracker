@@ -130,7 +130,12 @@ module.exports = {
         key: 'TAXATION_4', label: 'Indirect Tax Notifications', cat: 'Notifications',
         rss: null,
         src: 'https://cbic-gst.gov.in/',
-        htmlParse: 'generic', headless: true, fetchDescFromDocument: true
+        // The CBIC home page has no dated list, so the generic parser found 0 rows: take the
+        // notification / circular / instruction PDF links from its "What's New" blocks instead.
+        htmlParse: 'linklist', headless: true, fetchDescFromDocument: true, maxRows: 40,
+        linkMustInclude: 'pdf/',
+        linkMustExclude: ['Citizens_Charter', 'public-notice-st', 'GST-An-Update', 'ovw-short', 'sectoral-working', 'Guidance-Note', 'letter-trade', 'procedure-locate'],
+        titleMustMatch: /notif|circular|clarif|instruction|seeks to|advisory no|amendment|regulariz|guideline|press release|corrigendum|procedure to be/i
       },
       {
         // Same TaxGuru feed as Law Updates/Direct Tax Case Laws, filtered instead to
@@ -212,7 +217,10 @@ module.exports = {
       // ever revisited.
       {
         key: 'NEWSLETTER_4', label: 'Yahoo Finance', cat: 'News',
-        rss: 'https://finance.yahoo.com/news/rssindex',
+        // news/rssindex was retired by Yahoo (HTTP 404): topstories feed, then Google News for Yahoo Finance
+        rss: 'https://finance.yahoo.com/rss/topstories',
+        rssAlt: ['https://news.google.com/rss/search?q=site:finance.yahoo.com+(bank+OR+banking+OR+lender)+when:7d&hl=en-US&gl=US&ceid=US:en'],
+        stripTitleSuffix: /\s+[-–|]\s+Yahoo Finance\s*$/i,
         src: 'https://finance.yahoo.com/topic/banking/',
         htmlParse: 'generic', keywordFilter: GLOBAL_BANKING_KEYWORDS, maxAgeDays: 5, fetchDescFromDocument: true
       },
@@ -323,8 +331,11 @@ module.exports = {
   },
   PCAOB: {
     tabs: [
-      { key: 'PCAOB_0', label: 'Updates & News', cat: 'News',        rss: null, src: 'https://pcaobus.org/all-updates-and-news-releases', htmlParse: 'generic', headless: true , fetchDescFromDocument: true },
-      { key: 'PCAOB_1', label: 'Enforcement',    cat: 'Enforcement', rss: null, src: 'https://pcaobus.org/all-enforcement-updates', htmlParse: 'generic', headless: true , fetchDescFromDocument: true },
+      // pcaobus.org returns HTTP 403 to GitHub's cloud IPs: fall back to Google News limited to pcaobus.org
+      { key: 'PCAOB_0', label: 'Updates & News', cat: 'News',        rss: null, src: 'https://pcaobus.org/all-updates-and-news-releases', htmlParse: 'generic', headless: true , fetchDescFromDocument: true,
+        rssAlt: ['https://news.google.com/rss/search?q=site:pcaobus.org+when:30d&hl=en-US&gl=US&ceid=US:en'], stripTitleSuffix: /\s+[-–|]\s+(PCAOB|pcaobus\.org)\s*$/i },
+      { key: 'PCAOB_1', label: 'Enforcement',    cat: 'Enforcement', rss: null, src: 'https://pcaobus.org/all-enforcement-updates', htmlParse: 'generic', headless: true , fetchDescFromDocument: true,
+        rssAlt: ['https://news.google.com/rss/search?q=site:pcaobus.org+(enforcement+OR+sanctions+OR+settled+OR+disciplinary)+when:30d&hl=en-US&gl=US&ceid=US:en'], stripTitleSuffix: /\s+[-–|]\s+(PCAOB|pcaobus\.org)\s*$/i },
       { key: 'PCAOB_2', label: 'Inspection Reports', cat: 'Inspection Report', rss: null, src: 'https://pcaobus.org/docs/default-source/generated-reports/inspecton-reports-xml.xml', htmlParse: 'pcaob_xml' , fetchDescFromDocument: true },
     ]
   }
