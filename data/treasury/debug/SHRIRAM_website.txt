@@ -1,7 +1,8 @@
 Pages: https://www.shriramfinance.in/investors/annual-reports
-Links on page: 1051; document-like: 62; kept: 0
+Links on page: 1066; document-like: 68; kept: 1
 
 KEPT:
+FY26  https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Annual-Report-2025-26.pdf
 
 NO YEAR FOUND:
 
@@ -11,12 +12,15 @@ https://cdn.shriramfinance.in/sfl-kalam/files/2026-03/SFL_Consumer-Education-Lit
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Discontinued_DSA_List_Final.pdf | Inactive/Terminated DSAs | LSP ListCo-Lending PartnersRecovery AgenciesSARFAESI ListConsumer EducationInactive/Terminated DSAsResponsible Business Conduct
 https://www.shriramfinance.in/downloads | Downloads | About Us CSRMediaCareersTestimonialsDownloadsReach UsFinancial FAQS
 https://www.shriramfinance.in/downloads | Downloads | CSRMediaCareersTestimonialsDownloadsResources
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Standalone-Sept-26.pdf | Download | Quarterly Results Standalone September 2026Download
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Consolidated-Sept-26.pdf | Download | Quarterly Results Consolidated September 2026Download
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Standalone%20Financial%20Results%20-%20June%202026.pdf | Download | Quarterly Results Standalone June 2026Download
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Consolidated%20Financial%20Results%20-%20June%202026.pdf | Download | Quarterly Results Consolidated June 2026Download
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Standalone-March-2026.pdf | Download | Quarterly Results Standalone March 2026Download
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Consolidated-March-2026.pdf | Download | Quarterly Results Consolidated March 2026Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/AGM-Notice-2026.pdf | Download | AGM NoticeDownload
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Annual-Report-2025-26.pdf | Download | Annual ReportDownload
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/ESOS-Disclosure-31March2026.pdf | Download | ESOS Disclosure – March 31, 2026Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/BRSR-Report-2026.pdf | Download | Business Responsibility & Sustainability ReportDownload
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Financial-Statements-of-Shriram-Overseas-Investments-Limited-%28Subsidiary%29.pdf | Download | Financial Statements of Shriram Overseas Investments Limited (Subsidiary)Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Annual-Report-MGT-7_%20FY25-26.pdf | Download | Annual Return MGT-7Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Public-Advertisement-18062026.pdf | Download | Public Advertisement (18 June 2026)Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Public-Advertisement-13062026.pdf | Download | Public Advertisement (13 June 2026)Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-05/Annual-Secretarial-Compliance-Report-2026.pdf | Download | Annual Secretarial Compliance ReportDownload
 https://www.shriramfinance.in/downloads | Downloads | About UsCSRMediaCareersTestimonialsDownloadsArticlesCredit ScoreFinancial FAQsResource
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Interest%20Rate%20Policy_1.pdf | Interest Rate Policy | Terms and Conditions Privacy PolicySite MapInterest Rate PolicyLoan Recovery PolicyConsumer Education LiteratureInactive/Terminated DSAsReco
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Loan%20Recovery%20Policy.pdf | Loan Recovery Policy | Terms and Conditions Privacy PolicySite MapInterest Rate PolicyLoan Recovery PolicyConsumer Education LiteratureInactive/Terminated DSAsReco
@@ -27,12 +31,15 @@ https://cdn.shriramfinance.in/sfl-fe/assets/images/icons/download.webp |  |
 https://shriramfinance.in/content/dam/shriramfinance/common/pdfs/recovery-agents.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-03/SFL_Consumer-Education-Literature-Mar2026.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Discontinued_DSA_List_Final.pdf |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Standalone-Sept-26.pdf |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Consolidated-Sept-26.pdf |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Standalone%20Financial%20Results%20-%20June%202026.pdf |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Consolidated%20Financial%20Results%20-%20June%202026.pdf |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Standalone-March-2026.pdf |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Consolidated-March-2026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/AGM-Notice-2026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Annual-Report-2025-26.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/ESOS-Disclosure-31March2026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/BRSR-Report-2026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Financial-Statements-of-Shriram-Overseas-Investments-Limited-%28Subsidiary%29.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Annual-Report-MGT-7_%20FY25-26.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Public-Advertisement-18062026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-06/Public-Advertisement-13062026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-05/Annual-Secretarial-Compliance-Report-2026.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Interest%20Rate%20Policy_1.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Loan%20Recovery%20Policy.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-03/SFL_Consumer-Education-Literature-Mar2026.pdf |  | 
@@ -53,15 +60,15 @@ https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Standalone%20F
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Consolidated%20Financial%20Results%20-%20June%202026.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Standalone-March-2026.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Consolidated-March-2026.pdf |  | 
-https://shriramfinance.in/content/dam/shriramfinance/common/pdfs/recovery-agents.pdf\ |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-03/SFL_Consumer-Education-Literature-Mar2026.pdf\ |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Discontinued_DSA_List_Final.pdf\ |  | 
-https://cdn.shriramfinance.in/sfl-kalam/files/2024-10/downloads.svg\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Interest%20Rate%20Policy_1.pdf\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Loan%20Recovery%20Policy.pdf\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-03/SFL_Consumer-Education-Literature-Mar2026.pdf\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Discontinued_DSA_List_Final.pdf\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-11/List%20of%20collection%20agencies%20as%20on%2030.09.2026.pdf\ |  | 
+https://shriramfinance.in/content/dam/shriramfinance/common/pdfs/recovery-agents.pdf\ |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-03/SFL_Consumer-Education-Literature-Mar2026.pdf\ |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Discontinued_DSA_List_Final.pdf\ |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2024-10/downloads.svg\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Standalone-Sept-26.pdf\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Consolidated-Sept-26.pdf\ |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Standalone%20Financial%20Results%20-%20June%202026.pdf\ |  | 
