@@ -1842,6 +1842,11 @@ st.markdown(
       .st-key-signout, .st-key-reload, .st-key-adminopen, .st-key-tpbedit {display: none !important;}
       iframe {display: block; height: __PORTAL_H__ !important; border: 0;}
       [data-testid="stVerticalBlock"] {gap: 0 !important;}
+      /* One scroll bar only: the portal scrolls inside itself, the Streamlit page around it never scrolls */
+      html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"], section.main {
+        overflow: hidden !important;
+      }
+      [data-testid="stMainBlockContainer"], .block-container {padding-bottom: 0 !important;}
     </style>
     """.replace("__PORTAL_H__", PORTAL_H),
     unsafe_allow_html=True,
