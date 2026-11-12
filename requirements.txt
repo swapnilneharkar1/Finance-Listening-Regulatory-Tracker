@@ -1,2 +1,4 @@
-streamlit>=1.36
+# Pinned below 1.68: the portal uses st.components.v1.html, which Streamlit has deprecated
+# (it now logs "Please replace st.components.v1.html") and will remove in a future release.
+streamlit>=1.36,<1.68
 requests>=2.31
