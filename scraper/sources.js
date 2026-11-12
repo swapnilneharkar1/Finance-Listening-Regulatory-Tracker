@@ -171,7 +171,10 @@ module.exports = {
         rssHeadlessFallback: true,
         // indianexpress.com now returns 403 to GitHub's cloud IPs (the feed still opens fine in a
         // normal browser), so fall back to Google News limited to Indian Express business stories.
-        rssAlt: ['https://news.google.com/rss/search?q=site:indianexpress.com/article/business+when:7d&hl=en-IN&gl=IN&ceid=IN:en'],
+        // Two searches: banking/finance stories first (the business section alone is mostly
+        // non-banking news, so few items pass the keyword filter), then the whole business section.
+        rssAlt: ['https://news.google.com/rss/search?q=site:indianexpress.com+(bank+OR+banks+OR+NBFC+OR+RBI+OR+lender+OR+loan+OR+%22microfinance%22+OR+%22housing+finance%22)+when:5d&hl=en-IN&gl=IN&ceid=IN:en',
+                 'https://news.google.com/rss/search?q=site:indianexpress.com/article/business+when:7d&hl=en-IN&gl=IN&ceid=IN:en'],
         stripTitleSuffix: /\s+[-–|]\s+The Indian Express\s*$/i,
         src: 'https://indianexpress.com/section/business/banking-and-finance/',
         htmlParse: 'generic', keywordFilter: BANK_NBFC_KEYWORDS, maxAgeDays: 5, fetchDescFromDocument: true
