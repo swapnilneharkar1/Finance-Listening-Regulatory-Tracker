@@ -1325,7 +1325,9 @@
           "title": "Income Tax | Safe Harbour Rules 2026 &#038; Transfer Pricing for Indian Subsidiaries of Foreign Parents",
           "desc": "Income-tax Rules 2026 safe harbour: 15.5% IT margin, ₹2,000 crore threshold, Form 49, data centres, APAs and transfer pricing compliance.The post Safe Harbour Rules 2026 &#038; Transfer Pricing for In",
           "link": "https://taxguru.in/income-tax/safe-harbour-rules-2026-transfer-pricing-indian-subsidiaries-foreign-parents.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document signals a 2026 update to India’s income-tax safe harbour framework and transfer-pricing compliance for Indian subsidiaries of foreign parent companies. The headline changes are a safe harbour profit margin of **15.5%**, a **₹2,000 crore** threshold, and a requirement to use **Form 49**; it also specifically mentions **data centres** as an activity covered by the update. For compliance teams, this indicates that qualifying entities may be able to rely on the safe harbour margin instead of engaging in a full arm’s-length transfer-pricing dispute process, but only if they fit within the prescribed threshold and filing requirements. The document also references **APAs (Advance Pricing Agreements)**, so it appears to address the interaction between the revised safe harbour rules and broader transfer-pricing compliance options available to affected Indian subsidiaries of foreign parents. Because the provided text is truncated, no further operative deadlines, transition dates, or detailed procedural steps are visible beyond these core rule changes.",
+          "summarySource": "desc"
         },
         {
           "sr": 43,
@@ -1335,7 +1337,9 @@
           "title": "Goods and Services Tax | Tax on Foreign Companies Selling Services to Indian Customers: Business Profits, FTS, PE and GST",
           "desc": "Tax guide for foreign companies serving Indian clients: FTS, DTAA, PE, Section 393(2) TDS, Forms 145/146, GST reverse charge and OIDAR.The post Tax on Foreign Companies Selling Services to Indian Cust",
           "link": "https://taxguru.in/goods-and-service-tax/tax-foreign-companies-selling-services-indian-customers-business-profits-fts-pe-gst.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a tax/compliance guide for **foreign companies providing services to Indian customers**, explaining the Indian tax issues that may arise and the decision points a compliance team must evaluate. It focuses on whether income is characterized as **business profits** or **fees for technical services (FTS)**, whether a **permanent establishment (PE)** exists in India under an applicable **DTAA**, and how those determinations affect Indian tax exposure and withholding obligations. It also references **Section 393(2) TDS** and the need to consider **Forms 145/146**, indicating that foreign-service arrangements may trigger Indian tax reporting or withholding filings depending on the structure of the payment and the recipient’s status.\n\nOn the indirect tax side, the guide addresses **GST reverse charge** and **OIDAR** (online information and database access or retrieval) services, which can bring foreign service providers into Indian GST compliance even if they have no physical presence in India. The practical implication is that foreign companies selling services into India must assess not only income-tax nexus and treaty relief, but also whether the Indian customer or the foreign supplier bears the GST burden through reverse charge or direct registration/collection rules for OIDAR. The document’s main compliance message is that the tax treatment depends on the **nature of the service, the presence or absence of a PE, treaty protection under the DTAA, and the GST characterization of the supply**, so businesses should review each Indian client engagement before invoicing or contracting. No specific effective date, deadline, rate, or threshold is stated in the excerpt provided.",
+          "summarySource": "desc"
         },
         {
           "sr": 44,
@@ -1357,7 +1361,9 @@
           "title": "Goods and Services Tax | How to Download Your GST Registration Certificate (REG-06) Yourself: Step-by-Step Guide",
           "desc": "Download GST certificate REG-06 from gst.gov.in. Learn login steps, first-time access, amended certificates and GSTIN verification without login.The post How to Download Your GST Registration Certific",
           "link": "https://taxguru.in/goods-and-service-tax/download-gst-registration-certificate-reg-06-step-step-guide.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is a practical guide explaining how GST-registered businesses in India can download their GST registration certificate (Form REG-06) directly from the GST portal at gst.gov.in. It does not announce a regulatory change or a new compliance requirement; rather, it instructs registered taxpayers how to retrieve their existing certificate, including the steps for first-time portal access, downloading an amended certificate when registration details change, and verifying a GSTIN without logging in. The material is relevant to any GST registrant that needs to produce proof of registration for internal records, banking, vendor onboarding, audits, or regulatory requests.\n\nThe guide implies that the certificate can be accessed only through the official GST portal using the registered login credentials, and that users who have not yet logged in before must complete first-time access steps before they can download the document. It also notes that if the registration has been amended, the taxpayer should download the updated/modified REG-06 rather than relying on an older copy, so compliance teams should ensure the latest certificate version is on file whenever registration particulars change. No deadlines, filing dates, tax rates, monetary thresholds, or penalty provisions are stated in the provided content.",
+          "summarySource": "desc"
         },
         {
           "sr": 46,
@@ -1367,7 +1373,9 @@
           "title": "Fema / RBI | Indian Partnership Firms Investing in UAE Companies: FEMA and ODI Compliance Guide",
           "desc": "FEMA ODI guide for Indian partnership firms investing in UAE companies: eligibility, 400% net-worth cap, Form FC, UIN, APR, tax and reporting.The post Indian Partnership Firms Investing in UAE Compani",
           "link": "https://taxguru.in/rbi/indian-partnership-firms-investing-uae-companies-fema-odi-compliance-guide.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a compliance guide for Indian partnership firms that want to invest in companies in the UAE under India’s FEMA overseas investment framework, and it explains that such investments are permitted only if the firm and transaction meet FEMA/ODI conditions. The key substantive requirement highlighted is the **400% net-worth cap**, meaning the partnership firm’s overseas direct investment exposure is limited to **up to four times its net worth**; compliance teams should verify this limit before any commitment, remittance, or downstream obligation is undertaken. The guide also indicates that firms must complete the required FEMA reporting workflow, including filing **Form FC** to report the overseas investment and obtaining a **UIN (Unique Identification Number)** for the foreign investment, which is part of the regulatory tracking of the transaction.\n\nThe document further states that ongoing compliance does not end at the initial filing: the investment must be reflected in continuing reporting, including the **APR (Annual Performance Report)**, which is required for periodic disclosure of the overseas entity’s performance and status. In addition to FEMA filing obligations, the guide flags **tax and reporting** considerations, so the compliance team should coordinate with tax and finance functions to ensure the investment is structured and reported consistently across regulatory and tax records. No specific effective date, filing deadline, or rate other than the **400% net-worth ceiling** is stated in the provided text, but the practical compliance takeaway is that eligibility, investment sizing, initial FEMA reporting, UIN allocation, and continuing annual reporting all need to be satisfied before and after investing in a UAE company.",
+          "summarySource": "desc"
         },
         {
           "sr": 47,
@@ -1377,7 +1385,9 @@
           "title": "Finance | Digital Payment Fraud: Bank Liability and Victim Recovery in India, UK and Singapore",
           "desc": "Compare digital payment fraud remedies in India, UK and Singapore, including RBI rules, APP reimbursement, bank liability and victim compensation.The post Digital Payment Fraud: Bank Liability and Vic",
           "link": "https://taxguru.in/finance/digital-payment-fraud-bank-liability-victim-recovery-india-uk-singapore.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a comparative briefing on how India, the UK, and Singapore allocate liability and victim remedies for digital payment fraud, with a focus on when banks or payment providers must reimburse customers and what procedural protections apply. It appears to be aimed at identifying the practical recovery routes after fraud involving authorized or unauthorized digital payments, rather than announcing a single new rule change. The core compliance takeaway is that the three jurisdictions use different liability models: India is more prescriptive through Reserve Bank of India (RBI) rules, the UK has an authorized push payment (APP) reimbursement framework, and Singapore generally relies on its own banking and customer-protection allocation rules rather than a uniform mandatory APP reimbursement regime.\n\nFor India, the relevant compliance issue is the RBI framework governing customer liability for unauthorized electronic transactions, which typically turns on how quickly the customer reports the fraud and whether the loss arose from bank/system failure or customer negligence. The document indicates that banks may be required to provide prompt reversal or compensation in certain cases, especially where the customer’s loss is not attributable to the customer’s own fault, and that timing of complaint/reporting is critical to preserving zero-liability or limited-liability treatment. For a compliance team, this means internal fraud-report handling, complaint escalation, and reimbursement workflows must be tightly aligned with RBI timelines and customer-notice requirements.\n\nFor the UK, the focus is on APP fraud, where the customer is induced to send money to a fraudster through a real-time or other push payment. The material indicates that the UK has moved toward a stronger reimbursement model for victims of APP fraud, with banks/payment service providers bearing reimbursement responsibility under defined conditions, and that the regime is intended to improve victim recovery even where the payment was “authorized” by the customer in form but induced by fraud. Compliance teams should therefore treat APP fraud claims as a distinct category from unauthorized card or account fraud, with separate intake, investigation, and reimbursement obligations.\n\nFor Singapore, the document suggests that victim recovery is more limited and depends more heavily on the facts, account terms, and whether the payment was unauthorized or whether the customer was tricked into authorizing it. The compliance implication is that Singapore-facing institutions should ensure strong customer authentication, scam-detection controls, and clear incident-report channels, because the customer’s ability to recover may hinge on prompt reporting and evidence of unauthorized access or system compromise. Overall, the document is a jurisdictional comparison for financial institutions and compliance teams to map differing reimbursement and liability rules for digital payment fraud, with the practical need to align fraud response procedures to local law in each market.",
+          "summarySource": "desc"
         },
         {
           "sr": 48,
@@ -1387,7 +1397,9 @@
           "title": "Corporate Law | SARFAESI Auction Upheld: Agricultural Revenue Entry Not Conclusive",
           "desc": "The post SARFAESI Auction Upheld: Agricultural Revenue Entry Not Conclusive appeared first on TaxGuru.",
           "link": "https://taxguru.in/corporate-law/sarfaesi-auction-upheld-agricultural-revenue-entry-not-conclusive.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document provided does not contain the actual regulatory or financial text—only the title and a note that the post appeared on TaxGuru. Based on the title alone, it appears to concern a legal ruling under the SARFAESI framework confirming that an auction conducted under SARFAESI can still be upheld even if land revenue records show the property as agricultural, because that revenue entry is not conclusive on the legal character or saleability of the property.  \n\nFor a corporate compliance team, the likely practical point is that lenders, auction purchasers, and asset enforcement teams should not rely solely on agricultural classification entries in revenue records when assessing SARFAESI enforcement risk or validity of an auction; instead, they should verify the underlying legal status of the asset, its use, and any applicable restrictions under land and enforcement laws. However, because the underlying article text is not included, I cannot confirm the court, facts, holding, dates, thresholds, or any specific compliance steps beyond this high-level inference from the title.  \n\nIf you paste the full article or order text, I can produce a precise compliance summary with the actual ruling, parties affected, legal reasoning, and any operational requirements.",
+          "summarySource": "desc"
         },
         {
           "sr": 49,
@@ -1409,7 +1421,9 @@
           "title": "Income Tax | AO’s Failure to Follow DRP Directions Invalidates Assessment: Delhi HC",
           "desc": "The post AO’s Failure to Follow DRP Directions Invalidates Assessment: Delhi HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/aos-failure-follow-drp-directions-invalidates-assessment-delhi-hc.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The only substantive content provided is the headline, which indicates that the Delhi High Court held an assessment to be invalid where the Assessing Officer (AO) failed to follow the directions issued by the Dispute Resolution Panel (DRP). For compliance purposes, the key takeaway is procedural: if a case is routed through the DRP process, the AO must implement the DRP’s directions as required, and an assessment made in disregard of those directions may be legally unsustainable.\n\nNo further facts are provided in the document excerpt about the underlying taxpayer, tax year, adjustment amounts, deadlines, or specific DRP directions, so those details cannot be summarized from the text given. Based on the title alone, the decision matters mainly for income tax litigation and assessment administration in DRP matters, reinforcing that DRP directions are not optional and that noncompliance by the AO can invalidate the assessment order.",
+          "summarySource": "desc"
         },
         {
           "sr": 51,
@@ -1419,7 +1433,9 @@
           "title": "Corporate Law | IBC and Real Estate Homebuyers: Are they truly Protected?",
           "desc": "Are homebuyers truly protected under IBC? Examine financial creditor rights, CIRP thresholds, CoC voting, liquidation and conflicts with RERA.The post IBC and Real Estate Homebuyers: Are they truly Pr",
           "link": "https://taxguru.in/corporate-law/ibc-real-estate-homebuyers-protected.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document appears to be a high-level discussion of how India’s Insolvency and Bankruptcy Code (IBC) treats real estate homebuyers, rather than a formal regulatory amendment or operative circular. Its focus is on whether homebuyers are genuinely protected when a real estate developer enters the Corporate Insolvency Resolution Process (CIRP), with emphasis on the legal classification of homebuyers as “financial creditors” under the IBC and the practical implications of that status.\n\nThe main compliance-relevant issue is that homebuyers are recognized as financial creditors, which gives them rights to participate in the insolvency process through the Committee of Creditors (CoC). That status affects how voting works in CIRP, including the threshold rules that determine whether a resolution plan can be approved, and it also affects what happens if the company goes into liquidation. The document also signals tension between the IBC framework and the Real Estate (Regulation and Development) Act, or RERA, suggesting that compliance teams in real estate and insolvency contexts need to consider overlapping obligations and conflicts between the two regimes when managing project defaults, creditor claims, and recovery strategy.\n\nBecause the provided content is only a partial title/summary and not the full article, there are no specific amendment dates, numerical voting thresholds, procedural deadlines, or new filing requirements stated in the text excerpt itself. The substantive takeaway is that real estate companies, insolvency professionals, and developers should assume homebuyers have creditor rights that can materially influence CIRP outcomes, and they should evaluate insolvency-related exposures together with RERA obligations rather than treating them as separate, non-overlapping regimes.",
+          "summarySource": "desc"
         },
         {
           "sr": 52,
@@ -1429,7 +1445,9 @@
           "title": "Income Tax | Impact of Income Tax on Middle-Class Families in India: A Critical Study",
           "desc": "Study of income tax on middle-class families, Budget 2025 relief, Section 156 rebate, old vs new regime, savings, equity and tax reforms.The post Impact of Income Tax on Middle-Class Families in India",
           "link": "https://taxguru.in/income-tax/impact-income-tax-middle-class-families-india-critical-study.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a short study topic rather than a regulatory notice or binding financial rule, so it does not announce any new legal obligation, deadline, filing requirement, or enforcement action. Its focus is on the impact of India’s income tax structure on middle-class families, with particular attention to Budget 2025 relief measures, the Section 156 rebate, comparisons between the old and new tax regimes, potential savings, and broader tax/equity reform themes. Because the provided content is only a title/summary line, it does not specify the actual amount of the relief, the eligibility thresholds, the exact rebate mechanics under Section 156, or any implementation date or compliance procedure. For a corporate compliance team, the only defensible takeaway is that the document appears to be analytical commentary on personal income tax policy and its effect on individuals, not an operative directive affecting corporate compliance obligations.",
+          "summarySource": "desc"
         },
         {
           "sr": 53,
@@ -1439,7 +1457,9 @@
           "title": "Corporate Law | PF and ESIC Registration: Applicability and Compliance",
           "desc": "PF and ESIC registration guide 2026: employee limits, ₹25,000 PF ceiling, ESI eligibility, contribution rates, deadlines and monthly compliance.The post PF and ESIC Registration: Applicability and Com",
           "link": "https://taxguru.in/corporate-law/pf-esic-registration-applicability-compliance.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is a compliance guide for 2026 covering when an employer must register for and comply with Provident Fund (PF) and Employees’ State Insurance Corporation (ESIC/ESI) requirements in India. It states that PF registration becomes applicable once an establishment crosses the statutory employee threshold, and it highlights a PF wage ceiling of ₹25,000, meaning PF coverage/contribution treatment depends on employee wage level as well as headcount. It also explains ESI eligibility, which is tied to employee coverage rules and wage limits under the ESI framework, and notes the applicable contribution rates for both employer and employee.  \n\nThe guide also emphasizes ongoing monthly compliance obligations after registration, including making contributions on time and filing the required returns/declarations within the prescribed deadlines. For a corporate compliance team, the key takeaway is that applicability is not only about whether the company is registered, but also whether the business continues to monitor employee count and salary levels to determine which employees must be covered under PF and/or ESI. Any organization that is hiring or expanding should use the thresholds and wage ceilings in the guide to decide when registration is mandatory and to ensure monthly contribution and filing timelines are met to avoid penalties or non-compliance.",
+          "summarySource": "desc"
         },
         {
           "sr": 54,
@@ -1449,7 +1469,9 @@
           "title": "Income Tax | ITAT Chennai Dismisses Revenue Appeal Below ₹60 Lakh Tax Effect in AY 2017-18",
           "desc": "The post ITAT Chennai Dismisses Revenue Appeal Below ₹60 Lakh Tax Effect in AY 2017-18 appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/itat-chennai-dismisses-revenue-appeal-rs-60-lakh-tax-effect-ay-2017-18.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is not a substantive regulatory update; it is a brief article title indicating that the ITAT Chennai dismissed a Revenue appeal in Assessment Year 2017-18 because the tax effect was below ₹60 lakh. For compliance purposes, the key point is the appellate threshold: the Revenue’s appeal was not pursued where the disputed tax impact did not meet the ₹60 lakh limit, consistent with the litigation-management policy used to restrict low-value tax appeals. No new tax rate, filing obligation, or operational compliance requirement is announced in the text itself, and there is no indication of a change to underlying income tax law or procedure beyond the application of this monetary threshold in the cited case.",
+          "summarySource": "desc"
         },
         {
           "sr": 55,
@@ -1459,7 +1481,9 @@
           "title": "Corporate Law | Gauhati HC Stays CIRP After Objections to Section 8 Demand Notice",
           "desc": "The post Gauhati HC Stays CIRP After Objections to Section 8 Demand Notice appeared first on TaxGuru.",
           "link": "https://taxguru.in/corporate-law/gauhati-high-court-stays-cirp-objections-section-8-demand-notice.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided text is only a headline and does not contain the underlying regulatory or financial details needed for a substantive compliance summary. It indicates that the Gauhati High Court stayed a Corporate Insolvency Resolution Process (CIRP) in connection with objections raised to a Section 8 demand notice, but it does not state the facts of the case, the legal reasoning, the parties involved, the dates, any thresholds or deadlines, or any compliance requirements arising from the decision. Because no body text is provided, there are no actionable obligations, procedural changes, or entity-specific impacts that can be reliably summarized. If you share the full article or order text, I can produce a complete compliance-focused summary with the specific requirements, timing, and affected entities.",
+          "summarySource": "desc"
         },
         {
           "sr": 56,
@@ -1469,7 +1493,9 @@
           "title": "Business | Kalyani Strategic Systems unveils 120mm R.A.M.S for enhanced defence capabilities",
           "desc": "Read the Bharat Forge Limited announcement filed with the NSE, with the key figures and what it means for shareholders.The post Kalyani Strategic Systems unveils 120mm R.A.M.S for enhanced defence cap",
           "link": "https://taxguru.in/finance/business/kalyani-strategic-systems-unveils-120mm-r-a-m-s-for-enhanced-defence-capabilities.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is a market announcement from Bharat Forge Limited reporting that its subsidiary/associated defence business, Kalyani Strategic Systems, has unveiled a 120mm R.A.M.S. (presumably a mortar/mounted weapon system) intended to enhance defence capabilities. Based on the text provided, this is primarily a corporate/operational disclosure rather than a new regulatory rule or compliance obligation: it announces a product capability update, not a legal requirement, filing deadline, penalty, or threshold change. The only clear compliance relevance is that the announcement was filed with the NSE, indicating a listed-company disclosure event that shareholders and the market should note as potentially material to the defence segment’s business prospects.\n\nNo specific statutory obligations, effective dates, rates, numerical thresholds, or prescribed procedures are stated in the excerpt. There is also no indication of a direct impact on external counterparties beyond the general implication that the company is expanding or demonstrating defence-product capabilities. For a compliance team, the main takeaway is to confirm that the disclosure was made through the appropriate exchange channel and to assess whether any further continuous disclosure, export-control, defence procurement, or product-approval obligations arise from the underlying weapon-system development or commercialization, though none are spelled out in the provided text.",
+          "summarySource": "desc"
         },
         {
           "sr": 57,
@@ -1491,7 +1517,9 @@
           "title": "Business | Lupin launches biosimilar Ranibizumab in Europe, excluding Germany",
           "desc": "Read the Lupin Limited announcement filed with the NSE, with the key figures and what it means for shareholders.The post Lupin launches biosimilar Ranibizumab in Europe, excluding Germany appeared fir",
           "link": "https://taxguru.in/finance/business/lupin-launches-biosimilar-ranibizumab-in-europe-excluding-germany.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "Lupin Limited announced that it has launched a biosimilar version of ranibizumab in Europe, but the launch explicitly excludes Germany. For a compliance team, the key point is that the company is entering the European market with this biosimilar product, which means the product must be sold and promoted in line with applicable European pharmaceutical, biosimilar, marketing, pharmacovigilance, and country-specific regulatory requirements in the markets where it is being commercialized. The announcement does not provide any pricing, revenue, volume, approval date, or implementation deadline, and it does not state any new reporting obligation or specific compliance filing requirement beyond the fact of the launch itself. The exclusion of Germany is material because it means the launch does not extend into that jurisdiction, so any distribution, promotion, or regulatory activity must be limited to the rest of Europe where authorization and local market access conditions permit.",
+          "summarySource": "desc"
         },
         {
           "sr": 59,
@@ -1501,7 +1529,9 @@
           "title": "Fema / RBI | RBI FAQs on All you wanted to know about NBFCs &#124; 11 November 2026 Update",
           "desc": "The issue concerns regulatory burden on smaller NBFCs without systemic risk exposure. The RBI introduced exemption for such entities under “Unregistered Type I NBFCs.” The key takeaway is that low-ris",
           "link": "https://taxguru.in/rbi/rbi-faqs-wanted-nbfcs-11-november-2026-update.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document describes an RBI update addressing the regulatory burden on smaller NBFCs that do not pose systemic risk, by introducing an exemption category called “Unregistered Type I NBFCs.” The key change is that certain low-risk, small-scale NBFCs are being carved out of the more intensive registration and compliance regime, with the policy intent of reducing unnecessary regulatory burden where systemic exposure is limited. Compliance teams should note that this is not a broad relaxation for all NBFCs: the exemption applies only to the specifically defined small, non-systemically important entities that fit the RBI’s “Unregistered Type I NBFC” criteria.\n\nBecause the provided content is truncated, it does not include the operational details a compliance officer would normally need, such as the exact eligibility thresholds, minimum asset sizes, registration requirements being waived, any filing or reporting obligations that remain, or the effective date and transition period. Based on what is visible, the practical implication is that firms should assess whether any group entities or business lines fall within the low-risk/small NBFC profile and whether they can rely on the exemption rather than continuing under the full NBFC compliance framework. Further review of the underlying RBI FAQ/update would be necessary before making any control, reporting, or registration decisions.",
+          "summarySource": "desc"
         },
         {
           "sr": 60,
@@ -1511,7 +1541,9 @@
           "title": "Business | Adani’s Kutch Copper and Codelco Sign MoU for Chilean Copper Project Exploration",
           "desc": "Read the Adani Enterprises Limited announcement filed with the NSE, with the key figures and what it means for shareholders.The post Adani’s Kutch Copper and Codelco Sign MoU for Chilean Copper Projec",
           "link": "https://taxguru.in/finance/business/adanis-kutch-copper-and-codelco-sign-mou-for-chilean-copper-project-exploration.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "Adani Enterprises Limited announced that its subsidiary Kutch Copper Limited has signed a memorandum of understanding with Chile’s state-owned copper company Codelco to explore a copper project in Chile. For a compliance team, the key point is that this is an exploratory, non-final strategic arrangement rather than a disclosed binding operating or financing obligation, so the immediate compliance focus is on monitoring any future definitive agreements, regulatory approvals, cross-border transactional filings, and disclosure obligations that may arise if the parties move beyond the MoU stage.\n\nThe announcement, as provided, does not include material operational terms such as project scope, ownership percentages, investment amounts, deadlines, termination rights, sanctions/export-control issues, or specific regulatory conditions, so none of those compliance triggers can be confirmed from this text alone. There are also no stated changes to existing reporting obligations, no effective date for a new rule, and no quantified thresholds or rates to track in the announcement excerpt. From a shareholder-disclosure perspective, the document appears aimed at informing the market that Adani is expanding copper-related strategic engagement internationally, which may be relevant for monitoring potential future capital commitments, related-party considerations if any arise, and the company’s exposure to foreign mining, environmental, and permitting regimes once more details are published.",
+          "summarySource": "desc"
         },
         {
           "sr": 61,
@@ -1533,7 +1565,9 @@
           "title": "Company Law | NCLT Bengaluru Approves Demerger Despite Regulatory Objections After Companies Furnish Undertakings",
           "desc": "The post NCLT Bengaluru Approves Demerger Despite Regulatory Objections After Companies Furnish Undertakings appeared first on TaxGuru.",
           "link": "https://taxguru.in/company-law/nclt-bengaluru-approves-demerger-regulatory-objections-companies-furnish-undertakings.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided content does not contain the underlying regulatory or financial details of the NCLT Bengaluru decision; it only states that the article “NCLT Bengaluru Approves Demerger Despite Regulatory Objections After Companies Furnish Undertakings” appeared on TaxGuru. Because no case facts, dates, undertakings, objections, order terms, thresholds, or compliance directions are included in the text you supplied, there is no substantive document content to summarize for a corporate compliance team.\n\nIf you share the full article or the NCLT order text, I can produce a complete compliance-focused summary covering: the parties involved, the nature of the demerger, the specific regulatory objections raised, what undertakings were furnished, any conditions attached to approval, deadlines, and any ongoing reporting or compliance obligations.",
+          "summarySource": "desc"
         },
         {
           "sr": 63,
@@ -1567,7 +1601,9 @@
           "title": "Business | Tata Power reports record quarterly profit driven by robust growth across sectors",
           "desc": "Read the Tata Power Company Limited announcement filed with the NSE, with the key figures and what it means for shareholders.The post Tata Power reports record quarterly profit driven by robust growth",
           "link": "https://taxguru.in/finance/business/tata-power-reports-record-quarterly-profit-driven-by-robust-growth-across-sectors.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is not a regulatory rule or compliance directive; it is a company announcement summarizing Tata Power Company Limited’s quarterly financial results filed with the NSE. It says Tata Power reported a record quarterly profit, attributing the performance to robust growth across its business sectors, and indicates that the filing is intended to inform shareholders and the market about the company’s latest results. No new legal, regulatory, or procedural obligations are imposed on compliance teams in the text provided, and there are no stated effective dates, deadlines, thresholds, or required actions for regulated entities.\n\nFor a corporate compliance team, the main takeaway is that this is a market disclosure/earnings announcement rather than a change in compliance requirements. If your role includes disclosure controls, investor communications, or insider-information handling, the relevance is that the announcement was made through the NSE and therefore should be treated as a public material disclosure for internal records and any related disclosure governance processes. However, the excerpt provided does not contain the actual financial figures, segment numbers, or detailed operational metrics beyond the statement that profit was a record and growth was robust across sectors.",
+          "summarySource": "desc"
         },
         {
           "sr": 66,
@@ -1625,7 +1661,9 @@
           "title": "Business | Adani&#8217;s Kutch Copper Achieves India&#8217;s First &#8216;Copper Mark&#8217; Certification",
           "desc": "Read the Adani Enterprises Limited announcement filed with the NSE, with the key figures and what it means for shareholders.The post Adani&#8217;s Kutch Copper Achieves India&#8217;s First &#8216;Copp",
           "link": "https://taxguru.in/finance/business/adanis-kutch-copper-achieves-indias-first-copper-mark-certification.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is not a regulatory rule, filing requirement, or compliance obligation notice; it is a corporate announcement about a sustainability/quality certification milestone. Adani Enterprises Limited states that its Kutch Copper facility has become the first copper plant in India to receive the “Copper Mark” certification, which is an industry recognition tied to responsible production and sustainability standards in the copper sector.\n\nFor a compliance team, the main takeaway is that this is an achievement notice rather than a directive: the document does not impose new legal duties, thresholds, deadlines, reporting requirements, or procedural changes on third parties. It does indicate that the certified operation is Adani’s Kutch Copper facility, and that the certification is presented as evidence of compliance with recognized responsible sourcing and production practices. There are no effective dates, filing deadlines, monetary amounts, or mandatory actions stated in the provided text.\n\nIf your team is assessing corporate disclosures, the relevant point is that Adani is publicly signaling a sustainability credential that may be material to investor communications, ESG claims, and counterparties’ due diligence. But based on the text provided, there is no direct regulatory requirement to implement or track beyond understanding that the announcement concerns a certification status, not a change in law or regulated compliance framework.",
+          "summarySource": "desc"
         },
         {
           "sr": 71,
@@ -1635,7 +1673,9 @@
           "title": "Income Tax | CEO Salary Paid by Foreign Head Office Deductible: ITAT Mumbai",
           "desc": "The post CEO Salary Paid by Foreign Head Office Deductible: ITAT Mumbai appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/ceo-salary-paid-foreign-head-office-deductible-itat-mumbai.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document does not contain the underlying regulatory or tax ruling text; it only provides the headline “CEO Salary Paid by Foreign Head Office Deductible: ITAT Mumbai” and the note that the post appeared on TaxGuru. Based on that limited information alone, the only clear takeaway is that it appears to concern an income-tax issue decided by the Mumbai Income Tax Appellate Tribunal (ITAT) involving whether a CEO’s salary paid by a foreign head office is deductible for Indian tax purposes. No facts, holding, monetary thresholds, effective date, compliance deadlines, or procedural requirements are provided in the content supplied, so a compliance team should not rely on this excerpt for operational action or filing changes. If you want, I can help summarize the actual ruling if you provide the full article or order text.",
+          "summarySource": "desc"
         },
         {
           "sr": 72,
@@ -1645,7 +1685,9 @@
           "title": "Goods and Services Tax | GST Appeal Limitation Must Be Calculated in Calendar Months, Not 120 Days: Bombay HC",
           "desc": "The post GST Appeal Limitation Must Be Calculated in Calendar Months, Not 120 Days: Bombay HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/goods-and-service-tax/gst-appeal-limitation-calculated-calendar-months-not-120-days-bombay-hc.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is not a substantive regulatory notice itself; it is a TaxGuru post titled **“GST Appeal Limitation Must Be Calculated in Calendar Months, Not 120 Days: Bombay HC.”** Based on the title alone, the key legal point is that the **Bombay High Court has held that the time limit for filing a GST appeal must be computed in calendar months, not as 120 days**. For compliance purposes, that means businesses and tax teams should **not convert the appellate filing deadline into a flat 120-day period** when calculating timeliness under the GST appeal framework.\n\nThis appears to affect **GST assessees/registered persons and their advisors** who are considering filing appeals against GST orders or decisions before the appellate authority or court. The practical compliance implication is that appeal deadlines should be tracked by **month-based statutory computation**, which can materially change the last permissible filing date compared with a day-count method. If an organization is managing contested GST matters, its internal tax litigation procedures should be checked to ensure appeal calendars and deadline tracking systems reflect **calendar-month computation** rather than a 120-day assumption.\n\nBecause the content provided is only the headline and not the underlying judgment text, the document does **not** supply the exact statutory provision interpreted, the precise filing period in question, or any additional procedural requirements, thresholds, or exceptions. Still, the compliance takeaway is clear: **appeal limitation under the relevant GST provision should be calculated using calendar months**, and teams should verify pending and future GST appeals accordingly to avoid dismissal as time-barred.",
+          "summarySource": "desc"
         },
         {
           "sr": 73,
@@ -1655,7 +1697,9 @@
           "title": "Corporate Law | GST Paid Under Wrong Tax Head Can Be Transferred to IGST: Bombay HC",
           "desc": "The post GST Paid Under Wrong Tax Head Can Be Transferred to IGST: Bombay HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/corporate-law/gst-paid-wrong-tax-head-transferred-igst-bombay-hc.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is not a regulatory notice or financial rule change itself; it is a brief article headline indicating that the Bombay High Court has held that GST paid under the wrong tax head can be transferred to IGST. Based on the provided content, the only concrete substance is that a tax payment mistakenly made under an incorrect GST head may be reclassified or shifted to the Integrated GST (IGST) head, which is relevant for taxpayers who have paid GST to the wrong ledger or under the wrong tax category. No effective date, compliance deadline, threshold, procedural steps, or affected entity scope is provided in the text, and the document does not state the conditions, limitations, or administrative process for making such a transfer. For a compliance team, the takeaway is that there may be legal support for seeking correction of wrong-head GST payments to IGST, but the actual implementation requirements, filing method, and whether this applies universally or only to the parties in the case are not contained in the supplied document.",
+          "summarySource": "desc"
         },
         {
           "sr": 74,
@@ -1665,7 +1709,9 @@
           "title": "Income Tax | ITAT Bangalore Excludes High-Brand Companies from Transfer Pricing Comparables",
           "desc": "The post ITAT Bangalore Excludes High-Brand Companies from Transfer Pricing Comparables appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/itat-bangalore-excludes-high-brand-companies-transfer-pricing-comparables.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document does not contain the actual regulatory or financial substance; it only provides a headline stating that the ITAT Bangalore excluded “high-brand companies” from transfer pricing comparables. There is no accompanying text explaining the facts of the case, the legal reasoning, the affected taxpayer profile, the industries involved, the specific companies excluded, or whether the ruling creates or changes any compliance obligations. No effective date, filing deadline, rate, threshold, or procedural requirement is given in the supplied content.\n\nFor a corporate compliance team, the only safe takeaway is that the headline suggests a transfer pricing case in which brand value was considered a disqualifying factor for comparable selection, but the document excerpt itself is insufficient to determine any required action or whether the outcome is broadly applicable. If you want, I can also help draft a compliance-oriented summary once you provide the full article text or ruling details.",
+          "summarySource": "desc"
         },
         {
           "sr": 75,
@@ -1675,7 +1721,9 @@
           "title": "Goods and Services Tax | GST Section 122 Penalty Contrary to CBIC Circular: Gauhati HC Grants Interim Protection",
           "desc": "The post GST Section 122 Penalty Contrary to CBIC Circular: Gauhati HC Grants Interim Protection appeared first on TaxGuru.",
           "link": "https://taxguru.in/goods-and-service-tax/gst-section-122-penalty-contrary-cbic-circular-gauhati-hc-grants-interim-protection.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided content does not contain the underlying regulatory or financial substance of the article itself; it only shows the headline and a source note (“The post GST Section 122 Penalty Contrary to CBIC Circular: Gauhati HC Grants Interim Protection appeared first on TaxGuru”). Based on the title alone, the apparent issue is a Goods and Services Tax enforcement dispute concerning penalty action under Section 122 of the GST law, with the Gauhati High Court reportedly granting interim protection where the penalty appears to have been imposed in a manner contrary to a CBIC circular. However, the text supplied does not specify the facts of the case, the nature of the alleged noncompliance, the interim relief granted, the parties affected, the amount of penalty, any deadline, or any compliance changes for taxpayers.\n\nFor a corporate compliance team, the only defensible takeaway from the provided text is that there may be judicial scrutiny over GST penalty proceedings under Section 122 when they conflict with CBIC circular guidance, but no actionable compliance obligation can be extracted from the content shown. If you want, I can help summarize the actual article if you provide the full text or link content.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1794480305729,
@@ -2319,7 +2367,9 @@
           "title": "‘Biggest mistake homeowners can make’: What the recent BoC rate hike into a stalling economy means for your money - Yahoo! Finance Canada",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOU1lwQmlYVlgyTEtIM1lGckRubDVDaFBNN1pOeFFfS0g3SE00TU40a241RVZ4akhSeFVTMFdaUWFUVEstOEZYaTd1TlFqOTNQV2E5U0xGUm9yNHVGeGZrMlVLYXdPTjZyM1otbGhNc042WTZ0bVFUMG5td015SzQ5Tmw3UHE4cEszOER5OWpZSQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This “document” does not actually contain a regulatory filing, policy change, or financial rule to summarize. The body provided is just Yahoo Finance webpage JavaScript/HTML boilerplate (for page rendering and image tracking), not substantive article text, so there are no compliance requirements, affected entities, thresholds, deadlines, rates, or procedures to report from the supplied content.\n\nFor a corporate compliance team, the key point is that there is no extractable regulatory obligation in the text you provided. If you intended to summarize the underlying Yahoo Finance article about the Bank of Canada rate hike, please paste the article text itself or provide the relevant excerpt, and I can turn it into a full compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 45,
@@ -2329,7 +2379,9 @@
           "title": "Crown Agents Bank strengthens interest rate risk management with ALMIS",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlR6bERIemh2NzZjd3FjT1FMd1JOc0JUYzNWbHdpSVJQWS1DbTU5TXBkWXpXd3hWeGpiMTF4bXViQndzVmh2dTNoZnB5TGpad2NSQVd4STJYRHVFa2luSlNjcFBUaUJVWWdZZThsZGY4d09nWnlLdUVQS1RKQVZrN2JHcmcxeHpMbjBzTU0wMVpiNUJVV01XS3FqMmhwTVZ6WXRuLV9R?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided content does not include any regulatory or financial requirements, rule changes, deadlines, thresholds, or compliance obligations. It appears to be page/script code associated with website functionality and tracking, not the substantive text of the document described by the title. As a result, there is no discernible compliance action item, affected entity scope, effective date, or reporting/operational requirement to summarize from the material shown.\n\nIf you intended to provide the actual article or filing about Crown Agents Bank and ALMIS, please resend the text or a readable excerpt, and I can produce a full compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 46,
@@ -2339,7 +2391,9 @@
           "title": "Overvaluing AI stocks could burst ‘bubble,' warns Bank of England",
           "desc": "Overvaluing AI stocks could burst ‘bubble,' warns Bank of England&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbWFUbVZTM1FjelVvNjFYclV0dm1xNVhGSTZPZjZBZlUtdFU0QVlVYnVDMVgxZXZDWExUSVI2UHF5RUZQRWFsRFNOV1pTSVZnR0JlNktTMjJzREw0bFlRbjE3QjRoeUxoTUlLamlkTUtEazhpWGRtOXVyTXM0VmJlal9ZSmw3aGl0Q2ZNb2xsbEwxTWRLNjhja3Z0ek51dw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is only a headline and source line, not the underlying regulatory or financial article, so there are no actual rule changes, deadlines, thresholds, or compliance obligations to summarize from the text provided. The sole substantive statement is a warning from the Bank of England that AI stocks may be overvalued and that such overvaluation could lead to a “bubble” bursting, but the document does not identify any required action for companies, investors, or regulated entities. Because no article body, policy language, or formal guidance is included, there is nothing concrete to extract regarding affected parties, timing, or procedural requirements.",
+          "summarySource": "desc"
         },
         {
           "sr": 47,
@@ -2349,7 +2403,9 @@
           "title": "3 U.S. Bank Stocks Back In Focus After The Jobs Report",
           "desc": "3 U.S. Bank Stocks Back In Focus After The Jobs Report&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZW01d2E5VE15NkpBZ2F6Qng5U0JtYU5iNm5FaGxab0hYVDJBRHUzb25BQlFhUE4zVXhMc2lmSjVKejZObUVNTmMyV05kRGhxRHhjUUkzMDhlMjZuRXZYQTlELWZzNnFIQmE0U0NKS2pDaGVSSFlyWFllUFM3TTRVZjV5MDFrcTFRNk15U1FB?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is not a regulatory or financial rulemaking notice; it appears to be a Yahoo Finance article title only: “3 U.S. Bank Stocks Back In Focus After The Jobs Report.” No substantive article text, regulatory change, filing requirement, deadline, threshold, or compliance obligation is included in the provided content.  \n\nBecause the body of the article is missing, there is nothing here for a corporate compliance team to act on or monitor as a legal/regulatory requirement. If you can provide the full article text, I can summarize the actual market or company-specific implications in a compliance-focused way.",
+          "summarySource": "desc"
         },
         {
           "sr": 48,
@@ -2359,7 +2415,9 @@
           "title": "Should Quarterly Net Loss Require Action From National Bank Holdings (NBHC) Investors?",
           "desc": "Should Quarterly Net Loss Require Action From National Bank Holdings (NBHC) Investors?&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVHRKNmVOOWxZYkw3bGRldWFFak5MdWRhZ1NwSVI5TkNEejhXY1gzdU5TdDdJTVVyTnhQSHZTYkJGeFI5dVZ5TGM5dUt2YjhSbnJSV0t4M1ZwZEctM3VxV3J2c0xkdnMzUFpaelp5NEZJMkcxLUl1LVkwUU1OX3U3M1Jna05wSWlvOUxWQlR2SHJhYjFCZzNIQUpIUHlLZTg?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is not a regulatory filing or compliance directive; it is a Yahoo Finance article titled “Should Quarterly Net Loss Require Action From National Bank Holdings (NBHC) Investors?” It appears to discuss National Bank Holdings (ticker NBHC) and whether investors should respond to the company’s reported quarterly net loss, but the content provided does not include the actual article text, financial figures, regulatory requirements, deadlines, or any specific compliance obligations. Because only the headline and source are available, there is no basis to identify any change in law, required action, affected entities beyond NBHC investors, or deadlines/effective dates.\n\nFor a corporate compliance team, the actionable takeaway from the provided content is simply that this is likely market commentary about NBHC’s quarterly performance rather than a legal or regulatory notice. If you want, I can also help summarize the article in a compliance-oriented way if you provide the full text or link text beyond the headline.",
+          "summarySource": "desc"
         },
         {
           "sr": 49,
@@ -2369,7 +2427,9 @@
           "title": "Deutsche Bank Goes Live With Crypto Custody After a Five-Year Buildup",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZGRZd3QzRFVqRlRnbEhfb25RMnhKb04yRlFKb0c5bldwOV9sOG1GV3dTQUNBMnhXRHR1aExGdnFUMy00MWgtUkZnWWRlZWttQmx6bmtXT3dsSjU4Nl94NWlHeHduSmVXTlV0ZUVYRGt5TEVhOEZ0T09GRW5YZ3Jqd1p5d0FwdHRTRmJyWVhTY3NEak1xWHRzNFZHYw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The supplied content does not contain the underlying regulatory or financial article itself; it only includes webpage/script boilerplate and the title, “Deutsche Bank Goes Live With Crypto Custody After a Five-Year Buildup.” Because the substantive text is missing, there are no actual compliance requirements, deadlines, thresholds, affected entities, or procedural obligations that can be reliably summarized from the document content provided. In other words, I cannot infer whether the article describes a new authorization, product launch, licensing step, custody control requirement, or customer-facing compliance change without the article’s body. If you provide the actual article text, I can produce the detailed compliance summary you requested, including who is affected, what changed, and any effective dates or operational obligations.",
+          "summarySource": "desc"
         },
         {
           "sr": 50,
@@ -2379,7 +2439,9 @@
           "title": "OTP Bank PLC (OTPBF) Q3 2026 Earnings Call Highlights: Strong Organic Growth and Capital ... - Yahoo Finance Singapore",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1JeUpEM0lzX2dsNWZMNGhRUWY5MjFmZkxrdE15VDlHTnFmNXoyclcwWFdxNVVTWWVuemhfSS1ab2c4NkRQbjVraXAzSERDb21FbWVzMjcteFU0em5vRzR1c3VaazJLSjMyNXFlMFF2Xzg3TVF3Mjd6REVB?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is not a regulatory or financial filing with substantive business content; it is mostly webpage JavaScript and tracking code from a Yahoo Finance page titled “OTP Bank PLC (OTPBF) Q3 2026 Earnings Call Highlights: Strong Organic Growth and Capital …”. Because the actual article text, earnings call transcript, or any financial disclosures are not included, there are **no reportable compliance requirements, deadlines, thresholds, or obligations** to summarize from the content shown. There is no indication here of any rule change, filing requirement, capital action, disclosure mandate, or enforcement action affecting OTP Bank PLC or any other entity.\n\nFor a compliance team, the only material takeaway is that the source appears to be a web page wrapper/loading script, not the underlying earnings-call summary itself. If you need a compliance-relevant summary, you would need the actual article text or the underlying filing/transcript containing the bank’s financial results, capital ratios, guidance, or disclosed regulatory matters.",
+          "summarySource": "desc"
         },
         {
           "sr": 51,
@@ -2389,7 +2451,9 @@
           "title": "Kainos beats Deutsche Bank forecasts but bank sees limited near-term operating leverage - Yahoo Finance UK",
           "desc": "Kainos beats Deutsche Bank forecasts but bank sees limited near-term operating leverage&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeWdULW5ub2hhQ2I5VThEeEpCN1l0ek9yV1Z2cnNHUC1OcXloUDRrLWVYa2E0UDVXeEpRSDVUX3d5ZGIyM0xRNnA2bndmVVRwTF9BaTNBc2RRTzFCUk9zT3BON2ZHT1ZGQjdtRV9kZURYTHBQZjlnTnRFcy0zQlM3d1NILWJjNXoyREdDZFFB?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This item is not a regulatory or policy document; it is a short Yahoo Finance UK news headline about Kainos and Deutsche Bank’s view on the company’s financial performance. Based on the provided content, Kainos reportedly beat Deutsche Bank’s forecasts, but Deutsche Bank still sees only limited near-term operating leverage. No actual regulatory changes, compliance obligations, effective dates, deadlines, thresholds, or required procedures are included in the text you provided.\n\nFor a corporate compliance team, the only relevant takeaway is that this appears to be market/news commentary rather than a binding legal or regulatory notice. Because the underlying article text is not provided, there is no basis to identify any new obligations or determine whether any specific entities, activities, or reporting requirements are affected. If you want, I can summarize the full article if you provide the body text or a link with the article content.",
+          "summarySource": "desc"
         },
         {
           "sr": 52,
@@ -2399,7 +2463,9 @@
           "title": "NatWest, Barclays or Lloyds shares: which bank is best for dividends? - Yahoo Finance UK",
           "desc": "NatWest, Barclays or Lloyds shares: which bank is best for dividends?&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNME10WTU2UVlZal94c2NMOUk4LU5QeE9veXdlc3E5V2FvNW5yMy10REh5ZkVJYW9rTm50VGZSN1FaVWtBN1lteEt0NWhiYUhHcHlFVkFwcTltSktGRUJCcXpfOENERW56c3lUaE82akRKcUd3c0dBSV84bHVvX19EcWFQSFBPZkdJdmJLSg?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This item is not a regulatory or financial compliance document; it is a Yahoo Finance UK article title: “NatWest, Barclays or Lloyds shares: which bank is best for dividends?” The provided content contains no substantive article text, regulatory change, filing requirement, deadline, threshold, or obligation to summarize. As a result, there are no compliance requirements, affected entities, or procedural changes that can be extracted from the material supplied.\n\nIf you intended to provide the full article or a regulatory filing, please send the complete text and I can produce a compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 53,
@@ -2409,7 +2475,9 @@
           "title": "Bond market scales back bets for Bank of Canada rate hikes - Yahoo! Finance Canada",
           "desc": "Bond market scales back bets for Bank of Canada rate hikes&nbsp;&nbsp;Yahoo! Finance Canada",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNDd4ZjNkMkhTTEVEQTRaMGQ2VGQ3bG5aNzBFS1ZtRVdVYnQ3c0ducFhVaElWUWVZaW5Jd2NFWnpuODNteDVaa09QQVV0eVd1bTEzQ3JwaWQ2SlBNbGg4T0RxVThZZ0M5ZzBGSXZtR1JyLWE4YVVpNmNZX3hjYk8yVHVaSQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is a Yahoo! Finance Canada news item titled “Bond market scales back bets for Bank of Canada rate hikes,” and the only content provided is that headline. It indicates a market sentiment shift: bond investors are reducing expectations that the Bank of Canada will raise interest rates further, but no specific policy announcement, regulatory rule, or compliance obligation is described in the supplied text. No effective dates, deadlines, numerical rate levels, affected entities, or required actions are included. For a corporate compliance team, this snippet is informational rather than directive, and on its face it does not impose any new legal or operational requirements.",
+          "summarySource": "desc"
         },
         {
           "sr": 54,
@@ -2419,7 +2487,9 @@
           "title": "Bank of Åland Plc: Early repayment of Tier 2 Notes RB15 on 16 December 2026",
           "desc": "Bank of Åland Plc: Early repayment of Tier 2 Notes RB15 on 16 December 2026&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVHNYdDQ2RmdBYllPazBZYV9jWlZKaGdleFhjRDdOLU1ETWh2ZkVZNWhLQ3dJbXh2NnVZQWJLN3RRSjVPclk0RGRfVmdyNXZaV2pvNUdOMU5VWVk5eXFZTktmY2pDNkV2bEtnWFMtR2dlTVBFVFBWVXNQQUhMSDFGWVdVc0ZkV2VfbThmNkpmc0VCQVgxNmVoM2J1VQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "Bank of Åland Plc announced that it will exercise its right to redeem its Tier 2 Notes RB15 early on 16 December 2026. The document does not describe a rule change or new regulatory requirement; rather, it is a notice to noteholders and relevant internal compliance/treasury teams that the outstanding Tier 2 instrument will be repaid before its original maturity date. The key action required is to recognize that the notes will be called on the stated date, so any systems, disclosures, investor communications, funding plans, and capital calculations should be updated to reflect the early redemption.\n\nFor compliance purposes, the material point is the effective redemption date: 16 December 2026. The notice concerns Bank of Åland Plc’s Tier 2 capital instrument, so the transaction affects the bank’s regulatory capital structure and may require ensuring that post-redemption capital levels remain compliant with applicable capital adequacy requirements. No additional thresholds, coupon changes, penalties, or procedural deadlines are provided in the document excerpt beyond the fact of early repayment.",
+          "summarySource": "desc"
         },
         {
           "sr": 55,
@@ -2429,7 +2499,9 @@
           "title": "Barclays, Deutsche Bank Reveal Stakes In Retail-Favorite Cancer Stocks SLS, IBRX And IOVA — Geode Adds More",
           "desc": "Barclays, Deutsche Bank Reveal Stakes In Retail-Favorite Cancer Stocks SLS, IBRX And IOVA — Geode Adds More&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORk5CSXdkUldIOEI1LTlrZkVwRTVLVC1naVltZ0ljdVVReU1mcnBwaHZmT19jWTBuSl9hdTVrVmU3S25JQVFTS3NjMnMxQzVIdXVaQ0s1Sy1BUGZPZUtTa3IycWp6MGE3RjdVbmJ3LWlTeUpscjlYQ1RiQ0VrSE1GREM3UEtmYTN6WWk1cC1kdzhiZzlrTnUwaWx6UjdHR0dlN2Qw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is not a regulatory or financial compliance document with operative requirements; it is a Yahoo Finance article headline about institutional holdings disclosures in three cancer-focused biotech stocks: SLS, IBRX, and IOVA. The only substantive information provided is that Barclays and Deutsche Bank disclosed stakes in these companies, and Geode reportedly increased its position. No rules, deadlines, thresholds, filing obligations, enforcement changes, or compliance procedures are described in the content you provided.\n\nFor a corporate compliance team, the only potential relevance is as market intelligence: the article appears to discuss ownership/position changes by large financial institutions, which may be useful for monitoring investor sentiment or beneficial ownership developments. However, based on the provided text alone, there is no actionable compliance requirement, regulatory change, or reporting obligation to summarize.",
+          "summarySource": "desc"
         },
         {
           "sr": 56,
@@ -2439,7 +2511,9 @@
           "title": "Paraguay's new president vows to recover pension funds at risk in Ueno Bank crisis - Yahoo! Finance Canada",
           "desc": "Paraguay's new president vows to recover pension funds at risk in Ueno Bank crisis&nbsp;&nbsp;Yahoo! Finance Canada",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY20tUmE2WGY4NExwcm9pZUJnVjFSWUxCYWFWOFhnS0RuUExiTms5cEpic3hKY0VpdlJpUUFzSlNURUI1STZ3bHczSUhDSEV0c3VFMXp4cnphWmp6a1dwR1hVM2c3X1N6cWk4Y25VSldKQUNPUW9WeGNhR05UcTBmNld3c19Fc2pDS2lIVjV1cFl1MEU?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” does not contain the underlying regulatory or financial text; it only supplies a news headline: **“Paraguay's new president vows to recover pension funds at risk in Ueno Bank crisis.”** Because there is no article body, no compliance-relevant details can be verified from the supplied content beyond the general subject matter that Paraguay’s new president is addressing a pension-fund exposure tied to a crisis involving Ueno Bank.\n\nFor a corporate compliance team, the only defensible summary is that this appears to concern **potentially at-risk pension funds in connection with Ueno Bank in Paraguay**, and that the **new president has publicly committed to recovering those funds**. However, the content provided does **not** specify the amount of pension assets involved, which pension entities or beneficiaries are affected, whether any regulatory orders, deadlines, asset freezes, interventions, or reporting obligations were announced, or what compliance actions financial institutions may need to take. If you can provide the full article or regulatory text, I can produce a substantive compliance summary with the actual requirements, scope, dates, thresholds, and obligations.",
+          "summarySource": "desc"
         },
         {
           "sr": 57,
@@ -2449,7 +2523,9 @@
           "title": "What Has Actually Changed At Zenith Bank After A 94% Jump - Yahoo Finance Australia",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdkhpaGhBeEc5RURQUy10VnpZZE5BTHpzZFVpak8zQUc0d3ZQM2p6alZyT0liSnVVT0ZPTVlHUVlhNFgxQi1NRlNmQi1ZYWtnSW1keVI2U3l6UVc0TUVVNFNoV1RmWXkzRVZhNEN1bTlmaDAzZENKMzduYWJXanlNWEc5ZF9KNTg?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided “document” does not contain any substantive regulatory or financial disclosure about Zenith Bank. It is only a snippet of webpage/JavaScript tracking code from a Yahoo Finance Australia article page, including functions such as `initAft()`, image-fold detection, and performance/analytics hooks like `window.wiz_progress`, `window.wiz_tick`, and `ccTick('bl')`. There are no stated changes to Zenith Bank, no regulatory requirements, no deadlines or effective dates, no thresholds or rates, and no compliance obligations for any entity or activity in the text shown.\n\nFor a compliance team, the only relevant conclusion is that this excerpt is not a reportable policy, filing, or regulatory notice and does not itself impose any operational requirements. If you intended to summarize the underlying Yahoo Finance article rather than the page code, please provide the article text or a readable copy of the content.",
+          "summarySource": "desc"
         },
         {
           "sr": 58,
@@ -2459,7 +2535,9 @@
           "title": "Learn Why The Bull Case For OCBC Bank Shares Could Change Following Q3 Earnings Results - Yahoo Finance Singapore",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pUW1va1hib21DblFiZ1BNY2JHVjA3dHhYN2N4VUh1MWFrV1dqY2ZPOEVOanRrQ19ackt5WlFCWkJ5SV8ta2NmeXNBQmQzdlpYdExJWUVDZzN1eVN1UmQ4dE1XNUV6NEpPcEh4aXM5MFZncFFhbzhGUVMwLVN6Zw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document content” is not the underlying Yahoo Finance article text or any regulatory filing; it is only page-rendering JavaScript and tracking code from the webpage. As a result, there are no substantive financial, regulatory, or compliance obligations described here—no rule changes, no deadlines, no thresholds, no affected entities, and no required actions for a corporate compliance team to assess from this content alone.\n\nWhat is present appears to be technical browser code that initializes page performance metrics and image-loading logic (for example, functions such as `initAft`, `recordIsAboveFold`, and tracking calls like `wiz_progress`/`wiz_tick`). This code is not a compliance requirement and does not impose any reporting, disclosure, conduct, or operational duties on OCBC Bank or any other entity.\n\nIf you intended to summarize the actual Yahoo Finance article about OCBC Bank’s Q3 earnings and the “bull case” changing, please provide the article text or the relevant filing/extract, and I can produce a complete compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 59,
@@ -2469,7 +2547,9 @@
           "title": "KeyBank Introduces New Digital Banking Enhancements to Deliver Personalized Financial Guidance, Simplify Saving and Strengthen Security",
           "desc": "KeyBank Introduces New Digital Banking Enhancements to Deliver Personalized Financial Guidance, Simplify Saving and Strengthen Security&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVXRxb3FTc1R1TFg2ZHFLekNrWV8yTUlKd0R1ZGtUaVhMeTB5TGVwd2xRZ3huX05uc3lhMWdNd0FWVi1VcmFqbEsxZFgtN2NMNTRPMndKOWw2ZVV1Nk5RY2w1VjQzVlhLcl8yNzhkY1NBWWQzTGgyZ2pzb1NFRFhiU2dIc2x3UWRBSWUwSGl6OGV0b1BiNGhKaHN1V1BxSFM4SFV6NnNWUG1GbWpTOFhCak91UmNoaFU?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a product announcement from KeyBank, not a legal or regulatory rulemaking document. It states that KeyBank is introducing new digital banking enhancements intended to provide more personalized financial guidance, make saving easier, and strengthen security for customers using its digital banking services. No specific compliance mandate, regulatory deadline, reporting requirement, or legally binding obligation is described in the title/content provided.\n\nFor a corporate compliance team, the material point is that this appears to be a customer-facing banking technology update rather than a change in law or regulation. The document does not identify affected legal entities beyond KeyBank itself, does not set effective dates, thresholds, rates, or penalties, and does not impose any new procedural requirements on third parties. If your team is assessing internal obligations, the only immediate relevance is to understand any operational, privacy, cybersecurity, customer-disclosure, or consumer-protection implications once the underlying product changes are reviewed in detail.",
+          "summarySource": "desc"
         },
         {
           "sr": 60,
@@ -2479,7 +2559,9 @@
           "title": "Deutsche Bank sees Unilever’s scale providing edge against AI risks",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQREhQYzVDR09NbkNQU0tFTTVhUUdCY3pzTlBUcXdqOEZKY2lJZDFCcFQwS0tSQU5fTXp1dXFOOGJiaGh2UFh5cnhoU0RuMzNBQnZxRVZZNnFXc1pTaEU5LTNoYjVZRkxTNXZCUnVIM3NRRFFFTlhGNXBGWUZwdTlKalNjREhPZnlNVUZOT1pON0tmaDNQeDVxQURoSlZsVDg?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document content” does not contain a regulatory or financial disclosure at all; it is just embedded webpage/javascript code from a site-rendering environment. There are no compliance obligations, deadlines, rates, thresholds, filing requirements, or affected entities described in the text. The only substantive elements are technical functions and variables related to image loading and above-the-fold tracking (for example, `initAft`, `recordIsAboveFold`, `data-atf`, `data-iml`, and `data-noaft`), which are web performance scripts rather than legal or financial requirements. As a result, there is no regulatory change to summarize for a corporate compliance team based on the supplied content.\n\nIf you intended to provide the article itself, please paste the actual text or upload the correct document, and I can summarize it in compliance-focused detail.",
+          "summarySource": "desc"
         },
         {
           "sr": 61,
@@ -2489,7 +2571,9 @@
           "title": "Bank Of Canada Minutes Show Careful Deliberations On Rate Hikes - Yahoo! Finance Canada",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLTAwTzVyZC1UN0pGOUxJSzRNZlhwTkZDamVNYmhSRjVzZWxUbk5wb3NKUzM0UmJDLWRFOXJlQWg5dGhwb2dQbEE3X2FqSzRYV2JRU3FLckdaZWNZc1c2U0JDNjFaMU1kd2FTRkhkdWNxb1d1ZHVTck9sZDFuZzZMci05X0t1cVlZ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided content does **not** contain the underlying Bank of Canada minutes or any substantive policy text; it only includes webpage/script code and a headline indicating that the minutes showed “careful deliberations on rate hikes.” Because the actual article body is missing, there are **no extractable compliance-relevant details** such as a policy change, effective date, deadline, affected institutions, rate level, threshold, or required procedure.\n\nFor a corporate compliance team, the only defensible summary is that this appears to be a news item about the Bank of Canada’s internal discussion of future interest-rate increases, but **the document as provided does not specify any regulatory requirement or actionable obligation** for firms. If you can provide the article text or the actual minutes, I can produce a full compliance summary with the specific rates, timing, and impacted entities.",
+          "summarySource": "desc"
         },
         {
           "sr": 62,
@@ -2499,7 +2583,9 @@
           "title": "ZIONS BANK HELPS ENTREPRENEURS LEAD NATION IN SMALL BUSINESS GROWTH AS TOP SBA 7(A) LENDER IN IDAHO IN 2026",
           "desc": "ZIONS BANK HELPS ENTREPRENEURS LEAD NATION IN SMALL BUSINESS GROWTH AS TOP SBA 7(A) LENDER IN IDAHO IN 2026&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTmROQ0VBa2JJUE9NR1Qwbk5QM04xZE5zZzBwRnNQQjFFb3NYN3BiVThacUNKeDRpTWwwV0diMUJ2bEtHMzNUX2VNYUZ4ZkRPVU9JM3ZPeFViaHEzZ19pUlUwVE9sRjViSzlvUWhTNXF4T1h1U1RudEZPcVBsX1lPWU1idmFISS1NVUM3dWxpdFVDVTdQYk96ZUx5SjJwb2hILVE?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is not a regulatory or compliance directive; it is a news-style headline stating that Zions Bank was the top SBA 7(a) lender in Idaho in 2026 and that it “helps entrepreneurs lead nation in small business growth.” The provided content contains no substantive regulatory requirements, rule changes, filing deadlines, reporting obligations, thresholds, rates, or enforcement consequences for a compliance team to track. It also does not identify any new procedures, affected entities beyond the general reference to small businesses and SBA lending, or any specific operational changes that would require action. In short, based on the text provided, there are no compliance obligations described here.",
+          "summarySource": "desc"
         },
         {
           "sr": 63,
@@ -2509,7 +2595,9 @@
           "title": "Brazil central bank chief says it will keep fighting inflation with tight policy",
           "desc": "Brazil central bank chief says it will keep fighting inflation with tight policy&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUlBUUmVlVUNNOW5NSG9leFY2YkF4M0dCSE11SFFod1ZnNEhJV3pCTkZtamNsVGRHWmZBdkZaOGxRMVhIOS0yNlVmV3Y3cUhTMEU2Z1M5NHNOVThLMFFIdDVVZFdkLUlnU21pUHgxOFg1eHhrRk5DcnZ3X2xrUHR6UDdzemptb3VRVW9wakdHS3A2OTN4NnowSlh0dw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is not actually a regulatory or financial document with substantive policy content; it appears to be only a headline or article title: “Brazil central bank chief says it will keep fighting inflation with tight policy” from Yahoo Finance. No underlying text, dates, thresholds, rule changes, deadlines, affected entities, or compliance obligations are provided in the content supplied here. As a result, there is no actionable regulatory requirement to summarize beyond noting that the headline suggests Brazil’s central bank intends to continue using restrictive monetary policy to combat inflation.\n\nIf you want a compliance-grade summary, please provide the full article or document text.",
+          "summarySource": "desc"
         },
         {
           "sr": 64,
@@ -2519,7 +2607,9 @@
           "title": "Bank Of Montreal (BMO) Stock Forecasts",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeVpyM3hETThkZWowSDNZV1NoSlVqTlBUbjlpdVJGUUFqSi1yRUtua3JCY3lIcl91WWFudlFDaGxQMmxYaDZTazdpM0VVYm1OMS1WREFOVXB1NlZrRERic3FiZ1JiTkw0R2R1WDEyUmxVNW9iUjFOZDRqUUNjOEtlVzJobUNhVjFrN3lKbzhUYw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” does not contain a regulatory, financial, or compliance requirement. It appears to be only embedded webpage/script code associated with page loading and image tracking, plus a title (“Bank Of Montreal (BMO) Stock Forecasts”), but no substantive forecast data, disclosures, filing text, or rule changes are present. There are no effective dates, deadlines, thresholds, rates, affected entities, or procedural obligations described in the content.\n\nFrom a corporate compliance perspective, there is nothing actionable to summarize as a regulatory requirement based on this text alone. If you intended to provide a prospectus, earnings release, analyst note, filing, or regulatory notice, please paste the substantive text or upload the correct document and I can produce a full compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 65,
@@ -2529,7 +2619,9 @@
           "title": "National Bank of Greece SA (NBGPRA.PFD) (Q3 2026) Earnings Call Highlights: EPS of EUR1. ...",
           "desc": "National Bank of Greece SA (NBGPRA.PFD) (Q3 2026) Earnings Call Highlights: EPS of EUR1. ...&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWi1GejVJZ3Jza2E1eEczTFlCMnNCMEV6ejg1WHZNMWhwaXMzdU5fTVZPZlgtV1pmSUlpbFhGUkNqTTRZRkdMbHZqd1czWlhfTGE2RFBGM2djWEt6VWx1b1dRX0NjNFozamdhTDFldVZZRWlHUUhJUy1SUTRqY2VsMVpHOUFfbDZkRlZVM1J1Q19iV3dwMHZMZVVhTQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document does not appear to be a regulatory or compliance notice at all; it is an earnings-call headline for National Bank of Greece SA (NBGPRA.PFD) for Q3 2026, referencing an earnings highlight and an EPS figure in euros. Based on the title provided, it is a market/financial performance communication rather than a rule change, supervisory requirement, filing obligation, or policy update. No compliance deadlines, threshold changes, reporting requirements, affected entities beyond the named issuer, or operational obligations are visible in the content you supplied.\n\nFor a corporate compliance team, the practical takeaway is that this excerpt alone does not impose any new compliance action. If you intended to provide the full earnings-call transcript, press release, or a regulatory filing, please share the underlying document text so I can extract any actual obligations, dates, and thresholds.",
+          "summarySource": "desc"
         },
         {
           "sr": 66,
@@ -2539,7 +2631,9 @@
           "title": "ABN AMRO Bank NV (ABMRF) (Q3 2026) Earnings Call Highlights: Net Profit Jumps 52% as NII ... - Yahoo Finance Singapore",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBJMjBKU3N5U0Vfa0JVbElhazQteUhqUkJ1UWQtTHZFdkFfM3p5Tjl6dmp1eDZqeGJ5WlFEc1BuS1F0dkFOWTNlX1B3UG5QNGJyNjB0U1pidmZoQTJIT05lWGZ3eTJaZFBmSjBraXNueTZGLU5MSGUtdS1EWQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided content does not contain the underlying earnings-call transcript or any regulatory language; it is essentially webpage/script code from a Yahoo Finance page, so there are no substantive compliance requirements, deadlines, thresholds, or obligations to summarize from the text itself. The title indicates this is about ABN AMRO Bank N.V.’s Q3 2026 earnings call highlights and suggests a reported 52% jump in net profit, but that figure is only in the page title and is not elaborated anywhere in the document body you supplied. No rules are announced, no filings are required, and no entities, activities, effective dates, or compliance procedures are described in the actual content shown. For a corporate compliance team, the only takeaway is that the source text is not a usable regulatory/financial disclosure record; if you want a substantive summary, the actual earnings-call article or transcript content will need to be provided.",
+          "summarySource": "desc"
         },
         {
           "sr": 67,
@@ -2549,7 +2643,9 @@
           "title": "Deutsche Bank sees Unilever’s scale providing edge against AI risks - Yahoo Finance UK",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY1hKdTRrdHRjNEVGT3hudWxKaWQ1NUx3aF9DbWZQejdMRmVEVmM1V0JZM25jbTJrcHViWkxvcXdvLUJJVVNRMUQxNTlVbTR3N3BBOTI3WXcySml6TW10MTlxbFJYU2xBY1ZPM2NyaUJxZ3I0aTlqN01mdk9nZTJIUWR3QjhqLXNJYUE?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is not a regulatory or financial filing at all; it is page-script/JavaScript boilerplate from a Yahoo Finance UK webpage titled “Deutsche Bank sees Unilever’s scale providing edge against AI risks.” It contains browser logic for tracking image loading and above-the-fold content, including functions such as `initAft()` and internal bookkeeping for image visibility, but it does not contain any substantive financial, legal, or compliance disclosure about Deutsche Bank, Unilever, AI risk, or any regulated requirement.\n\nThere are no policy changes, obligations, deadlines, thresholds, rates, filing requirements, enforcement actions, or affected entities described in the content beyond the technical handling of webpage images in the browser. The only “actions” visible are script operations like marking images as above-the-fold, recording image load metrics, and invoking page-tracking functions (`wiz_progress`, `wiz_tick`, `ccTick`), which are website analytics/performance functions rather than compliance obligations.\n\nFor a corporate compliance team, the practical takeaway is that this content is not a compliance-relevant document and does not impose any reporting, conduct, or disclosure duties. If you intended to provide the actual article or a regulatory text about Deutsche Bank/Unilever/AI risk, please resend the substantive document text so I can summarize the real requirements accurately.",
+          "summarySource": "desc"
         },
         {
           "sr": 68,
@@ -2559,7 +2655,9 @@
           "title": "This data center stock remains a Top Pick, Deutsche Bank says - Yahoo Finance Singapore",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTnFyTHFJOXZadTVzOGNNa2o4OTUyczRGazdybEhJQnJRSW5JWlJqd0hoUVBoek81OFVIZWJtM096czlFajdSeDJhVDdBTnVQWHNfSEd0RUVDZExLOTlTU3p1LVY0ZGN1Uk9oZkFEd0drQmt5b2pQbE1GSWdtNUdVLWdqV0s?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document content” is not a regulatory or financial filing; it is just webpage JavaScript and tracking code from a Yahoo Finance page. It contains no substantive article text, no disclosures, no rule changes, no financial metrics, no deadlines, and no compliance obligations for any company or regulated entity. The code shown appears to manage page-loading behavior and image tracking (for example, functions that detect which images are above the fold and record load timing), and it references internal browser variables such as `window.wiz_progress`, `window.wiz_tick`, `initAft()`, and `ccTick('bl')`.\n\nFor a corporate compliance team, there is nothing actionable here in the regulatory sense. There are no affected entities, no reporting requirements, no effective dates, no thresholds or rates, and no new procedures imposed by the text provided. If you intended to provide the actual article or a filing excerpt, please paste the substantive content and I can summarize the compliance implications in detail.",
+          "summarySource": "desc"
         },
         {
           "sr": 69,
@@ -2569,7 +2667,9 @@
           "title": "This data center stock remains a Top Pick, Deutsche Bank says - Yahoo Finance UK",
           "desc": "This data center stock remains a Top Pick, Deutsche Bank says&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdTNJTENaQlNCa28xX09scTlSR0Z0aFlHdEs3QWtEREZfUHdmRHBxd19ucWJhZ2padHhzcFFYd1BaYWl1ODF0ckFjb2JjbG94ekZUZ3VNandmUzJ1ckp3UmIxNldfT21zT205UnQzV1RvZ3JJMTY1SlgwVjY0cm15M1NHaEY?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is only a Yahoo Finance UK headline and does not contain the underlying article text, regulatory language, or any substantive financial or compliance details. As a result, there is no actual information to summarize about a rule change, filing requirement, deadline, threshold, affected entities, or compliance obligation.  \n\nWhat can be inferred from the title alone is that Deutsche Bank reportedly still regards a data center-related stock as a “Top Pick,” which is analyst commentary rather than a regulatory or legal requirement. However, without the full article content, it is not possible to determine which company is being discussed, what the investment thesis is, whether any target price or rating changed, or whether there are any material compliance implications.  \n\nIf you provide the full article text or the actual regulatory/financial document, I can produce the detailed compliance-focused summary you’re asking for.",
+          "summarySource": "desc"
         },
         {
           "sr": 70,
@@ -2579,7 +2679,9 @@
           "title": "Bank of Japan debated need for faster rate hikes, October summary shows",
           "desc": "Bank of Japan debated need for faster rate hikes, October summary shows&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNT2pzelNtZ2drT2dQY0NjZUxEOG9OUVFseWxXRTdqRHJIeFp1LXZnY3ROVEw5Q1M0RkdvcEJXeVBIdXJyN0p5dlQzM2NEV081dXhaVVM0RFYzVDE5OWFPdlowczZmZ0stOXZQMW5JSU1NUmxCcEs3UGhqREhSN2YweWtLMGI0Ty0tdktuemJpN0NUSDZNcjNlQXdNOA?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This item is a news headline rather than a regulatory text, so it does not set out any formal compliance obligations, effective dates, thresholds, or procedural requirements for firms. The only substantive point conveyed is that the Bank of Japan’s October meeting summary reportedly showed policymakers debated whether interest rates should be raised more quickly than previously expected. For a corporate compliance team, the practical takeaway is limited to monitoring: there may be implications for funding costs, treasury strategy, FX exposure, and market rates if the BOJ accelerates tightening, but no new rule or filing requirement is described here. Because the provided content contains no details beyond the headline and source, there is nothing specific to summarize as a binding regulatory change.",
+          "summarySource": "desc"
         },
         {
           "sr": 71,
@@ -2589,7 +2691,9 @@
           "title": "American National Bank of Texas Earns 17th Top Workplaces DFW Honor",
           "desc": "American National Bank of Texas Earns 17th Top Workplaces DFW Honor&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORElaUkt5TGFULThvdGM3dDV1Wi1wb1N0N2dHSmM3RnlBY29laWhrNE9Fa2xfd1BhaDRhRWZ2SmlheEUwcFdVWElhc0xuZ2xFMjYtSExYS0JJMWpSOW9mbnF4Z0VOanFiSlJnWHExRnpMa2g4RWlFWFVodG9qNUdNbVZfaEpoRnpLNnhocDF3ZFBiakpoTFlwZ3ZVZlV1bFNX?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is not a regulatory or financial compliance notice. It is a publicity/news item stating that American National Bank of Texas earned its 17th Top Workplaces DFW honor, as reported via Yahoo Finance. No rule changes, regulatory obligations, effective dates, deadlines, thresholds, enforcement actions, or compliance requirements are described, and it does not impose any new procedures on any entity. For a corporate compliance team, there is no actionable regulatory content in the provided text.",
+          "summarySource": "desc"
         },
         {
           "sr": 72,
@@ -2599,7 +2703,9 @@
           "title": "ASX Preview: Australian Shares to Fall as US Fed Rate Bets Rise; Commonwealth Bank of Australia Reports Higher Fiscal Q1 Cash Net Profit - Yahoo Finance Australia",
           "desc": "ASX Preview: Australian Shares to Fall as US Fed Rate Bets Rise; Commonwealth Bank of Australia Reports Higher Fiscal Q1 Cash Net Profit&nbsp;&nbsp;Yahoo Finance Australia",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYmVmRl82VjBiVVZPNURUMFVKOFV0ek1IdEtmMUtUU0FTMGlDMUtHejdfQVhXTmN0M2J4MTZUa0xqekQ5dUhfSnBaQXB2WjczYUZsUG5sVHAyVDV1STlsb1pEYXdjWkYwdnB1V0pVYXZoTTdqUzhnNHVNeTZYWENJZVRVMXhkeXVCM1I0?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document does not contain any actual regulatory or compliance requirements. It is merely a Yahoo Finance Australia article title and snippet about an ASX market preview, noting that Australian shares are expected to fall because U.S. Federal Reserve rate-cut expectations have risen, and that Commonwealth Bank of Australia reported higher fiscal first-quarter cash net profit.\n\nThere are no stated rule changes, obligations, filing requirements, deadlines, effective dates, thresholds, enforcement actions, or impacted regulated entities beyond the general reference to market participants and Commonwealth Bank as a reporting company. Because the provided content is only a headline and does not include the underlying article text or any policy/regulatory language, there is nothing substantive for a corporate compliance team to operationalize from this document.",
+          "summarySource": "desc"
         },
         {
           "sr": 73,
@@ -2609,7 +2715,9 @@
           "title": "Bank of America Warns of 50 bps Fed Hike in December: Is Bitcoin Heading for Another 2022-Style Drop?",
           "desc": "Bank of America Warns of 50 bps Fed Hike in December: Is Bitcoin Heading for Another 2022-Style Drop?&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdjF6X2ZKb2lqQnlQLW0zLWQ5QVhTVmFYUEUxRWItWlkwYW5RNGdqQmJnODhlbTB0b0kwM25sRi0tQlBnWVVRWFotQWRocXlHc1NsUTdCYXhFaXh2YTY1UVhoTjNqWEpxX3RlRHNhLXpFUnJwYUU0MVpKQktsbjdNMDQ1Y0JTTUN2WVIzRm9BbHZEOVh2?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document does not contain a regulatory filing, rule change, or compliance requirement. It is a Yahoo Finance news headline/article title about Bank of America’s view that the Federal Reserve could raise rates by 50 basis points in December and the possible market impact on Bitcoin, including whether Bitcoin might fall in a pattern similar to 2022. No specific legal obligation, deadline, reporting requirement, regulated entity action, or compliance procedure is described in the provided content.\n\nFor a corporate compliance team, the only substantive point is that the piece appears to be market commentary about macroeconomic conditions rather than a directive or obligation. There are no stated thresholds, effective dates, filing requirements, supervisory expectations, or entity-specific requirements to implement. If you intended to summarize the full article rather than just the headline, please provide the article text.",
+          "summarySource": "desc"
         },
         {
           "sr": 74,
@@ -2619,7 +2727,9 @@
           "title": "Coinbase Receives Approval To Become A Chartered Trust Bank",
           "desc": "Coinbase Receives Approval To Become A Chartered Trust Bank&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaXhCZWthTjFyRVBiTEZMWFdGZm00Qm83R0dYdDA2LWpCd3FvSi1YWEJBVEd2ak5SbjlGMHBxcjRCZzE1d3FOQXpxRURwazZ4dzFlblV2SUdaQk43enNseTZSQzJ5eEhMdHJuUFlVNklGRE9VWXk3N1RYU1lMVk1nQ3ZINnpwQnVrYW9kN3pET1cwMVI0Nmc1VnBXbDFBSFlDbHhqWWlvd1Y3NWdJ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document reports that Coinbase has received approval to become a chartered trust bank. Based on the content provided, this is a status change and regulatory milestone for Coinbase, indicating that it has been authorized to operate under a trust bank charter rather than remaining solely in its prior operating structure.\n\nNo additional operational details are included in the document excerpt, so there are no stated compliance deadlines, capital requirements, activity restrictions, customer-impacting changes, or procedural obligations described here. For a compliance team, the only concrete takeaway from the text provided is that Coinbase has obtained trust bank approval, which may signal a change in its regulated status and the scope of its permissible banking activities, but the excerpt does not specify the exact permissions, limitations, or implementation timeline.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1794480338953,
@@ -10915,7 +11025,9 @@
           "title": "Consultation Paper on review of the Securities and Exchange Board of India (Informal Guidance) Scheme, 2003  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/aug-2024/consultation-paper-on-review-of-the-securities-and-exchange-board-of-india-informal-guidance-scheme-2003_86350.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a consultation paper from the Securities and Exchange Board of India (SEBI) proposing a review of the SEBI (Informal Guidance) Scheme, 2003. Based on the title alone, the document appears to be seeking public comments on whether SEBI should revise the framework under which market participants can request non-binding informal guidance from the regulator on securities law interpretation and compliance issues. Because no body text or proposal details were provided, there are no specific rule changes, deadlines, thresholds, affected entities, or new compliance procedures that can be confirmed from the document itself.  \n\nFor a compliance team, the practical takeaway is that this is an early-stage consultative document rather than an operative rule change, so it may affect entities that currently rely on SEBI’s informal guidance process—such as listed companies, intermediaries, and other regulated market participants—if the scheme is narrowed, expanded, or otherwise redesigned after consultation. No effective date can be identified from the title alone, and any obligations would depend on the final outcome of the review and any subsequent SEBI circulars or amendments.",
+          "summarySource": "title"
         },
         {
           "sr": 202,
@@ -10925,7 +11037,9 @@
           "title": "Consultation paper on “Provisions pertaining to appointment of Public Interest Directors”  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/aug-2024/consultation-paper-on-provisions-pertaining-to-appointment-of-public-interest-directors-_86313.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a consultation paper, so it is not itself an operative rule change but a proposal inviting public comments on “Provisions pertaining to appointment of Public Interest Directors.” Based on the title alone, the document appears to concern the regulatory framework for appointing Public Interest Directors, likely addressing who can be appointed, eligibility criteria, approval or selection procedures, tenure, independence standards, and any safeguards meant to ensure those directors represent public or stakeholder interests rather than management interests. For a compliance team, the key practical implication is that any entity subject to these provisions should review its current board composition and appointment process against the likely requirements governing Public Interest Director appointments, and should be prepared for possible changes to nomination, vetting, approval, disclosure, or governance procedures once the consultation is finalized.\n\nBecause no substantive text was provided, there are no specific deadlines, effective dates, thresholds, numerical requirements, or procedural obligations that can be reliably summarized from the document itself. The only certain action item indicated by the title is that stakeholders are invited to submit comments on the proposal. If you share the full text, I can produce a detailed compliance summary with all actual requirements, dates, and impacted entities.",
+          "summarySource": "title"
         },
         {
           "sr": 203,
@@ -11163,7 +11277,9 @@
           "title": "Extension of timeline for submission of public comments on the consultation paper titled “Recommendations of the Expert Committee for facilitating ease of doing business and harmonization of the provisions of ICDR and LODR Regulations”  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2024/extension-of-timeline-for-submission-of-public-comments-on-the-consultation-paper-titled-recommendations-of-the-expert-committee-for-facilitating-ease-of-doing-business-and-harmonization-of-the-provi-_84918.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This notice extends the deadline for submitting public comments on a consultation paper titled **“Recommendations of the Expert Committee for facilitating ease of doing business and harmonization of the provisions of ICDR and LODR Regulations.”** No substantive regulatory changes are described in the text provided; the document appears to be an administrative update announcing more time for stakeholders to respond to the consultation.\n\nFor a compliance team, the key point is that this is a **comment-period extension**, not a final rulemaking or enforcement change. The title indicates the consultation concerns potential amendments or harmonization measures affecting the **ICDR Regulations** and **LODR Regulations**, so entities subject to those frameworks—such as listed companies, issuers, and other market participants covered by those rules—may wish to review the consultation paper and provide feedback if they have not already done so.\n\nBecause no body text was provided, the **new deadline date, original deadline, and length of the extension are not available** in the source content. No specific thresholds, reporting obligations, procedural requirements, or effective dates for regulatory compliance are stated in the material provided. The only action implied by the notice is to submit comments through the consultation process before the revised deadline once that date is identified in the underlying notice or linked comment portal.",
+          "summarySource": "title"
         },
         {
           "sr": 223,
@@ -11173,7 +11289,9 @@
           "title": "Consultation Paper on Proposed Legal Provisions for Summary Proceedings  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2024/consultation-paper-on-proposed-legal-provisions-for-summary-proceedings_84802.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a consultation paper, so it is not itself an operative rule or final legal requirement. Based on the title alone, it appears to propose legal provisions governing “summary proceedings,” which generally means a streamlined or expedited process for handling certain legal or enforcement matters; however, the specific procedural changes, affected entities, thresholds, deadlines, and compliance obligations are not provided in the document content available here.\n\nFor a corporate compliance team, the key takeaway is that this document signals possible future legal or procedural changes affecting how matters may be initiated, processed, or adjudicated under summary proceedings. Because no substantive text is available, there are no stated effective dates, filing deadlines, monetary limits, jurisdictional scope, or affected regulated activities to summarize.\n\nThe document title also indicates that comments are being solicited, which suggests stakeholders may have an opportunity to provide input before any final provisions are adopted. At this stage, a compliance team should treat it as a policy-development notice rather than a binding requirement, and monitor for the release of the full text or any finalized rules for concrete obligations.",
+          "summarySource": "title"
         },
         {
           "sr": 224,
@@ -11183,7 +11301,9 @@
           "title": "Consultation paper on Introduction of New Asset Class/ Product Category  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2024/consultation-paper-on-introduction-of-new-asset-class-product-category_84789.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a general consultation paper, not a final rule or binding requirement. Based on the title alone, it indicates that the regulator is seeking comments on whether to introduce a new asset class or product category, which could expand the types of financial instruments or products recognized under the relevant regulatory framework. Because no substantive text is provided, there are no confirmed thresholds, rates, deadlines, procedural steps, or specific affected entities that can be identified from the document itself.\n\nFor a compliance team, the key takeaway is that this signals a possible future regulatory change affecting firms that issue, market, trade, advise on, custody, clear, or otherwise service the new asset class/product if it is adopted. The document appears to invite stakeholder feedback, so the immediate obligation is not compliance with a new rule, but monitoring the consultation and assessing whether the firm would be impacted operationally, legally, or from a product-governance perspective if the category is formally introduced.\n\nBecause the content is not provided, no further material requirements can be summarized.",
+          "summarySource": "title"
         },
         {
           "sr": 225,
@@ -11193,7 +11313,9 @@
           "title": "Consultation on Draft Circulars - Amendment to Master Circulars for InvITs and REITs dated May 15, 2024  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2024/consultation-on-draft-circulars-amendment-to-master-circulars-for-invits-and-reits-dated-may-15-2024_84665.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a **consultation notice** on **draft circulars** proposing amendments to the **Master Circulars for Infrastructure Investment Trusts (InvITs) and Real Estate Investment Trusts (REITs)** dated **May 15, 2024**. Based on the title alone, it indicates that the relevant regulator is seeking public or industry comments on proposed changes, rather than announcing a final rule or an immediately operative compliance requirement.\n\nFor a corporate compliance team, the key takeaway is that the document appears to affect entities governed by the InvIT/REIT master circular framework, but **no specific substantive amendment, threshold, filing obligation, deadline, or effective date is provided in the supplied content**. The title suggests that compliance teams of InvITs, REITs, trustees, managers, investment managers, sponsors, and related intermediaries should monitor the consultation process because the final circulars could change existing regulatory obligations once issued.\n\nBecause the body text was not provided, there is **no basis to identify what exactly is being changed, what disclosures or procedures are being added, or whether any transition period applies**. This is therefore a **general summary only**: it signals a pending regulatory review of the May 15, 2024 master circulars, with comments invited, but does not itself impose a new compliance action beyond tracking the consultation and preparing to assess the eventual final amendments.",
+          "summarySource": "title"
         },
         {
           "sr": 226,
@@ -11203,7 +11325,9 @@
           "title": "Consultation Paper on Treatment of interest income by Clearing Corporations (CCs) on cash collaterals received from Clearing Members (CMs) and upstreamed client funds  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2024/consultation-paper-on-treatment-of-interest-income-by-clearing-corporations-ccs-on-cash-collaterals-received-from-clearing-members-cms-and-upstreamed-client-funds_84620.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a consultation paper, so it is proposing a potential regulatory treatment rather than announcing a final binding rule. Based on the title alone, the paper concerns how clearing corporations (CCs) should treat interest earned on two types of cash received in the course of clearing operations: cash collaterals posted by clearing members (CMs) and client funds that have been upstreamed through the clearing/member structure.\n\nFor a compliance team, the likely practical issue is whether CCs may retain, pass through, account for, or otherwise allocate interest income generated on these funds, and what disclosures, segregation, or client-protection obligations apply. Because the document text is not provided, there are no stated effective dates, deadlines, numerical thresholds, or final procedural changes to report; the only certainty is that stakeholders are being invited to submit comments on the proposed treatment.\n\nIf your organization is a clearing corporation, clearing member, or otherwise handles collateralized cash or upstreamed client money, this paper is directly relevant to treasury, client asset protection, reconciliation, and revenue-recognition practices. A compliance review should focus on whether current arrangements for earning and distributing interest on collateral/client funds align with the final position that may emerge from the consultation process.",
+          "summarySource": "title"
         },
         {
           "sr": 227,
@@ -11213,7 +11337,9 @@
           "title": "Consultation Paper for introduction of Mutual Funds Lite  Regulations (MF LITE) for passively managed Mutual Funds Schemes  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2024/consultation-paper-for-introduction-of-mutual-funds-lite-regulations-mf-lite-for-passively-managed-mutual-funds-schemes_84498.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a **consultation paper** proposing the introduction of **Mutual Funds Lite (MF Lite) Regulations** for **passively managed mutual fund schemes**. Because no body text was provided, the only substantive information available is that the paper appears to seek comments on a new regulatory framework intended specifically for passive fund products, rather than for actively managed schemes.\n\nFor a compliance team, the key takeaway is that this is **not yet an operative rule change based on the title alone**; it is a proposal under consultation, so the immediate obligation is to **review the draft framework once available and assess potential impacts on any passive mutual fund schemes, their sponsors, trustees, asset managers, distributors, disclosure processes, and operating controls**. No effective date, transition timeline, numerical thresholds, registration conditions, or procedural requirements are stated in the content provided, so those details cannot be summarized from the document excerpt.\n\nIf your firm manages, launches, advises on, or distributes **passively managed mutual fund schemes**, this consultation paper is relevant because it may lead to a separate or simplified compliance regime for those products. At this stage, the practical action is to **monitor the consultation, prepare comments if the firm wants to influence the final rules, and be ready to map any new MF Lite requirements against current mutual fund compliance obligations once the full text is available**.",
+          "summarySource": "title"
         },
         {
           "sr": 228,
@@ -11451,7 +11577,9 @@
           "title": "Consultation paper on flexibility to Category I and II AIFs to create encumbrance on their holding of equity in infrastructure sector investee companies to facilitate raising of debt by such investee companies  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/feb-2024/consultation-paper-on-flexibility-to-category-i-and-ii-aifs-to-create-encumbrance-on-their-holding-of-equity-in-infrastructure-sector-investee-companies-to-facilitate-raising-of-debt-by-such-investee-_81047.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This consultation paper indicates that the regulator is considering a rule change for **Category I and Category II Alternative Investment Funds (AIFs)** that would allow them to **create an encumbrance over their equity holdings in infrastructure-sector investee companies**. The purpose of the proposed flexibility is to **help those investee companies raise debt financing**, presumably by using the AIF-held equity as support for borrowing arrangements. Because the document content is not provided, the summary can only be based on the title and should be treated as a **general, non-exhaustive indication of the proposal rather than a final rule**.\n\nFor compliance purposes, the key point is that this is a **consultation paper**, not necessarily an already-effective obligation. No effective date, deadline, threshold, or procedural requirement is stated in the title, so a corporate compliance team should assume the main action item is to **review the proposal and, if relevant, prepare comments or assess impacts on existing fund and financing structures** involving infrastructure investee companies. If your organization manages or invests through Category I or II AIFs in infrastructure-sector companies, this proposal could affect how those holdings may be pledged or otherwise encumbered in connection with debt raising by the portfolio company.",
+          "summarySource": "title"
         },
         {
           "sr": 248,
@@ -11461,7 +11589,9 @@
           "title": "Addendum to Consultation Paper on Interim Recommendations of the Expert Committee for facilitating ease of doing business and harmonization of the provisions of ICDR and LODR Regulations",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/feb-2024/addendum-to-consultation-paper-on-interim-recommendations-of-the-expert-committee-for-facilitating-ease-of-doing-business-and-harmonization-of-the-provisions-of-icdr-and-lodr-regulations_81040.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be an addendum to a consultation paper concerning interim recommendations from an expert committee aimed at improving ease of doing business and aligning the SEBI ICDR and LODR Regulations. Based on the title alone, it suggests that the regulator is considering changes to the framework governing capital raising and listed-company disclosure/ongoing compliance, but no substantive amendments, thresholds, timelines, or procedural requirements are provided in the text supplied. For a compliance team, the key takeaway is that this is a policy-development document signaling possible harmonization measures between the ICDR Regulations (issue of capital / fundraising) and the LODR Regulations (continuous listing obligations), which could affect issuers, listed entities, and potentially intermediaries involved in public issues or post-listing compliance. Because the body of the addendum is not provided, there is no basis to identify any effective date, consultation deadline, filing requirement, or numeric threshold from the document itself. A compliance officer would need to review the full addendum and the underlying consultation paper to determine the exact proposed changes, impacted entities, and any implementation timeline or comment period.",
+          "summarySource": "title"
         },
         {
           "sr": 249,
@@ -11471,7 +11601,9 @@
           "title": "Consultation Paper to revise and revamp nomination facilities in the Indian Securities Market  Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/feb-2024/consultation-paper-to-revise-and-revamp-nomination-facilities-in-the-indian-securities-market_81023.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a consultation paper, not a final rule, and it proposes revisions to the nomination framework in the Indian securities market. Based on the title alone, the document appears intended to “revise and revamp” nomination facilities, which likely means changes to how investors can register nominees for securities holdings and related account assets, but no specific operational requirements, thresholds, timelines, or effective dates are provided in the material supplied. Because the document content is not available, it is not possible to identify which intermediaries, issuers, depositories, brokers, mutual funds, or other market participants are directly affected, or whether the proposal would change onboarding, account maintenance, transmission-on-death, KYC, or nominee-recordkeeping procedures. For compliance purposes, the key takeaway is that this is a policy consultation inviting public comments, so the immediate action is to review the full paper once available, assess any proposed changes to nomination setup, modification, opt-out, and transmission processes, and monitor for the final regulatory text after the consultation closes.",
+          "summarySource": "title"
         },
         {
           "sr": 250,
@@ -11481,7 +11613,9 @@
           "title": "Consultation paper on proposal to enhance trust in the Alternative Investment Funds (‘AIF’) ecosystem to facilitate Ease of Doing Business measures   Click here to provide your comments",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jan-2024/consultation-paper-on-proposal-to-enhance-trust-in-the-alternative-investment-funds-aif-ecosystem-to-facilitate-ease-of-doing-business-measures_80799.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a consultation paper, not a finalized rule or binding notice, and the only information available is the title. Based on that title alone, the document is proposing measures intended to “enhance trust” in the Alternative Investment Funds (AIF) ecosystem and support ease-of-doing-business reforms, which likely signals potential changes to the regulatory framework governing AIFs and their market participants. Because no substantive text, draft provisions, timelines, thresholds, or procedural details were provided, there are no specific compliance obligations, effective dates, reporting requirements, or numerical limits that can be confirmed from the document itself.\n\nFor a corporate compliance team, the practical takeaway is that this is an early-stage proposal affecting the AIF sector, and any compliance impact would depend on the eventual content of the consultation response and final rulemaking. If your organization manages, advises on, invests in, distributes, or otherwise interacts with AIFs, you should monitor this consultation for proposed changes that could affect governance, disclosure, investor protection, onboarding, due diligence, or operational processes. At this stage, however, the document does not provide enough detail to identify which entities are directly affected or what new requirements would apply.",
+          "summarySource": "title"
         },
         {
           "sr": 251,
@@ -11719,7 +11853,9 @@
           "title": "Extension of Timeline for Submission of Public Comments on the Consultation Paper on Consolidated Cybersecurity and Cyber Resilience Framework (CSCRF)",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2023/extension-of-timeline-for-submission-of-public-comments-on-the-consultation-paper-on-consolidated-cybersecurity-and-cyber-resilience-framework-cscrf-_74253.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a **notice extending the deadline for public comments** on a consultation paper titled **“Consolidated Cybersecurity and Cyber Resilience Framework (CSCRF)”**. Based on the title alone, the substantive change is procedural rather than a change to the cybersecurity requirements themselves: stakeholders are being given **more time to submit feedback** on the proposed consolidated framework before it is finalized or further acted upon.\n\nBecause no body text was provided, the specific **new comment deadline, prior deadline, issuing authority, and any defined scope of affected entities** are not available in the source material. However, the title indicates the consultation relates to a **consolidated cybersecurity and cyber resilience framework**, so the consultation would likely be relevant to organizations subject to cybersecurity/resilience regulatory oversight under the framework’s jurisdiction. A compliance team should treat this as a **comment-period extension notice** and confirm the revised submission date and any participation instructions from the issuing regulator or consultation notice itself.\n\nSince no substantive provisions are included in the document content, there are **no detailed new compliance obligations, thresholds, reporting rules, or effective dates** to summarize beyond the extension of the public-comment timeline. This is therefore a **general summary based only on the title** and should be supplemented with the full consultation notice if the team needs the exact deadline and procedural requirements.",
+          "summarySource": "title"
         },
         {
           "sr": 271,
@@ -11729,7 +11865,9 @@
           "title": "Consultation paper on ‘Prudential norms for exposure of Clearing Corporations’",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2023/consultation-paper-on-prudential-norms-for-exposure-of-clearing-corporations-_74194.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a consultation paper, so it is not itself a final rule or binding requirement, but a proposal seeking comments on proposed prudential norms for the exposure of Clearing Corporations. Based on the title alone, the document appears to address how clearing corporations should manage, limit, measure, or otherwise prudently control their exposures, likely to reduce systemic and counterparty risk in market infrastructure.\n\nFor a corporate compliance team, the key point is that the paper is directed at Clearing Corporations and related market participants that interact with them, rather than at all companies generally. Because no content is provided, I cannot identify the specific exposure limits, capital requirements, concentration thresholds, risk buffers, reporting obligations, implementation timeline, or compliance deadlines that may be proposed. I also cannot confirm whether the paper introduces new governance, collateral, margin, stress-testing, default fund, or liquidity requirements, or whether it amends existing prudential standards.\n\nAccordingly, the only reliable summary is that the document is a regulatory consultation on prudential exposure norms for Clearing Corporations, and any compliance impact would depend on the final text of the proposal once issued. If you provide the body of the paper, I can produce a precise compliance-focused summary with the actual requirements, thresholds, affected entities, and timelines.",
+          "summarySource": "title"
         },
         {
           "sr": 272,
@@ -11739,7 +11877,9 @@
           "title": "Consultation Paper on mandating FPIs to route a specific percentage of certain transactions in secondary market trades through Request for Quote (RFQ) platform of stock exchanges",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2023/consultation-paper-on-mandating-fpis-to-route-a-specific-percentage-of-certain-transactions-in-secondary-market-trades-through-request-for-quote-rfq-platform-of-stock-exchanges_73525.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This consultation paper proposes a new trading route requirement for Foreign Portfolio Investors (FPIs) in the secondary market: a specified percentage of certain secondary-market transactions would have to be executed through the Request for Quote (RFQ) platform operated by stock exchanges, rather than entirely through conventional bilateral or other trading methods. The document is framed as a proposal/consultation rather than an already-effective rule, so it is meant to solicit views before any final mandate is adopted; no operative effective date, implementation timeline, percentage threshold, eligible instruments, or transaction-size criteria are provided in the title alone.  \n\nFor compliance purposes, the key issue is that the proposal would impose a routing obligation on FPIs engaging in covered secondary-market trades, which could require firms to adjust trade execution workflows, broker/vendor instructions, pre-trade controls, and monitoring/reporting processes to ensure the required share of activity is sent through the RFQ mechanism. Because the title references “a specific percentage of certain transactions,” the eventual rule may apply only to selected trade types, sizes, or categories of instruments, but those details are not stated here and would need confirmation from the full consultation text before any implementation planning can be finalized.  \n\nAt this stage, the only certain compliance takeaway is that the regulator is considering a mandatory exchange-RFQ execution requirement for a subset of FPI secondary-market trades, and affected firms should treat it as a potential future trading restriction that may change execution obligations, broker routing practices, and internal surveillance expectations once the proposal is finalized.",
+          "summarySource": "title"
         },
         {
           "sr": 273,
@@ -11749,7 +11889,9 @@
           "title": "Consultation Paper on Consolidated Cybersecurity and Cyber Resilience Framework (CSCRF) for SEBI Regulated Entities",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jul-2023/consultation-paper-on-consolidated-cybersecurity-and-cyber-resilience-framework-cscrf-for-sebi-regulated-entities_73442.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This consultation paper proposes a **Consolidated Cybersecurity and Cyber Resilience Framework (CSCRF)** for **SEBI-regulated entities**, indicating SEBI’s intent to bring cybersecurity and cyber-resilience expectations into a single, more unified framework rather than relying on dispersed or separate requirements. Because the full document text was not provided, the substance can only be summarized at a high level: the paper is aimed at entities regulated by SEBI and is focused on strengthening cyber governance, preparedness, and resilience obligations across the regulated sector. A corporate compliance team should treat this as a signal that **new or revised cyber controls, reporting expectations, incident response standards, and resilience/testing requirements may be proposed**, potentially affecting internal policies, technical controls, vendor oversight, and board/senior management oversight.\n\nNo specific **effective date, compliance deadline, numerical threshold, rate, or category-by-category obligation** can be confirmed from the title alone, and no particular types of SEBI-regulated entities are explicitly identified beyond the general reference to SEBI-regulated entities. Since this is a **consultation paper**, it likely represents a proposal or draft framework rather than an immediately binding rule, so the key compliance action is to monitor for the finalized CSCRF text, assess whether the organization falls within the scope of SEBI regulation, and prepare to review gaps against likely cybersecurity and cyber-resilience requirements once the detailed provisions are available.",
+          "summarySource": "title"
         },
         {
           "sr": 274,
@@ -11759,7 +11901,9 @@
           "title": "Extension of timeline for submission of public comments on the consultation paper on Review of Total Expense Ratio charged by Asset Management Companies (AMCs) to unitholders of schemes of Mutual Funds to facilitate greater transparency and accrual of interest of economies of scale to investors",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jun-2023/extension-of-timeline-for-submission-of-public-comments-on-the-consultation-paper-on-review-of-total-expense-ratio-charged-by-asset-management-companies-amcs-to-unitholders-of-schemes-of-mutual-fund-_72166.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be an extension of the deadline for submitting public comments on a consultation paper issued in connection with the review of the Total Expense Ratio (TER) charged by Asset Management Companies (AMCs) to mutual fund unitholders. The stated policy objective is to improve transparency in mutual fund fee charging and to ensure that economies of scale achieved by AMCs are more effectively passed through to investors. Because no substantive text is provided beyond the title, the only clearly identifiable compliance action is the extension of the public consultation timeline; the document does not specify the original or new comment deadline, any revised TER thresholds, caps, disclosure requirements, or operational changes to AMC fee practices.\n\nFor a compliance team, the practical takeaway is that this is a consultation-process update rather than a final rule change, and it likely affects mutual fund AMCs, trustees, distributors, and other stakeholders interested in or impacted by expense charging regulations. Since the content is limited, there is no indication of immediate mandatory implementation obligations, enforcement timelines, or reporting procedures in the document itself. Compliance staff should treat this as an opportunity to review the underlying consultation paper on TER and prepare submissions or internal analysis if the firm has an interest in how expense ratios, transparency, and economies of scale sharing may be revised.",
+          "summarySource": "title"
         },
         {
           "sr": 275,
@@ -11769,7 +11913,9 @@
           "title": "Extension of timeline for submission of public comments on the consultation paper on Institutional Mechanism for Asset Management Companies for deterrence of possible market abuse and fraudulent transactions",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/jun-2023/extension-of-timeline-for-submission-of-public-comments-on-the-consultation-paper-on-institutional-mechanism-for-asset-management-companies-for-deterrence-of-possible-market-abuse-and-fraudulent-trans-_72164.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a **general notice extending the deadline for public comments** on a consultation paper concerning an **institutional mechanism for Asset Management Companies (AMCs)** aimed at **deterring possible market abuse and fraudulent transactions**. Based on the title alone, the substantive change is procedural rather than substantive: it appears to **give stakeholders more time to submit feedback** on the consultation paper, rather than imposing an immediate new compliance rule on firms.\n\nThe affected parties are likely **Asset Management Companies and other market participants, industry associations, and interested stakeholders** that would respond to the consultation. The notice indicates that the regulator is considering or proposing a framework to strengthen internal or institutional controls within AMCs to reduce the risk of **market abuse and fraud**, but the actual requirements of that framework are not provided in the supplied text. Because the document content is not included, **no specific deadline extension date, new submission deadline, thresholds, reporting obligations, or implementation timeline can be confirmed from the title alone**.\n\nFor compliance purposes, the key takeaway is that this is a **comment-period extension notice** tied to a consultation on AMC governance and anti-abuse controls. A corporate compliance team should treat it as a signal to **review the underlying consultation paper once available**, determine whether the company falls within the scope of AMC-related or market-participant feedback, and note the revised comment deadline when published.",
+          "summarySource": "title"
         },
         {
           "sr": 276,
@@ -12007,7 +12153,9 @@
           "title": "Consultation Paper on Holding of Sponsor in REITs and InvITs",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/feb-2023/consultation-paper-on-holding-of-sponsor-in-reits-and-invits_68358.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based only on the title**, because no document text was provided. The consultation paper appears to address **regulatory requirements for sponsor holdings in REITs and InvITs**—that is, it is likely examining whether sponsors must retain a minimum unitholding or otherwise maintain a specified level of economic interest/control in Real Estate Investment Trusts and Infrastructure Investment Trusts. For a compliance team, the key issue suggested by the title is whether the regulator is considering changes to the **holding conditions, lock-in/retention requirements, dilution limits, or ongoing sponsor contribution obligations** that apply to the sponsor at the time of launch and after listing.\n\nBecause no content is available, I cannot identify the **exact thresholds, deadlines, transition periods, affected entities, or any new procedural filings/disclosures**. The title indicates this is a **consultation paper rather than a final rule**, so any change would likely still be under review and not yet binding unless and until the regulator issues a final circular/regulation. Compliance teams with REIT or InvIT exposure should treat this as a signal to monitor for proposed changes affecting **sponsor ownership, compliance reporting, and continued eligibility**, but the specific operational requirements cannot be confirmed from the information provided.",
+          "summarySource": "title"
         },
         {
           "sr": 296,
@@ -12017,7 +12165,9 @@
           "title": "Consultation Paper on Regulatory Framework for ESG Rating Providers (ERPs) in Securities Market",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/feb-2023/consultation-paper-on-regulatory-framework-for-esg-rating-providers-erps-in-securities-market_68337.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based only on the title** because no document text was provided. The paper appears to be a consultation on creating or refining a regulatory framework for **ESG rating providers (ERPs) operating in the securities market**, likely addressing how such providers are authorized, supervised, and held to standards in producing environmental, social, and governance ratings used by market participants. For a corporate compliance team, the practical implication is that firms engaged in ESG ratings, ESG data/analytics, or distribution of ESG assessments may be subject to new or expanded compliance expectations such as governance controls, disclosure obligations, conflict-of-interest management, methodology transparency, quality assurance, and recordkeeping.\n\nBecause no content is available, I cannot state the exact requirements, thresholds, deadlines, or whether the consultation proposes mandatory registration, licensing, conduct standards, or transition periods. If your organization provides ESG ratings, develops ESG scoring methodologies, relies on third-party ESG ratings in investment processes, or markets ESG-related products, it should treat this consultation as potentially relevant and review whether the eventual framework could require operational changes, disclosures to clients, internal controls around model governance, and documented procedures for handling data sources, assumptions, and rating revisions.",
+          "summarySource": "title"
         }
       ],
       "ts": 1794480460632,
@@ -27675,7 +27825,9 @@
           "title": "2026-10-15 Issuer Accounting Support Fee - JD",
           "desc": "2026-10-15 Issuer Accounting Support Fee - JD&nbsp;&nbsp;PCAOB",
           "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPQ1BhUG9sNUtBVFRuY2EzSHhpZ25SMFQzbjd2eGVDS3pxVFplN2hFbEF4YUFOTWdidEdlM2pUNW1fM0lULWpSelUyN0VSNVJnMmR6NEQtQ2U1ZmY4WUk3OEpoUnhQRzJUdWVFX1UyRWVXMG1rTW41NXJyUnlOQnFRYXJ1R1FFZkZwU3FGVXZHcXJaWTUtTVVpenc5cVZwSEloc1Faa1NBdUZodVowdU9oUVZBZ1cxdm5iamdzdW5QM0c0YWE1WXJxVUNGWlpqTnJKc0xJNm41Q21vQ3NfMkRScGZZak5NUVFZ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document appears to be only a title/header and does not include any substantive regulatory text beyond identifying a **“2026-10-15 Issuer Accounting Support Fee - JD”** associated with the **PCAOB**. Based on the content provided, there are **no stated requirements, fee amounts, thresholds, affected entities, effective provisions, deadlines, or procedural obligations** that can be summarized for compliance purposes.  \n\nFor a corporate compliance team, the only usable information is that this item likely relates to a **PCAOB issuer accounting support fee** and appears dated **October 15, 2026**, but the actual operative details are not present in the supplied text. If you provide the full document text or body, I can produce a complete compliance-focused summary with the specific obligations, rates, applicability, and deadlines.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1794480734330,
