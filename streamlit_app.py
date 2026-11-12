@@ -27,7 +27,16 @@ import requests
 import streamlit as st
 import streamlit.components.v1 as components
 
-REPO = "Finanace-Listening-Portal/Regulatory-Tracking"
+# Repo whose data/regulatory_data.json the portal shows: the repo where the scraper runs.
+# Can be changed without editing code: add DATA_REPO = "owner/repo" to the app's Secrets.
+def _data_repo() -> str:
+    try:
+        return st.secrets.get("DATA_REPO") or "swapnilneharkar1/Finance-Listening-Regulatory-Tracker"
+    except Exception:  # no secrets file (local run)
+        return "swapnilneharkar1/Finance-Listening-Regulatory-Tracker"
+
+
+REPO = _data_repo()
 BRANCH = "main"
 HTML_FILE = "regulatory_tracker_live.html"
 DATA_FILE = "data/regulatory_data.json"
