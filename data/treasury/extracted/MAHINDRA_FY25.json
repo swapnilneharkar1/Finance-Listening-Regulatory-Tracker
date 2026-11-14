@@ -1,0 +1,293 @@
+{
+ "ok": true,
+ "fy": "FY25",
+ "prevFy": "FY24",
+ "unit": "crore",
+ "pages": 310,
+ "standalonePages": [
+  139,
+  218
+ ],
+ "statement": {
+  "investments": {
+   "cy": 10400.48,
+   "py": 9650.82,
+   "note": "8",
+   "page": 139
+  },
+  "debt_securities": {
+   "cy": 26204.83,
+   "py": 27697.03,
+   "note": "16",
+   "page": 139
+  },
+  "borrowings": {
+   "cy": 69734.92,
+   "py": 54467.22,
+   "note": "17",
+   "page": 139
+  },
+  "deposits": {
+   "cy": 11404.15,
+   "py": 7544.18,
+   "note": "18",
+   "page": 139
+  },
+  "subordinated": {
+   "cy": 5529.57,
+   "py": 4270.15,
+   "note": "19",
+   "page": 139
+  },
+  "finance_cost": {
+   "cy": 7898.3,
+   "py": 6426.94,
+   "note": "28",
+   "page": 139
+  }
+ },
+ "borrowing": {
+  "FY25": [
+   {
+    "label": "Non-convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 22974.56,
+    "page": 156,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non-convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 1076.79,
+    "page": 156,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 2153.48,
+    "page": 156,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 52998.12,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 7022.09,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitization transactions",
+    "category": "Securitisation",
+    "value": 8684.41,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Triparty repo dealing and settlement (TREPs) against Government",
+    "category": "Repo, TREPS & CBLO",
+    "value": 999.82,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "WCDL from banks",
+    "category": "Cash credit & WCDL",
+    "value": 0,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "from other parties",
+    "category": "Other borrowings",
+    "value": 0,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 21.64,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs) other than related parties",
+    "category": "Deposits",
+    "value": 8.84,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 6947.62,
+    "page": 159,
+    "section": "deposits"
+   },
+   {
+    "label": "Accepted from corporates",
+    "category": "Deposits",
+    "value": 4456.53,
+    "page": 159,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - private placement",
+    "category": "Subordinated debt",
+    "value": 2967.3,
+    "page": 159,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - retail public issue",
+    "category": "Subordinated debt",
+    "value": 2562.27,
+    "page": 159,
+    "section": "subordinated"
+   }
+  ],
+  "FY24": [
+   {
+    "label": "Non-convertible debentures (Secured)",
+    "category": "Secured NCDs",
+    "value": 21738.39,
+    "page": 156,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Non-convertible debentures (Unsecured)",
+    "category": "Unsecured NCDs",
+    "value": 1076.52,
+    "page": 156,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Commercial Papers (Unsecured)",
+    "category": "Commercial paper",
+    "value": 4882.12,
+    "page": 156,
+    "section": "debt_securities"
+   },
+   {
+    "label": "Term loans from banks",
+    "category": "Bank term loans",
+    "value": 44788.39,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "External Commercial Borrowings",
+    "category": "ECB loans",
+    "value": 2156.61,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Associated liabilities in respect of securitization transactions",
+    "category": "Securitisation",
+    "value": 5597.66,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Triparty repo dealing and settlement (TREPs) against Government",
+    "category": "Repo, TREPS & CBLO",
+    "value": 1534.71,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "WCDL from banks",
+    "category": "Cash credit & WCDL",
+    "value": 2.47,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "from other parties",
+    "category": "Other borrowings",
+    "value": 150.82,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs)",
+    "category": "Deposits",
+    "value": 63.96,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Inter-corporate deposits (ICDs) other than related parties",
+    "category": "Deposits",
+    "value": 172.6,
+    "page": 157,
+    "section": "borrowings"
+   },
+   {
+    "label": "Public deposits *",
+    "category": "Deposits",
+    "value": 6109.41,
+    "page": 159,
+    "section": "deposits"
+   },
+   {
+    "label": "Accepted from corporates",
+    "category": "Deposits",
+    "value": 1434.77,
+    "page": 159,
+    "section": "deposits"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - private placement",
+    "category": "Subordinated debt",
+    "value": 1652.29,
+    "page": 159,
+    "section": "subordinated"
+   },
+   {
+    "label": "Subordinated redeemable non-convertible debentures - retail public issue",
+    "category": "Subordinated debt",
+    "value": 2617.86,
+    "page": 159,
+    "section": "subordinated"
+   }
+  ]
+ },
+ "investments": {
+  "FY25": []
+ },
+ "totals": {
+  "FY25": 112873.47000000002,
+  "FY24": 93978.58000000003
+ },
+ "finance_cost": {
+  "FY25": 7898.3,
+  "FY24": 6426.94
+ },
+ "log": [
+  "debt_securities: 3 lines from note p.156, reconciles to balance sheet",
+  "borrowings: 8 lines from note p.157, reconciles to balance sheet",
+  "deposits: 2 lines from note p.159, reconciles to balance sheet",
+  "subordinated: 2 lines from note p.159, reconciles to balance sheet",
+  "investments: note p.152; breakdown not readable (sum 7.15 vs balance sheet 10400.48) -> book size only"
+ ],
+ "investment_total": {
+  "FY25": 10400.48,
+  "FY24": 9650.82
+ },
+ "url": "https://nsearchives.nseindia.in/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf",
+ "via": "NSE",
+ "reportFy": "FY25",
+ "extractor": 3,
+ "sha": "c6ed06a4680d7559",
+ "extractedAt": "2026-11-14T15:30:13.159Z"
+}

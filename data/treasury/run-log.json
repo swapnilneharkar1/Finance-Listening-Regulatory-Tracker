@@ -1,5 +1,5 @@
 {
- "started": "2026-11-14T08:29:25.261Z",
+ "started": "2026-11-14T15:29:38.966Z",
  "companies": {
   "BFL": {
    "reports": [
@@ -40,8 +40,15 @@
     },
     {
      "fy": "FY25",
-     "status": "extraction error: Invalid PDF structure (pdf.js: Invalid Root reference.; 3702784 bytes; starts \"%PDF-1.7.%......\"; ends \"`....NU3..b7>*.P..j.L.......].f.\")",
-     "url": "https://nsearchives.nseindia.com/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf"
+     "status": "extracted",
+     "url": "https://nsearchives.nseindia.in/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf",
+     "notes": [
+      "debt_securities: 3 lines from note p.156, reconciles to balance sheet",
+      "borrowings: 8 lines from note p.157, reconciles to balance sheet",
+      "deposits: 2 lines from note p.159, reconciles to balance sheet",
+      "subordinated: 2 lines from note p.159, reconciles to balance sheet",
+      "investments: note p.152; breakdown not readable (sum 7.15 vs balance sheet 10400.48) -> book size only"
+     ]
     },
     {
      "fy": "FY24",
@@ -59,9 +66,7 @@
      "url": "https://nsearchives.nseindia.com/annual_reports/AR_20324_M&MFIN_2021_2022_11072022203700_07112022210004.zip"
     }
    ],
-   "missing": [
-    "FY24"
-   ]
+   "missing": []
   },
   "SHRIRAM": {
    "reports": [
@@ -176,5 +181,5 @@
    ]
   }
  },
- "finished": "2026-11-14T08:32:42.428Z"
+ "finished": "2026-11-14T15:33:11.112Z"
 }
