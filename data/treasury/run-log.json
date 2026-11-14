@@ -1,5 +1,5 @@
 {
- "started": "2026-11-14T15:29:38.966Z",
+ "started": "2026-11-14T20:20:35.395Z",
  "companies": {
   "BFL": {
    "reports": [
@@ -40,15 +40,8 @@
     },
     {
      "fy": "FY25",
-     "status": "extracted",
-     "url": "https://nsearchives.nseindia.in/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf",
-     "notes": [
-      "debt_securities: 3 lines from note p.156, reconciles to balance sheet",
-      "borrowings: 8 lines from note p.157, reconciles to balance sheet",
-      "deposits: 2 lines from note p.159, reconciles to balance sheet",
-      "subordinated: 2 lines from note p.159, reconciles to balance sheet",
-      "investments: note p.152; breakdown not readable (sum 7.15 vs balance sheet 10400.48) -> book size only"
-     ]
+     "status": "cached",
+     "url": "https://nsearchives.nseindia.in/annual_reports/AR_26610_M&MFIN_2024_2025_A_26062025104048.pdf"
     },
     {
      "fy": "FY24",
@@ -181,5 +174,5 @@
    ]
   }
  },
- "finished": "2026-11-14T15:33:11.112Z"
+ "finished": "2026-11-14T20:24:07.979Z"
 }
