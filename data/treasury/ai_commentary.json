@@ -1,0 +1,320 @@
+{
+  "generated_at": "2026-11-16T04:27:39.364Z",
+  "benchmark_generated_at": "2026-11-16T00:43:30.643Z",
+  "items": {
+    "remark:borrowing:Deposits": {
+      "text": "BFL’s Deposits share in FY26 is 21.2% of borrowings, above the 13.4% peer average by 7.8 pp. It is lower than its own FY21-FY24 range of 24.6% to 27.5% and FY25 at 25.9%, so the FY26 mix has moved down even while still sitting above Mahindra’s 11.8%, Tata Capital’s 0.6%, and below Shriram’s 27.7%, which stands out as the highest among reported peers.",
+      "basis": "101c4656e32552e1",
+      "at": "2026-11-16T04:26:09.335Z",
+      "model": "gpt-5.4-mini"
+    },
+    "remark:borrowing:Subordinated debt": {
+      "text": "BFL has a smaller share in Subordinated debt than peers in FY26 at 0.9% versus 4.7% peer average, with HDB standing out at 7.0% and Chola also relatively high at 6.5%. BFL has also stepped down steadily from 3.9% in FY21 to 0.9% in FY26, while Tata Capital has seen a much sharper decline from 33.6% in FY21 to 4.6% in FY26.",
+      "basis": "2db336453914567e",
+      "at": "2026-11-16T04:26:11.029Z",
+      "model": "gpt-5.4-mini"
+    },
+    "remark:borrowing:cost": {
+      "text": "BFL’s average borrowing cost in FY26 was 7.16%, 11 bps below the peer average of 7.27%; it was also below Mahindra at 7.20%, HDB at 7.30% and Chola at 7.45%, while Tata Capital was close at 7.14%. Over the years shown, BFL moved from 6.80% in FY22 to 6.52% in FY23, then up to 7.25% in FY24 and 7.44% in FY25 before easing to 7.16% in FY26; among peers with FY26 data, Chola stands out at 7.45%, while Tata Capital is the closest to BFL.",
+      "basis": "27bce9203d30a079",
+      "at": "2026-11-16T04:26:12.964Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:BFL:Borrowing book": {
+      "text": "Total borrowings stood at ₹3,22,818 cr in FY26, up 17.3% on FY25, and have grown at 26.4% a year (CAGR) since FY21 (₹99,854 cr). The mix shows deposits at 21.2% in FY26 versus 25.9% in FY25, while borrowings (not split) rose to 36.6% from 32.6% and finance cost increased to ₹21,417 cr, so Treasury could look at the funding mix and cost trajectory together.",
+      "basis": "618a618e56ebea41",
+      "at": "2026-11-16T04:26:14.752Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:BFL:Funding mix": {
+      "text": "Largest sources in FY26: Deposits (21.2%), Subordinated debt (0.9%). The mix shows deposits and subordinated debt at lower shares than in FY25, while borrowings (not split) rose to 36.6% and debt securities (not split) were 41.4%; Treasury could watch whether this mix stays broad-based as total borrowings moved to ₹3,22,818 cr.",
+      "basis": "3d7aa413fd43ba53",
+      "at": "2026-11-16T04:26:16.472Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:BFL:Mix shift": {
+      "text": "Biggest changes since FY21 are a lower deposit share at 21.2% and a lower subordinated debt share at 0.9%, versus 25.8% and 3.9% in FY21, respectively. Debt securities and borrowings (not split) now make up a larger share of the mix at 41.4% and 36.6%, so Treasury could watch how the funding profile is shifting across the book.",
+      "basis": "5e148a9fbfee713f",
+      "at": "2026-11-16T04:26:18.313Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:BFL:Borrowing cost": {
+      "text": "Average borrowing cost was 7.16% in FY26, down 28 bps versus FY25, while total borrowings rose to ₹3,22,818 cr from ₹2,75,218 cr. Treasury may want to track how the shift in mix, with deposits at 21.2% and borrowings at 36.6%, is flowing through the cost trend.",
+      "basis": "36ac8e6240303db2",
+      "at": "2026-11-16T04:26:19.903Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:BFL:Investment book": {
+      "text": "Investment book was ₹38,074 cr in FY26, down from ₹41,716 cr in FY25. The book remains sizeable against total borrowings of ₹3,22,818 cr, so Treasury could watch how the investment book trend sits alongside the changing borrowing mix.",
+      "basis": "1e33c631f0f82a49",
+      "at": "2026-11-16T04:26:21.483Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:BFL:Data notes": {
+      "text": "FY21 to FY26: Debt securities and borrowings (other than debt securities) are shown as balance-sheet totals, so the note breakdown could not be read for each year. The borrowing mix is still usable at total level, with debt securities at 43.1% in FY21, 48.0% in FY22, 40.6% in FY23, 39.7% in FY24, 40.3% in FY25 and 41.4% in FY26, while borrowings (not split) rise from 27.1% in FY21 to 36.6% in FY26; Treasury could look at the shift alongside deposits easing from 25.8% to 21.2% over the same period.",
+      "basis": "e1ec3efc80ce8e98",
+      "at": "2026-11-16T04:26:23.085Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:MAHINDRA:Borrowing book": {
+      "text": "Total borrowings of ₹1,20,335 cr in FY26, up 6.6% on FY25; 15.5% a year (CAGR) since FY21 (₹58,577 cr). The mix remains bank-loan heavy at 46.3%, while secured NCDs eased to 16.0% and securitisation and deposits moved up to 10.6% and 11.8%; Treasury could also note the average borrowing cost at 7.20% in FY26, down from 7.64% in FY25.",
+      "basis": "172033460ecd1137",
+      "at": "2026-11-16T04:26:24.851Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:MAHINDRA:Funding mix": {
+      "text": "Largest sources in FY26 were Bank term loans (46.3%), Secured NCDs (16.0%) and Deposits (11.8%). The mix shows Bank term loans staying dominant while Secured NCDs have eased from 20.4% in FY25 to 16.0% in FY26; Treasury could also look at the build-up in Deposits and the 5.1% share of Commercial paper.",
+      "basis": "6bb46c42e34885d3",
+      "at": "2026-11-16T04:26:27.922Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:MAHINDRA:Mix shift": {
+      "text": "Biggest changes since FY21 are bank term loans up 21.7 pp to 46.3% and secured NCDs down 10.2 pp to 16.0%. Treasury could also note the lower securitisation share at 10.6% versus 17.7% and deposits at 11.8% versus 17.3%.",
+      "basis": "6294d148759b0e21",
+      "at": "2026-11-16T04:26:29.716Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:MAHINDRA:Borrowing cost": {
+      "text": "Average borrowing cost was 7.20% in FY26, down 44 bps from FY25, even as total borrowings rose to ₹1,20,335 cr from ₹1,12,873 cr. Treasury could watch the mix shift alongside this move, with bank term loans at 46.3% and secured NCDs down to 16.0%, while securitisation was 10.6% and deposits 11.8% in FY26.",
+      "basis": "dfb67ae1fe51cb92",
+      "at": "2026-11-16T04:26:31.448Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:MAHINDRA:Investment book": {
+      "text": "Investment book of ₹6,820 cr in FY26, down from ₹10,400 cr in FY25 and ₹11,705 cr in FY21. Treasury could look at this alongside the funding mix, where bank term loans were 46.3% and securitisation was 10.6% in FY26.",
+      "basis": "8924795b2b39492c",
+      "at": "2026-11-16T04:26:32.870Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:SHRIRAM:Borrowing book": {
+      "text": "Shriram Finance’s total borrowings stood at ₹2,50,690 cr in FY26, up 7.0% on FY25 and 18.7% a year (CAGR) since FY21 (₹1,06,196 cr). The mix shows deposits at 27.7%, ECB loans at 14.5%, securitisation at 15.3% and bank term loans at 16.8%, with secured NCDs at 15.8%; Treasury could look at how this liability profile is evolving alongside the investment book at ₹14,783 cr.",
+      "basis": "891155d1f41662ad",
+      "at": "2026-11-16T04:26:34.534Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:SHRIRAM:Funding mix": {
+      "text": "Largest sources in FY26 are Deposits (27.7%), Bank term loans (16.8%) and Secured NCDs (15.8%), with Deposits now the clear largest source. Treasury may want to note the continued rise in Deposits from 23.9% in FY24-FY25 alongside the gradual decline in Secured NCDs from 17.0% in FY24 to 15.8% in FY26.",
+      "basis": "a3c367326f13ab94",
+      "at": "2026-11-16T04:26:36.260Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:SHRIRAM:Mix shift": {
+      "text": "Biggest changes since FY21: Deposits +12.4 pp, ECB bonds −12.3 pp. Treasury could also note the rise in ECB loans from 3.9% to 14.5% and the steady drift down in securitisation from 22.0% to 15.3%.",
+      "basis": "66ba968af9b220e2",
+      "at": "2026-11-16T04:26:37.665Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:SHRIRAM:Investment book": {
+      "text": "Investment book was ₹14,783 cr in FY26, compared with ₹15,599 cr in FY25 and ₹10,657 cr in FY24. Treasury may want to note that the book remains meaningful alongside total borrowings of ₹2,50,690 cr in FY26, with the investment mix showing 0.0% in commercial paper, subsidiaries, associates & JVs, equity and other investments.",
+      "basis": "28bb500fe952ae39",
+      "at": "2026-11-16T04:26:39.157Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:CHOLA:Borrowing book": {
+      "text": "Total borrowings of ₹2,10,867 cr in FY26, up 20.5% on FY25; 27.0% a year (CAGR) since FY21 (₹63,730 cr). The borrowing book has stayed heavily weighted to “Other borrowings” at 51.9% in FY26, with securitisation at 15.0%, secured NCDs at 13.9% and ECB loans at 7.4%; Treasury could also note the average borrowing cost eased to 7.45% from 8.07% in FY25.",
+      "basis": "b8ff59273294e84a",
+      "at": "2026-11-16T04:26:40.963Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:CHOLA:Funding mix": {
+      "text": "Largest sources in FY26 remain Other borrowings (51.9%), Securitisation (15.0%) and Secured NCDs (13.9%). The mix is still dominated by Other borrowings, though it has eased from 61.0% in FY21, while Securitisation has stayed broadly in the mid-teens after peaking at 17.7% in FY24.",
+      "basis": "c716702ece7630f8",
+      "at": "2026-11-16T04:26:42.706Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:CHOLA:Mix shift": {
+      "text": "Since FY21, the mix has shifted away from Other borrowings, which fell from 61.0% to 51.9% by FY26, while Securitisation rose from 6.8% to 15.0%. Treasury could watch whether this higher securitisation share is sustained alongside the continued easing in Other borrowings.",
+      "basis": "ac9688fa685d59e8",
+      "at": "2026-11-16T04:26:44.087Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:CHOLA:Borrowing cost": {
+      "text": "Average borrowing cost was 7.45% in FY26, down 62 bps versus FY25, after rising to 8.07% in FY25 from 7.96% in FY24. Treasury may want to watch how the FY26 borrowing mix, with Other borrowings at 51.9%, Securitisation at 15.0% and ECB loans at 7.4%, sits alongside the lower funding cost.",
+      "basis": "d3b29f0e9222b14c",
+      "at": "2026-11-16T04:26:45.667Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:CHOLA:Investment book": {
+      "text": "Investment book of ₹6,638 cr in FY26, with Other investments the largest holding at 57.7%. The mix also shows Treasury bills at 25.9% and STRIPS at 11.6%, so Treasury may want to watch how the book remains distributed across these instruments.",
+      "basis": "f27b9e6b6abf20bd",
+      "at": "2026-11-16T04:26:47.208Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:HDB:Borrowing book": {
+      "text": "Total borrowings stood at ₹99,061 cr in FY26, up 12.9% on FY25 and translating to 14.5% a year (CAGR) since FY21 at ₹50,400 cr. The mix still looks concentrated in bank term loans at 44.7% and debt securities at 32.7%, while ECB loans were 12.4% and subordinated debt 7.0%, which Treasury could keep tracking for shifts in funding composition.",
+      "basis": "71e66919b4170f92",
+      "at": "2026-11-16T04:26:48.976Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:HDB:Funding mix": {
+      "text": "Largest sources in FY26 were Bank term loans (44.7%), ECB loans (12.4%) and Subordinated debt (7.0%). The mix also shows Debt securities (not split) at 32.7%, while Secured NCDs were 0.0% in FY26, so Treasury could watch the shift in funding composition alongside the rise in total borrowings to ₹99,061 cr.",
+      "basis": "105c10367cbc1b26",
+      "at": "2026-11-16T04:26:50.591Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:HDB:Mix shift": {
+      "text": "Since FY21, the borrowing mix has shifted toward bank term loans, up 13.7 pp, while ECB loans are up 2.8 pp. The rest of the mix has been more volatile, with secured NCDs, debt securities and securitisation moving around materially, so Treasury could look at how stable the funding profile is across years.",
+      "basis": "9594e4337400214b",
+      "at": "2026-11-16T04:26:52.161Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:HDB:Borrowing cost": {
+      "text": "Average borrowing cost was 7.30% in FY26, down 57 bps vs FY25. Treasury may want to track this alongside the funding mix shift, with bank term loans at 44.7% and debt securities at 32.7% in FY26.",
+      "basis": "8a20abe0101cb761",
+      "at": "2026-11-16T04:26:53.769Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:HDB:Investment book": {
+      "text": "Investment book of ₹3,748 cr in FY26, up from ₹2,060 cr in FY25; Treasury bills remained the largest holding at 54.5%. The mix has also swung away from mutual funds, which were 0.0% in FY26.",
+      "basis": "135e2dcfcc1f5e29",
+      "at": "2026-11-16T04:26:55.331Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:HDB:Data notes": {
+      "text": "FY21: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY22: Debt securities shown as a balance-sheet total (note breakdown could not be read) FY26: Debt securities shown as a balance-sheet total (note breakdown could not be read). Treasury may want to treat the debt securities line cautiously in cross-year comparisons, since the note detail is not readable in these years.",
+      "basis": "b4c0be4bfc70ff0f",
+      "at": "2026-11-16T04:26:57.102Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:TATACAP:Borrowing book": {
+      "text": "Total borrowings of ₹1,61,568 cr in FY26, up 9.7% on FY25; 115.8% a year (CAGR) since FY21 (₹3,448 cr). The borrowings mix in FY26 was led by bank term loans at 40.6% and debt securities at 34.9%, with ECB loans at 14.1%, while average borrowing cost was 7.14% and finance cost was ₹11,023 cr.",
+      "basis": "259e1fa507929592",
+      "at": "2026-11-16T04:26:58.855Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:TATACAP:Funding mix": {
+      "text": "Largest sources in FY26: Bank term loans (40.6%), ECB loans (14.1%), and Cash credit & WCDL (5.0%). The mix is still bank-led, with debt securities at 34.9% and subordinated debt at 4.6%, so Treasury could track how the funding profile continues to shift across these buckets.",
+      "basis": "e0d0cbfce3caf04d",
+      "at": "2026-11-16T04:27:00.311Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:TATACAP:Mix shift": {
+      "text": "Biggest mix shift since FY21 is into bank term loans, up from 0.0% to 40.6%, while subordinated debt has fallen from 33.6% to 4.6%. Debt securities also remain material at 34.9% in FY26, so Treasury could watch how the mix evolves around these core funding lines.",
+      "basis": "edc2599ac09c7d36",
+      "at": "2026-11-16T04:27:01.942Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:TATACAP:Borrowing cost": {
+      "text": "Average borrowing cost was 7.14% in FY26, versus 7.19% in FY23 and 7.69% in FY22. Treasury could also note that total borrowings rose to ₹1,61,568 cr in FY26 from ₹1,47,338 cr in FY25, while finance cost was ₹11,023 cr versus ₹10,889 cr.",
+      "basis": "3c439e4dc1c57656",
+      "at": "2026-11-16T04:27:03.332Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:TATACAP:Investment book": {
+      "text": "Investment book was ₹11,240 cr in FY26, slightly below ₹11,501 cr in FY25 and still above ₹14,598 cr in FY23. The trajectory suggests Treasury could watch the movement alongside the funding mix, where debt securities were 34.9% and bank term loans were 40.6% in FY26.",
+      "basis": "6eca8b1b985cc2dd",
+      "at": "2026-11-16T04:27:04.766Z",
+      "model": "gpt-5.4-mini"
+    },
+    "readout:TATACAP:Data notes": {
+      "text": "Debt securities are shown as a balance-sheet total in FY21, FY22, FY23, FY25 and FY26, so the note breakdown could not be read. The borrowing mix shifts from debt securities at 66.4%, 72.9% and 75.6% in FY21-FY23 to a more diversified profile in FY25-FY26, while total borrowings rise from ₹3,448 cr to ₹1,61,568 cr and average borrowing cost stays at 7.69%, 7.19% and 7.14%.",
+      "basis": "c22a6e6371b7bf25",
+      "at": "2026-11-16T04:27:06.679Z",
+      "model": "gpt-5.4-mini"
+    },
+    "summary:overview": {
+      "text": "BFL has a materially higher share in Deposits at 21.2% of borrowings versus 13.4% for peers, while its Subordinated debt share is 0.9% versus 4.7% for peers, so the borrowing mix is clearly different from the group. On cost, BFL's average borrowing cost of 7.16% is 11 bps below the peer average of 7.27%, with only Mahindra at 7.20% and HDB at 7.30% close by, while Chola is at 7.45% and Shriram is higher at 8.79% in FY25. BFL's borrowing cost moved from 6.80% in FY22 to 7.16% in FY26, and it remains below Mahindra at 7.20%, HDB at 7.30% and Chola at 7.45% in FY26. On the investment side, the figures provided do not show BFL versus peers, so Treasury may want to look at whether the current liability mix is being matched by the investment mix.",
+      "basis": "fc53b6a56ec9042d",
+      "at": "2026-11-16T04:27:08.764Z",
+      "model": "gpt-5.4-mini"
+    },
+    "summary:borrowing_mix": {
+      "text": "NBFC funding mixes vary widely: Mahindra leans on bank term loans at 46.3%, HDB at 44.7%, and Tata Capital at 40.6%, while Shriram has a more spread-out mix with no single instrument above 27.7% and a large 51.9% in other borrowings. BFL differs most from the peer average in deposits at 21.2% versus 13.4% (+7.8 pp), debt securities at 41.4% versus 33.8% (+7.6 pp), and subordinated debt at 0.9% versus 4.7% (−3.8 pp). BFL’s funding base is the most concentrated in the set, with the top-3 instruments at 99.1% of borrowings, versus 89.8% for HDB, 89.7% for Tata Capital, 80.8% for Chola, 74.1% for Mahindra, and 60.3% for Shriram. This pattern suggests Treasury could look closely at how much of BFL’s mix sits in a small set of sources relative to peers.",
+      "basis": "f037fe278af03837",
+      "at": "2026-11-16T04:27:10.877Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:investment_mix": {
+      "text": "BFL has 0.0% of investments in its top-3 instruments, versus Chola at 95.3% and HDB at 55.0%, while Mahindra, Shriram and Tata Capital are also at 0.0%. Among peers with disclosed mix, Chola is concentrated in other investments at 57.7%, treasury bills at 25.9% and STRIPS at 11.6%, while HDB is mainly in treasury bills at 54.5% with other investments at 0.4% and mutual funds at 0.0%. The peer averages are 19.4% for other investments, 40.2% for treasury bills and 11.6% for STRIPS, so these are the areas where the mix appears most visible across the group. For BFL, the only disclosed line item is fixed deposits at 0.0%, so the dashboard mainly shows BFL as materially less concentrated than Chola and HDB on the disclosed instruments.",
+      "basis": "8b3b51fd9765c786",
+      "at": "2026-11-16T04:27:12.971Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:cost_kpis": {
+      "text": "BFL ranks 2nd on borrowing cost at 7.16%, just behind Tata Capital at 7.14% and ahead of the peer average of 7.27% by 11 bps. On size, BFL is the largest among the named peers with total borrowings of ₹3,22,818 cr and the biggest investment book at ₹38,074 cr. BFL’s average cost moved down by 28 bps vs FY25, while peers with reported costs also saw declines: Mahindra by 44 bps, Chola by 62 bps and HDB by 57 bps. Tata Capital stands out on cost at 7.14%, while Chola stands out on both scale among the reported cost peers and the sharpest year-on-year cost reduction to 7.45%.",
+      "basis": "347a39aabaa54012",
+      "at": "2026-11-16T04:27:15.015Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:company:BFL": {
+      "text": "Bajaj Finance’s borrowing book has expanded from ₹99,854 cr in FY21 to ₹3,22,818 cr in FY26, and it is the largest among the 6 NBFCs at 1 of 6, versus the peer average total borrowings of ₹1,68,504 cr. Its average borrowing cost was 7.16% in FY26, below the peer average of 7.27%, and it ranked 2 of 5 on borrowing cost. The funding mix in FY26 is led by borrowings (not split) at 36.6% and debt securities (not split) at 41.4%, with deposits at 21.2% and subordinated debt at 0.9%. Compared with FY21, deposits and subordinated debt have moved down, while borrowings (not split) have increased in share, suggesting Treasury may want to keep an eye on mix concentration within the overall funding profile.",
+      "basis": "f584e6e53b7015ad",
+      "at": "2026-11-16T04:27:18.706Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:company:MAHINDRA": {
+      "text": "Mahindra Finance’s borrowing book increased to ₹1,20,335 cr in FY26 from ₹58,577 cr in FY21, with the sharpest expansion visible from FY23 onward. Its average borrowing cost eased to 7.20% in FY26 from 7.64% in FY25, and that places it 3 of 5 on the FY26 peer ranking, below the FY26 peer average of 7.26%. On size, it is 5 of 6 versus the FY26 peer average borrowing book of ₹2,09,001 cr. The funding mix is led by bank term loans at 46.3%, followed by secured NCDs at 16.0%, securitisation at 10.6%, deposits at 11.8%, and smaller shares across ECB loans at 4.8% and subordinated debt at 4.5%, with the mix looking more bank-loan heavy and less reliant on secured NCDs than earlier years.",
+      "basis": "a406f82f425f1eab",
+      "at": "2026-11-16T04:27:20.810Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "compare:MAHINDRA": {
+      "text": "BFL is larger than Mahindra on total borrowings at ₹3,22,818 cr versus ₹1,20,335 cr, or 2.7x, and it is also growing faster at 17.3% versus 6.6%. The average borrowing cost is very close, with BFL at 7.16% and Mahindra at 7.20%, a gap of −3 bps. The funding mix is the biggest contrast: BFL has 41.4% in debt securities, 36.6% in borrowings and 21.2% in deposits, while Mahindra has 46.3% in bank term loans, 16.0% in secured NCDs, 10.6% in securitisation and 11.8% in deposits. BFL also looks much more concentrated, with top-3 concentration at 99.1% versus 74.1% for Mahindra. The investment book is also much larger at ₹38,074 cr for BFL versus ₹6,820 cr for Mahindra, and the mix line provided shows fixed deposits at 0.0% for both; Treasury could look at how BFL’s funding concentration and its larger investment book align with the near-identical borrowing cost.",
+      "basis": "4a6cbdb104fcb5f9",
+      "at": "2026-11-16T04:27:23.029Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:company:SHRIRAM": {
+      "text": "Shriram Finance’s borrowing book expanded from ₹1,06,196 cr in FY21 to ₹2,50,690 cr in FY26, with another step-up from ₹2,34,197 cr in FY25. Its average borrowing cost was 8.82% in FY22, 9.21% in FY23, 8.61% in FY24 and 8.79% in FY25, which is above the FY26 peer average borrowing cost of 7.25%; the FY26 cost rank is n/a. The funding mix is diversified, with deposits rising to 27.7% in FY26, securitisation at 15.3%, ECB loans at 14.5%, bank term loans at 16.8% and secured NCDs at 15.8%, while unsecured NCDs were 0.0% and subordinated debt was 1.0%. The pattern suggests Treasury could look at the balance across deposits, securitisation and market borrowings, rather than any single funding source dominating.",
+      "basis": "03b22cde7b7cc97b",
+      "at": "2026-11-16T04:27:25.119Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "compare:SHRIRAM": {
+      "text": "BFL’s total borrowings are ₹3,22,818 cr versus Shriram’s ₹2,50,690 cr, so BFL is 1.3x Shriram, and its borrowing growth is also faster at 17.3% versus 7.0%. BFL’s average borrowing cost is 7.16%, while Shriram’s is n/a, so the borrowing-cost gap cannot be compared from the data given. The funding mix is much more concentrated at BFL: debt securities (not split) at 41.4% and borrowings (not split) at 36.6%, with top-3 concentration at 99.1%; Shriram is more spread out, with bank term loans at 16.8%, secured NCDs at 15.8%, securitisation at 15.3% and ECB loans at 14.5%, and top-3 concentration at 60.3%. The investment book is also larger at BFL at ₹38,074 cr versus ₹14,783 cr at Shriram. Treasury could look at whether BFL’s much higher concentration in a few funding buckets, alongside the larger investment book, leaves more scope to compare diversification and liquidity flexibility against peers.",
+      "basis": "1eb4df8ee99c073e",
+      "at": "2026-11-16T04:27:27.175Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:company:CHOLA": {
+      "text": "Chola’s total borrowings rose from ₹63,730 cr in FY21 to ₹2,10,867 cr in FY26, with a particularly sharp step-up from ₹1,34,474 cr in FY24 to ₹1,74,946 cr in FY25 and then ₹2,10,867 cr in FY26. Its average borrowing cost was 7.45% in FY26, above the FY26 peer average of 7.20%, and it ranked 5 of 5 on borrowing cost. The funding mix is diversified but still dominated by “Other borrowings” at 51.9% in FY26, with securitisation at 15.0%, secured NCDs at 13.9%, ECB loans at 7.4%, and subordinated debt at 6.5%. Commercial paper was 5.1% in FY26, while unsecured NCDs were 0.3% and bank term loans were 0.0%, so Treasury could look at how the mix shifts between market instruments and other borrowings over time.",
+      "basis": "b6f301442b77666a",
+      "at": "2026-11-16T04:27:29.213Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "compare:CHOLA": {
+      "text": "BFL’s total borrowings are ₹3,22,818 cr versus ₹2,10,867 cr for Chola, so BFL is 1.5x Chola, while borrowing growth vs FY25 is 17.3% for BFL and 20.5% for Chola. The average borrowing cost is lower for BFL at 7.16% versus 7.45% for Chola, a gap of −29 bps. The biggest funding-mix differences are that BFL has 41.4% in debt securities, 36.6% in borrowings, and 21.2% in deposits, while Chola has 51.9% in other borrowings, 15.0% in securitisation, and 13.9% in secured NCDs; top-3 concentration is 99.1% for BFL versus 80.8% for Chola. On investments, BFL’s book is ₹38,074 cr versus ₹6,638 cr for Chola, and BFL shows 0.0% in other investments, treasury bills and STRIPS, while Chola has 57.7%, 25.9% and 11.6% respectively. The pattern suggests Treasury could look at the mix-linked differences in funding and the much larger investment book, especially where BFL is more concentrated in its top three borrowing buckets.",
+      "basis": "a54017e29f791622",
+      "at": "2026-11-16T04:27:31.368Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:company:HDB": {
+      "text": "HDB’s borrowing book has expanded to ₹99,061 cr in FY26 from ₹50,400 cr in FY21, with the sharpest steps up visible from FY24 onward. Its FY26 average borrowing cost was 7.30%, slightly above the peer average of 7.24%, and it ranked 4 of 5 on borrowing cost. On size, HDB was the smallest among the 6 peers at 6 of 6. The funding mix looks diversified and has shifted over time, with bank term loans at 44.7%, debt securities at 32.7%, ECB loans at 12.4% and subordinated debt at 7.0% in FY26, while secured NCDs were 0.0% and securitisation was 3.1%.",
+      "basis": "bf4254fcfeb2b175",
+      "at": "2026-11-16T04:27:33.142Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "compare:HDB": {
+      "text": "BFL is much larger than HDB, with total borrowings of ₹3,22,818 cr versus ₹99,061 cr, or 3.3x HDB, and its borrowing growth vs FY25 is also higher at 17.3% versus 12.9%. The average borrowing cost is slightly lower for BFL at 7.16% versus 7.30% for HDB, a gap of −14 bps. The funding mix is very different: BFL has 36.6% in Borrowings (not split), 21.2% in Deposits, and 41.4% in Debt securities (not split), while HDB has 44.7% in Bank term loans, 32.7% in Debt securities (not split), and 12.4% in ECB loans. Top-3 concentration is higher for BFL at 99.1% versus 89.8%, suggesting Treasury could look at the breadth of the funding base alongside the mix concentration. The investment book is also much larger for BFL at ₹38,074 cr versus ₹3,748 cr, and HDB has 54.5% in Treasury bills while BFL has 0.0%, which suggests Treasury could look at the liquidity and duration profile of the investment book.",
+      "basis": "a7b23e5546684c05",
+      "at": "2026-11-16T04:27:35.211Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "summary:company:TATACAP": {
+      "text": "Tata Capital’s total borrowings rose from ₹3,448 cr in FY21 to ₹1,61,568 cr in FY26, with a sharp step-up between FY23 and FY25 and further growth in FY26. Its average borrowing cost was 7.14% in FY26, which ranks 1 of 5 and is below the peer average of 7.28%. The funding mix in FY26 is led by bank term loans at 40.6% and debt securities at 34.9%, with ECB loans at 14.1%, cash credit & WCDL at 5.0%, subordinated debt at 4.6%, and deposits at 0.6%. This points to a fairly diversified book, though Treasury could keep an eye on the large reliance on bank term loans and debt securities.",
+      "basis": "7ff0bea747c2407f",
+      "at": "2026-11-16T04:27:36.991Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    },
+    "compare:TATACAP": {
+      "text": "BFL’s total borrowings are ₹3,22,818 cr versus Tata Capital’s ₹1,61,568 cr, so BFL is 2.0x Tata Capital, and BFL’s borrowing growth vs FY25 is 17.3% versus 9.7% for Tata Capital. The average borrowing cost is broadly similar at 7.16% for BFL and 7.14% for Tata Capital, with BFL higher by 3 bps. The biggest funding-mix gaps are that BFL has 41.4% in debt securities, 36.6% in borrowings (not split) and 21.2% in deposits, while Tata Capital has 40.6% in bank term loans, 14.1% in ECB loans and 5.0% in cash credit & WCDL; BFL has 0.0% in bank term loans, ECB loans and cash credit & WCDL. Top-3 concentration is 99.1% for BFL versus 89.7% for Tata Capital, suggesting Treasury could look at how concentrated BFL’s funding stack is versus a more diversified mix at Tata Capital. The investment book is also larger at BFL, with ₹38,074 cr versus ₹11,240 cr for Tata Capital, and the figures given do not show a mix difference for fixed deposits.",
+      "basis": "aaa91f89be314e69",
+      "at": "2026-11-16T04:27:39.059Z",
+      "model": "gpt-5.4-mini",
+      "fp": "a9cae63ebbdd0702"
+    }
+  }
+}
