@@ -1873,7 +1873,9 @@
           "cat": "News",
           "title": "CII pitches 15 financial sector reforms, seeks higher foreign investment in PSU banks",
           "desc": "Continue reading with one of these options:Limited AccessFreeLogin to get access to some exclusive stories & personalised newslettersLogin NowUnlimited AccessStarting @ Rs120/monthGet access to exclusive stories, expert opinions & in-depth stock reportsSubscribe NowET .prime_paywall:has(.freeTrialVideoBlocker:not(.hidden)) {padding: 0; background: rgba(255,255,255, .95); top: 55%; backdrop-filter: blur(8px); box-shadow: 0px 17px 74px 62px #acacacad;} .freeTrialVideoBlocker { position: relative; z-index: 17; font-family: \"Montserrat\", sans-serif; } .freeTrialVideoBlocker .videoBlockerWrap { overflow: hidden; padding: 0; } .freeTrialVideoBlocker .videoBlockerInner { position: relative; display: flex; align-items: flex-start; justify-content: space-between; padding: 32px; margin: 0 auto; max-width: 1003px; } .freeTrialVideoBlocker .leftContent { flex: 0 0 441px; display: flex; flex-direction: column; gap: 16px; } .freeTrialVideoBlocker .textContent { display: flex; flex-direction: column; gap: 16px; } .freeTrialVideoBlocker .heading { font-size: 28px; font-weight: 700; line-height: normal; color: #000; margin: 0; text-transform: capitalize; white-space: pre-wrap; } .freeTrialVideoBlocker .description { font-size: 16px; font-weight: 400; line-height: normal; color: #000; margin: 0; } .freeTrialVideoBlocker .timer { font-size: 16px; font-weight: 700; line-height: 23px; margin: 0; display: flex; flex-wrap: wrap; gap: 4px; align-items: baseline; } .freeTrialVideoBlocker .timerLabel { color: #007728; font-size: 16px; } .freeTrialVideoBlocker .timerValue { color: #000; font-size: 20px; } .freeTrialVideoBlocker .ctaSection { display: flex; flex-direction: column; gap: 12px; align-items: center; justify-content: center; max-width: 390px; } .freeTrialVideoBlocker .ctaButton { position: relative; background: linear-gradient(to right, #d14900, #c20108); font-family: Montserrat; border-radius: 4px; padding: 8px; border: none; cursor: pointer; display: flex; flex-direction: column;",
-          "link": "https://economictimes.indiatimes.com/news/economy/finance/cii-pitches-15-financial-sector-reforms-seeks-higher-foreign-investment-in-psu-banks/articleshow/136081451.cms"
+          "link": "https://economictimes.indiatimes.com/news/economy/finance/cii-pitches-15-financial-sector-reforms-seeks-higher-foreign-investment-in-psu-banks/articleshow/136081451.cms",
+          "summary": "The provided text does not include the substantive article itself; it only shows the headline and paywall/access boilerplate. Because the actual body of the document is not visible, there are no readable regulatory proposals, thresholds, timelines, or compliance obligations to summarize accurately.\n\nFrom the title alone, the only identifiable point is that the Confederation of Indian Industry (CII) is proposing 15 reforms for the financial sector and is seeking higher foreign investment in public sector banks (PSU banks). However, the document excerpt does not reveal what those 15 reforms are, whether they concern banking regulation, capital markets, insurance, ownership limits, or other financial-sector rules, nor does it provide any proposed cap, percentage, deadline, implementation date, or affected entities beyond the general reference to PSU banks. For a compliance team, this means there is not enough information in the excerpt to determine whether any current policy, disclosure, governance, licensing, or foreign-investment compliance obligations would change.\n\nIf you can provide the full article text or a non-paywalled version of the body, I can turn it into a complete compliance-focused summary with the specific reforms, numbers, dates, and impacted institutions.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1795385610827,
@@ -1890,7 +1892,9 @@
           "title": "RBI Act may show the way on Tata Sons listing amid regulatory uncertainty",
           "desc": "<img src=\"https://sb.scorecardresearch.com/p?c1=2&amp;c2=8021726&amp;cv=4.4.0&amp;cj=1\" alt><iframe title=\"Google Tag Manager\" src=\"https://www.googletagmanager.com/ns.html?id=GTM-M8D9H9R\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe> @media (max-width:767px) { .header-active .headerabt .logo-div .bpdAll { max-width: 60px !important; } .header-active .headerabt .logo-div .bpdialogue { max-width: 55px !important; } .header-active .headerabt .logo-div .bpdround { max-width: 60px !important; } .header-active .headerabt .logo-div .bpdlogolens { max-width: 40px !important; } .navsubscribe ul {justify-content: space-between;} } @media (min-width:768px) and (max-width:1024px) { .header-active .headerabt .logo-div .bpdAll { max-width: 100px !important; } .header-active .headerabt .logo-div .bpdialogue { max-width: 90px !important; } .header-active .headerabt .logo-div .bpdround { max-width: 110px !important; } .header-active .headerabt .logo-div .bpdlogolens { max-width: 68px !important; } } .Menumodal_overlay { position: fixed; background: rgba(0, 0, 0, 0.6); align-items: center; z-index: 111111; height: 100vh; width: 100%; top: 0; left: 0; bottom: 0; right: 0; } .Menumodal_overlay .Menumodal-box { transform: translateX(0); } .Menumodal_overlay.active { display: flex; } .Menumodal-box { position: relative; width: 95%; max-width: 95%; margin: 20px auto; padding: 15px; background: white; border-radius: 6px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); transform: translateX(-100%); transition: transform 2s ease; } .Menumodal-close { position: absolute; top: -2px; right: 8px; border: none; background: transparent; font-size: 35px; cursor: pointer; color: #282b32; z-index: 11; } .header-active.Menumodal-active .scrlhide { transform: none; } Home / Companies / News / RBI Act may show the way on Tata Sons listing amid regulatory uncertaintyRBI Act may show the way on Tata Sons listing amid regulatory uncertaintyTata Trusts Chairman and Nominee Director Noel",
           "link": "https://www.business-standard.com/companies/news/rbi-act-may-show-the-way-on-tata-sons-listing-amid-regulatory-uncertainty-126112200713_1.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is not a formal regulatory notice or rule text; it is a news article discussing a possible regulatory pathway for the listing of Tata Sons under the RBI Act, against a backdrop of uncertainty. Based on the content provided, there are no explicit new compliance requirements, statutory amendments, deadlines, thresholds, or filing obligations stated in the text itself. Instead, the piece appears to be reporting that the Reserve Bank of India’s existing framework may be relevant in determining how Tata Sons could be listed, and that regulatory uncertainty remains around the issue.\n\nFor a compliance team, the only material takeaway from the excerpt is that Tata Sons’ potential listing is being discussed in a regulatory context, which may implicate RBI rules applicable to large holding companies or regulated entities. However, the excerpt does not specify any concrete action required of companies, any effective date, any numeric trigger, or any formal decision by RBI or another authority. Because the text cuts off after naming Tata Trusts Chairman and Nominee Director Noel, no additional operative details can be extracted from the provided content.",
+          "summarySource": "desc"
         },
         {
           "sr": 2,
@@ -1991,7 +1995,9 @@
           "title": "‘End of boom & AI euphoria’: Bank of America says money managers cut tech bets by the most since 2006. Are you ready?",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWkF0Z1EwNkQyMERxR01LREhSTVRZYlVZOUtEeE5iVnlRMDB1QkZ0YjR5dkpfNmlRSG10STlmdXlPRUR3Y19XMG9CalB1UDJ0MklNM21PYjRHRHoyekpYVThwVGhTMUY4TmxkajFiYUpQcFBrd0xSczR6T1BfbVdmbDF6eGRhMTFrZnBjVVd2LW5OcW03?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided “document content” does not actually contain a regulatory or financial notice, filing, rule change, or disclosure. Instead, it is only webpage/JavaScript boilerplate from a site load process and includes code such as image-loading tracking and performance hooks (for example, `window.wiz_progress`, `initAft()`, and `ccTick('bl')`). There are no stated obligations, no affected entities, no deadlines or effective dates, no thresholds or rates, and no compliance-relevant requirements that a corporate compliance team would need to implement.\n\nBecause the substantive article text is absent, there is nothing to summarize as a regulatory or financial change. If you intended to provide the actual article or filing content, please resend the text or upload the correct document, and I can produce a full compliance-oriented summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 5,
@@ -2229,7 +2235,9 @@
           "title": "Deutsche Bank Leak Reveals $581.9 Million in Suspicious Epstein Transactions",
           "desc": "Deutsche Bank Leak Reveals $581.9 Million in Suspicious Epstein Transactions&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMXhnZmlkeFFISVR5TFIyMzJfMXgxUF9tOFFVQnJVYlF2ZTBSaXVITWFBVVdfaE1DSnlUT0JPU3A5UjJzTWFCQ1l0Tmd6NzFvZkRRY2k4WV9qR2pkZHltb1JiWEJPWTdkWkZRMGY4ckIwZXJoeFJtVE1VZkpxOExBY1FoNHpBQVdwbjdIOEVkeHVKbEhwTllfWkptVQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is only a headline, not the underlying regulatory or financial text, so there are no actual compliance requirements, deadlines, thresholds, or procedures to extract beyond the fact that Yahoo Finance is reporting on a Deutsche Bank leak involving $581.9 million in suspicious transactions tied to Jeffrey Epstein. Because no article body, filing, order, or rule text is included, I cannot determine what specific obligations were imposed, what entities were formally affected, or whether any deadlines or control changes were required. For a corporate compliance team, the only defensible takeaway is that this appears to be a media report about potentially suspicious banking activity and not, on its face, a binding regulatory directive. If you want a substantive compliance summary, please provide the full article or the underlying regulatory document.",
+          "summarySource": "desc"
         },
         {
           "sr": 25,
@@ -2311,7 +2319,9 @@
           "title": "Exclusive-Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOczhERkVVdWY2MkhETVJqbmhCckJTaE1UamZuOVZiS0tocGZGTERVN2gxbEtpei01NFVib3ZMUHZvSzlIRmRyZW4tN3Q4TU1tRlktME9IcVpDVUtoSmgtTW9YZGVDZ2hYRTZxX040ZHlUMUstOXhDLVNkUENpNUp1RU9QOC0xcDN5WEVxZVZXSEhOeV9qVVhTTS0wMS1MdFN1TnQ4RjRB?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided content does not contain a regulatory or financial filing itself; it is just page/script code and a headline: **“Exclusive-Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers.”** Because the actual article text is not included, there are **no concrete compliance obligations, dates, thresholds, rule changes, or entity-specific requirements** to summarize from the document body.\n\nWhat can be inferred from the title alone is only that the piece concerns **Anthropic’s IPO process** and suggests it was conducted in an **unusual, nonstandard way that frustrated some bankers**, with a comparison to SpaceX’s similarly exclusive approach. However, the title does **not** specify what made the process unusual, whether any securities law, disclosure, underwriting, allocation, or investor-access issue was implicated, or whether any corporate compliance action is required. If you want a compliance-grade summary, please provide the article text or the underlying filing/document content.",
+          "summarySource": "desc"
         },
         {
           "sr": 32,
@@ -2609,7 +2619,9 @@
           "title": "Bank of Nova Scotia (TSX:BNS) Class Action Over Advisor Pay Is Now Certified",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaTNLajZoOXVaZVpzZ2U1M3Z5Nk1mODJLNWJPLW9rbFpFUzlGaVNjbG5aVjltN0JqUTNid3l0VVhCTzg3N1BiYVBZbU1LdUhoZXVGTUx5bE5HZU5VOGZ6NEZMNEhjc1NNeWRlelplNmpRZkVNUldOM1pNY1l3NFZhRV9xV1o3T2pDcXl0RUxYdHBndkE?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided document content does **not** contain the substance of a regulatory filing, court order, or financial disclosure about Bank of Nova Scotia’s advisor pay class action. Instead, it appears to be mostly **embedded webpage JavaScript/analytics code** (e.g., image tracking and page-load functions such as `wiz_progress`, `wiz_tick`, and `initAft`) with no readable legal, financial, or compliance text.\n\nBecause there is no actual case summary, order, settlement, certification language, deadline, amount, or compliance requirement visible in the content, there are **no material obligations, effective dates, thresholds, or affected entities that can be reliably extracted** from what was provided. If you intended to summarize the article titled **“Bank of Nova Scotia (TSX:BNS) Class Action Over Advisor Pay Is Now Certified,”** please provide the article text itself or a clean excerpt, and I can produce a full compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 57,
@@ -2691,7 +2703,9 @@
           "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll",
           "desc": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUE1xUWlfN21RVDgzMkFsclpzQ1VJaThYZUdrWFdldGRYWnVzQ04wcjgyaERiU0RJYkdXOTUwRExNNGZyZlhCMGk1Q1hCYW5Lb3ZwREFWTEd6VU0zUG92MDFYTXZiWklpTzlyRWd4dHlORkVCeGdHbE5Qb1J5Y1B2Z2l5enJCWmpLT2dDVnRhYmxhQnlYcGJnMUxiV0U?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This item is a Reuters poll headline rather than a substantive regulatory text, so it does not contain binding compliance requirements, formal rule changes, or procedural obligations. The only material information conveyed is a market expectation: economists surveyed by Reuters reportedly expect the Bank of Japan to raise interest rates in December and again by the end of March. No specific policy rate level, threshold, implementation mechanics, affected entities, or effective-date language is provided in the content shown. For compliance purposes, this should be treated as a news-based market forecast only, not as an announcement of an enacted requirement or a directive imposing obligations on any firm.",
+          "summarySource": "desc"
         },
         {
           "sr": 64,
@@ -2701,7 +2715,9 @@
           "title": "Bank of America (BAC) Could Be 25% Undervalued On Bylaw Reset And Share Price Slide",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxON21QckV5NUJ3bUZieXNoWHNEc0l6VmY5akhmcnN5LWpvdENrZkhHTlZ4bkpKelFTbXV3OGtveUotcl83Z2FmVWY1YkJIb0U0NjhnTU9VTkRqczVlSExFMUdxeW9Cc1ByaDU1R1l4c2dmR3p0Q3lzV2JUWXdtZ0lHUkM5OENxa3BlSjlhUEdaN2ptVDlf?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided “document” does not contain any regulatory or financial substance to summarize. It is just webpage/JavaScript boilerplate and tracking code (e.g., image-loading and analytics functions such as `window.wiz_progress`, `initAft`, and visibility checks), with no actual disclosure, rule, filing, policy change, financial guidance, dates, thresholds, obligations, or entity-specific requirements.\n\nThe title references a market opinion piece about Bank of America (“Could Be 25% Undervalued On Bylaw Reset And Share Price Slide”), but that title is not accompanied by the underlying article text or any compliance-relevant content. As a result, there are no compliance requirements, deadlines, affected entities, or procedural changes to extract from the supplied document content. If you want, I can summarize the article itself if you provide the actual text or a readable excerpt.",
+          "summarySource": "desc"
         },
         {
           "sr": 65,
@@ -2711,7 +2727,9 @@
           "title": "Nigeria's central bank could cut rates by 600bp by end-2027 as inflation heads below 10% - Capital Economics",
           "desc": "Nigeria's central bank could cut rates by 600bp by end-2027 as inflation heads below 10% - Capital Economics&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSkFzTlpSakNJbzM0SzdUS3JnZkVoaExTaUszS0ZLNTVMTEJLcW41Qk5mREdCWktfdFQ2TWR6WXFOd0NGd0xTdC03RklJZENFN05xU1FEbHBDMUUwOU50NVBRS0JyYjluSmdnSmJENHdDaXRXV1ZXT1M1Ym5tQlRjU0c3TzI0OXNPNGF4Nk9Md1hCNFlCNkJld19TRXk?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This item is not itself a regulatory notice or policy text; it is a Capital Economics market forecast about Nigeria’s monetary policy outlook, republished on Yahoo Finance. The substantive point is that Capital Economics expects the Central Bank of Nigeria to reduce interest rates by about 600 basis points by the end of 2027, on the assumption that inflation continues to fall and moves below 10%. For a compliance team, this does **not** create a direct legal or operational requirement on its own, but it is a forward-looking signal that borrowing costs in Nigeria may decline materially over the medium term if the forecast plays out.  \n\nNo effective date, filing deadline, or formal compliance obligation is stated in the content provided. The only quantified detail is the projected 600bp cumulative rate cut by end-2027 and the expectation that inflation will drop below 10% before then. Any compliance relevance would therefore be indirect—e.g., for treasury, funding, pricing, hedging, or business-planning assumptions involving Nigerian exposure—rather than a change in law or regulation.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1795385623700,
@@ -8847,7 +8865,9 @@
           "title": "Consultation paper on Exemption from the requirement of mandatory merchant banker appointment for Small-value debt through private placement by certain listed issuers",
           "desc": "Exemption from the requirement of mandatory merchant banker appointment for Small-value debt through private placement by certain listed issuers Click here to provide your comments Aug 27, 2026| Reports : Reports for Public Comments Exemption from the requirement of mandatory merchant banker appointment for Small-value debt through private placement by certain listed issuers<a href='https://www.sebi.gov.in/sebiweb/publiccommentv2/PublicCommentAction.do?doPublicComments=yes' target='_blank' style='color:#007ffc'> Click here to provide your comments </a>",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/aug-2026/exemption-from-the-requirement-of-mandatory-merchant-banker-appointment-for-small-value-debt-through-private-placement-by-certain-listed-issuers_104040.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This consultation paper proposes an exemption from the existing requirement that a merchant banker must be mandatorily appointed for certain private placement debt issues, but only for “small-value debt” issued by specified listed issuers. The document as provided is essentially a public-comments notice and title page, so it does not include the detailed operative criteria for the exemption itself, the exact monetary threshold for “small-value debt,” the categories of listed issuers that would qualify, or the mechanics of how the exemption would work in practice.\n\nThe only clear dated item in the text is the public consultation deadline/posting date shown as **Aug. 27, 2026**, indicating this is a reports-for-public-comments item open for stakeholder feedback as of that date. The document directs readers to a “Click here to provide your comments” link, which suggests SEBI is soliciting market input before finalizing any rule change.\n\nFrom a compliance perspective, the key takeaway is that this is a proposed regulatory relaxation affecting **private placement of debt by certain listed issuers**, specifically around whether they must appoint a **merchant banker** for smaller debt issuances. Because the excerpt contains no final text, no implementation date, and no threshold details, a compliance team should treat this as a notice of potential change rather than an effective rule, and should monitor the final SEBI circular/notification for the exact eligibility conditions, issuance size limits, and any revised procedural requirements.",
+          "summarySource": "desc"
         },
         {
           "sr": 13,
@@ -9205,7 +9225,9 @@
           "title": "Consultation paper on review of position limits for clients and penalty provision for violation / breach of position limits for Commodity Derivatives Segment.<a href='https://www.sebi.gov.in/sebiweb/publiccommentv2/PublicCommentAction.do?doPublicComments=yes' target='_blank' style='color:#007ffc'> Click here to provide your comments </a>",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/may-2026/consultation-paper-on-review-of-position-limits-for-clients-and-penalty-provision-for-violation-breach-of-position-limits-for-commodity-derivatives-segment-_101384.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based only on the title**, because no document text was provided. The paper appears to be a **consultation on changes to SEBI’s rules for the Commodity Derivatives Segment**, focused on two related areas: **position limits for clients** and the **penalty provisions that apply when those limits are violated or breached**. The consultation likely affects **market participants trading commodity derivatives through client accounts**, and possibly **brokers, trading members, and other intermediaries** responsible for monitoring client positions and ensuring compliance with exchange/SEBI limits.\n\nFrom the title, the main subject matter is a **review of existing position-limit framework**, which suggests SEBI is considering whether current client-level limits remain appropriate and whether the rules need to be revised, clarified, or made more enforceable. The second subject is the **penalty regime for breaches**, indicating the paper may propose changes to the consequences of exceeding prescribed limits, such as revised fines, escalation procedures, or other enforcement mechanisms. Any compliance impact would likely involve firms strengthening surveillance of client positions, ensuring timely identification and reporting of potential breaches, and updating internal controls to align with any revised limit structure once finalized.\n\nNo effective date, deadline, threshold, rate, or specific procedural change can be confirmed from the title alone. The document also indicates that stakeholders can submit comments through the linked public comment process, so this appears to be **a consultation stage rather than a final operative rule change**. A compliance team should therefore treat this as a **potential future change to commodity derivatives position monitoring and breach-penalty compliance**, and monitor SEBI for the full consultation text and final implementation details.",
+          "summarySource": "title"
         },
         {
           "sr": 43,
@@ -9263,7 +9285,9 @@
           "title": "Consultation Paper on Draft Circular on Clarification with respect to Applicability of the benefit of Early Pay-In in Commodity Derivatives Segment <a href='https://www.sebi.gov.in/sebiweb/publiccommentv2/PublicCommentAction.do?doPublicComments=yes' target='_blank' style='color:#007ffc'> Click here to provide your comments </a>",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/may-2026/consultation-paper-on-draft-circular-on-clarification-with-respect-to-applicability-of-the-benefit-of-early-pay-in-in-commodity-derivatives-segment_101257.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **consultation paper** from SEBI proposing a **draft circular to clarify when the benefit of “Early Pay-In” applies in the Commodity Derivatives Segment**. Because no substantive document text was provided, this can only be summarized at a high level: the paper indicates that SEBI is seeking comments on how the early pay-in mechanism should operate or be interpreted for commodity derivatives trades, rather than announcing a final rule. The likely compliance focus is on **who can claim the benefit, under what transaction conditions, and how market participants and intermediaries must process deliveries/funds when early pay-in is used**, but the specific operational requirements, thresholds, deadlines, and effective date are **not available from the title alone**.\n\nFor a compliance team, the key takeaway is that this is **not yet an operative circular**; it is a **public consultation on a clarification** that may affect brokers, clearing members, clients, and other participants in the commodity derivatives market once finalized. At this stage, the document signals a potential update to **settlement, margin, or delivery-related procedures** in the commodity derivatives segment, but no concrete obligations can be confirmed without the actual draft text. If you want, I can also help draft a compliance watch note stating that the item is under consultation and should be monitored for final SEBI guidance.",
+          "summarySource": "title"
         },
         {
           "sr": 48,
@@ -10485,7 +10509,9 @@
           "title": "Consultation Paper on Draft Circular on “Strengthening of ESG Rating Providers (ERPs)” <a href='https://www.sebi.gov.in/sebiweb/publiccommentv2/PublicCommentAction.do?doPublicComments=yes' target='_blank' style='color:#007ffc'> Click here to provide your comments </a>",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/feb-2025/consultation-paper-on-draft-circular-on-strengthening-of-esg-rating-providers-erps-_91876.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based only on the title**, because no document text was provided. The paper appears to be a **SEBI consultation paper** proposing a **draft circular to strengthen the regulatory framework for ESG Rating Providers (ERPs)** in India. For a corporate compliance team, the practical significance is that SEBI is likely considering tighter standards for entities that issue ESG ratings, which may affect how such ratings are produced, disclosed, governed, and monitored, and may also affect companies that rely on ESG ratings for investor communications or compliance reporting.\n\nBecause the underlying draft circular is not included, **no specific rule changes, thresholds, deadlines, effective dates, or procedural obligations can be confirmed from the provided content**. The only certain action implied by the title is that stakeholders are invited to submit comments through SEBI’s public comment process linked in the notice. Compliance teams should treat this as a signal to review any current or planned use of ESG ratings, identify whether they interact with SEBI-regulated ERP requirements, and monitor the final circular for concrete obligations once SEBI publishes the draft text and final rules.",
+          "summarySource": "title"
         },
         {
           "sr": 150,
@@ -10495,7 +10521,9 @@
           "title": "Consultation paper on Introduction of format for No-objection Certificate (NOC)/ Consent Letter to be submitted by existing charge holders to issuer <a href='https://www.sebi.gov.in/sebiweb/publiccommentv2/PublicCommentAction.do?doPublicComments=yes' target='_blank' style='color:#007ffc'> Click here to provide your comments </a>",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/feb-2025/consultation-paper-on-introduction-of-format-for-no-objection-certificate-noc-consent-letter-to-be-submitted-by-existing-charge-holders-to-issuer_91866.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a consultation paper from SEBI proposing a standardized format for a No-Objection Certificate (NOC) or Consent Letter that existing charge holders would have to submit to an issuer. Based on the title alone, the apparent purpose is to formalize and standardize the documentation required when an issuer has an existing charge on assets and needs approval or consent from the current charge holder, likely in connection with a further issuance, refinancing, security creation, or other corporate action affecting the charged assets. Because the full content is not provided, no exact legal change, procedural step, effective date, deadline, threshold, or prescribed form language can be confirmed from the document itself.\n\nFor compliance purposes, the key takeaway is that this appears to be a proposed regulatory requirement or guidance affecting issuers and any parties that hold existing charges over issuer assets, with a likely obligation to obtain and submit a properly formatted NOC/consent letter rather than relying on informal approvals. Companies with existing secured financing arrangements should monitor this consultation because it may require updating internal processes, coordinating with lenders/charge holders, and ensuring that any future filings or transactions include the specified consent document in the mandated format once finalized. Since this is only identified as a consultation paper, the immediate action is to review SEBI’s eventual final circular/regulation for the exact form, scope, timing, and applicability.",
+          "summarySource": "title"
         },
         {
           "sr": 151,
@@ -11957,7 +11985,9 @@
           "title": "Consultation paper on review of framework for borrowings by Large Corporates",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/aug-2023/consultation-paper-on-review-of-framework-for-borrowings-by-large-corporates_75179.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based on the title only**, because no document text was provided. The consultation paper appears to address a **review of the regulatory framework governing borrowings by large corporates**, which likely means the regulator is reassessing how companies above a certain size can raise debt, what limits or reporting requirements apply, and whether current rules for borrowing, disclosure, or market access should be updated. For a corporate compliance team, the key takeaway is that the paper is likely relevant to **large corporate borrowers, treasury functions, and entities that access debt markets or other formal borrowing channels**, and may propose changes affecting borrowing eligibility, compliance filings, lender/investor disclosures, or approval processes.\n\nBecause the actual content is missing, I cannot identify the **specific thresholds, deadlines, effective dates, procedural changes, or numerical limits** that may be proposed. A compliance team should treat this as a signal to review the full consultation paper once available, assess whether the company falls within the definition of a “large corporate,” and determine whether any current borrowing practices, debt issuance plans, covenant structures, or internal approval controls would need adjustment if the framework is revised.",
+          "summarySource": "title"
         },
         {
           "sr": 273,
@@ -11967,7 +11997,9 @@
           "title": "Consultation Paper on collating and  defining use cases of Financial Information  Users in the Account Aggregator  Framework in Securities Markets",
           "desc": "",
           "link": "https://www.sebi.gov.in/reports-and-statistics/reports/aug-2023/consultation-paper-on-collating-and-defining-use-cases-of-financial-information-users-in-the-account-aggregator-framework-in-securities-markets_74811.html",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a consultation paper from the securities markets context focused on the Account Aggregator framework, specifically on collating and defining the use cases of “Financial Information Users” (FIUs). Based on the title alone, it is a general policy-development document rather than a final rule, so the main point is that the regulator is seeking to identify, organize, and formally define which entities can act as FIUs and for what purposes they may access or use financial information within the framework.\n\nFor a compliance team, the likely significance is that firms participating in the Account Aggregator ecosystem in securities markets may need to review whether their activities fit within the proposed FIU use cases, what permissions or controls would apply to financial data access, and whether any operational or governance changes would be required once definitions are finalized. Because no body text was provided, no specific thresholds, deadlines, effective dates, procedural requirements, or entity lists can be confirmed from the document itself.\n\nIn practical terms, this should be treated as an early-stage consultation that may affect data-sharing workflows, consent management, information-security controls, and customer authorization processes for market participants that consume financial data. Compliance teams should monitor for the final consultation outcomes or any resulting circulars/regulations, since the operative obligations will depend on how the regulator ultimately defines FIUs and their permitted use cases.",
+          "summarySource": "title"
         },
         {
           "sr": 274,
@@ -21357,7 +21389,9 @@
           "title": "Revised Norms for appointment of an independent third-party reviewer/ certifier for green debt security",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260310-1",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a **general policy/regulatory update** concerning the **appointment of an independent third-party reviewer or certifier for green debt securities**. Based on the title alone, the likely subject is the set of norms or criteria governing **who may be engaged as an external reviewer/certifier**, **when such appointment is required**, and **what role that party must play in validating the green credentials of the debt instrument**. Because no body text was provided, I cannot confirm the exact procedural changes, eligibility standards, disclosure obligations, or any filing deadlines, and there are no specific thresholds, dates, or numerical requirements available to extract.\n\nFor a corporate compliance team, the key takeaway is that the document likely affects **issuers of green debt securities** and potentially their arrangers, trustees, and compliance functions where an **independent third-party review/certification** is used to support a green label or satisfy regulatory expectations. The most important compliance question will be whether the revised norms impose stricter requirements on the **independence, qualifications, appointment process, scope of review, or ongoing monitoring** of the reviewer/certifier, as well as whether any new disclosure, reporting, or investor-facing certification obligations are introduced.\n\nBecause the content is not available, this should be treated as a **high-level placeholder summary only**. A compliance officer should review the full text before relying on it, especially to determine: whether the revision is mandatory or guidance-only, whether it applies to new issuances only or also existing green debt programs, and whether any transition period, grandfathering, or re-appointment requirement has been added.",
+          "summarySource": "title"
         },
         {
           "sr": 2,
@@ -21367,7 +21401,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260306-25",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general update, based on the title only, about the implementation of a **single filing system enabled through API-based integration between stock exchanges**. Because no underlying text was provided, there are **no specific dates, thresholds, filing mechanics, or mandatory compliance steps stated in the document itself** that can be summarized with certainty. The title suggests that the key change is a move toward a more centralized or unified filing process, where market participants may be able to submit information once through an API-connected system rather than filing separately with each exchange, but the exact scope, covered entities, and required submissions are not disclosed in the provided content.\n\nFor a corporate compliance team, the practical takeaway is that this likely relates to **exchange-level regulatory reporting or corporate filing workflows** and may affect listed entities, issuer reporting teams, intermediaries, or other participants that currently file with multiple stock exchanges. However, because the document body is missing, it is not possible to confirm whether the update is mandatory, optional, phased in, or limited to certain exchanges, markets, or filing categories. A compliance officer would need to review the full release or accompanying circular to determine the implementation date, technical requirements for API integration, any transition period, and whether internal reporting controls or vendor systems need to be updated.",
+          "summarySource": "title"
         },
         {
           "sr": 3,
@@ -21377,7 +21413,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260220-44",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general update rather than a detailed rule text. Based on the title alone, it concerns the rollout or enhancement of a **single filing system** that will operate through **API-based integration between stock exchanges**, meaning market participants may be able to submit required filings once through a connected system rather than separately to each exchange. From a corporate compliance perspective, the likely practical change is a more centralized electronic filing workflow for exchange-related submissions, with the emphasis shifting to system connectivity, data formatting, and ensuring that internal reporting processes can interface with the API-enabled platform.\n\nBecause no substantive content is provided, there are **no specific deadlines, effective dates, thresholds, fee changes, or explicit obligations** that can be stated with confidence. The document title does indicate that the affected entities are likely **listed companies, issuers, and other market participants required to file disclosures or reports with stock exchanges**, and that compliance teams should expect procedural changes around how filings are transmitted, validated, and tracked. In the absence of the underlying text, this should be treated only as a **high-level, general summary** and not as a substitute for the actual circular or technical guidance.",
+          "summarySource": "title"
         },
         {
           "sr": 4,
@@ -21387,7 +21425,9 @@
           "title": "Master Circular for compliance with the provisions of the SEBI (LODR) Regulations, 2015 by listed entities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260203-14",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general compliance circular** issued by SEBI for **listed entities** on how to comply with the **SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 (LODR)**. Because no document text was provided beyond the title, I cannot identify any specific amendment, deadline, threshold, filing requirement, or procedural change within the circular itself; the title only indicates that the document is a **master circular**, which typically consolidates and restates existing compliance requirements and related guidance for listed companies and similar listed entities.\n\nFor a corporate compliance team, the practical significance is that this circular is meant to serve as a **central reference document** for ongoing LODR compliance obligations applicable to listed entities, rather than a discrete one-off rule change. In the absence of the text, I cannot confirm whether it introduces new obligations, revises filing timelines, changes disclosure thresholds, or affects particular categories of listed entities, securities, or events. The safe interpretation is that compliance teams should treat it as a consolidated framework document and cross-check their existing SEBI LODR compliance calendar, disclosure processes, board/governance procedures, and periodic reporting controls against the latest master circular version.\n\nIf you share the actual text, I can produce a full compliance summary that identifies the specific requirements, effective dates, impacted entities, and any new operational steps.",
+          "summarySource": "title"
         },
         {
           "sr": 5,
@@ -21397,7 +21437,9 @@
           "title": "SEBI (Issue and Listing of Non-Convertible Securities)(Amendment) Regulations, 2026",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260203-13",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is titled **SEBI (Issue and Listing of Non-Convertible Securities) (Amendment) Regulations, 2026**, which indicates that it is an amendment to SEBI’s existing framework governing the **issuance and listing of non-convertible securities** in India. Based on the title alone, the most that can be said is that the amendment likely modifies some aspect of the rules applicable to entities issuing or listing non-convertible securities, such as debt instruments or other non-convertible instruments regulated by SEBI.\n\nBecause **no text or operative provisions were provided**, there is **no way to identify the specific changes, affected entities, thresholds, compliance steps, filing requirements, or effective dates**. A compliance team should therefore treat this only as a **general notice of a regulatory amendment** and review the actual published amendment text, circular, or notification before concluding whether it imposes any new obligations or deadlines.",
+          "summarySource": "title"
         },
         {
           "sr": 6,
@@ -21407,7 +21449,9 @@
           "title": "SEBI (Listing Obligations and Disclosure Requirements) (Amendment) Regulations, 2026",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260203-12",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is titled **SEBI (Listing Obligations and Disclosure Requirements) (Amendment) Regulations, 2026**, which indicates that it is an amendment to India’s existing **SEBI Listing Obligations and Disclosure Requirements (LODR)** framework governing listed entities. However, **no substantive text or amendment details were provided**, so it is **not possible to identify what rules changed, which specific obligations were added or revised, whether any thresholds, deadlines, reporting requirements, or exemptions were introduced, or which classes of listed entities are affected**.  \n\nFor a corporate compliance team, the only reliable conclusion from the title alone is that the document likely **modifies the compliance regime for listed companies and other SEBI-regulated listed entities**, potentially affecting corporate governance, disclosure, reporting, and listing-related obligations. Because the amendment text is absent, **no implementation date, transition period, effective date, or procedural requirement can be confirmed**. This should therefore be treated as a **general placeholder summary only**, and the actual amendment provisions would need to be reviewed before determining impact or required action.",
+          "summarySource": "title"
         },
         {
           "sr": 7,
@@ -21417,7 +21461,9 @@
           "title": "Ease of Doing Investment -Special Window for Transfer and Dematerialisation of Physical Securities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260202-37",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a **general, title-based notice or initiative** rather than a substantive text with operative provisions, since no document content was provided. Based on the title, **“Ease of Doing Investment - Special Window for Transfer and Dematerialisation of Physical Securities,”** it likely relates to a regulatory or market-infrastructure measure intended to simplify the process for **transferring ownership of physical share certificates and converting physical securities into dematerialized form**. For a compliance team, the key takeaway is that this appears aimed at **investors, listed companies, registrars and transfer agents, depositories, and other intermediaries** involved in handling securities still held in paper/physical form, and it may create a **special procedural pathway or temporary window** for such transfers and dematerialisation requests.\n\nBecause no underlying text was provided, **no specific effective date, deadline, threshold, fee, form requirement, or procedural obligation can be confirmed** from the document itself. If your organization handles **legacy physical securities, transfer requests, lost certificate issues, or demat conversions**, it would be prudent to check the full circular/notification for any **cutoff dates, documentary requirements, exceptions, or time-bound compliance steps** that apply during the special window. If you can provide the actual regulatory text, I can produce a precise compliance summary with the exact obligations, dates, and affected entities.",
+          "summarySource": "title"
         },
         {
           "sr": 8,
@@ -21427,7 +21473,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260102-23",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based only on the title** because no document text was provided. The update appears to concern a **single filing system** implemented through **API-based integration between stock exchanges**, meaning market participants may be able to submit regulatory or listing-related filings once and have them transmitted electronically to one or more exchanges through a connected interface rather than filing separately with each exchange. For a corporate compliance team, the key takeaway is that this likely affects **issuers, listed companies, intermediaries, or other reporting entities that submit recurring exchange filings**, and it may require confirming that internal systems, data formats, user access controls, and filing workflows are compatible with the new API-based process.\n\nBecause no substantive content was provided, I cannot identify any **effective date, deadlines, thresholds, procedural changes, approvals, exceptions, or penalties**. A compliance officer should treat this as a notice to **review exchange guidance, technical specifications, and implementation timelines** before relying on the new filing mechanism, and to verify whether any filings remain manual or require dual submission during a transition period.",
+          "summarySource": "title"
         },
         {
           "sr": 9,
@@ -21437,7 +21485,9 @@
           "title": "Modification in the conditions specified for reduction in denomination of debt securities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251222-26",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to announce a modification to the conditions under which the denomination of debt securities may be reduced. In practical terms, it signals that the rules governing when and how a debt security’s face value can be lowered have changed, which could affect issuers, trustees, intermediaries, and any regulated entities involved in administering, listing, clearing, or servicing debt instruments. Because the underlying text is not provided, the specific revised conditions, any quantitative thresholds, approval requirements, procedural steps, filing obligations, or deadlines cannot be identified from the title alone.  \n\nFor compliance purposes, the key takeaway is that firms dealing with debt securities should treat this as a potential change to issuance and lifecycle management processes and verify whether any internal documentation, investor disclosures, platform rules, or operational controls need to be updated once the full instrument is reviewed. No effective date, transition period, or implementation date can be confirmed from the provided content.  \n\nGeneral summary only: the title indicates a regulatory/market-rule amendment concerning reductions in the denomination of debt securities, but the exact substance of the modification is not available in the source provided.",
+          "summarySource": "title"
         },
         {
           "sr": 10,
@@ -21447,7 +21497,9 @@
           "title": "Mandating periodic disclosure requirements- Securitised Debt  Instruments (SDIs).",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251222-25",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a **general regulatory topic/title only**, with **no document text provided**, so the summary below is necessarily high-level and based solely on the title: **“Mandating periodic disclosure requirements – Securitised Debt Instruments (SDIs).”**\n\nThe title indicates that the rule or proposal is aimed at **requiring ongoing, periodic disclosures for securitised debt instruments (SDIs)**, rather than one-time issuance disclosures only. For a corporate compliance team, the key implication is that any issuer, sponsor, trustee, servicer, reporting entity, or other party responsible for SDI reporting may need to establish a recurring disclosure process to provide investors and/or regulators with updated information on the performance, composition, cash flows, collections, delinquencies, defaults, prepayments, or other material characteristics of the securitised pool and the instruments backed by it.\n\nBecause no text is provided, **no effective date, deadline, frequency, threshold, or specific reporting format can be confirmed from the document content itself**. Similarly, it is not possible to identify whether the requirement applies broadly to all SDIs or only to certain classes, transactions, market participants, jurisdictions, or listed instruments. A compliance team should therefore treat this as a signal that **periodic reporting obligations for SDIs are being introduced or strengthened**, and should review the underlying rulemaking or notice for the exact filing cadence, data fields, submission platform, and responsible reporting party.",
+          "summarySource": "title"
         },
         {
           "sr": 11,
@@ -21457,7 +21509,9 @@
           "title": "Reclassification of Real Estate Investment Trusts (REITs) as equity related instruments for facilitating enhanced participation by Mutual Funds and Specialized Investment Funds (SIFs).",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251218-23",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a **general policy/regulatory reclassification** rather than a detailed rule text, and only the title is available, so the summary is necessarily high-level. The stated change is that **Real Estate Investment Trusts (REITs) are being reclassified as “equity-related instruments”** for the specific purpose of **facilitating greater participation by Mutual Funds and Specialized Investment Funds (SIFs)**. In practical compliance terms, this suggests the regulatory framework is being adjusted so that these fund types may be permitted, or may face fewer restrictions, in investing in REITs under the equity-style allocation or eligibility rules that apply to equity-related instruments.\n\nFrom a compliance perspective, the key issue is that **entities managing Mutual Funds and SIFs should review whether their investment mandates, asset-class classification logic, portfolio limits, disclosure materials, valuation policies, and internal investment compliance checks need to be updated** to reflect REITs being treated as equity-related rather than as a separate or non-equity category. The title does not provide any **effective date, transition period, numerical limit, threshold, or filing requirement**, so those details cannot be inferred and would need confirmation from the full instrument or circular. Because the content is not provided, this should be treated as a **general directional summary only**, and compliance teams should verify the operative text before implementing any changes.",
+          "summarySource": "title"
         },
         {
           "sr": 12,
@@ -21467,7 +21521,9 @@
           "title": "SEBI (Substantial Acquisition of Shares and Takeovers) (Amendment) Regulations, 2025",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251209-53",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based on the title only**, because no document text was provided. The title indicates that the **Securities and Exchange Board of India (SEBI)** has issued the **SEBI (Substantial Acquisition of Shares and Takeovers) (Amendment) Regulations, 2025**, which means it has formally updated the existing Indian takeover/acquisition framework that governs when an investor or acquirer crosses specified ownership or control thresholds in a listed company.\n\nFor a corporate compliance team, the practical significance is that the amendment likely affects **persons acquiring shares, voting rights, or control in listed Indian companies**, as well as the target companies and their advisers, by potentially changing **trigger thresholds, disclosure obligations, open offer requirements, timing rules, exemptions, or procedural filings** under the takeover code. However, because the underlying text is unavailable, I cannot confirm **what specific threshold, rate, deadline, or procedural requirement changed**, nor can I identify whether the amendment applies to particular transaction types, promoters, creeping acquisitions, indirect acquisitions, or control-related events.\n\nCompliance teams should therefore treat this as a signal to **review the final amended regulations directly** before any acquisition, stake increase, rights issue participation, restructuring, or change-of-control transaction involving an Indian listed company. In practice, the key action point is to verify the exact amended provisions, effective date, and any transitional or grandfathering rules, since takeover regulation changes can immediately affect disclosure timing, open offer obligations, and transaction structuring.",
+          "summarySource": "title"
         },
         {
           "sr": 13,
@@ -21477,7 +21533,9 @@
           "title": "Modifications to Chapter IV of the Master Circular for Debenture Trustees dated August 13, 2025.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-66",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is titled **“Modifications to Chapter IV of the Master Circular for Debenture Trustees dated August 13, 2025”** and, based on the title alone, indicates that the regulator has issued **changes to Chapter IV of an existing master circular governing debenture trustees**. Because no document text was provided, the specific rule changes, filing requirements, thresholds, timelines, reporting formats, or enforcement obligations **cannot be identified from the supplied material**.  \n\nFor a corporate compliance team, the only reliable takeaway is that **entities acting as debenture trustees, and likely the issuers/market participants interacting with them, should treat this as a regulatory update affecting the Chapter IV framework** and review the August 13, 2025 circular alongside the revised Chapter IV provisions to determine what operational, disclosure, or monitoring processes have changed. No effective date, implementation deadline, numerical threshold, or substantive obligation can be confirmed from the content provided.  \n\nThis is therefore a **general placeholder summary only**, not a substantive compliance analysis, and should be supplemented with the full text of the modification circular before determining any action items.",
+          "summarySource": "title"
         },
         {
           "sr": 14,
@@ -21487,7 +21545,9 @@
           "title": "Specification of the terms and conditions for Debenture Trustees for carrying out activities outside the purview of SEBI.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-65",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears, from the title alone, to set out the terms and conditions under which debenture trustees may carry out activities that fall outside SEBI’s direct regulatory purview. In practical terms, it is likely intended to define the boundaries of permitted non-SEBI activities, establish any conditions or safeguards attached to those activities, and clarify the compliance expectations for trustees so that such work does not conflict with their regulated debenture trustee functions. Because no document text was provided, I cannot identify any specific amendments, numeric thresholds, reporting duties, approval requirements, effective dates, or deadlines; those details would need the full instrument to summarize accurately.\n\nFor a corporate compliance team, the key implication from the title is that debenture trustees and any entities engaging them should review whether any contemplated services or assignments are outside SEBI’s scope and then confirm that the trustee’s conduct remains within whatever conditions the specification imposes. This is a general summary based only on the title and should not be treated as a substitute for the actual regulatory text.",
+          "summarySource": "title"
         },
         {
           "sr": 15,
@@ -21497,7 +21557,9 @@
           "title": "Timeline for submission of information by the Issuer to the Debenture Trustee(s)",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-64",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general procedural timeline governing when an issuer must submit information to one or more debenture trustees. Based on the title alone, it likely establishes filing/reporting deadlines, required disclosures, and the sequence or periodicity for delivering issuer information after debenture issuance, but the actual obligations, triggers, and timing cannot be confirmed because no substantive text was provided.\n\nFor a compliance team, the key point is that this is likely relevant to any issuer that has issued debentures and has a contractual or regulatory duty to keep the debenture trustee(s) informed. Without the underlying document, I cannot identify the specific reports, certificates, financial statements, event-driven notices, or exact submission dates that may be required, nor can I confirm whether there are penalties, cure periods, or trustee review steps.\n\nBecause the content is not provided, this should be treated as a placeholder/general reference rather than a definitive compliance instruction. If you share the full text, I can produce a detailed compliance summary with exact deadlines, thresholds, responsible parties, and any continuing obligations.",
+          "summarySource": "title"
         },
         {
           "sr": 16,
@@ -21507,7 +21569,9 @@
           "title": "SEBI (Listing obligations and disclosure requirements) (Fifth amendment) regulations, 2025",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-63",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is titled the **SEBI (Listing Obligations and Disclosure Requirements) (Fifth Amendment) Regulations, 2025**, which indicates an amendment to India’s existing listed-entity disclosure and governance framework under SEBI’s LODR regulations. However, **no substantive text or amendment provisions were provided**, so it is **not possible to identify the actual changes, affected entities, thresholds, deadlines, filing obligations, or effective date mechanics** from the content available.\n\nFor a compliance team, the only reliable takeaway is that this is **a formal amendment instrument to the LODR regulations** and therefore may affect **listed companies and other entities subject to SEBI’s listing, disclosure, and governance requirements**. Because the document text is absent, I cannot confirm whether it changes board/committee requirements, continuous disclosure obligations, periodic reporting, corporate governance standards, related-party transaction rules, ESG disclosures, shareholding disclosures, or any filing timelines.\n\n**General summary only:** this appears to be a 2025 SEBI amendment to the Listing Obligations and Disclosure Requirements regime, but the specific regulatory requirements introduced, modified, or repealed are not available in the provided material. For compliance purposes, the actual amendment text would need to be reviewed before determining implementation steps or any deadline-driven action items.",
+          "summarySource": "title"
         },
         {
           "sr": 17,
@@ -21517,7 +21581,9 @@
           "title": "Master Circular for issue and listing of Non-convertible Securities, Securitised Debt Instruments, Security Receipts, Municipal Debt Securities and Commercial Paper.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251121-73",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general master circular** issued for the **issue and listing of Non-convertible Securities, Securitised Debt Instruments, Security Receipts, Municipal Debt Securities, and Commercial Paper**. Based on the title alone, it appears to be a consolidated regulatory framework intended to govern how these instruments are **issued, listed, and likely maintained in compliance with the applicable market regulations**. For a corporate compliance team, the key takeaway is that the circular likely serves as the primary reference point for procedural and disclosure requirements applicable to issuers, intermediaries, and possibly listed entities dealing in these instruments.\n\nBecause no substantive text was provided, I cannot identify the **specific amendments, thresholds, deadlines, filing obligations, listing conditions, disclosure formats, or enforcement changes** contained in the circular. I also cannot confirm which exact entities are newly affected or whether the circular supersedes earlier instructions, except that the “master circular” format usually indicates a **compilation and consolidation of existing requirements** into one document. If you can provide the body of the circular or a link/excerpt, I can produce a full compliance-focused summary with exact obligations, dates, and numeric requirements.",
+          "summarySource": "title"
         },
         {
           "sr": 18,
@@ -21527,7 +21593,9 @@
           "title": "XBRL based filing of Regulation 50 for Entities which has listed its non-convertible securities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251121-72",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a filing/compliance item related to **XBRL-based submission of Regulation 50 information for entities that have listed non-convertible securities**. Based on the title alone, the apparent requirement is that companies falling within this scope must provide their Regulation 50 filing in **XBRL format** rather than only in a non-structured or manual format. The affected entities are those that have **listed non-convertible securities**; the title does not specify any exclusions, thresholds, monetary amounts, or phased applicability, so those details cannot be confirmed from the provided content.\n\nBecause no body text was provided, **no effective date, deadline, filing frequency, technical schema/version, or procedural step can be verified** from the document itself. A compliance team should therefore treat this as a **general notice of an XBRL e-filing requirement tied to Regulation 50**, and confirm the exact filing portal, taxonomy, due dates, and any validation or certification steps from the underlying regulator instructions before implementation.",
+          "summarySource": "title"
         },
         {
           "sr": 19,
@@ -21537,7 +21605,9 @@
           "title": "Frequently Asked Questions (FAQ) for submission of financial results as required under Regulation 33 of SEBI (LODR) Regulations, 2015 & Master circular for compliance with the provisions of the SEBI (LODR) Regulations, 2015.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251117-20",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general FAQ-style compliance resource issued in connection with **Regulation 33 of SEBI (LODR) Regulations, 2015** and the related **Master Circular for compliance with the SEBI (LODR) Regulations, 2015**. Based on the title alone, it is aimed at helping **listed entities** understand how to **submit financial results** in the format and manner required by SEBI, likely covering the practical filing process, disclosures, and compliance expectations around periodic financial reporting.\n\nBecause no actual FAQ text or substantive content was provided, I cannot identify any specific amendments, filing deadlines, thresholds, form requirements, procedural changes, or new obligations beyond the general subject matter. The only concrete compliance point that can be stated from the title is that the document relates to the **submission of financial results under Regulation 33**, so any entity subject to SEBI LODR financial-results obligations would be the intended audience. If you share the actual FAQ text, I can provide a detailed compliance summary with the exact requirements, timelines, and affected entities.",
+          "summarySource": "title"
         },
         {
           "sr": 20,
@@ -21547,7 +21617,9 @@
           "title": "SEBI Circular on “Minimum information to be provided to the Audit Committee and Shareholders for approval of Related Party Transactions.”",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251014-34",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based only on the title**, since no document text was provided. The circular appears to require listed entities to furnish a **minimum prescribed set of information** to the **Audit Committee** and to **shareholders** when seeking approval for **Related Party Transactions (RPTs)**, so that approvals are made on a more informed basis and related-party dealings are more transparent. For a compliance team, the practical implication is that any RPT proposal likely needs to be supported by standardized disclosures before it is placed before the Audit Committee and again before shareholders, rather than relying on a brief transaction description alone.\n\nThe title indicates the circular is aimed at defining **minimum information standards** for RPT approvals, which usually means companies will need to ensure their internal approval papers, notices, and explanatory statements capture the required transaction details in a consistent format. This would generally affect **listed companies and their related-party dealings**, and may also influence the documentation prepared by finance, legal, secretarial, and compliance teams for board/Audit Committee and shareholder processes. Because the text is not available, no specific thresholds, dates, or line-by-line disclosure items can be confirmed from the material provided.\n\nFrom a compliance perspective, the key expected operational change is that companies should review and update their **RPT approval workflow**, board/Audit Committee materials, and shareholder notice templates so the required minimum information is included each time an RPT is presented for approval. If the circular contains implementation dates or format requirements, those would need to be checked against the full text before applying it.",
+          "summarySource": "title"
         },
         {
           "sr": 21,
@@ -21557,7 +21629,9 @@
           "title": "Filing of Financial Results by REITs & InvITs in XBRL Mode",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251009-62",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general notice or filing requirement related to the submission of financial results by Real Estate Investment Trusts (REITs) and Infrastructure Investment Trusts (InvITs) in XBRL format. Based on the title alone, the key compliance point is that affected REITs and InvITs would be required to prepare and file their financial results using XBRL mode rather than only in a traditional text/PDF or non-tagged format, indicating a structured electronic reporting obligation. Because no body text is provided, the document does not specify the exact filing deadline, reporting period, applicability threshold, transition date, or any exceptions, nor does it identify whether the requirement applies to all filings or only certain financial statements or periodic returns.\n\nFor a compliance team, the practical takeaway is that this likely concerns SEBI-style or exchange-style electronic financial disclosure compliance for listed REITs/InvITs, and the organization should confirm the prescribed XBRL taxonomy, filing portal, certification/sign-off requirements, and whether prior filings must be restated or newly tagged. Since no substantive content is included, this summary should be treated as a high-level placeholder only and not as a substitute for the operative filing instructions, deadlines, or technical specifications that would normally govern compliance.",
+          "summarySource": "title"
         },
         {
           "sr": 22,
@@ -21567,7 +21641,9 @@
           "title": "Framework on Social Stock Exchange (“SSE”)",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250926-67",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is only a general summary based on the title, since no document text was provided. A “Framework on Social Stock Exchange (SSE)” would typically establish the rules, eligibility criteria, disclosure expectations, governance standards, and operating procedures for a stock-exchange-like platform or segment used to raise capital for social enterprises, non-profits, or other entities pursuing social impact objectives. For a compliance team, the likely relevance would be to any entity seeking to list, issue securities, or participate in fundraising through the SSE, as well as any intermediaries, advisers, or exchange operators involved in that process. In practical terms, such a framework usually specifies what types of issuers and instruments are permitted, what impact-related disclosures must be made, how ongoing reporting and monitoring work, and what controls are needed to prevent misuse of the “social” label. Because the actual text is unavailable, I cannot identify any specific thresholds, deadlines, procedural changes, or enforcement obligations beyond noting that the framework would govern SSE-related market activity and likely impose compliance requirements on participants.",
+          "summarySource": "title"
         },
         {
           "sr": 23,
@@ -21577,7 +21653,9 @@
           "title": "Listing of further securities issued by the companies under ESOP/ESOS",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250924-42",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a general notice or heading only, with no substantive document text provided, so there are no specific rule changes, deadlines, thresholds, filing obligations, or affected entities to summarize beyond the title itself. Based on the title, the document concerns the listing of additional securities issued by companies under employee stock option/employee stock ownership plans (ESOP/ESOS), which typically means shares or other securities issued pursuant to such schemes are being admitted to trading or listed after issuance. For a compliance team, the key implication is that the issuer would need to ensure the securities were validly issued under the applicable ESOP/ESOS framework and that any listing-related steps, disclosures, and exchange/market filings connected to those newly issued securities are completed. However, because no content is provided, I cannot identify any specific regulatory requirements, effective dates, quantity limits, reporting timelines, or procedural changes from the document itself.\n\nIf you want, I can also turn this into a brief “compliance note” or a one-line risk assessment based on the title alone.",
+          "summarySource": "title"
         },
         {
           "sr": 24,
@@ -21587,7 +21665,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250912-89",
-          "isNew": false
+          "isNew": false,
+          "summary": "This is a **general summary based only on the title**, because no document text was provided. The notice appears to concern an update to the **single filing system** used for regulatory submissions, with the key change being the introduction of an **API-based integration between stock exchanges**. For a compliance team, the practical implication is likely that filing/reporting processes that were previously handled separately through each exchange may now be routed through a more integrated technical interface, which could change how member firms, listed entities, or other reporting parties submit required information.\n\nBecause the underlying content is unavailable, **no specific effective date, transition deadline, filing threshold, report type, or affected jurisdiction can be confirmed from the title alone**. A compliance officer should treat this as a likely process/technology update affecting submission mechanics rather than substantive reporting obligations, but the exact scope would need to be verified from the full notice. Before relying on this summary, the team should obtain the actual document to confirm whether the update applies to all listed companies, intermediaries, or only certain categories of filings, and whether any parallel/manual filing procedures remain available during implementation.",
+          "summarySource": "title"
         },
         {
           "sr": 25,
@@ -21597,7 +21677,9 @@
           "title": "SEBI (LODR) (Third Amendment) Regulations, 2025",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250911-86",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be the **SEBI (Listing Obligations and Disclosure Requirements) (Third Amendment) Regulations, 2025**, but **no document text was provided**, so this can only be a **general, title-based summary** rather than a summary of specific rule changes. Based on the title alone, this is an amendment to SEBI’s **LODR Regulations**, which govern ongoing listing, disclosure, corporate governance, and related compliance obligations for listed entities in India. The amendment would therefore be relevant to **listed companies and other entities subject to the LODR framework**, as well as their compliance, legal, secretarial, and disclosure teams.\n\nBecause the content is not provided, I **cannot identify the actual provisions changed, any new thresholds, deadlines, effective dates, filing formats, procedural steps, exemptions, or penalties**. A compliance officer should treat the title as indicating that some portion of the existing LODR compliance regime has been revised and should review the official text of the Third Amendment Regulations, 2025 to determine the exact obligations, whether any disclosures must be made immediately or by a specified date, and whether implementation dates differ across provisions.\n\nIf you share the actual amendment text or notification, I can produce a full compliance-oriented summary with the specific changes, affected entities, and required actions.",
+          "summarySource": "title"
         }
       ],
       "ts": 1795385818937,
@@ -26841,7 +26923,9 @@
           "title": "Speeches and Statements",
           "desc": "Speeches and Statements&nbsp;&nbsp;PCAOB",
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WRk1tYkVoaWhQLVNuckhvMnNMSFNEcE1vbU9jOGVlOTNjRTM0TXA2T1VhM0F6bmFsZmdKX0pVSXdnVUZRWmZkdmlrRVVxOGdpeUE?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is not a substantive regulatory rule or filing; it is simply a heading for **“Speeches and Statements” issued by the PCAOB (Public Company Accounting Oversight Board)**. No specific requirement, deadline, threshold, fee, enforcement change, or compliance obligation is described in the content provided. Based on the text shown, there is nothing for a corporate compliance team to implement or monitor beyond recognizing that this is a PCAOB communications category rather than an operative rulemaking or guidance document. If you intended a specific PCAOB speech or statement, please provide the actual text so I can summarize the compliance impacts accurately.",
+          "summarySource": "title"
         },
         {
           "sr": 2,
@@ -27734,7 +27818,9 @@
           "title": "Speeches and Statements",
           "desc": "Speeches and Statements&nbsp;&nbsp;PCAOB",
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WRk1tYkVoaWhQLVNuckhvMnNMSFNEcE1vbU9jOGVlOTNjRTM0TXA2T1VhM0F6bmFsZmdKX0pVSXdnVUZRWmZkdmlrRVVxOGdpeUE?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is not a substantive regulatory rule or filing; it is simply a heading for **“Speeches and Statements” issued by the PCAOB (Public Company Accounting Oversight Board)**. No specific requirement, deadline, threshold, fee, enforcement change, or compliance obligation is described in the content provided. Based on the text shown, there is nothing for a corporate compliance team to implement or monitor beyond recognizing that this is a PCAOB communications category rather than an operative rulemaking or guidance document. If you intended a specific PCAOB speech or statement, please provide the actual text so I can summarize the compliance impacts accurately.",
+          "summarySource": "title"
         },
         {
           "sr": 29,
