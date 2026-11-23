@@ -1121,7 +1121,9 @@
           "title": "Goods and Services Tax | GST Deemed Export Refund: Form A, Form B, Rule 89 and Two-Year Limitation",
           "desc": "Learn GST deemed export refund rules for EOUs, including Form A, Form B, endorsed invoices, Rule 89, RFD-01 and two-year limitation.The post GST Deemed Export Refund: Form A, Form B, Rule 89 and Two-Y",
           "link": "https://taxguru.in/goods-and-service-tax/gst-deemed-export-refund-form-form-rule-89-year-limitation.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "This document explains the GST refund process for **deemed exports** made to **Export Oriented Units (EOUs)** and focuses on the paperwork and time limits needed to claim the refund. It says the claimant must use **Form A** and **Form B**, rely on **endorsed invoices**, and file the refund under **Rule 89** using **Form GST RFD-01**. The key compliance point is that the refund claim is subject to a **two-year limitation period**, meaning the refund application must be submitted within two years of the relevant date under the GST refund framework.\n\nFor a compliance team, the practical requirement is to ensure that deemed export transactions are documented correctly at the outset so the claim does not fail later for missing endorsements or incorrect forms. The document indicates that the refund mechanism is not automatic: the supplier/claimant must prepare the required forms and invoice endorsements and then submit the claim through the prescribed refund application process. Because the note specifically references EOUs, the rule is aimed at supplies that qualify as deemed exports to such units, rather than ordinary domestic sales or regular export shipments.",
+          "summarySource": "desc"
         },
         {
           "sr": 30,
@@ -1131,7 +1133,9 @@
           "title": "Income Tax | Section 153C Assessments Quashed as ₹50 Lakh Threshold Not Met: ITAT Delhi",
           "desc": "The post Section 153C Assessments Quashed as ₹50 Lakh Threshold Not Met: ITAT Delhi appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/section-153c-assessments-quashed-rs-50-lakh-threshold-not-met-itat-delhi.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "This item is not a regulatory text or rule change, but a short article headline reporting a tax tribunal outcome. It says that the ITAT Delhi quashed assessments made under Section 153C of the Income-tax Act because the monetary threshold of ₹50 lakh was not met. The practical point conveyed is that, in the case discussed, the tax authority’s Section 153C action could not be sustained where the required threshold for invoking that provision was absent.\n\nNo effective date, filing deadline, procedural change, or broader compliance rule is provided in the content. The only specific compliance-relevant detail available is the reported ₹50 lakh threshold and the fact that Section 153C assessments were invalidated for failing that requirement.",
+          "summarySource": "desc"
         },
         {
           "sr": 31,
@@ -1141,7 +1145,9 @@
           "title": "Goods and Services Tax | Taking Handcuffs Out of GST: Tax Officers Should Collect Revenue, Not Arrest Taxpayers",
           "desc": "The 57th GST Council proposes ending GST officers' arrest powers and raising the prosecution threshold toRs. 5 crore. What changes for taxpayers?The post Taking Handcuffs Out of GST: Tax Officers Shou",
           "link": "https://taxguru.in/goods-and-service-tax/handcuffs-gst-tax-officers-collect-revenue-not-arrest-taxpayers.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document reports that the 57th GST Council has proposed two major changes to GST enforcement: first, GST officers would no longer have arrest powers in GST matters, and second, the monetary threshold for launching prosecution would be increased to Rs. 5 crore. For compliance purposes, this means the enforcement approach would shift away from custodial action by tax officers toward revenue collection and prosecution only in larger-value cases. The proposal appears aimed at reducing criminal enforcement risk for taxpayers in smaller disputes, while reserving prosecution for matters involving alleged tax evasion or non-compliance above the new Rs. 5 crore threshold.\n\nThe affected entities are GST-registered taxpayers and any businesses or individuals subject to GST investigations, audits, or enforcement proceedings. The document does not provide a separate implementation date, effective date, or detailed procedure for how the change will be operationalized, so a compliance team should treat it as a proposed policy change rather than an immediately operative rule unless confirmed elsewhere. If adopted, companies should expect that routine GST disputes would be handled without arrest risk from tax officers, but they should still monitor exposure to prosecution in higher-value cases exceeding Rs. 5 crore and continue maintaining documentation and controls to defend against allegations of evasion.",
+          "summarySource": "desc"
         },
         {
           "sr": 32,
@@ -1163,7 +1169,9 @@
           "title": "Income Tax | ITAT Delhi Quashes Retrospective 12AB Cancellation; Orders 80G Approval",
           "desc": "The post ITAT Delhi Quashes Retrospective 12AB Cancellation; Orders 80G Approval appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/itat-delhi-quashes-retrospective-12ab-cancellation-orders-80g-approval.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is not the underlying ruling or regulatory text itself; it is only a brief headline indicating the outcome of a tax case. Based on the title, the Income Tax Appellate Tribunal (ITAT), Delhi appears to have held that a trust or charitable institution’s registration under Section 12AB cannot be cancelled retrospectively, meaning the tax authority’s attempt to nullify the registration for prior periods was quashed. The title also indicates that the tribunal ordered approval under Section 80G, which would allow donors to claim the applicable deduction for contributions made to the approved entity, but the specific effective date of the 80G approval, the period covered by the 12AB cancellation, and any conditions attached to the approval are not provided in the content shown.  \n\nFor compliance purposes, the only defensible takeaway from the supplied text is that charitable entities facing retrospective cancellation of 12AB registration may have grounds to challenge such action, and that 80G approval remains a separate status that may be directed by the tribunal even where registration issues exist. No specific procedural changes, filing deadlines, numerical thresholds, or operational requirements are described in the provided content, so a compliance team would need the underlying order or full article to determine the exact impacted assessment years, whether donor receipts or public notices must be updated, and whether any rectification or reapplication steps are required.",
+          "summarySource": "desc"
         },
         {
           "sr": 34,
@@ -1185,7 +1193,9 @@
           "title": "Goods and Services Tax | GST Search Under Section 67(2): Suspicion Cannot Replace Statutory Authority",
           "desc": "GST search under Section 67(2): Know the limits on cash seizure, scrap stock verification, Section 130 confiscation and forced DRC-03 payments.The post GST Search Under Section 67(2): Suspicion Cannot",
           "link": "https://taxguru.in/goods-and-service-tax/gst-search-section-67-2-suspicion-cannot-replace-statutory-authority.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document explains the legal limits on GST search and seizure powers under Section 67(2) of the CGST Act and warns that tax officers cannot rely on mere suspicion to justify confiscation, cash seizure, or forced payment demands. Its central point is that a search under Section 67(2) must be backed by proper statutory authority and evidence of reasons to believe; officers cannot use the search to bypass the separate legal requirements for proceedings such as confiscation under Section 130 or for extracting payments through DRC-03 during the search.\n\nFor compliance teams, the practical message is that cash found during a search is not automatically liable to seizure simply because officers suspect tax evasion, and scrap stock or other inventory cannot be treated as excess or wrongful merely on conjecture. If authorities want to invoke Section 130 confiscation, they must follow the legal threshold and procedure for that provision rather than converting a Section 67 search into confiscation proceedings on the spot. Likewise, any request or pressure to make immediate DRC-03 payment during the search should be treated cautiously, because the document indicates that payment cannot be compelled without lawful basis and proper adjudicatory process.\n\nNo specific tax rates, filing deadlines, monetary thresholds, or amended return timelines are mentioned in the provided text. The compliance takeaway is procedural: ensure that any search action is supported by documented legal grounds, require officers to identify the statutory basis for seizure or confiscation, and preserve records of what was found, what was claimed, and whether any payment was requested under pressure so the company can challenge actions that exceed Section 67(2) authority.",
+          "summarySource": "desc"
         },
         {
           "sr": 36,
@@ -1195,7 +1205,9 @@
           "title": "Income Tax | Third-Party Shroff Statement Insufficient for Section 263 Revision: ITAT Rajkot",
           "desc": "The post Third-Party Shroff Statement Insufficient for Section 263 Revision: ITAT Rajkot appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/party-shroff-statement-insufficient-section-263-revision-itat-rajkot.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is only a headline and does not contain the underlying facts, reasoning, dates, or operative holding of the case, so there is no substantive regulatory change or compliance rule to summarize from the text provided. Based on the title alone, it appears to concern an income tax appellate decision from the ITAT Rajkot holding that a statement from a third-party shroff (money changer/financier) was not enough, by itself, to justify revision of an assessment under Section 263 of the Income-tax Act. If that inference is correct, the practical takeaway would be that tax authorities need more than an uncorroborated third-party statement to conclude that an assessment order was erroneous and prejudicial to revenue for Section 263 purposes, but the document excerpt does not provide the actual facts, thresholds, dates, or compliance obligations. For a compliance team, this excerpt is not sufficient to identify any direct filing, reporting, withholding, or procedural requirement imposed on taxpayers; it only signals a litigation point about the evidentiary standard for revision proceedings.",
+          "summarySource": "desc"
         },
         {
           "sr": 37,
@@ -1205,7 +1217,9 @@
           "title": "Goods and Services Tax | GST E-Invoicing for RCM Self-Invoices from 1 January 2027: RCMDOM &#038; RCMIMP",
           "desc": "GSTN explains e-invoicing for RCMDOM and RCMIMP self-invoices from 1 January 2027, with voluntary IRN generation starting 15 December 2026.The post GST E-Invoicing for RCM Self-Invoices from 1 January",
           "link": "https://taxguru.in/goods-and-service-tax/gst-invoicing-rcm-invoices-1-january-2027-rcmdom-rcmimp.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "GSTN has announced that, starting **1 January 2027**, **self-invoices issued for reverse charge mechanism (RCM)** transactions will come within the **e-invoicing / IRN framework** for both **RCMDOM** (domestic reverse charge supplies) and **RCMIMP** (import-related reverse charge cases). In practical terms, businesses that are required to create self-invoices for RCM transactions will need to generate them through the e-invoicing system and obtain an **Invoice Reference Number (IRN)** for those invoices rather than handling them only as manual/self-prepared documents.\n\nA **voluntary IRN generation option** will be available earlier, from **15 December 2026**, allowing affected taxpayers to begin testing or adopting the process before the mandatory start date. The document does not specify any monetary threshold, rate change, or exemption criteria in the excerpt provided; the key compliance change is the expansion of e-invoicing to RCM self-invoices, affecting entities that have RCM obligations under GST, especially those dealing with domestic reverse charge transactions and import reverse charge scenarios. Compliance teams should plan for system and process readiness well before **1 January 2027**, including the ability to generate, validate, and store IRNs for RCM self-invoices and to ensure internal invoice workflows correctly identify RCMDOM and RCMIMP cases.",
+          "summarySource": "desc"
         },
         {
           "sr": 38,
@@ -1215,7 +1229,9 @@
           "title": "Income Tax | Canaccord Wealth Acquisition: Management Equity, Exit Waterfalls, Governance and UK Tax",
           "desc": "Canaccord Wealth's £1.17bn deal highlights management equity valuation, exit preferences, regulatory approvals, UK share taxation and acquisition financing.The post Canaccord Wealth Acquisition: Manag",
           "link": "https://taxguru.in/income-tax/canaccord-wealth-acquisition-management-equity-exit-waterfalls-governance-uk-tax.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is a transaction-focused summary of Canaccord Wealth’s £1.17 billion acquisition and the associated legal, governance, and UK tax issues for management equity participants. It indicates that the deal raises specific questions around how management equity is valued, how exit waterfalls will operate, what governance rights will apply post-transaction, what regulatory approvals are required, and how UK share taxation will apply to the equity arrangements. It also notes that acquisition financing is part of the transaction structure, so compliance and deal teams need to consider the interaction between the funding package and the equity/incentive design.\n\nFrom a compliance perspective, the key takeaway is that the document is not announcing a new law or filing deadline, but rather highlighting the areas that must be addressed in structuring and documenting the acquisition: the terms of management participation, preferential return or distribution mechanics on exit, governance protections or controls, and the UK tax treatment of share-based interests. No specific effective date, deadline, tax rate, or numerical threshold beyond the £1.17 billion transaction value is stated in the provided content.",
+          "summarySource": "desc"
         },
         {
           "sr": 39,
@@ -1225,7 +1241,9 @@
           "title": "Income Tax | ITAT Raipur Rejects Condonation of Over 10-Year Delay in Income Tax Appeal",
           "desc": "The post ITAT Raipur Rejects Condonation of Over 10-Year Delay in Income Tax Appeal appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/itat-raipur-rejects-condonation-10-year-delay-income-tax-appeal.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document, as provided, contains only a headline and no substantive text beyond noting that the post appeared on TaxGuru. Based on the title alone, it appears to report an Income Tax Appellate Tribunal (ITAT), Raipur decision refusing to condone a delay of more than 10 years in filing an income tax appeal. For a compliance team, the practical takeaway is that the tribunal evidently treated the delay as too excessive to excuse, which underscores that appellate deadlines in tax matters are strictly enforced and that entities cannot assume late filings will be accepted absent very strong justification.\n\nBecause no body of the article or case details are included, the document does not state the underlying tax issue, the parties involved, the statutory provision applied, the explanation offered for the delay, or any specific deadline, threshold, or procedural change beyond the fact of the over-10-year delay being rejected. There is also no indication of a new rule or compliance requirement created by the decision; it is best understood as a case outcome illustrating the risk that extremely delayed appeals may be dismissed as time-barred. If you want, I can also help turn this into a short internal compliance note or, if you can provide the full article text, I can produce a much more complete case summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 40,
@@ -1235,7 +1253,9 @@
           "title": "Business | The Secret Behind “Settle Your Gold Loan, Get the Best Price” Offers",
           "desc": "How gold loan settlement traders operate, why falling gold prices trigger LTV margin calls, and what borrowers should check before selling pledged gold.The post The Secret Behind “Settle Your Gold Loa",
           "link": "https://taxguru.in/finance/business/secret-settle-gold-loan-price-offers.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "This piece is not a regulatory filing or a formal financial rule change; it is a consumer-oriented explanation of how gold-loan settlement offers work and what borrowers should watch for before selling pledged gold. It explains that when someone takes a gold loan, the lender holds the pledged gold as collateral, and the loan amount is governed by the loan-to-value (LTV) ratio; if gold prices fall, the collateral value can drop enough to trigger a margin call or require the borrower to add security, reduce the outstanding amount, or otherwise settle the loan. The article describes “settle your gold loan, get the best price” traders as intermediaries who target borrowers seeking to clear the loan and sell the gold, often by offering an apparently attractive settlement price while handling repayment and release of the pledged asset. Compliance-relevant operational points are that borrowers should verify the exact outstanding loan balance, the lender’s settlement process, any foreclosure/prepayment charges, the procedure and timing for releasing the pledged gold, and whether any third-party dealer is acting with proper authorization rather than misleading the borrower about the net amount payable or receivable. No specific new legal requirement, effective date, threshold, or rate is stated in the provided content; the main substantive point is a warning about operational risk, valuation sensitivity to gold-price movements, and the need for clear disclosure and confirmation before any settlement or sale of pledged gold.",
+          "summarySource": "desc"
         },
         {
           "sr": 41,
@@ -1245,7 +1265,9 @@
           "title": "Finance | Significance of Credit-Deposit Ratio in Indian Banking System",
           "desc": "Explore the significance of the Credit-Deposit Ratio in Indian banking, its impact on liquidity, lending, financial stability and RBI supervision.The post Significance of Credit-Deposit Ratio in India",
           "link": "https://taxguru.in/finance/significance-credit-deposit-ratio-indian-banking-system.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is not a regulatory notice or rule change; it is a topical finance article explaining the **credit-deposit ratio (CD ratio)** in the Indian banking system and why it matters for bank management and Reserve Bank of India (RBI) supervision. It states that the CD ratio measures how much of a bank’s deposit base is deployed as credit, and that this ratio is used to assess a bank’s **lending intensity, liquidity position, and overall financial stability**. The piece indicates that a higher ratio generally means more deposits are being converted into loans, which can support economic growth but may also reduce liquidity if lending outpaces available funding, while a lower ratio suggests more conservative lending and higher liquidity. The article also notes that the RBI monitors this ratio as part of its oversight of banks, implying that banks with an unusually high or low CD ratio may attract supervisory attention because the metric can signal stress, aggressive lending, or underutilization of deposits.\n\nNo new compliance deadline, numeric threshold, rate, filing requirement, or procedural change is set out in the content provided. For a corporate compliance team, the practical takeaway is that this is explanatory background rather than an operative requirement: banks and other regulated entities should understand CD ratio as a key supervisory metric, but the document itself does not impose any new obligations or amend existing rules.",
+          "summarySource": "desc"
         },
         {
           "sr": 42,
@@ -1255,7 +1277,9 @@
           "title": "Income Tax | ITAT Rajkot Sets Aside ₹1.19 Crore Reassessment for Fresh Adjudication",
           "desc": "The post ITAT Rajkot Sets Aside ₹1.19 Crore Reassessment for Fresh Adjudication appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/itat-rajkot-sets-rs-1-19-crore-reassessment-fresh-adjudication.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document appears to be only a headline, not the underlying ruling or order, so there are no substantive facts, legal holdings, dates, thresholds, or compliance obligations stated in the provided text itself. The only discernible point is that the Income Tax Appellate Tribunal (ITAT), Rajkot reportedly set aside a reassessment involving ₹1.19 crore and sent the matter back for fresh adjudication, which suggests the earlier reassessment was not finally sustained at this stage. However, because no body text is provided, there is no information on the taxpayer involved, the assessment year, the grounds of challenge, the procedural defect or legal issue that led to remand, or any deadline or compliance action required of affected entities. For a compliance team, this headline alone should be treated as an indication of litigation/procedure being remanded rather than a rule change or a new compliance requirement.",
+          "summarySource": "desc"
         },
         {
           "sr": 43,
@@ -1265,7 +1289,9 @@
           "title": "Income Tax | Section 250(6): ITAT Orders Fresh CIT(A) Hearing in Rice Mill Case",
           "desc": "The post Section 250(6): ITAT Orders Fresh CIT(A) Hearing in Rice Mill Case appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/section-250-6-itat-orders-fresh-cit-hearing-rice-mill-case.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document title indicates an income tax appellate development involving Section 250(6), where the Income Tax Appellate Tribunal (ITAT) has ordered a fresh hearing before the Commissioner of Income Tax (Appeals) [CIT(A)] in a rice mill case. Based on the provided content, the only substantive point available is that a prior CIT(A) order was apparently found deficient enough for the ITAT to require the appeal to be reheard, which implies the original appellate decision may not have adequately addressed the taxpayer’s grounds or issued the kind of reasoned order Section 250(6) requires.  \n\nFor compliance purposes, this signals a procedural enforcement of appellate requirements: CIT(A) decisions must contain a proper, speaking order that deals with the issues raised, rather than a summary or incomplete disposal. The affected entity appears to be the taxpayer involved in the rice mill dispute, but the excerpt does not identify the taxpayer, the assessment year, the tax amount in dispute, any specific deduction/disallowance, or any filing deadline or monetary threshold. No new substantive tax rate, obligation, or reporting rule is stated in the excerpt; the material change is the remand for a fresh appellate hearing, which means the dispute remains open and the taxpayer should be prepared for another round of submissions and supporting evidence before CIT(A).",
+          "summarySource": "desc"
         },
         {
           "sr": 44,
@@ -1275,7 +1301,9 @@
           "title": "CA, CS, CMA |  CA Final Both Group Preparation Strategy: Three Revisions, Six Papers and Mock Tests",
           "desc": "Prepare for CA Final May 2027 with a three-revision study plan, paper-wise strategies, twelve mock tests and practical exam-day tips.The post  CA Final Both Group Preparation Strategy: Three Revisions",
           "link": "https://taxguru.in/chartered-accountant/ca-final-group-preparation-strategy-revisions-papers-mock-tests.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "This document is not a regulatory or financial rulemaking notice; it is an exam-preparation article aimed at CA Final candidates, specifically those preparing for the **May 2027** attempt. It recommends a **three-revision study plan** for both groups, with **paper-wise strategies**, **twelve mock tests**, and **practical exam-day tips** intended to improve performance across the CA Final syllabus.\n\nFor a compliance team, there are **no legal obligations, deadlines, reporting requirements, thresholds, or regulated-entity impacts** described here. The only concrete timing detail is the suggested target exam cycle, **May 2027**, and the main operational guidance is educational rather than mandatory: candidates should organize preparation around three rounds of revision, attempt mock tests, and follow exam-day planning advice. No new procedures are imposed on firms, professionals, or institutions by this text.",
+          "summarySource": "desc"
         },
         {
           "sr": 45,
@@ -1285,7 +1313,9 @@
           "title": "Company Law | MCA Overseas Listing Amendment Rules 2026: Equity Instruments, 75% QIB Rule &#038; LEAP-1",
           "desc": "MCA's 2026 overseas listing amendments expand equity instruments, relax negative net worth and default conditions, and revise Form LEAP-1.The post MCA Overseas Listing Amendment Rules 2026: Equity Ins",
           "link": "https://taxguru.in/company-law/mca-overseas-listing-amendment-rules-2026-equity-instruments-75-percent-qib-rule-leap-1.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document describes MCA’s 2026 amendments to the overseas listing framework, which broaden the types of equity instruments that may be considered, relax certain eligibility restrictions, and update the filing/reporting mechanics through a revised Form LEAP-1. It indicates that the overseas listing regime now more explicitly accommodates a wider range of equity-linked instruments, rather than only a narrow conventional equity concept, which matters for companies planning cross-border fundraising or listing structures. The amendments also appear to ease prior disqualifications tied to negative net worth and defaults, meaning companies that would previously have been excluded may now be able to access the route if they meet the revised criteria.\n\nA major substantive change highlighted is the introduction of a 75% QIB requirement, which affects the allocation or subscription structure for the relevant overseas issuance/listing process. In practical terms, compliance teams should treat this as a mandatory investor-distribution condition that must be tested at the offering structuring stage, because failure to meet the qualifying institutional buyer threshold could make the transaction non-compliant. The rule therefore affects issuance planning, book-building, allocation, and final offer documentation for entities seeking overseas listing under the amended framework.\n\nThe amendments also revise Form LEAP-1, which is the prescribed compliance/filing form for the overseas listing process. Any company using the route should expect updated disclosure, certification, or reporting obligations in the new form, and compliance teams will need to align internal approvals, board documentation, and external counsel review with the revised filing requirements before submission. Because the document is about regulatory amendments rather than a one-off approval, the key action item is to map current or planned overseas listing transactions against the amended eligibility and filing requirements, with special attention to the expanded equity instrument coverage, the relaxed financial default/negative net worth conditions, and the 75% QIB test.",
+          "summarySource": "desc"
         },
         {
           "sr": 46,
@@ -1295,7 +1325,9 @@
           "title": "Income Tax | CIT(A) Must Reconsider 164-Day Delay in Income Tax Appeal: ITAT Raipur",
           "desc": "The post CIT(A) Must Reconsider 164-Day Delay in Income Tax Appeal: ITAT Raipur appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/cit-reconsider-164-day-delay-income-tax-appeal-itat-raipur.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "This item appears to be a brief article title rather than the underlying regulatory or legal text, so the only material information available is that the Income Tax Appellate Tribunal (ITAT), Raipur has held that the Commissioner of Income Tax (Appeals) [CIT(A)] must reconsider a taxpayer’s 164-day delay in filing an income tax appeal. The apparent compliance point is procedural: where an appeal is filed late by 164 days, the appellate authority is being directed to re-examine whether that delay should be condoned rather than rejecting the appeal outright. No specific statutory amendment, tax rate change, filing deadline, class of taxpayers, or substantive tax obligation is described in the content provided.\n\nFrom a corporate compliance perspective, the practical takeaway is that late-filed income tax appeals may still be eligible for reconsideration of condonation if adequate grounds are shown, and companies should preserve evidence supporting any delay explanation when seeking appellate relief. However, because the source text does not include the body of the decision or any operative directions beyond the headline, no further procedural requirements can be confirmed from this material alone.",
+          "summarySource": "desc"
         },
         {
           "sr": 47,
@@ -1317,7 +1349,9 @@
           "title": "Company Law | MCA Draft CSR Amendment Rules 2026: Key Changes to CSR-1, Impact Assessment &#038; Schedule VII",
           "desc": "MCA proposes CSR Rules 2026 changes covering CSR-1 registration, voluntary impact assessment, implementing agencies and revised Schedule VII.The post MCA Draft CSR Amendment Rules 2026: Key Changes to",
           "link": "https://taxguru.in/company-law/mca-draft-csr-amendment-rules-2026-key-csr-1-impact-assessment-schedule-vii.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is a brief notice that the Ministry of Corporate Affairs (MCA) has proposed draft amendments to the CSR Rules for 2026, focusing on changes to CSR-1 registration, voluntary impact assessment, implementing agencies, and the scope of Schedule VII permitted CSR activities. It indicates that the draft rules would modify the compliance framework for companies undertaking CSR, especially those using external implementing agencies and those performing impact assessments, so corporate compliance teams should expect rule changes affecting both registration and documentation requirements.\n\nHowever, the excerpt provided does not include the actual amended rule text, specific thresholds, deadlines, effective dates, procedural steps, or which exact entities are newly covered or exempted. Because of that, a compliance officer should treat this as an early heads-up only, not as a basis for implementation planning, and should review the full draft notification for the precise obligations once the full text is available.",
+          "summarySource": "desc"
         },
         {
           "sr": 49,
@@ -1327,7 +1361,9 @@
           "title": "Income Tax | Form 26 Tax Audit Report from Tax Year 2026-27: Key Changes, Due Dates and Default Fees",
           "desc": "Form 26 replaces Forms 3CA, 3CB and 3CD from Tax Year 2026-27. Know reporting changes, due dates, Section 428 fees and audit compliance.The post Form 26 Tax Audit Report from Tax Year 2026-27: Key Cha",
           "link": "https://taxguru.in/income-tax/form-26-tax-audit-report-tax-year-2026-27-key-due-dates-default-fees.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document says that, starting with **Tax Year 2026–27**, **Form 26** will **replace the existing tax audit report forms 3CA, 3CB, and 3CD**. It indicates that the change is part of a broader update to tax audit reporting, so any entity currently required to file those tax audit forms should expect to use the new Form 26 instead for the relevant audit reporting cycle beginning in that tax year.\n\nIt also flags that the article covers **reporting changes, due dates, and compliance obligations**, meaning affected taxpayers and auditors will need to follow the updated filing format and related procedural requirements once the new form becomes mandatory. The document specifically references **Section 428 fees** and **default fees**, suggesting there are statutory consequences or penalties tied to missing deadlines or failing to comply with the revised audit-reporting process.\n\nNo exact due date, fee amount, threshold, or substantive technical filing rule is included in the excerpt provided, so the only concrete compliance point visible here is the **replacement of Forms 3CA/3CB/3CD by Form 26 beginning in Tax Year 2026–27**, with implied audit-compliance and penalty exposure under the referenced section if filing obligations are not met.",
+          "summarySource": "desc"
         },
         {
           "sr": 50,
@@ -1361,7 +1397,9 @@
           "title": "Income Tax | CIT(A) Cannot Dismiss Tax Appeal for Non-Prosecution Without Deciding Merits: ITAT Raipur",
           "desc": "The post CIT(A) Cannot Dismiss Tax Appeal for Non-Prosecution Without Deciding Merits: ITAT Raipur appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/cit-cannot-dismiss-tax-appeal-non-prosecution-without-deciding-merits-itat-raipur.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is a legal/news headline rather than a full regulatory text, and it reports a procedural tax-law holding from the ITAT Raipur: a Commissioner of Income Tax (Appeals) [CIT(A)] cannot dismiss a taxpayer’s appeal solely for non-prosecution or non-appearance without first deciding the appeal on its merits. In practical terms, this means appellate authorities handling income-tax disputes must examine the substantive issues raised in the appeal and issue a reasoned merits-based order, rather than rejecting the matter just because the appellant did not actively pursue the hearing.\n\nFor a corporate compliance team, the key takeaway is that if the company has an income-tax appeal pending before a CIT(A), the appeal should not legally be terminated merely due to absence, delay, or failure to attend a hearing; the authority remains obligated to adjudicate the tax dispute on merits. This affects taxpayer appeal strategy and case management, because even if a hearing is missed, the appellate forum is expected to address the underlying assessment additions, disallowances, or other contested issues rather than issuing a summary dismissal.\n\nThe document does not provide any new statutory amendment, rate change, threshold, or filing deadline. It is best understood as a procedural precedent emphasizing that appellate tax authorities must decide appeals substantively and cannot rely on “non-prosecution” alone as the basis for dismissal.",
+          "summarySource": "desc"
         },
         {
           "sr": 53,
@@ -1383,7 +1421,9 @@
           "title": "Company Law | NCLT Mumbai Approves Everblue Apparel Merger With Raymond Limited Under Sections 230–232",
           "desc": "The post NCLT Mumbai Approves Everblue Apparel Merger With Raymond Limited Under Sections 230–232 appeared first on TaxGuru.",
           "link": "https://taxguru.in/company-law/nclt-mumbai-approves-everblue-apparel-merger-raymond-limited-sections-230-232.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document reports that the National Company Law Tribunal (NCLT), Mumbai has approved the merger of Everblue Apparel with Raymond Limited under Sections 230–232 of the Companies Act, 2013. For compliance purposes, the key point is that this is a sanctioned court-approved restructuring, meaning the merger has moved beyond proposal stage and is now subject to implementation in accordance with the NCLT order and the statutory merger framework. The affected entities are Everblue Apparel and Raymond Limited, and the approval would typically require the companies to carry out all post-sanction steps needed to give effect to the amalgamation, such as completing filings, transferring assets and liabilities, and updating corporate records, though the provided text does not include the detailed operative terms of the order.\n\nNo effective date, cut-off date, exchange ratio, valuation, consideration, or other numerical merger term is stated in the text provided. The only explicit legal basis mentioned is Sections 230–232, which govern compromises, arrangements, and mergers under Indian company law. Since the content is only a headline and a source note, it does not provide the specific conditions of approval, any compliance deadlines, or any additional procedural obligations beyond the fact of NCLT sanction.",
+          "summarySource": "desc"
         },
         {
           "sr": 55,
@@ -1393,7 +1433,9 @@
           "title": "Company Law | NCLT Kochi Approves ESAF Financial Holdings Share Restructuring Under Section 230",
           "desc": "The post NCLT Kochi Approves ESAF Financial Holdings Share Restructuring Under Section 230 appeared first on TaxGuru.",
           "link": "https://taxguru.in/company-law/nclt-kochi-approves-esaf-financial-holdings-share-restructuring-section-230.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document indicates that the NCLT Kochi has approved a share restructuring for ESAF Financial Holdings under Section 230 of the Companies Act, 2013. The only substantive point provided is that the restructuring received Tribunal approval; no further details are included about the nature of the share restructuring, the affected classes of shares, the rationale, shareholder implications, timelines, conditions, or any compliance steps that ESAF Financial Holdings or related entities must now take. Because the content contains no operative terms beyond the approval itself, there are no disclosed effective dates, deadlines, thresholds, procedural requirements, or additional obligations that a compliance team can extract from this text alone.",
+          "summarySource": "desc"
         },
         {
           "sr": 56,
@@ -1403,7 +1445,9 @@
           "title": "Company Law | NCLT Ahmedabad Orders Winding Up of GRICL Rail Bridge Development Company",
           "desc": "The post NCLT Ahmedabad Orders Winding Up of GRICL Rail Bridge Development Company appeared first on TaxGuru.",
           "link": "https://taxguru.in/company-law/gricl-rail-bridge-development-company-wound-nclt-ahmedabad.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is a brief news item reporting that the National Company Law Tribunal (NCLT), Ahmedabad has ordered the winding up of GRICL Rail Bridge Development Company. It does not provide the underlying facts of the case, the legal basis for the order, the date of the order, or any transition period or compliance deadline. The only clearly stated substantive outcome is that the company is being put into winding-up proceedings, which would mean its business operations are expected to be liquidated under tribunal supervision rather than continue as a going concern.\n\nFor a corporate compliance team, the practical significance is that this is an insolvency/liquidation event affecting GRICL Rail Bridge Development Company itself, not a broader rule change applicable to other companies. No new reporting, filing, procedural, or threshold requirements are described in the text. Because the content is only a headline-style announcement, it does not contain enough detail to derive any further compliance obligations beyond recognizing that the company is under a winding-up order.",
+          "summarySource": "desc"
         },
         {
           "sr": 57,
@@ -1413,7 +1457,9 @@
           "title": "Company Law | Non-Shareholder Can Be Impleaded in Oppression Case as Proper Party: NCLT Hyderabad",
           "desc": "The post Non-Shareholder Can Be Impleaded in Oppression Case as Proper Party: NCLT Hyderabad appeared first on TaxGuru.",
           "link": "https://taxguru.in/company-law/non-shareholder-impleaded-oppression-case-proper-party-nclt-hyderabad.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document does **not** contain the underlying regulatory text or factual holdings of the NCLT matter; it only provides a headline stating that, in an oppression case, a **non-shareholder may be impleaded as a proper party** by the NCLT Hyderabad. Based on the title alone, the apparent point is procedural: the tribunal recognized that someone who is **not on the share register** can still be added to oppression/mismanagement proceedings if that person’s involvement is relevant to the dispute. However, the content supplied here does **not** include the case facts, the tribunal’s reasoning, any legal test applied, the final outcome, or any operative compliance deadlines, so it does not impose any clearly stated new filing, reporting, or governance obligations from the text provided.\n\nFor a compliance team, the only practical takeaway from the supplied content is that **company-law disputes involving oppression allegations may not be limited strictly to shareholders**, and boards or legal teams should be prepared for the possibility that directors, controllers, transferees, beneficial owners, or other involved non-shareholders could be brought into such proceedings if the tribunal deems them necessary parties. No dates, thresholds, rates, or specific procedural instructions are included in the provided excerpt.",
+          "summarySource": "desc"
         },
         {
           "sr": 58,
@@ -1423,7 +1469,9 @@
           "title": "Income Tax | ITAT Raipur Remands Section 69 Appeal Dismissed for Non-Prosecution",
           "desc": "The post ITAT Raipur Remands Section 69 Appeal Dismissed for Non-Prosecution appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/itat-raipur-remands-section-69-appeal-dismissed-non-prosecution.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is a brief headline-style note reporting that the Income Tax Appellate Tribunal (ITAT) at Raipur remanded an appeal involving Section 69 after it had earlier been dismissed for non-prosecution. The only substantive point conveyed is procedural: the taxpayer’s appeal was not decided on the merits because it had been dismissed due to the appellant’s failure to prosecute, and the Tribunal has now sent the matter back for further consideration. No tax rate, penalty amount, filing deadline, assessment year, factual background, or compliance rule is provided in the text. For a corporate compliance team, the practical takeaway is limited to litigation procedure: this indicates that an adverse dismissal for non-appearance/non-prosecution may be reopened or remanded, but the document does not state any broader change in tax law or any new compliance obligation for taxpayers generally.",
+          "summarySource": "desc"
         },
         {
           "sr": 59,
@@ -1445,7 +1493,9 @@
           "title": "Income Tax | Rural Women Empowerment Through Economic Activities Qualifies as Charitable Purpose: Madras HC",
           "desc": "The post Rural Women Empowerment Through Economic Activities Qualifies as Charitable Purpose: Madras HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/rural-women-empowerment-economic-activities-qualifies-charitable-purpose-madras-hc.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document does not contain the underlying regulatory or financial substance of the Madras High Court decision; it only provides the headline and a note that the post appeared on TaxGuru. Based on the title alone, the apparent subject is that the Madras High Court held that activities aimed at empowering rural women through economic activities can qualify as a “charitable purpose” for income tax purposes. However, the provided content does not include the court’s reasoning, the factual background, the tax exemption or registration issue involved, any effective date, any monetary thresholds, or any compliance steps that would apply to a corporate or tax-exempt entity.\n\nFor a compliance briefing, this means I cannot reliably identify what changed, which organizations are affected, or what actions are required from the actual text provided. If you share the full article, judgment summary, or order text, I can produce a proper compliance-focused summary with the holding, scope, conditions, and practical implications.",
+          "summarySource": "desc"
         },
         {
           "sr": 61,
@@ -1455,7 +1505,9 @@
           "title": "Income Tax | Incomplete Construction Does Not Exclude Urban Land From Wealth Tax: Delhi HC",
           "desc": "The post Incomplete Construction Does Not Exclude Urban Land From Wealth Tax: Delhi HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/incomplete-construction-not-exclude-urban-land-wealth-tax-delhi-hc.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is a brief title reference to a Delhi High Court tax ruling, not the full text of the decision itself. Based on the title, the key holding is that **urban land does not lose its character as wealth-taxable property merely because construction on it is incomplete**. In other words, a taxpayer cannot avoid wealth tax on urban land simply by showing that a building project on the land has not yet been completed.\n\nFor a corporate compliance team, the practical implication is that entities holding **urban land** should not assume that partial development, unfinished structures, or ongoing construction automatically removes that asset from wealth-tax exposure where wealth tax provisions apply. The relevant compliance focus would be on how the land is classified for tax purposes and whether it continues to meet the definition of taxable urban land despite incomplete construction. The title does not provide the court’s detailed reasoning, any monetary thresholds, effective date, filing deadline, or procedural requirements beyond the substantive rule that incomplete construction is not enough to exclude the land from wealth tax.",
+          "summarySource": "desc"
         },
         {
           "sr": 62,
@@ -1477,7 +1529,9 @@
           "title": "Goods and Services Tax | Vehicle AC Gas Compressors Classifiable Under Heading 8708 at 28% GST: Madras HC",
           "desc": "The post Vehicle AC Gas Compressors Classifiable Under Heading 8708 at 28% GST: Madras HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/goods-and-service-tax/vehicle-ac-gas-compressors-classifiable-heading-8708-28-percent-gst-madras-hc.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is extremely limited in substance: it is only a headline stating that the Madras High Court has held that vehicle air-conditioning gas compressors are classifiable under Customs Tariff Heading 8708 and therefore attract GST at 28%. No operative text, effective date, transitional rule, filing deadline, or procedural guidance is provided in the content itself.\n\nFor compliance purposes, the only clear takeaway is that businesses dealing in vehicle AC gas compressors should treat these items as falling under Heading 8708 for GST classification purposes, with the applicable GST rate being 28% according to the referenced court decision. The content does not specify whether the ruling applies prospectively or retrospectively, whether it affects imports, domestic sales, or both, or whether any refund, reclassification, or audit action is required. Because the post is only a pointer to the TaxGuru article and not the underlying judgment or tax authority instruction, a compliance team would need to review the full case decision and any implementing tax guidance before changing tax treatment or making any reporting corrections.",
+          "summarySource": "desc"
         },
         {
           "sr": 64,
@@ -1523,7 +1577,9 @@
           "title": "Goods and Services Tax | GST Rule 96(10) Omission Invalidates Pending Recovery Order: Madras HC",
           "desc": "The post GST Rule 96(10) Omission Invalidates Pending Recovery Order: Madras HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/goods-and-service-tax/gst-rule-96-10-omission-invalidates-pending-recovery-order-madras-hc.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is only a headline and does not contain the underlying court ruling or facts, so the only reliable takeaway is that it refers to a Madras High Court decision holding that the omission of GST Rule 96(10) affected a pending recovery order. Based on the title alone, the reported issue is that a recovery proceeding under GST could not continue, or could be invalidated, because Rule 96(10) had been omitted from the GST Rules, suggesting the court treated the omission as having legal effect on actions still pending at the time. The document does not provide the date of omission, the effective date of the court ruling, the tax period involved, the amount at issue, the type of taxpayer or export/refund transaction affected, or whether the order was quashed outright versus remanded for fresh action. \n\nFor compliance purposes, the headline indicates a potentially significant procedural impact for entities facing GST recovery actions tied to Rule 96(10): if a company has a pending recovery notice or order based on that rule, it should assess whether the omission of the rule undermines the legal basis for the proceeding and whether relief can be sought in reliance on this Madras High Court position. However, because no details are provided in the content, no further obligations, deadlines, thresholds, or operational changes can be confirmed from this document alone.",
+          "summarySource": "desc"
         },
         {
           "sr": 68,
@@ -1533,7 +1589,9 @@
           "title": "Income Tax | Reassessment Notice Issued Beyond TOLA Limitation Period Quashed: Gujarat HC",
           "desc": "The post Reassessment Notice Issued Beyond TOLA Limitation Period Quashed: Gujarat HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/reassessment-notice-issued-tola-limitation-period-quashed-gujarat-hc.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is only a headline/post title and does not contain the underlying regulatory text or the court’s reasoning. From the title alone, the substantive point appears to be that the Gujarat High Court quashed an income tax reassessment notice because it was issued after the limitation period extended under the TOLA regime (the Taxation and Other Laws (Relaxation and Amendment of Certain Provisions) Act). However, the title does not provide the key details a compliance team would need, such as the exact assessment year involved, the date of the reassessment notice, the specific TOLA deadline that was missed, the legal provisions applied, or whether the ruling has broader application beyond the taxpayer in question.  \n\nBecause the actual article text is not included, I cannot reliably summarize any further requirements, compliance obligations, or deadlines. If you share the full article or the court order, I can produce a complete compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 69,
@@ -1543,7 +1601,9 @@
           "title": "Income Tax | ITAT Raipur Sets Aside Ex Parte CIT(A) Order, Grants Final Hearing Opportunity",
           "desc": "The post ITAT Raipur Sets Aside Ex Parte CIT(A) Order, Grants Final Hearing Opportunity appeared first on TaxGuru.",
           "link": "https://taxguru.in/income-tax/itat-raipur-sets-parte-cit-order-grants-final-hearing-opportunity.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "This item is a very short case-note headline rather than a substantive regulatory text, and the only information provided is that the ITAT Raipur “sets aside” an ex parte order passed by the CIT(A) and grants a final hearing opportunity. Based on the title alone, the practical takeaway is procedural: in the referenced income-tax appeal, the appellate order was not allowed to stand because it had been decided without the taxpayer’s participation, and the matter is being remanded or reopened so the affected party can be heard on the merits.\n\nFor a compliance team, the main significance is that it underscores the risk of adverse tax outcomes when notices, hearings, or appellate proceedings are missed, and it highlights the importance of tracking and responding to income-tax appellate communications promptly. No tax rate, threshold, filing deadline, penalty change, or substantive compliance rule is stated in the text provided, and no specific industry, taxpayer category, or transaction type is identified. The document therefore does not impose a new compliance requirement; it reflects a litigation/procedural outcome that may be relevant only as a reminder to maintain robust notice-management and representation processes in tax disputes.",
+          "summarySource": "desc"
         },
         {
           "sr": 70,
@@ -1553,7 +1613,9 @@
           "title": "Fema / RBI | RBI FAQs on FEMA Export and Import Regulations 2026 Clarify EDF Filing and Reporting",
           "desc": "RBI FAQs explain EDF filing, the ₹10 lakh threshold, SOFTEX discontinuation, filing deadlines and reporting under the FEMA trade regulations.The post RBI FAQs on FEMA Export and Import Regulations 202",
           "link": "https://taxguru.in/rbi/rbi-faqs-fema-export-import-regulations-2026-clarify-edf-filing-reporting.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The RBI’s FAQs on FEMA export and import regulations clarify several compliance points for Indian exporters and importers under the Foreign Exchange Management Act framework. Most notably, the FAQs explain the Export Declaration Form (EDF) filing requirement and confirm that the ₹10 lakh threshold is relevant for when certain export documentation/reporting obligations are triggered, so businesses should verify whether their shipments meet or exceed that value before deciding what filings apply. The guidance also addresses the discontinuation of SOFTEX reporting in the manner previously used, indicating that companies should not rely on older SOFTEX-based processes and instead follow the current reporting approach specified by RBI for relevant export transactions.\n\nThe FAQs also clarify filing deadlines and the manner of reporting for trade-related transactions under FEMA, which means exporters, importers, authorized dealer banks, and any compliance teams handling cross-border trade documentation should ensure submissions are made within the prescribed timelines and in the prescribed format. In practical terms, the document is a clarification and compliance reminder rather than a new law, but it matters because it confirms how RBI expects trade transactions to be documented and reported, especially where electronic exports, service exports, or other trade flows may have been handled inconsistently in the past. Compliance teams should review their current export/import SOPs, bank-facing workflows, and document retention practices to ensure they reflect the clarified EDF and reporting rules and that no legacy SOFTEX process is still being used where it has been discontinued.",
+          "summarySource": "desc"
         },
         {
           "sr": 71,
@@ -1599,7 +1661,9 @@
           "title": "Goods and Services Tax | GST Appeal Delay Due to Consultant’s Illness Warrants Reconsideration: Calcutta HC",
           "desc": "The post GST Appeal Delay Due to Consultant’s Illness Warrants Reconsideration: Calcutta HC appeared first on TaxGuru.",
           "link": "https://taxguru.in/goods-and-service-tax/gst-appeal-delay-due-consultants-illness-warrants-reconsideration-calcutta-hc.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "This item is not a regulatory text or a substantive financial circular; it is a brief news headline indicating that the Calcutta High Court held that a delay in filing a GST appeal caused by a consultant’s illness may justify reconsideration. The only concrete takeaway is procedural: a taxpayer’s appeal delay under GST should not be rejected mechanically where there is a plausible explanation tied to the illness of the consultant handling the matter, and the court appears to have directed or encouraged reconsideration of the delay issue on those facts.\n\nNo dates, thresholds, tax rates, filing deadlines, or specific compliance rule changes are provided in the content you supplied. There is also no indication of any new statutory requirement for businesses generally; the significance is limited to appeal-delay condonation in the described case, which may be relevant to entities facing missed GST appellate deadlines due to documented medical hardship affecting their professional advisor.",
+          "summarySource": "desc"
         },
         {
           "sr": 75,
@@ -1609,7 +1673,9 @@
           "title": "Corporate Law | Karnataka HC Upholds AbbVie Reprimand and Allows Independent Tax and ROC Inquiries",
           "desc": "The post Karnataka HC Upholds AbbVie Reprimand and Allows Independent Tax and ROC Inquiries appeared first on TaxGuru.",
           "link": "https://taxguru.in/corporate-law/karnataka-hc-upholds-abbvie-reprimand-independent-tax-roc-inquiries.html",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided text does not contain the underlying regulatory or court decision itself; it only gives the headline: “Karnataka HC Upholds AbbVie Reprimand and Allows Independent Tax and ROC Inquiries,” followed by the note that the post appeared first on TaxGuru. Because no body text, facts, holdings, dates, penalties, parties’ conduct, or procedural directions are included, there are no concrete compliance requirements or thresholds I can reliably summarize from the document content as provided.\n\nFrom the headline alone, the only defensible takeaway is that the Karnataka High Court apparently upheld a reprimand involving AbbVie and permitted separate/independent inquiries by tax authorities and the Registrar of Companies (ROC). That suggests the matter may concern overlapping tax and corporate-law scrutiny rather than a single consolidated proceeding, but the document excerpt does not state what conduct was at issue, which entities are affected, what relief was denied or granted, or any deadlines, fines, or operational obligations.\n\nIf you can provide the full article text or the court order summary, I can produce a proper compliance-focused summary covering the exact legal findings, affected entities, practical obligations, and any time-sensitive requirements.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1795441686227,
