@@ -1683,7 +1683,9 @@ def filter_data(data: dict, regs: list[str]) -> dict:
     if hide:
         keep = {k: {**v, "rows": [r for r in v.get("rows", []) if not any(h in str(r.get("title", "")).lower() for h in hide)]}
                 if isinstance(v, dict) else v for k, v in keep.items()}
-    return mask_pan({**data, "data": keep})
+    # Not masked here: masking every row of every tab took several seconds on each click.
+    # Only the one tab sent to the browser is masked (see lazy_view), which is what DLP sees.
+    return {**data, "data": keep}
 
 
 def lazy_view(data: dict, active: str) -> dict:
@@ -1697,7 +1699,7 @@ def lazy_view(data: dict, active: str) -> dict:
             out[k] = {**v, "rows": [{f: x for f, x in r.items() if f != "desc"} for r in v.get("rows", [])]}
         else:
             out[k] = {kk: vv for kk, vv in v.items() if kk != "rows"} | {"rows": [], "_lazy": True}
-    return {**data, "data": out}
+    return mask_pan({**data, "data": out})  # mask only what is actually sent
 
 
 def build_page(page: str, data: dict, regs: list[str], name: str,
