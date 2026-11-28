@@ -596,7 +596,9 @@
           "title": "MSMEs should make the most of FTAs, adopt newer tech like AI, says RBI chief",
           "desc": "skip to content Advertisement function checkAndLoadWindowSizeScript() { if (window.jQuery) { // jQuery is loaded, include your script jQuery(document).ready(function($) { // Your existing script for checking window width if (window.innerWidth) var page_w = window.innerWidth; else if (document.all) var page_w = document.body.clientWidth; if (page_w > 1024) { $(\".add-left, .add-right\").show(); } else { $(\".add-left, .add-right\").hide(); } }); } else { // jQuery is not loaded, check again after 0.2 seconds setTimeout(checkAndLoadWindowSizeScript, 200); } } // Initial call to the function checkAndLoadWindowSizeScript(); MSMEs should make the most of FTAs, adopt newer tech like AI, says RBI chief RBI Governor Sanjay Malhotra flags slow AI adoption among MSMEs despite its potential benefits; urges smaller firms to make better use of India's free trade agreements Written by: Akash Mandal4 min readMumbaiUpdated: Nov 27, 2026 06:21 PM IST RBI Governor Sanjay Malhotra said AI is expected to add $490 billion-$685 billion in economic value to the micro, small and medium enterprises sector, urging them to invest in newer technologies and seize the opportunity. (PTI File) Make us preferred source on Google Whatsapp twitter Facebook Reddit PRINT AI Narration Listen 00:00 0.5x 0.75x 1x 1.25x 1.5x 2x Reserve Bank of India (RBI) Governor Sanjay Malhotra on Friday said the micro, small and medium enterprises (MSME) sector should make the most of the free trade agreements (FTAs) signed by India over the past couple of years, including those with the UK, Australia and Oman, instead of focusing only on the domestic market. “Look beyond domestic markets. Only about 20–30% of eligible Indian exports take advantage of the lower tariffs available under our FTAs. It is remarkably low compared with 60–70% utilisation by partner countries’ exports to India. It is an opportunity we are leaving on the table,” Malhotra said at the SME Finance & Investment Summit in Mumbai. “Learn about the FTAs re",
           "link": "https://indianexpress.com/article/business/rbi-governor-sanjay-malhotra-ai-economic-value-indian-msme-sector-productivity-fta-utilisation-mumbai-summit-10981091/",
-          "isNew": true
+          "isNew": true,
+          "summary": "The document is a news report quoting RBI Governor Sanjay Malhotra, and it does not impose a new regulation or formal compliance filing requirement. Its substance is a policy message to the MSME sector: smaller firms should expand beyond the domestic market and take greater advantage of India’s free trade agreements, specifically citing recent agreements with the UK, Australia, and Oman. Malhotra said that only about 20–30% of eligible Indian exports currently use the lower tariffs available under FTAs, compared with roughly 60–70% utilization by partner countries’ exports to India, which he described as a missed opportunity.\n\nThe second major point is a push for faster adoption of newer technology, especially AI. Malhotra said AI could add an estimated $490 billion to $685 billion in economic value to the MSME sector, but adoption remains slow, and he urged smaller firms to invest in newer technologies to improve productivity and competitiveness. He also specifically tied this technology push to trade competitiveness, implying that MSMEs should modernize operations if they want to benefit from export opportunities and lower-tariff access under FTAs.\n\nBecause this is an advisory speech rather than a rulemaking, there are no deadlines, compliance dates, reporting obligations, or penalty provisions stated in the document. For a compliance team, the practical takeaway is strategic rather than mandatory: if the company operates in or supports the MSME space, it may want to assess FTA eligibility/utilization for exports and evaluate whether AI or other newer technologies should be incorporated to strengthen trade readiness and market expansion.",
+          "summarySource": "desc"
         },
         {
           "sr": 2,
@@ -606,7 +608,9 @@
           "title": "Retail inflation likely to stay elevated in November as food prices remain high: RBI bulletin",
           "desc": "skip to content Advertisement function checkAndLoadWindowSizeScript() { if (window.jQuery) { // jQuery is loaded, include your script jQuery(document).ready(function($) { // Your existing script for checking window width if (window.innerWidth) var page_w = window.innerWidth; else if (document.all) var page_w = document.body.clientWidth; if (page_w > 1024) { $(\".add-left, .add-right\").show(); } else { $(\".add-left, .add-right\").hide(); } }); } else { // jQuery is not loaded, check again after 0.2 seconds setTimeout(checkAndLoadWindowSizeScript, 200); } } // Initial call to the function checkAndLoadWindowSizeScript(); Retail inflation likely to stay elevated in November as food prices remain high: RBI bulletin The RBI had hiked the policy Repo rate by 25 basis points to 5.50% in the October policy review. By: ENS Economic Bureau4 min readMumbaiNov 25, 2026 10:13 PM IST The share of items recording inflation over 4% and over 6% rose in October, suggesting greater generalisation of inflationary pressures compared to the previous month, the RBI article said. (File photo) Make us preferred source on Google Whatsapp twitter Facebook Reddit PRINT AI Narration Listen 00:00 0.5x 0.75x 1x 1.25x 1.5x 2x Retail inflation, which crossed the 6% mark in October, is expected to remain elevated in November, with “broad-based pressure” on food prices persisting, a Reserve Bank of India (RBI) report said. This has heightened the prospects for a further hike in interest rates by the RBI in the December policy review. “High-frequency data for November (till 19th) suggests a continuing broad-based pressure in food prices. Prices of all major cereals and pulses picked up,” the RBI’s State of the Economy article in RBI’s monthly bulletin stated. “Edible oil prices recorded a broad-based increase, led by mustard oil. Prices of key vegetables showed a mixed picture. Onion prices saw a relatively moderate increase; tomato prices recorded a sharp correction; and potato prices picked up,” the re",
           "link": "https://indianexpress.com/article/business/india-retail-inflation-november-2026-rbi-report-10978576/",
-          "isNew": false
+          "isNew": false,
+          "summary": "The RBI’s monthly bulletin says retail inflation, which rose above 6% in October, is likely to stay elevated in November because food prices continue to face broad-based upward pressure. In its State of the Economy article, the RBI said high-frequency data through November 19 showed prices for all major cereals and pulses increasing, edible oil prices rising broadly with mustard oil leading the increase, onion prices rising only moderately, tomato prices falling sharply, and potato prices moving higher. The report also noted that the share of items with inflation above 4% and above 6% increased in October, indicating that inflationary pressures became more widespread than in the prior month.\n\nFor compliance or treasury teams, the key policy implication is that the RBI is signaling continued inflation concern, which increases the likelihood of another interest-rate action at the December policy review. This follows the RBI’s October policy decision to raise the repo rate by 25 basis points to 5.50%. No direct operational compliance requirement is announced in this excerpt, but the document is relevant to interest-rate risk, borrowing costs, and pricing/forecast assumptions because it indicates the central bank may continue tightening if inflation remains persistent.",
+          "summarySource": "desc"
         },
         {
           "sr": 3,
@@ -616,7 +620,9 @@
           "title": "RBI moots trusted-person checks, instant debit freeze to curb banking fraud",
           "desc": "skip to content Advertisement function checkAndLoadWindowSizeScript() { if (window.jQuery) { // jQuery is loaded, include your script jQuery(document).ready(function($) { // Your existing script for checking window width if (window.innerWidth) var page_w = window.innerWidth; else if (document.all) var page_w = document.body.clientWidth; if (page_w > 1024) { $(\".add-left, .add-right\").show(); } else { $(\".add-left, .add-right\").hide(); } }); } else { // jQuery is not loaded, check again after 0.2 seconds setTimeout(checkAndLoadWindowSizeScript, 200); } } // Initial call to the function checkAndLoadWindowSizeScript(); RBI moots trusted-person checks, instant debit freeze to curb banking fraud Customers will be able to register a trusted person, who will have to approve transactions exceeding a threshold set by the account holder. Written by: George Mathew4 min readMumbaiUpdated: Nov 24, 2026 12:35 AM IST The RBI has proposed giving customers greater control over digital payment channels, including the ability to disable them, set transaction limits and restrict their usage during specified time periods. (File Photo) Make us preferred source on Google Whatsapp twitter Facebook Reddit PRINT AI Narration Listen 00:00 0.5x 0.75x 1x 1.25x 1.5x 2x The Reserve Bank of India (RBI) has proposed a ‘trusted person’ facility for customers to authenticate high-value bank transactions and a ‘stop switch’ to immediately block all future customer-initiated debits from their accounts, as part of a new framework aimed at strengthening safeguards against digital banking frauds. Under the proposed framework, customers will be able to register a trusted person, who will have to approve transactions exceeding a threshold set by the account holder. The RBI has also proposed giving customers greater control over digital payment channels, including the ability to disable them, set transaction limits and restrict their usage during specified time periods. The draft Reserve Bank of India (Comme",
           "link": "https://indianexpress.com/article/business/rbi-trusted-person-stop-switch-digital-banking-fraud-rules-10975272/",
-          "isNew": false
+          "isNew": false,
+          "summary": "The RBI has proposed a new fraud-control framework for digital banking that would give customers much tighter control over account activity. The key change is a “trusted person” facility: an account holder could register another person who must approve any transaction that exceeds a threshold set by the account holder, so banks and payment providers would need to support a customer-defined secondary authorization workflow for high-value transactions.  \n\nThe RBI has also proposed a “stop switch” that would allow a customer to immediately block all future customer-initiated debits from the account. In practice, this means financial institutions would need a mechanism to freeze outgoing debit activity on demand, with immediate effect, rather than relying only on conventional dispute or card-block processes.  \n\nIn addition, the draft framework would require providers of digital payment channels to give customers more granular control over usage: customers should be able to disable digital payment channels altogether, set transaction limits, and restrict use to specified time periods. Compliance teams should note that this is not just about fraud response after the fact; it is a proposed product-and-controls requirement that would affect account setup, transaction authorization rules, channel settings, and customer self-service functionality.  \n\nThe document does not specify implementation dates, final deadlines, or numerical thresholds/rates in the excerpt provided. It is framed as a proposal by the RBI, so the immediate compliance takeaway is to track the final draft or circular for operational requirements, customer consent and authentication standards, and any mandated timelines for offering these controls.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1795832432945,
@@ -966,7 +972,9 @@
           "title": "BoE to lower UK big-bank capital needs, warns AI debt and rising yields add risk",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZzlabDhlUkk0UUJwV0l3ci1wVnQ0cnFvNVRqTl9ac2U5bktBc3dWcTJ4NHZtZTV0LW1JbnIweERkU1UzejJiQ1FnTmJrSGVqbjdaNXhkY24tMXIzTFpxOXVZd28weFF6TUR6VXRuZXluMEt6TmhXLUl0TWRuR2IwQXYtSGJpSHdGdWlBT3BVWQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a news headline rather than a formal regulatory filing, and the substantive content provided is only the title: **“BoE to lower UK big-bank capital needs, warns AI debt and rising yields add risk.”** Based on that, the key compliance-relevant takeaway is that the **Bank of England is expected to reduce capital requirements for large UK banks**, which would directly affect major UK banking institutions subject to BoE capital rules and potentially their internal capital planning, stress testing, and shareholder distribution decisions. At the same time, the BoE is signaling that it sees **heightened financial stability risk from two areas: banks’ exposure to AI-related lending/debt and from higher interest rates/rising yields**, which could increase credit, market, and valuation risk in affected portfolios.\n\nNo specific **effective date, implementation date, threshold, or percentage reduction** is provided in the content you supplied, so a compliance team would need to confirm the actual policy statement or rule change from the underlying BoE release. Because the headline indicates a **lowering of capital needs** rather than an outright new restriction, the operational compliance question is likely whether the institution falls within the BoE’s “big-bank” perimeter and whether any revised capital buffers or minimum ratios will apply to its consolidated UK group or UK banking entity. The warning about AI debt and rising yields suggests that, even if capital requirements ease, banks may face closer supervisory scrutiny of **underwriting standards, concentration risk, credit monitoring, and stress scenarios** for loans linked to AI businesses or other rate-sensitive exposures.",
+          "summarySource": "desc"
         },
         {
           "sr": 6,
@@ -1060,7 +1068,9 @@
           "title": "Axis Bank Ltd (UZC.HM) stock major holders - Yahoo Finance UK",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5NRUZBRUFCTklJSkM4VE14ZEFuUmNaUDFNaGRfc2c3QkJEV0dfVzBHd0dIRG5nZlB5VUtVSmJqb0txcTIxSnRBampYSTVvMTJGc1dtQTBKLWdMNHBSN2hz?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "This document does not appear to be a regulatory or financial filing with compliance obligations. Instead, it is a fragment of Yahoo Finance UK webpage code for “Axis Bank Ltd (UZC.HM) stock major holders,” consisting of browser-side JavaScript that initializes page performance/visibility tracking functions such as `initAft()`, `wiz_progress()`, and `stopScanForCss()`. It does not describe any change in ownership, disclosure requirement, filing deadline, threshold, rate, or affected regulated entity beyond the webpage displaying stock-holder information for Axis Bank Ltd.\n\nFrom a compliance perspective, there are no substantive business or legal requirements to extract here: no effective date, no mandatory action, and no new reporting or notification obligation. The only material content is technical script behavior related to image tracking and page rendering, which is irrelevant to corporate compliance review unless your team is specifically assessing website code for privacy, accessibility, or security purposes.",
+          "summarySource": "desc"
         },
         {
           "sr": 14,
@@ -1070,7 +1080,9 @@
           "title": "Dah Sing Banking Group Ltd (RY2.DU) Seasonal returns chart - Yahoo Finance UK",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81d211Nkd1Mzl6WkY3em1DUGtEZWliQXp1b0xPXzNtTmxlQVhMVjZUenN0VkJFQm1Sb29QZTRjdFRXWG9vWUl3dmdoTjdVQjg4YUtkZk8ySHV2azlxWllpUGJIdE4?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided content does not contain any regulatory or financial disclosure text to summarize. It appears to be a fragment of Yahoo Finance webpage JavaScript and page-initialization code for a “Seasonal returns chart” page for Dah Sing Banking Group Ltd, not a filing, announcement, policy, or compliance-relevant document. There are no requirements, deadlines, thresholds, rate changes, entity obligations, or procedural instructions in the text—only technical browser scripting used to render or track page behavior.\n\nFor a corporate compliance team, the practical takeaway is that this source does not itself impose any compliance obligations or reportable changes. If you intended to summarize the underlying market data/chart or a related filing, please provide the actual document text, filing excerpt, or announcement content.",
+          "summarySource": "desc"
         },
         {
           "sr": 15,
@@ -1080,7 +1092,9 @@
           "title": "Bank of Qingdao Co Ltd (4BQ.DU) income statement - Yahoo Finance Australia",
           "desc": "Bank of Qingdao Co Ltd (4BQ.DU) income statement&nbsp;&nbsp;Yahoo Finance Australia",
           "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1CRFJBZWV6alhnZHRzcDNLellmSDdZS25WMGlESVp2UkJmY3VBLTNWYzZWM0c4YlV4RTU5LXBNeW1jNTd2YkNpakEyWFBEdDhTNnF2c21SRUpBQkZCNXhsc2xMUQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document does not contain a regulatory rule, filing, or policy change—it is only a Yahoo Finance Australia page title for “Bank of Qingdao Co Ltd (4BQ.DU) income statement.” No substantive financial figures, accounting line items, dates, thresholds, obligations, deadlines, or compliance requirements are provided in the content shown. Because the text contains only a reference to an income statement page and not the statement itself, there is nothing here that imposes or changes any obligations for a corporate compliance team.\n\nIf you intended to summarize the actual income statement or a regulatory filing, please provide the underlying document text or a screenshot/PDF with the financial details.",
+          "summarySource": "desc"
         },
         {
           "sr": 16,
@@ -1090,7 +1104,9 @@
           "title": "Bank of India Overnight Unc IDCW Up to3Y (0P0001O0YN.BO) Seasonal returns chart - Yahoo Finance UK",
           "desc": "Bank of India Overnight Unc IDCW Up to3Y (0P0001O0YN.BO) Seasonal returns chart&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBjSTljdk1BMlRTck5EU0ZjdmU0dXV0YjZhcHZsbldBS2JCYzRiM09sT2dFWUd3bUtRQW54enRPLTdaRnpNU0NjeE45eWJiRzFwSHFmc0h6cVNsWFBBWGh3ZnhtNTFXSHlPb0VMWlhR?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document does not contain any regulatory, legal, or financial compliance requirements. It appears to be only a Yahoo Finance UK page title for “Bank of India Overnight Unc IDCW Up to 3Y (0P0001O0YN.BO) Seasonal returns chart,” followed by the same title in the body, with no substantive text, disclosures, rates, deadlines, thresholds, policy changes, or obligations described.\n\nFor a corporate compliance team, there is nothing here to assess or implement based on the provided content. If you intended to summarize a fund fact sheet, regulatory filing, or other finance document, please provide the actual text or upload the correct document.",
+          "summarySource": "desc"
         },
         {
           "sr": 17,
@@ -1100,7 +1116,9 @@
           "title": "Bank of America Stock: Is BAC Underperforming the Financial Sector?",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdGtoVnZMeHpBOXBDN1VMbDk1VDBvRzRock5kOUVjMURQTnd5UWVGcjdfSnc0WlFKRnoyZTItZ2ZNaEN1OVQwRHg5VkJ0LVJ6a0NZNVdoNk1LLW43aDNEN1pkQTA2Wk8tQW01NjRydnpwZWpJWVN0Vy1VUGdFQ2pMT2NkQXhFajkzeFVtVFpWdTBQZ3BBdWE1QnlzcklnT2FaZ0FmOUZn?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided “document” does not contain a regulatory or financial disclosure to summarize; it is only webpage/JavaScript boilerplate from a site-rendering script (for example, image-loading and “above the fold” tracking functions such as `initAft()`, `recordIsAboveFold`, and `window.wiz_progress`). There are no compliance-relevant substantive statements, no rules or obligations, no effective dates, no thresholds, no enforcement requirements, and no affected entities or activities described in the text itself.  \n\nBecause the content is just technical code, there is nothing for a corporate compliance team to implement or monitor based on this excerpt. If you intended to provide the actual article or filing about Bank of America stock/BAC performance, please send the underlying text and I can produce a full compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 18,
@@ -1146,7 +1164,9 @@
           "title": "Spain extends bank tax, sets tougher lending rules before election - Yahoo Finance UK",
           "desc": "Spain extends bank tax, sets tougher lending rules before election&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYWJlUW1mRzFEOURRVjduX1I3SzBra212Y3R2RHZoMlpiLWZWcXZxRHMzZUktZTc5NmRNZFJnRTktdThOLUI0MGNBUzZhd1FSTmVJMTA2ZHJUTVhOMnduVjlQQTNZLWltUnJfV0prVnAwNFByaHVHTUVZRWtGYXhqM1B3?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document’s title indicates that Spain is extending a bank tax and tightening lending rules ahead of an election, but the provided content contains only the headline and no substantive article text. Because no details are included, there is no reliable information here about the tax rate, which financial institutions are covered, how long the extension lasts, what lending rules are changing, which loan products or borrowers are affected, or any effective dates, deadlines, thresholds, or compliance procedures. For a corporate compliance team, the only actionable takeaway from the material provided is that a policy change involving Spanish banks and lending conditions is being reported, but the actual regulatory requirements cannot be determined from the text supplied.",
+          "summarySource": "desc"
         },
         {
           "sr": 22,
@@ -1168,7 +1188,9 @@
           "title": "Chinese tech giant guilty of plotting to steal trade secrets and bank fraud - Yahoo Finance UK",
           "desc": "Chinese tech giant guilty of plotting to steal trade secrets and bank fraud&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaGtKM3lXNUo2eUNSamtmZEtIU1h2YnFBMHYtR1BQa0ZBalczRFZiVGRIWEJONHVleDJWampJRGF3empxSHZSdEFqWUw3bGtLTjRabjV0OURpQmpXazF1RHVRZ1hRUWl2NVlyRmRMMjlmOTFuQ2lmci1NYjJQZFhvVmQwYm5rT1hZaExJ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” contains only a headline and no underlying article text, so there are no substantive regulatory or financial details to summarize beyond the fact that it reports that a Chinese technology giant was found guilty of plotting to steal trade secrets and commit bank fraud. Because the actual body of the article is not included, the specific company involved, the conduct alleged, any dates, court jurisdiction, legal findings, penalties, compliance implications, or affected business activities cannot be reliably identified from the provided content. For a corporate compliance briefing, this means no actionable requirements, deadlines, thresholds, or procedural changes can be extracted from the text as supplied.\n\nIf you can provide the full article or source text, I can produce the detailed compliance-focused summary you’re asking for.",
+          "summarySource": "desc"
         },
         {
           "sr": 24,
@@ -1190,7 +1212,9 @@
           "title": "Ukraine’s bank lending rises 33% as central bank warns of tax risks",
           "desc": "Ukraine’s bank lending rises 33% as central bank warns of tax risks&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQXzZXNFdXMW9XcUNPajRJQXotQTdPV0FncDhNaGU0T1U3dVhIWElsWEFGblgzNTl2S1NUTXVrVjUyUXJjc191NmJibHhUUldYTzJWOGNVaEY1OXROTk5sRUlVWDZZVHdLdmFoQjlsaVE3STJELWl0SlNDUnBlS1g3a1M2WHZqQzYxNVhsUl91ZzNpRlJ3ajlrdHh3?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The only substantive information provided is the headline, which is a news-style summary rather than a full regulatory text: Ukraine’s bank lending has risen 33%, and the central bank is warning about tax risks. No actual regulatory requirements, legal changes, deadlines, thresholds, or compliance procedures are included in the supplied content, so there is nothing concrete to summarize in terms of obligations for a corporate compliance team. Based on the headline alone, the material appears to concern macro-financial conditions in Ukraine and a caution from the central bank regarding potential tax-related exposures, but it does not identify affected entities, specify any rule changes, or describe any filing, reporting, or supervisory actions. If you can provide the full article or the underlying notice, I can produce a proper compliance-focused summary with the operative details.",
+          "summarySource": "desc"
         },
         {
           "sr": 26,
@@ -1200,7 +1224,9 @@
           "title": "Bank of America (BAC) Renews Long Term Card Tie Up With a Travel Partner - Yahoo! Finance Canada",
           "desc": "Bank of America (BAC) Renews Long Term Card Tie Up With a Travel Partner&nbsp;&nbsp;Yahoo! Finance Canada",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdVBSc1Q3VmVkb0JlRXJobTN1eml1VTRmYkp5S0VyNnRmTmh1WlF6ak5zcEZjUFhRYmNkOVB2QzZqa0lsVXVUdlh6Wm5HeXpfQXc2bnY4Ykd0MTc4YnlfM3VnUjllNWRDV0pSWkh3TWZGYmtUcl9YMGdhSmpWcXNySmVYYw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided document does not contain the underlying regulatory or financial details of the Bank of America travel-partner card agreement; it only shows a headline stating that Bank of America (BAC) “renews long term card tie up with a travel partner” and identifies the source as Yahoo! Finance Canada. Because the body text is missing, there are no disclosed compliance-relevant facts to summarize, such as the identity of the travel partner, the terms of the renewal, any effective date or expiration date, changes to card features or rewards, financial commitments, thresholds, fees, or any new obligations for Bank of America or its partners.  \n\nFor a corporate compliance team, the only reliable takeaway is that a commercial renewal involving a long-term card relationship apparently occurred, but the document as provided does not state whether it creates any new regulatory requirements, customer disclosures, marketing changes, data-sharing obligations, or contractual compliance actions. If you can provide the full article or filing text, I can produce a substantive summary covering the actual obligations, dates, and operational impacts.",
+          "summarySource": "desc"
         },
         {
           "sr": 27,
@@ -1210,7 +1236,9 @@
           "title": "PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk (2PE.F) interactive stock chart – Yahoo Finance - Yahoo Finance Singapore",
           "desc": "PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk (2PE.F) interactive stock chart – Yahoo Finance&nbsp;&nbsp;Yahoo Finance Singapore",
           "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfckdFYzRXYzAzU1hUMEIwUWZwZzMtUkFFRFpjQ3h1UDc4M0FqZ0RXOUpLYW5uWkdqbzhsWlM4YW1oVzJNd01tWnNBemdBN09UXzhtSUZvZUdmX1k?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This “document” does not contain any regulatory or financial disclosure content. It only shows a Yahoo Finance page title for PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk (ticker 2PE.F) and identifies it as an interactive stock chart page on Yahoo Finance Singapore.\n\nBecause no actual article text, filing, announcement, rule change, financial statement, or regulatory notice is included, there are no substantive compliance requirements, effective dates, thresholds, obligations, or affected entities to summarize. For a corporate compliance team, the only relevant takeaway is that the provided content is metadata for a market-data page, not a source document imposing or describing any legal or compliance action.",
+          "summarySource": "desc"
         },
         {
           "sr": 28,
@@ -1232,7 +1260,9 @@
           "title": "Santander Bank Polska SA (BZI.MU) Seasonal returns chart - Yahoo Finance - Yahoo Finance Singapore",
           "desc": "Santander Bank Polska SA (BZI.MU) Seasonal returns chart - Yahoo Finance&nbsp;&nbsp;Yahoo Finance Singapore",
           "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE54Q01vdWstb2NUb0hGdEZBVGRsbHBHZFk4QkozUmU3dDRwMF83UFRkNWo0QW5PdnR0aDFrSGxVTjdlZ3p0WWhYcGxndTNOTmNHNmVDQjdGS094b1FzODc0bW9GaEg?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided document does not contain any regulatory, financial, or compliance-relevant substantive text. It is only a Yahoo Finance page title referencing “Santander Bank Polska SA (BZI.MU) Seasonal returns chart,” along with a Yahoo Finance Singapore label, and it does not include any disclosed rule change, filing, deadline, threshold, obligation, or market action.\n\nBecause no underlying chart data, commentary, disclosure, or announcement is included, there is nothing in this text that would impose or alter compliance requirements for Santander Bank Polska SA or any other entity. A corporate compliance team would need the actual report, filing, announcement, or chart data to assess whether there are any obligations, risk implications, or reporting impacts.",
+          "summarySource": "desc"
         },
         {
           "sr": 30,
@@ -1242,7 +1272,9 @@
           "title": "EQ Bank's Chadwick Westlake named New CEO of the Year by The Globe and Mail's Report on Business Magazine",
           "desc": "EQ Bank's Chadwick Westlake named New CEO of the Year by The Globe and Mail's Report on Business Magazine&nbsp;&nbsp;Yahoo Finance",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVXFRQUJGMVR5dVBUc2dJNllwRTlzVWJCS2lkbXRQZTRZRHpCZDhVT0VMazdaeUdxLUM0SWN5ckZHTks1N2lJZnZWNTJuTEZvNjlicW5oOHdhWXhKNmNuVUM1ZG1qRTBMZ1R6M1RfTG50NGFoZm01TlY1SnhOa3ZZZWl2aFdHbHhyajd6UXQxaWxmcTRON2pXQnhZV1NWQQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is not a regulatory or financial compliance notice; it is a media headline stating that Chadwick Westlake of EQ Bank was named “New CEO of the Year” by The Globe and Mail’s Report on Business magazine. It does not announce any rule change, filing requirement, enforcement action, deadline, rate, threshold, or operational obligation for regulated entities. No compliance procedures, affected institutions, or substantive financial terms are described. For a corporate compliance team, there is no actionable regulatory content in the text provided.",
+          "summarySource": "desc"
         },
         {
           "sr": 31,
@@ -1288,7 +1320,9 @@
           "title": "Graphique interactif des capital-actions 6CZ.HA| Capital-actions China Zheshang Bank Co. Ltd. R - Yahoo Finance France",
           "desc": "Graphique interactif des capital-actions 6CZ.HA| Capital-actions China Zheshang Bank Co. Ltd. R&nbsp;&nbsp;Yahoo Finance France",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kbW1KOU1uSGRJSWx1UFd4Y0xxbExybjV3elUxb0g5RzV5WWFzR18zMUpodVN0T3R4NFFocGtfY29tSnFPN2ZtOXYteDF0eVpJeFFr?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided document does not contain any substantive regulatory, financial, or compliance content. It is only a Yahoo Finance France page title for an interactive stock chart relating to China Zheshang Bank Co., Ltd. R (ticker/identifier “6CZ.HA”) and the company’s capital stock. No rule change, disclosure requirement, deadline, threshold, rate, filing obligation, or affected entity/activity is described in the text you supplied.\n\nFor a corporate compliance review, there is nothing actionable to summarize from the content itself. If you intended to provide a longer article, filing, or notice, please resend the full text or document so I can extract the actual compliance obligations and material changes.",
+          "summarySource": "desc"
         },
         {
           "sr": 35,
@@ -1346,7 +1380,9 @@
           "title": "BFF Bank SpA (2BF.HA) stock price, news, quote and history - Yahoo Finance UK",
           "desc": "BFF Bank SpA (2BF.HA) stock price, news, quote and history&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ya2ZGbkVIc2V5ejhnOUI5dmRKLXRubnJUQks3SDhzZ1FNeFRaRlo0MHVubmRtdml4VlFZWXl0eGlIUmdnc25MM2tDYzJnRzZzNEtKSg?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is not a regulatory or financial rulemaking text, but a Yahoo Finance UK page title for BFF Bank SpA’s stock quote/history. It does not contain any substantive legal, regulatory, accounting, disclosure, or compliance requirements, and it does not state any changes, deadlines, thresholds, obligations, or affected entities beyond the listed company name and ticker reference (BFF Bank SpA / 2BF.HA). As a result, there is no compliance action to summarize from the content shown. If you intended to provide an actual filing, notice, or policy text, please share the document body and I can summarize the operative requirements in detail.",
+          "summarySource": "desc"
         },
         {
           "sr": 40,
@@ -1356,7 +1392,9 @@
           "title": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) Seasonal returns chart - Yahoo Finance UK",
           "desc": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) Seasonal returns chart&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFdU9weElUX0RzUldjaU9IeVdEYXZYLUpnRlVLSHp6UWVvc3Ffc2ZiYmxaWmJfZ2ZXejJOZHhLMFdMTnVDcVVUcGZKWXJjRVdZNExlZG5Ybl9LblE1T2t3N3FoV2ZmaVBV?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document does not contain any regulatory, financial, or compliance-relevant content beyond a Yahoo Finance page title and a chart heading: “ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) Seasonal returns chart.” No operative rule, filing requirement, disclosure obligation, deadline, rate change, threshold, or enforcement guidance is included in the provided text.\n\nThe only identifiable substantive information is that the referenced instrument appears to be an ASB Bank security with a stated date of 19/11/2031 and a coupon of 4.782%, and that the page relates to a seasonal returns chart on Yahoo Finance UK. Because the content is just a page label and not an actual regulatory notice or financial disclosure, there is nothing here requiring compliance action or monitoring based on the document itself.",
+          "summarySource": "desc"
         },
         {
           "sr": 41,
@@ -1378,7 +1416,9 @@
           "title": "Morgan Stanley Bank, N.A. Point to Point CD AARONXX (AARONXX) Seasonal returns chart - Yahoo Finance - Yahoo Finance Singapore",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nVm1SZEZYcWhGdlJiY25zZW1kMHVYajNfU2hkaXNZeHBLcTIwYjhiSDNFaFA0MEFJemc2R1k1ekJZdU1hRUFBN2tIM0JaZGRqUkRZSllEbF9aM3RzTHJwRGxOWm5DQQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” does not contain any regulatory, financial, or compliance-relevant disclosure to summarize. It is just webpage/javascript boilerplate from Yahoo Finance (for “Morgan Stanley Bank, N.A. Point to Point CD AARONXX (AARONXX) Seasonal returns chart”), including image-loading and tracking code such as `window.wiz_progress`, `initAft()`, and `stopScanForCss()`. There are no terms, offering details, risk factors, rates, deadlines, thresholds, filing obligations, or compliance requirements stated in the text.\n\nFrom a compliance perspective, nothing in this content appears to impose duties on Morgan Stanley Bank, N.A., AARONXX, Yahoo Finance, or any other entity. If you intended to provide the actual product disclosure statement, prospectus, term sheet, or regulatory filing for this CD, please send that document and I can summarize the substantive requirements, dates, and thresholds in full.",
+          "summarySource": "desc"
         },
         {
           "sr": 43,
@@ -1436,7 +1476,9 @@
           "title": "Bank fined £1.9m for money laundering failings - Yahoo! Finance Canada",
           "desc": "Bank fined £1.9m for money laundering failings&nbsp;&nbsp;Yahoo! Finance Canada",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBTOVJyNXl2eFByTWplcWE5ODVXbkE5dzdiMEhlVkFCSVNDb3dNOWZJZTEwU2tKWDdReWFFRlFzbTU3dWR4UXNaMVdKUVNaQlJGZTBSTXRtWFp2aUlzT0ZOWDIzQ0M2SThPRXZMdlR3MEd1aHFVQ2VCTGdB?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document reports that a bank has been fined £1.9 million for money laundering failings. No additional factual detail is provided in the supplied text about the specific institution, the conduct that triggered the fine, the period during which the failings occurred, or any remedial actions, deadlines, or new compliance requirements imposed as part of the penalty. For a compliance team, the only clearly stated material point is that the enforcement outcome was a monetary penalty of £1.9 million tied to anti-money-laundering deficiencies. Because the provided content is limited to the headline, it does not identify any new regulatory rule, threshold, procedure, or operational change beyond the fact of the enforcement action itself.",
+          "summarySource": "desc"
         },
         {
           "sr": 48,
@@ -1446,7 +1488,9 @@
           "title": "Hachijuni Nagano Bank Ltd (5FI.HM) recent insider transactions - Yahoo Finance UK",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5sMjJvMUZnaFZaWEw0enVnaGprM3NvOWQycElpY2E1SktibjFpbXYxanJhWlhjTTRGVWFvY2hTVHctemZtdjlHOUZNMlV1cTRTMTcwOTg2c05PS04yRDVqOHhmUC0tWkxyQlEzc2xBQS0?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided content does not contain an actual regulatory filing, insider-transaction table, or substantive financial disclosure about Hachijuni Nagano Bank Ltd. Instead, it is mostly Yahoo Finance webpage/JavaScript code used for page rendering and image loading (for example, functions such as `initAft()`, `recordIsAboveFold`, and related browser instrumentation). Because there is no transaction data, no insider names, no trade dates, no share quantities, no prices, no filing thresholds, and no stated compliance obligation in the text, there is nothing material for a corporate compliance team to extract from this document.\n\nFrom a compliance perspective, this means the document as provided does **not** impose any new reporting requirement, deadline, restriction, or obligation on the bank or its insiders. It also does not identify any affected entity, regulated activity, or change in governance, ownership, disclosure, or trading rules. If you intended to summarize the actual Yahoo Finance insider transactions page, please provide the page text or the underlying transaction data, and I can produce a complete compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 49,
@@ -1456,7 +1500,9 @@
           "title": "Bank of Qingdao Co Ltd (4BQ.MU) stock price, news, quote and history - Yahoo Finance UK",
           "desc": "Bank of Qingdao Co Ltd (4BQ.MU) stock price, news, quote and history&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1HenJSaGlYakNWT0Z5UjJoSG4yWmtwSFlPbUIyd3BzZi15bldEc1ZMeEExMExvUW5JSjNIOGhBVDBraUp0NFJCVUlITFZRNVRab09DeQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is not a regulatory or financial filing; it is just a Yahoo Finance UK page title and snippet for “Bank of Qingdao Co Ltd (4BQ.MU) stock price, news, quote and history.” It contains no substantive disclosure, rule, filing, enforcement action, capital requirement, deadline, financial threshold, or compliance obligation. No regulated entities, transactions, reporting duties, effective dates, or procedural changes are described in the provided text. From a compliance perspective, there is nothing actionable in this content beyond identifying that the page relates to market information for Bank of Qingdao Co Ltd’s listed security.",
+          "summarySource": "desc"
         },
         {
           "sr": 50,
@@ -1466,7 +1512,9 @@
           "title": "Kiatnakin Phatra Bank PCL (KIFF.DU) options chain - Yahoo Finance UK",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0wSGdZelRNMVhzdldqTnhBM2JaUVRhY1dwdjJKekNueFc3ZUhQVExwSTdOYVVZQVZTaF90aXlCZjk0OHR5bUh6VGhwckJOb1BFUktfZTUxMHR1cFA0SzdrOA?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is not a regulatory or financial filing with substantive compliance content; it is a snippet of Yahoo Finance UK webpage JavaScript for the Kiatnakin Phatra Bank PCL options chain page (KIFF.DU). The text only contains browser/runtime code that tracks image loading and page performance, initializes above-the-fold image checks, and stops CSS scanning. It does not announce any policy change, regulatory requirement, financial disclosure, trading rule, deadline, threshold, rate, or obligation affecting Kiatnakin Phatra Bank PCL or any other entity.\n\nFor a compliance team, the only relevant takeaway is that no compliance-relevant content is present in the material provided. There are no effective dates, implementation dates, filing deadlines, numerical limits, or new procedures to monitor from this text. If you intended to provide a regulatory notice, exchange bulletin, prospectus, or bank disclosure, please resend the correct document text and I can summarize it in compliance-ready form.",
+          "summarySource": "desc"
         },
         {
           "sr": 51,
@@ -1476,7 +1524,9 @@
           "title": "Axis Bank Ltd (UZC.HM) company profile and facts - Yahoo Finance UK",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZZ3Zmcjl6YWhqTV9RX2ZjdWVkX2tiOTF5MS1VQW85UEYyUl9QUHlKWmtBY3RjVmpYWlFhc1Nac1l4QTdaSlRRSlllUGV6MUxsalFtUGJXV2RoYW9ZZWdB?oc=5",
-          "isNew": true
+          "isNew": true,
+          "summary": "The provided content is not a regulatory or financial disclosure document; it is a fragment of Yahoo Finance page JavaScript/markup used for page rendering and image-loading performance tracking. It contains no company profile information, no financial metrics, no regulatory filing language, and no compliance obligations for Axis Bank Ltd or any other entity. The visible code simply initializes browser-side functions such as `initAft()`, records “above-the-fold” image data, and calls internal page-loading hooks like `window.wiz_progress()`, `window.wiz_tick()`, and `ccTick('bl')`.\n\nBecause there is no substantive business content in the text, there are no requirements, deadlines, thresholds, changes, affected entities, or procedural obligations to summarize. A compliance team would not derive any regulatory action from this excerpt alone; if you intended to provide an actual Yahoo Finance company profile or another filing/document, please resend the substantive text or the relevant filing content.",
+          "summarySource": "desc"
         },
         {
           "sr": 52,
@@ -1486,7 +1536,9 @@
           "title": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) - Yahoo! Finance Canada",
           "desc": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ)&nbsp;&nbsp;Yahoo! Finance Canada",
           "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GSXBKdGZPbWVnUTlWQ1FSenlleE80ckNpZVJxVFFRQ0hTb21jZE9tczRkQS1JV2Z2NmN3SDc2d0o2cy0tMlQ0a3V4V1VFOGZXYjRLNnZENFV3dnZTVEoxay1IVldfQQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” does not contain any regulatory, legal, or financial disclosure text to summarize. It only shows a security/title line: **“ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) - Yahoo! Finance Canada”**, which appears to be a market quote or listing reference for an **ASB Bank** debt instrument/bond with a **4.782% coupon** and a **19 November 2031** date, likely the maturity date. No terms, covenants, issuance details, compliance obligations, effective dates, thresholds, filing requirements, or other substantive requirements are included in the content provided.\n\nFor a corporate compliance team, there is therefore **no actionable regulatory change or obligation to assess from this text alone**. If you intended to provide the underlying offering circular, prospectus, exchange notice, or regulatory filing, please paste that text and I can produce a full compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 53,
@@ -1508,7 +1560,9 @@
           "title": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) Interactive Stock Chart - Yahoo Finance - Yahoo! Finance Canada",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pbkxud3ZRR0R6cTJLb3ZBMEVJdWhteTJ2ZWdPaGpfTkVZQU4wT3c5YjltSzVwMUlESUo0dktNT3h6Y2RDa08yZnJwdDR4T2NTSGJUazh4VlhTM0pHMEhrbg?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” does not contain any substantive regulatory or financial disclosure to summarize. It is just a fragment of Yahoo Finance webpage JavaScript/analytics code associated with a stock chart page for “ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ),” and it does not state any change in law, filing requirement, market event, covenant, deadline, threshold, rate change, or compliance obligation. There are no operative instructions for a company, no affected entities identified beyond the page’s security name, and no dates or numerical requirements other than the security identifier and name embedded in the page title. From a compliance perspective, this content appears to be non-regulatory page infrastructure and does not create any action item or reporting duty.",
+          "summarySource": "desc"
         },
         {
           "sr": 55,
@@ -1542,7 +1596,9 @@
           "title": "Dah Sing Banking Group Ltd (RY2.DU) company profile and facts - Yahoo Finance UK",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzRHgxdm15bnRVUHdZaHFVRlNPM2xrOGFOdGh2M0w0cERPVEduejU5Wjh6ckdlRF9NM2JlT0hRaWFhSFhsVVBmdjVrdWU1N0JKZm16NzBNY185RXdSYkp3?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is not a regulatory or financial filing at all; it is a Yahoo Finance UK page title and page-script code for the company profile page of Dah Sing Banking Group Ltd (ticker RY2.DU). It contains only website JavaScript and page-loading functions, with no substantive business, legal, regulatory, or financial disclosure content.\n\nAs a result, there are no compliance obligations, filing requirements, deadlines, effective dates, thresholds, rates, enforcement changes, or operational requirements to summarize. There is also no indication of any affected entities, transactions, products, jurisdictions, or procedures—only front-end code related to image loading and page rendering on the Yahoo Finance site.\n\nFor a compliance team, the practical takeaway is simply that this excerpt is not a source document for compliance action and should not be relied on as a regulatory notice or issuer disclosure. If you intended to provide a filing, announcement, or regulatory update, please resend the correct text or PDF content.",
+          "summarySource": "desc"
         },
         {
           "sr": 58,
@@ -1564,7 +1620,9 @@
           "title": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) income statement - Yahoo Finance UK",
           "desc": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) income statement&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1YeGNpbmRWQ1pLYXJlV2ZXQTFSby03bVY5WWZNMjJCcWRPdDBrSjdYMTVNdjcxNXV3bkt5ZkFnUE5GaFlpQndHVzlFcnVTeGVfR1RJS29xYkp1dzRtbFpDcDQ2UGRfcm8?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided document does not contain a regulatory notice, financial rule, or substantive disclosure text to summarize. It is only a Yahoo Finance UK page title for an ASB Bank instrument—“ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) income statement”—with no accompanying body content, terms, dates, obligations, thresholds, or compliance-relevant changes.\n\nBecause there is no actual document content beyond the title, there are no requirements, deadlines, affected entities, or procedures to extract. If you want, I can still help by summarizing what the instrument appears to be from the title alone, but that would be a general inference rather than a compliance summary of the document itself.",
+          "summarySource": "desc"
         },
         {
           "sr": 60,
@@ -1574,7 +1632,9 @@
           "title": "FirstRand Bank Limited (LLETNC.JO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
           "desc": "FirstRand Bank Limited (LLETNC.JO) Stock Price, News, Quote & History&nbsp;&nbsp;Yahoo! Finance Canada",
           "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1rWG5OOUZQTHk4R2FheE5USXA0WUtaMm16UUx5VkM3c0JhdkFBQ0lNb1JuQURpSkxXenFqSnVTbzNfZW5fSm00MC1sUFBocVNxZ1A2NTRjcW4?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document does not contain a regulatory or financial rule, filing, or substantive disclosure. It is only a Yahoo! Finance Canada page title for “FirstRand Bank Limited (LLETNC.JO) Stock Price, News, Quote & History,” followed by the site name, and it provides no details about any change in law, policy, filing requirement, financial results, deadlines, thresholds, or compliance obligations. There is therefore nothing here that would impose or alter any compliance duties for a corporate compliance team. If you intended to provide a specific filing, notice, or regulatory text, please send the actual document content and I can summarize it in full.",
+          "summarySource": "desc"
         },
         {
           "sr": 61,
@@ -1584,7 +1644,9 @@
           "title": "State Bank of India (SBIN.BO) Seasonal returns chart - Yahoo Finance Australia",
           "desc": "State Bank of India (SBIN.BO) Seasonal returns chart&nbsp;&nbsp;Yahoo Finance Australia",
           "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5EU1dtWk9xS0RXazVOejNxX09iZTByMlRRS3ZKY3Rac2JVYzBhdWZ2b0doU2JJUFQ1M1dUcEtJN2RLUEhhaUl3cGlGRXF1UVkxbEdvbkZIM2RXZDNxSWFoc1l4WVp6UQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” does not contain any regulatory, financial, or compliance-relevant text beyond a page title: “State Bank of India (SBIN.BO) Seasonal returns chart — Yahoo Finance Australia.” No substantive content, filing, rule, requirement, threshold, deadline, or obligation is included in the text provided, so there is nothing to summarize for compliance purposes.\n\nFrom what is shown, this appears to be a Yahoo Finance chart page related to the seasonal return performance of State Bank of India’s stock ticker SBIN.BO, rather than a regulatory notice or financial disclosure setting out requirements for a company or regulated entity. If you intended to provide a specific report, filing, notice, or market disclosure, please share the full text or document body so I can produce a complete compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 62,
@@ -1594,7 +1656,9 @@
           "title": "INVL bank-focused fund raises EUR 70.6 million at first close - Yahoo! Finance Canada",
           "desc": "INVL bank-focused fund raises EUR 70.6 million at first close&nbsp;&nbsp;Yahoo! Finance Canada",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMFVoRmlqR05GeEV4REpCcVR4OV8wSlZXMVpodXBxYzZoV0gtS01DUW5SMG1HS3dIWmV0WEhDcFZxeWVCSm1DWGNaWkV4ZlpnSXRXdnl5OUNsOWxNUU9ZUTVOSkd6bElzcHJFdUJvOHpUWHdZZXpvX2ZtY2s5X3g0RTBuMFQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The document is a short news item reporting that an INVL bank-focused fund has completed an initial fundraising close at EUR 70.6 million. Based on the text provided, it does not announce any regulatory change, legal requirement, filing obligation, deadline, threshold, or compliance procedure. It also does not identify any new restrictions, affected entities beyond the fund itself, or operational requirements for banks or investors. For a compliance team, the only material point is that the fund has reached first close with EUR 70.6 million in capital raised, which may be relevant as market intelligence or as a signal of the fund’s launch stage, but the excerpt contains no actionable compliance obligations.",
+          "summarySource": "desc"
         },
         {
           "sr": 63,
@@ -1604,7 +1668,9 @@
           "title": "Bank of China Limited (3988N.MX) Seasonal returns chart - Yahoo Finance Australia",
           "desc": "Bank of China Limited (3988N.MX) Seasonal returns chart&nbsp;&nbsp;Yahoo Finance Australia",
           "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wNkhfTkhpZGhXVmxTbTdacUxseVU4cWl4U25JSHpIZFZudTNtanJodDBUZ1ByQXNvMDlLeDF1ZG1UcEw1TG9odGp3d19VQkRScjdYZGlEMF9jcG5TZ1hQT0JOME1CeDA?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” is not a regulatory or financial filing with substantive compliance requirements; it appears to be only a Yahoo Finance Australia page title for a “Bank of China Limited (3988N.MX) Seasonal returns chart.” No actual chart data, disclosure text, regulatory change, filing deadline, threshold, rate, or compliance obligation is included in the content supplied.\n\nFor a corporate compliance team, there is nothing actionable to summarize from the text provided because it does not state any requirement, rule change, affected entity, effective date, or procedural obligation. If you intended to provide a specific filing, announcement, or regulatory notice, please share the full text or document body so I can produce a proper compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 64,
@@ -1614,7 +1680,9 @@
           "title": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) company profile and facts - Yahoo Finance UK",
           "desc": "ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) company profile and facts&nbsp;&nbsp;Yahoo Finance UK",
           "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JQWtNajlyd0wzN2M0WFFWVGRzejZvcWZNWkk0bG9HQTA2Q012MjFTQi1VSGI2OWl3Ny1yNkU4X2FaSVNweVZLRmh4N003aGdERGh6cGlGVVQ5d2dndHJVUnVsWQ?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided “document” does not contain any regulatory, financial, or compliance-relevant substantive content to summarize. It only shows a Yahoo Finance UK page title for “ABB 19/11/2031 4.782% ASB Bank (ABB130.NZ) company profile and facts,” followed by the same title text again, with no body text, filing details, issuer disclosures, terms, deadlines, rates beyond the title, or any stated obligations.\n\nAs a result, there are no changes, requirements, procedures, effective dates, thresholds, or compliance actions that can be identified from the content provided. If you intended to summarize an actual filing, notice, or term sheet, please provide the full text or the relevant excerpt and I can produce a complete compliance-focused summary.",
+          "summarySource": "desc"
         },
         {
           "sr": 65,
@@ -1624,7 +1692,9 @@
           "title": "Are Wall Street Analysts Bullish on M&T Bank Stock?",
           "desc": "window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('lW1Lhc');(function(){'use strict';var c=window,d=[];c.aft_counter=d;var e=[],f=0;function _recordIsAboveFold(a){if(!c._isLazyImage(a)&&!a.hasAttribute(\"data-noaft\")&&a.src){var b=(c._isVisible||function(){})(c.document,a);a.setAttribute(\"data-atf\",b);b&&(e.indexOf(a)!==-1||d.indexOf(a)!==-1||a.complete||d.push(a),a.hasAttribute(\"data-iml\")&&(a=Number(a.getAttribute(\"data-iml\")),a>f&&(f=a)))}} c.initAft=function(){f=0;e=Array.prototype.slice.call(document.getElementsByTagName(\"img\")).filter(function(a){return!!a.getAttribute(\"data-iml\")});[].forEach.call(document.getElementsByTagName(\"img\"),function(a){try{_recordIsAboveFold(a)}catch(b){throw b.message=a.hasAttribute(\"data-iid\")?b.message+\"\\nrecordIsAboveFold error for defer inlined image\":b.message+(\"\\nrecordIsAboveFold error for img element with <src: \"+a.src+\">\"),b;}});if(d.length===0)c.onaft(f);e=[]};}).call(this); initAft()if (window['_wjdc']) {const wjd = {}; window['_wjdc'](wjd); delete window['_wjdc'];}window.wiz_progress&&window.wiz_progress();window.stopScanForCss&&window.stopScanForCss(); ccTick('bl');",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZGFacTFta3JSZ3o5Ymk1N0F6X2JVWElGODBZVHFIekp3d294Ri1UUlNtTVRrTi1SX2w5Wl9kTG9Fc3JRcDM3STAwRWtZSkRROFIwaEtxMGctakhlaTZTb3VvWGNTRUxlMUxqbjFvRVByWmQwb2huYnRvUjJLYXBwV3l2RlRuYXFEcUVxWUkyTk9fVHVtemp4NGxsaw?oc=5",
-          "isNew": false
+          "isNew": false,
+          "summary": "The provided document does not contain a regulatory filing, policy change, or financial disclosure with substantive compliance requirements. Instead, it is essentially webpage/JavaScript execution code used for image loading and page tracking (for example, functions like `initAft`, `recordIsAboveFold`, and `window.wiz_progress`), along with the title “Are Wall Street Analysts Bullish on M&T Bank Stock?” but no article text, no legal or regulatory mandates, no deadlines, no thresholds, and no obligations imposed on any entity.\n\nFor a compliance team, the only meaningful conclusion is that this content does not appear to create or modify any compliance duties for M&T Bank, Wall Street analysts, or any other regulated party. There are no stated effective dates, reporting requirements, approvals, disclosure obligations, trading restrictions, capital requirements, or enforcement-related provisions in the content provided. If you intended to summarize the underlying article rather than the page code, please provide the article text or the full document content.",
+          "summarySource": "desc"
         }
       ],
       "ts": 1795832454069,
@@ -1888,7 +1958,9 @@
           "title": "Will RBI hike rates 50 bps in December policy?",
           "desc": "Articles 3 min read Will RBI hike rates 50 bps in December policy? Within the 50 bps scenario, a calibrated tightening stance carries a 55 per cent probability, while a neutral stance has a 5 per cent probability. ETBFSI Research ETBFSI Published On Nov 28, 2026 at 06:03 AM IST var news_msid = 136235968; console.log(news_msid); Set ETBFSI as your preferred source on Google Copy Link Share on WhatsApp Share on Linkedin Share on X Share on Telegram Share on Facebook The RBI reviewed the activities of the Deposit Insurance and Credit Guarantee Corporation and the activities of select central office departments.November CPI inflation is estimated at 6.4 per cent, with October-December inflation projected to average 6.3 per cent, above the RBI's 6 per cent forecast.Nomura expects FY27 GDP growth forecast to rise to 7.5 per cent from 7.1 per cent and CPI inflation forecast to 5.3 per cent from 5.2 per cent.A 50 bps hike with a calibrated tightening stance has a 55 per cent probability, while a neutral stance has a 5 per cent probability.The brokerage expects the repo rate to reach 6 per cent in December, followed by a pause, though another 25 bps hike in February or April remains possible.The Reserve Bank of India (RBI) may raise the repo rate by 50 basis points to 6 per cent at its December 4 monetary policy meeting, as higher-than-expected food inflation, rising core inflation and resilient economic growth strengthen the case for frontloaded tightening.The probability of a 50 bps hike has increased from the earlier forecast of 25 bps. There is a 60 per cent probability of a 50 bps increase and a 40 per cent probability of a 25 bps hike. Within the 50 bps scenario, a calibrated tightening stance carries a 55 per cent probability, while a neutral stance has a 5 per cent probability. The expected vote split is 5-1, according to Nomura. Advt Food price trackers point to the sharpest monthly increases in several years. November consumer price inflation is estimated at 6.4 pe",
           "link": "https://bfsi.economictimes.indiatimes.com/articles/will-rbi-hike-rates-50-bps-in-december-policy/136235968?utm_source=latest_news&utm_medium=homepage",
-          "isNew": true
+          "isNew": true,
+          "summary": "This article is not a regulatory change or official RBI directive, but a market forecast about the Reserve Bank of India’s December 4, 2026 monetary policy meeting. The key expectation is that the RBI may increase the repo rate by 50 basis points to 6.0%, up from an earlier 25 bps expectation, because of higher-than-expected food inflation, rising core inflation, and still-resilient GDP growth. Under the scenario analysis reported by Nomura, there is a 60% probability of a 50 bps hike and a 40% probability of a 25 bps hike; within the 50 bps outcome, a “calibrated tightening” stance has a 55% probability and a neutral stance a 5% probability.\n\nThe article also gives the economic rationale and forecasts that underpin the market view. November CPI inflation is estimated at 6.4%, and October–December inflation is projected to average 6.3%, both above the RBI’s 6.0% forecast. Nomura expects FY27 GDP growth forecast to be revised up to 7.5% from 7.1%, while CPI inflation forecast is expected to edge up to 5.3% from 5.2%. The expected RBI vote split is 5–1, and the brokerage’s baseline view is that if the repo rate reaches 6.0% in December, the RBI would then pause, though an additional 25 bps hike in February or April would still remain possible.\n\nFor a compliance team, the practical takeaway is that this piece signals a likely tightening cycle rather than a binding rule change, so treasury, ALM, lending pricing, and interest-rate risk assumptions may need to be prepared for a higher policy rate environment as of the December 4 meeting. No new reporting obligation, filing deadline, or compliance procedure is announced in the document itself.",
+          "summarySource": "desc"
         },
         {
           "sr": 7,
@@ -1898,7 +1970,9 @@
           "title": "Gold loan lenders face December-quarter asset quality test as early delinquencies rise",
           "desc": "Articles 5 min read Gold loan lenders face December-quarter asset quality test as early delinquencies rise Gold loan lenders face December-quarter asset quality test as early delinquencies rise ETBFSI Research ETBFSI Published On Nov 28, 2026 at 05:59 AM IST var news_msid = 136235963; console.log(news_msid); Set ETBFSI as your preferred source on Google Copy Link Share on WhatsApp Share on Linkedin Share on X Share on Telegram Share on Facebook Gold loans’ share of new-to-credit accounts rose to 24.9% in the September quarter from 16.4% a year earlier, while consumer durable loans remained the largest entry point into formal credit at 30.7%, according to a CRIF report.PAR in the 31-90 days category rose to 1.6 per cent for gold-focused NBFCs and 2.2 per cent for private banks in September 2026, indicating an increase in early-stage delinquencies.Gold loans grew 60.6 per cent year on year to Rs 23.3 lakh crore, while a sharp correction in bullion prices eroded collateral cover and pushed up LTV ratios.Muthoot Finance and Manappuram Finance reported increases in Stage 2 assets, pointing to emerging repayment stress even as recognised bad loans remain relatively contained.Lenders are stepping up collections, seeking additional collateral and tightening fresh disbursements, with the December quarter likely to test their ability to contain delinquencies and prevent slippages.Gold loan lenders are facing a test of their collection efficiency and asset quality in the December quarter as early-stage delinquencies rise across non-banking financial companies (NBFCs) and private banks, even as overall stress in the sector remains contained. The sharp correction in gold prices, which has reduced collateral coverage on loans originated at higher valuations, could add to the pressure if borrowers fail to meet repayment obligations or restore prescribed loan-to-value (LTV) ratios. Advt Portfolio at risk (PAR) in the 31-90 days overdue category among gold-loan-focused NBFCs increas",
           "link": "https://bfsi.economictimes.indiatimes.com/articles/gold-loan-lenders-face-december-quarter-asset-quality-test-as-early-delinquencies-rise/136235963?utm_source=latest_news&utm_medium=homepage",
-          "isNew": true
+          "isNew": true,
+          "summary": "The article says gold-loan lenders are entering a December-quarter stress test because early delinquencies are rising even though headline bad-loan levels are still relatively contained. For gold-loan-focused NBFCs, portfolio at risk (PAR) in the 31–90 days overdue bucket rose to 1.6% in September 2026, and for private banks it rose to 2.2%, signaling increasing early-stage repayment problems that could turn into slippages if not contained. The sector’s loan book has also expanded rapidly—gold loans grew 60.6% year on year to Rs 23.3 lakh crore—while a sharp fall in bullion prices has reduced collateral coverage on loans that were originated at higher gold valuations, pushing loan-to-value (LTV) ratios upward and increasing the need for lenders to monitor compliance with prescribed LTV norms.\n\nThe article notes that this pressure is showing up in risk indicators at major lenders such as Muthoot Finance and Manappuram Finance, both of which reported higher Stage 2 assets, a sign that more accounts are showing emerging repayment stress even before becoming recognized bad loans. In response, lenders are tightening credit operations by stepping up collections, asking borrowers for additional collateral, and restricting fresh disbursements, which means compliance teams should expect closer scrutiny of collection practices, collateral management, and adherence to LTV limits in the coming quarter. A CRIF report cited in the piece also shows that gold loans are becoming a larger entry point for first-time borrowers: gold loans accounted for 24.9% of new-to-credit accounts in the September quarter, up from 16.4% a year earlier, while consumer durable loans remained the largest source of first-time formal credit at 30.7%.\n\nFor compliance purposes, the key takeaway is that the December quarter is likely to be an asset-quality and collections test for gold-loan lenders, especially NBFCs and private banks with significant exposure to the product. The combination of rising PAR, weaker gold prices, and higher LTV ratios creates a greater risk of covenant breach, repayment shortfalls, and migration from Stage 2 into default, so lenders will need to ensure their monitoring, collection escalation, collateral revaluation, and disbursement controls are operating tightly. No new formal regulatory rule or deadline is described in the article, but the operational pressure is immediate and is framed around December-quarter performance.",
+          "summarySource": "desc"
         },
         {
           "sr": 8,
@@ -1908,7 +1982,9 @@
           "title": "Drought-hit Maharashtra, Karnataka could expose PSBs to higher agricultural loan stress",
           "desc": "Articles 3 min read Drought-hit Maharashtra, Karnataka could expose PSBs to higher agricultural loan stress Unlike the stress seen in microfinance, agricultural portfolio performance has remained reasonably strong over the past few years, with slippages of 1-3 per cent and improving gross non-performing assets. ETBFSI Research ETBFSI Published On Nov 28, 2026 at 05:57 AM IST var news_msid = 136235958; console.log(news_msid); Set ETBFSI as your preferred source on Google Copy Link Share on WhatsApp Share on Linkedin Share on X Share on Telegram Share on Facebook Amritsar: Farmers harvest fresh turnips in a field at a village on the outskirts of Amritsar. (PTI Photo/Shiva Sharma)(PTI11_27_2026_000211B)Bank of Maharashtra and Canara Bank face higher agricultural loan stress exposure due to concentration in drought-hit states.Agricultural GNPAs have fallen to 5 per cent from 9-10 per cent, with slippages at 1-3 per cent.Gold-backed loans account for 25-75 per cent of agricultural loans at most PSBs and 80-95 per cent at smaller private banks.Restructuring could reach Rs 10,000 crore, with an estimated 1-4 per cent impact on FY27 EPS.India’s deficient 2026 monsoon could expose public sector banks (PSBs) to higher agricultural loan stress than private banks, with Bank of Maharashtra and Canara Bank disproportionately exposed because of their concentration in the agricultural segment. Maharashtra and Karnataka, the worst-hit states, have declared drought across large parts of their territories.India recorded its driest monsoon in over a decade, with rainfall deficit of around 13 per cent. Among private banks, Federal Bank and DCB Bank have exposure to crop loans in Maharashtra and Karnataka. Unlike the stress seen in microfinance, agricultural portfolio performance has remained reasonably strong over the past few years, with slippages of 1-3 per cent and improving gross non-performing assets (GNPAs), according to ICICI Securities. Advt The agricultural GNPA ratio has decli",
           "link": "https://bfsi.economictimes.indiatimes.com/articles/drought-hit-maharashtra-karnataka-could-expose-psbs-to-higher-agricultural-loan-stress/136235958?utm_source=latest_news&utm_medium=homepage",
-          "isNew": true
+          "isNew": true,
+          "summary": "The article is not a regulation or formal rule, but a risk-focused financial report on how the 2026 monsoon shortfall could affect banks’ agricultural loan books, especially in drought-hit Maharashtra and Karnataka. It says India had its driest monsoon in more than a decade, with rainfall about 13% below normal, and that Maharashtra and Karnataka have declared drought across large areas; because of this geographic concentration, Bank of Maharashtra and Canara Bank are highlighted as being more exposed to agricultural loan stress than other lenders. Among private banks, Federal Bank and DCB Bank are also noted as having crop-loan exposure in these states, though the article frames the public sector banks as more vulnerable overall.\n\nThe piece states that agricultural portfolio performance has remained relatively stable despite stress in microfinance, with slippages at 1–3% and gross non-performing assets improving; the agricultural GNPA ratio has declined to 5% from 9–10% earlier. It also notes that gold-backed loans make up a large share of agricultural lending portfolios: 25–75% of agricultural loans at most PSBs and 80–95% at smaller private banks. For compliance and credit-risk teams, the practical implication is that banks with concentration in Maharashtra/Karnataka should expect elevated monitoring needs for crop-loan performance and potential restructuring.\n\nThe report estimates that restructuring in the sector could reach Rs 10,000 crore, with a potential 1–4% impact on FY27 earnings per share. There are no direct compliance deadlines, filing requirements, or procedural mandates in the article, but it is relevant for internal risk surveillance, portfolio stress testing, provisioning assumptions, and geographic concentration review for lenders with agricultural exposure in the affected states.",
+          "summarySource": "desc"
         },
         {
           "sr": 9,
@@ -2008,7 +2084,9 @@
           "cat": "Circulars",
           "title": "FPI Participation in Exchange Traded Commodity Derivatives (ETCDs)",
           "desc": "FPI Participation in Exchange Traded Commodity Derivatives (ETCDs) Nov 27, 2026| Circular No.: HO/47/16/13(17)2026-MRD-POD1/I/26650/2026 FPI Participation in Exchange Traded Commodity Derivatives (ETCDs)",
-          "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/fpi-participation-in-exchange-traded-commodity-derivatives-etcds-_105989.html"
+          "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/fpi-participation-in-exchange-traded-commodity-derivatives-etcds-_105989.html",
+          "summary": "This circular, titled **“FPI Participation in Exchange Traded Commodity Derivatives (ETCDs)”**, was issued on **27 November 2026** under **Circular No. HO/47/16/13(17)2026-MRD-POD1/I/26650/2026**. Based on the text provided, the document appears to be only a heading/cover reference and does **not include the substantive regulatory changes, operative instructions, thresholds, deadlines, or compliance procedures** that would normally be needed for a true compliance summary.\n\nFor a corporate compliance team, the only clearly identifiable point is that the circular concerns **Foreign Portfolio Investor (FPI) participation in exchange-traded commodity derivatives (ETCDs)**, so the subject matter likely affects entities that are FPIs, as well as intermediaries and exchanges facilitating ETCD trading. However, **no actual requirements are stated in the supplied content**—there is no indication of whether participation is newly permitted, restricted, subject to limits, or conditioned on registration, margin, reporting, or product eligibility requirements.\n\nBecause the operative text is missing, I cannot accurately summarize any **effective date, transition period, quantitative cap, approval process, or reporting obligation**. If you can provide the body of the circular or the full text, I can produce a complete compliance-focused summary with all material obligations and dates.",
+          "summarySource": "desc"
         },
         {
           "sr": 2,
@@ -12817,7 +12895,9 @@
           "cat": "Orders",
           "title": "Adjudication Order in respect of Fastino Dealers Private Limited in the matter of Illiquid Stock Options at BSE",
           "desc": "",
-          "link": "https://www.sebi.gov.in/enforcement/orders/apr-2026/adjudication-order-in-respect-of-fastino-dealers-private-limited-in-the-matter-of-illiquid-stock-options-at-bse_101003.html"
+          "link": "https://www.sebi.gov.in/enforcement/orders/apr-2026/adjudication-order-in-respect-of-fastino-dealers-private-limited-in-the-matter-of-illiquid-stock-options-at-bse_101003.html",
+          "summary": "This is a general summary based only on the title, since no document text was provided. The order appears to be an adjudication proceeding against Fastino Dealers Private Limited concerning its role in alleged irregularities involving illiquid stock options traded on the Bombay Stock Exchange (BSE). For a compliance team, the key takeaway is that the matter concerns market conduct in derivatives/stock options, specifically the illiquid segment where regulators often scrutinize possible manipulation, non-genuine trading, misuse of counterparties, or other conduct inconsistent with fair market practices.\n\nBecause the underlying order text is unavailable, I cannot confirm the exact findings, penalties, dates, monetary amounts, or any specific corrective actions imposed on Fastino Dealers Private Limited. If the company is a broker, trading member, dealer, proprietary trader, or otherwise active in exchange-traded derivatives, this title indicates exposure to enforcement risk tied to trades in illiquid stock options and would warrant review of surveillance controls, trade rationales, client/proprietary segregation, order placement practices, and recordkeeping around such activity.\n\nIf you can provide the full order text, I can produce a precise compliance summary including the violation findings, sections/rules implicated, penalty amount, deadlines, and any mandated remedial measures.",
+          "summarySource": "title"
         },
         {
           "sr": 101,
@@ -13915,7 +13995,9 @@
           "cat": "Orders",
           "title": "Adjudication Order in the matter of Pragnya Fund II",
           "desc": "",
-          "link": "https://www.sebi.gov.in/enforcement/orders/feb-2026/adjudication-order-in-the-matter-of-pragnya-fund-ii_99509.html"
+          "link": "https://www.sebi.gov.in/enforcement/orders/feb-2026/adjudication-order-in-the-matter-of-pragnya-fund-ii_99509.html",
+          "summary": "This document is an adjudication order concerning “Pragnya Fund II,” but no substantive text was provided beyond the title, so only a general summary can be given. Based on the title alone, it appears to be a formal regulatory enforcement or quasi-judicial determination involving that fund, likely addressing a compliance issue, alleged violation, or penalty decision connected to the fund’s operations, disclosures, filings, or related conduct. Because the underlying order text is not available, the specific findings, parties affected, remedial directions, monetary penalties, deadlines, and any compliance changes cannot be identified from the provided material.\n\nFor a corporate compliance team, the key takeaway is that this is an official adjudication matter tied to Pragnya Fund II and should be treated as potentially significant until the actual order is reviewed. There is no basis in the provided content to state what was required, what changed, who is covered, or any effective date or threshold. If you can provide the full order text, I can produce a detailed compliance summary with the exact obligations, dates, amounts, and impacted entities or activities.",
+          "summarySource": "title"
         },
         {
           "sr": 201,
@@ -19044,7 +19126,9 @@
           "title": "Revised Norms for appointment of an independent third-party reviewer/ certifier for green debt security",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260310-1",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a **general policy or rule revision** concerning the **appointment of an independent third-party reviewer/certifier for green debt securities**. Based on the title alone, the substantive point is that the framework governing who may be engaged to review or certify green debt issuance has been **revised**, likely to clarify eligibility, independence, qualification, or procedural requirements for appointing an external verifier. For a compliance team, the key implication is that any entity issuing, marketing, arranging, or advising on **green debt securities** should check whether the revised norms change the process for selecting and retaining an external reviewer/certifier, and whether the issuer must now use an approved, independent third party to support green-labeled issuance.\n\nBecause the underlying text was not provided, **no specific effective date, deadline, threshold, fee, rating criterion, or formal procedural requirement can be confirmed** from the document itself. The title suggests the obligations would apply to parties involved in **green debt security issuance and certification**, especially issuers and any intermediaries responsible for verifying the green credentials of the instrument. A compliance review should therefore focus on whether the revised norms impose new documentation, independence checks, disclosure requirements, ongoing monitoring, or renewal/periodic certification obligations for the third-party reviewer/certifier.",
+          "summarySource": "title"
         },
         {
           "sr": 2,
@@ -19054,7 +19138,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260306-25",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general update on the single filing system for stock exchange reporting, specifically through API-based integration between stock exchanges. Based on the title alone, the key compliance point is that filing or information-sharing processes are being centralized or streamlined so that data submitted through one exchange may be transmitted electronically via API to other exchanges, reducing the need for separate manual submissions. For a corporate compliance team, this suggests a change in reporting workflow and likely a need to review internal controls, data formatting, validation, authorization, and timeliness requirements for exchange filings.\n\nBecause no document text was provided, there are no stated effective dates, deadlines, thresholds, fees, or specific procedural obligations that can be confirmed from the source. There is also no information here about whether the update applies to listed companies, intermediaries, issuers, or other market participants, beyond the general implication that stock-exchange filing processes are affected. Compliance teams should treat this as a prompt to confirm the exact API integration requirements, the scope of filings covered by the single filing system, and any transition timelines or technical specifications once the full circular or notice is available.",
+          "summarySource": "title"
         },
         {
           "sr": 3,
@@ -19064,7 +19150,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260220-44",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general update about the single filing system for listed companies, specifically describing a move toward API-based integration between stock exchanges. Based on the title alone, the likely substance is that information submitted once to one stock exchange may be transmitted electronically to other exchanges through an application programming interface, reducing duplicate filing requirements and aligning disclosure processes across exchanges. \n\nBecause no document text was provided, I cannot confirm any specific rule changes, implementation timeline, thresholds, filing categories, affected entities, or new procedural obligations. For a compliance team, the key takeaway is only that this is an interoperability/update notice concerning exchange-to-exchange data sharing for the single filing framework, and any operational impact would likely fall on listed issuers and their disclosure/compliance teams that file regulatory information with one or more stock exchanges. \n\nIf you can share the actual notice or circular text, I can produce a precise compliance summary with the effective date, scope, filing obligations, and any technical or procedural requirements.",
+          "summarySource": "title"
         },
         {
           "sr": 4,
@@ -19074,7 +19162,9 @@
           "title": "Master Circular for compliance with the provisions of the SEBI (LODR) Regulations, 2015 by listed entities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260203-14",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a **master circular** issued for compliance with the provisions of the **SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 (LODR)** by **listed entities**. Based on the title alone, the document is not a new standalone rule with a specific amendment, rate, threshold, or deadline; rather, it is likely a **compiled guidance document** that consolidates and clarifies existing compliance requirements under the SEBI LODR framework for companies whose securities are listed on a recognized stock exchange.\n\nFor a corporate compliance team, the key takeaway is that the circular would be relevant to **all listed entities** and would govern their ongoing obligations related to listing, continuous disclosure, governance, reporting, and other requirements under the LODR Regulations. However, because no text of the circular was provided, I cannot identify any particular procedural change, amended timeline, filing requirement, threshold, or exception introduced by this specific document.\n\nIn practical terms, the document should be treated as a **general compliance reference** for maintaining conformity with SEBI’s listing and disclosure regime, and the compliance team would need to review the full circular and the underlying LODR regulations to determine any detailed obligations, periodic filings, board/governance requirements, disclosure triggers, or enforcement-related instructions. As provided here, the document is best understood as a **general summary-only item** with no extractable substantive requirements beyond its apparent applicability to listed entities under SEBI’s LODR framework.",
+          "summarySource": "title"
         },
         {
           "sr": 5,
@@ -19084,7 +19174,9 @@
           "title": "SEBI (Issue and Listing of Non-Convertible Securities)(Amendment) Regulations, 2026",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260203-13",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is titled **SEBI (Issue and Listing of Non-Convertible Securities)(Amendment) Regulations, 2026**, which indicates that SEBI has issued an **amendment** to the existing framework governing the **issue and listing of non-convertible securities** in India. Because no substantive text was provided, the exact rule changes, thresholds, timelines, filing requirements, exemptions, or compliance steps cannot be identified from the document content itself.  \n\nFrom the title alone, the likely affected entities are **issuers, lead managers, stock exchanges, debenture trustees, and other market participants involved in public issues, private placements, and listing of non-convertible debt or other non-convertible securities**, but the specific obligations introduced or revised are not available here. No effective date, transition period, cutoff, numerical limit, or procedural change is stated in the provided material.  \n\nFor a compliance team, the practical takeaway is that this is a **regulatory amendment notice** and should be reviewed against the underlying SEBI regulations to determine whether it changes issuance conditions, disclosure requirements, listing conditions, ongoing reporting, enforcement obligations, or documentation standards. Since the document content is not provided, this summary is necessarily **general** and cannot confirm whether the amendment creates new compliance duties or merely clarifies existing ones.",
+          "summarySource": "title"
         },
         {
           "sr": 6,
@@ -19094,7 +19186,9 @@
           "title": "SEBI (Listing Obligations and Disclosure Requirements) (Amendment) Regulations, 2026",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260203-12",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be the **SEBI (Listing Obligations and Disclosure Requirements) (Amendment) Regulations, 2026**, but **no substantive text was provided**, so a detailed regulatory summary of the actual amendments, obligations, thresholds, deadlines, or affected entities cannot be reliably extracted from the content. Based on the title alone, it is clear that this is an **amendment to SEBI’s Listing Obligations and Disclosure Requirements (LODR) framework**, which typically governs **listed companies and their compliance, disclosure, governance, and reporting obligations** in India.\n\nFor a corporate compliance team, the key point is that this document likely changes some aspect of the existing LODR regime—potentially involving **periodic disclosures, board/governance requirements, event-based disclosures, shareholder communications, or filing timelines**—but **the specific rule changes, effective date, implementation deadline, and any quantitative thresholds or exceptions are not available here**. Because the text is missing, it is not possible to confirm whether the amendment applies to all listed entities or only certain classes of issuers, nor can we identify any new compliance procedures or reporting formats that may have been introduced.\n\nIn practical terms, this should be treated as a **placeholder/general notice only**: compliance staff should obtain the full notification or amended regulation text before determining impact, updating policies, training staff, or changing disclosure controls. If you provide the actual amendment text, I can produce a complete compliance-focused summary with the exact requirements, dates, and affected entities.",
+          "summarySource": "title"
         },
         {
           "sr": 7,
@@ -19104,7 +19198,9 @@
           "title": "Ease of Doing Investment -Special Window for Transfer and Dematerialisation of Physical Securities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260202-37",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general policy/initiative, based on the title alone, rather than a text with specific operative requirements, dates, thresholds, or filing obligations. “Ease of Doing Investment – Special Window for Transfer and Dematerialisation of Physical Securities” suggests a dedicated transitional mechanism was created to help investors convert physical share/securities certificates into dematerialised form and to facilitate transfers that may otherwise be administratively difficult under standard procedures.\n\nFrom a compliance perspective, the likely significance is that entities involved in securities issuance, transfer processing, registrar and transfer agent functions, depositories, and investor services may need to support a special route for handling physical securities, especially where normal transfer or demat pathways are constrained. However, because no substantive document text was provided, I cannot identify the exact legal change, implementation date, deadlines, forms, exemptions, thresholds, or whether the measure applies to all issuers or only specified categories.\n\nFor compliance use, this should be treated as a placeholder/general summary only: the title indicates a special window related to physical-to-demat conversion and transfer facilitation, but the actual obligations, timelines, and affected parties would need to be confirmed from the full circular, notification, or policy text before taking action.",
+          "summarySource": "title"
         },
         {
           "sr": 8,
@@ -19114,7 +19210,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20260102-23",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general update, based on the title only, and no body text was provided, so the substantive regulatory requirements cannot be confirmed from the source itself. From the title, the likely subject is an update to a “single filing system” that uses API-based integration between stock exchanges, which suggests a streamlined reporting or data-submission process across exchanges rather than multiple separate filings. For a compliance team, the key issue would be whether listed entities, intermediaries, or other market participants will now be expected to submit certain information once through an API-connected channel that is then shared across exchanges, instead of filing separately with each exchange.  \n\nBecause no document content was provided, there are no stated effective dates, deadlines, thresholds, fees, or implementation milestones to report, and no specific obligations can be confirmed. A compliance officer should treat this as a placeholder summary only and review the actual circular, notice, or technical specification to determine what filings are covered, which exchanges are participating, whether existing reporting workflows will be replaced or modified, and whether any system integration, authentication, data-format, or reconciliation requirements apply.",
+          "summarySource": "title"
         },
         {
           "sr": 9,
@@ -19124,7 +19222,9 @@
           "title": "Modification in the conditions specified for reduction in denomination of debt securities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251222-26",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general notice or rule change concerning the conditions under which the denomination of debt securities may be reduced. Based on the title alone, the substantive point is that the existing requirements for lowering the face value or unit denomination of debt securities have been modified, which could affect issuers, trustees, intermediaries, and potentially holders depending on the securities structure and the governing issuance terms.\n\nBecause no body text is provided, the exact nature of the change, including any revised thresholds, procedural steps, approvals, filing obligations, or effective date, cannot be determined from the document excerpt alone. A compliance team should treat this as a change to the regulatory conditions for denomination reduction and review the full text to identify whether the amendment applies to new issuances only, also to outstanding debt securities, or changes the mechanics for executing a denomination reduction. The team should also verify whether the modification imposes any notice requirements to investors, exchange/trading venue notifications, board or trustee approvals, or amendments to offering documents and terms of issue.\n\nIn practical terms, any entity issuing debt securities or administering them should confirm whether its current securities documentation, issuance program terms, and operational procedures remain compliant under the revised conditions. Until the full rule text is reviewed, the safest assumption is that the rules governing how and when debt securities can be redenominated have been adjusted and may require process updates before carrying out any denomination reduction.",
+          "summarySource": "title"
         },
         {
           "sr": 10,
@@ -19134,7 +19234,9 @@
           "title": "Mandating periodic disclosure requirements- Securitised Debt  Instruments (SDIs).",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251222-25",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a **general policy/title reference only**, with **no document text provided**, so the summary below is necessarily limited to the title and should be treated as a high-level placeholder rather than a definitive compliance interpretation.\n\nThe title, **“Mandating periodic disclosure requirements – Securitised Debt Instruments (SDIs),”** indicates that the regulatory action is focused on **requiring recurring/periodic disclosures** for **Securitised Debt Instruments**. From a compliance perspective, this likely means that issuers, trustees, arrangers, servicers, or other responsible parties associated with SDIs would be required to provide regular information to investors and/or the regulator on an ongoing basis, rather than only at issuance or upon a material event. The substance implied by the title is a move toward **standardized, continuous transparency obligations** for SDI products, but the title alone does not specify the exact reports, data fields, filing platform, frequency, deadlines, or responsible entity.\n\nBecause no text is provided, there are **no stated effective dates, transition periods, thresholds, quantitative requirements, or filing timelines** that can be reliably reported. A compliance team should therefore treat this as an indication that **periodic reporting obligations may exist or be being introduced for SDIs**, and should confirm the underlying regulation or circular to identify the precise scope, reporting frequency, content requirements, and any penalties for non-compliance.",
+          "summarySource": "title"
         },
         {
           "sr": 11,
@@ -19144,7 +19246,9 @@
           "title": "Reclassification of Real Estate Investment Trusts (REITs) as equity related instruments for facilitating enhanced participation by Mutual Funds and Specialized Investment Funds (SIFs).",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251218-23",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a policy or rule change that reclassifies Real Estate Investment Trusts (REITs) as “equity related instruments” for purposes of investment by Mutual Funds and Specialized Investment Funds (SIFs). Based on the title alone, the practical effect is likely to broaden or clarify the ability of these regulated investment vehicles to participate in REITs, treating such instruments more like equity exposures than as a separate asset class for compliance, allocation, or eligibility purposes. The stated purpose is to facilitate “enhanced participation,” which suggests the change is intended to remove a prior restriction, ambiguity, or classification barrier that may have limited fund investment in REITs.\n\nBecause no substantive text was provided, there are no visible effective dates, transition periods, thresholds, percentage limits, filing requirements, or procedural steps that can be confirmed from the document itself. A compliance team should therefore treat this as a high-level classification change only and verify the operative regulation/circular for any investment caps, valuation, disclosure, portfolio classification, risk-weighting, or reporting consequences that may follow from REITs being moved into the equity-related bucket. This summary is necessarily general and based only on the title, not on the underlying regulatory text.",
+          "summarySource": "title"
         },
         {
           "sr": 12,
@@ -19154,7 +19258,9 @@
           "title": "SEBI (Substantial Acquisition of Shares and Takeovers) (Amendment) Regulations, 2025",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251209-53",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a **general summary based only on the title**, because no document text was provided. The title indicates that the **Securities and Exchange Board of India (SEBI)** has issued the **SEBI (Substantial Acquisition of Shares and Takeovers) (Amendment) Regulations, 2025**, which means the rules governing **substantial share acquisitions, takeover triggers, disclosures, and related obligations in India** have been amended. Because the actual amendment text is not available, I cannot identify the specific provisions changed, the exact thresholds or timing requirements affected, any new filing/disclosure procedures, or the effective date/deadline provisions.\n\nFor a corporate compliance team, the practical takeaway is that this is a **potentially material update to India’s takeover and acquisition compliance framework** and should be reviewed for impacts on **acquisitions of shares, voting rights, control transactions, open offer obligations, disclosure thresholds, and related reporting obligations** by listed companies, acquirers, promoters, and persons acting in concert. Until the text is reviewed, the safest assumption is that the amendment may alter existing obligations under the SEBI takeover regime and could affect transaction planning, disclosure controls, and acquisition approvals. If you share the actual amendment text, I can provide a precise compliance-focused summary with the exact changes, thresholds, dates, and obligations.",
+          "summarySource": "title"
         },
         {
           "sr": 13,
@@ -19164,7 +19270,9 @@
           "title": "Modifications to Chapter IV of the Master Circular for Debenture Trustees dated August 13, 2025.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-66",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a **general summary only**, based on the title alone, because no substantive text was provided. It appears to announce **modifications to Chapter IV of the Master Circular for Debenture Trustees dated August 13, 2025**, so the likely subject is updated regulatory requirements applicable to **debenture trustees** and potentially the issuers/debt instruments they oversee. However, because the actual amendments, thresholds, procedures, timelines, or compliance obligations are not included, I cannot identify what specifically changed, what entities or activities are affected, or any effective dates or deadlines beyond the reference date in the title.\n\nFor a compliance team, the only certain takeaway is that there is a **regulatory update tied to the August 13, 2025 Master Circular**, and Chapter IV has been modified. To determine concrete obligations, you would need the underlying circular text or the redline/amendment details showing the revised provisions. As provided, this notice should be treated as a prompt to review the updated Chapter IV of the master circular for any new reporting, trustee oversight, document verification, covenant-monitoring, or other compliance duties once the full text is available.",
+          "summarySource": "title"
         },
         {
           "sr": 14,
@@ -19174,7 +19282,9 @@
           "title": "Specification of the terms and conditions for Debenture Trustees for carrying out activities outside the purview of SEBI.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-65",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a **SEBI specification of the terms and conditions applicable to Debenture Trustees when they carry out activities outside SEBI’s regulatory purview**. Based on the title alone, the likely purpose is to define the boundaries, permissions, and conditions under which a registered debenture trustee may engage in non-SEBI-regulated or ancillary activities, so that such outside activities do not conflict with trustee duties or compromise investor protection, independence, or compliance with debenture-trustee obligations. Because no text is provided, I cannot identify the exact obligations, permitted activities, restrictions, reporting requirements, thresholds, or enforcement consequences, and no effective date or deadline can be confirmed from the supplied material.\n\nFor a compliance team, the key takeaway from the title is that this is a **role-specific regulatory instrument aimed at debenture trustees and any affiliated or related activities they perform beyond the SEBI-regulated scope**. If your firm acts as a debenture trustee, or if it has a debenture-trustee function alongside other services, this document would be relevant to determining whether those non-SEBI activities are allowed, what conditions must be satisfied, and how conflicts or segregation of functions must be managed. A full compliance review would require the actual text to confirm the exact obligations and any dates, limits, approvals, disclosures, or operational safeguards.",
+          "summarySource": "title"
         },
         {
           "sr": 15,
@@ -19184,7 +19294,9 @@
           "title": "Timeline for submission of information by the Issuer to the Debenture Trustee(s)",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-64",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general timing/scheduling notice, based on the title only: **“Timeline for submission of information by the Issuer to the Debenture Trustee(s).”** Since no body text was provided, I cannot confirm any specific deadlines, filing intervals, document lists, thresholds, or effective dates; however, the title indicates that it likely sets out the required timetable by which an **Issuer** must provide information to one or more **Debenture Trustee(s)** in connection with debenture administration and ongoing compliance.\n\nFrom a corporate compliance perspective, the practical implication is that the Issuer may have recurring or event-driven reporting obligations to the trustee(s), and the key compliance risk would be missed submission dates, incomplete disclosures, or failure to follow the prescribed information-delivery process. If this document is part of a debenture issuance package or trustee reporting framework, the compliance team should treat it as governing the cadence for trustee reporting and verify the exact timeline, required submission contents, and any consequences for late or omitted delivery from the full text.",
+          "summarySource": "title"
         },
         {
           "sr": 16,
@@ -19194,7 +19306,9 @@
           "title": "SEBI (Listing obligations and disclosure requirements) (Fifth amendment) regulations, 2025",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251127-63",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be the **SEBI (Listing Obligations and Disclosure Requirements) (Fifth Amendment) Regulations, 2025**, but **no substantive text was provided**, so only a **general, title-based summary** is possible. Based on the title alone, this is an amendment to SEBI’s existing Listing Obligations and Disclosure Requirements framework, which governs the continuing compliance obligations of **listed entities** and their disclosures to stock exchanges and investors. Because it is a “Fifth amendment” regulation, it likely introduces changes to the existing LODR regime rather than a standalone new compliance code, and it may affect areas such as periodic disclosures, event-based disclosure duties, corporate governance practices, or filing timelines.\n\nHowever, **the specific obligations, thresholds, dates, effective date, transitional provisions, and any newly required procedures cannot be determined from the title alone**. A compliance team should treat this as a signal that an amendment has been issued and should review the actual regulation text, accompanying SEBI circulars, and any stock exchange guidance to identify whether it changes reporting formats, disclosure deadlines, board/committee requirements, shareholding or related-party disclosure rules, or any other listed-company obligations. If you provide the actual amendment text, I can produce a full compliance-focused summary with the exact requirements, dates, and impacted entities.",
+          "summarySource": "title"
         },
         {
           "sr": 17,
@@ -19204,7 +19318,9 @@
           "title": "Master Circular for issue and listing of Non-convertible Securities, Securitised Debt Instruments, Security Receipts, Municipal Debt Securities and Commercial Paper.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251121-73",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a **master circular** governing the **issue and listing** of several categories of debt and debt-like instruments in India: **non-convertible securities, securitised debt instruments, security receipts, municipal debt securities, and commercial paper**. Based on the title alone, the document is likely a consolidated regulatory framework that brings together and standardizes the rules for issuance, disclosure, listing, and ongoing compliance for issuers and intermediaries in these markets. It would typically apply to entities that issue these instruments, stock exchanges and listing platforms, trustees, merchant bankers, arrangers, and other market participants involved in public issues, private placements, and listing processes.\n\nBecause no body text was provided, I cannot identify the actual rule changes, effective dates, thresholds, filing deadlines, procedural steps, or any specific obligations that this particular circular introduces or amends. For compliance purposes, the safe interpretation is that the circular is intended to be the controlling reference document for current requirements in these instrument classes, so a compliance team should compare it against prior circulars and the issuer’s current transaction procedures to determine whether any conditions on disclosures, listing eligibility, investor protections, documentation, timelines, or post-issue reporting have changed. If you share the text or even the table of contents, I can produce a detailed compliance summary with all operative requirements and dates.",
+          "summarySource": "title"
         },
         {
           "sr": 18,
@@ -19214,7 +19330,9 @@
           "title": "XBRL based filing of Regulation 50 for Entities which has listed its non-convertible securities",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251121-72",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a filing requirement notice, based only on the title, and no substantive text was provided; so this is a general summary of the likely compliance topic rather than a document-specific interpretation. The title indicates that entities that have listed non-convertible securities are subject to XBRL-based filing obligations for “Regulation 50,” meaning affected issuers would be required to submit the relevant regulatory filing in XBRL format rather than solely in a traditional narrative or PDF format. From a compliance perspective, the key point is that the obligation applies to entities with listed non-convertible securities, so a company should first confirm whether its securities fall within that category and whether Regulation 50 is the specific filing rule applicable to its disclosures. Because no body text was provided, the exact filing contents, deadlines, implementation date, and any technical validation or submission procedure cannot be confirmed from the source itself and would need to be checked against the underlying regulation or exchange/authority circular. In practice, compliance teams should treat this as a potential requirement to ensure XBRL reporting capability, validate the correct taxonomy and filing template, and confirm any submission timelines and portal procedures once the actual regulatory text is reviewed.",
+          "summarySource": "title"
         },
         {
           "sr": 19,
@@ -19224,7 +19342,9 @@
           "title": "Frequently Asked Questions (FAQ) for submission of financial results as required under Regulation 33 of SEBI (LODR) Regulations, 2015 & Master circular for compliance with the provisions of the SEBI (LODR) Regulations, 2015.",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251117-20",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document is a general FAQ on how to submit financial results under Regulation 33 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, along with the related requirements in SEBI’s Master Circular on LODR compliance. Based on the title alone, it appears intended to clarify filing expectations for listed entities that are subject to Regulation 33, which governs the preparation, approval, and submission of periodic financial results to stock exchanges/SEBI in the prescribed manner. Because no body text was provided, I cannot confirm any specific interpretive changes, deadlines, formats, exemptions, thresholds, or procedural updates beyond the fact that the FAQ addresses compliance with financial-results submission requirements.\n\nFor a compliance team, the practical takeaway is that this is likely a guidance document meant to support existing listed-company obligations rather than create a new substantive rule, but the exact obligations would depend on the FAQ’s actual questions and answers. Any company that is a listed entity required to file standalone/consolidated financial results under Regulation 33 should review the full FAQ and the referenced Master Circular to confirm filing timelines, certification/approval requirements, audit-review expectations, and the precise submission process. Since the content was not provided, this summary should be treated as preliminary and non-exhaustive.",
+          "summarySource": "title"
         },
         {
           "sr": 20,
@@ -19234,7 +19354,9 @@
           "title": "SEBI Circular on “Minimum information to be provided to the Audit Committee and Shareholders for approval of Related Party Transactions.”",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251014-34",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a SEBI circular requiring listed entities to provide a prescribed minimum set of information when seeking Audit Committee and shareholder approval for related party transactions. Based on the title alone, the main compliance implication is that companies covered by SEBI’s related party transaction framework will need to ensure that any RPT placed before the Audit Committee and, where required, shareholders includes enough specific disclosure for those approving bodies to assess the transaction properly, rather than relying on generic descriptions or incomplete papers. The circular likely affects listed companies and their related parties, with particular relevance to any transaction that triggers approval under SEBI’s listing and RPT rules.\n\nBecause no body text was provided, I cannot reliably state the exact disclosure fields, thresholds, effective date, transition period, or procedural changes beyond the general requirement for “minimum information” in approval materials. A compliance team should treat this as a disclosure and governance tightening measure and verify the final circular text for the exact information checklist, any amendments to existing approval processes, and the date from which the revised requirements apply.",
+          "summarySource": "title"
         },
         {
           "sr": 21,
@@ -19244,7 +19366,9 @@
           "title": "Filing of Financial Results by REITs & InvITs in XBRL Mode",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20251009-62",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general regulatory filing topic rather than a specific rule change, and no body text was provided beyond the title, so the summary must be based on the title alone. It indicates that Real Estate Investment Trusts (REITs) and Infrastructure Investment Trusts (InvITs) are required to file their financial results in XBRL (eXtensible Business Reporting Language) mode, which suggests an electronic, structured-format submission requirement instead of or in addition to a plain-text/PDF filing. From a compliance perspective, the key operational impact is that affected REITs and InvITs must ensure their finance, reporting, and compliance teams can prepare and validate financial results in XBRL-compatible format and submit them through the applicable filing system. No effective date, deadline, threshold, or exception is provided in the supplied content, so none can be confirmed from this document alone. Because the underlying text is missing, this should be treated as a high-level indicator of an XBRL filing obligation rather than a complete statement of requirements.",
+          "summarySource": "title"
         },
         {
           "sr": 22,
@@ -19254,7 +19378,9 @@
           "title": "Framework on Social Stock Exchange (“SSE”)",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250926-67",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a high-level framework or policy concept for a **Social Stock Exchange (SSE)**, but **no substantive text was provided**, so there are **no specific requirements, dates, thresholds, filing obligations, or procedural changes** to summarize from the document itself. Based on the title alone, an SSE framework would generally be expected to set out how a dedicated exchange or exchange segment for **social enterprises, impact-driven issuers, or nonprofit/mission-oriented entities** may operate, including potential listing standards, disclosure expectations, and investor protections—but that is only an informed general characterization, not a statement of this document’s actual contents.  \n\nFor a corporate compliance team, the only reliable takeaway from the provided material is that this is **likely a policy or regulatory framework related to social-impact capital markets**, and it **may become relevant** if your organization is considering listing, issuing securities, acting as an intermediary, or otherwise participating in an exchange designed for social-purpose entities. However, because the body text is absent, **no actionable compliance obligations can be confirmed** from the document provided. If you share the full text, I can produce a precise compliance summary covering affected entities, required disclosures, deadlines, and implementation details.",
+          "summarySource": "title"
         },
         {
           "sr": 23,
@@ -19264,7 +19390,9 @@
           "title": "Listing of further securities issued by the companies under ESOP/ESOS",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250924-42",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a general notice category rather than a specific rule text: **“Listing of further securities issued by the companies under ESOP/ESOS.”** Based on the title alone, the document is likely about the **admission/listing of additional shares or other securities that have been issued pursuant to employee stock option/employee stock ownership plans (ESOP/ESOS)**, rather than a broader regulatory change. For a compliance team, the main point is that companies using ESOP/ESOS would need to ensure that any newly issued securities are properly authorized, issued in accordance with the plan terms and applicable corporate/securities requirements, and then **listed or made available for trading as required** after issuance.\n\nBecause no body text was provided, **no specific effective date, filing deadline, threshold, rate, or procedural change can be confirmed from the document itself**. There is also **no information on which jurisdictions, exchanges, issuers, or classes of securities are specifically affected**, beyond the general reference to companies issuing securities under ESOP/ESOS arrangements. If you need a compliance-grade summary, the underlying notice or circular would need to be reviewed to identify any exact listing steps, documentation, approvals, or reporting obligations triggered by the issuance of these securities.",
+          "summarySource": "title"
         },
         {
           "sr": 24,
@@ -19274,7 +19402,9 @@
           "title": "Update on single filing system through API-based integration between Stock Exchanges",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250912-89",
-          "isNew": false
+          "isNew": false,
+          "summary": "This document appears to be a general update, based on the title only, on the implementation of a single filing system that operates through API-based integration between stock exchanges. Since no body text was provided, there are no specific rule changes, deadlines, thresholds, fees, reporting fields, or procedural steps available to summarize, and no particular exchange, issuer, intermediary, or market participant can be identified as expressly affected from the document content alone. The title suggests that the practical change is a move toward connected, system-to-system filing between stock exchanges rather than separate manual submissions, which would likely affect entities that submit regulatory or listing-related filings across multiple exchanges. For compliance purposes, the only reliable takeaway is that this is an informational update about an integration framework, not a document with extractable operative requirements in the material provided. If you can share the full text or notice, I can produce a substantive compliance summary with all specific obligations and deadlines.",
+          "summarySource": "title"
         },
         {
           "sr": 25,
@@ -19284,7 +19414,9 @@
           "title": "SEBI (LODR) (Third Amendment) Regulations, 2025",
           "desc": "",
           "link": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars?page=20250911-86",
-          "isNew": false
+          "isNew": false,
+          "summary": "This appears to be a **general summary based only on the title**, because no text of the regulations was provided. The title indicates that the document is the **SEBI (Listing Obligations and Disclosure Requirements) (Third Amendment) Regulations, 2025**, which means it is a further amendment to India’s SEBI LODR framework governing **listed entities** and their ongoing **listing, disclosure, governance, and compliance obligations**.  \n\nBecause the actual amendment text is not included, I cannot reliably state **what specific rule changed, what deadlines or effective dates apply, whether any thresholds, fees, timelines, or reporting formats were introduced, or which exact classes of issuers/intermediaries are affected**. For compliance purposes, the safe interpretation is that this document likely updates one or more existing LODR requirements and should be reviewed against the consolidated SEBI LODR regulations to identify any new disclosure, governance, filing, board/committee, or procedural obligations.  \n\nIf you share the amended text or the relevant notification, I can provide a full compliance-focused summary with the exact obligations, impacted entities, operative dates, and any implementation steps.",
+          "summarySource": "title"
         }
       ],
       "ts": 1795832639423,
