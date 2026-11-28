@@ -1,5 +1,5 @@
 Pages: https://www.shriramfinance.in/investors/annual-reports
-Links on page: 701; document-like: 21; kept: 0
+Links on page: 714; document-like: 33; kept: 0
 
 KEPT:
 
@@ -8,6 +8,12 @@ NO YEAR FOUND:
 ALL DOCUMENT-LIKE LINKS (href | text | row):
 https://www.shriramfinance.in/downloads | Downloads | About Us CSR Media Careers Testimonials Downloads Reach Us Financial FAQS
 https://www.shriramfinance.in/downloads | Downloads | CSR Media Careers Testimonials Downloads Resources
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Standalone-Sept-26.pdf | Download | Quarterly Results Standalone September 2026Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Consolidated-Sept-26.pdf | Download | Quarterly Results Consolidated September 2026Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Standalone%20Financial%20Results%20-%20June%202026.pdf | Download | Quarterly Results Standalone June 2026Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Consolidated%20Financial%20Results%20-%20June%202026.pdf | Download | Quarterly Results Consolidated June 2026Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Standalone-March-2026.pdf | Download | Quarterly Results Standalone March 2026Download
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Consolidated-March-2026.pdf | Download | Quarterly Results Consolidated March 2026Download
 https://www.shriramfinance.in/downloads | Downloads | About Us CSR Media Careers Testimonials Downloads Articles Credit Score Financial FAQs Resource
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-11/List%20of%20collection%20agencies%20as%20on%2030.09.2026_0.pdf | Recovery Agencies | LSP List Co-Lending Partners Recovery Agencies Code of Conduct SARFAESI List Consumer Education Inactive/Terminated DSAs Responsible Busines
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-11/Code%20for%20Conduct%20DSA%20DMAs.pdf | Code of Conduct | LSP List Co-Lending Partners Recovery Agencies Code of Conduct SARFAESI List Consumer Education Inactive/Terminated DSAs Responsible Busines
@@ -18,6 +24,12 @@ https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Interest%20Rate%20Policy_1
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/Loan%20Recovery%20Policy.pdf | Loan Recovery Policy | Terms and Conditions Privacy Policy Auction GST Number Interest Rate Policy Loan Recovery Policy Code of Conduct for Collections Policy on P
 https://cdn.shriramfinance.in/uploads/common/Code_of_conduct_for_Collection_of_Dues_and_repossession_of_asset.pdf | Code of Conduct for Collections | Terms and Conditions Privacy Policy Auction GST Number Interest Rate Policy Loan Recovery Policy Code of Conduct for Collections Policy on P
 https://uatcdn.shriram.com/sfl-kalam/files/2024-03/Website_App_Communication-New.pdf | Policy on Penal Charge | Terms and Conditions Privacy Policy Auction GST Number Interest Rate Policy Loan Recovery Policy Code of Conduct for Collections Policy on P
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Standalone-Sept-26.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-10/SFL_Quarterly-Results-Consolidated-Sept-26.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Standalone%20Financial%20Results%20-%20June%202026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-07/Unaudited%20Consolidated%20Financial%20Results%20-%20June%202026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Standalone-March-2026.pdf |  | 
+https://cdn.shriramfinance.in/sfl-kalam/files/2026-04/SFL_Quarterly-Results-Consolidated-March-2026.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-11/List%20of%20collection%20agencies%20as%20on%2030.09.2026_0.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-11/Code%20for%20Conduct%20DSA%20DMAs.pdf |  | 
 https://cdn.shriramfinance.in/sfl-kalam/files/2026-03/SFL_Consumer-Education-Literature-Mar2026.pdf |  | 
